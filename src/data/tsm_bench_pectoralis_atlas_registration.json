@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "status": "research_geometric_bench_overlay_not_anatomical_or_force_validation",
+  "method": "medial_clavicle_plus_pectoral_origin_proxy",
+  "endpointCorrectionWeight": 0.8,
+  "atlasToModelBlenderRows": [
+    [
+      -0.4570636451244354,
+      0.615683376789093,
+      -0.11454463750123978,
+      0.3250390589237213
+    ],
+    [
+      0.32756996154785156,
+      0.35590338706970215,
+      0.6059079170227051,
+      -0.7929394245147705
+    ],
+    [
+      0.5337457060813904,
+      0.30880481004714966,
+      -0.4699455499649048,
+      1.4992390871047974
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "muscles": [
+    {
+      "atlasMesh": "Clavicular head of pectoralis major muscle.r",
+      "modelMuscle": "PectoralisMajorClavicle_S",
+      "rigidParent": "clavicle",
+      "vertexCount": 425
+    },
+    {
+      "atlasMesh": "Sternocostal head of pectoralis major muscle.r",
+      "modelMuscle": "PectoralisMajorThorax_M",
+      "rigidParent": "thorax",
+      "vertexCount": 1611
+    },
+    {
+      "atlasMesh": "(Abdominal part of pectoralis major muscle).r",
+      "modelMuscle": "PectoralisMajorThorax_I",
+      "rigidParent": "thorax",
+      "vertexCount": 756
+    }
+  ]
+}

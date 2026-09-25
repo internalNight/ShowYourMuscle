@@ -1,0 +1,1196 @@
+{
+  "status": "bilateral_barbell_assembly_probe_not_validated_personal_dynamics",
+  "source": "Scherpereel et al. 2023 public scaled gait2354 OpenSim models",
+  "barbellMassKg": 20.0,
+  "barbellLengthM": 2.2,
+  "barbellLocalTorsoM": [
+    -0.03,
+    0.53,
+    0.0
+  ],
+  "connection": "one WeldJoint from torso to a cylindrical barbell body",
+  "limitations": [
+    "torso attachment point is assumed, not a measured high-bar position",
+    "model has no upper limbs or barbell grip constraints",
+    "no measured bar path, foot contact, net joint moments or muscle forces",
+    "54 maximum isometric force parameters remain unpersonalized"
+  ],
+  "subjects": [
+    {
+      "subject": "AB01",
+      "poseContext": "deepest_available_experimental_IK",
+      "ikTimeS": 51.32,
+      "ikRightKneeAngleDeg": -142.32155698,
+      "baseMassKg": 78.84999999999994,
+      "baseComGroundM": [
+        -2.509377086504127,
+        0.4984349317297547,
+        -2.3109393512060743
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -1.6226086083317863,
+        0.7651019532328482,
+        1.6164867944793628
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -2.524234136479929,
+            0.8870576207958423,
+            -2.182573734894543
+          ],
+          "barAxisGroundUnit": [
+            -4.037174635000569e-16,
+            -1.0092936587501423e-16,
+            1.0000000000000004
+          ],
+          "loadedComGroundM": [
+            -2.5123830652549213,
+            0.5770637003824786,
+            -2.28496755225584
+          ],
+          "totalMassKg": 98.84999999999994,
+          "comMassWeightedErrorM": 4.440892098500626e-16,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -2.526210872798548,
+            0.8438240828190582,
+            -2.1410171023608955
+          ],
+          "barAxisGroundUnit": [
+            -4.037174635000569e-16,
+            -1.0092936587501423e-16,
+            1.0000000000000004
+          ],
+          "loadedComGroundM": [
+            -2.5127830119051224,
+            0.5683163988191434,
+            -2.2765595335338076
+          ],
+          "totalMassKg": 98.84999999999994,
+          "comMassWeightedErrorM": 4.440892098500626e-16,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -2.5281876091171673,
+            0.8005905448422739,
+            -2.099460469827248
+          ],
+          "barAxisGroundUnit": [
+            -4.037174635000569e-16,
+            -1.0092936587501423e-16,
+            1.0000000000000004
+          ],
+          "loadedComGroundM": [
+            -2.5131829585553236,
+            0.5595690972558083,
+            -2.2681515148117746
+          ],
+          "totalMassKg": 98.84999999999994,
+          "comMassWeightedErrorM": 8.881784197001252e-16,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB02",
+      "poseContext": "deepest_available_experimental_IK",
+      "ikTimeS": 23.685,
+      "ikRightKneeAngleDeg": -135.14510024,
+      "baseMassKg": 82.17899999999997,
+      "baseComGroundM": [
+        -2.468196676854996,
+        0.5610061801250266,
+        -2.2648539255939224
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        1.2927397817564035,
+        -0.7023699886494416,
+        1.2117223707178837
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -2.469849092984774,
+            0.9365074162067727,
+            -2.396955730157594
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            1.0092936587501423e-16,
+            0.9999999999999996
+          ],
+          "loadedComGroundM": [
+            -2.4685201124199905,
+            0.6345048904435354,
+            -2.2907108638226528
+          ],
+          "totalMassKg": 102.17899999999997,
+          "comMassWeightedErrorM": 0.0,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -2.4537550574302887,
+            0.8936295471528292,
+            -2.4357174427740906
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            1.0092936587501423e-16,
+            0.9999999999999996
+          ],
+          "loadedComGroundM": [
+            -2.465369947404775,
+            0.6261121934991647,
+            -2.2982978851512033
+          ],
+          "totalMassKg": 102.17899999999997,
+          "comMassWeightedErrorM": 0.0,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -2.4376610218758037,
+            0.8507516780988857,
+            -2.4744791553905867
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            1.0092936587501423e-16,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -2.462219782389559,
+            0.6177194965547937,
+            -2.3058849064797533
+          ],
+          "totalMassKg": 102.17899999999997,
+          "comMassWeightedErrorM": 4.440892098500626e-16,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB03",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 113.51699999999983,
+      "baseComGroundM": [
+        -0.14120463109283118,
+        -0.002229789957034488,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.245758,
+            0.5935764,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.15686606280672064,
+            0.08701819943113862,
+            0.0
+          ],
+          "totalMassKg": 133.51699999999983,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.185758,
+            0.5935764,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.14787844325265637,
+            0.08701819943113862,
+            0.0
+          ],
+          "totalMassKg": 133.51699999999983,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.125758,
+            0.5935764,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.13889082369859207,
+            0.08701819943113862,
+            0.0
+          ],
+          "totalMassKg": 133.51699999999983,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB05",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 71.54099999999998,
+      "baseComGroundM": [
+        -0.10406430608632233,
+        0.029957380638039943,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.19982699999999998,
+            0.6025742000000001,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.12498666741374449,
+            0.15506346848107427,
+            0.0
+          ],
+          "totalMassKg": 91.54099999999998,
+          "comMassWeightedErrorM": 1.3877787807814457e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.13982699999999998,
+            0.6025742000000001,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11187778723983333,
+            0.15506346848107427,
+            0.0
+          ],
+          "totalMassKg": 91.54099999999998,
+          "comMassWeightedErrorM": 4.163336342344337e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.079827,
+            0.6025742000000001,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.09876890706592219,
+            0.15506346848107427,
+            0.0
+          ],
+          "totalMassKg": 91.54099999999998,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB06",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 79.1109999999999,
+      "baseComGroundM": [
+        -0.10364520415713284,
+        0.015169668336605005,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.19776,
+            0.5816747,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.12263700039425429,
+            0.12948695535084068,
+            0.0
+          ],
+          "totalMassKg": 99.1109999999999,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.13776,
+            0.5816747,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11052936350228468,
+            0.12948695535084068,
+            0.0
+          ],
+          "totalMassKg": 99.1109999999999,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.07776,
+            0.5816747,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.09842172661031505,
+            0.12948695535084068,
+            0.0
+          ],
+          "totalMassKg": 99.1109999999999,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB07",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 62.26100000000004,
+      "baseComGroundM": [
+        -0.10517564364935983,
+        0.0047989668790781575,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.202278,
+            0.6026058000000001,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.12878400152262662,
+            0.15014289246250692,
+            0.0
+          ],
+          "totalMassKg": 82.26100000000002,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.14227800000000002,
+            0.6026058000000001,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11419628680970069,
+            0.15014289246250692,
+            0.0
+          ],
+          "totalMassKg": 82.26100000000002,
+          "comMassWeightedErrorM": 5.551115123125783e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.082278,
+            0.6026058000000001,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.09960857209677476,
+            0.15014289246250692,
+            0.0
+          ],
+          "totalMassKg": 82.26100000000002,
+          "comMassWeightedErrorM": 4.163336342344337e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB08",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 87.60799999999992,
+      "baseComGroundM": [
+        -0.12268592606795867,
+        0.027904541950560798,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.221598,
+            0.6014637,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.14106970309792696,
+            0.13450612511341856,
+            0.0
+          ],
+          "totalMassKg": 107.60799999999992,
+          "comMassWeightedErrorM": 5.551115123125783e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.161598,
+            0.6014637,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.12991811585534277,
+            0.13450612511341856,
+            0.0
+          ],
+          "totalMassKg": 107.60799999999992,
+          "comMassWeightedErrorM": 5.551115123125783e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.101598,
+            0.6014637,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11876652861275855,
+            0.13450612511341856,
+            0.0
+          ],
+          "totalMassKg": 107.60799999999992,
+          "comMassWeightedErrorM": 5.551115123125783e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB09",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 84.09899999999993,
+      "baseComGroundM": [
+        -0.10856624515018977,
+        0.026451276606030093,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.20545999999999998,
+            0.5987021,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.12718193883597162,
+            0.13639485404557716,
+            0.0
+          ],
+          "totalMassKg": 104.09899999999993,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.14545999999999998,
+            0.5987021,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11565445057960026,
+            0.13639485404557716,
+            0.0
+          ],
+          "totalMassKg": 104.09899999999993,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.08546,
+            0.5987021,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.10412696232322893,
+            0.13639485404557716,
+            0.0
+          ],
+          "totalMassKg": 104.09899999999993,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB10",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 67.52369999999996,
+      "baseComGroundM": [
+        -0.11184903530851126,
+        0.014463137410592086,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.209542,
+            0.587807,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.13417280925579383,
+            0.14547767692146926,
+            0.0
+          ],
+          "totalMassKg": 87.52369999999996,
+          "comMassWeightedErrorM": 0.0,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.149542,
+            0.587807,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.1204622371478962,
+            0.14547767692146926,
+            0.0
+          ],
+          "totalMassKg": 87.52369999999996,
+          "comMassWeightedErrorM": 0.0,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.089542,
+            0.587807,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.10675166503999856,
+            0.14547767692146926,
+            0.0
+          ],
+          "totalMassKg": 87.52369999999996,
+          "comMassWeightedErrorM": 0.0,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB11",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 65.08000000000004,
+      "baseComGroundM": [
+        -0.08846756493734308,
+        -0.0007814030874561028,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.1840938,
+            0.5915079,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11094669870853653,
+            0.13844974479393923,
+            0.0
+          ],
+          "totalMassKg": 85.08000000000004,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.1240938,
+            0.5915079,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.09684232635310636,
+            0.13844974479393923,
+            0.0
+          ],
+          "totalMassKg": 85.08000000000004,
+          "comMassWeightedErrorM": 1.3877787807814457e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.0640938,
+            0.5915079,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.08273795399767615,
+            0.13844974479393923,
+            0.0
+          ],
+          "totalMassKg": 85.08000000000004,
+          "comMassWeightedErrorM": 0.0,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB12",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 64.03199999999997,
+      "baseComGroundM": [
+        -0.09209678792411351,
+        0.0036853773109540885,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.1875628,
+            0.6043261,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.11481813504803924,
+            0.14664061405149245,
+            0.0
+          ],
+          "totalMassKg": 84.03199999999998,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.1275628,
+            0.6043261,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.10053786086677496,
+            0.14664061405149245,
+            0.0
+          ],
+          "totalMassKg": 84.03199999999998,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.0675628,
+            0.6043261,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.0862575866855107,
+            0.14664061405149245,
+            0.0
+          ],
+          "totalMassKg": 84.03199999999998,
+          "comMassWeightedErrorM": 1.3877787807814457e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    },
+    {
+      "subject": "AB13",
+      "poseContext": "source_model_default_not_a_standing_pose",
+      "ikTimeS": null,
+      "ikRightKneeAngleDeg": null,
+      "baseMassKg": 67.57430000000005,
+      "baseComGroundM": [
+        -0.08185022890159485,
+        -0.0004892167682292816,
+        0.0
+      ],
+      "baseMuscleCount": 54,
+      "barbellTorsoRotationRad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "barbellScenarios": [
+        {
+          "barOffsetCm": -6,
+          "barComGroundM": [
+            -0.176051,
+            0.5943372,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.10336356582770334,
+            0.13535575527681795,
+            0.0
+          ],
+          "totalMassKg": 87.57430000000005,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 0,
+          "barComGroundM": [
+            -0.116051,
+            0.5943372,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.0896609156209646,
+            0.13535575527681795,
+            0.0
+          ],
+          "totalMassKg": 87.57430000000005,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": {
+            "passed": true,
+            "comErrorM": 0.0,
+            "bodyCount": 13,
+            "jointCount": 13,
+            "muscleCount": 54
+          },
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        },
+        {
+          "barOffsetCm": 6,
+          "barComGroundM": [
+            -0.056051000000000004,
+            0.5943372,
+            0.0
+          ],
+          "barAxisGroundUnit": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "loadedComGroundM": [
+            -0.07595826541422589,
+            0.13535575527681795,
+            0.0
+          ],
+          "totalMassKg": 87.57430000000005,
+          "comMassWeightedErrorM": 2.7755575615628914e-17,
+          "serializedRoundtrip": null,
+          "bodyCount": 13,
+          "jointCount": 13,
+          "muscleCount": 54
+        }
+      ]
+    }
+  ]
+}

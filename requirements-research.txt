@@ -1,0 +1,9 @@
+# Reproducible local research scripts; not included in the mobile application.
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+opensim==4.6
+mujoco==3.14.0
+ezc3d==1.7.2
+mat-io==0.5.2
+openpyxl==3.1.5

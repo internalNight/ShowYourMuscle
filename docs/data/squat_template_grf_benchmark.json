@@ -1,0 +1,896 @@
+{
+  "status": "research_only_not_validated_personal_ground_force_or_muscle_force",
+  "source": "Scherpereel et al. 2023 processed public squat angle and force-plate CSVs",
+  "protocol": "0-lb only; consecutive standing-like knee-flexion valleys enclosing one deep peak; no template tuning. Linear time-normalization to 99 interior phase points. One participant, not one frame or repetition, is the summary unit.",
+  "viewerHeightAssumptionCm": 175,
+  "viewerDefaultDurationS": 2.8,
+  "viewerDepthTargetDeg": null,
+  "viewerKneeFlexionRangeDeg": [
+    21.05,
+    95.93
+  ],
+  "grfRatioDefinition": "sum of left and right vertical GRF / (measured subject mass * 9.80665)",
+  "maeRatioDefinition": "mean across 99 normalized phase points of |predicted minus observed GRF/body weight|; static baseline is exactly 1",
+  "qualityGate": "one peak between standing-like valleys; 0.9-4 s, peak knee >=50 deg, both valleys <=45 deg, >=40 deg flexion excursion, >=50% bilateral task-active flags (not foot contact)",
+  "summary": {
+    "subjects": 12,
+    "reps": 39,
+    "subjectMedianDurationS": 2.652,
+    "subjectMedianPeakKneeFlexionDeg": 116.65,
+    "subjectMedianStaticMaeRatio": 0.1143,
+    "subjectMedianFixedTemplateMaeRatio": 0.1117,
+    "subjectMedianTimedTemplateMaeRatio": 0.105,
+    "pairedSubjectMedianFixedImprovementRatio": 0.0087,
+    "pairedSubjectMedianFixedImprovementBootstrap95": [
+      0.001,
+      0.0193
+    ],
+    "pairedSubjectMedianTimedImprovementRatio": 0.011,
+    "pairedSubjectMedianTimedImprovementBootstrap95": [
+      0.0016,
+      0.0311
+    ],
+    "subjectsFixedTemplateBeatsStatic": 9,
+    "subjectsTimedTemplateBeatsStatic": 10
+  },
+  "limitations": [
+    "The viewer prescribes one 175-cm geometry and a symmetric phase curve; trial body heights and actual user motion are unavailable to the app.",
+    "Time-normalization uses experimental rep boundaries; measured-duration version is an optimistic diagnostic, not an available phone input.",
+    "Unloaded laboratory squats do not validate barbell position, joint net moments, individual muscles, or other exercises.",
+    "GRF data are processed by the source; valley segmentation and force-plate baseline may affect errors.",
+    "Bootstrap intervals resample 12 participants, not correlated repetitions; they describe this sample and are not validation limits."
+  ],
+  "subjects": [
+    {
+      "subject": "AB01",
+      "reps": 3,
+      "medianDurationS": 1.845,
+      "medianPeakKneeFlexionDeg": 142.32,
+      "medianStaticMaeRatio": 0.2804,
+      "medianFixedTemplateMaeRatio": 0.2705,
+      "medianTimedTemplateMaeRatio": 0.2142
+    },
+    {
+      "subject": "AB02",
+      "reps": 3,
+      "medianDurationS": 3.09,
+      "medianPeakKneeFlexionDeg": 132.77,
+      "medianStaticMaeRatio": 0.1168,
+      "medianFixedTemplateMaeRatio": 0.1145,
+      "medianTimedTemplateMaeRatio": 0.1119
+    },
+    {
+      "subject": "AB03",
+      "reps": 3,
+      "medianDurationS": 2.62,
+      "medianPeakKneeFlexionDeg": 68.52,
+      "medianStaticMaeRatio": 0.0706,
+      "medianFixedTemplateMaeRatio": 0.0503,
+      "medianTimedTemplateMaeRatio": 0.0505
+    },
+    {
+      "subject": "AB05",
+      "reps": 3,
+      "medianDurationS": 3.165,
+      "medianPeakKneeFlexionDeg": 97.63,
+      "medianStaticMaeRatio": 0.1118,
+      "medianFixedTemplateMaeRatio": 0.112,
+      "medianTimedTemplateMaeRatio": 0.1107
+    },
+    {
+      "subject": "AB06",
+      "reps": 7,
+      "medianDurationS": 2.975,
+      "medianPeakKneeFlexionDeg": 107.49,
+      "medianStaticMaeRatio": 0.1086,
+      "medianFixedTemplateMaeRatio": 0.0969,
+      "medianTimedTemplateMaeRatio": 0.0938
+    },
+    {
+      "subject": "AB07",
+      "reps": 3,
+      "medianDurationS": 2.685,
+      "medianPeakKneeFlexionDeg": 123.64,
+      "medianStaticMaeRatio": 0.0796,
+      "medianFixedTemplateMaeRatio": 0.045,
+      "medianTimedTemplateMaeRatio": 0.0446
+    },
+    {
+      "subject": "AB08",
+      "reps": 3,
+      "medianDurationS": 2.23,
+      "medianPeakKneeFlexionDeg": 104.14,
+      "medianStaticMaeRatio": 0.1463,
+      "medianFixedTemplateMaeRatio": 0.1281,
+      "medianTimedTemplateMaeRatio": 0.1192
+    },
+    {
+      "subject": "AB09",
+      "reps": 2,
+      "medianDurationS": 2.735,
+      "medianPeakKneeFlexionDeg": 123.8,
+      "medianStaticMaeRatio": 0.1516,
+      "medianFixedTemplateMaeRatio": 0.1653,
+      "medianTimedTemplateMaeRatio": 0.166
+    },
+    {
+      "subject": "AB10",
+      "reps": 3,
+      "medianDurationS": 2.12,
+      "medianPeakKneeFlexionDeg": 108.68,
+      "medianStaticMaeRatio": 0.1369,
+      "medianFixedTemplateMaeRatio": 0.1114,
+      "medianTimedTemplateMaeRatio": 0.0976
+    },
+    {
+      "subject": "AB11",
+      "reps": 3,
+      "medianDurationS": 3.055,
+      "medianPeakKneeFlexionDeg": 117.42,
+      "medianStaticMaeRatio": 0.0909,
+      "medianFixedTemplateMaeRatio": 0.1024,
+      "medianTimedTemplateMaeRatio": 0.0992
+    },
+    {
+      "subject": "AB12",
+      "reps": 3,
+      "medianDurationS": 2.27,
+      "medianPeakKneeFlexionDeg": 124.44,
+      "medianStaticMaeRatio": 0.1384,
+      "medianFixedTemplateMaeRatio": 0.1308,
+      "medianTimedTemplateMaeRatio": 0.1362
+    },
+    {
+      "subject": "AB13",
+      "reps": 3,
+      "medianDurationS": 2.435,
+      "medianPeakKneeFlexionDeg": 115.88,
+      "medianStaticMaeRatio": 0.104,
+      "medianFixedTemplateMaeRatio": 0.0968,
+      "medianTimedTemplateMaeRatio": 0.0968
+    }
+  ],
+  "repetitions": [
+    {
+      "subject": "AB01",
+      "rep": 1,
+      "startS": 50.635,
+      "deepestS": 51.32,
+      "endS": 52.48,
+      "durationS": 1.845,
+      "observedPeakKneeFlexionDeg": 142.32,
+      "observedMinMaxWeightRatio": [
+        0.308,
+        2.047
+      ],
+      "observedPeakPhase": 0.37,
+      "staticWeightMaeRatio": 0.2804,
+      "fixedDurationTemplateMaeRatio": 0.2705,
+      "measuredDurationTemplateMaeRatio": 0.2813,
+      "fixedImprovementOverStaticRatio": 0.0099,
+      "timedImprovementOverStaticRatio": -0.0009
+    },
+    {
+      "subject": "AB01",
+      "rep": 2,
+      "startS": 52.48,
+      "deepestS": 53.13,
+      "endS": 53.855,
+      "durationS": 1.375,
+      "observedPeakKneeFlexionDeg": 147.79,
+      "observedMinMaxWeightRatio": [
+        0.24,
+        2.227
+      ],
+      "observedPeakPhase": 0.48,
+      "staticWeightMaeRatio": 0.3762,
+      "fixedDurationTemplateMaeRatio": 0.3287,
+      "measuredDurationTemplateMaeRatio": 0.2142,
+      "fixedImprovementOverStaticRatio": 0.0475,
+      "timedImprovementOverStaticRatio": 0.1619
+    },
+    {
+      "subject": "AB01",
+      "rep": 3,
+      "startS": 53.855,
+      "deepestS": 55.23,
+      "endS": 56.03,
+      "durationS": 2.175,
+      "observedPeakKneeFlexionDeg": 124.83,
+      "observedMinMaxWeightRatio": [
+        0.534,
+        1.64
+      ],
+      "observedPeakPhase": 0.63,
+      "staticWeightMaeRatio": 0.1751,
+      "fixedDurationTemplateMaeRatio": 0.1657,
+      "measuredDurationTemplateMaeRatio": 0.172,
+      "fixedImprovementOverStaticRatio": 0.0094,
+      "timedImprovementOverStaticRatio": 0.0031
+    },
+    {
+      "subject": "AB02",
+      "rep": 1,
+      "startS": 24.585,
+      "deepestS": 26.28,
+      "endS": 27.32,
+      "durationS": 2.735,
+      "observedPeakKneeFlexionDeg": 137.14,
+      "observedMinMaxWeightRatio": [
+        0.638,
+        1.393
+      ],
+      "observedPeakPhase": 0.68,
+      "staticWeightMaeRatio": 0.1523,
+      "fixedDurationTemplateMaeRatio": 0.1356,
+      "measuredDurationTemplateMaeRatio": 0.1357,
+      "fixedImprovementOverStaticRatio": 0.0166,
+      "timedImprovementOverStaticRatio": 0.0166
+    },
+    {
+      "subject": "AB02",
+      "rep": 2,
+      "startS": 27.32,
+      "deepestS": 29.315,
+      "endS": 30.41,
+      "durationS": 3.09,
+      "observedPeakKneeFlexionDeg": 132.77,
+      "observedMinMaxWeightRatio": [
+        0.725,
+        1.388
+      ],
+      "observedPeakPhase": 0.65,
+      "staticWeightMaeRatio": 0.1168,
+      "fixedDurationTemplateMaeRatio": 0.1145,
+      "measuredDurationTemplateMaeRatio": 0.1119,
+      "fixedImprovementOverStaticRatio": 0.0023,
+      "timedImprovementOverStaticRatio": 0.0049
+    },
+    {
+      "subject": "AB02",
+      "rep": 3,
+      "startS": 30.41,
+      "deepestS": 32.605,
+      "endS": 33.765,
+      "durationS": 3.355,
+      "observedPeakKneeFlexionDeg": 112.24,
+      "observedMinMaxWeightRatio": [
+        0.708,
+        1.19
+      ],
+      "observedPeakPhase": 0.73,
+      "staticWeightMaeRatio": 0.0868,
+      "fixedDurationTemplateMaeRatio": 0.0817,
+      "measuredDurationTemplateMaeRatio": 0.0782,
+      "fixedImprovementOverStaticRatio": 0.0051,
+      "timedImprovementOverStaticRatio": 0.0086
+    },
+    {
+      "subject": "AB03",
+      "rep": 1,
+      "startS": 26.42,
+      "deepestS": 28.045,
+      "endS": 29.345,
+      "durationS": 2.925,
+      "observedPeakKneeFlexionDeg": 68.52,
+      "observedMinMaxWeightRatio": [
+        0.892,
+        1.158
+      ],
+      "observedPeakPhase": 0.54,
+      "staticWeightMaeRatio": 0.0531,
+      "fixedDurationTemplateMaeRatio": 0.045,
+      "measuredDurationTemplateMaeRatio": 0.0448,
+      "fixedImprovementOverStaticRatio": 0.0081,
+      "timedImprovementOverStaticRatio": 0.0083
+    },
+    {
+      "subject": "AB03",
+      "rep": 2,
+      "startS": 29.345,
+      "deepestS": 30.84,
+      "endS": 31.965,
+      "durationS": 2.62,
+      "observedPeakKneeFlexionDeg": 69.14,
+      "observedMinMaxWeightRatio": [
+        0.865,
+        1.223
+      ],
+      "observedPeakPhase": 0.54,
+      "staticWeightMaeRatio": 0.0706,
+      "fixedDurationTemplateMaeRatio": 0.063,
+      "measuredDurationTemplateMaeRatio": 0.0629,
+      "fixedImprovementOverStaticRatio": 0.0076,
+      "timedImprovementOverStaticRatio": 0.0076
+    },
+    {
+      "subject": "AB03",
+      "rep": 3,
+      "startS": 31.965,
+      "deepestS": 33.29,
+      "endS": 34.225,
+      "durationS": 2.26,
+      "observedPeakKneeFlexionDeg": 55.5,
+      "observedMinMaxWeightRatio": [
+        0.783,
+        1.141
+      ],
+      "observedPeakPhase": 0.49,
+      "staticWeightMaeRatio": 0.0749,
+      "fixedDurationTemplateMaeRatio": 0.0503,
+      "measuredDurationTemplateMaeRatio": 0.0505,
+      "fixedImprovementOverStaticRatio": 0.0246,
+      "timedImprovementOverStaticRatio": 0.0244
+    },
+    {
+      "subject": "AB05",
+      "rep": 1,
+      "startS": 2.87,
+      "deepestS": 4.565,
+      "endS": 5.61,
+      "durationS": 2.74,
+      "observedPeakKneeFlexionDeg": 97.63,
+      "observedMinMaxWeightRatio": [
+        0.563,
+        1.295
+      ],
+      "observedPeakPhase": 0.79,
+      "staticWeightMaeRatio": 0.121,
+      "fixedDurationTemplateMaeRatio": 0.1176,
+      "measuredDurationTemplateMaeRatio": 0.1178,
+      "fixedImprovementOverStaticRatio": 0.0033,
+      "timedImprovementOverStaticRatio": 0.0032
+    },
+    {
+      "subject": "AB05",
+      "rep": 2,
+      "startS": 5.61,
+      "deepestS": 7.485,
+      "endS": 8.775,
+      "durationS": 3.165,
+      "observedPeakKneeFlexionDeg": 97.9,
+      "observedMinMaxWeightRatio": [
+        0.589,
+        1.307
+      ],
+      "observedPeakPhase": 0.79,
+      "staticWeightMaeRatio": 0.1118,
+      "fixedDurationTemplateMaeRatio": 0.112,
+      "measuredDurationTemplateMaeRatio": 0.1107,
+      "fixedImprovementOverStaticRatio": -0.0002,
+      "timedImprovementOverStaticRatio": 0.001
+    },
+    {
+      "subject": "AB05",
+      "rep": 3,
+      "startS": 8.775,
+      "deepestS": 10.65,
+      "endS": 12.355,
+      "durationS": 3.58,
+      "observedPeakKneeFlexionDeg": 89.37,
+      "observedMinMaxWeightRatio": [
+        0.583,
+        1.269
+      ],
+      "observedPeakPhase": 0.68,
+      "staticWeightMaeRatio": 0.0926,
+      "fixedDurationTemplateMaeRatio": 0.0905,
+      "measuredDurationTemplateMaeRatio": 0.0873,
+      "fixedImprovementOverStaticRatio": 0.0021,
+      "timedImprovementOverStaticRatio": 0.0053
+    },
+    {
+      "subject": "AB06",
+      "rep": 1,
+      "startS": 47.055,
+      "deepestS": 48.865,
+      "endS": 50.03,
+      "durationS": 2.975,
+      "observedPeakKneeFlexionDeg": 121.96,
+      "observedMinMaxWeightRatio": [
+        0.593,
+        1.176
+      ],
+      "observedPeakPhase": 0.65,
+      "staticWeightMaeRatio": 0.1101,
+      "fixedDurationTemplateMaeRatio": 0.0923,
+      "measuredDurationTemplateMaeRatio": 0.0938,
+      "fixedImprovementOverStaticRatio": 0.0178,
+      "timedImprovementOverStaticRatio": 0.0164
+    },
+    {
+      "subject": "AB06",
+      "rep": 2,
+      "startS": 50.03,
+      "deepestS": 51.66,
+      "endS": 52.815,
+      "durationS": 2.785,
+      "observedPeakKneeFlexionDeg": 116.17,
+      "observedMinMaxWeightRatio": [
+        0.647,
+        1.213
+      ],
+      "observedPeakPhase": 0.61,
+      "staticWeightMaeRatio": 0.1017,
+      "fixedDurationTemplateMaeRatio": 0.0795,
+      "measuredDurationTemplateMaeRatio": 0.0794,
+      "fixedImprovementOverStaticRatio": 0.0222,
+      "timedImprovementOverStaticRatio": 0.0222
+    },
+    {
+      "subject": "AB06",
+      "rep": 3,
+      "startS": 52.815,
+      "deepestS": 54.41,
+      "endS": 55.36,
+      "durationS": 2.545,
+      "observedPeakKneeFlexionDeg": 107.49,
+      "observedMinMaxWeightRatio": [
+        0.706,
+        1.284
+      ],
+      "observedPeakPhase": 0.63,
+      "staticWeightMaeRatio": 0.1086,
+      "fixedDurationTemplateMaeRatio": 0.097,
+      "measuredDurationTemplateMaeRatio": 0.0979,
+      "fixedImprovementOverStaticRatio": 0.0116,
+      "timedImprovementOverStaticRatio": 0.0107
+    },
+    {
+      "subject": "AB06",
+      "rep": 4,
+      "startS": 55.36,
+      "deepestS": 56.865,
+      "endS": 58.485,
+      "durationS": 3.125,
+      "observedPeakKneeFlexionDeg": 110.33,
+      "observedMinMaxWeightRatio": [
+        0.72,
+        1.278
+      ],
+      "observedPeakPhase": 0.49,
+      "staticWeightMaeRatio": 0.0899,
+      "fixedDurationTemplateMaeRatio": 0.0765,
+      "measuredDurationTemplateMaeRatio": 0.0764,
+      "fixedImprovementOverStaticRatio": 0.0135,
+      "timedImprovementOverStaticRatio": 0.0136
+    },
+    {
+      "subject": "AB06",
+      "rep": 5,
+      "startS": 58.485,
+      "deepestS": 59.53,
+      "endS": 60.575,
+      "durationS": 2.09,
+      "observedPeakKneeFlexionDeg": 104.49,
+      "observedMinMaxWeightRatio": [
+        0.69,
+        1.292
+      ],
+      "observedPeakPhase": 0.51,
+      "staticWeightMaeRatio": 0.1473,
+      "fixedDurationTemplateMaeRatio": 0.1062,
+      "measuredDurationTemplateMaeRatio": 0.077,
+      "fixedImprovementOverStaticRatio": 0.0411,
+      "timedImprovementOverStaticRatio": 0.0703
+    },
+    {
+      "subject": "AB06",
+      "rep": 6,
+      "startS": 60.575,
+      "deepestS": 62.675,
+      "endS": 63.825,
+      "durationS": 3.25,
+      "observedPeakKneeFlexionDeg": 101.03,
+      "observedMinMaxWeightRatio": [
+        0.688,
+        1.19
+      ],
+      "observedPeakPhase": 0.71,
+      "staticWeightMaeRatio": 0.1052,
+      "fixedDurationTemplateMaeRatio": 0.0969,
+      "measuredDurationTemplateMaeRatio": 0.0984,
+      "fixedImprovementOverStaticRatio": 0.0083,
+      "timedImprovementOverStaticRatio": 0.0068
+    },
+    {
+      "subject": "AB06",
+      "rep": 7,
+      "startS": 63.825,
+      "deepestS": 65.67,
+      "endS": 67.135,
+      "durationS": 3.31,
+      "observedPeakKneeFlexionDeg": 96.94,
+      "observedMinMaxWeightRatio": [
+        0.665,
+        1.213
+      ],
+      "observedPeakPhase": 0.62,
+      "staticWeightMaeRatio": 0.1094,
+      "fixedDurationTemplateMaeRatio": 0.097,
+      "measuredDurationTemplateMaeRatio": 0.0993,
+      "fixedImprovementOverStaticRatio": 0.0124,
+      "timedImprovementOverStaticRatio": 0.0102
+    },
+    {
+      "subject": "AB07",
+      "rep": 1,
+      "startS": 33.685,
+      "deepestS": 35.205,
+      "endS": 36.46,
+      "durationS": 2.775,
+      "observedPeakKneeFlexionDeg": 128.44,
+      "observedMinMaxWeightRatio": [
+        0.765,
+        1.146
+      ],
+      "observedPeakPhase": 0.59,
+      "staticWeightMaeRatio": 0.0808,
+      "fixedDurationTemplateMaeRatio": 0.054,
+      "measuredDurationTemplateMaeRatio": 0.054,
+      "fixedImprovementOverStaticRatio": 0.0268,
+      "timedImprovementOverStaticRatio": 0.0268
+    },
+    {
+      "subject": "AB07",
+      "rep": 2,
+      "startS": 36.46,
+      "deepestS": 37.77,
+      "endS": 39.12,
+      "durationS": 2.66,
+      "observedPeakKneeFlexionDeg": 123.64,
+      "observedMinMaxWeightRatio": [
+        0.81,
+        1.117
+      ],
+      "observedPeakPhase": 0.54,
+      "staticWeightMaeRatio": 0.0796,
+      "fixedDurationTemplateMaeRatio": 0.045,
+      "measuredDurationTemplateMaeRatio": 0.0427,
+      "fixedImprovementOverStaticRatio": 0.0347,
+      "timedImprovementOverStaticRatio": 0.0369
+    },
+    {
+      "subject": "AB07",
+      "rep": 3,
+      "startS": 39.12,
+      "deepestS": 40.565,
+      "endS": 41.805,
+      "durationS": 2.685,
+      "observedPeakKneeFlexionDeg": 115.29,
+      "observedMinMaxWeightRatio": [
+        0.797,
+        1.142
+      ],
+      "observedPeakPhase": 0.57,
+      "staticWeightMaeRatio": 0.0717,
+      "fixedDurationTemplateMaeRatio": 0.0449,
+      "measuredDurationTemplateMaeRatio": 0.0446,
+      "fixedImprovementOverStaticRatio": 0.0268,
+      "timedImprovementOverStaticRatio": 0.0271
+    },
+    {
+      "subject": "AB08",
+      "rep": 1,
+      "startS": 32.14,
+      "deepestS": 33.315,
+      "endS": 34.21,
+      "durationS": 2.07,
+      "observedPeakKneeFlexionDeg": 104.14,
+      "observedMinMaxWeightRatio": [
+        0.676,
+        1.314
+      ],
+      "observedPeakPhase": 0.57,
+      "staticWeightMaeRatio": 0.1463,
+      "fixedDurationTemplateMaeRatio": 0.1281,
+      "measuredDurationTemplateMaeRatio": 0.1192,
+      "fixedImprovementOverStaticRatio": 0.0182,
+      "timedImprovementOverStaticRatio": 0.0272
+    },
+    {
+      "subject": "AB08",
+      "rep": 2,
+      "startS": 34.21,
+      "deepestS": 35.535,
+      "endS": 36.44,
+      "durationS": 2.23,
+      "observedPeakKneeFlexionDeg": 104.36,
+      "observedMinMaxWeightRatio": [
+        0.577,
+        1.366
+      ],
+      "observedPeakPhase": 0.6,
+      "staticWeightMaeRatio": 0.1476,
+      "fixedDurationTemplateMaeRatio": 0.1422,
+      "measuredDurationTemplateMaeRatio": 0.146,
+      "fixedImprovementOverStaticRatio": 0.0054,
+      "timedImprovementOverStaticRatio": 0.0015
+    },
+    {
+      "subject": "AB08",
+      "rep": 3,
+      "startS": 36.44,
+      "deepestS": 37.92,
+      "endS": 38.905,
+      "durationS": 2.465,
+      "observedPeakKneeFlexionDeg": 93.88,
+      "observedMinMaxWeightRatio": [
+        0.796,
+        1.171
+      ],
+      "observedPeakPhase": 0.68,
+      "staticWeightMaeRatio": 0.0921,
+      "fixedDurationTemplateMaeRatio": 0.0657,
+      "measuredDurationTemplateMaeRatio": 0.0649,
+      "fixedImprovementOverStaticRatio": 0.0264,
+      "timedImprovementOverStaticRatio": 0.0272
+    },
+    {
+      "subject": "AB09",
+      "rep": 1,
+      "startS": 21.92,
+      "deepestS": 23.835,
+      "endS": 24.82,
+      "durationS": 2.9,
+      "observedPeakKneeFlexionDeg": 124.67,
+      "observedMinMaxWeightRatio": [
+        0.475,
+        1.582
+      ],
+      "observedPeakPhase": 0.68,
+      "staticWeightMaeRatio": 0.1457,
+      "fixedDurationTemplateMaeRatio": 0.1606,
+      "measuredDurationTemplateMaeRatio": 0.1591,
+      "fixedImprovementOverStaticRatio": -0.0149,
+      "timedImprovementOverStaticRatio": -0.0135
+    },
+    {
+      "subject": "AB09",
+      "rep": 2,
+      "startS": 24.82,
+      "deepestS": 26.525,
+      "endS": 27.39,
+      "durationS": 2.57,
+      "observedPeakKneeFlexionDeg": 122.92,
+      "observedMinMaxWeightRatio": [
+        0.52,
+        1.565
+      ],
+      "observedPeakPhase": 0.68,
+      "staticWeightMaeRatio": 0.1574,
+      "fixedDurationTemplateMaeRatio": 0.1699,
+      "measuredDurationTemplateMaeRatio": 0.1729,
+      "fixedImprovementOverStaticRatio": -0.0125,
+      "timedImprovementOverStaticRatio": -0.0155
+    },
+    {
+      "subject": "AB10",
+      "rep": 1,
+      "startS": 26.65,
+      "deepestS": 27.645,
+      "endS": 28.62,
+      "durationS": 1.97,
+      "observedPeakKneeFlexionDeg": 108.68,
+      "observedMinMaxWeightRatio": [
+        0.674,
+        1.301
+      ],
+      "observedPeakPhase": 0.53,
+      "staticWeightMaeRatio": 0.1506,
+      "fixedDurationTemplateMaeRatio": 0.1198,
+      "measuredDurationTemplateMaeRatio": 0.0976,
+      "fixedImprovementOverStaticRatio": 0.0307,
+      "timedImprovementOverStaticRatio": 0.053
+    },
+    {
+      "subject": "AB10",
+      "rep": 2,
+      "startS": 28.62,
+      "deepestS": 29.725,
+      "endS": 30.74,
+      "durationS": 2.12,
+      "observedPeakKneeFlexionDeg": 113.15,
+      "observedMinMaxWeightRatio": [
+        0.718,
+        1.339
+      ],
+      "observedPeakPhase": 0.52,
+      "staticWeightMaeRatio": 0.1369,
+      "fixedDurationTemplateMaeRatio": 0.1114,
+      "measuredDurationTemplateMaeRatio": 0.1038,
+      "fixedImprovementOverStaticRatio": 0.0255,
+      "timedImprovementOverStaticRatio": 0.0332
+    },
+    {
+      "subject": "AB10",
+      "rep": 3,
+      "startS": 30.74,
+      "deepestS": 32.16,
+      "endS": 33.41,
+      "durationS": 2.67,
+      "observedPeakKneeFlexionDeg": 72.04,
+      "observedMinMaxWeightRatio": [
+        0.783,
+        1.17
+      ],
+      "observedPeakPhase": 0.72,
+      "staticWeightMaeRatio": 0.0657,
+      "fixedDurationTemplateMaeRatio": 0.0526,
+      "measuredDurationTemplateMaeRatio": 0.0538,
+      "fixedImprovementOverStaticRatio": 0.0131,
+      "timedImprovementOverStaticRatio": 0.0119
+    },
+    {
+      "subject": "AB11",
+      "rep": 1,
+      "startS": 23.76,
+      "deepestS": 25.225,
+      "endS": 26.605,
+      "durationS": 2.845,
+      "observedPeakKneeFlexionDeg": 117.64,
+      "observedMinMaxWeightRatio": [
+        0.71,
+        1.281
+      ],
+      "observedPeakPhase": 0.51,
+      "staticWeightMaeRatio": 0.1083,
+      "fixedDurationTemplateMaeRatio": 0.1034,
+      "measuredDurationTemplateMaeRatio": 0.1034,
+      "fixedImprovementOverStaticRatio": 0.0049,
+      "timedImprovementOverStaticRatio": 0.0049
+    },
+    {
+      "subject": "AB11",
+      "rep": 2,
+      "startS": 26.605,
+      "deepestS": 28.67,
+      "endS": 29.75,
+      "durationS": 3.145,
+      "observedPeakKneeFlexionDeg": 117.42,
+      "observedMinMaxWeightRatio": [
+        0.75,
+        1.259
+      ],
+      "observedPeakPhase": 0.66,
+      "staticWeightMaeRatio": 0.0909,
+      "fixedDurationTemplateMaeRatio": 0.1024,
+      "measuredDurationTemplateMaeRatio": 0.0992,
+      "fixedImprovementOverStaticRatio": -0.0116,
+      "timedImprovementOverStaticRatio": -0.0083
+    },
+    {
+      "subject": "AB11",
+      "rep": 3,
+      "startS": 29.75,
+      "deepestS": 31.68,
+      "endS": 32.805,
+      "durationS": 3.055,
+      "observedPeakKneeFlexionDeg": 108.91,
+      "observedMinMaxWeightRatio": [
+        0.747,
+        1.215
+      ],
+      "observedPeakPhase": 0.6,
+      "staticWeightMaeRatio": 0.0841,
+      "fixedDurationTemplateMaeRatio": 0.0922,
+      "measuredDurationTemplateMaeRatio": 0.09,
+      "fixedImprovementOverStaticRatio": -0.0081,
+      "timedImprovementOverStaticRatio": -0.0059
+    },
+    {
+      "subject": "AB12",
+      "rep": 1,
+      "startS": 22.65,
+      "deepestS": 23.99,
+      "endS": 24.92,
+      "durationS": 2.27,
+      "observedPeakKneeFlexionDeg": 124.44,
+      "observedMinMaxWeightRatio": [
+        0.56,
+        1.422
+      ],
+      "observedPeakPhase": 0.59,
+      "staticWeightMaeRatio": 0.1539,
+      "fixedDurationTemplateMaeRatio": 0.139,
+      "measuredDurationTemplateMaeRatio": 0.1413,
+      "fixedImprovementOverStaticRatio": 0.0149,
+      "timedImprovementOverStaticRatio": 0.0125
+    },
+    {
+      "subject": "AB12",
+      "rep": 2,
+      "startS": 24.92,
+      "deepestS": 26.365,
+      "endS": 27.405,
+      "durationS": 2.485,
+      "observedPeakKneeFlexionDeg": 130.98,
+      "observedMinMaxWeightRatio": [
+        0.565,
+        1.379
+      ],
+      "observedPeakPhase": 0.59,
+      "staticWeightMaeRatio": 0.1384,
+      "fixedDurationTemplateMaeRatio": 0.1268,
+      "measuredDurationTemplateMaeRatio": 0.1272,
+      "fixedImprovementOverStaticRatio": 0.0116,
+      "timedImprovementOverStaticRatio": 0.0111
+    },
+    {
+      "subject": "AB12",
+      "rep": 3,
+      "startS": 27.405,
+      "deepestS": 28.79,
+      "endS": 29.605,
+      "durationS": 2.2,
+      "observedPeakKneeFlexionDeg": 113.12,
+      "observedMinMaxWeightRatio": [
+        0.632,
+        1.324
+      ],
+      "observedPeakPhase": 0.62,
+      "staticWeightMaeRatio": 0.1373,
+      "fixedDurationTemplateMaeRatio": 0.1308,
+      "measuredDurationTemplateMaeRatio": 0.1362,
+      "fixedImprovementOverStaticRatio": 0.0065,
+      "timedImprovementOverStaticRatio": 0.0011
+    },
+    {
+      "subject": "AB13",
+      "rep": 1,
+      "startS": 34.555,
+      "deepestS": 35.815,
+      "endS": 36.86,
+      "durationS": 2.305,
+      "observedPeakKneeFlexionDeg": 118.95,
+      "observedMinMaxWeightRatio": [
+        0.756,
+        1.429
+      ],
+      "observedPeakPhase": 0.55,
+      "staticWeightMaeRatio": 0.1302,
+      "fixedDurationTemplateMaeRatio": 0.1069,
+      "measuredDurationTemplateMaeRatio": 0.1031,
+      "fixedImprovementOverStaticRatio": 0.0232,
+      "timedImprovementOverStaticRatio": 0.0271
+    },
+    {
+      "subject": "AB13",
+      "rep": 2,
+      "startS": 36.86,
+      "deepestS": 38.24,
+      "endS": 39.645,
+      "durationS": 2.785,
+      "observedPeakKneeFlexionDeg": 115.88,
+      "observedMinMaxWeightRatio": [
+        0.758,
+        1.345
+      ],
+      "observedPeakPhase": 0.5,
+      "staticWeightMaeRatio": 0.104,
+      "fixedDurationTemplateMaeRatio": 0.0968,
+      "measuredDurationTemplateMaeRatio": 0.0968,
+      "fixedImprovementOverStaticRatio": 0.0072,
+      "timedImprovementOverStaticRatio": 0.0072
+    },
+    {
+      "subject": "AB13",
+      "rep": 3,
+      "startS": 39.645,
+      "deepestS": 40.815,
+      "endS": 42.08,
+      "durationS": 2.435,
+      "observedPeakKneeFlexionDeg": 96.71,
+      "observedMinMaxWeightRatio": [
+        0.828,
+        1.195
+      ],
+      "observedPeakPhase": 0.45,
+      "staticWeightMaeRatio": 0.0923,
+      "fixedDurationTemplateMaeRatio": 0.0641,
+      "measuredDurationTemplateMaeRatio": 0.0578,
+      "fixedImprovementOverStaticRatio": 0.0282,
+      "timedImprovementOverStaticRatio": 0.0345
+    }
+  ]
+}

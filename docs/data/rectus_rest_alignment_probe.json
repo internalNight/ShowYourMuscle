@@ -1,0 +1,94 @@
+{
+  "status": "static_mesh_to_model_path_probe_only",
+  "mesh": "Rectus femoris muscle.r",
+  "opensimMuscle": "rect_fem_r",
+  "vertexCount": 4136,
+  "meshHeightRangeM": [
+    0.4066551923751831,
+    0.9519832730293274
+  ],
+  "meshLongitudinalExtentM": 0.5453280806541443,
+  "opensimPathLengthM": 0.5227041176299673,
+  "samples": [
+    {
+      "fractionFromProximal": 0.05,
+      "meshCenterM": [
+        -0.12158723920583725,
+        -0.07321873307228088,
+        0.9255268573760986
+      ],
+      "opensimPathM": [
+        -0.1225949376821518,
+        -0.04884149879217148,
+        0.9048377871513367
+      ],
+      "centerDistanceM": 0.031989102270402185,
+      "sliceVertexCount": 227
+    },
+    {
+      "fractionFromProximal": 0.25,
+      "meshCenterM": [
+        -0.12820538878440857,
+        -0.08929146081209183,
+        0.8155876994132996
+      ],
+      "opensimPathM": [
+        -0.11677902936935425,
+        -0.07009053975343704,
+        0.8026446104049683
+      ],
+      "centerDistanceM": 0.02582170805139043,
+      "sliceVertexCount": 129
+    },
+    {
+      "fractionFromProximal": 0.5,
+      "meshCenterM": [
+        -0.12210243195295334,
+        -0.11304674297571182,
+        0.6794707775115967
+      ],
+      "opensimPathM": [
+        -0.10950913280248642,
+        -0.0966518297791481,
+        0.6749032139778137
+      ],
+      "centerDistanceM": 0.021171844240076957,
+      "sliceVertexCount": 80
+    },
+    {
+      "fractionFromProximal": 0.75,
+      "meshCenterM": [
+        -0.1037902981042862,
+        -0.08873118460178375,
+        0.5441988706588745
+      ],
+      "opensimPathM": [
+        -0.10223923623561859,
+        -0.12321311980485916,
+        0.5471617579460144
+      ],
+      "centerDistanceM": 0.03464373405083756,
+      "sliceVertexCount": 63
+    },
+    {
+      "fractionFromProximal": 0.95,
+      "meshCenterM": [
+        -0.09650745987892151,
+        -0.07141704857349396,
+        0.43322572112083435
+      ],
+      "opensimPathM": [
+        -0.09756676107645035,
+        -0.1160554587841034,
+        0.44660115242004395
+      ],
+      "centerDistanceM": 0.04661128597453293,
+      "sliceVertexCount": 67
+    }
+  ],
+  "limitations": [
+    "z-slice centroids are not measured muscle attachments",
+    "path fraction is not a verified correspondence to anatomical fibers",
+    "single right-side standing reference only"
+  ]
+}

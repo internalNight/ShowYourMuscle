@@ -1,0 +1,145 @@
+{
+  "status": "research_only_geometric_upper_bone_registration_not_anatomical_fit_or_force",
+  "exercise": "press",
+  "frameCount": 101,
+  "model": "TSM_subject_noWeight.osim",
+  "atlas": "Z-Anatomy CC BY-SA 4.0",
+  "method": "fit humerus top/bottom 5% vertex-slice centroids to shoulder/elbow; fit the shared mean of radius and ulna slice centroids to elbow/hand to preserve their separation; use uniform scale and shortest-arc rotation, then follow each OpenSim body rigid motion",
+  "bones": [
+    {
+      "object": "atlas_Humerus.r_tsm_fit",
+      "atlasSource": "Humerus.r",
+      "modelBody": "humerus",
+      "proximalJoint": "shoulder",
+      "distalJoint": "elbow",
+      "sourceSliceVertexCounts": {
+        "proximal": 247,
+        "distal": 291
+      },
+      "sourceCentroidDistanceM": 0.302554,
+      "uniformScale": 0.815262,
+      "atlasToModelBlenderRows": [
+        [
+          0.7576259375,
+          0.0102211451,
+          -0.3009162247,
+          0.853289187
+        ],
+        [
+          -0.0112917358,
+          0.8151834607,
+          -0.0007404176,
+          -0.0206963327
+        ],
+        [
+          0.3008779585,
+          0.0048558949,
+          0.7576944828,
+          0.4449855089
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "maximumJointProxyResidualM": {
+        "proximal": 0.0,
+        "distal": 0.0
+      }
+    },
+    {
+      "object": "atlas_Radius.r_tsm_fit",
+      "atlasSource": "Radius.r",
+      "modelBody": "radius",
+      "proximalJoint": "elbow",
+      "distalJoint": "hand",
+      "sourceSliceVertexCounts": {
+        "proximal": 84,
+        "distal": 118
+      },
+      "sourceCentroidDistanceM": 0.23239,
+      "uniformScale": 1.059648,
+      "atlasToModelBlenderRows": [
+        [
+          0.9125172496,
+          -0.1106043532,
+          0.5271939039,
+          -0.0080009354
+        ],
+        [
+          -0.1886416972,
+          0.9057836533,
+          0.5165507793,
+          -0.635086298
+        ],
+        [
+          -0.5045602322,
+          -0.5386808515,
+          0.7603264451,
+          0.2836159468
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "maximumJointProxyResidualM": {
+        "proximal": 0.019079,
+        "distal": 0.014803
+      }
+    },
+    {
+      "object": "atlas_Ulna.r_tsm_fit",
+      "atlasSource": "Ulna.r",
+      "modelBody": "ulna",
+      "proximalJoint": "elbow",
+      "distalJoint": "hand",
+      "sourceSliceVertexCounts": {
+        "proximal": 68,
+        "distal": 60
+      },
+      "sourceCentroidDistanceM": 0.254037,
+      "uniformScale": 1.059648,
+      "atlasToModelBlenderRows": [
+        [
+          0.9125172496,
+          -0.1106043532,
+          0.5271939039,
+          -0.0080009354
+        ],
+        [
+          -0.1886416972,
+          0.9057836533,
+          0.5165507793,
+          -0.635086298
+        ],
+        [
+          -0.5045602322,
+          -0.5386808515,
+          0.7603264451,
+          0.2836159468
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "maximumJointProxyResidualM": {
+        "proximal": 0.019079,
+        "distal": 0.014803
+      }
+    }
+  ],
+  "limitations": [
+    "mesh end-slice centroids are geometric proxies, not verified joint surfaces or attachment landmarks",
+    "rotation about each bone long axis is undetermined by two endpoints",
+    "synthetic single-arm bench/press paths are not measured exercises",
+    "muscle meshes, tendon wrapping, individual bone proportions and forces are absent"
+  ]
+}

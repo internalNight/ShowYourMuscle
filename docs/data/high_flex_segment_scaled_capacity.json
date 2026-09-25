@@ -1,0 +1,284 @@
+{
+  "status": "research_only_segment_scaled_independent_hip_capacity_screen",
+  "model": "RajagopalLaiUhlrich2023.osim",
+  "candidateRepositoryRevision": "d9b05d470b1a481c222372c85b75772faf8f7792",
+  "scaleDefinition": "first-frame source/candidate hip-center width, effective hip-knee, knee-ankle, ankle-MTP ratios; uniform factor per affected body; total mass matched to source model",
+  "capacityDefinition": "same-direction moment arms times generic maximum isometric force; independent per hip; no force-length or multijoint feasibility",
+  "passiveDefinition": "candidate muscle fiber passive force along tendon after static equilibration at 1% activation and zero speed, multiplied by signed moment arm; subtracted from replayed ID demand before comparing with optimistic active capacity",
+  "limitations": [
+    "joint-center distances from a different model are imperfect anatomy proxies",
+    "knee functions and local joint frames differ; match checked only in sampled poses",
+    "pelvis scaling is uniform from hip width, not full pelvis measurement",
+    "upper body and segment masses are not individually calibrated",
+    "candidate maximum muscle forces remain generic after scaling",
+    "static passive forces exclude movement-speed damping and ligament or other passive joint structures",
+    "source moment units are strongly supported by no-free-moment ID replay, but exact author processing and AB02 residual are not fully known",
+    "no optimization, ground-contact, external EMG, or individual strength validation"
+  ],
+  "subjects": {
+    "AB01": {
+      "sourceModel": ".cache/lower-limb-raw/AB01/Models/AB01-Scaled1.osim",
+      "sourceIk": ".cache/lower-limb/AB01_ik_50_52.mot",
+      "sourceModelMassKg": 78.85,
+      "candidateScaledMassKg": 78.85,
+      "bodyUniformScaleFactors": {
+        "pelvis": 0.81932,
+        "femur_r": 1.12978,
+        "tibia_r": 1.22471,
+        "talus_r": 1.26388,
+        "calcn_r": 1.26388,
+        "toes_r": 1.26388,
+        "patella_r": 1.12978,
+        "femur_l": 1.12974,
+        "tibia_l": 1.22471,
+        "talus_l": 1.2649,
+        "calcn_l": 1.2649,
+        "toes_l": 1.2649,
+        "patella_l": 1.12974
+      },
+      "maxIsometricForceScaleRatioRange": [
+        1.0,
+        1.0
+      ],
+      "firstFrameDimensionErrorFraction": {
+        "hipCenterWidthM": 0.0,
+        "r.effectiveHipToKneeM": -0.0,
+        "r.tibiaKneeToAnkleM": 0.0,
+        "r.footAnkleToMtpM": -0.0,
+        "l.effectiveHipToKneeM": -0.0,
+        "l.tibiaKneeToAnkleM": 0.0,
+        "l.footAnkleToMtpM": 0.0
+      },
+      "deepFrameMaximumAbsoluteDimensionErrorFraction": {
+        "hipCenterWidthM": 0.0,
+        "r.effectiveHipToKneeM": 0.033769,
+        "r.tibiaKneeToAnkleM": 0.0,
+        "r.footAnkleToMtpM": 0.000803,
+        "l.effectiveHipToKneeM": 0.031211,
+        "l.tibiaKneeToAnkleM": 0.0,
+        "l.footAnkleToMtpM": 0.000282
+      },
+      "matchedDeepFrames": 4,
+      "hipRotation": {
+        "hip_rotation_r": {
+          "frameCount": 4,
+          "exceededFrameCount": 4,
+          "medianDemandToCapacity": 1.436,
+          "minDemandToCapacity": 1.36,
+          "maxDemandToCapacity": 1.51,
+          "absoluteMomentDemandNm": {
+            "median": 37.861,
+            "min": 36.102,
+            "max": 39.571
+          },
+          "optimisticCapacityNm": {
+            "median": 26.37,
+            "min": 26.203,
+            "max": 26.551
+          },
+          "sourceVsScaledAxisCosineMin": 1.0
+        },
+        "hip_rotation_l": {
+          "frameCount": 4,
+          "exceededFrameCount": 4,
+          "medianDemandToCapacity": 1.565,
+          "minDemandToCapacity": 1.47,
+          "maxDemandToCapacity": 1.659,
+          "absoluteMomentDemandNm": {
+            "median": 41.775,
+            "min": 39.503,
+            "max": 44.014
+          },
+          "optimisticCapacityNm": {
+            "median": 26.697,
+            "min": 26.529,
+            "max": 26.88
+          },
+          "sourceVsScaledAxisCosineMin": 1.0
+        }
+      },
+      "replayedIdWithoutForcePlateMomentHipRotation": {
+        "hip_rotation_r": {
+          "frameCount": 4,
+          "exceededFrameCount": 4,
+          "medianDemandToCapacity": 1.436,
+          "minDemandToCapacity": 1.36,
+          "maxDemandToCapacity": 1.51,
+          "absoluteMomentDemandNm": {
+            "median": 37.861,
+            "min": 36.102,
+            "max": 39.571
+          },
+          "restingPassiveMomentNm": {
+            "median": 6.364,
+            "min": 6.154,
+            "max": 6.582
+          },
+          "demandAfterPassiveToOptimisticActiveCapacity": {
+            "frameCount": 4,
+            "exceededFrameCount": 4,
+            "medianDemandToCapacity": 1.677,
+            "minDemandToCapacity": 1.608,
+            "maxDemandToCapacity": 1.745
+          }
+        },
+        "hip_rotation_l": {
+          "frameCount": 4,
+          "exceededFrameCount": 4,
+          "medianDemandToCapacity": 1.565,
+          "minDemandToCapacity": 1.47,
+          "maxDemandToCapacity": 1.659,
+          "absoluteMomentDemandNm": {
+            "median": 41.775,
+            "min": 39.502,
+            "max": 44.014
+          },
+          "restingPassiveMomentNm": {
+            "median": 7.111,
+            "min": 6.88,
+            "max": 7.349
+          },
+          "demandAfterPassiveToOptimisticActiveCapacity": {
+            "frameCount": 4,
+            "exceededFrameCount": 4,
+            "medianDemandToCapacity": 1.831,
+            "minDemandToCapacity": 1.743,
+            "maxDemandToCapacity": 1.918
+          }
+        }
+      }
+    },
+    "AB02": {
+      "sourceModel": ".cache/lower-limb-raw/AB02/Models/AB02-Scaled1.osim",
+      "sourceIk": ".cache/lower-limb/AB02_ik_23_25.mot",
+      "sourceModelMassKg": 82.179,
+      "candidateScaledMassKg": 82.179,
+      "bodyUniformScaleFactors": {
+        "pelvis": 1.00697,
+        "femur_r": 1.04723,
+        "tibia_r": 1.2019,
+        "talus_r": 1.20156,
+        "calcn_r": 1.20156,
+        "toes_r": 1.20156,
+        "patella_r": 1.04723,
+        "femur_l": 1.04531,
+        "tibia_l": 1.2019,
+        "talus_l": 1.20077,
+        "calcn_l": 1.20077,
+        "toes_l": 1.20077,
+        "patella_l": 1.04531
+      },
+      "maxIsometricForceScaleRatioRange": [
+        1.0,
+        1.0
+      ],
+      "firstFrameDimensionErrorFraction": {
+        "hipCenterWidthM": -0.0,
+        "r.effectiveHipToKneeM": 0.0,
+        "r.tibiaKneeToAnkleM": -0.0,
+        "r.footAnkleToMtpM": 0.0,
+        "l.effectiveHipToKneeM": -0.0,
+        "l.tibiaKneeToAnkleM": -0.0,
+        "l.footAnkleToMtpM": -0.0
+      },
+      "deepFrameMaximumAbsoluteDimensionErrorFraction": {
+        "hipCenterWidthM": 0.0,
+        "r.effectiveHipToKneeM": 0.014641,
+        "r.tibiaKneeToAnkleM": 0.0,
+        "r.footAnkleToMtpM": 0.000942,
+        "l.effectiveHipToKneeM": 0.014613,
+        "l.tibiaKneeToAnkleM": 0.0,
+        "l.footAnkleToMtpM": 0.00051
+      },
+      "matchedDeepFrames": 21,
+      "hipRotation": {
+        "hip_rotation_r": {
+          "frameCount": 21,
+          "exceededFrameCount": 21,
+          "medianDemandToCapacity": 2.0,
+          "minDemandToCapacity": 1.876,
+          "maxDemandToCapacity": 2.038,
+          "absoluteMomentDemandNm": {
+            "median": 52.212,
+            "min": 48.855,
+            "max": 53.049
+          },
+          "optimisticCapacityNm": {
+            "median": 26.05,
+            "min": 25.986,
+            "max": 26.49
+          },
+          "sourceVsScaledAxisCosineMin": 0.998923
+        },
+        "hip_rotation_l": {
+          "frameCount": 21,
+          "exceededFrameCount": 21,
+          "medianDemandToCapacity": 1.552,
+          "minDemandToCapacity": 1.483,
+          "maxDemandToCapacity": 1.572,
+          "absoluteMomentDemandNm": {
+            "median": 49.241,
+            "min": 46.806,
+            "max": 49.849
+          },
+          "optimisticCapacityNm": {
+            "median": 31.661,
+            "min": 31.542,
+            "max": 32.121
+          },
+          "sourceVsScaledAxisCosineMin": 0.998867
+        }
+      },
+      "replayedIdWithoutForcePlateMomentHipRotation": {
+        "hip_rotation_r": {
+          "frameCount": 21,
+          "exceededFrameCount": 21,
+          "medianDemandToCapacity": 1.92,
+          "minDemandToCapacity": 1.801,
+          "maxDemandToCapacity": 1.956,
+          "absoluteMomentDemandNm": {
+            "median": 50.116,
+            "min": 46.894,
+            "max": 50.919
+          },
+          "restingPassiveMomentNm": {
+            "median": 4.931,
+            "min": 4.889,
+            "max": 5.109
+          },
+          "demandAfterPassiveToOptimisticActiveCapacity": {
+            "frameCount": 21,
+            "exceededFrameCount": 21,
+            "medianDemandToCapacity": 2.109,
+            "minDemandToCapacity": 1.993,
+            "maxDemandToCapacity": 2.144
+          }
+        },
+        "hip_rotation_l": {
+          "frameCount": 21,
+          "exceededFrameCount": 21,
+          "medianDemandToCapacity": 1.49,
+          "minDemandToCapacity": 1.424,
+          "maxDemandToCapacity": 1.509,
+          "absoluteMomentDemandNm": {
+            "median": 47.264,
+            "min": 44.927,
+            "max": 47.848
+          },
+          "restingPassiveMomentNm": {
+            "median": 9.402,
+            "min": 9.338,
+            "max": 9.832
+          },
+          "demandAfterPassiveToOptimisticActiveCapacity": {
+            "frameCount": 21,
+            "exceededFrameCount": 21,
+            "medianDemandToCapacity": 1.789,
+            "minDemandToCapacity": 1.721,
+            "maxDemandToCapacity": 1.806
+          }
+        }
+      }
+    }
+  }
+}

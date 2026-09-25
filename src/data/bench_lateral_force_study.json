@@ -1,0 +1,12 @@
+{
+  "source": "https://doi.org/10.3389/fphys.2024.1393235",
+  "supplement": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11224528/supplementaryFiles?includeInlineImage=false",
+  "supplementPdfMd5": "a50a7647613d61e5e84eb4a35282feda",
+  "table": "Supplementary Table S3",
+  "participants": 10,
+  "barbellKg": 16,
+  "assumedVerticalForcePerHandN": 78.48,
+  "forceDirection": "Positive means hand presses laterally on the barbell",
+  "subjectMeanHorizontalForceN": [71.8, -49.0, 64.7, 20.1, 3.2, 90.9, 11.2, -15.2, 17.1, -34.4],
+  "subjectMeanLateralPercentOfAssumedVertical": [91.5, -62.4, 82.4, 25.6, 4.1, 115.8, 14.3, -19.4, 21.8, -43.8]
+}

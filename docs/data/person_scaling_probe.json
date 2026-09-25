@@ -1,0 +1,108 @@
+{
+  "status": "single_leg_anthropometric_scaling_probe_only",
+  "model": "squatToStand_3dof9musc.osim",
+  "poseFrame": 50,
+  "cases": [
+    {
+      "heightCm": 175,
+      "personWeightKg": 72,
+      "singleSideTargetMassKg": 36.0,
+      "singleSideActualMassKg": 36.0,
+      "bodyMassesKg": {
+        "torso": 14.217580638037894,
+        "pelvis": 6.241582875734244,
+        "femur_r": 9.859125237387195,
+        "tibia_r": 3.92980699868977
+      },
+      "femurLengthM": 0.4080494727358435,
+      "tibiaLengthM": 0.39103862657248284,
+      "vastusPathM": 0.3446860268853021,
+      "vastusKneeMomentArmM": 0.01994733019984956
+    },
+    {
+      "heightCm": 175,
+      "personWeightKg": 90,
+      "singleSideTargetMassKg": 45.0,
+      "singleSideActualMassKg": 45.0,
+      "bodyMassesKg": {
+        "torso": 17.77197579754737,
+        "pelvis": 7.801978594667806,
+        "femur_r": 12.323906546733994,
+        "tibia_r": 4.912258748362213
+      },
+      "femurLengthM": 0.4080494727358435,
+      "tibiaLengthM": 0.39103862657248284,
+      "vastusPathM": 0.3446860268853021,
+      "vastusKneeMomentArmM": 0.01994733019984956
+    },
+    {
+      "heightCm": 190,
+      "personWeightKg": 72,
+      "singleSideTargetMassKg": 36.0,
+      "singleSideActualMassKg": 36.0,
+      "bodyMassesKg": {
+        "torso": 14.217580638037893,
+        "pelvis": 6.2415828757342435,
+        "femur_r": 9.859125237387193,
+        "tibia_r": 3.92980699868977
+      },
+      "femurLengthM": 0.4430251418274873,
+      "tibiaLengthM": 0.4245562231358385,
+      "vastusPathM": 0.37423054347547097,
+      "vastusKneeMomentArmM": 0.02165710135983665
+    },
+    {
+      "heightCm": 190,
+      "personWeightKg": 90,
+      "singleSideTargetMassKg": 45.0,
+      "singleSideActualMassKg": 45.0,
+      "bodyMassesKg": {
+        "torso": 17.771975797547366,
+        "pelvis": 7.801978594667805,
+        "femur_r": 12.323906546733992,
+        "tibia_r": 4.912258748362213
+      },
+      "femurLengthM": 0.4430251418274873,
+      "tibiaLengthM": 0.4245562231358385,
+      "vastusPathM": 0.37423054347547097,
+      "vastusKneeMomentArmM": 0.02165710135983665
+    }
+  ],
+  "ratiosToBaseline": [
+    {
+      "singleSideActualMassKg": 1.0,
+      "femurLengthM": 1.0,
+      "tibiaLengthM": 1.0,
+      "vastusPathM": 1.0,
+      "vastusKneeMomentArmM": 1.0
+    },
+    {
+      "singleSideActualMassKg": 1.25,
+      "femurLengthM": 1.0,
+      "tibiaLengthM": 1.0,
+      "vastusPathM": 1.0,
+      "vastusKneeMomentArmM": 1.0
+    },
+    {
+      "singleSideActualMassKg": 1.0,
+      "femurLengthM": 1.0857142857142859,
+      "tibiaLengthM": 1.0857142857142856,
+      "vastusPathM": 1.085714285714286,
+      "vastusKneeMomentArmM": 1.085714285714285
+    },
+    {
+      "singleSideActualMassKg": 1.25,
+      "femurLengthM": 1.0857142857142859,
+      "tibiaLengthM": 1.0857142857142856,
+      "vastusPathM": 1.085714285714286,
+      "vastusKneeMomentArmM": 1.085714285714285
+    }
+  ],
+  "limitations": [
+    "model has one leg and simplified axial bodies",
+    "half-axial mass and symmetric body-weight split are research assumptions",
+    "uniform stature scaling does not identify segment proportions",
+    "muscle strength and body-fat distribution are not personalized",
+    "no validation against measured human motion or forces"
+  ]
+}

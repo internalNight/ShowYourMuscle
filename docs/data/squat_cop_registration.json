@@ -1,0 +1,552 @@
+{
+  "status": "source_coordinate_registration_audit_not_phone_or_muscle_force_validation",
+  "source": "Scherpereel et al. 2023, doi:10.1038/s41597-023-02840-6",
+  "method": "Replay original-marker IK in the source subject-scaled model; project processed force-plate COP minus OpenSim ankle joint origin onto ankle-to-MTP horizontal direction, for stance frames with vertical plate force >=100 N. External sagittal plate moment about the ankle is r_forward*F_vertical - r_vertical*F_forward, omitting plate free moments. Compare two illustrative fixed 6-cm anterior COP scenarios: one retains measured per-foot force and horizontal correction; the other replaces force by half static total weight (body plus 25-lb load when applicable) and drops horizontal force. The 6-cm choice was informed by a prior look at these four clips' COP medians, but was not optimized per frame or subject and is not an independent prediction test. Plausibility range extends from 5 cm behind the ankle to 10 cm beyond the MTP origin, because these joint origins are not heel and toe boundaries.",
+  "limitations": "Only four two-second clips from two people; ankle-to-MTP joint origins approximate the sagittal foot axis; COP is measured while joint centers are model-derived. External plate moment is compared with the source inverse-dynamics net ankle moment using an expected opposite sign, but they need not coincide: foot mass, inertia, passive tissue, plate free moment and other forces are omitted. Fixed-COP scenarios still use experimental IK to locate the ankle and foot axis. No phone-input or individual muscle-force validation.",
+  "cases": [
+    {
+      "subject": "AB01",
+      "load": "0lbs",
+      "intervalS": [
+        50,
+        52
+      ],
+      "feet": {
+        "r": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 17.12,
+            "p05Cm": 16.82,
+            "p95Cm": 17.17,
+            "p05ToP95ExcursionCm": 0.35
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 7.1,
+            "p05Cm": -1.43,
+            "p95Cm": 8.9,
+            "p05ToP95ExcursionCm": 10.33
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": -0.64,
+            "p05Cm": -1.62,
+            "p95Cm": 0.81,
+            "p05ToP95ExcursionCm": 2.43
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": -2.83,
+            "p05Cm": -5.16,
+            "p95Cm": 1.26,
+            "p05ToP95ExcursionCm": 6.42
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": 6.18,
+            "p05Cm": -0.92,
+            "p95Cm": 8.01,
+            "p05ToP95ExcursionCm": 8.92
+          },
+          "verticalForceN": {
+            "median": 385.7
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 25.1,
+            "p05": -3.2,
+            "p95": 57.2
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -1.9
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 1.04,
+            "medianDifference": -0.75,
+            "correlation": 0.999,
+            "sourceMedian": -23.5
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 9.31,
+            "medianDifference": 2.7
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 15.53,
+            "medianDifference": 0.27
+          },
+          "footForwardAxisWorldXZMedian": [
+            -0.512,
+            0.859
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        },
+        "l": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 17.08,
+            "p05Cm": 16.84,
+            "p95Cm": 17.15,
+            "p05ToP95ExcursionCm": 0.31
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 8.18,
+            "p05Cm": -1.49,
+            "p95Cm": 12.17,
+            "p05ToP95ExcursionCm": 13.66
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": -0.66,
+            "p05Cm": -1.47,
+            "p95Cm": -0.03,
+            "p05ToP95ExcursionCm": 1.45
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": 5.04,
+            "p05Cm": -0.65,
+            "p95Cm": 7.22,
+            "p05ToP95ExcursionCm": 7.87
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": 6.23,
+            "p05Cm": -1.23,
+            "p95Cm": 9.81,
+            "p05ToP95ExcursionCm": 11.04
+          },
+          "verticalForceN": {
+            "median": 366.8
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 24.2,
+            "p05": -2.5,
+            "p95": 53.5
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -1.9
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 1.48,
+            "medianDifference": -1.48,
+            "correlation": 1.0,
+            "sourceMedian": -22.4
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 12.65,
+            "medianDifference": 4.58
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 16.11,
+            "medianDifference": -0.85
+          },
+          "footForwardAxisWorldXZMedian": [
+            0.536,
+            0.844
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        }
+      }
+    },
+    {
+      "subject": "AB01",
+      "load": "25lbs",
+      "intervalS": [
+        1,
+        3
+      ],
+      "feet": {
+        "r": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 17.15,
+            "p05Cm": 16.92,
+            "p95Cm": 17.24,
+            "p05ToP95ExcursionCm": 0.33
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 6.6,
+            "p05Cm": -1.89,
+            "p95Cm": 8.83,
+            "p05ToP95ExcursionCm": 10.72
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": -0.71,
+            "p05Cm": -1.39,
+            "p95Cm": 0.7,
+            "p05ToP95ExcursionCm": 2.09
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": -3.2,
+            "p05Cm": -4.56,
+            "p95Cm": 1.52,
+            "p05ToP95ExcursionCm": 6.08
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": 5.55,
+            "p05Cm": -1.26,
+            "p95Cm": 7.87,
+            "p05ToP95ExcursionCm": 9.13
+          },
+          "verticalForceN": {
+            "median": 454.8
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 27.9,
+            "p05": -5.6,
+            "p95": 58.6
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -1.6
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 0.88,
+            "medianDifference": -0.59,
+            "correlation": 0.999,
+            "sourceMedian": -26.4
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 11.72,
+            "medianDifference": 1.13
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 17.16,
+            "medianDifference": -0.11
+          },
+          "footForwardAxisWorldXZMedian": [
+            -0.565,
+            0.825
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        },
+        "l": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 17.09,
+            "p05Cm": 16.88,
+            "p95Cm": 17.19,
+            "p05ToP95ExcursionCm": 0.31
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 8.29,
+            "p05Cm": -1.47,
+            "p95Cm": 13.07,
+            "p05ToP95ExcursionCm": 14.53
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": -0.73,
+            "p05Cm": -1.84,
+            "p95Cm": 0.17,
+            "p05ToP95ExcursionCm": 2.0
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": 4.81,
+            "p05Cm": -0.21,
+            "p95Cm": 7.29,
+            "p05ToP95ExcursionCm": 7.51
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": 6.83,
+            "p05Cm": -1.61,
+            "p95Cm": 10.87,
+            "p05ToP95ExcursionCm": 12.48
+          },
+          "verticalForceN": {
+            "median": 429.8
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 26.3,
+            "p05": -4.8,
+            "p95": 58.6
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -2.2
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 1.56,
+            "medianDifference": -1.49,
+            "correlation": 1.0,
+            "sourceMedian": -24.0
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 16.03,
+            "medianDifference": 4.31
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 19.29,
+            "medianDifference": -2.49
+          },
+          "footForwardAxisWorldXZMedian": [
+            0.498,
+            0.867
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        }
+      }
+    },
+    {
+      "subject": "AB02",
+      "load": "0lbs",
+      "intervalS": [
+        23,
+        25
+      ],
+      "feet": {
+        "r": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 16.09,
+            "p05Cm": 15.24,
+            "p95Cm": 16.38,
+            "p05ToP95ExcursionCm": 1.14
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 5.05,
+            "p05Cm": 0.81,
+            "p95Cm": 10.44,
+            "p05ToP95ExcursionCm": 9.63
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": 0.79,
+            "p05Cm": -0.25,
+            "p95Cm": 1.82,
+            "p05ToP95ExcursionCm": 2.07
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": 2.69,
+            "p05Cm": 0.23,
+            "p95Cm": 5.46,
+            "p05ToP95ExcursionCm": 5.23
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": -4.28,
+            "p05Cm": -9.08,
+            "p95Cm": -0.67,
+            "p05ToP95ExcursionCm": 8.41
+          },
+          "verticalForceN": {
+            "median": 461.2
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 22.7,
+            "p05": 2.9,
+            "p95": 44.9
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": 0.1
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 0.96,
+            "medianDifference": -0.86,
+            "correlation": 0.999,
+            "sourceMedian": -21.9
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 10.43,
+            "medianDifference": -4.25
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 12.59,
+            "medianDifference": -2.23
+          },
+          "footForwardAxisWorldXZMedian": [
+            0.353,
+            -0.936
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        },
+        "l": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 16.0,
+            "p05Cm": 15.15,
+            "p95Cm": 16.28,
+            "p05ToP95ExcursionCm": 1.13
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 5.82,
+            "p05Cm": 2.86,
+            "p95Cm": 9.82,
+            "p05ToP95ExcursionCm": 6.95
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": -0.02,
+            "p05Cm": -0.99,
+            "p95Cm": 0.61,
+            "p05ToP95ExcursionCm": 1.6
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": -1.49,
+            "p05Cm": -3.03,
+            "p95Cm": -0.13,
+            "p05ToP95ExcursionCm": 2.9
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": -5.63,
+            "p05Cm": -9.41,
+            "p95Cm": -2.9,
+            "p05ToP95ExcursionCm": 6.51
+          },
+          "verticalForceN": {
+            "median": 383.6
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 22.0,
+            "p05": 8.0,
+            "p95": 39.7
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -0.5
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 1.79,
+            "medianDifference": -1.85,
+            "correlation": 0.995,
+            "sourceMedian": -20.3
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 5.92,
+            "medianDifference": -2.55
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 9.27,
+            "medianDifference": -3.84
+          },
+          "footForwardAxisWorldXZMedian": [
+            -0.221,
+            -0.975
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        }
+      }
+    },
+    {
+      "subject": "AB02",
+      "load": "25lbs",
+      "intervalS": [
+        1,
+        3
+      ],
+      "feet": {
+        "r": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 16.1,
+            "p05Cm": 15.31,
+            "p95Cm": 16.33,
+            "p05ToP95ExcursionCm": 1.02
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 5.61,
+            "p05Cm": 0.74,
+            "p95Cm": 11.08,
+            "p05ToP95ExcursionCm": 10.34
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": 0.34,
+            "p05Cm": -0.14,
+            "p95Cm": 1.41,
+            "p05ToP95ExcursionCm": 1.55
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": 1.81,
+            "p05Cm": 0.17,
+            "p95Cm": 4.05,
+            "p05ToP95ExcursionCm": 3.88
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": -5.33,
+            "p05Cm": -10.37,
+            "p95Cm": -0.69,
+            "p05ToP95ExcursionCm": 9.68
+          },
+          "verticalForceN": {
+            "median": 507.0
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 29.7,
+            "p05": 4.8,
+            "p95": 52.2
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -0.2
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 0.96,
+            "medianDifference": -0.87,
+            "correlation": 0.999,
+            "sourceMedian": -29.3
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 15.2,
+            "medianDifference": -2.77
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 15.74,
+            "medianDifference": 1.74
+          },
+          "footForwardAxisWorldXZMedian": [
+            0.267,
+            -0.964
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        },
+        "l": {
+          "stanceFrames": 401,
+          "ankleToMtp": {
+            "medianCm": 16.01,
+            "p05Cm": 15.3,
+            "p95Cm": 16.27,
+            "p05ToP95ExcursionCm": 0.97
+          },
+          "copForwardFromAnkle": {
+            "medianCm": 5.23,
+            "p05Cm": 1.31,
+            "p95Cm": 9.48,
+            "p05ToP95ExcursionCm": 8.17
+          },
+          "copLateralFromFootAxis": {
+            "medianCm": 0.08,
+            "p05Cm": -0.65,
+            "p95Cm": 0.62,
+            "p05ToP95ExcursionCm": 1.27
+          },
+          "copWorldXFromAnkle": {
+            "medianCm": -1.09,
+            "p05Cm": -2.74,
+            "p95Cm": 0.29,
+            "p05ToP95ExcursionCm": 3.03
+          },
+          "copWorldZFromAnkle": {
+            "medianCm": -5.05,
+            "p05Cm": -9.19,
+            "p95Cm": -1.42,
+            "p05ToP95ExcursionCm": 7.77
+          },
+          "verticalForceN": {
+            "median": 446.4
+          },
+          "plateExternalSagittalMomentAboutAnkleNm": {
+            "median": 26.0,
+            "p05": 6.3,
+            "p95": 40.6
+          },
+          "horizontalPlateForceMomentCorrectionNm": {
+            "median": -0.2
+          },
+          "negativePlateMomentVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 1.9,
+            "medianDifference": -2.06,
+            "correlation": 0.998,
+            "sourceMedian": -24.5
+          },
+          "fixedCop6cmMeasuredForceVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 10.88,
+            "medianDifference": -5.06
+          },
+          "fixedCop6cmStaticHalfWeightVsSourceNetAnkleNm": {
+            "meanAbsoluteDifference": 11.36,
+            "medianDifference": -3.03
+          },
+          "footForwardAxisWorldXZMedian": [
+            -0.223,
+            -0.975
+          ],
+          "fractionCopWithinExtendedFootRange": 1.0
+        }
+      }
+    }
+  ]
+}

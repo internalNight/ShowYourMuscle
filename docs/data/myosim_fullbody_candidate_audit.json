@@ -1,0 +1,141 @@
+{
+  "status": "full_body_candidate_compilation_and_range_audit_only",
+  "source": "https://github.com/MyoHub/myo_sim",
+  "revision": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b",
+  "repositoryLicense": "Apache-2.0 on MyoSim repository; upstream MoBL-derived arm model rights unresolved for commercial use",
+  "backend": "MuJoCo",
+  "counts": {
+    "generalizedCoordinatesNq": 129,
+    "velocityCoordinatesNv": 128,
+    "bodiesIncludingWorld": 104,
+    "joints": 123,
+    "geometries": 412,
+    "meshAssets": 104,
+    "meshVertices": 166345,
+    "meshFaces": 329974,
+    "muscleActuators": 416,
+    "tendons": 424,
+    "tendonDrivenActuators": 416,
+    "sites": 2042,
+    "sensors": 110,
+    "defaultPoseContacts": 2
+  },
+  "defaultPoseModelMassKg": 84.265,
+  "transmissionTypes": {
+    "3": 416
+  },
+  "ab01DeepSquat": {
+    "timeS": 51.32,
+    "source": "AB01 experimental IK fitted to a different gait2354 model",
+    "rangeChecks": [
+      {
+        "coordinate": "hip_flexion_r",
+        "opensimIkDeg": 103.385,
+        "myosimRangeDeg": [
+          -30.0,
+          120.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": false
+      },
+      {
+        "coordinate": "hip_adduction_r",
+        "opensimIkDeg": -20.743,
+        "myosimRangeDeg": [
+          -50.0,
+          30.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": false
+      },
+      {
+        "coordinate": "hip_rotation_r",
+        "opensimIkDeg": 20.249,
+        "myosimRangeDeg": [
+          -40.0,
+          40.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": false
+      },
+      {
+        "coordinate": "knee_angle_r",
+        "opensimIkDeg": -142.322,
+        "myosimRangeDeg": [
+          0.0,
+          120.0
+        ],
+        "rangeCheckConvention": "knee flexion magnitude only",
+        "outsideRange": true
+      },
+      {
+        "coordinate": "ankle_angle_r",
+        "opensimIkDeg": 42.392,
+        "myosimRangeDeg": [
+          -40.0,
+          30.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": true
+      },
+      {
+        "coordinate": "hip_flexion_l",
+        "opensimIkDeg": 107.344,
+        "myosimRangeDeg": [
+          -30.0,
+          120.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": false
+      },
+      {
+        "coordinate": "hip_adduction_l",
+        "opensimIkDeg": -19.146,
+        "myosimRangeDeg": [
+          -50.0,
+          30.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": false
+      },
+      {
+        "coordinate": "hip_rotation_l",
+        "opensimIkDeg": 20.889,
+        "myosimRangeDeg": [
+          -40.0,
+          40.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": false
+      },
+      {
+        "coordinate": "knee_angle_l",
+        "opensimIkDeg": -138.662,
+        "myosimRangeDeg": [
+          0.0,
+          120.0
+        ],
+        "rangeCheckConvention": "knee flexion magnitude only",
+        "outsideRange": true
+      },
+      {
+        "coordinate": "ankle_angle_l",
+        "opensimIkDeg": 38.306,
+        "myosimRangeDeg": [
+          -40.0,
+          30.0
+        ],
+        "rangeCheckConvention": "raw angle; coordinate axes not yet aligned",
+        "outsideRange": true
+      }
+    ],
+    "cannotReplayDirectly": true,
+    "reasons": [
+      "AB01 knees flex about 142 and 139 degrees, beyond MyoSim's 120-degree knee range",
+      "OpenSim knee angle sign differs and joint coordinate axes need alignment",
+      "MyoSim geometry and mass have not been scaled to AB01",
+      "instrumented barbell and hand grip are absent"
+    ]
+  },
+  "productDecision": "local research candidate only; do not bundle or publish until upstream model rights and physics validation are resolved"
+}

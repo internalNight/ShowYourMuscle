@@ -1,0 +1,64 @@
+{
+  "subject": "AB01",
+  "condition": "25lbs",
+  "interval_s": [
+    1.0,
+    3.0
+  ],
+  "source": "Scherpereel et al. 2023 original marker TRC, scaled OpenSim model, original force-plate MOT and raw Joint_Moments.csv",
+  "method": "OpenSim 4.6; all 35 model markers equally weighted; source external loads applied to each calcaneus; 6 Hz low-pass coordinate filter; muscle forces excluded; errors evaluated 0.4 s from interval edges",
+  "samples": 401,
+  "coordinates": {
+    "hip_flexion_r": {
+      "mae_deg": 0.004,
+      "p90_abs_deg": 0.015
+    },
+    "knee_angle_r": {
+      "mae_deg": 0.001,
+      "p90_abs_deg": 0.003
+    },
+    "ankle_angle_r": {
+      "mae_deg": 0.005,
+      "p90_abs_deg": 0.016
+    },
+    "hip_flexion_l": {
+      "mae_deg": 0.005,
+      "p90_abs_deg": 0.018
+    },
+    "knee_angle_l": {
+      "mae_deg": 0.001,
+      "p90_abs_deg": 0.004
+    },
+    "ankle_angle_l": {
+      "mae_deg": 0.007,
+      "p90_abs_deg": 0.025
+    }
+  },
+  "moments": {
+    "hip_flexion_r_moment": {
+      "released_raw_csv_median_abs": 0.861,
+      "processed_filtered_vs_raw_mae": 0.0212,
+      "replay_id_median_abs_nm": 53.0,
+      "csv_times_mass_median_abs_nm": 67.91,
+      "mae_if_csv_is_nm": 47.9,
+      "mae_if_csv_is_nm_per_kg": 19.34
+    },
+    "knee_angle_r_moment": {
+      "released_raw_csv_median_abs": 1.244,
+      "processed_filtered_vs_raw_mae": 0.0176,
+      "replay_id_median_abs_nm": 113.36,
+      "csv_times_mass_median_abs_nm": 98.15,
+      "mae_if_csv_is_nm": 122.49,
+      "mae_if_csv_is_nm_per_kg": 13.89
+    },
+    "ankle_angle_r_moment": {
+      "released_raw_csv_median_abs": 0.45,
+      "processed_filtered_vs_raw_mae": 0.004,
+      "replay_id_median_abs_nm": 31.81,
+      "csv_times_mass_median_abs_nm": 35.54,
+      "mae_if_csv_is_nm": 29.74,
+      "mae_if_csv_is_nm_per_kg": 12.17
+    }
+  },
+  "mass_kg": 78.9
+}

@@ -1,0 +1,172 @@
+{
+  "status": "research_seated_press_phase_mean_emg_not_standing_press_or_muscle_force_validation",
+  "source": "Coratella et al. 2022, doi:10.3389/fphys.2022.825880; Zenodo doi:10.5281/zenodo.5744051",
+  "sourceWorkbookMd5": "e8b6c718179c993b0817208341e84130",
+  "sourceLicense": "CC BY 4.0 per Zenodo API record 5744051",
+  "protocol": "Eight participants, seated front barbell military press with approximately 80-degree back support at 80% measured exercise 1RM; six repetitions, 2 s concentric and 2 s eccentric plus brief isometric phase. Workbook rows 2-9 contain one participant-level normalized EMG mean per exercise and phase; source rows 12-13 reconcile as mean and sample SD. This audit makes within-person paired comparisons without pretending eight means are time series.",
+  "unit": "percent of each muscle's maximal voluntary isometric excitation RMS (phase-averaged nRMS); differences are percentage points",
+  "limitations": [
+    "The source press was seated with a backrest, not the app's standing strict press.",
+    "The workbook has only phase averages, no raw synchronized EMG, joint kinematics, barbell motion, hand force, bench contact or individual muscle force.",
+    "Electrical activity is not muscle tension, muscle force, or a validated personal excitation prediction.",
+    "Eight participants are insufficient to infer a universal muscle ordering or user-specific highlighting."
+  ],
+  "muscles": {
+    "pectoralis_clavicular": {
+      "participants": 8,
+      "frontBarbellConcentricMeanPctReference": 70.09,
+      "frontBarbellEccentricMeanPctReference": 40.03,
+      "frontConcentricMinusEccentric": {
+        "medianDifferencePercentagePoints": 31.75,
+        "meanDifferencePercentagePoints": 30.06,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      },
+      "frontMinusBehindBarbellConcentric": {
+        "medianDifferencePercentagePoints": 12.4,
+        "meanDifferencePercentagePoints": 12.05,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      },
+      "frontBarbellMinusFrontMachineConcentric": {
+        "medianDifferencePercentagePoints": 8.91,
+        "meanDifferencePercentagePoints": 8.26,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      }
+    },
+    "triceps_lateral": {
+      "participants": 8,
+      "frontBarbellConcentricMeanPctReference": 89.69,
+      "frontBarbellEccentricMeanPctReference": 65.05,
+      "frontConcentricMinusEccentric": {
+        "medianDifferencePercentagePoints": 24.68,
+        "meanDifferencePercentagePoints": 24.64,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      },
+      "frontMinusBehindBarbellConcentric": {
+        "medianDifferencePercentagePoints": 1.29,
+        "meanDifferencePercentagePoints": 1.48,
+        "peopleHigher": 5,
+        "peopleLower": 3,
+        "peopleTied": 0
+      },
+      "frontBarbellMinusFrontMachineConcentric": {
+        "medianDifferencePercentagePoints": -6.83,
+        "meanDifferencePercentagePoints": -5.82,
+        "peopleHigher": 1,
+        "peopleLower": 7,
+        "peopleTied": 0
+      }
+    },
+    "trapezius_upper": {
+      "participants": 8,
+      "frontBarbellConcentricMeanPctReference": 53.17,
+      "frontBarbellEccentricMeanPctReference": 28.05,
+      "frontConcentricMinusEccentric": {
+        "medianDifferencePercentagePoints": 25.81,
+        "meanDifferencePercentagePoints": 25.12,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      },
+      "frontMinusBehindBarbellConcentric": {
+        "medianDifferencePercentagePoints": 0.3,
+        "meanDifferencePercentagePoints": 0.7,
+        "peopleHigher": 4,
+        "peopleLower": 0,
+        "peopleTied": 4
+      },
+      "frontBarbellMinusFrontMachineConcentric": {
+        "medianDifferencePercentagePoints": 0.0,
+        "meanDifferencePercentagePoints": -0.13,
+        "peopleHigher": 3,
+        "peopleLower": 2,
+        "peopleTied": 3
+      }
+    },
+    "deltoid_anterior": {
+      "participants": 8,
+      "frontBarbellConcentricMeanPctReference": 86.09,
+      "frontBarbellEccentricMeanPctReference": 45.11,
+      "frontConcentricMinusEccentric": {
+        "medianDifferencePercentagePoints": 42.16,
+        "meanDifferencePercentagePoints": 40.99,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      },
+      "frontMinusBehindBarbellConcentric": {
+        "medianDifferencePercentagePoints": -2.41,
+        "meanDifferencePercentagePoints": -5.6,
+        "peopleHigher": 1,
+        "peopleLower": 7,
+        "peopleTied": 0
+      },
+      "frontBarbellMinusFrontMachineConcentric": {
+        "medianDifferencePercentagePoints": 5.93,
+        "meanDifferencePercentagePoints": 3.0,
+        "peopleHigher": 6,
+        "peopleLower": 2,
+        "peopleTied": 0
+      }
+    },
+    "deltoid_middle": {
+      "participants": 8,
+      "frontBarbellConcentricMeanPctReference": 57.71,
+      "frontBarbellEccentricMeanPctReference": 31.99,
+      "frontConcentricMinusEccentric": {
+        "medianDifferencePercentagePoints": 26.85,
+        "meanDifferencePercentagePoints": 25.71,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      },
+      "frontMinusBehindBarbellConcentric": {
+        "medianDifferencePercentagePoints": -24.07,
+        "meanDifferencePercentagePoints": -24.67,
+        "peopleHigher": 0,
+        "peopleLower": 8,
+        "peopleTied": 0
+      },
+      "frontBarbellMinusFrontMachineConcentric": {
+        "medianDifferencePercentagePoints": 15.6,
+        "meanDifferencePercentagePoints": 16.61,
+        "peopleHigher": 8,
+        "peopleLower": 0,
+        "peopleTied": 0
+      }
+    },
+    "deltoid_posterior": {
+      "participants": 8,
+      "frontBarbellConcentricMeanPctReference": 28.62,
+      "frontBarbellEccentricMeanPctReference": 23.58,
+      "frontConcentricMinusEccentric": {
+        "medianDifferencePercentagePoints": 6.74,
+        "meanDifferencePercentagePoints": 5.04,
+        "peopleHigher": 6,
+        "peopleLower": 2,
+        "peopleTied": 0
+      },
+      "frontMinusBehindBarbellConcentric": {
+        "medianDifferencePercentagePoints": -46.5,
+        "meanDifferencePercentagePoints": -46.8,
+        "peopleHigher": 0,
+        "peopleLower": 8,
+        "peopleTied": 0
+      },
+      "frontBarbellMinusFrontMachineConcentric": {
+        "medianDifferencePercentagePoints": 6.88,
+        "meanDifferencePercentagePoints": 6.86,
+        "peopleHigher": 7,
+        "peopleLower": 1,
+        "peopleTied": 0
+      }
+    }
+  }
+}

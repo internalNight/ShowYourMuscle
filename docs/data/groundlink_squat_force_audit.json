@@ -1,0 +1,360 @@
+{
+  "status": "external_dataset_force_only_audit_not_app_prediction_validation",
+  "source": "https://csr.bu.edu/groundlink/",
+  "paper": "https://arxiv.org/html/2310.03930",
+  "method": "Read the original seven public force ZIPs without unpickling; extract the two-foot xyz GRF and CoP float storages. Multiply recorded GRF by 1000 before dividing summed vertical support by the paper’s subject mass times 9.80665; kN scale is inferred from the standing body-weight check, not documented in a field dictionary. Compute 5th–95th percentile excursion of force-weighted two-foot CoP on global X and Y; both feet must exceed 5% body weight. No rep segmentation, pose matching, or model fitting.",
+  "summary": {
+    "subjects": 7,
+    "trials": 21,
+    "durationS": {
+      "median": 10.936,
+      "min": 9.452,
+      "max": 18.004
+    },
+    "subjectMedianSupportRatio": {
+      "median": 1.0187,
+      "min": 0.9686,
+      "max": 1.1042
+    },
+    "subjectMedianStaticBaselineMaeRatio": {
+      "median": 0.0733,
+      "min": 0.0612,
+      "max": 0.1336
+    },
+    "subjectMedianCopXExcursionCm": {
+      "median": 6.33,
+      "min": 5.2,
+      "max": 8.54
+    },
+    "subjectMedianCopYExcursionCm": {
+      "median": 4.09,
+      "min": 2.51,
+      "max": 6.45
+    }
+  },
+  "limitations": [
+    "GroundLink squats are unloaded and include entire trials, not segmented repetitions.",
+    "GRF kN scale is inferred from the body-weight support check, not confirmed by a source field dictionary; it is not an individual muscle force.",
+    "Global X/Y CoP axes are not registered to each subject’s foot or ankle and the trial range may include setup/ending portions.",
+    "The app’s 2.8-second pose/COM template cannot be compared frame-by-frame without motion capture alignment. This force-only audit does not validate the app’s predicted GRF or joint moments."
+  ],
+  "subjects": [
+    {
+      "subject": "s001",
+      "massKg": 69.86,
+      "trials": 3,
+      "medianSupportRatio": 1.016,
+      "medianStaticBaselineMaeRatio": 0.0727,
+      "medianCopXExcursionCm": 5.78,
+      "medianCopYExcursionCm": 4.01
+    },
+    {
+      "subject": "s002",
+      "massKg": 66.68,
+      "trials": 3,
+      "medianSupportRatio": 1.0188,
+      "medianStaticBaselineMaeRatio": 0.0978,
+      "medianCopXExcursionCm": 5.54,
+      "medianCopYExcursionCm": 4.61
+    },
+    {
+      "subject": "s003",
+      "massKg": 53.07,
+      "trials": 3,
+      "medianSupportRatio": 0.9686,
+      "medianStaticBaselineMaeRatio": 0.0612,
+      "medianCopXExcursionCm": 5.2,
+      "medianCopYExcursionCm": 5.86
+    },
+    {
+      "subject": "s004",
+      "massKg": 71.67,
+      "trials": 3,
+      "medianSupportRatio": 1.0187,
+      "medianStaticBaselineMaeRatio": 0.1216,
+      "medianCopXExcursionCm": 7.61,
+      "medianCopYExcursionCm": 6.45
+    },
+    {
+      "subject": "s005",
+      "massKg": 90.7,
+      "trials": 3,
+      "medianSupportRatio": 1.1042,
+      "medianStaticBaselineMaeRatio": 0.1336,
+      "medianCopXExcursionCm": 8.54,
+      "medianCopYExcursionCm": 4.09
+    },
+    {
+      "subject": "s006",
+      "massKg": 48.99,
+      "trials": 3,
+      "medianSupportRatio": 1.0147,
+      "medianStaticBaselineMaeRatio": 0.0673,
+      "medianCopXExcursionCm": 6.33,
+      "medianCopYExcursionCm": 2.51
+    },
+    {
+      "subject": "s007",
+      "massKg": 63.96,
+      "trials": 3,
+      "medianSupportRatio": 1.0321,
+      "medianStaticBaselineMaeRatio": 0.0733,
+      "medianCopXExcursionCm": 6.77,
+      "medianCopYExcursionCm": 3.33
+    }
+  ],
+  "trials": [
+    {
+      "subject": "s001",
+      "member": "s001/s001_20220513_squat_2.npy",
+      "samples": 3772,
+      "durationS": 15.088,
+      "medianSupportRatioToBodyWeight": 1.0164,
+      "staticWeightBaselineMaeRatio": 0.0684,
+      "supportP05ToP95RatioRange": 0.3763,
+      "twoFootValidFraction": 0.9984,
+      "combinedCopXExcursionCm": 5.86,
+      "combinedCopYExcursionCm": 4.01
+    },
+    {
+      "subject": "s001",
+      "member": "s001/s001_20220513_squat_3.npy",
+      "samples": 3697,
+      "durationS": 14.788,
+      "medianSupportRatioToBodyWeight": 1.0159,
+      "staticWeightBaselineMaeRatio": 0.0749,
+      "supportP05ToP95RatioRange": 0.4193,
+      "twoFootValidFraction": 0.9981,
+      "combinedCopXExcursionCm": 5.51,
+      "combinedCopYExcursionCm": 4.87
+    },
+    {
+      "subject": "s001",
+      "member": "s001/s001_20220513_squat_4.npy",
+      "samples": 3603,
+      "durationS": 14.412,
+      "medianSupportRatioToBodyWeight": 1.016,
+      "staticWeightBaselineMaeRatio": 0.0727,
+      "supportP05ToP95RatioRange": 0.4217,
+      "twoFootValidFraction": 0.9983,
+      "combinedCopXExcursionCm": 5.78,
+      "combinedCopYExcursionCm": 3.36
+    },
+    {
+      "subject": "s002",
+      "member": "s002/s002_20220520_squat_1.npy",
+      "samples": 2685,
+      "durationS": 10.74,
+      "medianSupportRatioToBodyWeight": 1.0164,
+      "staticWeightBaselineMaeRatio": 0.0968,
+      "supportP05ToP95RatioRange": 0.473,
+      "twoFootValidFraction": 0.9978,
+      "combinedCopXExcursionCm": 5.87,
+      "combinedCopYExcursionCm": 4.91
+    },
+    {
+      "subject": "s002",
+      "member": "s002/s002_20220520_squat_3.npy",
+      "samples": 2544,
+      "durationS": 10.176,
+      "medianSupportRatioToBodyWeight": 1.0188,
+      "staticWeightBaselineMaeRatio": 0.0978,
+      "supportP05ToP95RatioRange": 0.4917,
+      "twoFootValidFraction": 0.9976,
+      "combinedCopXExcursionCm": 5.17,
+      "combinedCopYExcursionCm": 4.61
+    },
+    {
+      "subject": "s002",
+      "member": "s002/s002_20220520_squat_4.npy",
+      "samples": 2399,
+      "durationS": 9.596,
+      "medianSupportRatioToBodyWeight": 1.0205,
+      "staticWeightBaselineMaeRatio": 0.1015,
+      "supportP05ToP95RatioRange": 0.5056,
+      "twoFootValidFraction": 0.9975,
+      "combinedCopXExcursionCm": 5.54,
+      "combinedCopYExcursionCm": 4.61
+    },
+    {
+      "subject": "s003",
+      "member": "s003/s003_20220523_squat_1.npy",
+      "samples": 4201,
+      "durationS": 16.804,
+      "medianSupportRatioToBodyWeight": 0.9688,
+      "staticWeightBaselineMaeRatio": 0.0612,
+      "supportP05ToP95RatioRange": 0.2597,
+      "twoFootValidFraction": 0.9655,
+      "combinedCopXExcursionCm": 3.9,
+      "combinedCopYExcursionCm": 5.37
+    },
+    {
+      "subject": "s003",
+      "member": "s003/s003_20220523_squat_2.npy",
+      "samples": 4501,
+      "durationS": 18.004,
+      "medianSupportRatioToBodyWeight": 0.9686,
+      "staticWeightBaselineMaeRatio": 0.056,
+      "supportP05ToP95RatioRange": 0.25,
+      "twoFootValidFraction": 0.9589,
+      "combinedCopXExcursionCm": 5.98,
+      "combinedCopYExcursionCm": 7.9
+    },
+    {
+      "subject": "s003",
+      "member": "s003/s003_20220523_squat_3.npy",
+      "samples": 3661,
+      "durationS": 14.644,
+      "medianSupportRatioToBodyWeight": 0.9679,
+      "staticWeightBaselineMaeRatio": 0.0671,
+      "supportP05ToP95RatioRange": 0.2868,
+      "twoFootValidFraction": 0.9675,
+      "combinedCopXExcursionCm": 5.2,
+      "combinedCopYExcursionCm": 5.86
+    },
+    {
+      "subject": "s004",
+      "member": "s004/s004_20220524_squat_1.npy",
+      "samples": 2579,
+      "durationS": 10.316,
+      "medianSupportRatioToBodyWeight": 1.0171,
+      "staticWeightBaselineMaeRatio": 0.1069,
+      "supportP05ToP95RatioRange": 0.6168,
+      "twoFootValidFraction": 0.9977,
+      "combinedCopXExcursionCm": 7.61,
+      "combinedCopYExcursionCm": 8.57
+    },
+    {
+      "subject": "s004",
+      "member": "s004/s004_20220524_squat_3.npy",
+      "samples": 2422,
+      "durationS": 9.688,
+      "medianSupportRatioToBodyWeight": 1.0204,
+      "staticWeightBaselineMaeRatio": 0.1216,
+      "supportP05ToP95RatioRange": 0.6381,
+      "twoFootValidFraction": 0.9971,
+      "combinedCopXExcursionCm": 8.77,
+      "combinedCopYExcursionCm": 6.45
+    },
+    {
+      "subject": "s004",
+      "member": "s004/s004_20220524_squat_4.npy",
+      "samples": 2363,
+      "durationS": 9.452,
+      "medianSupportRatioToBodyWeight": 1.0187,
+      "staticWeightBaselineMaeRatio": 0.1221,
+      "supportP05ToP95RatioRange": 0.6822,
+      "twoFootValidFraction": 0.9975,
+      "combinedCopXExcursionCm": 6.57,
+      "combinedCopYExcursionCm": 4.51
+    },
+    {
+      "subject": "s005",
+      "member": "s005/s005_20220610_squat_1.npy",
+      "samples": 2972,
+      "durationS": 11.888,
+      "medianSupportRatioToBodyWeight": 1.1045,
+      "staticWeightBaselineMaeRatio": 0.1398,
+      "supportP05ToP95RatioRange": 0.4746,
+      "twoFootValidFraction": 0.998,
+      "combinedCopXExcursionCm": 9.41,
+      "combinedCopYExcursionCm": 6.75
+    },
+    {
+      "subject": "s005",
+      "member": "s005/s005_20220610_squat_2.npy",
+      "samples": 2944,
+      "durationS": 11.776,
+      "medianSupportRatioToBodyWeight": 1.1042,
+      "staticWeightBaselineMaeRatio": 0.1336,
+      "supportP05ToP95RatioRange": 0.447,
+      "twoFootValidFraction": 0.998,
+      "combinedCopXExcursionCm": 6.66,
+      "combinedCopYExcursionCm": 4.09
+    },
+    {
+      "subject": "s005",
+      "member": "s005/s005_20220610_squat_3.npy",
+      "samples": 3048,
+      "durationS": 12.192,
+      "medianSupportRatioToBodyWeight": 1.1042,
+      "staticWeightBaselineMaeRatio": 0.129,
+      "supportP05ToP95RatioRange": 0.4076,
+      "twoFootValidFraction": 0.998,
+      "combinedCopXExcursionCm": 8.54,
+      "combinedCopYExcursionCm": 3.98
+    },
+    {
+      "subject": "s006",
+      "member": "s006/s006_20220614_squat_1.npy",
+      "samples": 3346,
+      "durationS": 13.384,
+      "medianSupportRatioToBodyWeight": 1.0147,
+      "staticWeightBaselineMaeRatio": 0.0555,
+      "supportP05ToP95RatioRange": 0.2439,
+      "twoFootValidFraction": 0.9982,
+      "combinedCopXExcursionCm": 6.25,
+      "combinedCopYExcursionCm": 2.77
+    },
+    {
+      "subject": "s006",
+      "member": "s006/s006_20220614_squat_2.npy",
+      "samples": 2598,
+      "durationS": 10.392,
+      "medianSupportRatioToBodyWeight": 1.0149,
+      "staticWeightBaselineMaeRatio": 0.0691,
+      "supportP05ToP95RatioRange": 0.2794,
+      "twoFootValidFraction": 0.9977,
+      "combinedCopXExcursionCm": 6.34,
+      "combinedCopYExcursionCm": 2.01
+    },
+    {
+      "subject": "s006",
+      "member": "s006/s006_20220614_squat_3.npy",
+      "samples": 2564,
+      "durationS": 10.256,
+      "medianSupportRatioToBodyWeight": 1.0141,
+      "staticWeightBaselineMaeRatio": 0.0673,
+      "supportP05ToP95RatioRange": 0.2779,
+      "twoFootValidFraction": 0.9977,
+      "combinedCopXExcursionCm": 6.33,
+      "combinedCopYExcursionCm": 2.51
+    },
+    {
+      "subject": "s007",
+      "member": "s007/s007_20220705_squat_1.npy",
+      "samples": 2459,
+      "durationS": 9.836,
+      "medianSupportRatioToBodyWeight": 1.0304,
+      "staticWeightBaselineMaeRatio": 0.0794,
+      "supportP05ToP95RatioRange": 0.319,
+      "twoFootValidFraction": 0.9976,
+      "combinedCopXExcursionCm": 6.77,
+      "combinedCopYExcursionCm": 4.49
+    },
+    {
+      "subject": "s007",
+      "member": "s007/s007_20220705_squat_2.npy",
+      "samples": 2729,
+      "durationS": 10.916,
+      "medianSupportRatioToBodyWeight": 1.0324,
+      "staticWeightBaselineMaeRatio": 0.0733,
+      "supportP05ToP95RatioRange": 0.2811,
+      "twoFootValidFraction": 0.9978,
+      "combinedCopXExcursionCm": 8.56,
+      "combinedCopYExcursionCm": 3.33
+    },
+    {
+      "subject": "s007",
+      "member": "s007/s007_20220705_squat_3.npy",
+      "samples": 2734,
+      "durationS": 10.936,
+      "medianSupportRatioToBodyWeight": 1.0321,
+      "staticWeightBaselineMaeRatio": 0.0706,
+      "supportP05ToP95RatioRange": 0.2763,
+      "twoFootValidFraction": 0.9978,
+      "combinedCopXExcursionCm": 6.32,
+      "combinedCopYExcursionCm": 3.18
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "research_seated_press_phase_mean_emg_not_standing_press_or_muscle_force_validation",
+  "participants": 8,
+  "muscles": {
+    "pectoralis_clavicular": {
+      "concentricMeanPctReference": 70.09,
+      "eccentricMeanPctReference": 40.03,
+      "participantsConcentricHigher": 8
+    },
+    "deltoid_anterior": {
+      "concentricMeanPctReference": 86.09,
+      "eccentricMeanPctReference": 45.11,
+      "participantsConcentricHigher": 8
+    },
+    "deltoid_middle": {
+      "concentricMeanPctReference": 57.71,
+      "eccentricMeanPctReference": 31.99,
+      "participantsConcentricHigher": 8
+    },
+    "deltoid_posterior": {
+      "concentricMeanPctReference": 28.62,
+      "eccentricMeanPctReference": 23.58,
+      "participantsConcentricHigher": 6
+    },
+    "triceps_lateral": {
+      "concentricMeanPctReference": 89.69,
+      "eccentricMeanPctReference": 65.05,
+      "participantsConcentricHigher": 8
+    },
+    "trapezius_upper": {
+      "concentricMeanPctReference": 53.17,
+      "eccentricMeanPctReference": 28.05,
+      "participantsConcentricHigher": 8
+    }
+  },
+  "sourceUrl": "https://doi.org/10.3389/fphys.2022.825880",
+  "dataUrl": "https://zenodo.org/records/5744051",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+}

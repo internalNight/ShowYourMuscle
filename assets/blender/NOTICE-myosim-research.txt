@@ -1,0 +1,20 @@
+MyoSim full-body candidate: LOCAL RESEARCH ONLY
+
+Source: https://github.com/MyoHub/myo_sim
+Revision audited: 93b0ca8
+Repository license: Apache License 2.0; copy in LICENSE-myosim-apache2.txt.
+
+The local myosim_fullbody_structural_review.blend and PNG are generated from
+the compiled MyoSim full-body model. They are ignored by Git and are not part
+of the mobile app. MyoSim's arm documentation says MyoArm derives from the
+MoBL upper-extremity model. A published MoBL model copy states non-commercial
+terms and requires a separate license for commercial use:
+https://github.com/CEINMS-RT/UpperLimbModel#license
+
+The relationship between the MyoSim repository license and upstream model
+rights has not been resolved. Do not ship or publish the generated files or
+use them in a commercial product until the model rights are clarified.
+
+The 416 muscle paths in the Blender file are static runtime-position
+polylines. They do not represent validated muscle force, activation, or
+personalized anatomy.

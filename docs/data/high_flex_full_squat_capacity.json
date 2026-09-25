@@ -1,0 +1,4213 @@
+{
+  "status": "research_only_measured_ik_id_feasibility_not_personal_force",
+  "source": "AB01 and AB02 original squat IK plus independently replayed no-free-moment ID",
+  "candidate": "RajagopalLaiUhlrich2023 80-muscle model scaled to source joint-center dimensions and total mass",
+  "sampling": "one frame every 20 ms across each two-second window; skip poses beyond candidate knee range",
+  "coordinates": [
+    "hip_flexion_r",
+    "hip_adduction_r",
+    "hip_rotation_r",
+    "knee_angle_r",
+    "ankle_angle_r",
+    "hip_flexion_l",
+    "hip_adduction_l",
+    "hip_rotation_l",
+    "knee_angle_l",
+    "ankle_angle_l"
+  ],
+  "definitions": {
+    "nominal": "minimum common multiplier of all maximum isometric forces to balance ten hip, knee and ankle axes with nonnegative tensions",
+    "passiveAdjusted": "same problem after subtracting model passive fiber-along-tendon moment at one-percent activation and zero coordinate speeds"
+  },
+  "limitations": [
+    "IK and inverse-dynamics torques are measured-data inputs, not predicted from phone measurements",
+    "nominal and passive-adjusted LPs ignore fiber force-length-velocity effects, co-contraction, other joints, and contact mechanics",
+    "candidate strength and muscle paths have no individual calibration; no muscle-force coloring is justified",
+    "twenty-millisecond sampling can miss shorter capacity peaks"
+  ],
+  "subjects": {
+    "AB01": {
+      "totalSampledFrames": 101,
+      "excludedOutsideKneeRange": 5,
+      "excludedTimesS": [
+        51.28,
+        51.3,
+        51.32,
+        51.34,
+        51.36
+      ],
+      "feasibleAtAnyUniformStrength": 96,
+      "nominalStrengthFeasible": 75,
+      "nominalMultiplier": {
+        "minimum": 0.0244,
+        "median": 0.0671,
+        "maximum": 3.5525
+      },
+      "passiveAdjustedMultiplier": {
+        "minimum": 0.0248,
+        "median": 0.1376,
+        "maximum": 3.9514
+      },
+      "minimumKneeAnkleAxisCosine": 0.972304,
+      "frames": [
+        {
+          "timeS": 50.0,
+          "rightKneeFlexionDeg": 48.92,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.987917,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0703,
+            "largestIndependentAxisLowerBound": 0.0549,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0154,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1358,
+            "largestIndependentAxisLowerBound": 0.1358,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.02,
+          "rightKneeFlexionDeg": 44.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.988976,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0483,
+            "largestIndependentAxisLowerBound": 0.0439,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0043,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1289,
+            "largestIndependentAxisLowerBound": 0.1289,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.04,
+          "rightKneeFlexionDeg": 40.69,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.990084,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0459,
+            "largestIndependentAxisLowerBound": 0.0459,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1182,
+            "largestIndependentAxisLowerBound": 0.1182,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.06,
+          "rightKneeFlexionDeg": 36.78,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.990944,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0428,
+            "largestIndependentAxisLowerBound": 0.0428,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1091,
+            "largestIndependentAxisLowerBound": 0.1091,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.08,
+          "rightKneeFlexionDeg": 33.03,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.988879,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0346,
+            "largestIndependentAxisLowerBound": 0.0346,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1018,
+            "largestIndependentAxisLowerBound": 0.1018,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.1,
+          "rightKneeFlexionDeg": 29.47,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98664,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0294,
+            "largestIndependentAxisLowerBound": 0.0294,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.081,
+            "largestIndependentAxisLowerBound": 0.081,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.12,
+          "rightKneeFlexionDeg": 26.19,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98431,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0291,
+            "largestIndependentAxisLowerBound": 0.0277,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0014,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0526,
+            "largestIndependentAxisLowerBound": 0.0453,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0073,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.14,
+          "rightKneeFlexionDeg": 23.25,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981999,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.025,
+            "largestIndependentAxisLowerBound": 0.0219,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.003,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.053,
+            "largestIndependentAxisLowerBound": 0.0437,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0093,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.16,
+          "rightKneeFlexionDeg": 20.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979836,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0335,
+            "largestIndependentAxisLowerBound": 0.0184,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0152,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0509,
+            "largestIndependentAxisLowerBound": 0.0403,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0106,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.18,
+          "rightKneeFlexionDeg": 18.69,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.977936,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.035,
+            "largestIndependentAxisLowerBound": 0.0225,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0125,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0412,
+            "largestIndependentAxisLowerBound": 0.0388,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0024,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.2,
+          "rightKneeFlexionDeg": 17.13,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.976381,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0344,
+            "largestIndependentAxisLowerBound": 0.0259,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0085,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0418,
+            "largestIndependentAxisLowerBound": 0.0418,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.22,
+          "rightKneeFlexionDeg": 16.02,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.975207,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0328,
+            "largestIndependentAxisLowerBound": 0.0205,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0122,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0381,
+            "largestIndependentAxisLowerBound": 0.0347,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0033,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.24,
+          "rightKneeFlexionDeg": 15.31,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.974391,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0325,
+            "largestIndependentAxisLowerBound": 0.0182,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0144,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.039,
+            "largestIndependentAxisLowerBound": 0.0255,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0135,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.26,
+          "rightKneeFlexionDeg": 14.9,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973848,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0294,
+            "largestIndependentAxisLowerBound": 0.019,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0104,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0417,
+            "largestIndependentAxisLowerBound": 0.0332,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0085,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.28,
+          "rightKneeFlexionDeg": 14.75,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973548,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0244,
+            "largestIndependentAxisLowerBound": 0.0215,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0029,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0429,
+            "largestIndependentAxisLowerBound": 0.0386,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0043,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.3,
+          "rightKneeFlexionDeg": 14.77,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97342,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0255,
+            "largestIndependentAxisLowerBound": 0.0252,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0002,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0408,
+            "largestIndependentAxisLowerBound": 0.0339,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0069,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.32,
+          "rightKneeFlexionDeg": 14.87,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973395,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0299,
+            "largestIndependentAxisLowerBound": 0.0299,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0384,
+            "largestIndependentAxisLowerBound": 0.0262,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0122,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.34,
+          "rightKneeFlexionDeg": 15.05,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973433,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0344,
+            "largestIndependentAxisLowerBound": 0.0344,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.038,
+            "largestIndependentAxisLowerBound": 0.0294,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0086,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.36,
+          "rightKneeFlexionDeg": 15.22,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973518,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0384,
+            "largestIndependentAxisLowerBound": 0.0384,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.037,
+            "largestIndependentAxisLowerBound": 0.0325,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0045,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.38,
+          "rightKneeFlexionDeg": 15.34,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973609,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0414,
+            "largestIndependentAxisLowerBound": 0.0414,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0355,
+            "largestIndependentAxisLowerBound": 0.0355,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.4,
+          "rightKneeFlexionDeg": 15.42,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973711,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.044,
+            "largestIndependentAxisLowerBound": 0.044,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0382,
+            "largestIndependentAxisLowerBound": 0.0382,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.42,
+          "rightKneeFlexionDeg": 15.4,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973782,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0457,
+            "largestIndependentAxisLowerBound": 0.0457,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.04,
+            "largestIndependentAxisLowerBound": 0.04,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.44,
+          "rightKneeFlexionDeg": 15.29,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973822,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0465,
+            "largestIndependentAxisLowerBound": 0.0465,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0408,
+            "largestIndependentAxisLowerBound": 0.0408,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.46,
+          "rightKneeFlexionDeg": 15.12,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973811,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0472,
+            "largestIndependentAxisLowerBound": 0.0472,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0433,
+            "largestIndependentAxisLowerBound": 0.0416,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0017,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.48,
+          "rightKneeFlexionDeg": 14.9,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973774,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0477,
+            "largestIndependentAxisLowerBound": 0.0477,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0421,
+            "largestIndependentAxisLowerBound": 0.0421,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.5,
+          "rightKneeFlexionDeg": 14.67,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973684,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0479,
+            "largestIndependentAxisLowerBound": 0.0479,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0423,
+            "largestIndependentAxisLowerBound": 0.0423,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.52,
+          "rightKneeFlexionDeg": 14.45,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973545,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0472,
+            "largestIndependentAxisLowerBound": 0.0472,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0416,
+            "largestIndependentAxisLowerBound": 0.0416,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.54,
+          "rightKneeFlexionDeg": 14.26,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973392,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0452,
+            "largestIndependentAxisLowerBound": 0.0452,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0397,
+            "largestIndependentAxisLowerBound": 0.0397,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.56,
+          "rightKneeFlexionDeg": 14.07,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.9732,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0436,
+            "largestIndependentAxisLowerBound": 0.0436,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.038,
+            "largestIndependentAxisLowerBound": 0.038,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.58,
+          "rightKneeFlexionDeg": 13.9,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972959,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0418,
+            "largestIndependentAxisLowerBound": 0.0418,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.039,
+            "largestIndependentAxisLowerBound": 0.0363,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0027,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.6,
+          "rightKneeFlexionDeg": 13.73,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972686,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0398,
+            "largestIndependentAxisLowerBound": 0.0398,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0403,
+            "largestIndependentAxisLowerBound": 0.0343,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.006,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.62,
+          "rightKneeFlexionDeg": 13.59,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972428,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0377,
+            "largestIndependentAxisLowerBound": 0.0377,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0396,
+            "largestIndependentAxisLowerBound": 0.0322,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0075,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.64,
+          "rightKneeFlexionDeg": 13.54,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972304,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.035,
+            "largestIndependentAxisLowerBound": 0.035,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0375,
+            "largestIndependentAxisLowerBound": 0.0295,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.008,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.66,
+          "rightKneeFlexionDeg": 13.71,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972457,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0317,
+            "largestIndependentAxisLowerBound": 0.0317,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0321,
+            "largestIndependentAxisLowerBound": 0.0293,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0028,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.68,
+          "rightKneeFlexionDeg": 14.25,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973097,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.034,
+            "largestIndependentAxisLowerBound": 0.0325,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0015,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.028,
+            "largestIndependentAxisLowerBound": 0.0251,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0029,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.7,
+          "rightKneeFlexionDeg": 15.35,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.974408,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0352,
+            "largestIndependentAxisLowerBound": 0.028,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0073,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0248,
+            "largestIndependentAxisLowerBound": 0.0201,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0047,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.72,
+          "rightKneeFlexionDeg": 17.15,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97645,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0306,
+            "largestIndependentAxisLowerBound": 0.0195,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0111,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0287,
+            "largestIndependentAxisLowerBound": 0.0258,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0029,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.74,
+          "rightKneeFlexionDeg": 19.72,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979142,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0308,
+            "largestIndependentAxisLowerBound": 0.0248,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.006,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0356,
+            "largestIndependentAxisLowerBound": 0.0308,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0048,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.76,
+          "rightKneeFlexionDeg": 23.05,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98225,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0352,
+            "largestIndependentAxisLowerBound": 0.0246,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0106,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.042,
+            "largestIndependentAxisLowerBound": 0.0304,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0116,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.78,
+          "rightKneeFlexionDeg": 27.05,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.985473,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.052,
+            "largestIndependentAxisLowerBound": 0.0265,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0255,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0585,
+            "largestIndependentAxisLowerBound": 0.036,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0225,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.8,
+          "rightKneeFlexionDeg": 31.61,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98854,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0611,
+            "largestIndependentAxisLowerBound": 0.034,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0271,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0756,
+            "largestIndependentAxisLowerBound": 0.0571,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0185,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.82,
+          "rightKneeFlexionDeg": 36.63,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.991265,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0788,
+            "largestIndependentAxisLowerBound": 0.0529,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0259,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1008,
+            "largestIndependentAxisLowerBound": 0.0792,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0216,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.84,
+          "rightKneeFlexionDeg": 41.99,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.989722,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0648,
+            "largestIndependentAxisLowerBound": 0.0347,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0301,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1,
+            "largestIndependentAxisLowerBound": 0.0922,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0078,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.86,
+          "rightKneeFlexionDeg": 47.61,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.988219,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0482,
+            "largestIndependentAxisLowerBound": 0.0409,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0073,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0979,
+            "largestIndependentAxisLowerBound": 0.0963,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0015,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.88,
+          "rightKneeFlexionDeg": 53.4,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.986852,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0547,
+            "largestIndependentAxisLowerBound": 0.0547,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.101,
+            "largestIndependentAxisLowerBound": 0.0936,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0074,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.9,
+          "rightKneeFlexionDeg": 59.29,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.985662,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0736,
+            "largestIndependentAxisLowerBound": 0.07,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0036,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.099,
+            "largestIndependentAxisLowerBound": 0.0933,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0058,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.92,
+          "rightKneeFlexionDeg": 65.19,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.984662,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0819,
+            "largestIndependentAxisLowerBound": 0.0674,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0145,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1394,
+            "largestIndependentAxisLowerBound": 0.103,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0364,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.94,
+          "rightKneeFlexionDeg": 71.03,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983846,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1314,
+            "largestIndependentAxisLowerBound": 0.0907,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0407,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2429,
+            "largestIndependentAxisLowerBound": 0.118,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1249,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.96,
+          "rightKneeFlexionDeg": 76.76,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983192,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1691,
+            "largestIndependentAxisLowerBound": 0.1348,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0343,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3382,
+            "largestIndependentAxisLowerBound": 0.1745,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1636,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 50.98,
+          "rightKneeFlexionDeg": 82.3,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982665,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2214,
+            "largestIndependentAxisLowerBound": 0.179,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0424,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4231,
+            "largestIndependentAxisLowerBound": 0.2116,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2115,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.0,
+          "rightKneeFlexionDeg": 87.65,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982223,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2824,
+            "largestIndependentAxisLowerBound": 0.2305,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0519,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5489,
+            "largestIndependentAxisLowerBound": 0.2458,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3032,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.02,
+          "rightKneeFlexionDeg": 92.77,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981829,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4262,
+            "largestIndependentAxisLowerBound": 0.2705,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1557,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.7846,
+            "largestIndependentAxisLowerBound": 0.315,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4696,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.04,
+          "rightKneeFlexionDeg": 97.69,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981454,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6612,
+            "largestIndependentAxisLowerBound": 0.3062,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.355,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.0748,
+            "largestIndependentAxisLowerBound": 0.391,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6839,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.06,
+          "rightKneeFlexionDeg": 102.41,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981071,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.8846,
+            "largestIndependentAxisLowerBound": 0.3428,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5418,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.3281,
+            "largestIndependentAxisLowerBound": 0.5096,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8184,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.08,
+          "rightKneeFlexionDeg": 106.95,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980654,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.0696,
+            "largestIndependentAxisLowerBound": 0.3677,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7019,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.537,
+            "largestIndependentAxisLowerBound": 0.6199,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.9171,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.1,
+          "rightKneeFlexionDeg": 111.33,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980181,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.2552,
+            "largestIndependentAxisLowerBound": 0.3845,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8706,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.7383,
+            "largestIndependentAxisLowerBound": 0.7001,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0381,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.12,
+          "rightKneeFlexionDeg": 115.55,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979632,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.4454,
+            "largestIndependentAxisLowerBound": 0.4762,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.9692,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.9436,
+            "largestIndependentAxisLowerBound": 0.7914,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1522,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.14,
+          "rightKneeFlexionDeg": 119.62,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97899,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.6048,
+            "largestIndependentAxisLowerBound": 0.5774,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0274,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.1217,
+            "largestIndependentAxisLowerBound": 0.889,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2327,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.16,
+          "rightKneeFlexionDeg": 123.57,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978234,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.8104,
+            "largestIndependentAxisLowerBound": 0.7097,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1007,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.3381,
+            "largestIndependentAxisLowerBound": 1.015,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3231,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.18,
+          "rightKneeFlexionDeg": 127.32,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.977364,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.0899,
+            "largestIndependentAxisLowerBound": 0.8274,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2625,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.622,
+            "largestIndependentAxisLowerBound": 1.1244,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.4975,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.2,
+          "rightKneeFlexionDeg": 130.82,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97639,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.343,
+            "largestIndependentAxisLowerBound": 0.9483,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3946,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.8741,
+            "largestIndependentAxisLowerBound": 1.2611,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.613,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.22,
+          "rightKneeFlexionDeg": 134.01,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.975341,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.58,
+            "largestIndependentAxisLowerBound": 1.1272,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.4528,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.1032,
+            "largestIndependentAxisLowerBound": 1.4264,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.6769,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.24,
+          "rightKneeFlexionDeg": 136.81,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.974276,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.9361,
+            "largestIndependentAxisLowerBound": 1.3466,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.5896,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.4424,
+            "largestIndependentAxisLowerBound": 1.629,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.8133,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.26,
+          "rightKneeFlexionDeg": 139.11,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97328,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.4376,
+            "largestIndependentAxisLowerBound": 1.5966,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.841,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.9178,
+            "largestIndependentAxisLowerBound": 1.8606,
+            "minimumJointlyFeasibleAboveIndependentBound": 2.0572,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.38,
+          "rightKneeFlexionDeg": 139.58,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973062,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.5525,
+            "largestIndependentAxisLowerBound": 1.6191,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.9334,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.9514,
+            "largestIndependentAxisLowerBound": 1.8573,
+            "minimumJointlyFeasibleAboveIndependentBound": 2.0941,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.4,
+          "rightKneeFlexionDeg": 137.5,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97399,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.0808,
+            "largestIndependentAxisLowerBound": 1.383,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.6979,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.4994,
+            "largestIndependentAxisLowerBound": 1.6359,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.8635,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.42,
+          "rightKneeFlexionDeg": 134.96,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.974998,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.5975,
+            "largestIndependentAxisLowerBound": 1.1287,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.4688,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.0379,
+            "largestIndependentAxisLowerBound": 1.3971,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.6408,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.44,
+          "rightKneeFlexionDeg": 132.05,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.976004,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.1665,
+            "largestIndependentAxisLowerBound": 0.8996,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2669,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.6273,
+            "largestIndependentAxisLowerBound": 1.1823,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.4449,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.46,
+          "rightKneeFlexionDeg": 128.89,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.976947,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.7879,
+            "largestIndependentAxisLowerBound": 0.7103,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0776,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.2645,
+            "largestIndependentAxisLowerBound": 1.0049,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2596,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.48,
+          "rightKneeFlexionDeg": 125.56,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.977792,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.5174,
+            "largestIndependentAxisLowerBound": 0.5877,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.9297,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.0038,
+            "largestIndependentAxisLowerBound": 0.8884,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1154,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.5,
+          "rightKneeFlexionDeg": 122.12,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978528,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.3795,
+            "largestIndependentAxisLowerBound": 0.5439,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8356,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.8457,
+            "largestIndependentAxisLowerBound": 0.8287,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.017,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.52,
+          "rightKneeFlexionDeg": 118.64,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979158,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.2743,
+            "largestIndependentAxisLowerBound": 0.5061,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7683,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.7316,
+            "largestIndependentAxisLowerBound": 0.788,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.9436,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.54,
+          "rightKneeFlexionDeg": 115.11,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979695,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.2283,
+            "largestIndependentAxisLowerBound": 0.5043,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.724,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.6304,
+            "largestIndependentAxisLowerBound": 0.7651,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8653,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.56,
+          "rightKneeFlexionDeg": 111.49,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980162,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.1957,
+            "largestIndependentAxisLowerBound": 0.5296,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6661,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.5633,
+            "largestIndependentAxisLowerBound": 0.7814,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7819,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.58,
+          "rightKneeFlexionDeg": 107.73,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980576,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.1128,
+            "largestIndependentAxisLowerBound": 0.5388,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.574,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.4775,
+            "largestIndependentAxisLowerBound": 0.777,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7005,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.6,
+          "rightKneeFlexionDeg": 103.8,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98095,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.9858,
+            "largestIndependentAxisLowerBound": 0.5145,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4713,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.3305,
+            "largestIndependentAxisLowerBound": 0.7335,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.597,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.62,
+          "rightKneeFlexionDeg": 99.67,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981298,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.8421,
+            "largestIndependentAxisLowerBound": 0.4635,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3786,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.1701,
+            "largestIndependentAxisLowerBound": 0.6595,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5106,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 51.64,
+          "rightKneeFlexionDeg": 95.32,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981636,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6826,
+            "largestIndependentAxisLowerBound": 0.3734,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3093,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.9723,
+            "largestIndependentAxisLowerBound": 0.5841,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3883,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.66,
+          "rightKneeFlexionDeg": 90.77,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981981,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5457,
+            "largestIndependentAxisLowerBound": 0.3181,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2276,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.7852,
+            "largestIndependentAxisLowerBound": 0.4989,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2863,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.68,
+          "rightKneeFlexionDeg": 86.04,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982352,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4591,
+            "largestIndependentAxisLowerBound": 0.2879,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1713,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6539,
+            "largestIndependentAxisLowerBound": 0.4378,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2161,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.7,
+          "rightKneeFlexionDeg": 81.18,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982773,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3855,
+            "largestIndependentAxisLowerBound": 0.2575,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.128,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.541,
+            "largestIndependentAxisLowerBound": 0.3794,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1616,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.72,
+          "rightKneeFlexionDeg": 76.22,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983265,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3041,
+            "largestIndependentAxisLowerBound": 0.2182,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0859,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4285,
+            "largestIndependentAxisLowerBound": 0.3161,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1125,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.74,
+          "rightKneeFlexionDeg": 71.19,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983851,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2422,
+            "largestIndependentAxisLowerBound": 0.1857,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0565,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3396,
+            "largestIndependentAxisLowerBound": 0.2628,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0768,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.76,
+          "rightKneeFlexionDeg": 66.16,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.984546,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2172,
+            "largestIndependentAxisLowerBound": 0.1891,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0281,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.291,
+            "largestIndependentAxisLowerBound": 0.2491,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0419,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.78,
+          "rightKneeFlexionDeg": 61.16,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.985359,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1983,
+            "largestIndependentAxisLowerBound": 0.1933,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.005,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2516,
+            "largestIndependentAxisLowerBound": 0.2393,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0123,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.8,
+          "rightKneeFlexionDeg": 56.23,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98629,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1689,
+            "largestIndependentAxisLowerBound": 0.1671,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0018,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2074,
+            "largestIndependentAxisLowerBound": 0.2004,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.007,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.82,
+          "rightKneeFlexionDeg": 51.42,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.987327,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1484,
+            "largestIndependentAxisLowerBound": 0.1418,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0067,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1781,
+            "largestIndependentAxisLowerBound": 0.1651,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.013,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.84,
+          "rightKneeFlexionDeg": 46.81,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98844,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.129,
+            "largestIndependentAxisLowerBound": 0.1188,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0101,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1512,
+            "largestIndependentAxisLowerBound": 0.1356,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0156,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.86,
+          "rightKneeFlexionDeg": 42.46,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.989591,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1148,
+            "largestIndependentAxisLowerBound": 0.1026,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0122,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1431,
+            "largestIndependentAxisLowerBound": 0.1431,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.88,
+          "rightKneeFlexionDeg": 38.44,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.99073,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0947,
+            "largestIndependentAxisLowerBound": 0.0811,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0136,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1524,
+            "largestIndependentAxisLowerBound": 0.1524,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.9,
+          "rightKneeFlexionDeg": 34.81,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.988902,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0694,
+            "largestIndependentAxisLowerBound": 0.0528,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0166,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.157,
+            "largestIndependentAxisLowerBound": 0.157,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.92,
+          "rightKneeFlexionDeg": 31.59,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.986775,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0564,
+            "largestIndependentAxisLowerBound": 0.0373,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0191,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1573,
+            "largestIndependentAxisLowerBound": 0.1573,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.94,
+          "rightKneeFlexionDeg": 28.82,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.984665,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0461,
+            "largestIndependentAxisLowerBound": 0.0425,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0036,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1529,
+            "largestIndependentAxisLowerBound": 0.1529,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.96,
+          "rightKneeFlexionDeg": 26.52,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982691,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0472,
+            "largestIndependentAxisLowerBound": 0.0472,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.143,
+            "largestIndependentAxisLowerBound": 0.143,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 51.98,
+          "rightKneeFlexionDeg": 24.69,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980986,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0535,
+            "largestIndependentAxisLowerBound": 0.0535,
+            "minimumJointlyFeasibleAboveIndependentBound": -0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1305,
+            "largestIndependentAxisLowerBound": 0.1305,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 52.0,
+          "rightKneeFlexionDeg": 23.32,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979663,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0565,
+            "largestIndependentAxisLowerBound": 0.0565,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1149,
+            "largestIndependentAxisLowerBound": 0.1149,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        }
+      ]
+    },
+    "AB02": {
+      "totalSampledFrames": 101,
+      "excludedOutsideKneeRange": 0,
+      "excludedTimesS": [],
+      "feasibleAtAnyUniformStrength": 101,
+      "nominalStrengthFeasible": 74,
+      "nominalMultiplier": {
+        "minimum": 0.0379,
+        "median": 0.3647,
+        "maximum": 3.0421
+      },
+      "passiveAdjustedMultiplier": {
+        "minimum": 0.0171,
+        "median": 0.6456,
+        "maximum": 3.8348
+      },
+      "minimumKneeAnkleAxisCosine": 0.958003,
+      "frames": [
+        {
+          "timeS": 23.0,
+          "rightKneeFlexionDeg": 55.5,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983841,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1556,
+            "largestIndependentAxisLowerBound": 0.1087,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0469,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.289,
+            "largestIndependentAxisLowerBound": 0.1392,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1498,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.02,
+          "rightKneeFlexionDeg": 58.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982747,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1553,
+            "largestIndependentAxisLowerBound": 0.1038,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0515,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3212,
+            "largestIndependentAxisLowerBound": 0.1623,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.159,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.04,
+          "rightKneeFlexionDeg": 62.03,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981551,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1574,
+            "largestIndependentAxisLowerBound": 0.1051,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0523,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3295,
+            "largestIndependentAxisLowerBound": 0.1692,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1604,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.06,
+          "rightKneeFlexionDeg": 65.32,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980498,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1688,
+            "largestIndependentAxisLowerBound": 0.1097,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0591,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3488,
+            "largestIndependentAxisLowerBound": 0.1668,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.182,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.08,
+          "rightKneeFlexionDeg": 68.6,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979652,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1907,
+            "largestIndependentAxisLowerBound": 0.1169,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0739,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3979,
+            "largestIndependentAxisLowerBound": 0.1738,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2241,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.1,
+          "rightKneeFlexionDeg": 71.84,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979126,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2207,
+            "largestIndependentAxisLowerBound": 0.1254,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0954,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.46,
+            "largestIndependentAxisLowerBound": 0.1885,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2715,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.12,
+          "rightKneeFlexionDeg": 75.07,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978885,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.266,
+            "largestIndependentAxisLowerBound": 0.1379,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1281,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5461,
+            "largestIndependentAxisLowerBound": 0.2313,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3149,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.14,
+          "rightKneeFlexionDeg": 78.3,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978846,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3099,
+            "largestIndependentAxisLowerBound": 0.1473,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1626,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6188,
+            "largestIndependentAxisLowerBound": 0.2625,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3562,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.16,
+          "rightKneeFlexionDeg": 81.49,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978946,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3353,
+            "largestIndependentAxisLowerBound": 0.1607,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1746,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6456,
+            "largestIndependentAxisLowerBound": 0.2612,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3843,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.18,
+          "rightKneeFlexionDeg": 84.68,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979035,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3647,
+            "largestIndependentAxisLowerBound": 0.1847,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1801,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6631,
+            "largestIndependentAxisLowerBound": 0.2658,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3973,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.2,
+          "rightKneeFlexionDeg": 87.84,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.979042,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3949,
+            "largestIndependentAxisLowerBound": 0.2037,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1912,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6893,
+            "largestIndependentAxisLowerBound": 0.2853,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.404,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.22,
+          "rightKneeFlexionDeg": 90.95,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978925,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4163,
+            "largestIndependentAxisLowerBound": 0.2254,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1909,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.7593,
+            "largestIndependentAxisLowerBound": 0.3205,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4389,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.24,
+          "rightKneeFlexionDeg": 93.99,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978678,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4376,
+            "largestIndependentAxisLowerBound": 0.2573,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1803,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.894,
+            "largestIndependentAxisLowerBound": 0.3976,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4964,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 23.26,
+          "rightKneeFlexionDeg": 96.95,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978339,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4661,
+            "largestIndependentAxisLowerBound": 0.2875,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1786,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.0278,
+            "largestIndependentAxisLowerBound": 0.4722,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5556,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.28,
+          "rightKneeFlexionDeg": 99.81,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.977879,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4833,
+            "largestIndependentAxisLowerBound": 0.3082,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1751,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.1637,
+            "largestIndependentAxisLowerBound": 0.5438,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6198,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.3,
+          "rightKneeFlexionDeg": 102.56,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.977347,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.533,
+            "largestIndependentAxisLowerBound": 0.3178,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2152,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.3359,
+            "largestIndependentAxisLowerBound": 0.636,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6999,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.32,
+          "rightKneeFlexionDeg": 105.21,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.976656,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6767,
+            "largestIndependentAxisLowerBound": 0.3818,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2949,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.5094,
+            "largestIndependentAxisLowerBound": 0.7264,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7829,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.34,
+          "rightKneeFlexionDeg": 107.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.975722,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.7942,
+            "largestIndependentAxisLowerBound": 0.4458,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3484,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.6588,
+            "largestIndependentAxisLowerBound": 0.7951,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8637,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.36,
+          "rightKneeFlexionDeg": 110.16,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.974559,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.9671,
+            "largestIndependentAxisLowerBound": 0.5304,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4366,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.8482,
+            "largestIndependentAxisLowerBound": 0.8846,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.9635,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.38,
+          "rightKneeFlexionDeg": 112.46,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97327,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.1866,
+            "largestIndependentAxisLowerBound": 0.6392,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5473,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.0757,
+            "largestIndependentAxisLowerBound": 0.9977,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0779,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.4,
+          "rightKneeFlexionDeg": 114.66,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972033,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.3607,
+            "largestIndependentAxisLowerBound": 0.7234,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6373,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.2577,
+            "largestIndependentAxisLowerBound": 1.0849,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1728,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.42,
+          "rightKneeFlexionDeg": 116.75,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97106,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.4968,
+            "largestIndependentAxisLowerBound": 0.791,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7058,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.3972,
+            "largestIndependentAxisLowerBound": 1.1535,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2437,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.44,
+          "rightKneeFlexionDeg": 118.77,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.970521,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.6365,
+            "largestIndependentAxisLowerBound": 0.8679,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7686,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.5383,
+            "largestIndependentAxisLowerBound": 1.2292,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3091,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.46,
+          "rightKneeFlexionDeg": 120.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.970434,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.695,
+            "largestIndependentAxisLowerBound": 0.9091,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7859,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.6063,
+            "largestIndependentAxisLowerBound": 1.2672,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3392,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.48,
+          "rightKneeFlexionDeg": 122.68,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.970679,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.6728,
+            "largestIndependentAxisLowerBound": 0.9145,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7583,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.5963,
+            "largestIndependentAxisLowerBound": 1.2677,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3287,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.5,
+          "rightKneeFlexionDeg": 124.59,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.971095,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.7207,
+            "largestIndependentAxisLowerBound": 0.9656,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.755,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.6573,
+            "largestIndependentAxisLowerBound": 1.3124,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3449,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.52,
+          "rightKneeFlexionDeg": 126.45,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.971458,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.8146,
+            "largestIndependentAxisLowerBound": 1.1396,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.675,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.7095,
+            "largestIndependentAxisLowerBound": 1.3753,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3342,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.54,
+          "rightKneeFlexionDeg": 128.22,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.971644,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.96,
+            "largestIndependentAxisLowerBound": 1.2591,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7009,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.8539,
+            "largestIndependentAxisLowerBound": 1.4823,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3715,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.56,
+          "rightKneeFlexionDeg": 129.87,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.971584,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.9959,
+            "largestIndependentAxisLowerBound": 1.3162,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6797,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.9215,
+            "largestIndependentAxisLowerBound": 1.531,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3905,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.58,
+          "rightKneeFlexionDeg": 131.35,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.971311,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.0717,
+            "largestIndependentAxisLowerBound": 1.3968,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6749,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.0272,
+            "largestIndependentAxisLowerBound": 1.6046,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.4226,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.6,
+          "rightKneeFlexionDeg": 132.61,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.970862,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.3307,
+            "largestIndependentAxisLowerBound": 1.4579,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8728,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.2366,
+            "largestIndependentAxisLowerBound": 1.6676,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.569,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.62,
+          "rightKneeFlexionDeg": 133.64,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.97042,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.6127,
+            "largestIndependentAxisLowerBound": 1.5159,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0968,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.4899,
+            "largestIndependentAxisLowerBound": 1.7994,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.6905,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.64,
+          "rightKneeFlexionDeg": 134.41,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969928,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.7547,
+            "largestIndependentAxisLowerBound": 1.5698,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1849,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.6021,
+            "largestIndependentAxisLowerBound": 1.8534,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.7487,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.66,
+          "rightKneeFlexionDeg": 134.91,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969536,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.8838,
+            "largestIndependentAxisLowerBound": 1.6428,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.241,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.7055,
+            "largestIndependentAxisLowerBound": 1.9049,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.8006,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.68,
+          "rightKneeFlexionDeg": 135.13,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969277,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.0,
+            "largestIndependentAxisLowerBound": 1.722,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2781,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.803,
+            "largestIndependentAxisLowerBound": 1.9552,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.8478,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.7,
+          "rightKneeFlexionDeg": 135.07,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969167,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.0421,
+            "largestIndependentAxisLowerBound": 1.7377,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3044,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.8348,
+            "largestIndependentAxisLowerBound": 1.9739,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.8609,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.72,
+          "rightKneeFlexionDeg": 134.71,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969186,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.0248,
+            "largestIndependentAxisLowerBound": 1.7182,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3066,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.8158,
+            "largestIndependentAxisLowerBound": 1.9688,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.847,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.74,
+          "rightKneeFlexionDeg": 134.02,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969288,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.9388,
+            "largestIndependentAxisLowerBound": 1.671,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.2678,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.7354,
+            "largestIndependentAxisLowerBound": 1.9333,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.8021,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.76,
+          "rightKneeFlexionDeg": 132.99,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969417,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.7732,
+            "largestIndependentAxisLowerBound": 1.6183,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1549,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.5797,
+            "largestIndependentAxisLowerBound": 1.858,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.7217,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.78,
+          "rightKneeFlexionDeg": 131.61,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969543,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.5659,
+            "largestIndependentAxisLowerBound": 1.5576,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0083,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.3844,
+            "largestIndependentAxisLowerBound": 1.7601,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.6243,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.8,
+          "rightKneeFlexionDeg": 129.86,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969673,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.3264,
+            "largestIndependentAxisLowerBound": 1.4438,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8826,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 3.1563,
+            "largestIndependentAxisLowerBound": 1.655,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.5014,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.82,
+          "rightKneeFlexionDeg": 127.77,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969862,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.0918,
+            "largestIndependentAxisLowerBound": 1.2591,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8327,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.9309,
+            "largestIndependentAxisLowerBound": 1.5203,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.4106,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.84,
+          "rightKneeFlexionDeg": 125.35,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.9702,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.8584,
+            "largestIndependentAxisLowerBound": 1.05,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8084,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.7043,
+            "largestIndependentAxisLowerBound": 1.3939,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.3104,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.86,
+          "rightKneeFlexionDeg": 122.65,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.970788,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.5913,
+            "largestIndependentAxisLowerBound": 0.8919,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6994,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.4413,
+            "largestIndependentAxisLowerBound": 1.2453,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.1961,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.88,
+          "rightKneeFlexionDeg": 119.71,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.971711,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.3253,
+            "largestIndependentAxisLowerBound": 0.7338,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5915,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 2.1766,
+            "largestIndependentAxisLowerBound": 1.0953,
+            "minimumJointlyFeasibleAboveIndependentBound": 1.0813,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.9,
+          "rightKneeFlexionDeg": 116.62,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.972963,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.0867,
+            "largestIndependentAxisLowerBound": 0.5927,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.494,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.9407,
+            "largestIndependentAxisLowerBound": 0.9605,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.9803,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.92,
+          "rightKneeFlexionDeg": 113.4,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.974532,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.8667,
+            "largestIndependentAxisLowerBound": 0.4596,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.407,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.728,
+            "largestIndependentAxisLowerBound": 0.8306,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8975,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.94,
+          "rightKneeFlexionDeg": 110.08,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.976362,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.7018,
+            "largestIndependentAxisLowerBound": 0.3579,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3439,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.5414,
+            "largestIndependentAxisLowerBound": 0.7278,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.8137,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.96,
+          "rightKneeFlexionDeg": 106.69,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.978298,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6116,
+            "largestIndependentAxisLowerBound": 0.3055,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3061,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.4137,
+            "largestIndependentAxisLowerBound": 0.6701,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.7436,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 23.98,
+          "rightKneeFlexionDeg": 103.24,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980273,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5834,
+            "largestIndependentAxisLowerBound": 0.2684,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.315,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.2909,
+            "largestIndependentAxisLowerBound": 0.6226,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.6683,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 24.0,
+          "rightKneeFlexionDeg": 99.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981292,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5755,
+            "largestIndependentAxisLowerBound": 0.2585,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.317,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.188,
+            "largestIndependentAxisLowerBound": 0.5895,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5985,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 24.02,
+          "rightKneeFlexionDeg": 96.22,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981568,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5646,
+            "largestIndependentAxisLowerBound": 0.2526,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.312,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.1221,
+            "largestIndependentAxisLowerBound": 0.5764,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.5456,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 24.04,
+          "rightKneeFlexionDeg": 92.69,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.981835,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5557,
+            "largestIndependentAxisLowerBound": 0.2346,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.321,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 1.037,
+            "largestIndependentAxisLowerBound": 0.5408,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4962,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": false
+          }
+        },
+        {
+          "timeS": 24.06,
+          "rightKneeFlexionDeg": 89.18,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982103,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5245,
+            "largestIndependentAxisLowerBound": 0.2058,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3187,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.9879,
+            "largestIndependentAxisLowerBound": 0.4926,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4953,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.08,
+          "rightKneeFlexionDeg": 85.7,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98238,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4964,
+            "largestIndependentAxisLowerBound": 0.1916,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3048,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.9408,
+            "largestIndependentAxisLowerBound": 0.4579,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4829,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.1,
+          "rightKneeFlexionDeg": 82.26,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982675,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5312,
+            "largestIndependentAxisLowerBound": 0.1912,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.34,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.9323,
+            "largestIndependentAxisLowerBound": 0.4499,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.4825,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.12,
+          "rightKneeFlexionDeg": 78.85,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.982994,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5311,
+            "largestIndependentAxisLowerBound": 0.206,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3251,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.8809,
+            "largestIndependentAxisLowerBound": 0.4389,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.442,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.14,
+          "rightKneeFlexionDeg": 75.46,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983348,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4903,
+            "largestIndependentAxisLowerBound": 0.1953,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.295,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.7808,
+            "largestIndependentAxisLowerBound": 0.4,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3808,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.16,
+          "rightKneeFlexionDeg": 72.06,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.983743,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4567,
+            "largestIndependentAxisLowerBound": 0.2021,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2546,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.6944,
+            "largestIndependentAxisLowerBound": 0.3775,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.3169,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.18,
+          "rightKneeFlexionDeg": 68.64,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.984189,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4067,
+            "largestIndependentAxisLowerBound": 0.1989,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2078,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.5994,
+            "largestIndependentAxisLowerBound": 0.3463,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2531,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.2,
+          "rightKneeFlexionDeg": 65.17,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.984697,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3442,
+            "largestIndependentAxisLowerBound": 0.1752,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.169,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4988,
+            "largestIndependentAxisLowerBound": 0.2969,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.2019,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.22,
+          "rightKneeFlexionDeg": 61.65,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.985274,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3009,
+            "largestIndependentAxisLowerBound": 0.1648,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.136,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.4248,
+            "largestIndependentAxisLowerBound": 0.2639,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1609,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.24,
+          "rightKneeFlexionDeg": 58.05,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.98593,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.267,
+            "largestIndependentAxisLowerBound": 0.1631,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1039,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.3618,
+            "largestIndependentAxisLowerBound": 0.2432,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.1186,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.26,
+          "rightKneeFlexionDeg": 54.37,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.986677,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2192,
+            "largestIndependentAxisLowerBound": 0.1472,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0719,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2924,
+            "largestIndependentAxisLowerBound": 0.2113,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0812,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.28,
+          "rightKneeFlexionDeg": 50.56,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.987527,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1543,
+            "largestIndependentAxisLowerBound": 0.1158,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0385,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.2092,
+            "largestIndependentAxisLowerBound": 0.1662,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.043,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.3,
+          "rightKneeFlexionDeg": 46.6,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.988495,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1087,
+            "largestIndependentAxisLowerBound": 0.0891,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0196,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1458,
+            "largestIndependentAxisLowerBound": 0.1287,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0171,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.32,
+          "rightKneeFlexionDeg": 42.46,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.989592,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0939,
+            "largestIndependentAxisLowerBound": 0.0803,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0136,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1204,
+            "largestIndependentAxisLowerBound": 0.1095,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0109,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.34,
+          "rightKneeFlexionDeg": 38.11,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.990828,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1,
+            "largestIndependentAxisLowerBound": 0.0936,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0063,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1174,
+            "largestIndependentAxisLowerBound": 0.1143,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0031,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.36,
+          "rightKneeFlexionDeg": 33.6,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.989837,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1011,
+            "largestIndependentAxisLowerBound": 0.0955,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0057,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1141,
+            "largestIndependentAxisLowerBound": 0.1098,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0043,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.38,
+          "rightKneeFlexionDeg": 29.03,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.9872,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0814,
+            "largestIndependentAxisLowerBound": 0.0723,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0091,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0891,
+            "largestIndependentAxisLowerBound": 0.0816,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0075,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.4,
+          "rightKneeFlexionDeg": 24.49,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.984122,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0576,
+            "largestIndependentAxisLowerBound": 0.0529,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0047,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.073,
+            "largestIndependentAxisLowerBound": 0.0589,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0141,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.42,
+          "rightKneeFlexionDeg": 20.14,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.980688,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0485,
+            "largestIndependentAxisLowerBound": 0.0402,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0083,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0643,
+            "largestIndependentAxisLowerBound": 0.0443,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.02,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.44,
+          "rightKneeFlexionDeg": 16.06,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.977028,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0561,
+            "largestIndependentAxisLowerBound": 0.0336,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0225,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.059,
+            "largestIndependentAxisLowerBound": 0.0412,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0179,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.46,
+          "rightKneeFlexionDeg": 12.33,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.973277,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.054,
+            "largestIndependentAxisLowerBound": 0.0256,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0285,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0437,
+            "largestIndependentAxisLowerBound": 0.033,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0107,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.48,
+          "rightKneeFlexionDeg": 9.02,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.969616,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0542,
+            "largestIndependentAxisLowerBound": 0.0303,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0239,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0236,
+            "largestIndependentAxisLowerBound": 0.022,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0016,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.5,
+          "rightKneeFlexionDeg": 6.16,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.966207,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0466,
+            "largestIndependentAxisLowerBound": 0.0264,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0202,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0171,
+            "largestIndependentAxisLowerBound": 0.0171,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.52,
+          "rightKneeFlexionDeg": 3.84,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.963245,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0497,
+            "largestIndependentAxisLowerBound": 0.0346,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0151,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0301,
+            "largestIndependentAxisLowerBound": 0.027,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.003,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.54,
+          "rightKneeFlexionDeg": 2.09,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.960916,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0543,
+            "largestIndependentAxisLowerBound": 0.0321,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0222,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0561,
+            "largestIndependentAxisLowerBound": 0.0484,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0077,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.56,
+          "rightKneeFlexionDeg": 0.98,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.959365,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0676,
+            "largestIndependentAxisLowerBound": 0.0542,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0134,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0606,
+            "largestIndependentAxisLowerBound": 0.0475,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0132,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.58,
+          "rightKneeFlexionDeg": 0.51,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.958003,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0711,
+            "largestIndependentAxisLowerBound": 0.0651,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.006,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0696,
+            "largestIndependentAxisLowerBound": 0.0557,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0138,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.6,
+          "rightKneeFlexionDeg": 0.58,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.958003,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0782,
+            "largestIndependentAxisLowerBound": 0.0605,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0177,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.056,
+            "largestIndependentAxisLowerBound": 0.0495,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0065,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.62,
+          "rightKneeFlexionDeg": 1.05,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.958003,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0837,
+            "largestIndependentAxisLowerBound": 0.0555,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0281,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0549,
+            "largestIndependentAxisLowerBound": 0.0444,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0105,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.64,
+          "rightKneeFlexionDeg": 1.76,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.958003,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0818,
+            "largestIndependentAxisLowerBound": 0.0524,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0294,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.063,
+            "largestIndependentAxisLowerBound": 0.0465,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0165,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.66,
+          "rightKneeFlexionDeg": 2.52,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.958003,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0791,
+            "largestIndependentAxisLowerBound": 0.0556,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0235,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0709,
+            "largestIndependentAxisLowerBound": 0.0497,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0212,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.68,
+          "rightKneeFlexionDeg": 3.18,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.958788,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0832,
+            "largestIndependentAxisLowerBound": 0.0593,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0239,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0759,
+            "largestIndependentAxisLowerBound": 0.056,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0199,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.7,
+          "rightKneeFlexionDeg": 3.64,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.959791,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0872,
+            "largestIndependentAxisLowerBound": 0.0606,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0265,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.089,
+            "largestIndependentAxisLowerBound": 0.0734,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0155,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.72,
+          "rightKneeFlexionDeg": 3.81,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.9606,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0876,
+            "largestIndependentAxisLowerBound": 0.0594,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0282,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1037,
+            "largestIndependentAxisLowerBound": 0.0884,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0153,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.74,
+          "rightKneeFlexionDeg": 3.74,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.961427,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0887,
+            "largestIndependentAxisLowerBound": 0.058,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0308,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1099,
+            "largestIndependentAxisLowerBound": 0.0961,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0138,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.76,
+          "rightKneeFlexionDeg": 3.49,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.961881,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0852,
+            "largestIndependentAxisLowerBound": 0.0555,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0297,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1131,
+            "largestIndependentAxisLowerBound": 0.0977,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0154,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.78,
+          "rightKneeFlexionDeg": 3.11,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.960946,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0864,
+            "largestIndependentAxisLowerBound": 0.0535,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0328,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1202,
+            "largestIndependentAxisLowerBound": 0.0901,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0301,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.8,
+          "rightKneeFlexionDeg": 2.72,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.960125,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.08,
+            "largestIndependentAxisLowerBound": 0.0498,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0302,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.1049,
+            "largestIndependentAxisLowerBound": 0.0779,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.027,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.82,
+          "rightKneeFlexionDeg": 2.4,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.959524,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0521,
+            "largestIndependentAxisLowerBound": 0.0418,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0103,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0671,
+            "largestIndependentAxisLowerBound": 0.0519,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0152,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.84,
+          "rightKneeFlexionDeg": 2.24,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.959277,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0407,
+            "largestIndependentAxisLowerBound": 0.0331,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0076,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0577,
+            "largestIndependentAxisLowerBound": 0.0433,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0144,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.86,
+          "rightKneeFlexionDeg": 2.3,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.959489,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0485,
+            "largestIndependentAxisLowerBound": 0.0335,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.015,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0685,
+            "largestIndependentAxisLowerBound": 0.052,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0165,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.88,
+          "rightKneeFlexionDeg": 2.56,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.960024,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0387,
+            "largestIndependentAxisLowerBound": 0.0256,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0131,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0824,
+            "largestIndependentAxisLowerBound": 0.0626,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0197,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.9,
+          "rightKneeFlexionDeg": 3.01,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.9609,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0388,
+            "largestIndependentAxisLowerBound": 0.024,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0148,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0848,
+            "largestIndependentAxisLowerBound": 0.0645,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0203,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.92,
+          "rightKneeFlexionDeg": 3.52,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.961494,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0383,
+            "largestIndependentAxisLowerBound": 0.0301,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0081,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0732,
+            "largestIndependentAxisLowerBound": 0.0577,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0155,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.94,
+          "rightKneeFlexionDeg": 4.02,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.961125,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0379,
+            "largestIndependentAxisLowerBound": 0.0352,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0026,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0582,
+            "largestIndependentAxisLowerBound": 0.0474,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0108,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.96,
+          "rightKneeFlexionDeg": 4.42,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.960828,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0394,
+            "largestIndependentAxisLowerBound": 0.0369,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0025,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0488,
+            "largestIndependentAxisLowerBound": 0.0398,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.009,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 24.98,
+          "rightKneeFlexionDeg": 4.66,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.960671,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0527,
+            "largestIndependentAxisLowerBound": 0.0359,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0168,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0486,
+            "largestIndependentAxisLowerBound": 0.0379,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0108,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        },
+        {
+          "timeS": 25.0,
+          "rightKneeFlexionDeg": 4.72,
+          "minimumAbsoluteKneeAnkleAxisCosine": 0.96058,
+          "nominal": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0517,
+            "largestIndependentAxisLowerBound": 0.0409,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0108,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          },
+          "passiveAdjusted": {
+            "feasibleAtAnyUniformStrength": true,
+            "minimumUniformFmaxMultiplier": 0.0562,
+            "largestIndependentAxisLowerBound": 0.041,
+            "minimumJointlyFeasibleAboveIndependentBound": 0.0151,
+            "largestTorqueResidualNm": 0.0,
+            "atNominalStrengthFeasible": true
+          }
+        }
+      ]
+    }
+  }
+}

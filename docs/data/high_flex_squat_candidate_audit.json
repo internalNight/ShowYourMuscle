@@ -1,0 +1,151 @@
+{
+  "status": "research_only_high_flexion_range_and_joint_axis_screen",
+  "source": "https://github.com/opensim-org/opensim-models/tree/master/Models/Rajagopal",
+  "revision": "d9b05d470b1a481c222372c85b75772faf8f7792",
+  "model": "RajagopalLaiUhlrich2023.osim",
+  "modelMassKg": 75.337,
+  "bodies": 22,
+  "joints": 22,
+  "coordinates": 39,
+  "muscles": 80,
+  "kneeRangeDeg": [
+    0.0,
+    140.0
+  ],
+  "coordinateMapping": "source gait2354 knee angle sign inverted; other same-name IK coordinates tentatively copied; pelvis markers and body geometry not registered",
+  "subjects": {
+    "AB01": {
+      "sourceMassKg": 78.85,
+      "frameCount": 101,
+      "kneeFlexionDegRange": {
+        "r": [
+          87.647,
+          142.322
+        ],
+        "l": [
+          87.575,
+          138.662
+        ]
+      },
+      "kneeFramesOutsideModelRange": {
+        "r": 22,
+        "l": 0
+      },
+      "maximumExcessKneeFlexionDeg": {
+        "r": 2.322,
+        "l": 0
+      },
+      "sampleAxisComparisons": [
+        {
+          "timeS": 51.0,
+          "segmentAxisDifferences": {
+            "r": {
+              "femurAxisDifferenceDeg": 0.876,
+              "tibiaAxisDifferenceDeg": 2.605
+            },
+            "l": {
+              "femurAxisDifferenceDeg": 0.876,
+              "tibiaAxisDifferenceDeg": 2.603
+            }
+          }
+        },
+        {
+          "timeS": 51.32,
+          "segmentAxisDifferences": {
+            "r": {
+              "femurAxisDifferenceDeg": 0.626,
+              "tibiaAxisDifferenceDeg": 6.037
+            },
+            "l": {
+              "femurAxisDifferenceDeg": 0.525,
+              "tibiaAxisDifferenceDeg": 5.719
+            }
+          }
+        },
+        {
+          "timeS": 51.5,
+          "segmentAxisDifferences": {
+            "r": {
+              "femurAxisDifferenceDeg": 0.497,
+              "tibiaAxisDifferenceDeg": 4.031
+            },
+            "l": {
+              "femurAxisDifferenceDeg": 0.553,
+              "tibiaAxisDifferenceDeg": 3.812
+            }
+          }
+        }
+      ]
+    },
+    "AB02": {
+      "sourceMassKg": 82.179,
+      "frameCount": 101,
+      "kneeFlexionDegRange": {
+        "r": [
+          114.656,
+          135.145
+        ],
+        "l": [
+          111.805,
+          132.812
+        ]
+      },
+      "kneeFramesOutsideModelRange": {
+        "r": 0,
+        "l": 0
+      },
+      "maximumExcessKneeFlexionDeg": {
+        "r": 0,
+        "l": 0
+      },
+      "sampleAxisComparisons": [
+        {
+          "timeS": 23.4,
+          "segmentAxisDifferences": {
+            "r": {
+              "femurAxisDifferenceDeg": 2.167,
+              "tibiaAxisDifferenceDeg": 4.214
+            },
+            "l": {
+              "femurAxisDifferenceDeg": 3.015,
+              "tibiaAxisDifferenceDeg": 2.808
+            }
+          }
+        },
+        {
+          "timeS": 23.685,
+          "segmentAxisDifferences": {
+            "r": {
+              "femurAxisDifferenceDeg": 2.129,
+              "tibiaAxisDifferenceDeg": 6.57
+            },
+            "l": {
+              "femurAxisDifferenceDeg": 3.068,
+              "tibiaAxisDifferenceDeg": 3.571
+            }
+          }
+        },
+        {
+          "timeS": 23.9,
+          "segmentAxisDifferences": {
+            "r": {
+              "femurAxisDifferenceDeg": 1.873,
+              "tibiaAxisDifferenceDeg": 4.286
+            },
+            "l": {
+              "femurAxisDifferenceDeg": 2.71,
+              "tibiaAxisDifferenceDeg": 2.907
+            }
+          }
+        }
+      ]
+    }
+  },
+  "productDecision": "candidate for deep-squat lower-limb research; no personal muscle-force use",
+  "limitations": [
+    "candidate is generic and not scaled to either participant",
+    "joint-axis comparison does not validate muscle paths or force",
+    "upper-body joints are present but the 80 muscles actuate the lower body",
+    "model-specific redistribution rights need checking before bundling"
+  ]
+}

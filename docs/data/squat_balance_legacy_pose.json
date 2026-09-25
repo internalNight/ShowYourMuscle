@@ -1,0 +1,1954 @@
+{
+  "status": "research_balance_probe_not_personal_cop_or_joint_force",
+  "method": "Mass fractions from the public scaled gait2354 template; approximate segment centers projected onto the illustrative squat pose. Zero-acceleration equilibrium would require vertical ground reaction under the combined center of mass. Actual foot CoP, acceleration and segment mass distribution are unknown.",
+  "centerBottom": {
+    "profile": {
+      "heightCm": 175,
+      "weightKg": 72
+    },
+    "phase": 0.5,
+    "loadKg": 20,
+    "offsetCm": 0,
+    "bodyComRelativeAnkleCm": -16.041995130156952,
+    "combinedComRelativeAnkleCm": -16.79373531925327,
+    "barRelativeAnkleCm": -19.5,
+    "totalGravityN": 902.2117999999999
+  },
+  "rows": [
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.8151659857289186,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -7.162199784299748,
+      "barRelativeAnkleCm": -18,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -16.041995130156952,
+      "barRelativeAnkleCm": -25.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -7.16219978429975,
+      "barRelativeAnkleCm": -18.000000000000004,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.8151659857289186,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.8151659857289186,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -7.162199784299748,
+      "barRelativeAnkleCm": -12,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -16.041995130156952,
+      "barRelativeAnkleCm": -19.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -7.16219978429975,
+      "barRelativeAnkleCm": -12.000000000000002,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.8151659857289186,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.8151659857289186,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -7.162199784299748,
+      "barRelativeAnkleCm": -6,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -16.041995130156952,
+      "barRelativeAnkleCm": -13.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -7.16219978429975,
+      "barRelativeAnkleCm": -6.000000000000003,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.8151659857289186,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 706.0788
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -2.9205646844835016,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -9.518243309451977,
+      "barRelativeAnkleCm": -18,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -18.098083145340222,
+      "barRelativeAnkleCm": -25.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -9.518243309451979,
+      "barRelativeAnkleCm": -18.000000000000004,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -2.9205646844835016,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -1.616216858396545,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -8.21389548336502,
+      "barRelativeAnkleCm": -12,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -16.79373531925327,
+      "barRelativeAnkleCm": -19.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -8.213895483365022,
+      "barRelativeAnkleCm": -12.000000000000002,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -1.616216858396545,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.3118690323095885,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -6.909547657278065,
+      "barRelativeAnkleCm": -6,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -15.489387493166312,
+      "barRelativeAnkleCm": -13.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -6.909547657278066,
+      "barRelativeAnkleCm": -6.000000000000003,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -0.3118690323095885,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 902.2117999999999
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -5.217363264943047,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -12.088472609618044,
+      "barRelativeAnkleCm": -18,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -20.341088252812884,
+      "barRelativeAnkleCm": -25.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -12.088472609618046,
+      "barRelativeAnkleCm": -18.000000000000004,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -5.217363264943047,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -2.490090537670319,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -9.361199882345318,
+      "barRelativeAnkleCm": -12,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -17.613815525540158,
+      "barRelativeAnkleCm": -19.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -9.361199882345318,
+      "barRelativeAnkleCm": -12.000000000000002,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": -2.490090537670319,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": 0.23718218960240792,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.162199784299748,
+      "combinedComRelativeAnkleCm": -6.6339271550725885,
+      "barRelativeAnkleCm": -6,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -16.041995130156952,
+      "combinedComRelativeAnkleCm": -14.886542798267433,
+      "barRelativeAnkleCm": -13.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.16219978429975,
+      "combinedComRelativeAnkleCm": -6.633927155072591,
+      "barRelativeAnkleCm": -6.000000000000003,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8151659857289186,
+      "combinedComRelativeAnkleCm": 0.23718218960240792,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1294.4778
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.8590279236821048,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -7.6667780666905045,
+      "barRelativeAnkleCm": -18.642857142857142,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -17.2031694306647,
+      "barRelativeAnkleCm": -26.785714285714285,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -7.666778066690509,
+      "barRelativeAnkleCm": -18.642857142857146,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.8590279236821048,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.8590279236821048,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -7.6667780666905045,
+      "barRelativeAnkleCm": -12.642857142857142,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -17.2031694306647,
+      "barRelativeAnkleCm": -20.785714285714285,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -7.666778066690509,
+      "barRelativeAnkleCm": -12.642857142857144,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.8590279236821048,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.8590279236821048,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -7.6667780666905045,
+      "barRelativeAnkleCm": -6.642857142857142,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -17.2031694306647,
+      "barRelativeAnkleCm": -14.785714285714285,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -7.666778066690509,
+      "barRelativeAnkleCm": -6.642857142857145,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.8590279236821048,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 882.5985
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -2.6119319375580856,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -9.662428807811711,
+      "barRelativeAnkleCm": -18.642857142857142,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -18.94545031340099,
+      "barRelativeAnkleCm": -26.785714285714285,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -9.662428807811715,
+      "barRelativeAnkleCm": -18.642857142857146,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -2.6119319375580856,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -1.5210228466489946,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -8.571519716902621,
+      "barRelativeAnkleCm": -12.642857142857142,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -17.8545412224919,
+      "barRelativeAnkleCm": -20.785714285714285,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -8.571519716902625,
+      "barRelativeAnkleCm": -12.642857142857144,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -1.5210228466489946,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.430113755739904,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -7.480610625993529,
+      "barRelativeAnkleCm": -6.642857142857142,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -16.763632131582803,
+      "barRelativeAnkleCm": -14.785714285714285,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -7.480610625993533,
+      "barRelativeAnkleCm": -6.642857142857145,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -0.430113755739904,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1078.7314999999999
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -4.715416754209262,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -12.05720969715716,
+      "barRelativeAnkleCm": -18.642857142857142,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -21.036187372684534,
+      "barRelativeAnkleCm": -26.785714285714285,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -12.057209697157163,
+      "barRelativeAnkleCm": -18.642857142857146,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -4.715416754209262,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -2.315416754209263,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -9.65720969715716,
+      "barRelativeAnkleCm": -12.642857142857142,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -18.636187372684535,
+      "barRelativeAnkleCm": -20.785714285714285,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -9.657209697157164,
+      "barRelativeAnkleCm": -12.642857142857144,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": -2.315416754209263,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": 0.08458324579073702,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.6667780666905045,
+      "combinedComRelativeAnkleCm": -7.257209697157159,
+      "barRelativeAnkleCm": -6.642857142857142,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -17.2031694306647,
+      "combinedComRelativeAnkleCm": -16.236187372684537,
+      "barRelativeAnkleCm": -14.785714285714285,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -7.666778066690509,
+      "combinedComRelativeAnkleCm": -7.257209697157164,
+      "barRelativeAnkleCm": -6.642857142857145,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.8590279236821048,
+      "combinedComRelativeAnkleCm": 0.08458324579073702,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1470.9975
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.6951401065298638,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -6.123959392434659,
+      "barRelativeAnkleCm": -16.928571428571427,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -13.720508296362254,
+      "barRelativeAnkleCm": -23.35714285714286,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -6.123959392434663,
+      "barRelativeAnkleCm": -16.92857142857143,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.6951401065298638,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.6951401065298638,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -6.123959392434659,
+      "barRelativeAnkleCm": -10.928571428571427,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -13.720508296362254,
+      "barRelativeAnkleCm": -17.35714285714286,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -6.123959392434663,
+      "barRelativeAnkleCm": -10.92857142857143,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.6951401065298638,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.6951401065298638,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -6.123959392434659,
+      "barRelativeAnkleCm": -4.928571428571428,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -13.720508296362254,
+      "barRelativeAnkleCm": -11.35714285714286,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -6.123959392434663,
+      "barRelativeAnkleCm": -4.928571428571431,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 0,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.6951401065298638,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 451.10589999999996
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -3.6663097712177843,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -9.398084251870044,
+      "barRelativeAnkleCm": -16.928571428571427,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -16.640700587507894,
+      "barRelativeAnkleCm": -23.35714285714286,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -9.398084251870047,
+      "barRelativeAnkleCm": -16.92857142857143,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -3.6663097712177843,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -1.8481279530359658,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -7.5799024336882255,
+      "barRelativeAnkleCm": -10.928571428571427,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -14.822518769326074,
+      "barRelativeAnkleCm": -17.35714285714286,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -7.579902433688228,
+      "barRelativeAnkleCm": -10.92857142857143,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -1.8481279530359658,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.02994613485414752,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -5.761720615506408,
+      "barRelativeAnkleCm": -4.928571428571428,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -13.004336951144257,
+      "barRelativeAnkleCm": -11.35714285714286,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -5.761720615506411,
+      "barRelativeAnkleCm": -4.928571428571431,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 20,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -0.02994613485414752,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 647.2389
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -6.245060800946922,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -12.23977752609698,
+      "barRelativeAnkleCm": -16.928571428571427,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -19.175207104351276,
+      "barRelativeAnkleCm": -23.35714285714286,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -12.239777526096985,
+      "barRelativeAnkleCm": -16.92857142857143,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": -6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -6.245060800946922,
+      "barRelativeAnkleCm": -10.5,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -2.8488343858525824,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -8.843551111002641,
+      "barRelativeAnkleCm": -10.928571428571427,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -15.778980689256935,
+      "barRelativeAnkleCm": -17.35714285714286,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -8.843551111002645,
+      "barRelativeAnkleCm": -10.92857142857143,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": 0,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": -2.8488343858525824,
+      "barRelativeAnkleCm": -4.5,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": 0.5473920292417571,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.25,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -6.123959392434659,
+      "combinedComRelativeAnkleCm": -5.447324695908303,
+      "barRelativeAnkleCm": -4.928571428571428,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.5,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -13.720508296362254,
+      "combinedComRelativeAnkleCm": -12.382754274162599,
+      "barRelativeAnkleCm": -11.35714285714286,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 0.75,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -6.123959392434662,
+      "combinedComRelativeAnkleCm": -5.447324695908305,
+      "barRelativeAnkleCm": -4.928571428571431,
+      "totalGravityN": 1039.5049
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "phase": 1,
+      "loadKg": 60,
+      "offsetCm": 6,
+      "bodyComRelativeAnkleCm": -0.6951401065298637,
+      "combinedComRelativeAnkleCm": 0.5473920292417571,
+      "barRelativeAnkleCm": 1.5,
+      "totalGravityN": 1039.5049
+    }
+  ]
+}

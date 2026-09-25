@@ -1,0 +1,2227 @@
+{
+  "status": "retrodictive_exploratory_emg_screen_not_personal_force_validation",
+  "source": "https://zenodo.org/records/11209324",
+  "license": "CC BY-SA 4.0",
+  "method": "At every 0.5 s plus final sample, fit the two processed joint torques exactly using 12 muscle tensions bounded by nominal Fmax, choosing minimum sum of squared F/Fmax. Compare its activation trend and model path length separately with the matched MVC-normalized processed EMG using within-person Spearman rank correlation; no fitted parameters, no lag tuning.",
+  "subjects": 17,
+  "frames": 1020,
+  "largestTorqueResidualNm": 3.197442310920451e-14,
+  "summary": [
+    {
+      "muscle": "DELTAnt",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.843,
+        "participantMedianBootstrap95": [
+          0.806,
+          0.883
+        ],
+        "positiveParticipants": 17
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.497,
+        "participantMedianBootstrap95": [
+          -0.593,
+          -0.405
+        ],
+        "positiveParticipants": 0
+      }
+    },
+    {
+      "muscle": "DELTMed",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.791,
+        "participantMedianBootstrap95": [
+          0.779,
+          0.848
+        ],
+        "positiveParticipants": 17
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.654,
+        "participantMedianBootstrap95": [
+          -0.69,
+          -0.545
+        ],
+        "positiveParticipants": 0
+      }
+    },
+    {
+      "muscle": "DELTPost",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.011,
+        "participantMedianBootstrap95": [
+          -0.236,
+          0.126
+        ],
+        "positiveParticipants": 8
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.073,
+        "participantMedianBootstrap95": [
+          -0.12,
+          0.413
+        ],
+        "positiveParticipants": 9
+      }
+    },
+    {
+      "muscle": "PECT",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.152,
+        "participantMedianBootstrap95": [
+          -0.255,
+          -0.094
+        ],
+        "positiveParticipants": 2
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.103,
+        "participantMedianBootstrap95": [
+          -0.111,
+          0.154
+        ],
+        "positiveParticipants": 12
+      }
+    },
+    {
+      "muscle": "LATI",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 16,
+        "participantMedian": 0.082,
+        "participantMedianBootstrap95": [
+          0.039,
+          0.279
+        ],
+        "positiveParticipants": 12
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.145,
+        "participantMedianBootstrap95": [
+          0.032,
+          0.244
+        ],
+        "positiveParticipants": 14
+      }
+    },
+    {
+      "muscle": "TRILong",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 16,
+        "participantMedian": 0.108,
+        "participantMedianBootstrap95": [
+          0.049,
+          0.215
+        ],
+        "positiveParticipants": 14
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.123,
+        "participantMedianBootstrap95": [
+          -0.003,
+          0.208
+        ],
+        "positiveParticipants": 12
+      }
+    },
+    {
+      "muscle": "TRILat",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 16,
+        "participantMedian": 0.212,
+        "participantMedianBootstrap95": [
+          0.143,
+          0.31
+        ],
+        "positiveParticipants": 14
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.212,
+        "participantMedianBootstrap95": [
+          -0.251,
+          -0.033
+        ],
+        "positiveParticipants": 4
+      }
+    },
+    {
+      "muscle": "TRIMed",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 16,
+        "participantMedian": 0.205,
+        "participantMedianBootstrap95": [
+          0.141,
+          0.242
+        ],
+        "positiveParticipants": 15
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.054,
+        "participantMedianBootstrap95": [
+          -0.175,
+          0.064
+        ],
+        "positiveParticipants": 7
+      }
+    },
+    {
+      "muscle": "BICLong",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.705,
+        "participantMedianBootstrap95": [
+          0.644,
+          0.763
+        ],
+        "positiveParticipants": 17
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.135,
+        "participantMedianBootstrap95": [
+          -0.292,
+          -0.075
+        ],
+        "positiveParticipants": 3
+      }
+    },
+    {
+      "muscle": "BICShort",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.356,
+        "participantMedianBootstrap95": [
+          0.172,
+          0.474
+        ],
+        "positiveParticipants": 16
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.22,
+        "participantMedianBootstrap95": [
+          -0.294,
+          -0.052
+        ],
+        "positiveParticipants": 3
+      }
+    },
+    {
+      "muscle": "BRA",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.724,
+        "participantMedianBootstrap95": [
+          0.527,
+          0.759
+        ],
+        "positiveParticipants": 17
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.184,
+        "participantMedianBootstrap95": [
+          -0.309,
+          -0.122
+        ],
+        "positiveParticipants": 2
+      }
+    },
+    {
+      "muscle": "BRD",
+      "activationVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": 0.707,
+        "participantMedianBootstrap95": [
+          0.649,
+          0.811
+        ],
+        "positiveParticipants": 17
+      },
+      "pathLengthVsEmgSpearman": {
+        "participantsWithVariation": 17,
+        "participantMedian": -0.156,
+        "participantMedianBootstrap95": [
+          -0.32,
+          -0.039
+        ],
+        "positiveParticipants": 3
+      }
+    }
+  ],
+  "participantResults": [
+    {
+      "subject": "S01",
+      "frames": 60,
+      "largestTorqueResidualNm": 2.1316282072803006e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.909,
+          "pathLengthVsEmgSpearman": -0.583,
+          "activationRange": [
+            0.0,
+            0.529
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.848,
+          "pathLengthVsEmgSpearman": -0.67,
+          "activationRange": [
+            0.0,
+            0.609
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.236,
+          "pathLengthVsEmgSpearman": -0.002,
+          "activationRange": [
+            0.0,
+            0.073
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.105,
+          "pathLengthVsEmgSpearman": -0.13,
+          "activationRange": [
+            0.0,
+            0.117
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.079,
+          "pathLengthVsEmgSpearman": 0.511,
+          "activationRange": [
+            0.0,
+            0.183
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.05,
+          "pathLengthVsEmgSpearman": 0.105,
+          "activationRange": [
+            0.0,
+            0.312
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.374,
+          "pathLengthVsEmgSpearman": -0.222,
+          "activationRange": [
+            0.0,
+            0.092
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.215,
+          "pathLengthVsEmgSpearman": 0.328,
+          "activationRange": [
+            0.0,
+            0.092
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.682,
+          "pathLengthVsEmgSpearman": -0.097,
+          "activationRange": [
+            0.0,
+            0.254
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.212,
+          "pathLengthVsEmgSpearman": 0.041,
+          "activationRange": [
+            0.0,
+            0.285
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.759,
+          "pathLengthVsEmgSpearman": -0.309,
+          "activationRange": [
+            0.0,
+            0.252
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.747,
+          "pathLengthVsEmgSpearman": -0.32,
+          "activationRange": [
+            0.0,
+            0.21
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S02",
+      "frames": 60,
+      "largestTorqueResidualNm": 2.4868995751603507e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.847,
+          "pathLengthVsEmgSpearman": -0.274,
+          "activationRange": [
+            0.0,
+            0.477
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.783,
+          "pathLengthVsEmgSpearman": -0.623,
+          "activationRange": [
+            0.0,
+            0.632
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.455,
+          "pathLengthVsEmgSpearman": 0.226,
+          "activationRange": [
+            0.0,
+            0.1
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.32,
+          "pathLengthVsEmgSpearman": 0.673,
+          "activationRange": [
+            0.0,
+            0.116
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.402,
+          "pathLengthVsEmgSpearman": 0.032,
+          "activationRange": [
+            0.0,
+            0.164
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.409,
+          "pathLengthVsEmgSpearman": 0.147,
+          "activationRange": [
+            0.0,
+            0.471
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.253,
+          "pathLengthVsEmgSpearman": -0.229,
+          "activationRange": [
+            0.0,
+            0.077
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.39,
+          "pathLengthVsEmgSpearman": 0.003,
+          "activationRange": [
+            0.0,
+            0.077
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.788,
+          "pathLengthVsEmgSpearman": -0.1,
+          "activationRange": [
+            0.0,
+            0.192
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.37,
+          "pathLengthVsEmgSpearman": -0.346,
+          "activationRange": [
+            0.0,
+            0.197
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.468,
+          "pathLengthVsEmgSpearman": -0.129,
+          "activationRange": [
+            0.0,
+            0.189
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.707,
+          "pathLengthVsEmgSpearman": -0.403,
+          "activationRange": [
+            0.0,
+            0.177
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S03",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.7763568394002505e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.841,
+          "pathLengthVsEmgSpearman": -0.441,
+          "activationRange": [
+            0.0,
+            0.38
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.769,
+          "pathLengthVsEmgSpearman": -0.557,
+          "activationRange": [
+            0.0,
+            0.405
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.257,
+          "pathLengthVsEmgSpearman": 0.073,
+          "activationRange": [
+            0.0,
+            0.063
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.155,
+          "pathLengthVsEmgSpearman": 0.291,
+          "activationRange": [
+            0.0,
+            0.091
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.069,
+          "pathLengthVsEmgSpearman": 0.105,
+          "activationRange": [
+            0.0,
+            0.125
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": -0.219,
+          "pathLengthVsEmgSpearman": 0.261,
+          "activationRange": [
+            0.0,
+            0.268
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": -0.106,
+          "pathLengthVsEmgSpearman": 0.166,
+          "activationRange": [
+            0.0,
+            0.016
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.242,
+          "pathLengthVsEmgSpearman": 0.2,
+          "activationRange": [
+            0.0,
+            0.016
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.685,
+          "pathLengthVsEmgSpearman": -0.406,
+          "activationRange": [
+            0.0,
+            0.18
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": -0.045,
+          "pathLengthVsEmgSpearman": -0.072,
+          "activationRange": [
+            0.0,
+            0.198
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.711,
+          "pathLengthVsEmgSpearman": -0.139,
+          "activationRange": [
+            0.0,
+            0.174
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.807,
+          "pathLengthVsEmgSpearman": -0.178,
+          "activationRange": [
+            0.0,
+            0.152
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S04",
+      "frames": 60,
+      "largestTorqueResidualNm": 2.4868995751603507e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.871,
+          "pathLengthVsEmgSpearman": -0.7,
+          "activationRange": [
+            0.018,
+            0.639
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.78,
+          "pathLengthVsEmgSpearman": -0.654,
+          "activationRange": [
+            0.0,
+            0.579
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.011,
+          "pathLengthVsEmgSpearman": 0.606,
+          "activationRange": [
+            0.0,
+            0.002
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.255,
+          "pathLengthVsEmgSpearman": -0.111,
+          "activationRange": [
+            0.0,
+            0.096
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": null,
+          "pathLengthVsEmgSpearman": 0.835,
+          "activationRange": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": null,
+          "pathLengthVsEmgSpearman": 0.123,
+          "activationRange": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": null,
+          "pathLengthVsEmgSpearman": 0.032,
+          "activationRange": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": null,
+          "pathLengthVsEmgSpearman": -0.175,
+          "activationRange": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.829,
+          "pathLengthVsEmgSpearman": 0.053,
+          "activationRange": [
+            0.03,
+            0.44
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.172,
+          "pathLengthVsEmgSpearman": -0.294,
+          "activationRange": [
+            0.0,
+            0.161
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.841,
+          "pathLengthVsEmgSpearman": -0.073,
+          "activationRange": [
+            0.006,
+            0.38
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.846,
+          "pathLengthVsEmgSpearman": -0.229,
+          "activationRange": [
+            0.004,
+            0.183
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S05",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.687538997430238e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.931,
+          "pathLengthVsEmgSpearman": -0.517,
+          "activationRange": [
+            0.0,
+            0.372
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.837,
+          "pathLengthVsEmgSpearman": -0.741,
+          "activationRange": [
+            0.0,
+            0.52
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.148,
+          "pathLengthVsEmgSpearman": -0.094,
+          "activationRange": [
+            0.0,
+            0.063
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.328,
+          "pathLengthVsEmgSpearman": 0.074,
+          "activationRange": [
+            0.0,
+            0.133
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.062,
+          "pathLengthVsEmgSpearman": 0.196,
+          "activationRange": [
+            0.0,
+            0.14
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.015,
+          "pathLengthVsEmgSpearman": 0.208,
+          "activationRange": [
+            0.0,
+            0.323
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.161,
+          "pathLengthVsEmgSpearman": -0.057,
+          "activationRange": [
+            0.0,
+            0.065
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.141,
+          "pathLengthVsEmgSpearman": 0.145,
+          "activationRange": [
+            0.0,
+            0.065
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.809,
+          "pathLengthVsEmgSpearman": -0.135,
+          "activationRange": [
+            0.0,
+            0.205
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.33,
+          "pathLengthVsEmgSpearman": -0.29,
+          "activationRange": [
+            0.0,
+            0.165
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.739,
+          "pathLengthVsEmgSpearman": -0.345,
+          "activationRange": [
+            0.0,
+            0.192
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.671,
+          "pathLengthVsEmgSpearman": -0.156,
+          "activationRange": [
+            0.0,
+            0.182
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S06",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.5987211554602254e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.644,
+          "pathLengthVsEmgSpearman": -0.405,
+          "activationRange": [
+            0.0,
+            0.678
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.55,
+          "pathLengthVsEmgSpearman": -0.149,
+          "activationRange": [
+            0.0,
+            0.368
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.255,
+          "pathLengthVsEmgSpearman": -0.206,
+          "activationRange": [
+            0.0,
+            0.103
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": 0.032,
+          "pathLengthVsEmgSpearman": -0.284,
+          "activationRange": [
+            0.0,
+            0.613
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.542,
+          "pathLengthVsEmgSpearman": -0.244,
+          "activationRange": [
+            0.0,
+            0.21
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.082,
+          "pathLengthVsEmgSpearman": -0.039,
+          "activationRange": [
+            0.0,
+            0.447
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.334,
+          "pathLengthVsEmgSpearman": 0.088,
+          "activationRange": [
+            0.0,
+            0.072
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.106,
+          "pathLengthVsEmgSpearman": 0.004,
+          "activationRange": [
+            0.0,
+            0.072
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.379,
+          "pathLengthVsEmgSpearman": -0.336,
+          "activationRange": [
+            0.0,
+            0.201
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.444,
+          "pathLengthVsEmgSpearman": -0.222,
+          "activationRange": [
+            0.0,
+            0.403
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.478,
+          "pathLengthVsEmgSpearman": -0.069,
+          "activationRange": [
+            0.0,
+            0.305
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.584,
+          "pathLengthVsEmgSpearman": -0.139,
+          "activationRange": [
+            0.0,
+            0.282
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S07",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.7763568394002505e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.758,
+          "pathLengthVsEmgSpearman": -0.602,
+          "activationRange": [
+            0.0,
+            0.41
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.782,
+          "pathLengthVsEmgSpearman": -0.682,
+          "activationRange": [
+            0.0,
+            0.412
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.092,
+          "pathLengthVsEmgSpearman": 0.141,
+          "activationRange": [
+            0.0,
+            0.053
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.094,
+          "pathLengthVsEmgSpearman": 0.329,
+          "activationRange": [
+            0.0,
+            0.168
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.279,
+          "pathLengthVsEmgSpearman": 0.192,
+          "activationRange": [
+            0.0,
+            0.137
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.284,
+          "pathLengthVsEmgSpearman": 0.203,
+          "activationRange": [
+            0.0,
+            0.179
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.176,
+          "pathLengthVsEmgSpearman": -0.147,
+          "activationRange": [
+            0.0,
+            0.06
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.194,
+          "pathLengthVsEmgSpearman": -0.275,
+          "activationRange": [
+            0.0,
+            0.06
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.605,
+          "pathLengthVsEmgSpearman": -0.135,
+          "activationRange": [
+            0.0,
+            0.275
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.474,
+          "pathLengthVsEmgSpearman": -0.381,
+          "activationRange": [
+            0.0,
+            0.275
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.724,
+          "pathLengthVsEmgSpearman": -0.338,
+          "activationRange": [
+            0.0,
+            0.265
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.871,
+          "pathLengthVsEmgSpearman": -0.541,
+          "activationRange": [
+            0.0,
+            0.225
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S08",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.9095836023552692e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.784,
+          "pathLengthVsEmgSpearman": -0.315,
+          "activationRange": [
+            0.0,
+            0.312
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.779,
+          "pathLengthVsEmgSpearman": -0.69,
+          "activationRange": [
+            0.0,
+            0.478
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.013,
+          "pathLengthVsEmgSpearman": -0.516,
+          "activationRange": [
+            0.0,
+            0.124
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.07,
+          "pathLengthVsEmgSpearman": 0.103,
+          "activationRange": [
+            0.0,
+            0.159
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.223,
+          "pathLengthVsEmgSpearman": 0.046,
+          "activationRange": [
+            0.0,
+            0.112
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.215,
+          "pathLengthVsEmgSpearman": -0.132,
+          "activationRange": [
+            0.0,
+            0.229
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.301,
+          "pathLengthVsEmgSpearman": -0.35,
+          "activationRange": [
+            0.0,
+            0.104
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.348,
+          "pathLengthVsEmgSpearman": -0.054,
+          "activationRange": [
+            0.0,
+            0.104
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.298,
+          "pathLengthVsEmgSpearman": -0.292,
+          "activationRange": [
+            0.0,
+            0.207
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.041,
+          "pathLengthVsEmgSpearman": -0.032,
+          "activationRange": [
+            0.0,
+            0.252
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.258,
+          "pathLengthVsEmgSpearman": 0.125,
+          "activationRange": [
+            0.0,
+            0.23
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.325,
+          "pathLengthVsEmgSpearman": 0.026,
+          "activationRange": [
+            0.0,
+            0.201
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S09",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.5987211554602254e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.843,
+          "pathLengthVsEmgSpearman": -0.592,
+          "activationRange": [
+            0.0,
+            0.246
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.833,
+          "pathLengthVsEmgSpearman": -0.545,
+          "activationRange": [
+            0.0,
+            0.356
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.005,
+          "pathLengthVsEmgSpearman": -0.318,
+          "activationRange": [
+            0.0,
+            0.154
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.167,
+          "pathLengthVsEmgSpearman": 0.122,
+          "activationRange": [
+            0.0,
+            0.466
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": -0.077,
+          "pathLengthVsEmgSpearman": 0.145,
+          "activationRange": [
+            0.0,
+            0.185
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.169,
+          "pathLengthVsEmgSpearman": 0.153,
+          "activationRange": [
+            0.0,
+            0.45
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.249,
+          "pathLengthVsEmgSpearman": -0.033,
+          "activationRange": [
+            0.0,
+            0.034
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.224,
+          "pathLengthVsEmgSpearman": 0.104,
+          "activationRange": [
+            0.0,
+            0.034
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.492,
+          "pathLengthVsEmgSpearman": -0.346,
+          "activationRange": [
+            0.0,
+            0.19
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.087,
+          "pathLengthVsEmgSpearman": 0.212,
+          "activationRange": [
+            0.0,
+            0.475
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.253,
+          "pathLengthVsEmgSpearman": -0.165,
+          "activationRange": [
+            0.0,
+            0.217
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.363,
+          "pathLengthVsEmgSpearman": -0.007,
+          "activationRange": [
+            0.0,
+            0.23
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S10",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.9539925233402755e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.806,
+          "pathLengthVsEmgSpearman": -0.226,
+          "activationRange": [
+            0.0,
+            0.403
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.876,
+          "pathLengthVsEmgSpearman": -0.506,
+          "activationRange": [
+            0.0,
+            0.482
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.249,
+          "pathLengthVsEmgSpearman": -0.546,
+          "activationRange": [
+            0.0,
+            0.049
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.181,
+          "pathLengthVsEmgSpearman": -0.631,
+          "activationRange": [
+            0.0,
+            0.218
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.086,
+          "pathLengthVsEmgSpearman": -0.045,
+          "activationRange": [
+            0.0,
+            0.118
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.373,
+          "pathLengthVsEmgSpearman": 0.068,
+          "activationRange": [
+            0.0,
+            0.357
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.073,
+          "pathLengthVsEmgSpearman": -0.502,
+          "activationRange": [
+            0.0,
+            0.039
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.041,
+          "pathLengthVsEmgSpearman": -0.062,
+          "activationRange": [
+            0.0,
+            0.039
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.754,
+          "pathLengthVsEmgSpearman": -0.042,
+          "activationRange": [
+            0.0,
+            0.262
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.741,
+          "pathLengthVsEmgSpearman": -0.354,
+          "activationRange": [
+            0.0,
+            0.31
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.734,
+          "pathLengthVsEmgSpearman": -0.197,
+          "activationRange": [
+            0.0,
+            0.253
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.445,
+          "pathLengthVsEmgSpearman": 0.089,
+          "activationRange": [
+            0.0,
+            0.213
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S11",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.3766765505351941e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.818,
+          "pathLengthVsEmgSpearman": -0.46,
+          "activationRange": [
+            0.0,
+            0.255
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.791,
+          "pathLengthVsEmgSpearman": -0.585,
+          "activationRange": [
+            0.0,
+            0.436
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.292,
+          "pathLengthVsEmgSpearman": -0.018,
+          "activationRange": [
+            0.0,
+            0.071
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": 0.086,
+          "pathLengthVsEmgSpearman": -0.404,
+          "activationRange": [
+            0.0,
+            0.113
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.039,
+          "pathLengthVsEmgSpearman": 0.128,
+          "activationRange": [
+            0.0,
+            0.093
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.051,
+          "pathLengthVsEmgSpearman": 0.278,
+          "activationRange": [
+            0.0,
+            0.137
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.175,
+          "pathLengthVsEmgSpearman": -0.223,
+          "activationRange": [
+            0.0,
+            0.053
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.386,
+          "pathLengthVsEmgSpearman": -0.19,
+          "activationRange": [
+            0.0,
+            0.053
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.696,
+          "pathLengthVsEmgSpearman": -0.187,
+          "activationRange": [
+            0.0,
+            0.295
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.204,
+          "pathLengthVsEmgSpearman": -0.128,
+          "activationRange": [
+            0.0,
+            0.205
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.753,
+          "pathLengthVsEmgSpearman": -0.341,
+          "activationRange": [
+            0.0,
+            0.291
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.708,
+          "pathLengthVsEmgSpearman": -0.36,
+          "activationRange": [
+            0.0,
+            0.243
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S12",
+      "frames": 60,
+      "largestTorqueResidualNm": 3.197442310920451e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.916,
+          "pathLengthVsEmgSpearman": -0.497,
+          "activationRange": [
+            0.0,
+            0.419
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.86,
+          "pathLengthVsEmgSpearman": -0.704,
+          "activationRange": [
+            0.0,
+            0.494
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.126,
+          "pathLengthVsEmgSpearman": 0.413,
+          "activationRange": [
+            0.0,
+            0.119
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.062,
+          "pathLengthVsEmgSpearman": 0.029,
+          "activationRange": [
+            0.0,
+            0.014
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.316,
+          "pathLengthVsEmgSpearman": 0.012,
+          "activationRange": [
+            0.0,
+            0.147
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": -0.088,
+          "pathLengthVsEmgSpearman": -0.048,
+          "activationRange": [
+            0.0,
+            0.103
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.316,
+          "pathLengthVsEmgSpearman": -0.528,
+          "activationRange": [
+            0.0,
+            0.034
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.16,
+          "pathLengthVsEmgSpearman": -0.225,
+          "activationRange": [
+            0.0,
+            0.034
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.765,
+          "pathLengthVsEmgSpearman": 0.234,
+          "activationRange": [
+            0.035,
+            0.216
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.433,
+          "pathLengthVsEmgSpearman": -0.22,
+          "activationRange": [
+            0.0,
+            0.11
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.761,
+          "pathLengthVsEmgSpearman": -0.454,
+          "activationRange": [
+            0.0,
+            0.208
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.854,
+          "pathLengthVsEmgSpearman": -0.309,
+          "activationRange": [
+            0.0,
+            0.182
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S13",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.4210854715202004e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.855,
+          "pathLengthVsEmgSpearman": -0.593,
+          "activationRange": [
+            0.0,
+            0.366
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.863,
+          "pathLengthVsEmgSpearman": -0.711,
+          "activationRange": [
+            0.0,
+            0.341
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.166,
+          "pathLengthVsEmgSpearman": 0.328,
+          "activationRange": [
+            0.0,
+            0.084
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.13,
+          "pathLengthVsEmgSpearman": 0.103,
+          "activationRange": [
+            0.0,
+            0.062
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.268,
+          "pathLengthVsEmgSpearman": 0.269,
+          "activationRange": [
+            0.0,
+            0.123
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.124,
+          "pathLengthVsEmgSpearman": -0.003,
+          "activationRange": [
+            0.0,
+            0.236
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": -0.061,
+          "pathLengthVsEmgSpearman": -0.251,
+          "activationRange": [
+            0.0,
+            0.01
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.188,
+          "pathLengthVsEmgSpearman": -0.115,
+          "activationRange": [
+            0.0,
+            0.01
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.722,
+          "pathLengthVsEmgSpearman": 0.214,
+          "activationRange": [
+            0.0,
+            0.311
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.356,
+          "pathLengthVsEmgSpearman": -0.052,
+          "activationRange": [
+            0.0,
+            0.174
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.618,
+          "pathLengthVsEmgSpearman": 0.062,
+          "activationRange": [
+            0.0,
+            0.27
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.703,
+          "pathLengthVsEmgSpearman": -0.076,
+          "activationRange": [
+            0.0,
+            0.205
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S14",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.9539925233402755e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.839,
+          "pathLengthVsEmgSpearman": -0.472,
+          "activationRange": [
+            0.0,
+            0.37
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.621,
+          "pathLengthVsEmgSpearman": -0.437,
+          "activationRange": [
+            0.0,
+            0.337
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.357,
+          "pathLengthVsEmgSpearman": 0.651,
+          "activationRange": [
+            0.0,
+            0.28
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.152,
+          "pathLengthVsEmgSpearman": 0.329,
+          "activationRange": [
+            0.0,
+            0.023
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": -0.142,
+          "pathLengthVsEmgSpearman": 0.163,
+          "activationRange": [
+            0.0,
+            0.259
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.093,
+          "pathLengthVsEmgSpearman": 0.242,
+          "activationRange": [
+            0.0,
+            0.328
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.11,
+          "pathLengthVsEmgSpearman": -0.341,
+          "activationRange": [
+            0.0,
+            0.001
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": -0.141,
+          "pathLengthVsEmgSpearman": -0.002,
+          "activationRange": [
+            0.0,
+            0.001
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.763,
+          "pathLengthVsEmgSpearman": -0.075,
+          "activationRange": [
+            0.0,
+            0.236
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.493,
+          "pathLengthVsEmgSpearman": 0.101,
+          "activationRange": [
+            0.0,
+            0.158
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.694,
+          "pathLengthVsEmgSpearman": -0.122,
+          "activationRange": [
+            0.0,
+            0.231
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.659,
+          "pathLengthVsEmgSpearman": -0.324,
+          "activationRange": [
+            0.0,
+            0.18
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S15",
+      "frames": 60,
+      "largestTorqueResidualNm": 1.9539925233402755e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.883,
+          "pathLengthVsEmgSpearman": -0.672,
+          "activationRange": [
+            0.0,
+            0.447
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.779,
+          "pathLengthVsEmgSpearman": -0.66,
+          "activationRange": [
+            0.0,
+            0.518
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.111,
+          "pathLengthVsEmgSpearman": 0.476,
+          "activationRange": [
+            0.0,
+            0.189
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.257,
+          "pathLengthVsEmgSpearman": 0.154,
+          "activationRange": [
+            0.0,
+            0.092
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": -0.067,
+          "pathLengthVsEmgSpearman": 0.426,
+          "activationRange": [
+            0.0,
+            0.232
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.013,
+          "pathLengthVsEmgSpearman": 0.375,
+          "activationRange": [
+            0.0,
+            0.299
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.31,
+          "pathLengthVsEmgSpearman": -0.051,
+          "activationRange": [
+            0.0,
+            0.045
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.228,
+          "pathLengthVsEmgSpearman": -0.11,
+          "activationRange": [
+            0.0,
+            0.045
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.705,
+          "pathLengthVsEmgSpearman": -0.369,
+          "activationRange": [
+            0.0,
+            0.298
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.678,
+          "pathLengthVsEmgSpearman": -0.284,
+          "activationRange": [
+            0.0,
+            0.28
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.83,
+          "pathLengthVsEmgSpearman": -0.217,
+          "activationRange": [
+            0.0,
+            0.38
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.811,
+          "pathLengthVsEmgSpearman": -0.125,
+          "activationRange": [
+            0.0,
+            0.338
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S16",
+      "frames": 60,
+      "largestTorqueResidualNm": 2.1316282072803006e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.709,
+          "pathLengthVsEmgSpearman": -0.72,
+          "activationRange": [
+            0.0,
+            0.54
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.805,
+          "pathLengthVsEmgSpearman": -0.704,
+          "activationRange": [
+            0.0,
+            0.251
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": -0.152,
+          "pathLengthVsEmgSpearman": 0.585,
+          "activationRange": [
+            0.0,
+            0.06
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.12,
+          "pathLengthVsEmgSpearman": 0.117,
+          "activationRange": [
+            0.0,
+            0.205
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": -0.154,
+          "pathLengthVsEmgSpearman": 0.244,
+          "activationRange": [
+            0.0,
+            0.094
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.273,
+          "pathLengthVsEmgSpearman": -0.224,
+          "activationRange": [
+            0.0,
+            0.104
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.148,
+          "pathLengthVsEmgSpearman": 0.116,
+          "activationRange": [
+            0.0,
+            0.075
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.093,
+          "pathLengthVsEmgSpearman": 0.064,
+          "activationRange": [
+            0.0,
+            0.075
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.731,
+          "pathLengthVsEmgSpearman": -0.232,
+          "activationRange": [
+            0.0,
+            0.233
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.663,
+          "pathLengthVsEmgSpearman": -0.34,
+          "activationRange": [
+            0.0,
+            0.259
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.851,
+          "pathLengthVsEmgSpearman": -0.197,
+          "activationRange": [
+            0.0,
+            0.288
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.895,
+          "pathLengthVsEmgSpearman": -0.039,
+          "activationRange": [
+            0.0,
+            0.234
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "S17",
+      "frames": 60,
+      "largestTorqueResidualNm": 2.1316282072803006e-14,
+      "channels": [
+        {
+          "muscle": "DELTAnt",
+          "activationVsEmgSpearman": 0.912,
+          "pathLengthVsEmgSpearman": -0.386,
+          "activationRange": [
+            0.0,
+            0.41
+          ]
+        },
+        {
+          "muscle": "DELTMed",
+          "activationVsEmgSpearman": 0.912,
+          "pathLengthVsEmgSpearman": -0.428,
+          "activationRange": [
+            0.0,
+            0.451
+          ]
+        },
+        {
+          "muscle": "DELTPost",
+          "activationVsEmgSpearman": 0.246,
+          "pathLengthVsEmgSpearman": -0.12,
+          "activationRange": [
+            0.0,
+            0.13
+          ]
+        },
+        {
+          "muscle": "PECT",
+          "activationVsEmgSpearman": -0.329,
+          "pathLengthVsEmgSpearman": 0.097,
+          "activationRange": [
+            0.0,
+            0.181
+          ]
+        },
+        {
+          "muscle": "LATI",
+          "activationVsEmgSpearman": 0.422,
+          "pathLengthVsEmgSpearman": -0.288,
+          "activationRange": [
+            0.0,
+            0.23
+          ]
+        },
+        {
+          "muscle": "TRILong",
+          "activationVsEmgSpearman": 0.176,
+          "pathLengthVsEmgSpearman": 0.034,
+          "activationRange": [
+            0.0,
+            0.568
+          ]
+        },
+        {
+          "muscle": "TRILat",
+          "activationVsEmgSpearman": 0.69,
+          "pathLengthVsEmgSpearman": -0.212,
+          "activationRange": [
+            0.0,
+            0.112
+          ]
+        },
+        {
+          "muscle": "TRIMed",
+          "activationVsEmgSpearman": 0.583,
+          "pathLengthVsEmgSpearman": -0.211,
+          "activationRange": [
+            0.0,
+            0.112
+          ]
+        },
+        {
+          "muscle": "BICLong",
+          "activationVsEmgSpearman": 0.644,
+          "pathLengthVsEmgSpearman": -0.282,
+          "activationRange": [
+            0.0,
+            0.164
+          ]
+        },
+        {
+          "muscle": "BICShort",
+          "activationVsEmgSpearman": 0.079,
+          "pathLengthVsEmgSpearman": -0.116,
+          "activationRange": [
+            0.0,
+            0.21
+          ]
+        },
+        {
+          "muscle": "BRA",
+          "activationVsEmgSpearman": 0.527,
+          "pathLengthVsEmgSpearman": -0.184,
+          "activationRange": [
+            0.0,
+            0.155
+          ]
+        },
+        {
+          "muscle": "BRD",
+          "activationVsEmgSpearman": 0.649,
+          "pathLengthVsEmgSpearman": 0.006,
+          "activationRange": [
+            0.0,
+            0.136
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The solver is given experimentally processed joint torques and poses unavailable to the phone; this is retrodiction, not prospective prediction.",
+    "Only two joint torques constrain 12 muscle tensions; the minimum-squared-activation prior is a choice, not measured physiology.",
+    "Fmax is identical across all 17 scaled models; force-length-velocity, passive force, external contact, and other coordinates are omitted.",
+    "Surface EMG is an imperfect activation trend reference and is not a single-muscle force measurement; no electromechanical lag is tuned.",
+    "The task is exoskeleton upper-limb tracking, not bench or overhead press."
+  ]
+}

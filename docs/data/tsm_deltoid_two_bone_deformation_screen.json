@@ -1,0 +1,4349 @@
+{
+  "status": "exploratory_two_bone_deltoid_surface_screen_not_anatomy_or_force_validation",
+  "method": "Humerus-proxy atlas fit at first pose; each vertex projects onto first model path origin-to-insertion axis. Origin-bone and humerus rigid positions are linearly blended by the clamped projected fraction; all 101 synthetic poses per exercise audited.",
+  "limitations": [
+    "Source mesh does not have validated individual attachment landmarks",
+    "The TSM paths and bench/press poses are model-generated, not measured workouts",
+    "Nearest path-surface distance does not validate skinning, tissue strain, activation or force"
+  ],
+  "muscles": [
+    {
+      "exercise": "bench",
+      "muscle": "DeltoideusClavicle_A",
+      "atlasMesh": "Clavicular part of deltoid muscle.r",
+      "originBody": "clavicle",
+      "distalBody": "humerus",
+      "vertices": 1453,
+      "edges": 4353,
+      "fractionsAtZero": 0,
+      "fractionsAtOne": 4,
+      "minimumEdgeRatio": 0.34918,
+      "maximumEdgeRatio": 2.07653,
+      "maximumPathSurfaceCm": 5.067,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "minimumEdgeRatio": 0.99986,
+          "maximumEdgeRatio": 1.00016,
+          "medianPathSurfaceCm": 1.273,
+          "maximumPathSurfaceCm": 4.145
+        },
+        {
+          "frameIndex": 1,
+          "minimumEdgeRatio": 0.99905,
+          "maximumEdgeRatio": 1.00132,
+          "medianPathSurfaceCm": 1.273,
+          "maximumPathSurfaceCm": 4.146
+        },
+        {
+          "frameIndex": 2,
+          "minimumEdgeRatio": 0.99621,
+          "maximumEdgeRatio": 1.00532,
+          "medianPathSurfaceCm": 1.274,
+          "maximumPathSurfaceCm": 4.149
+        },
+        {
+          "frameIndex": 3,
+          "minimumEdgeRatio": 0.99152,
+          "maximumEdgeRatio": 1.01197,
+          "medianPathSurfaceCm": 1.275,
+          "maximumPathSurfaceCm": 4.154
+        },
+        {
+          "frameIndex": 4,
+          "minimumEdgeRatio": 0.98497,
+          "maximumEdgeRatio": 1.0212,
+          "medianPathSurfaceCm": 1.277,
+          "maximumPathSurfaceCm": 4.162
+        },
+        {
+          "frameIndex": 5,
+          "minimumEdgeRatio": 0.97667,
+          "maximumEdgeRatio": 1.03295,
+          "medianPathSurfaceCm": 1.279,
+          "maximumPathSurfaceCm": 4.172
+        },
+        {
+          "frameIndex": 6,
+          "minimumEdgeRatio": 0.96669,
+          "maximumEdgeRatio": 1.04712,
+          "medianPathSurfaceCm": 1.282,
+          "maximumPathSurfaceCm": 4.184
+        },
+        {
+          "frameIndex": 7,
+          "minimumEdgeRatio": 0.95512,
+          "maximumEdgeRatio": 1.06439,
+          "medianPathSurfaceCm": 1.313,
+          "maximumPathSurfaceCm": 4.199
+        },
+        {
+          "frameIndex": 8,
+          "minimumEdgeRatio": 0.94213,
+          "maximumEdgeRatio": 1.0845,
+          "medianPathSurfaceCm": 1.356,
+          "maximumPathSurfaceCm": 4.217
+        },
+        {
+          "frameIndex": 9,
+          "minimumEdgeRatio": 0.92787,
+          "maximumEdgeRatio": 1.10734,
+          "medianPathSurfaceCm": 1.402,
+          "maximumPathSurfaceCm": 4.237
+        },
+        {
+          "frameIndex": 10,
+          "minimumEdgeRatio": 0.91259,
+          "maximumEdgeRatio": 1.13283,
+          "medianPathSurfaceCm": 1.448,
+          "maximumPathSurfaceCm": 4.26
+        },
+        {
+          "frameIndex": 11,
+          "minimumEdgeRatio": 0.89651,
+          "maximumEdgeRatio": 1.16079,
+          "medianPathSurfaceCm": 1.497,
+          "maximumPathSurfaceCm": 4.285
+        },
+        {
+          "frameIndex": 12,
+          "minimumEdgeRatio": 0.87995,
+          "maximumEdgeRatio": 1.19104,
+          "medianPathSurfaceCm": 1.548,
+          "maximumPathSurfaceCm": 4.312
+        },
+        {
+          "frameIndex": 13,
+          "minimumEdgeRatio": 0.86327,
+          "maximumEdgeRatio": 1.2233,
+          "medianPathSurfaceCm": 1.601,
+          "maximumPathSurfaceCm": 4.339
+        },
+        {
+          "frameIndex": 14,
+          "minimumEdgeRatio": 0.84044,
+          "maximumEdgeRatio": 1.25413,
+          "medianPathSurfaceCm": 1.667,
+          "maximumPathSurfaceCm": 4.366
+        },
+        {
+          "frameIndex": 15,
+          "minimumEdgeRatio": 0.81284,
+          "maximumEdgeRatio": 1.28527,
+          "medianPathSurfaceCm": 1.741,
+          "maximumPathSurfaceCm": 4.394
+        },
+        {
+          "frameIndex": 16,
+          "minimumEdgeRatio": 0.78447,
+          "maximumEdgeRatio": 1.31861,
+          "medianPathSurfaceCm": 1.812,
+          "maximumPathSurfaceCm": 4.423
+        },
+        {
+          "frameIndex": 17,
+          "minimumEdgeRatio": 0.75573,
+          "maximumEdgeRatio": 1.35391,
+          "medianPathSurfaceCm": 1.834,
+          "maximumPathSurfaceCm": 4.453
+        },
+        {
+          "frameIndex": 18,
+          "minimumEdgeRatio": 0.72709,
+          "maximumEdgeRatio": 1.39087,
+          "medianPathSurfaceCm": 1.854,
+          "maximumPathSurfaceCm": 4.485
+        },
+        {
+          "frameIndex": 19,
+          "minimumEdgeRatio": 0.69911,
+          "maximumEdgeRatio": 1.42994,
+          "medianPathSurfaceCm": 1.872,
+          "maximumPathSurfaceCm": 4.52
+        },
+        {
+          "frameIndex": 20,
+          "minimumEdgeRatio": 0.6724,
+          "maximumEdgeRatio": 1.46839,
+          "medianPathSurfaceCm": 1.888,
+          "maximumPathSurfaceCm": 4.554
+        },
+        {
+          "frameIndex": 21,
+          "minimumEdgeRatio": 0.64651,
+          "maximumEdgeRatio": 1.503,
+          "medianPathSurfaceCm": 1.915,
+          "maximumPathSurfaceCm": 4.586
+        },
+        {
+          "frameIndex": 22,
+          "minimumEdgeRatio": 0.62124,
+          "maximumEdgeRatio": 1.53877,
+          "medianPathSurfaceCm": 1.987,
+          "maximumPathSurfaceCm": 4.618
+        },
+        {
+          "frameIndex": 23,
+          "minimumEdgeRatio": 0.59709,
+          "maximumEdgeRatio": 1.57539,
+          "medianPathSurfaceCm": 2.02,
+          "maximumPathSurfaceCm": 4.65
+        },
+        {
+          "frameIndex": 24,
+          "minimumEdgeRatio": 0.57447,
+          "maximumEdgeRatio": 1.61254,
+          "medianPathSurfaceCm": 2.037,
+          "maximumPathSurfaceCm": 4.682
+        },
+        {
+          "frameIndex": 25,
+          "minimumEdgeRatio": 0.55393,
+          "maximumEdgeRatio": 1.64994,
+          "medianPathSurfaceCm": 2.052,
+          "maximumPathSurfaceCm": 4.714
+        },
+        {
+          "frameIndex": 26,
+          "minimumEdgeRatio": 0.53899,
+          "maximumEdgeRatio": 1.68062,
+          "medianPathSurfaceCm": 2.064,
+          "maximumPathSurfaceCm": 4.739
+        },
+        {
+          "frameIndex": 27,
+          "minimumEdgeRatio": 0.52549,
+          "maximumEdgeRatio": 1.7112,
+          "medianPathSurfaceCm": 2.075,
+          "maximumPathSurfaceCm": 4.764
+        },
+        {
+          "frameIndex": 28,
+          "minimumEdgeRatio": 0.51362,
+          "maximumEdgeRatio": 1.74146,
+          "medianPathSurfaceCm": 2.083,
+          "maximumPathSurfaceCm": 4.788
+        },
+        {
+          "frameIndex": 29,
+          "minimumEdgeRatio": 0.49801,
+          "maximumEdgeRatio": 1.7712,
+          "medianPathSurfaceCm": 2.092,
+          "maximumPathSurfaceCm": 4.811
+        },
+        {
+          "frameIndex": 30,
+          "minimumEdgeRatio": 0.47974,
+          "maximumEdgeRatio": 1.80026,
+          "medianPathSurfaceCm": 2.14,
+          "maximumPathSurfaceCm": 4.835
+        },
+        {
+          "frameIndex": 31,
+          "minimumEdgeRatio": 0.46416,
+          "maximumEdgeRatio": 1.827,
+          "medianPathSurfaceCm": 2.183,
+          "maximumPathSurfaceCm": 4.857
+        },
+        {
+          "frameIndex": 32,
+          "minimumEdgeRatio": 0.45063,
+          "maximumEdgeRatio": 1.8518,
+          "medianPathSurfaceCm": 2.221,
+          "maximumPathSurfaceCm": 4.877
+        },
+        {
+          "frameIndex": 33,
+          "minimumEdgeRatio": 0.43783,
+          "maximumEdgeRatio": 1.87567,
+          "medianPathSurfaceCm": 2.257,
+          "maximumPathSurfaceCm": 4.897
+        },
+        {
+          "frameIndex": 34,
+          "minimumEdgeRatio": 0.42583,
+          "maximumEdgeRatio": 1.89842,
+          "medianPathSurfaceCm": 2.288,
+          "maximumPathSurfaceCm": 4.915
+        },
+        {
+          "frameIndex": 35,
+          "minimumEdgeRatio": 0.4147,
+          "maximumEdgeRatio": 1.92005,
+          "medianPathSurfaceCm": 2.286,
+          "maximumPathSurfaceCm": 4.934
+        },
+        {
+          "frameIndex": 36,
+          "minimumEdgeRatio": 0.40448,
+          "maximumEdgeRatio": 1.94044,
+          "medianPathSurfaceCm": 2.283,
+          "maximumPathSurfaceCm": 4.951
+        },
+        {
+          "frameIndex": 37,
+          "minimumEdgeRatio": 0.3954,
+          "maximumEdgeRatio": 1.95931,
+          "medianPathSurfaceCm": 2.28,
+          "maximumPathSurfaceCm": 4.967
+        },
+        {
+          "frameIndex": 38,
+          "minimumEdgeRatio": 0.38748,
+          "maximumEdgeRatio": 1.97652,
+          "medianPathSurfaceCm": 2.277,
+          "maximumPathSurfaceCm": 4.981
+        },
+        {
+          "frameIndex": 39,
+          "minimumEdgeRatio": 0.38043,
+          "maximumEdgeRatio": 1.99239,
+          "medianPathSurfaceCm": 2.274,
+          "maximumPathSurfaceCm": 4.995
+        },
+        {
+          "frameIndex": 40,
+          "minimumEdgeRatio": 0.37423,
+          "maximumEdgeRatio": 2.00696,
+          "medianPathSurfaceCm": 2.271,
+          "maximumPathSurfaceCm": 5.007
+        },
+        {
+          "frameIndex": 41,
+          "minimumEdgeRatio": 0.36887,
+          "maximumEdgeRatio": 2.02016,
+          "medianPathSurfaceCm": 2.268,
+          "maximumPathSurfaceCm": 5.019
+        },
+        {
+          "frameIndex": 42,
+          "minimumEdgeRatio": 0.36427,
+          "maximumEdgeRatio": 2.032,
+          "medianPathSurfaceCm": 2.267,
+          "maximumPathSurfaceCm": 5.029
+        },
+        {
+          "frameIndex": 43,
+          "minimumEdgeRatio": 0.3604,
+          "maximumEdgeRatio": 2.04241,
+          "medianPathSurfaceCm": 2.267,
+          "maximumPathSurfaceCm": 5.038
+        },
+        {
+          "frameIndex": 44,
+          "minimumEdgeRatio": 0.3572,
+          "maximumEdgeRatio": 2.05147,
+          "medianPathSurfaceCm": 2.266,
+          "maximumPathSurfaceCm": 5.046
+        },
+        {
+          "frameIndex": 45,
+          "minimumEdgeRatio": 0.35461,
+          "maximumEdgeRatio": 2.05914,
+          "medianPathSurfaceCm": 2.265,
+          "maximumPathSurfaceCm": 5.052
+        },
+        {
+          "frameIndex": 46,
+          "minimumEdgeRatio": 0.35259,
+          "maximumEdgeRatio": 2.06539,
+          "medianPathSurfaceCm": 2.265,
+          "maximumPathSurfaceCm": 5.058
+        },
+        {
+          "frameIndex": 47,
+          "minimumEdgeRatio": 0.35106,
+          "maximumEdgeRatio": 2.07028,
+          "medianPathSurfaceCm": 2.265,
+          "maximumPathSurfaceCm": 5.062
+        },
+        {
+          "frameIndex": 48,
+          "minimumEdgeRatio": 0.35001,
+          "maximumEdgeRatio": 2.07374,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 5.065
+        },
+        {
+          "frameIndex": 49,
+          "minimumEdgeRatio": 0.34939,
+          "maximumEdgeRatio": 2.07582,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 5.067
+        },
+        {
+          "frameIndex": 50,
+          "minimumEdgeRatio": 0.34918,
+          "maximumEdgeRatio": 2.07653,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 5.067
+        },
+        {
+          "frameIndex": 51,
+          "minimumEdgeRatio": 0.34939,
+          "maximumEdgeRatio": 2.07582,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 5.067
+        },
+        {
+          "frameIndex": 52,
+          "minimumEdgeRatio": 0.35001,
+          "maximumEdgeRatio": 2.07374,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 5.065
+        },
+        {
+          "frameIndex": 53,
+          "minimumEdgeRatio": 0.35106,
+          "maximumEdgeRatio": 2.07028,
+          "medianPathSurfaceCm": 2.265,
+          "maximumPathSurfaceCm": 5.062
+        },
+        {
+          "frameIndex": 54,
+          "minimumEdgeRatio": 0.35259,
+          "maximumEdgeRatio": 2.06539,
+          "medianPathSurfaceCm": 2.265,
+          "maximumPathSurfaceCm": 5.058
+        },
+        {
+          "frameIndex": 55,
+          "minimumEdgeRatio": 0.35461,
+          "maximumEdgeRatio": 2.05914,
+          "medianPathSurfaceCm": 2.265,
+          "maximumPathSurfaceCm": 5.052
+        },
+        {
+          "frameIndex": 56,
+          "minimumEdgeRatio": 0.3572,
+          "maximumEdgeRatio": 2.05147,
+          "medianPathSurfaceCm": 2.266,
+          "maximumPathSurfaceCm": 5.046
+        },
+        {
+          "frameIndex": 57,
+          "minimumEdgeRatio": 0.3604,
+          "maximumEdgeRatio": 2.04241,
+          "medianPathSurfaceCm": 2.267,
+          "maximumPathSurfaceCm": 5.038
+        },
+        {
+          "frameIndex": 58,
+          "minimumEdgeRatio": 0.36427,
+          "maximumEdgeRatio": 2.032,
+          "medianPathSurfaceCm": 2.267,
+          "maximumPathSurfaceCm": 5.029
+        },
+        {
+          "frameIndex": 59,
+          "minimumEdgeRatio": 0.36887,
+          "maximumEdgeRatio": 2.02016,
+          "medianPathSurfaceCm": 2.268,
+          "maximumPathSurfaceCm": 5.019
+        },
+        {
+          "frameIndex": 60,
+          "minimumEdgeRatio": 0.37423,
+          "maximumEdgeRatio": 2.00696,
+          "medianPathSurfaceCm": 2.271,
+          "maximumPathSurfaceCm": 5.007
+        },
+        {
+          "frameIndex": 61,
+          "minimumEdgeRatio": 0.38043,
+          "maximumEdgeRatio": 1.99239,
+          "medianPathSurfaceCm": 2.274,
+          "maximumPathSurfaceCm": 4.995
+        },
+        {
+          "frameIndex": 62,
+          "minimumEdgeRatio": 0.38748,
+          "maximumEdgeRatio": 1.97652,
+          "medianPathSurfaceCm": 2.277,
+          "maximumPathSurfaceCm": 4.981
+        },
+        {
+          "frameIndex": 63,
+          "minimumEdgeRatio": 0.3954,
+          "maximumEdgeRatio": 1.95931,
+          "medianPathSurfaceCm": 2.28,
+          "maximumPathSurfaceCm": 4.967
+        },
+        {
+          "frameIndex": 64,
+          "minimumEdgeRatio": 0.40448,
+          "maximumEdgeRatio": 1.94044,
+          "medianPathSurfaceCm": 2.283,
+          "maximumPathSurfaceCm": 4.951
+        },
+        {
+          "frameIndex": 65,
+          "minimumEdgeRatio": 0.4147,
+          "maximumEdgeRatio": 1.92005,
+          "medianPathSurfaceCm": 2.286,
+          "maximumPathSurfaceCm": 4.934
+        },
+        {
+          "frameIndex": 66,
+          "minimumEdgeRatio": 0.42583,
+          "maximumEdgeRatio": 1.89842,
+          "medianPathSurfaceCm": 2.288,
+          "maximumPathSurfaceCm": 4.915
+        },
+        {
+          "frameIndex": 67,
+          "minimumEdgeRatio": 0.43783,
+          "maximumEdgeRatio": 1.87567,
+          "medianPathSurfaceCm": 2.257,
+          "maximumPathSurfaceCm": 4.897
+        },
+        {
+          "frameIndex": 68,
+          "minimumEdgeRatio": 0.45063,
+          "maximumEdgeRatio": 1.8518,
+          "medianPathSurfaceCm": 2.221,
+          "maximumPathSurfaceCm": 4.877
+        },
+        {
+          "frameIndex": 69,
+          "minimumEdgeRatio": 0.46416,
+          "maximumEdgeRatio": 1.827,
+          "medianPathSurfaceCm": 2.183,
+          "maximumPathSurfaceCm": 4.857
+        },
+        {
+          "frameIndex": 70,
+          "minimumEdgeRatio": 0.47974,
+          "maximumEdgeRatio": 1.80026,
+          "medianPathSurfaceCm": 2.14,
+          "maximumPathSurfaceCm": 4.835
+        },
+        {
+          "frameIndex": 71,
+          "minimumEdgeRatio": 0.49801,
+          "maximumEdgeRatio": 1.7712,
+          "medianPathSurfaceCm": 2.092,
+          "maximumPathSurfaceCm": 4.811
+        },
+        {
+          "frameIndex": 72,
+          "minimumEdgeRatio": 0.51362,
+          "maximumEdgeRatio": 1.74146,
+          "medianPathSurfaceCm": 2.083,
+          "maximumPathSurfaceCm": 4.788
+        },
+        {
+          "frameIndex": 73,
+          "minimumEdgeRatio": 0.52549,
+          "maximumEdgeRatio": 1.7112,
+          "medianPathSurfaceCm": 2.075,
+          "maximumPathSurfaceCm": 4.764
+        },
+        {
+          "frameIndex": 74,
+          "minimumEdgeRatio": 0.53899,
+          "maximumEdgeRatio": 1.68062,
+          "medianPathSurfaceCm": 2.064,
+          "maximumPathSurfaceCm": 4.739
+        },
+        {
+          "frameIndex": 75,
+          "minimumEdgeRatio": 0.55393,
+          "maximumEdgeRatio": 1.64994,
+          "medianPathSurfaceCm": 2.052,
+          "maximumPathSurfaceCm": 4.714
+        },
+        {
+          "frameIndex": 76,
+          "minimumEdgeRatio": 0.57447,
+          "maximumEdgeRatio": 1.61254,
+          "medianPathSurfaceCm": 2.037,
+          "maximumPathSurfaceCm": 4.682
+        },
+        {
+          "frameIndex": 77,
+          "minimumEdgeRatio": 0.59709,
+          "maximumEdgeRatio": 1.57539,
+          "medianPathSurfaceCm": 2.02,
+          "maximumPathSurfaceCm": 4.65
+        },
+        {
+          "frameIndex": 78,
+          "minimumEdgeRatio": 0.62124,
+          "maximumEdgeRatio": 1.53877,
+          "medianPathSurfaceCm": 1.987,
+          "maximumPathSurfaceCm": 4.618
+        },
+        {
+          "frameIndex": 79,
+          "minimumEdgeRatio": 0.64651,
+          "maximumEdgeRatio": 1.503,
+          "medianPathSurfaceCm": 1.915,
+          "maximumPathSurfaceCm": 4.586
+        },
+        {
+          "frameIndex": 80,
+          "minimumEdgeRatio": 0.6724,
+          "maximumEdgeRatio": 1.46839,
+          "medianPathSurfaceCm": 1.888,
+          "maximumPathSurfaceCm": 4.554
+        },
+        {
+          "frameIndex": 81,
+          "minimumEdgeRatio": 0.69911,
+          "maximumEdgeRatio": 1.42994,
+          "medianPathSurfaceCm": 1.872,
+          "maximumPathSurfaceCm": 4.52
+        },
+        {
+          "frameIndex": 82,
+          "minimumEdgeRatio": 0.72709,
+          "maximumEdgeRatio": 1.39087,
+          "medianPathSurfaceCm": 1.854,
+          "maximumPathSurfaceCm": 4.485
+        },
+        {
+          "frameIndex": 83,
+          "minimumEdgeRatio": 0.75573,
+          "maximumEdgeRatio": 1.35391,
+          "medianPathSurfaceCm": 1.834,
+          "maximumPathSurfaceCm": 4.453
+        },
+        {
+          "frameIndex": 84,
+          "minimumEdgeRatio": 0.78447,
+          "maximumEdgeRatio": 1.31861,
+          "medianPathSurfaceCm": 1.812,
+          "maximumPathSurfaceCm": 4.423
+        },
+        {
+          "frameIndex": 85,
+          "minimumEdgeRatio": 0.81284,
+          "maximumEdgeRatio": 1.28527,
+          "medianPathSurfaceCm": 1.741,
+          "maximumPathSurfaceCm": 4.394
+        },
+        {
+          "frameIndex": 86,
+          "minimumEdgeRatio": 0.84044,
+          "maximumEdgeRatio": 1.25413,
+          "medianPathSurfaceCm": 1.667,
+          "maximumPathSurfaceCm": 4.366
+        },
+        {
+          "frameIndex": 87,
+          "minimumEdgeRatio": 0.86327,
+          "maximumEdgeRatio": 1.2233,
+          "medianPathSurfaceCm": 1.601,
+          "maximumPathSurfaceCm": 4.339
+        },
+        {
+          "frameIndex": 88,
+          "minimumEdgeRatio": 0.87995,
+          "maximumEdgeRatio": 1.19104,
+          "medianPathSurfaceCm": 1.548,
+          "maximumPathSurfaceCm": 4.312
+        },
+        {
+          "frameIndex": 89,
+          "minimumEdgeRatio": 0.89651,
+          "maximumEdgeRatio": 1.16079,
+          "medianPathSurfaceCm": 1.497,
+          "maximumPathSurfaceCm": 4.285
+        },
+        {
+          "frameIndex": 90,
+          "minimumEdgeRatio": 0.91259,
+          "maximumEdgeRatio": 1.13283,
+          "medianPathSurfaceCm": 1.448,
+          "maximumPathSurfaceCm": 4.26
+        },
+        {
+          "frameIndex": 91,
+          "minimumEdgeRatio": 0.92787,
+          "maximumEdgeRatio": 1.10734,
+          "medianPathSurfaceCm": 1.402,
+          "maximumPathSurfaceCm": 4.237
+        },
+        {
+          "frameIndex": 92,
+          "minimumEdgeRatio": 0.94213,
+          "maximumEdgeRatio": 1.0845,
+          "medianPathSurfaceCm": 1.356,
+          "maximumPathSurfaceCm": 4.217
+        },
+        {
+          "frameIndex": 93,
+          "minimumEdgeRatio": 0.95512,
+          "maximumEdgeRatio": 1.06439,
+          "medianPathSurfaceCm": 1.313,
+          "maximumPathSurfaceCm": 4.199
+        },
+        {
+          "frameIndex": 94,
+          "minimumEdgeRatio": 0.96669,
+          "maximumEdgeRatio": 1.04712,
+          "medianPathSurfaceCm": 1.282,
+          "maximumPathSurfaceCm": 4.184
+        },
+        {
+          "frameIndex": 95,
+          "minimumEdgeRatio": 0.97667,
+          "maximumEdgeRatio": 1.03295,
+          "medianPathSurfaceCm": 1.279,
+          "maximumPathSurfaceCm": 4.172
+        },
+        {
+          "frameIndex": 96,
+          "minimumEdgeRatio": 0.98497,
+          "maximumEdgeRatio": 1.0212,
+          "medianPathSurfaceCm": 1.277,
+          "maximumPathSurfaceCm": 4.162
+        },
+        {
+          "frameIndex": 97,
+          "minimumEdgeRatio": 0.99152,
+          "maximumEdgeRatio": 1.01197,
+          "medianPathSurfaceCm": 1.275,
+          "maximumPathSurfaceCm": 4.154
+        },
+        {
+          "frameIndex": 98,
+          "minimumEdgeRatio": 0.99621,
+          "maximumEdgeRatio": 1.00532,
+          "medianPathSurfaceCm": 1.274,
+          "maximumPathSurfaceCm": 4.149
+        },
+        {
+          "frameIndex": 99,
+          "minimumEdgeRatio": 0.99905,
+          "maximumEdgeRatio": 1.00132,
+          "medianPathSurfaceCm": 1.273,
+          "maximumPathSurfaceCm": 4.146
+        },
+        {
+          "frameIndex": 100,
+          "minimumEdgeRatio": 0.99986,
+          "maximumEdgeRatio": 1.00016,
+          "medianPathSurfaceCm": 1.273,
+          "maximumPathSurfaceCm": 4.145
+        }
+      ]
+    },
+    {
+      "exercise": "bench",
+      "muscle": "DeltoideusScapula_M",
+      "atlasMesh": "Acromial part of deltoid muscle.r",
+      "originBody": "scapula",
+      "distalBody": "humerus",
+      "vertices": 1482,
+      "edges": 4446,
+      "fractionsAtZero": 0,
+      "fractionsAtOne": 98,
+      "minimumEdgeRatio": 0.38653,
+      "maximumEdgeRatio": 2.06786,
+      "maximumPathSurfaceCm": 4.214,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "minimumEdgeRatio": 0.99988,
+          "maximumEdgeRatio": 1.00015,
+          "medianPathSurfaceCm": 2.715,
+          "maximumPathSurfaceCm": 3.649
+        },
+        {
+          "frameIndex": 1,
+          "minimumEdgeRatio": 0.99943,
+          "maximumEdgeRatio": 1.00125,
+          "medianPathSurfaceCm": 2.715,
+          "maximumPathSurfaceCm": 3.651
+        },
+        {
+          "frameIndex": 2,
+          "minimumEdgeRatio": 0.99779,
+          "maximumEdgeRatio": 1.00508,
+          "medianPathSurfaceCm": 2.715,
+          "maximumPathSurfaceCm": 3.657
+        },
+        {
+          "frameIndex": 3,
+          "minimumEdgeRatio": 0.99497,
+          "maximumEdgeRatio": 1.01144,
+          "medianPathSurfaceCm": 2.713,
+          "maximumPathSurfaceCm": 3.668
+        },
+        {
+          "frameIndex": 4,
+          "minimumEdgeRatio": 0.99105,
+          "maximumEdgeRatio": 1.0203,
+          "medianPathSurfaceCm": 2.72,
+          "maximumPathSurfaceCm": 3.682
+        },
+        {
+          "frameIndex": 5,
+          "minimumEdgeRatio": 0.98592,
+          "maximumEdgeRatio": 1.0317,
+          "medianPathSurfaceCm": 2.743,
+          "maximumPathSurfaceCm": 3.7
+        },
+        {
+          "frameIndex": 6,
+          "minimumEdgeRatio": 0.97958,
+          "maximumEdgeRatio": 1.04569,
+          "medianPathSurfaceCm": 2.77,
+          "maximumPathSurfaceCm": 3.721
+        },
+        {
+          "frameIndex": 7,
+          "minimumEdgeRatio": 0.97206,
+          "maximumEdgeRatio": 1.06212,
+          "medianPathSurfaceCm": 2.8,
+          "maximumPathSurfaceCm": 3.745
+        },
+        {
+          "frameIndex": 8,
+          "minimumEdgeRatio": 0.96321,
+          "maximumEdgeRatio": 1.08099,
+          "medianPathSurfaceCm": 2.834,
+          "maximumPathSurfaceCm": 3.771
+        },
+        {
+          "frameIndex": 9,
+          "minimumEdgeRatio": 0.95314,
+          "maximumEdgeRatio": 1.10213,
+          "medianPathSurfaceCm": 2.87,
+          "maximumPathSurfaceCm": 3.796
+        },
+        {
+          "frameIndex": 10,
+          "minimumEdgeRatio": 0.94176,
+          "maximumEdgeRatio": 1.12544,
+          "medianPathSurfaceCm": 2.907,
+          "maximumPathSurfaceCm": 3.823
+        },
+        {
+          "frameIndex": 11,
+          "minimumEdgeRatio": 0.92911,
+          "maximumEdgeRatio": 1.15075,
+          "medianPathSurfaceCm": 2.9,
+          "maximumPathSurfaceCm": 3.85
+        },
+        {
+          "frameIndex": 12,
+          "minimumEdgeRatio": 0.91527,
+          "maximumEdgeRatio": 1.17779,
+          "medianPathSurfaceCm": 2.886,
+          "maximumPathSurfaceCm": 3.878
+        },
+        {
+          "frameIndex": 13,
+          "minimumEdgeRatio": 0.90025,
+          "maximumEdgeRatio": 1.20631,
+          "medianPathSurfaceCm": 2.913,
+          "maximumPathSurfaceCm": 3.87
+        },
+        {
+          "frameIndex": 14,
+          "minimumEdgeRatio": 0.88555,
+          "maximumEdgeRatio": 1.23588,
+          "medianPathSurfaceCm": 2.95,
+          "maximumPathSurfaceCm": 3.882
+        },
+        {
+          "frameIndex": 15,
+          "minimumEdgeRatio": 0.87028,
+          "maximumEdgeRatio": 1.2671,
+          "medianPathSurfaceCm": 2.989,
+          "maximumPathSurfaceCm": 3.92
+        },
+        {
+          "frameIndex": 16,
+          "minimumEdgeRatio": 0.85359,
+          "maximumEdgeRatio": 1.30256,
+          "medianPathSurfaceCm": 3.017,
+          "maximumPathSurfaceCm": 3.957
+        },
+        {
+          "frameIndex": 17,
+          "minimumEdgeRatio": 0.8355,
+          "maximumEdgeRatio": 1.34137,
+          "medianPathSurfaceCm": 3.04,
+          "maximumPathSurfaceCm": 3.996
+        },
+        {
+          "frameIndex": 18,
+          "minimumEdgeRatio": 0.8161,
+          "maximumEdgeRatio": 1.382,
+          "medianPathSurfaceCm": 3.061,
+          "maximumPathSurfaceCm": 4.048
+        },
+        {
+          "frameIndex": 19,
+          "minimumEdgeRatio": 0.7955,
+          "maximumEdgeRatio": 1.42395,
+          "medianPathSurfaceCm": 3.057,
+          "maximumPathSurfaceCm": 4.097
+        },
+        {
+          "frameIndex": 20,
+          "minimumEdgeRatio": 0.77609,
+          "maximumEdgeRatio": 1.46376,
+          "medianPathSurfaceCm": 3.054,
+          "maximumPathSurfaceCm": 4.142
+        },
+        {
+          "frameIndex": 21,
+          "minimumEdgeRatio": 0.75904,
+          "maximumEdgeRatio": 1.50003,
+          "medianPathSurfaceCm": 3.055,
+          "maximumPathSurfaceCm": 4.15
+        },
+        {
+          "frameIndex": 22,
+          "minimumEdgeRatio": 0.74109,
+          "maximumEdgeRatio": 1.53722,
+          "medianPathSurfaceCm": 3.055,
+          "maximumPathSurfaceCm": 4.14
+        },
+        {
+          "frameIndex": 23,
+          "minimumEdgeRatio": 0.72245,
+          "maximumEdgeRatio": 1.57507,
+          "medianPathSurfaceCm": 3.052,
+          "maximumPathSurfaceCm": 4.129
+        },
+        {
+          "frameIndex": 24,
+          "minimumEdgeRatio": 0.70316,
+          "maximumEdgeRatio": 1.61319,
+          "medianPathSurfaceCm": 3.046,
+          "maximumPathSurfaceCm": 4.156
+        },
+        {
+          "frameIndex": 25,
+          "minimumEdgeRatio": 0.68342,
+          "maximumEdgeRatio": 1.65142,
+          "medianPathSurfaceCm": 3.037,
+          "maximumPathSurfaceCm": 4.179
+        },
+        {
+          "frameIndex": 26,
+          "minimumEdgeRatio": 0.6671,
+          "maximumEdgeRatio": 1.68198,
+          "medianPathSurfaceCm": 3.028,
+          "maximumPathSurfaceCm": 4.195
+        },
+        {
+          "frameIndex": 27,
+          "minimumEdgeRatio": 0.64929,
+          "maximumEdgeRatio": 1.71226,
+          "medianPathSurfaceCm": 3.018,
+          "maximumPathSurfaceCm": 4.207
+        },
+        {
+          "frameIndex": 28,
+          "minimumEdgeRatio": 0.6311,
+          "maximumEdgeRatio": 1.74214,
+          "medianPathSurfaceCm": 3.007,
+          "maximumPathSurfaceCm": 4.211
+        },
+        {
+          "frameIndex": 29,
+          "minimumEdgeRatio": 0.61262,
+          "maximumEdgeRatio": 1.77138,
+          "medianPathSurfaceCm": 2.995,
+          "maximumPathSurfaceCm": 4.213
+        },
+        {
+          "frameIndex": 30,
+          "minimumEdgeRatio": 0.594,
+          "maximumEdgeRatio": 1.79992,
+          "medianPathSurfaceCm": 2.982,
+          "maximumPathSurfaceCm": 4.214
+        },
+        {
+          "frameIndex": 31,
+          "minimumEdgeRatio": 0.57705,
+          "maximumEdgeRatio": 1.82559,
+          "medianPathSurfaceCm": 2.97,
+          "maximumPathSurfaceCm": 4.212
+        },
+        {
+          "frameIndex": 32,
+          "minimumEdgeRatio": 0.56141,
+          "maximumEdgeRatio": 1.84916,
+          "medianPathSurfaceCm": 2.957,
+          "maximumPathSurfaceCm": 4.208
+        },
+        {
+          "frameIndex": 33,
+          "minimumEdgeRatio": 0.54604,
+          "maximumEdgeRatio": 1.87181,
+          "medianPathSurfaceCm": 2.944,
+          "maximumPathSurfaceCm": 4.203
+        },
+        {
+          "frameIndex": 34,
+          "minimumEdgeRatio": 0.53107,
+          "maximumEdgeRatio": 1.89325,
+          "medianPathSurfaceCm": 2.931,
+          "maximumPathSurfaceCm": 4.196
+        },
+        {
+          "frameIndex": 35,
+          "minimumEdgeRatio": 0.51659,
+          "maximumEdgeRatio": 1.91364,
+          "medianPathSurfaceCm": 2.918,
+          "maximumPathSurfaceCm": 4.184
+        },
+        {
+          "frameIndex": 36,
+          "minimumEdgeRatio": 0.50199,
+          "maximumEdgeRatio": 1.93275,
+          "medianPathSurfaceCm": 2.906,
+          "maximumPathSurfaceCm": 4.171
+        },
+        {
+          "frameIndex": 37,
+          "minimumEdgeRatio": 0.48714,
+          "maximumEdgeRatio": 1.95124,
+          "medianPathSurfaceCm": 2.893,
+          "maximumPathSurfaceCm": 4.159
+        },
+        {
+          "frameIndex": 38,
+          "minimumEdgeRatio": 0.47341,
+          "maximumEdgeRatio": 1.96834,
+          "medianPathSurfaceCm": 2.882,
+          "maximumPathSurfaceCm": 4.145
+        },
+        {
+          "frameIndex": 39,
+          "minimumEdgeRatio": 0.46042,
+          "maximumEdgeRatio": 1.98412,
+          "medianPathSurfaceCm": 2.871,
+          "maximumPathSurfaceCm": 4.132
+        },
+        {
+          "frameIndex": 40,
+          "minimumEdgeRatio": 0.44826,
+          "maximumEdgeRatio": 1.99864,
+          "medianPathSurfaceCm": 2.86,
+          "maximumPathSurfaceCm": 4.119
+        },
+        {
+          "frameIndex": 41,
+          "minimumEdgeRatio": 0.43703,
+          "maximumEdgeRatio": 2.01176,
+          "medianPathSurfaceCm": 2.851,
+          "maximumPathSurfaceCm": 4.107
+        },
+        {
+          "frameIndex": 42,
+          "minimumEdgeRatio": 0.42678,
+          "maximumEdgeRatio": 2.02352,
+          "medianPathSurfaceCm": 2.842,
+          "maximumPathSurfaceCm": 4.096
+        },
+        {
+          "frameIndex": 43,
+          "minimumEdgeRatio": 0.41757,
+          "maximumEdgeRatio": 2.03388,
+          "medianPathSurfaceCm": 2.834,
+          "maximumPathSurfaceCm": 4.085
+        },
+        {
+          "frameIndex": 44,
+          "minimumEdgeRatio": 0.40948,
+          "maximumEdgeRatio": 2.04295,
+          "medianPathSurfaceCm": 2.827,
+          "maximumPathSurfaceCm": 4.076
+        },
+        {
+          "frameIndex": 45,
+          "minimumEdgeRatio": 0.40255,
+          "maximumEdgeRatio": 2.05057,
+          "medianPathSurfaceCm": 2.821,
+          "maximumPathSurfaceCm": 4.068
+        },
+        {
+          "frameIndex": 46,
+          "minimumEdgeRatio": 0.39683,
+          "maximumEdgeRatio": 2.05677,
+          "medianPathSurfaceCm": 2.816,
+          "maximumPathSurfaceCm": 4.062
+        },
+        {
+          "frameIndex": 47,
+          "minimumEdgeRatio": 0.39234,
+          "maximumEdgeRatio": 2.06163,
+          "medianPathSurfaceCm": 2.812,
+          "maximumPathSurfaceCm": 4.057
+        },
+        {
+          "frameIndex": 48,
+          "minimumEdgeRatio": 0.38912,
+          "maximumEdgeRatio": 2.06509,
+          "medianPathSurfaceCm": 2.809,
+          "maximumPathSurfaceCm": 4.053
+        },
+        {
+          "frameIndex": 49,
+          "minimumEdgeRatio": 0.38718,
+          "maximumEdgeRatio": 2.06717,
+          "medianPathSurfaceCm": 2.807,
+          "maximumPathSurfaceCm": 4.051
+        },
+        {
+          "frameIndex": 50,
+          "minimumEdgeRatio": 0.38653,
+          "maximumEdgeRatio": 2.06786,
+          "medianPathSurfaceCm": 2.807,
+          "maximumPathSurfaceCm": 4.05
+        },
+        {
+          "frameIndex": 51,
+          "minimumEdgeRatio": 0.38718,
+          "maximumEdgeRatio": 2.06717,
+          "medianPathSurfaceCm": 2.807,
+          "maximumPathSurfaceCm": 4.051
+        },
+        {
+          "frameIndex": 52,
+          "minimumEdgeRatio": 0.38912,
+          "maximumEdgeRatio": 2.06509,
+          "medianPathSurfaceCm": 2.809,
+          "maximumPathSurfaceCm": 4.053
+        },
+        {
+          "frameIndex": 53,
+          "minimumEdgeRatio": 0.39234,
+          "maximumEdgeRatio": 2.06163,
+          "medianPathSurfaceCm": 2.812,
+          "maximumPathSurfaceCm": 4.057
+        },
+        {
+          "frameIndex": 54,
+          "minimumEdgeRatio": 0.39683,
+          "maximumEdgeRatio": 2.05677,
+          "medianPathSurfaceCm": 2.816,
+          "maximumPathSurfaceCm": 4.062
+        },
+        {
+          "frameIndex": 55,
+          "minimumEdgeRatio": 0.40255,
+          "maximumEdgeRatio": 2.05057,
+          "medianPathSurfaceCm": 2.821,
+          "maximumPathSurfaceCm": 4.068
+        },
+        {
+          "frameIndex": 56,
+          "minimumEdgeRatio": 0.40948,
+          "maximumEdgeRatio": 2.04295,
+          "medianPathSurfaceCm": 2.827,
+          "maximumPathSurfaceCm": 4.076
+        },
+        {
+          "frameIndex": 57,
+          "minimumEdgeRatio": 0.41757,
+          "maximumEdgeRatio": 2.03388,
+          "medianPathSurfaceCm": 2.834,
+          "maximumPathSurfaceCm": 4.085
+        },
+        {
+          "frameIndex": 58,
+          "minimumEdgeRatio": 0.42678,
+          "maximumEdgeRatio": 2.02352,
+          "medianPathSurfaceCm": 2.842,
+          "maximumPathSurfaceCm": 4.096
+        },
+        {
+          "frameIndex": 59,
+          "minimumEdgeRatio": 0.43703,
+          "maximumEdgeRatio": 2.01176,
+          "medianPathSurfaceCm": 2.851,
+          "maximumPathSurfaceCm": 4.107
+        },
+        {
+          "frameIndex": 60,
+          "minimumEdgeRatio": 0.44826,
+          "maximumEdgeRatio": 1.99864,
+          "medianPathSurfaceCm": 2.86,
+          "maximumPathSurfaceCm": 4.119
+        },
+        {
+          "frameIndex": 61,
+          "minimumEdgeRatio": 0.46042,
+          "maximumEdgeRatio": 1.98412,
+          "medianPathSurfaceCm": 2.871,
+          "maximumPathSurfaceCm": 4.132
+        },
+        {
+          "frameIndex": 62,
+          "minimumEdgeRatio": 0.47341,
+          "maximumEdgeRatio": 1.96834,
+          "medianPathSurfaceCm": 2.882,
+          "maximumPathSurfaceCm": 4.145
+        },
+        {
+          "frameIndex": 63,
+          "minimumEdgeRatio": 0.48714,
+          "maximumEdgeRatio": 1.95124,
+          "medianPathSurfaceCm": 2.893,
+          "maximumPathSurfaceCm": 4.159
+        },
+        {
+          "frameIndex": 64,
+          "minimumEdgeRatio": 0.50199,
+          "maximumEdgeRatio": 1.93275,
+          "medianPathSurfaceCm": 2.906,
+          "maximumPathSurfaceCm": 4.171
+        },
+        {
+          "frameIndex": 65,
+          "minimumEdgeRatio": 0.51659,
+          "maximumEdgeRatio": 1.91364,
+          "medianPathSurfaceCm": 2.918,
+          "maximumPathSurfaceCm": 4.184
+        },
+        {
+          "frameIndex": 66,
+          "minimumEdgeRatio": 0.53107,
+          "maximumEdgeRatio": 1.89325,
+          "medianPathSurfaceCm": 2.931,
+          "maximumPathSurfaceCm": 4.196
+        },
+        {
+          "frameIndex": 67,
+          "minimumEdgeRatio": 0.54604,
+          "maximumEdgeRatio": 1.87181,
+          "medianPathSurfaceCm": 2.944,
+          "maximumPathSurfaceCm": 4.203
+        },
+        {
+          "frameIndex": 68,
+          "minimumEdgeRatio": 0.56141,
+          "maximumEdgeRatio": 1.84916,
+          "medianPathSurfaceCm": 2.957,
+          "maximumPathSurfaceCm": 4.208
+        },
+        {
+          "frameIndex": 69,
+          "minimumEdgeRatio": 0.57705,
+          "maximumEdgeRatio": 1.82559,
+          "medianPathSurfaceCm": 2.97,
+          "maximumPathSurfaceCm": 4.212
+        },
+        {
+          "frameIndex": 70,
+          "minimumEdgeRatio": 0.594,
+          "maximumEdgeRatio": 1.79992,
+          "medianPathSurfaceCm": 2.982,
+          "maximumPathSurfaceCm": 4.214
+        },
+        {
+          "frameIndex": 71,
+          "minimumEdgeRatio": 0.61262,
+          "maximumEdgeRatio": 1.77138,
+          "medianPathSurfaceCm": 2.995,
+          "maximumPathSurfaceCm": 4.213
+        },
+        {
+          "frameIndex": 72,
+          "minimumEdgeRatio": 0.6311,
+          "maximumEdgeRatio": 1.74214,
+          "medianPathSurfaceCm": 3.007,
+          "maximumPathSurfaceCm": 4.211
+        },
+        {
+          "frameIndex": 73,
+          "minimumEdgeRatio": 0.64929,
+          "maximumEdgeRatio": 1.71226,
+          "medianPathSurfaceCm": 3.018,
+          "maximumPathSurfaceCm": 4.207
+        },
+        {
+          "frameIndex": 74,
+          "minimumEdgeRatio": 0.6671,
+          "maximumEdgeRatio": 1.68198,
+          "medianPathSurfaceCm": 3.028,
+          "maximumPathSurfaceCm": 4.195
+        },
+        {
+          "frameIndex": 75,
+          "minimumEdgeRatio": 0.68342,
+          "maximumEdgeRatio": 1.65142,
+          "medianPathSurfaceCm": 3.037,
+          "maximumPathSurfaceCm": 4.179
+        },
+        {
+          "frameIndex": 76,
+          "minimumEdgeRatio": 0.70316,
+          "maximumEdgeRatio": 1.61319,
+          "medianPathSurfaceCm": 3.046,
+          "maximumPathSurfaceCm": 4.156
+        },
+        {
+          "frameIndex": 77,
+          "minimumEdgeRatio": 0.72245,
+          "maximumEdgeRatio": 1.57507,
+          "medianPathSurfaceCm": 3.052,
+          "maximumPathSurfaceCm": 4.129
+        },
+        {
+          "frameIndex": 78,
+          "minimumEdgeRatio": 0.74109,
+          "maximumEdgeRatio": 1.53722,
+          "medianPathSurfaceCm": 3.055,
+          "maximumPathSurfaceCm": 4.14
+        },
+        {
+          "frameIndex": 79,
+          "minimumEdgeRatio": 0.75904,
+          "maximumEdgeRatio": 1.50003,
+          "medianPathSurfaceCm": 3.055,
+          "maximumPathSurfaceCm": 4.15
+        },
+        {
+          "frameIndex": 80,
+          "minimumEdgeRatio": 0.77609,
+          "maximumEdgeRatio": 1.46376,
+          "medianPathSurfaceCm": 3.054,
+          "maximumPathSurfaceCm": 4.142
+        },
+        {
+          "frameIndex": 81,
+          "minimumEdgeRatio": 0.7955,
+          "maximumEdgeRatio": 1.42395,
+          "medianPathSurfaceCm": 3.057,
+          "maximumPathSurfaceCm": 4.097
+        },
+        {
+          "frameIndex": 82,
+          "minimumEdgeRatio": 0.8161,
+          "maximumEdgeRatio": 1.382,
+          "medianPathSurfaceCm": 3.061,
+          "maximumPathSurfaceCm": 4.048
+        },
+        {
+          "frameIndex": 83,
+          "minimumEdgeRatio": 0.8355,
+          "maximumEdgeRatio": 1.34137,
+          "medianPathSurfaceCm": 3.04,
+          "maximumPathSurfaceCm": 3.996
+        },
+        {
+          "frameIndex": 84,
+          "minimumEdgeRatio": 0.85359,
+          "maximumEdgeRatio": 1.30256,
+          "medianPathSurfaceCm": 3.017,
+          "maximumPathSurfaceCm": 3.957
+        },
+        {
+          "frameIndex": 85,
+          "minimumEdgeRatio": 0.87028,
+          "maximumEdgeRatio": 1.2671,
+          "medianPathSurfaceCm": 2.989,
+          "maximumPathSurfaceCm": 3.92
+        },
+        {
+          "frameIndex": 86,
+          "minimumEdgeRatio": 0.88555,
+          "maximumEdgeRatio": 1.23588,
+          "medianPathSurfaceCm": 2.95,
+          "maximumPathSurfaceCm": 3.882
+        },
+        {
+          "frameIndex": 87,
+          "minimumEdgeRatio": 0.90025,
+          "maximumEdgeRatio": 1.20631,
+          "medianPathSurfaceCm": 2.913,
+          "maximumPathSurfaceCm": 3.87
+        },
+        {
+          "frameIndex": 88,
+          "minimumEdgeRatio": 0.91527,
+          "maximumEdgeRatio": 1.17779,
+          "medianPathSurfaceCm": 2.886,
+          "maximumPathSurfaceCm": 3.878
+        },
+        {
+          "frameIndex": 89,
+          "minimumEdgeRatio": 0.92911,
+          "maximumEdgeRatio": 1.15075,
+          "medianPathSurfaceCm": 2.9,
+          "maximumPathSurfaceCm": 3.85
+        },
+        {
+          "frameIndex": 90,
+          "minimumEdgeRatio": 0.94176,
+          "maximumEdgeRatio": 1.12544,
+          "medianPathSurfaceCm": 2.907,
+          "maximumPathSurfaceCm": 3.823
+        },
+        {
+          "frameIndex": 91,
+          "minimumEdgeRatio": 0.95314,
+          "maximumEdgeRatio": 1.10213,
+          "medianPathSurfaceCm": 2.87,
+          "maximumPathSurfaceCm": 3.796
+        },
+        {
+          "frameIndex": 92,
+          "minimumEdgeRatio": 0.96321,
+          "maximumEdgeRatio": 1.08099,
+          "medianPathSurfaceCm": 2.834,
+          "maximumPathSurfaceCm": 3.771
+        },
+        {
+          "frameIndex": 93,
+          "minimumEdgeRatio": 0.97206,
+          "maximumEdgeRatio": 1.06212,
+          "medianPathSurfaceCm": 2.8,
+          "maximumPathSurfaceCm": 3.745
+        },
+        {
+          "frameIndex": 94,
+          "minimumEdgeRatio": 0.97958,
+          "maximumEdgeRatio": 1.04569,
+          "medianPathSurfaceCm": 2.77,
+          "maximumPathSurfaceCm": 3.721
+        },
+        {
+          "frameIndex": 95,
+          "minimumEdgeRatio": 0.98592,
+          "maximumEdgeRatio": 1.0317,
+          "medianPathSurfaceCm": 2.743,
+          "maximumPathSurfaceCm": 3.7
+        },
+        {
+          "frameIndex": 96,
+          "minimumEdgeRatio": 0.99105,
+          "maximumEdgeRatio": 1.0203,
+          "medianPathSurfaceCm": 2.72,
+          "maximumPathSurfaceCm": 3.682
+        },
+        {
+          "frameIndex": 97,
+          "minimumEdgeRatio": 0.99497,
+          "maximumEdgeRatio": 1.01144,
+          "medianPathSurfaceCm": 2.713,
+          "maximumPathSurfaceCm": 3.668
+        },
+        {
+          "frameIndex": 98,
+          "minimumEdgeRatio": 0.99779,
+          "maximumEdgeRatio": 1.00508,
+          "medianPathSurfaceCm": 2.715,
+          "maximumPathSurfaceCm": 3.657
+        },
+        {
+          "frameIndex": 99,
+          "minimumEdgeRatio": 0.99943,
+          "maximumEdgeRatio": 1.00125,
+          "medianPathSurfaceCm": 2.715,
+          "maximumPathSurfaceCm": 3.651
+        },
+        {
+          "frameIndex": 100,
+          "minimumEdgeRatio": 0.99988,
+          "maximumEdgeRatio": 1.00015,
+          "medianPathSurfaceCm": 2.715,
+          "maximumPathSurfaceCm": 3.649
+        }
+      ]
+    },
+    {
+      "exercise": "bench",
+      "muscle": "DeltoideusScapula_P",
+      "atlasMesh": "Scapular spinal part of deltoid muscle.r",
+      "originBody": "scapula",
+      "distalBody": "humerus",
+      "vertices": 2189,
+      "edges": 6567,
+      "fractionsAtZero": 0,
+      "fractionsAtOne": 563,
+      "minimumEdgeRatio": 0.16937,
+      "maximumEdgeRatio": 1.77624,
+      "maximumPathSurfaceCm": 6.917,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "minimumEdgeRatio": 0.99982,
+          "maximumEdgeRatio": 1.0001,
+          "medianPathSurfaceCm": 2.273,
+          "maximumPathSurfaceCm": 6.917
+        },
+        {
+          "frameIndex": 1,
+          "minimumEdgeRatio": 0.9984,
+          "maximumEdgeRatio": 1.00078,
+          "medianPathSurfaceCm": 2.27,
+          "maximumPathSurfaceCm": 6.916
+        },
+        {
+          "frameIndex": 2,
+          "minimumEdgeRatio": 0.99498,
+          "maximumEdgeRatio": 1.003,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 6.911
+        },
+        {
+          "frameIndex": 3,
+          "minimumEdgeRatio": 0.98877,
+          "maximumEdgeRatio": 1.00676,
+          "medianPathSurfaceCm": 2.269,
+          "maximumPathSurfaceCm": 6.904
+        },
+        {
+          "frameIndex": 4,
+          "minimumEdgeRatio": 0.98013,
+          "maximumEdgeRatio": 1.012,
+          "medianPathSurfaceCm": 2.276,
+          "maximumPathSurfaceCm": 6.893
+        },
+        {
+          "frameIndex": 5,
+          "minimumEdgeRatio": 0.96913,
+          "maximumEdgeRatio": 1.01874,
+          "medianPathSurfaceCm": 2.284,
+          "maximumPathSurfaceCm": 6.879
+        },
+        {
+          "frameIndex": 6,
+          "minimumEdgeRatio": 0.95589,
+          "maximumEdgeRatio": 1.02695,
+          "medianPathSurfaceCm": 2.293,
+          "maximumPathSurfaceCm": 6.861
+        },
+        {
+          "frameIndex": 7,
+          "minimumEdgeRatio": 0.94047,
+          "maximumEdgeRatio": 1.0366,
+          "medianPathSurfaceCm": 2.303,
+          "maximumPathSurfaceCm": 6.84
+        },
+        {
+          "frameIndex": 8,
+          "minimumEdgeRatio": 0.9231,
+          "maximumEdgeRatio": 1.048,
+          "medianPathSurfaceCm": 2.313,
+          "maximumPathSurfaceCm": 6.815
+        },
+        {
+          "frameIndex": 9,
+          "minimumEdgeRatio": 0.90389,
+          "maximumEdgeRatio": 1.06093,
+          "medianPathSurfaceCm": 2.323,
+          "maximumPathSurfaceCm": 6.785
+        },
+        {
+          "frameIndex": 10,
+          "minimumEdgeRatio": 0.88309,
+          "maximumEdgeRatio": 1.07535,
+          "medianPathSurfaceCm": 2.331,
+          "maximumPathSurfaceCm": 6.751
+        },
+        {
+          "frameIndex": 11,
+          "minimumEdgeRatio": 0.8609,
+          "maximumEdgeRatio": 1.09118,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 6.713
+        },
+        {
+          "frameIndex": 12,
+          "minimumEdgeRatio": 0.8376,
+          "maximumEdgeRatio": 1.1083,
+          "medianPathSurfaceCm": 2.251,
+          "maximumPathSurfaceCm": 6.671
+        },
+        {
+          "frameIndex": 13,
+          "minimumEdgeRatio": 0.81347,
+          "maximumEdgeRatio": 1.12656,
+          "medianPathSurfaceCm": 2.203,
+          "maximumPathSurfaceCm": 6.624
+        },
+        {
+          "frameIndex": 14,
+          "minimumEdgeRatio": 0.78724,
+          "maximumEdgeRatio": 1.14678,
+          "medianPathSurfaceCm": 2.17,
+          "maximumPathSurfaceCm": 6.582
+        },
+        {
+          "frameIndex": 15,
+          "minimumEdgeRatio": 0.75892,
+          "maximumEdgeRatio": 1.169,
+          "medianPathSurfaceCm": 2.145,
+          "maximumPathSurfaceCm": 6.541
+        },
+        {
+          "frameIndex": 16,
+          "minimumEdgeRatio": 0.72925,
+          "maximumEdgeRatio": 1.19253,
+          "medianPathSurfaceCm": 2.114,
+          "maximumPathSurfaceCm": 6.493
+        },
+        {
+          "frameIndex": 17,
+          "minimumEdgeRatio": 0.69889,
+          "maximumEdgeRatio": 1.21722,
+          "medianPathSurfaceCm": 2.067,
+          "maximumPathSurfaceCm": 6.441
+        },
+        {
+          "frameIndex": 18,
+          "minimumEdgeRatio": 0.66819,
+          "maximumEdgeRatio": 1.24288,
+          "medianPathSurfaceCm": 2.015,
+          "maximumPathSurfaceCm": 6.384
+        },
+        {
+          "frameIndex": 19,
+          "minimumEdgeRatio": 0.63737,
+          "maximumEdgeRatio": 1.27069,
+          "medianPathSurfaceCm": 1.958,
+          "maximumPathSurfaceCm": 6.323
+        },
+        {
+          "frameIndex": 20,
+          "minimumEdgeRatio": 0.60871,
+          "maximumEdgeRatio": 1.29977,
+          "medianPathSurfaceCm": 1.907,
+          "maximumPathSurfaceCm": 6.265
+        },
+        {
+          "frameIndex": 21,
+          "minimumEdgeRatio": 0.58299,
+          "maximumEdgeRatio": 1.32729,
+          "medianPathSurfaceCm": 1.868,
+          "maximumPathSurfaceCm": 6.213
+        },
+        {
+          "frameIndex": 22,
+          "minimumEdgeRatio": 0.55773,
+          "maximumEdgeRatio": 1.3553,
+          "medianPathSurfaceCm": 1.825,
+          "maximumPathSurfaceCm": 6.157
+        },
+        {
+          "frameIndex": 23,
+          "minimumEdgeRatio": 0.5331,
+          "maximumEdgeRatio": 1.38366,
+          "medianPathSurfaceCm": 1.779,
+          "maximumPathSurfaceCm": 6.099
+        },
+        {
+          "frameIndex": 24,
+          "minimumEdgeRatio": 0.50982,
+          "maximumEdgeRatio": 1.41211,
+          "medianPathSurfaceCm": 1.731,
+          "maximumPathSurfaceCm": 6.039
+        },
+        {
+          "frameIndex": 25,
+          "minimumEdgeRatio": 0.48808,
+          "maximumEdgeRatio": 1.44043,
+          "medianPathSurfaceCm": 1.68,
+          "maximumPathSurfaceCm": 5.978
+        },
+        {
+          "frameIndex": 26,
+          "minimumEdgeRatio": 0.46791,
+          "maximumEdgeRatio": 1.46267,
+          "medianPathSurfaceCm": 1.644,
+          "maximumPathSurfaceCm": 5.928
+        },
+        {
+          "frameIndex": 27,
+          "minimumEdgeRatio": 0.44329,
+          "maximumEdgeRatio": 1.48641,
+          "medianPathSurfaceCm": 1.607,
+          "maximumPathSurfaceCm": 5.878
+        },
+        {
+          "frameIndex": 28,
+          "minimumEdgeRatio": 0.41892,
+          "maximumEdgeRatio": 1.5104,
+          "medianPathSurfaceCm": 1.599,
+          "maximumPathSurfaceCm": 5.828
+        },
+        {
+          "frameIndex": 29,
+          "minimumEdgeRatio": 0.39503,
+          "maximumEdgeRatio": 1.53408,
+          "medianPathSurfaceCm": 1.608,
+          "maximumPathSurfaceCm": 5.778
+        },
+        {
+          "frameIndex": 30,
+          "minimumEdgeRatio": 0.37161,
+          "maximumEdgeRatio": 1.55717,
+          "medianPathSurfaceCm": 1.621,
+          "maximumPathSurfaceCm": 5.73
+        },
+        {
+          "frameIndex": 31,
+          "minimumEdgeRatio": 0.3502,
+          "maximumEdgeRatio": 1.57826,
+          "medianPathSurfaceCm": 1.636,
+          "maximumPathSurfaceCm": 5.687
+        },
+        {
+          "frameIndex": 32,
+          "minimumEdgeRatio": 0.33016,
+          "maximumEdgeRatio": 1.59777,
+          "medianPathSurfaceCm": 1.65,
+          "maximumPathSurfaceCm": 5.647
+        },
+        {
+          "frameIndex": 33,
+          "minimumEdgeRatio": 0.31105,
+          "maximumEdgeRatio": 1.61653,
+          "medianPathSurfaceCm": 1.656,
+          "maximumPathSurfaceCm": 5.608
+        },
+        {
+          "frameIndex": 34,
+          "minimumEdgeRatio": 0.29298,
+          "maximumEdgeRatio": 1.63451,
+          "medianPathSurfaceCm": 1.665,
+          "maximumPathSurfaceCm": 5.572
+        },
+        {
+          "frameIndex": 35,
+          "minimumEdgeRatio": 0.27587,
+          "maximumEdgeRatio": 1.65157,
+          "medianPathSurfaceCm": 1.676,
+          "maximumPathSurfaceCm": 5.539
+        },
+        {
+          "frameIndex": 36,
+          "minimumEdgeRatio": 0.26003,
+          "maximumEdgeRatio": 1.66775,
+          "medianPathSurfaceCm": 1.684,
+          "maximumPathSurfaceCm": 5.507
+        },
+        {
+          "frameIndex": 37,
+          "minimumEdgeRatio": 0.2456,
+          "maximumEdgeRatio": 1.68272,
+          "medianPathSurfaceCm": 1.689,
+          "maximumPathSurfaceCm": 5.478
+        },
+        {
+          "frameIndex": 38,
+          "minimumEdgeRatio": 0.2328,
+          "maximumEdgeRatio": 1.69637,
+          "medianPathSurfaceCm": 1.696,
+          "maximumPathSurfaceCm": 5.453
+        },
+        {
+          "frameIndex": 39,
+          "minimumEdgeRatio": 0.22123,
+          "maximumEdgeRatio": 1.70902,
+          "medianPathSurfaceCm": 1.704,
+          "maximumPathSurfaceCm": 5.43
+        },
+        {
+          "frameIndex": 40,
+          "minimumEdgeRatio": 0.21088,
+          "maximumEdgeRatio": 1.72062,
+          "medianPathSurfaceCm": 1.695,
+          "maximumPathSurfaceCm": 5.409
+        },
+        {
+          "frameIndex": 41,
+          "minimumEdgeRatio": 0.20204,
+          "maximumEdgeRatio": 1.73115,
+          "medianPathSurfaceCm": 1.687,
+          "maximumPathSurfaceCm": 5.39
+        },
+        {
+          "frameIndex": 42,
+          "minimumEdgeRatio": 0.19428,
+          "maximumEdgeRatio": 1.74057,
+          "medianPathSurfaceCm": 1.681,
+          "maximumPathSurfaceCm": 5.374
+        },
+        {
+          "frameIndex": 43,
+          "minimumEdgeRatio": 0.18781,
+          "maximumEdgeRatio": 1.74886,
+          "medianPathSurfaceCm": 1.675,
+          "maximumPathSurfaceCm": 5.36
+        },
+        {
+          "frameIndex": 44,
+          "minimumEdgeRatio": 0.18245,
+          "maximumEdgeRatio": 1.75613,
+          "medianPathSurfaceCm": 1.67,
+          "maximumPathSurfaceCm": 5.348
+        },
+        {
+          "frameIndex": 45,
+          "minimumEdgeRatio": 0.1781,
+          "maximumEdgeRatio": 1.76225,
+          "medianPathSurfaceCm": 1.666,
+          "maximumPathSurfaceCm": 5.338
+        },
+        {
+          "frameIndex": 46,
+          "minimumEdgeRatio": 0.17486,
+          "maximumEdgeRatio": 1.76732,
+          "medianPathSurfaceCm": 1.663,
+          "maximumPathSurfaceCm": 5.33
+        },
+        {
+          "frameIndex": 47,
+          "minimumEdgeRatio": 0.17238,
+          "maximumEdgeRatio": 1.7712,
+          "medianPathSurfaceCm": 1.661,
+          "maximumPathSurfaceCm": 5.324
+        },
+        {
+          "frameIndex": 48,
+          "minimumEdgeRatio": 0.17063,
+          "maximumEdgeRatio": 1.774,
+          "medianPathSurfaceCm": 1.659,
+          "maximumPathSurfaceCm": 5.32
+        },
+        {
+          "frameIndex": 49,
+          "minimumEdgeRatio": 0.16965,
+          "maximumEdgeRatio": 1.77566,
+          "medianPathSurfaceCm": 1.658,
+          "maximumPathSurfaceCm": 5.317
+        },
+        {
+          "frameIndex": 50,
+          "minimumEdgeRatio": 0.16937,
+          "maximumEdgeRatio": 1.77624,
+          "medianPathSurfaceCm": 1.658,
+          "maximumPathSurfaceCm": 5.316
+        },
+        {
+          "frameIndex": 51,
+          "minimumEdgeRatio": 0.16965,
+          "maximumEdgeRatio": 1.77566,
+          "medianPathSurfaceCm": 1.658,
+          "maximumPathSurfaceCm": 5.317
+        },
+        {
+          "frameIndex": 52,
+          "minimumEdgeRatio": 0.17063,
+          "maximumEdgeRatio": 1.774,
+          "medianPathSurfaceCm": 1.659,
+          "maximumPathSurfaceCm": 5.32
+        },
+        {
+          "frameIndex": 53,
+          "minimumEdgeRatio": 0.17238,
+          "maximumEdgeRatio": 1.7712,
+          "medianPathSurfaceCm": 1.661,
+          "maximumPathSurfaceCm": 5.324
+        },
+        {
+          "frameIndex": 54,
+          "minimumEdgeRatio": 0.17486,
+          "maximumEdgeRatio": 1.76732,
+          "medianPathSurfaceCm": 1.663,
+          "maximumPathSurfaceCm": 5.33
+        },
+        {
+          "frameIndex": 55,
+          "minimumEdgeRatio": 0.1781,
+          "maximumEdgeRatio": 1.76225,
+          "medianPathSurfaceCm": 1.666,
+          "maximumPathSurfaceCm": 5.338
+        },
+        {
+          "frameIndex": 56,
+          "minimumEdgeRatio": 0.18245,
+          "maximumEdgeRatio": 1.75613,
+          "medianPathSurfaceCm": 1.67,
+          "maximumPathSurfaceCm": 5.348
+        },
+        {
+          "frameIndex": 57,
+          "minimumEdgeRatio": 0.18781,
+          "maximumEdgeRatio": 1.74886,
+          "medianPathSurfaceCm": 1.675,
+          "maximumPathSurfaceCm": 5.36
+        },
+        {
+          "frameIndex": 58,
+          "minimumEdgeRatio": 0.19428,
+          "maximumEdgeRatio": 1.74057,
+          "medianPathSurfaceCm": 1.681,
+          "maximumPathSurfaceCm": 5.374
+        },
+        {
+          "frameIndex": 59,
+          "minimumEdgeRatio": 0.20204,
+          "maximumEdgeRatio": 1.73115,
+          "medianPathSurfaceCm": 1.687,
+          "maximumPathSurfaceCm": 5.39
+        },
+        {
+          "frameIndex": 60,
+          "minimumEdgeRatio": 0.21088,
+          "maximumEdgeRatio": 1.72062,
+          "medianPathSurfaceCm": 1.695,
+          "maximumPathSurfaceCm": 5.409
+        },
+        {
+          "frameIndex": 61,
+          "minimumEdgeRatio": 0.22123,
+          "maximumEdgeRatio": 1.70902,
+          "medianPathSurfaceCm": 1.704,
+          "maximumPathSurfaceCm": 5.43
+        },
+        {
+          "frameIndex": 62,
+          "minimumEdgeRatio": 0.2328,
+          "maximumEdgeRatio": 1.69637,
+          "medianPathSurfaceCm": 1.696,
+          "maximumPathSurfaceCm": 5.453
+        },
+        {
+          "frameIndex": 63,
+          "minimumEdgeRatio": 0.2456,
+          "maximumEdgeRatio": 1.68272,
+          "medianPathSurfaceCm": 1.689,
+          "maximumPathSurfaceCm": 5.478
+        },
+        {
+          "frameIndex": 64,
+          "minimumEdgeRatio": 0.26003,
+          "maximumEdgeRatio": 1.66775,
+          "medianPathSurfaceCm": 1.684,
+          "maximumPathSurfaceCm": 5.507
+        },
+        {
+          "frameIndex": 65,
+          "minimumEdgeRatio": 0.27587,
+          "maximumEdgeRatio": 1.65157,
+          "medianPathSurfaceCm": 1.676,
+          "maximumPathSurfaceCm": 5.539
+        },
+        {
+          "frameIndex": 66,
+          "minimumEdgeRatio": 0.29298,
+          "maximumEdgeRatio": 1.63451,
+          "medianPathSurfaceCm": 1.665,
+          "maximumPathSurfaceCm": 5.572
+        },
+        {
+          "frameIndex": 67,
+          "minimumEdgeRatio": 0.31105,
+          "maximumEdgeRatio": 1.61653,
+          "medianPathSurfaceCm": 1.656,
+          "maximumPathSurfaceCm": 5.608
+        },
+        {
+          "frameIndex": 68,
+          "minimumEdgeRatio": 0.33016,
+          "maximumEdgeRatio": 1.59777,
+          "medianPathSurfaceCm": 1.65,
+          "maximumPathSurfaceCm": 5.647
+        },
+        {
+          "frameIndex": 69,
+          "minimumEdgeRatio": 0.3502,
+          "maximumEdgeRatio": 1.57826,
+          "medianPathSurfaceCm": 1.636,
+          "maximumPathSurfaceCm": 5.687
+        },
+        {
+          "frameIndex": 70,
+          "minimumEdgeRatio": 0.37161,
+          "maximumEdgeRatio": 1.55717,
+          "medianPathSurfaceCm": 1.621,
+          "maximumPathSurfaceCm": 5.73
+        },
+        {
+          "frameIndex": 71,
+          "minimumEdgeRatio": 0.39503,
+          "maximumEdgeRatio": 1.53408,
+          "medianPathSurfaceCm": 1.608,
+          "maximumPathSurfaceCm": 5.778
+        },
+        {
+          "frameIndex": 72,
+          "minimumEdgeRatio": 0.41892,
+          "maximumEdgeRatio": 1.5104,
+          "medianPathSurfaceCm": 1.599,
+          "maximumPathSurfaceCm": 5.828
+        },
+        {
+          "frameIndex": 73,
+          "minimumEdgeRatio": 0.44329,
+          "maximumEdgeRatio": 1.48641,
+          "medianPathSurfaceCm": 1.607,
+          "maximumPathSurfaceCm": 5.878
+        },
+        {
+          "frameIndex": 74,
+          "minimumEdgeRatio": 0.46791,
+          "maximumEdgeRatio": 1.46267,
+          "medianPathSurfaceCm": 1.644,
+          "maximumPathSurfaceCm": 5.928
+        },
+        {
+          "frameIndex": 75,
+          "minimumEdgeRatio": 0.48808,
+          "maximumEdgeRatio": 1.44043,
+          "medianPathSurfaceCm": 1.68,
+          "maximumPathSurfaceCm": 5.978
+        },
+        {
+          "frameIndex": 76,
+          "minimumEdgeRatio": 0.50982,
+          "maximumEdgeRatio": 1.41211,
+          "medianPathSurfaceCm": 1.731,
+          "maximumPathSurfaceCm": 6.039
+        },
+        {
+          "frameIndex": 77,
+          "minimumEdgeRatio": 0.5331,
+          "maximumEdgeRatio": 1.38366,
+          "medianPathSurfaceCm": 1.779,
+          "maximumPathSurfaceCm": 6.099
+        },
+        {
+          "frameIndex": 78,
+          "minimumEdgeRatio": 0.55773,
+          "maximumEdgeRatio": 1.3553,
+          "medianPathSurfaceCm": 1.825,
+          "maximumPathSurfaceCm": 6.157
+        },
+        {
+          "frameIndex": 79,
+          "minimumEdgeRatio": 0.58299,
+          "maximumEdgeRatio": 1.32729,
+          "medianPathSurfaceCm": 1.868,
+          "maximumPathSurfaceCm": 6.213
+        },
+        {
+          "frameIndex": 80,
+          "minimumEdgeRatio": 0.60871,
+          "maximumEdgeRatio": 1.29977,
+          "medianPathSurfaceCm": 1.907,
+          "maximumPathSurfaceCm": 6.265
+        },
+        {
+          "frameIndex": 81,
+          "minimumEdgeRatio": 0.63737,
+          "maximumEdgeRatio": 1.27069,
+          "medianPathSurfaceCm": 1.958,
+          "maximumPathSurfaceCm": 6.323
+        },
+        {
+          "frameIndex": 82,
+          "minimumEdgeRatio": 0.66819,
+          "maximumEdgeRatio": 1.24288,
+          "medianPathSurfaceCm": 2.015,
+          "maximumPathSurfaceCm": 6.384
+        },
+        {
+          "frameIndex": 83,
+          "minimumEdgeRatio": 0.69889,
+          "maximumEdgeRatio": 1.21722,
+          "medianPathSurfaceCm": 2.067,
+          "maximumPathSurfaceCm": 6.441
+        },
+        {
+          "frameIndex": 84,
+          "minimumEdgeRatio": 0.72925,
+          "maximumEdgeRatio": 1.19253,
+          "medianPathSurfaceCm": 2.114,
+          "maximumPathSurfaceCm": 6.493
+        },
+        {
+          "frameIndex": 85,
+          "minimumEdgeRatio": 0.75892,
+          "maximumEdgeRatio": 1.169,
+          "medianPathSurfaceCm": 2.145,
+          "maximumPathSurfaceCm": 6.541
+        },
+        {
+          "frameIndex": 86,
+          "minimumEdgeRatio": 0.78724,
+          "maximumEdgeRatio": 1.14678,
+          "medianPathSurfaceCm": 2.17,
+          "maximumPathSurfaceCm": 6.582
+        },
+        {
+          "frameIndex": 87,
+          "minimumEdgeRatio": 0.81347,
+          "maximumEdgeRatio": 1.12656,
+          "medianPathSurfaceCm": 2.203,
+          "maximumPathSurfaceCm": 6.624
+        },
+        {
+          "frameIndex": 88,
+          "minimumEdgeRatio": 0.8376,
+          "maximumEdgeRatio": 1.1083,
+          "medianPathSurfaceCm": 2.251,
+          "maximumPathSurfaceCm": 6.671
+        },
+        {
+          "frameIndex": 89,
+          "minimumEdgeRatio": 0.8609,
+          "maximumEdgeRatio": 1.09118,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 6.713
+        },
+        {
+          "frameIndex": 90,
+          "minimumEdgeRatio": 0.88309,
+          "maximumEdgeRatio": 1.07535,
+          "medianPathSurfaceCm": 2.331,
+          "maximumPathSurfaceCm": 6.751
+        },
+        {
+          "frameIndex": 91,
+          "minimumEdgeRatio": 0.90389,
+          "maximumEdgeRatio": 1.06093,
+          "medianPathSurfaceCm": 2.323,
+          "maximumPathSurfaceCm": 6.785
+        },
+        {
+          "frameIndex": 92,
+          "minimumEdgeRatio": 0.9231,
+          "maximumEdgeRatio": 1.048,
+          "medianPathSurfaceCm": 2.313,
+          "maximumPathSurfaceCm": 6.815
+        },
+        {
+          "frameIndex": 93,
+          "minimumEdgeRatio": 0.94047,
+          "maximumEdgeRatio": 1.0366,
+          "medianPathSurfaceCm": 2.303,
+          "maximumPathSurfaceCm": 6.84
+        },
+        {
+          "frameIndex": 94,
+          "minimumEdgeRatio": 0.95589,
+          "maximumEdgeRatio": 1.02695,
+          "medianPathSurfaceCm": 2.293,
+          "maximumPathSurfaceCm": 6.861
+        },
+        {
+          "frameIndex": 95,
+          "minimumEdgeRatio": 0.96913,
+          "maximumEdgeRatio": 1.01874,
+          "medianPathSurfaceCm": 2.284,
+          "maximumPathSurfaceCm": 6.879
+        },
+        {
+          "frameIndex": 96,
+          "minimumEdgeRatio": 0.98013,
+          "maximumEdgeRatio": 1.012,
+          "medianPathSurfaceCm": 2.276,
+          "maximumPathSurfaceCm": 6.893
+        },
+        {
+          "frameIndex": 97,
+          "minimumEdgeRatio": 0.98877,
+          "maximumEdgeRatio": 1.00676,
+          "medianPathSurfaceCm": 2.269,
+          "maximumPathSurfaceCm": 6.904
+        },
+        {
+          "frameIndex": 98,
+          "minimumEdgeRatio": 0.99498,
+          "maximumEdgeRatio": 1.003,
+          "medianPathSurfaceCm": 2.264,
+          "maximumPathSurfaceCm": 6.911
+        },
+        {
+          "frameIndex": 99,
+          "minimumEdgeRatio": 0.9984,
+          "maximumEdgeRatio": 1.00078,
+          "medianPathSurfaceCm": 2.27,
+          "maximumPathSurfaceCm": 6.916
+        },
+        {
+          "frameIndex": 100,
+          "minimumEdgeRatio": 0.99982,
+          "maximumEdgeRatio": 1.0001,
+          "medianPathSurfaceCm": 2.273,
+          "maximumPathSurfaceCm": 6.917
+        }
+      ]
+    },
+    {
+      "exercise": "press",
+      "muscle": "DeltoideusClavicle_A",
+      "atlasMesh": "Clavicular part of deltoid muscle.r",
+      "originBody": "clavicle",
+      "distalBody": "humerus",
+      "vertices": 1453,
+      "edges": 4353,
+      "fractionsAtZero": 0,
+      "fractionsAtOne": 15,
+      "minimumEdgeRatio": 0.09705,
+      "maximumEdgeRatio": 2.05943,
+      "maximumPathSurfaceCm": 5.845,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "minimumEdgeRatio": 0.9999,
+          "maximumEdgeRatio": 1.0001,
+          "medianPathSurfaceCm": 0.992,
+          "maximumPathSurfaceCm": 5.577
+        },
+        {
+          "frameIndex": 1,
+          "minimumEdgeRatio": 0.99913,
+          "maximumEdgeRatio": 1.00078,
+          "medianPathSurfaceCm": 0.994,
+          "maximumPathSurfaceCm": 5.577
+        },
+        {
+          "frameIndex": 2,
+          "minimumEdgeRatio": 0.99663,
+          "maximumEdgeRatio": 1.00323,
+          "medianPathSurfaceCm": 1.0,
+          "maximumPathSurfaceCm": 5.576
+        },
+        {
+          "frameIndex": 3,
+          "minimumEdgeRatio": 0.99221,
+          "maximumEdgeRatio": 1.00721,
+          "medianPathSurfaceCm": 1.01,
+          "maximumPathSurfaceCm": 5.576
+        },
+        {
+          "frameIndex": 4,
+          "minimumEdgeRatio": 0.98615,
+          "maximumEdgeRatio": 1.01288,
+          "medianPathSurfaceCm": 1.023,
+          "maximumPathSurfaceCm": 5.575
+        },
+        {
+          "frameIndex": 5,
+          "minimumEdgeRatio": 0.97828,
+          "maximumEdgeRatio": 1.02027,
+          "medianPathSurfaceCm": 1.04,
+          "maximumPathSurfaceCm": 5.573
+        },
+        {
+          "frameIndex": 6,
+          "minimumEdgeRatio": 0.96883,
+          "maximumEdgeRatio": 1.02927,
+          "medianPathSurfaceCm": 1.06,
+          "maximumPathSurfaceCm": 5.572
+        },
+        {
+          "frameIndex": 7,
+          "minimumEdgeRatio": 0.95743,
+          "maximumEdgeRatio": 1.04006,
+          "medianPathSurfaceCm": 1.084,
+          "maximumPathSurfaceCm": 5.569
+        },
+        {
+          "frameIndex": 8,
+          "minimumEdgeRatio": 0.94422,
+          "maximumEdgeRatio": 1.05262,
+          "medianPathSurfaceCm": 1.14,
+          "maximumPathSurfaceCm": 5.567
+        },
+        {
+          "frameIndex": 9,
+          "minimumEdgeRatio": 0.92931,
+          "maximumEdgeRatio": 1.06703,
+          "medianPathSurfaceCm": 1.197,
+          "maximumPathSurfaceCm": 5.565
+        },
+        {
+          "frameIndex": 10,
+          "minimumEdgeRatio": 0.91258,
+          "maximumEdgeRatio": 1.08317,
+          "medianPathSurfaceCm": 1.266,
+          "maximumPathSurfaceCm": 5.563
+        },
+        {
+          "frameIndex": 11,
+          "minimumEdgeRatio": 0.89395,
+          "maximumEdgeRatio": 1.10151,
+          "medianPathSurfaceCm": 1.33,
+          "maximumPathSurfaceCm": 5.561
+        },
+        {
+          "frameIndex": 12,
+          "minimumEdgeRatio": 0.87364,
+          "maximumEdgeRatio": 1.12216,
+          "medianPathSurfaceCm": 1.404,
+          "maximumPathSurfaceCm": 5.56
+        },
+        {
+          "frameIndex": 13,
+          "minimumEdgeRatio": 0.85161,
+          "maximumEdgeRatio": 1.14478,
+          "medianPathSurfaceCm": 1.482,
+          "maximumPathSurfaceCm": 5.559
+        },
+        {
+          "frameIndex": 14,
+          "minimumEdgeRatio": 0.82783,
+          "maximumEdgeRatio": 1.16935,
+          "medianPathSurfaceCm": 1.563,
+          "maximumPathSurfaceCm": 5.559
+        },
+        {
+          "frameIndex": 15,
+          "minimumEdgeRatio": 0.80227,
+          "maximumEdgeRatio": 1.19571,
+          "medianPathSurfaceCm": 1.647,
+          "maximumPathSurfaceCm": 5.56
+        },
+        {
+          "frameIndex": 16,
+          "minimumEdgeRatio": 0.77527,
+          "maximumEdgeRatio": 1.22367,
+          "medianPathSurfaceCm": 1.731,
+          "maximumPathSurfaceCm": 5.561
+        },
+        {
+          "frameIndex": 17,
+          "minimumEdgeRatio": 0.74671,
+          "maximumEdgeRatio": 1.25313,
+          "medianPathSurfaceCm": 1.812,
+          "maximumPathSurfaceCm": 5.564
+        },
+        {
+          "frameIndex": 18,
+          "minimumEdgeRatio": 0.71672,
+          "maximumEdgeRatio": 1.28381,
+          "medianPathSurfaceCm": 1.855,
+          "maximumPathSurfaceCm": 5.568
+        },
+        {
+          "frameIndex": 19,
+          "minimumEdgeRatio": 0.68556,
+          "maximumEdgeRatio": 1.31549,
+          "medianPathSurfaceCm": 1.967,
+          "maximumPathSurfaceCm": 5.573
+        },
+        {
+          "frameIndex": 20,
+          "minimumEdgeRatio": 0.65328,
+          "maximumEdgeRatio": 1.34794,
+          "medianPathSurfaceCm": 2.041,
+          "maximumPathSurfaceCm": 5.579
+        },
+        {
+          "frameIndex": 21,
+          "minimumEdgeRatio": 0.62005,
+          "maximumEdgeRatio": 1.38441,
+          "medianPathSurfaceCm": 2.107,
+          "maximumPathSurfaceCm": 5.585
+        },
+        {
+          "frameIndex": 22,
+          "minimumEdgeRatio": 0.5862,
+          "maximumEdgeRatio": 1.42398,
+          "medianPathSurfaceCm": 2.166,
+          "maximumPathSurfaceCm": 5.591
+        },
+        {
+          "frameIndex": 23,
+          "minimumEdgeRatio": 0.5518,
+          "maximumEdgeRatio": 1.46404,
+          "medianPathSurfaceCm": 2.21,
+          "maximumPathSurfaceCm": 5.597
+        },
+        {
+          "frameIndex": 24,
+          "minimumEdgeRatio": 0.51723,
+          "maximumEdgeRatio": 1.50427,
+          "medianPathSurfaceCm": 2.254,
+          "maximumPathSurfaceCm": 5.602
+        },
+        {
+          "frameIndex": 25,
+          "minimumEdgeRatio": 0.48284,
+          "maximumEdgeRatio": 1.54428,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 5.607
+        },
+        {
+          "frameIndex": 26,
+          "minimumEdgeRatio": 0.4488,
+          "maximumEdgeRatio": 1.58375,
+          "medianPathSurfaceCm": 2.297,
+          "maximumPathSurfaceCm": 5.612
+        },
+        {
+          "frameIndex": 27,
+          "minimumEdgeRatio": 0.41553,
+          "maximumEdgeRatio": 1.62244,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 5.619
+        },
+        {
+          "frameIndex": 28,
+          "minimumEdgeRatio": 0.38348,
+          "maximumEdgeRatio": 1.65999,
+          "medianPathSurfaceCm": 2.287,
+          "maximumPathSurfaceCm": 5.627
+        },
+        {
+          "frameIndex": 29,
+          "minimumEdgeRatio": 0.35314,
+          "maximumEdgeRatio": 1.69622,
+          "medianPathSurfaceCm": 2.278,
+          "maximumPathSurfaceCm": 5.637
+        },
+        {
+          "frameIndex": 30,
+          "minimumEdgeRatio": 0.32492,
+          "maximumEdgeRatio": 1.73082,
+          "medianPathSurfaceCm": 2.266,
+          "maximumPathSurfaceCm": 5.647
+        },
+        {
+          "frameIndex": 31,
+          "minimumEdgeRatio": 0.29449,
+          "maximumEdgeRatio": 1.76376,
+          "medianPathSurfaceCm": 2.252,
+          "maximumPathSurfaceCm": 5.659
+        },
+        {
+          "frameIndex": 32,
+          "minimumEdgeRatio": 0.26161,
+          "maximumEdgeRatio": 1.79479,
+          "medianPathSurfaceCm": 2.234,
+          "maximumPathSurfaceCm": 5.672
+        },
+        {
+          "frameIndex": 33,
+          "minimumEdgeRatio": 0.23022,
+          "maximumEdgeRatio": 1.82385,
+          "medianPathSurfaceCm": 2.213,
+          "maximumPathSurfaceCm": 5.685
+        },
+        {
+          "frameIndex": 34,
+          "minimumEdgeRatio": 0.20068,
+          "maximumEdgeRatio": 1.85084,
+          "medianPathSurfaceCm": 2.19,
+          "maximumPathSurfaceCm": 5.698
+        },
+        {
+          "frameIndex": 35,
+          "minimumEdgeRatio": 0.17349,
+          "maximumEdgeRatio": 1.87573,
+          "medianPathSurfaceCm": 2.184,
+          "maximumPathSurfaceCm": 5.712
+        },
+        {
+          "frameIndex": 36,
+          "minimumEdgeRatio": 0.14915,
+          "maximumEdgeRatio": 1.89858,
+          "medianPathSurfaceCm": 2.149,
+          "maximumPathSurfaceCm": 5.726
+        },
+        {
+          "frameIndex": 37,
+          "minimumEdgeRatio": 0.12856,
+          "maximumEdgeRatio": 1.91929,
+          "medianPathSurfaceCm": 2.112,
+          "maximumPathSurfaceCm": 5.74
+        },
+        {
+          "frameIndex": 38,
+          "minimumEdgeRatio": 0.11245,
+          "maximumEdgeRatio": 1.93946,
+          "medianPathSurfaceCm": 2.085,
+          "maximumPathSurfaceCm": 5.754
+        },
+        {
+          "frameIndex": 39,
+          "minimumEdgeRatio": 0.10188,
+          "maximumEdgeRatio": 1.96001,
+          "medianPathSurfaceCm": 2.057,
+          "maximumPathSurfaceCm": 5.767
+        },
+        {
+          "frameIndex": 40,
+          "minimumEdgeRatio": 0.09705,
+          "maximumEdgeRatio": 1.97814,
+          "medianPathSurfaceCm": 2.031,
+          "maximumPathSurfaceCm": 5.78
+        },
+        {
+          "frameIndex": 41,
+          "minimumEdgeRatio": 0.09756,
+          "maximumEdgeRatio": 1.99441,
+          "medianPathSurfaceCm": 2.006,
+          "maximumPathSurfaceCm": 5.791
+        },
+        {
+          "frameIndex": 42,
+          "minimumEdgeRatio": 0.10204,
+          "maximumEdgeRatio": 2.00867,
+          "medianPathSurfaceCm": 1.982,
+          "maximumPathSurfaceCm": 5.802
+        },
+        {
+          "frameIndex": 43,
+          "minimumEdgeRatio": 0.10882,
+          "maximumEdgeRatio": 2.02093,
+          "medianPathSurfaceCm": 1.96,
+          "maximumPathSurfaceCm": 5.812
+        },
+        {
+          "frameIndex": 44,
+          "minimumEdgeRatio": 0.11656,
+          "maximumEdgeRatio": 2.0314,
+          "medianPathSurfaceCm": 1.956,
+          "maximumPathSurfaceCm": 5.82
+        },
+        {
+          "frameIndex": 45,
+          "minimumEdgeRatio": 0.12421,
+          "maximumEdgeRatio": 2.04018,
+          "medianPathSurfaceCm": 1.975,
+          "maximumPathSurfaceCm": 5.828
+        },
+        {
+          "frameIndex": 46,
+          "minimumEdgeRatio": 0.12847,
+          "maximumEdgeRatio": 2.04711,
+          "medianPathSurfaceCm": 1.995,
+          "maximumPathSurfaceCm": 5.834
+        },
+        {
+          "frameIndex": 47,
+          "minimumEdgeRatio": 0.1212,
+          "maximumEdgeRatio": 2.05251,
+          "medianPathSurfaceCm": 2.012,
+          "maximumPathSurfaceCm": 5.839
+        },
+        {
+          "frameIndex": 48,
+          "minimumEdgeRatio": 0.11601,
+          "maximumEdgeRatio": 2.05632,
+          "medianPathSurfaceCm": 2.025,
+          "maximumPathSurfaceCm": 5.842
+        },
+        {
+          "frameIndex": 49,
+          "minimumEdgeRatio": 0.11289,
+          "maximumEdgeRatio": 2.05864,
+          "medianPathSurfaceCm": 2.034,
+          "maximumPathSurfaceCm": 5.845
+        },
+        {
+          "frameIndex": 50,
+          "minimumEdgeRatio": 0.11182,
+          "maximumEdgeRatio": 2.05943,
+          "medianPathSurfaceCm": 2.036,
+          "maximumPathSurfaceCm": 5.845
+        },
+        {
+          "frameIndex": 51,
+          "minimumEdgeRatio": 0.11289,
+          "maximumEdgeRatio": 2.05864,
+          "medianPathSurfaceCm": 2.034,
+          "maximumPathSurfaceCm": 5.845
+        },
+        {
+          "frameIndex": 52,
+          "minimumEdgeRatio": 0.11601,
+          "maximumEdgeRatio": 2.05632,
+          "medianPathSurfaceCm": 2.025,
+          "maximumPathSurfaceCm": 5.842
+        },
+        {
+          "frameIndex": 53,
+          "minimumEdgeRatio": 0.1212,
+          "maximumEdgeRatio": 2.05251,
+          "medianPathSurfaceCm": 2.012,
+          "maximumPathSurfaceCm": 5.839
+        },
+        {
+          "frameIndex": 54,
+          "minimumEdgeRatio": 0.12847,
+          "maximumEdgeRatio": 2.04711,
+          "medianPathSurfaceCm": 1.995,
+          "maximumPathSurfaceCm": 5.834
+        },
+        {
+          "frameIndex": 55,
+          "minimumEdgeRatio": 0.12421,
+          "maximumEdgeRatio": 2.04018,
+          "medianPathSurfaceCm": 1.975,
+          "maximumPathSurfaceCm": 5.828
+        },
+        {
+          "frameIndex": 56,
+          "minimumEdgeRatio": 0.11656,
+          "maximumEdgeRatio": 2.0314,
+          "medianPathSurfaceCm": 1.956,
+          "maximumPathSurfaceCm": 5.82
+        },
+        {
+          "frameIndex": 57,
+          "minimumEdgeRatio": 0.10882,
+          "maximumEdgeRatio": 2.02093,
+          "medianPathSurfaceCm": 1.96,
+          "maximumPathSurfaceCm": 5.812
+        },
+        {
+          "frameIndex": 58,
+          "minimumEdgeRatio": 0.10204,
+          "maximumEdgeRatio": 2.00867,
+          "medianPathSurfaceCm": 1.982,
+          "maximumPathSurfaceCm": 5.802
+        },
+        {
+          "frameIndex": 59,
+          "minimumEdgeRatio": 0.09756,
+          "maximumEdgeRatio": 1.99441,
+          "medianPathSurfaceCm": 2.006,
+          "maximumPathSurfaceCm": 5.791
+        },
+        {
+          "frameIndex": 60,
+          "minimumEdgeRatio": 0.09705,
+          "maximumEdgeRatio": 1.97814,
+          "medianPathSurfaceCm": 2.031,
+          "maximumPathSurfaceCm": 5.78
+        },
+        {
+          "frameIndex": 61,
+          "minimumEdgeRatio": 0.10188,
+          "maximumEdgeRatio": 1.96001,
+          "medianPathSurfaceCm": 2.057,
+          "maximumPathSurfaceCm": 5.767
+        },
+        {
+          "frameIndex": 62,
+          "minimumEdgeRatio": 0.11245,
+          "maximumEdgeRatio": 1.93946,
+          "medianPathSurfaceCm": 2.085,
+          "maximumPathSurfaceCm": 5.754
+        },
+        {
+          "frameIndex": 63,
+          "minimumEdgeRatio": 0.12856,
+          "maximumEdgeRatio": 1.91929,
+          "medianPathSurfaceCm": 2.112,
+          "maximumPathSurfaceCm": 5.74
+        },
+        {
+          "frameIndex": 64,
+          "minimumEdgeRatio": 0.14915,
+          "maximumEdgeRatio": 1.89858,
+          "medianPathSurfaceCm": 2.149,
+          "maximumPathSurfaceCm": 5.726
+        },
+        {
+          "frameIndex": 65,
+          "minimumEdgeRatio": 0.17349,
+          "maximumEdgeRatio": 1.87573,
+          "medianPathSurfaceCm": 2.184,
+          "maximumPathSurfaceCm": 5.712
+        },
+        {
+          "frameIndex": 66,
+          "minimumEdgeRatio": 0.20068,
+          "maximumEdgeRatio": 1.85084,
+          "medianPathSurfaceCm": 2.19,
+          "maximumPathSurfaceCm": 5.698
+        },
+        {
+          "frameIndex": 67,
+          "minimumEdgeRatio": 0.23022,
+          "maximumEdgeRatio": 1.82385,
+          "medianPathSurfaceCm": 2.213,
+          "maximumPathSurfaceCm": 5.685
+        },
+        {
+          "frameIndex": 68,
+          "minimumEdgeRatio": 0.26161,
+          "maximumEdgeRatio": 1.79479,
+          "medianPathSurfaceCm": 2.234,
+          "maximumPathSurfaceCm": 5.672
+        },
+        {
+          "frameIndex": 69,
+          "minimumEdgeRatio": 0.29449,
+          "maximumEdgeRatio": 1.76376,
+          "medianPathSurfaceCm": 2.252,
+          "maximumPathSurfaceCm": 5.659
+        },
+        {
+          "frameIndex": 70,
+          "minimumEdgeRatio": 0.32492,
+          "maximumEdgeRatio": 1.73082,
+          "medianPathSurfaceCm": 2.266,
+          "maximumPathSurfaceCm": 5.647
+        },
+        {
+          "frameIndex": 71,
+          "minimumEdgeRatio": 0.35314,
+          "maximumEdgeRatio": 1.69622,
+          "medianPathSurfaceCm": 2.278,
+          "maximumPathSurfaceCm": 5.637
+        },
+        {
+          "frameIndex": 72,
+          "minimumEdgeRatio": 0.38348,
+          "maximumEdgeRatio": 1.65999,
+          "medianPathSurfaceCm": 2.287,
+          "maximumPathSurfaceCm": 5.627
+        },
+        {
+          "frameIndex": 73,
+          "minimumEdgeRatio": 0.41553,
+          "maximumEdgeRatio": 1.62244,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 5.619
+        },
+        {
+          "frameIndex": 74,
+          "minimumEdgeRatio": 0.4488,
+          "maximumEdgeRatio": 1.58375,
+          "medianPathSurfaceCm": 2.297,
+          "maximumPathSurfaceCm": 5.612
+        },
+        {
+          "frameIndex": 75,
+          "minimumEdgeRatio": 0.48284,
+          "maximumEdgeRatio": 1.54428,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 5.607
+        },
+        {
+          "frameIndex": 76,
+          "minimumEdgeRatio": 0.51723,
+          "maximumEdgeRatio": 1.50427,
+          "medianPathSurfaceCm": 2.254,
+          "maximumPathSurfaceCm": 5.602
+        },
+        {
+          "frameIndex": 77,
+          "minimumEdgeRatio": 0.5518,
+          "maximumEdgeRatio": 1.46404,
+          "medianPathSurfaceCm": 2.21,
+          "maximumPathSurfaceCm": 5.597
+        },
+        {
+          "frameIndex": 78,
+          "minimumEdgeRatio": 0.5862,
+          "maximumEdgeRatio": 1.42398,
+          "medianPathSurfaceCm": 2.166,
+          "maximumPathSurfaceCm": 5.591
+        },
+        {
+          "frameIndex": 79,
+          "minimumEdgeRatio": 0.62005,
+          "maximumEdgeRatio": 1.38441,
+          "medianPathSurfaceCm": 2.107,
+          "maximumPathSurfaceCm": 5.585
+        },
+        {
+          "frameIndex": 80,
+          "minimumEdgeRatio": 0.65328,
+          "maximumEdgeRatio": 1.34794,
+          "medianPathSurfaceCm": 2.041,
+          "maximumPathSurfaceCm": 5.579
+        },
+        {
+          "frameIndex": 81,
+          "minimumEdgeRatio": 0.68556,
+          "maximumEdgeRatio": 1.31549,
+          "medianPathSurfaceCm": 1.967,
+          "maximumPathSurfaceCm": 5.573
+        },
+        {
+          "frameIndex": 82,
+          "minimumEdgeRatio": 0.71672,
+          "maximumEdgeRatio": 1.28381,
+          "medianPathSurfaceCm": 1.855,
+          "maximumPathSurfaceCm": 5.568
+        },
+        {
+          "frameIndex": 83,
+          "minimumEdgeRatio": 0.74671,
+          "maximumEdgeRatio": 1.25313,
+          "medianPathSurfaceCm": 1.812,
+          "maximumPathSurfaceCm": 5.564
+        },
+        {
+          "frameIndex": 84,
+          "minimumEdgeRatio": 0.77527,
+          "maximumEdgeRatio": 1.22367,
+          "medianPathSurfaceCm": 1.731,
+          "maximumPathSurfaceCm": 5.561
+        },
+        {
+          "frameIndex": 85,
+          "minimumEdgeRatio": 0.80227,
+          "maximumEdgeRatio": 1.19571,
+          "medianPathSurfaceCm": 1.647,
+          "maximumPathSurfaceCm": 5.56
+        },
+        {
+          "frameIndex": 86,
+          "minimumEdgeRatio": 0.82783,
+          "maximumEdgeRatio": 1.16935,
+          "medianPathSurfaceCm": 1.563,
+          "maximumPathSurfaceCm": 5.559
+        },
+        {
+          "frameIndex": 87,
+          "minimumEdgeRatio": 0.85161,
+          "maximumEdgeRatio": 1.14478,
+          "medianPathSurfaceCm": 1.482,
+          "maximumPathSurfaceCm": 5.559
+        },
+        {
+          "frameIndex": 88,
+          "minimumEdgeRatio": 0.87364,
+          "maximumEdgeRatio": 1.12216,
+          "medianPathSurfaceCm": 1.404,
+          "maximumPathSurfaceCm": 5.56
+        },
+        {
+          "frameIndex": 89,
+          "minimumEdgeRatio": 0.89395,
+          "maximumEdgeRatio": 1.10151,
+          "medianPathSurfaceCm": 1.33,
+          "maximumPathSurfaceCm": 5.561
+        },
+        {
+          "frameIndex": 90,
+          "minimumEdgeRatio": 0.91258,
+          "maximumEdgeRatio": 1.08317,
+          "medianPathSurfaceCm": 1.266,
+          "maximumPathSurfaceCm": 5.563
+        },
+        {
+          "frameIndex": 91,
+          "minimumEdgeRatio": 0.92931,
+          "maximumEdgeRatio": 1.06703,
+          "medianPathSurfaceCm": 1.197,
+          "maximumPathSurfaceCm": 5.565
+        },
+        {
+          "frameIndex": 92,
+          "minimumEdgeRatio": 0.94422,
+          "maximumEdgeRatio": 1.05262,
+          "medianPathSurfaceCm": 1.14,
+          "maximumPathSurfaceCm": 5.567
+        },
+        {
+          "frameIndex": 93,
+          "minimumEdgeRatio": 0.95743,
+          "maximumEdgeRatio": 1.04006,
+          "medianPathSurfaceCm": 1.084,
+          "maximumPathSurfaceCm": 5.569
+        },
+        {
+          "frameIndex": 94,
+          "minimumEdgeRatio": 0.96883,
+          "maximumEdgeRatio": 1.02927,
+          "medianPathSurfaceCm": 1.06,
+          "maximumPathSurfaceCm": 5.572
+        },
+        {
+          "frameIndex": 95,
+          "minimumEdgeRatio": 0.97828,
+          "maximumEdgeRatio": 1.02027,
+          "medianPathSurfaceCm": 1.04,
+          "maximumPathSurfaceCm": 5.573
+        },
+        {
+          "frameIndex": 96,
+          "minimumEdgeRatio": 0.98615,
+          "maximumEdgeRatio": 1.01288,
+          "medianPathSurfaceCm": 1.023,
+          "maximumPathSurfaceCm": 5.575
+        },
+        {
+          "frameIndex": 97,
+          "minimumEdgeRatio": 0.99221,
+          "maximumEdgeRatio": 1.00721,
+          "medianPathSurfaceCm": 1.01,
+          "maximumPathSurfaceCm": 5.576
+        },
+        {
+          "frameIndex": 98,
+          "minimumEdgeRatio": 0.99663,
+          "maximumEdgeRatio": 1.00323,
+          "medianPathSurfaceCm": 1.0,
+          "maximumPathSurfaceCm": 5.576
+        },
+        {
+          "frameIndex": 99,
+          "minimumEdgeRatio": 0.99913,
+          "maximumEdgeRatio": 1.00078,
+          "medianPathSurfaceCm": 0.994,
+          "maximumPathSurfaceCm": 5.577
+        },
+        {
+          "frameIndex": 100,
+          "minimumEdgeRatio": 0.9999,
+          "maximumEdgeRatio": 1.0001,
+          "medianPathSurfaceCm": 0.992,
+          "maximumPathSurfaceCm": 5.577
+        }
+      ]
+    },
+    {
+      "exercise": "press",
+      "muscle": "DeltoideusScapula_M",
+      "atlasMesh": "Acromial part of deltoid muscle.r",
+      "originBody": "scapula",
+      "distalBody": "humerus",
+      "vertices": 1482,
+      "edges": 4446,
+      "fractionsAtZero": 0,
+      "fractionsAtOne": 109,
+      "minimumEdgeRatio": 0.54381,
+      "maximumEdgeRatio": 2.12897,
+      "maximumPathSurfaceCm": 4.384,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "minimumEdgeRatio": 0.99978,
+          "maximumEdgeRatio": 1.00015,
+          "medianPathSurfaceCm": 2.556,
+          "maximumPathSurfaceCm": 3.675
+        },
+        {
+          "frameIndex": 1,
+          "minimumEdgeRatio": 0.99946,
+          "maximumEdgeRatio": 1.00097,
+          "medianPathSurfaceCm": 2.558,
+          "maximumPathSurfaceCm": 3.677
+        },
+        {
+          "frameIndex": 2,
+          "minimumEdgeRatio": 0.99814,
+          "maximumEdgeRatio": 1.00387,
+          "medianPathSurfaceCm": 2.563,
+          "maximumPathSurfaceCm": 3.685
+        },
+        {
+          "frameIndex": 3,
+          "minimumEdgeRatio": 0.99589,
+          "maximumEdgeRatio": 1.00866,
+          "medianPathSurfaceCm": 2.571,
+          "maximumPathSurfaceCm": 3.699
+        },
+        {
+          "frameIndex": 4,
+          "minimumEdgeRatio": 0.99276,
+          "maximumEdgeRatio": 1.01549,
+          "medianPathSurfaceCm": 2.582,
+          "maximumPathSurfaceCm": 3.717
+        },
+        {
+          "frameIndex": 5,
+          "minimumEdgeRatio": 0.98899,
+          "maximumEdgeRatio": 1.02421,
+          "medianPathSurfaceCm": 2.592,
+          "maximumPathSurfaceCm": 3.741
+        },
+        {
+          "frameIndex": 6,
+          "minimumEdgeRatio": 0.98449,
+          "maximumEdgeRatio": 1.035,
+          "medianPathSurfaceCm": 2.603,
+          "maximumPathSurfaceCm": 3.769
+        },
+        {
+          "frameIndex": 7,
+          "minimumEdgeRatio": 0.97966,
+          "maximumEdgeRatio": 1.04783,
+          "medianPathSurfaceCm": 2.616,
+          "maximumPathSurfaceCm": 3.802
+        },
+        {
+          "frameIndex": 8,
+          "minimumEdgeRatio": 0.97433,
+          "maximumEdgeRatio": 1.06266,
+          "medianPathSurfaceCm": 2.629,
+          "maximumPathSurfaceCm": 3.838
+        },
+        {
+          "frameIndex": 9,
+          "minimumEdgeRatio": 0.96868,
+          "maximumEdgeRatio": 1.07953,
+          "medianPathSurfaceCm": 2.641,
+          "maximumPathSurfaceCm": 3.874
+        },
+        {
+          "frameIndex": 10,
+          "minimumEdgeRatio": 0.96203,
+          "maximumEdgeRatio": 1.09843,
+          "medianPathSurfaceCm": 2.654,
+          "maximumPathSurfaceCm": 3.89
+        },
+        {
+          "frameIndex": 11,
+          "minimumEdgeRatio": 0.95501,
+          "maximumEdgeRatio": 1.11929,
+          "medianPathSurfaceCm": 2.669,
+          "maximumPathSurfaceCm": 3.915
+        },
+        {
+          "frameIndex": 12,
+          "minimumEdgeRatio": 0.948,
+          "maximumEdgeRatio": 1.14205,
+          "medianPathSurfaceCm": 2.681,
+          "maximumPathSurfaceCm": 3.98
+        },
+        {
+          "frameIndex": 13,
+          "minimumEdgeRatio": 0.94065,
+          "maximumEdgeRatio": 1.16702,
+          "medianPathSurfaceCm": 2.691,
+          "maximumPathSurfaceCm": 4.047
+        },
+        {
+          "frameIndex": 14,
+          "minimumEdgeRatio": 0.93334,
+          "maximumEdgeRatio": 1.19419,
+          "medianPathSurfaceCm": 2.699,
+          "maximumPathSurfaceCm": 4.113
+        },
+        {
+          "frameIndex": 15,
+          "minimumEdgeRatio": 0.92608,
+          "maximumEdgeRatio": 1.22313,
+          "medianPathSurfaceCm": 2.706,
+          "maximumPathSurfaceCm": 4.177
+        },
+        {
+          "frameIndex": 16,
+          "minimumEdgeRatio": 0.91924,
+          "maximumEdgeRatio": 1.25373,
+          "medianPathSurfaceCm": 2.712,
+          "maximumPathSurfaceCm": 4.235
+        },
+        {
+          "frameIndex": 17,
+          "minimumEdgeRatio": 0.91282,
+          "maximumEdgeRatio": 1.28575,
+          "medianPathSurfaceCm": 2.726,
+          "maximumPathSurfaceCm": 4.279
+        },
+        {
+          "frameIndex": 18,
+          "minimumEdgeRatio": 0.90685,
+          "maximumEdgeRatio": 1.319,
+          "medianPathSurfaceCm": 2.741,
+          "maximumPathSurfaceCm": 4.317
+        },
+        {
+          "frameIndex": 19,
+          "minimumEdgeRatio": 0.90177,
+          "maximumEdgeRatio": 1.35327,
+          "medianPathSurfaceCm": 2.754,
+          "maximumPathSurfaceCm": 4.349
+        },
+        {
+          "frameIndex": 20,
+          "minimumEdgeRatio": 0.89707,
+          "maximumEdgeRatio": 1.38829,
+          "medianPathSurfaceCm": 2.764,
+          "maximumPathSurfaceCm": 4.372
+        },
+        {
+          "frameIndex": 21,
+          "minimumEdgeRatio": 0.8937,
+          "maximumEdgeRatio": 1.42384,
+          "medianPathSurfaceCm": 2.77,
+          "maximumPathSurfaceCm": 4.384
+        },
+        {
+          "frameIndex": 22,
+          "minimumEdgeRatio": 0.88487,
+          "maximumEdgeRatio": 1.45962,
+          "medianPathSurfaceCm": 2.772,
+          "maximumPathSurfaceCm": 4.384
+        },
+        {
+          "frameIndex": 23,
+          "minimumEdgeRatio": 0.87321,
+          "maximumEdgeRatio": 1.4954,
+          "medianPathSurfaceCm": 2.77,
+          "maximumPathSurfaceCm": 4.371
+        },
+        {
+          "frameIndex": 24,
+          "minimumEdgeRatio": 0.86131,
+          "maximumEdgeRatio": 1.53094,
+          "medianPathSurfaceCm": 2.764,
+          "maximumPathSurfaceCm": 4.346
+        },
+        {
+          "frameIndex": 25,
+          "minimumEdgeRatio": 0.84899,
+          "maximumEdgeRatio": 1.56757,
+          "medianPathSurfaceCm": 2.754,
+          "maximumPathSurfaceCm": 4.309
+        },
+        {
+          "frameIndex": 26,
+          "minimumEdgeRatio": 0.83627,
+          "maximumEdgeRatio": 1.60712,
+          "medianPathSurfaceCm": 2.74,
+          "maximumPathSurfaceCm": 4.26
+        },
+        {
+          "frameIndex": 27,
+          "minimumEdgeRatio": 0.82363,
+          "maximumEdgeRatio": 1.64607,
+          "medianPathSurfaceCm": 2.722,
+          "maximumPathSurfaceCm": 4.2
+        },
+        {
+          "frameIndex": 28,
+          "minimumEdgeRatio": 0.81128,
+          "maximumEdgeRatio": 1.68609,
+          "medianPathSurfaceCm": 2.702,
+          "maximumPathSurfaceCm": 4.129
+        },
+        {
+          "frameIndex": 29,
+          "minimumEdgeRatio": 0.7982,
+          "maximumEdgeRatio": 1.72532,
+          "medianPathSurfaceCm": 2.679,
+          "maximumPathSurfaceCm": 4.044
+        },
+        {
+          "frameIndex": 30,
+          "minimumEdgeRatio": 0.78593,
+          "maximumEdgeRatio": 1.76333,
+          "medianPathSurfaceCm": 2.655,
+          "maximumPathSurfaceCm": 3.95
+        },
+        {
+          "frameIndex": 31,
+          "minimumEdgeRatio": 0.7699,
+          "maximumEdgeRatio": 1.79981,
+          "medianPathSurfaceCm": 2.629,
+          "maximumPathSurfaceCm": 3.856
+        },
+        {
+          "frameIndex": 32,
+          "minimumEdgeRatio": 0.75177,
+          "maximumEdgeRatio": 1.83468,
+          "medianPathSurfaceCm": 2.603,
+          "maximumPathSurfaceCm": 3.825
+        },
+        {
+          "frameIndex": 33,
+          "minimumEdgeRatio": 0.7337,
+          "maximumEdgeRatio": 1.86779,
+          "medianPathSurfaceCm": 2.579,
+          "maximumPathSurfaceCm": 3.745
+        },
+        {
+          "frameIndex": 34,
+          "minimumEdgeRatio": 0.71571,
+          "maximumEdgeRatio": 1.89896,
+          "medianPathSurfaceCm": 2.555,
+          "maximumPathSurfaceCm": 3.618
+        },
+        {
+          "frameIndex": 35,
+          "minimumEdgeRatio": 0.69809,
+          "maximumEdgeRatio": 1.92809,
+          "medianPathSurfaceCm": 2.534,
+          "maximumPathSurfaceCm": 3.49
+        },
+        {
+          "frameIndex": 36,
+          "minimumEdgeRatio": 0.68072,
+          "maximumEdgeRatio": 1.95523,
+          "medianPathSurfaceCm": 2.516,
+          "maximumPathSurfaceCm": 3.362
+        },
+        {
+          "frameIndex": 37,
+          "minimumEdgeRatio": 0.66396,
+          "maximumEdgeRatio": 1.98033,
+          "medianPathSurfaceCm": 2.5,
+          "maximumPathSurfaceCm": 3.287
+        },
+        {
+          "frameIndex": 38,
+          "minimumEdgeRatio": 0.64781,
+          "maximumEdgeRatio": 2.00331,
+          "medianPathSurfaceCm": 2.471,
+          "maximumPathSurfaceCm": 3.162
+        },
+        {
+          "frameIndex": 39,
+          "minimumEdgeRatio": 0.6325,
+          "maximumEdgeRatio": 2.02431,
+          "medianPathSurfaceCm": 2.438,
+          "maximumPathSurfaceCm": 3.036
+        },
+        {
+          "frameIndex": 40,
+          "minimumEdgeRatio": 0.61813,
+          "maximumEdgeRatio": 2.04313,
+          "medianPathSurfaceCm": 2.407,
+          "maximumPathSurfaceCm": 2.914
+        },
+        {
+          "frameIndex": 41,
+          "minimumEdgeRatio": 0.60469,
+          "maximumEdgeRatio": 2.05998,
+          "medianPathSurfaceCm": 2.378,
+          "maximumPathSurfaceCm": 2.8
+        },
+        {
+          "frameIndex": 42,
+          "minimumEdgeRatio": 0.59239,
+          "maximumEdgeRatio": 2.07486,
+          "medianPathSurfaceCm": 2.351,
+          "maximumPathSurfaceCm": 2.695
+        },
+        {
+          "frameIndex": 43,
+          "minimumEdgeRatio": 0.58135,
+          "maximumEdgeRatio": 2.08782,
+          "medianPathSurfaceCm": 2.327,
+          "maximumPathSurfaceCm": 2.601
+        },
+        {
+          "frameIndex": 44,
+          "minimumEdgeRatio": 0.57171,
+          "maximumEdgeRatio": 2.09893,
+          "medianPathSurfaceCm": 2.306,
+          "maximumPathSurfaceCm": 2.524
+        },
+        {
+          "frameIndex": 45,
+          "minimumEdgeRatio": 0.5632,
+          "maximumEdgeRatio": 2.10822,
+          "medianPathSurfaceCm": 2.288,
+          "maximumPathSurfaceCm": 2.461
+        },
+        {
+          "frameIndex": 46,
+          "minimumEdgeRatio": 0.55631,
+          "maximumEdgeRatio": 2.1157,
+          "medianPathSurfaceCm": 2.273,
+          "maximumPathSurfaceCm": 2.423
+        },
+        {
+          "frameIndex": 47,
+          "minimumEdgeRatio": 0.55083,
+          "maximumEdgeRatio": 2.12155,
+          "medianPathSurfaceCm": 2.262,
+          "maximumPathSurfaceCm": 2.393
+        },
+        {
+          "frameIndex": 48,
+          "minimumEdgeRatio": 0.54695,
+          "maximumEdgeRatio": 2.12565,
+          "medianPathSurfaceCm": 2.227,
+          "maximumPathSurfaceCm": 2.372
+        },
+        {
+          "frameIndex": 49,
+          "minimumEdgeRatio": 0.54463,
+          "maximumEdgeRatio": 2.12814,
+          "medianPathSurfaceCm": 2.223,
+          "maximumPathSurfaceCm": 2.359
+        },
+        {
+          "frameIndex": 50,
+          "minimumEdgeRatio": 0.54381,
+          "maximumEdgeRatio": 2.12897,
+          "medianPathSurfaceCm": 2.223,
+          "maximumPathSurfaceCm": 2.355
+        },
+        {
+          "frameIndex": 51,
+          "minimumEdgeRatio": 0.54463,
+          "maximumEdgeRatio": 2.12814,
+          "medianPathSurfaceCm": 2.223,
+          "maximumPathSurfaceCm": 2.359
+        },
+        {
+          "frameIndex": 52,
+          "minimumEdgeRatio": 0.54695,
+          "maximumEdgeRatio": 2.12565,
+          "medianPathSurfaceCm": 2.227,
+          "maximumPathSurfaceCm": 2.372
+        },
+        {
+          "frameIndex": 53,
+          "minimumEdgeRatio": 0.55083,
+          "maximumEdgeRatio": 2.12155,
+          "medianPathSurfaceCm": 2.262,
+          "maximumPathSurfaceCm": 2.393
+        },
+        {
+          "frameIndex": 54,
+          "minimumEdgeRatio": 0.55631,
+          "maximumEdgeRatio": 2.1157,
+          "medianPathSurfaceCm": 2.273,
+          "maximumPathSurfaceCm": 2.423
+        },
+        {
+          "frameIndex": 55,
+          "minimumEdgeRatio": 0.5632,
+          "maximumEdgeRatio": 2.10822,
+          "medianPathSurfaceCm": 2.288,
+          "maximumPathSurfaceCm": 2.461
+        },
+        {
+          "frameIndex": 56,
+          "minimumEdgeRatio": 0.57171,
+          "maximumEdgeRatio": 2.09893,
+          "medianPathSurfaceCm": 2.306,
+          "maximumPathSurfaceCm": 2.524
+        },
+        {
+          "frameIndex": 57,
+          "minimumEdgeRatio": 0.58135,
+          "maximumEdgeRatio": 2.08782,
+          "medianPathSurfaceCm": 2.327,
+          "maximumPathSurfaceCm": 2.601
+        },
+        {
+          "frameIndex": 58,
+          "minimumEdgeRatio": 0.59239,
+          "maximumEdgeRatio": 2.07486,
+          "medianPathSurfaceCm": 2.351,
+          "maximumPathSurfaceCm": 2.695
+        },
+        {
+          "frameIndex": 59,
+          "minimumEdgeRatio": 0.60469,
+          "maximumEdgeRatio": 2.05998,
+          "medianPathSurfaceCm": 2.378,
+          "maximumPathSurfaceCm": 2.8
+        },
+        {
+          "frameIndex": 60,
+          "minimumEdgeRatio": 0.61813,
+          "maximumEdgeRatio": 2.04313,
+          "medianPathSurfaceCm": 2.407,
+          "maximumPathSurfaceCm": 2.914
+        },
+        {
+          "frameIndex": 61,
+          "minimumEdgeRatio": 0.6325,
+          "maximumEdgeRatio": 2.02431,
+          "medianPathSurfaceCm": 2.438,
+          "maximumPathSurfaceCm": 3.036
+        },
+        {
+          "frameIndex": 62,
+          "minimumEdgeRatio": 0.64781,
+          "maximumEdgeRatio": 2.00331,
+          "medianPathSurfaceCm": 2.471,
+          "maximumPathSurfaceCm": 3.162
+        },
+        {
+          "frameIndex": 63,
+          "minimumEdgeRatio": 0.66396,
+          "maximumEdgeRatio": 1.98033,
+          "medianPathSurfaceCm": 2.5,
+          "maximumPathSurfaceCm": 3.287
+        },
+        {
+          "frameIndex": 64,
+          "minimumEdgeRatio": 0.68072,
+          "maximumEdgeRatio": 1.95523,
+          "medianPathSurfaceCm": 2.516,
+          "maximumPathSurfaceCm": 3.362
+        },
+        {
+          "frameIndex": 65,
+          "minimumEdgeRatio": 0.69809,
+          "maximumEdgeRatio": 1.92809,
+          "medianPathSurfaceCm": 2.534,
+          "maximumPathSurfaceCm": 3.49
+        },
+        {
+          "frameIndex": 66,
+          "minimumEdgeRatio": 0.71571,
+          "maximumEdgeRatio": 1.89896,
+          "medianPathSurfaceCm": 2.555,
+          "maximumPathSurfaceCm": 3.618
+        },
+        {
+          "frameIndex": 67,
+          "minimumEdgeRatio": 0.7337,
+          "maximumEdgeRatio": 1.86779,
+          "medianPathSurfaceCm": 2.579,
+          "maximumPathSurfaceCm": 3.745
+        },
+        {
+          "frameIndex": 68,
+          "minimumEdgeRatio": 0.75177,
+          "maximumEdgeRatio": 1.83468,
+          "medianPathSurfaceCm": 2.603,
+          "maximumPathSurfaceCm": 3.825
+        },
+        {
+          "frameIndex": 69,
+          "minimumEdgeRatio": 0.7699,
+          "maximumEdgeRatio": 1.79981,
+          "medianPathSurfaceCm": 2.629,
+          "maximumPathSurfaceCm": 3.856
+        },
+        {
+          "frameIndex": 70,
+          "minimumEdgeRatio": 0.78593,
+          "maximumEdgeRatio": 1.76333,
+          "medianPathSurfaceCm": 2.655,
+          "maximumPathSurfaceCm": 3.95
+        },
+        {
+          "frameIndex": 71,
+          "minimumEdgeRatio": 0.7982,
+          "maximumEdgeRatio": 1.72532,
+          "medianPathSurfaceCm": 2.679,
+          "maximumPathSurfaceCm": 4.044
+        },
+        {
+          "frameIndex": 72,
+          "minimumEdgeRatio": 0.81128,
+          "maximumEdgeRatio": 1.68609,
+          "medianPathSurfaceCm": 2.702,
+          "maximumPathSurfaceCm": 4.129
+        },
+        {
+          "frameIndex": 73,
+          "minimumEdgeRatio": 0.82363,
+          "maximumEdgeRatio": 1.64607,
+          "medianPathSurfaceCm": 2.722,
+          "maximumPathSurfaceCm": 4.2
+        },
+        {
+          "frameIndex": 74,
+          "minimumEdgeRatio": 0.83627,
+          "maximumEdgeRatio": 1.60712,
+          "medianPathSurfaceCm": 2.74,
+          "maximumPathSurfaceCm": 4.26
+        },
+        {
+          "frameIndex": 75,
+          "minimumEdgeRatio": 0.84899,
+          "maximumEdgeRatio": 1.56757,
+          "medianPathSurfaceCm": 2.754,
+          "maximumPathSurfaceCm": 4.309
+        },
+        {
+          "frameIndex": 76,
+          "minimumEdgeRatio": 0.86131,
+          "maximumEdgeRatio": 1.53094,
+          "medianPathSurfaceCm": 2.764,
+          "maximumPathSurfaceCm": 4.346
+        },
+        {
+          "frameIndex": 77,
+          "minimumEdgeRatio": 0.87321,
+          "maximumEdgeRatio": 1.4954,
+          "medianPathSurfaceCm": 2.77,
+          "maximumPathSurfaceCm": 4.371
+        },
+        {
+          "frameIndex": 78,
+          "minimumEdgeRatio": 0.88487,
+          "maximumEdgeRatio": 1.45962,
+          "medianPathSurfaceCm": 2.772,
+          "maximumPathSurfaceCm": 4.384
+        },
+        {
+          "frameIndex": 79,
+          "minimumEdgeRatio": 0.8937,
+          "maximumEdgeRatio": 1.42384,
+          "medianPathSurfaceCm": 2.77,
+          "maximumPathSurfaceCm": 4.384
+        },
+        {
+          "frameIndex": 80,
+          "minimumEdgeRatio": 0.89707,
+          "maximumEdgeRatio": 1.38829,
+          "medianPathSurfaceCm": 2.764,
+          "maximumPathSurfaceCm": 4.372
+        },
+        {
+          "frameIndex": 81,
+          "minimumEdgeRatio": 0.90177,
+          "maximumEdgeRatio": 1.35327,
+          "medianPathSurfaceCm": 2.754,
+          "maximumPathSurfaceCm": 4.349
+        },
+        {
+          "frameIndex": 82,
+          "minimumEdgeRatio": 0.90685,
+          "maximumEdgeRatio": 1.319,
+          "medianPathSurfaceCm": 2.741,
+          "maximumPathSurfaceCm": 4.317
+        },
+        {
+          "frameIndex": 83,
+          "minimumEdgeRatio": 0.91282,
+          "maximumEdgeRatio": 1.28575,
+          "medianPathSurfaceCm": 2.726,
+          "maximumPathSurfaceCm": 4.279
+        },
+        {
+          "frameIndex": 84,
+          "minimumEdgeRatio": 0.91924,
+          "maximumEdgeRatio": 1.25373,
+          "medianPathSurfaceCm": 2.712,
+          "maximumPathSurfaceCm": 4.235
+        },
+        {
+          "frameIndex": 85,
+          "minimumEdgeRatio": 0.92608,
+          "maximumEdgeRatio": 1.22313,
+          "medianPathSurfaceCm": 2.706,
+          "maximumPathSurfaceCm": 4.177
+        },
+        {
+          "frameIndex": 86,
+          "minimumEdgeRatio": 0.93334,
+          "maximumEdgeRatio": 1.19419,
+          "medianPathSurfaceCm": 2.699,
+          "maximumPathSurfaceCm": 4.113
+        },
+        {
+          "frameIndex": 87,
+          "minimumEdgeRatio": 0.94065,
+          "maximumEdgeRatio": 1.16702,
+          "medianPathSurfaceCm": 2.691,
+          "maximumPathSurfaceCm": 4.047
+        },
+        {
+          "frameIndex": 88,
+          "minimumEdgeRatio": 0.948,
+          "maximumEdgeRatio": 1.14205,
+          "medianPathSurfaceCm": 2.681,
+          "maximumPathSurfaceCm": 3.98
+        },
+        {
+          "frameIndex": 89,
+          "minimumEdgeRatio": 0.95501,
+          "maximumEdgeRatio": 1.11929,
+          "medianPathSurfaceCm": 2.669,
+          "maximumPathSurfaceCm": 3.915
+        },
+        {
+          "frameIndex": 90,
+          "minimumEdgeRatio": 0.96203,
+          "maximumEdgeRatio": 1.09843,
+          "medianPathSurfaceCm": 2.654,
+          "maximumPathSurfaceCm": 3.89
+        },
+        {
+          "frameIndex": 91,
+          "minimumEdgeRatio": 0.96868,
+          "maximumEdgeRatio": 1.07953,
+          "medianPathSurfaceCm": 2.641,
+          "maximumPathSurfaceCm": 3.874
+        },
+        {
+          "frameIndex": 92,
+          "minimumEdgeRatio": 0.97433,
+          "maximumEdgeRatio": 1.06266,
+          "medianPathSurfaceCm": 2.629,
+          "maximumPathSurfaceCm": 3.838
+        },
+        {
+          "frameIndex": 93,
+          "minimumEdgeRatio": 0.97966,
+          "maximumEdgeRatio": 1.04783,
+          "medianPathSurfaceCm": 2.616,
+          "maximumPathSurfaceCm": 3.802
+        },
+        {
+          "frameIndex": 94,
+          "minimumEdgeRatio": 0.98449,
+          "maximumEdgeRatio": 1.035,
+          "medianPathSurfaceCm": 2.603,
+          "maximumPathSurfaceCm": 3.769
+        },
+        {
+          "frameIndex": 95,
+          "minimumEdgeRatio": 0.98899,
+          "maximumEdgeRatio": 1.02421,
+          "medianPathSurfaceCm": 2.592,
+          "maximumPathSurfaceCm": 3.741
+        },
+        {
+          "frameIndex": 96,
+          "minimumEdgeRatio": 0.99276,
+          "maximumEdgeRatio": 1.01549,
+          "medianPathSurfaceCm": 2.582,
+          "maximumPathSurfaceCm": 3.717
+        },
+        {
+          "frameIndex": 97,
+          "minimumEdgeRatio": 0.99589,
+          "maximumEdgeRatio": 1.00866,
+          "medianPathSurfaceCm": 2.571,
+          "maximumPathSurfaceCm": 3.699
+        },
+        {
+          "frameIndex": 98,
+          "minimumEdgeRatio": 0.99814,
+          "maximumEdgeRatio": 1.00387,
+          "medianPathSurfaceCm": 2.563,
+          "maximumPathSurfaceCm": 3.685
+        },
+        {
+          "frameIndex": 99,
+          "minimumEdgeRatio": 0.99946,
+          "maximumEdgeRatio": 1.00097,
+          "medianPathSurfaceCm": 2.558,
+          "maximumPathSurfaceCm": 3.677
+        },
+        {
+          "frameIndex": 100,
+          "minimumEdgeRatio": 0.99978,
+          "maximumEdgeRatio": 1.00015,
+          "medianPathSurfaceCm": 2.556,
+          "maximumPathSurfaceCm": 3.675
+        }
+      ]
+    },
+    {
+      "exercise": "press",
+      "muscle": "DeltoideusScapula_P",
+      "atlasMesh": "Scapular spinal part of deltoid muscle.r",
+      "originBody": "scapula",
+      "distalBody": "humerus",
+      "vertices": 2189,
+      "edges": 6567,
+      "fractionsAtZero": 0,
+      "fractionsAtOne": 318,
+      "minimumEdgeRatio": 0.05281,
+      "maximumEdgeRatio": 2.21709,
+      "maximumPathSurfaceCm": 4.011,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "minimumEdgeRatio": 0.99985,
+          "maximumEdgeRatio": 1.00034,
+          "medianPathSurfaceCm": 1.731,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 1,
+          "minimumEdgeRatio": 0.99877,
+          "maximumEdgeRatio": 1.00099,
+          "medianPathSurfaceCm": 1.734,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 2,
+          "minimumEdgeRatio": 0.99595,
+          "maximumEdgeRatio": 1.00405,
+          "medianPathSurfaceCm": 1.741,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 3,
+          "minimumEdgeRatio": 0.99111,
+          "maximumEdgeRatio": 1.00915,
+          "medianPathSurfaceCm": 1.754,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 4,
+          "minimumEdgeRatio": 0.98406,
+          "maximumEdgeRatio": 1.01628,
+          "medianPathSurfaceCm": 1.771,
+          "maximumPathSurfaceCm": 4.01
+        },
+        {
+          "frameIndex": 5,
+          "minimumEdgeRatio": 0.97486,
+          "maximumEdgeRatio": 1.02563,
+          "medianPathSurfaceCm": 1.791,
+          "maximumPathSurfaceCm": 4.009
+        },
+        {
+          "frameIndex": 6,
+          "minimumEdgeRatio": 0.96372,
+          "maximumEdgeRatio": 1.03721,
+          "medianPathSurfaceCm": 1.814,
+          "maximumPathSurfaceCm": 4.008
+        },
+        {
+          "frameIndex": 7,
+          "minimumEdgeRatio": 0.95089,
+          "maximumEdgeRatio": 1.05107,
+          "medianPathSurfaceCm": 1.841,
+          "maximumPathSurfaceCm": 4.006
+        },
+        {
+          "frameIndex": 8,
+          "minimumEdgeRatio": 0.93574,
+          "maximumEdgeRatio": 1.06724,
+          "medianPathSurfaceCm": 1.873,
+          "maximumPathSurfaceCm": 4.004
+        },
+        {
+          "frameIndex": 9,
+          "minimumEdgeRatio": 0.91816,
+          "maximumEdgeRatio": 1.08581,
+          "medianPathSurfaceCm": 1.909,
+          "maximumPathSurfaceCm": 4.002
+        },
+        {
+          "frameIndex": 10,
+          "minimumEdgeRatio": 0.89936,
+          "maximumEdgeRatio": 1.10678,
+          "medianPathSurfaceCm": 1.947,
+          "maximumPathSurfaceCm": 3.999
+        },
+        {
+          "frameIndex": 11,
+          "minimumEdgeRatio": 0.87802,
+          "maximumEdgeRatio": 1.13015,
+          "medianPathSurfaceCm": 1.983,
+          "maximumPathSurfaceCm": 3.995
+        },
+        {
+          "frameIndex": 12,
+          "minimumEdgeRatio": 0.85498,
+          "maximumEdgeRatio": 1.15592,
+          "medianPathSurfaceCm": 2.02,
+          "maximumPathSurfaceCm": 3.99
+        },
+        {
+          "frameIndex": 13,
+          "minimumEdgeRatio": 0.82953,
+          "maximumEdgeRatio": 1.18393,
+          "medianPathSurfaceCm": 2.056,
+          "maximumPathSurfaceCm": 3.985
+        },
+        {
+          "frameIndex": 14,
+          "minimumEdgeRatio": 0.80256,
+          "maximumEdgeRatio": 1.21416,
+          "medianPathSurfaceCm": 2.086,
+          "maximumPathSurfaceCm": 3.979
+        },
+        {
+          "frameIndex": 15,
+          "minimumEdgeRatio": 0.77405,
+          "maximumEdgeRatio": 1.24642,
+          "medianPathSurfaceCm": 2.117,
+          "maximumPathSurfaceCm": 3.971
+        },
+        {
+          "frameIndex": 16,
+          "minimumEdgeRatio": 0.74315,
+          "maximumEdgeRatio": 1.28056,
+          "medianPathSurfaceCm": 2.151,
+          "maximumPathSurfaceCm": 3.963
+        },
+        {
+          "frameIndex": 17,
+          "minimumEdgeRatio": 0.71116,
+          "maximumEdgeRatio": 1.31633,
+          "medianPathSurfaceCm": 2.165,
+          "maximumPathSurfaceCm": 3.955
+        },
+        {
+          "frameIndex": 18,
+          "minimumEdgeRatio": 0.67732,
+          "maximumEdgeRatio": 1.35351,
+          "medianPathSurfaceCm": 2.159,
+          "maximumPathSurfaceCm": 3.947
+        },
+        {
+          "frameIndex": 19,
+          "minimumEdgeRatio": 0.64225,
+          "maximumEdgeRatio": 1.39191,
+          "medianPathSurfaceCm": 2.153,
+          "maximumPathSurfaceCm": 3.939
+        },
+        {
+          "frameIndex": 20,
+          "minimumEdgeRatio": 0.60622,
+          "maximumEdgeRatio": 1.43122,
+          "medianPathSurfaceCm": 2.148,
+          "maximumPathSurfaceCm": 3.932
+        },
+        {
+          "frameIndex": 21,
+          "minimumEdgeRatio": 0.56888,
+          "maximumEdgeRatio": 1.47111,
+          "medianPathSurfaceCm": 2.144,
+          "maximumPathSurfaceCm": 3.925
+        },
+        {
+          "frameIndex": 22,
+          "minimumEdgeRatio": 0.53099,
+          "maximumEdgeRatio": 1.51132,
+          "medianPathSurfaceCm": 2.141,
+          "maximumPathSurfaceCm": 3.919
+        },
+        {
+          "frameIndex": 23,
+          "minimumEdgeRatio": 0.49261,
+          "maximumEdgeRatio": 1.55155,
+          "medianPathSurfaceCm": 2.138,
+          "maximumPathSurfaceCm": 3.914
+        },
+        {
+          "frameIndex": 24,
+          "minimumEdgeRatio": 0.45401,
+          "maximumEdgeRatio": 1.59152,
+          "medianPathSurfaceCm": 2.136,
+          "maximumPathSurfaceCm": 3.911
+        },
+        {
+          "frameIndex": 25,
+          "minimumEdgeRatio": 0.41562,
+          "maximumEdgeRatio": 1.63113,
+          "medianPathSurfaceCm": 2.134,
+          "maximumPathSurfaceCm": 3.908
+        },
+        {
+          "frameIndex": 26,
+          "minimumEdgeRatio": 0.37768,
+          "maximumEdgeRatio": 1.66985,
+          "medianPathSurfaceCm": 2.169,
+          "maximumPathSurfaceCm": 3.906
+        },
+        {
+          "frameIndex": 27,
+          "minimumEdgeRatio": 0.34091,
+          "maximumEdgeRatio": 1.70764,
+          "medianPathSurfaceCm": 2.196,
+          "maximumPathSurfaceCm": 3.906
+        },
+        {
+          "frameIndex": 28,
+          "minimumEdgeRatio": 0.30562,
+          "maximumEdgeRatio": 1.74417,
+          "medianPathSurfaceCm": 2.219,
+          "maximumPathSurfaceCm": 3.907
+        },
+        {
+          "frameIndex": 29,
+          "minimumEdgeRatio": 0.26907,
+          "maximumEdgeRatio": 1.78597,
+          "medianPathSurfaceCm": 2.241,
+          "maximumPathSurfaceCm": 3.909
+        },
+        {
+          "frameIndex": 30,
+          "minimumEdgeRatio": 0.23442,
+          "maximumEdgeRatio": 1.82668,
+          "medianPathSurfaceCm": 2.262,
+          "maximumPathSurfaceCm": 3.911
+        },
+        {
+          "frameIndex": 31,
+          "minimumEdgeRatio": 0.20291,
+          "maximumEdgeRatio": 1.86568,
+          "medianPathSurfaceCm": 2.282,
+          "maximumPathSurfaceCm": 3.915
+        },
+        {
+          "frameIndex": 32,
+          "minimumEdgeRatio": 0.17262,
+          "maximumEdgeRatio": 1.90301,
+          "medianPathSurfaceCm": 2.3,
+          "maximumPathSurfaceCm": 3.918
+        },
+        {
+          "frameIndex": 33,
+          "minimumEdgeRatio": 0.14717,
+          "maximumEdgeRatio": 1.93839,
+          "medianPathSurfaceCm": 2.313,
+          "maximumPathSurfaceCm": 3.92
+        },
+        {
+          "frameIndex": 34,
+          "minimumEdgeRatio": 0.12736,
+          "maximumEdgeRatio": 1.97167,
+          "medianPathSurfaceCm": 2.315,
+          "maximumPathSurfaceCm": 3.922
+        },
+        {
+          "frameIndex": 35,
+          "minimumEdgeRatio": 0.0975,
+          "maximumEdgeRatio": 2.00284,
+          "medianPathSurfaceCm": 2.315,
+          "maximumPathSurfaceCm": 3.926
+        },
+        {
+          "frameIndex": 36,
+          "minimumEdgeRatio": 0.07203,
+          "maximumEdgeRatio": 2.03179,
+          "medianPathSurfaceCm": 2.309,
+          "maximumPathSurfaceCm": 3.93
+        },
+        {
+          "frameIndex": 37,
+          "minimumEdgeRatio": 0.05527,
+          "maximumEdgeRatio": 2.05859,
+          "medianPathSurfaceCm": 2.302,
+          "maximumPathSurfaceCm": 3.934
+        },
+        {
+          "frameIndex": 38,
+          "minimumEdgeRatio": 0.05281,
+          "maximumEdgeRatio": 2.08311,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 3.939
+        },
+        {
+          "frameIndex": 39,
+          "minimumEdgeRatio": 0.06389,
+          "maximumEdgeRatio": 2.10551,
+          "medianPathSurfaceCm": 2.285,
+          "maximumPathSurfaceCm": 3.944
+        },
+        {
+          "frameIndex": 40,
+          "minimumEdgeRatio": 0.0813,
+          "maximumEdgeRatio": 2.12567,
+          "medianPathSurfaceCm": 2.275,
+          "maximumPathSurfaceCm": 3.949
+        },
+        {
+          "frameIndex": 41,
+          "minimumEdgeRatio": 0.09888,
+          "maximumEdgeRatio": 2.14354,
+          "medianPathSurfaceCm": 2.266,
+          "maximumPathSurfaceCm": 3.954
+        },
+        {
+          "frameIndex": 42,
+          "minimumEdgeRatio": 0.08577,
+          "maximumEdgeRatio": 2.15947,
+          "medianPathSurfaceCm": 2.258,
+          "maximumPathSurfaceCm": 3.959
+        },
+        {
+          "frameIndex": 43,
+          "minimumEdgeRatio": 0.07617,
+          "maximumEdgeRatio": 2.17332,
+          "medianPathSurfaceCm": 2.251,
+          "maximumPathSurfaceCm": 3.963
+        },
+        {
+          "frameIndex": 44,
+          "minimumEdgeRatio": 0.07008,
+          "maximumEdgeRatio": 2.18515,
+          "medianPathSurfaceCm": 2.245,
+          "maximumPathSurfaceCm": 3.968
+        },
+        {
+          "frameIndex": 45,
+          "minimumEdgeRatio": 0.06708,
+          "maximumEdgeRatio": 2.19501,
+          "medianPathSurfaceCm": 2.24,
+          "maximumPathSurfaceCm": 3.971
+        },
+        {
+          "frameIndex": 46,
+          "minimumEdgeRatio": 0.06634,
+          "maximumEdgeRatio": 2.20313,
+          "medianPathSurfaceCm": 2.235,
+          "maximumPathSurfaceCm": 3.975
+        },
+        {
+          "frameIndex": 47,
+          "minimumEdgeRatio": 0.06689,
+          "maximumEdgeRatio": 2.20923,
+          "medianPathSurfaceCm": 2.231,
+          "maximumPathSurfaceCm": 3.977
+        },
+        {
+          "frameIndex": 48,
+          "minimumEdgeRatio": 0.06788,
+          "maximumEdgeRatio": 2.21363,
+          "medianPathSurfaceCm": 2.229,
+          "maximumPathSurfaceCm": 3.979
+        },
+        {
+          "frameIndex": 49,
+          "minimumEdgeRatio": 0.06873,
+          "maximumEdgeRatio": 2.21629,
+          "medianPathSurfaceCm": 2.227,
+          "maximumPathSurfaceCm": 3.98
+        },
+        {
+          "frameIndex": 50,
+          "minimumEdgeRatio": 0.06904,
+          "maximumEdgeRatio": 2.21709,
+          "medianPathSurfaceCm": 2.226,
+          "maximumPathSurfaceCm": 3.98
+        },
+        {
+          "frameIndex": 51,
+          "minimumEdgeRatio": 0.06873,
+          "maximumEdgeRatio": 2.21629,
+          "medianPathSurfaceCm": 2.227,
+          "maximumPathSurfaceCm": 3.98
+        },
+        {
+          "frameIndex": 52,
+          "minimumEdgeRatio": 0.06788,
+          "maximumEdgeRatio": 2.21363,
+          "medianPathSurfaceCm": 2.229,
+          "maximumPathSurfaceCm": 3.979
+        },
+        {
+          "frameIndex": 53,
+          "minimumEdgeRatio": 0.06689,
+          "maximumEdgeRatio": 2.20923,
+          "medianPathSurfaceCm": 2.231,
+          "maximumPathSurfaceCm": 3.977
+        },
+        {
+          "frameIndex": 54,
+          "minimumEdgeRatio": 0.06634,
+          "maximumEdgeRatio": 2.20313,
+          "medianPathSurfaceCm": 2.235,
+          "maximumPathSurfaceCm": 3.975
+        },
+        {
+          "frameIndex": 55,
+          "minimumEdgeRatio": 0.06708,
+          "maximumEdgeRatio": 2.19501,
+          "medianPathSurfaceCm": 2.24,
+          "maximumPathSurfaceCm": 3.971
+        },
+        {
+          "frameIndex": 56,
+          "minimumEdgeRatio": 0.07008,
+          "maximumEdgeRatio": 2.18515,
+          "medianPathSurfaceCm": 2.245,
+          "maximumPathSurfaceCm": 3.968
+        },
+        {
+          "frameIndex": 57,
+          "minimumEdgeRatio": 0.07617,
+          "maximumEdgeRatio": 2.17332,
+          "medianPathSurfaceCm": 2.251,
+          "maximumPathSurfaceCm": 3.963
+        },
+        {
+          "frameIndex": 58,
+          "minimumEdgeRatio": 0.08577,
+          "maximumEdgeRatio": 2.15947,
+          "medianPathSurfaceCm": 2.258,
+          "maximumPathSurfaceCm": 3.959
+        },
+        {
+          "frameIndex": 59,
+          "minimumEdgeRatio": 0.09888,
+          "maximumEdgeRatio": 2.14354,
+          "medianPathSurfaceCm": 2.266,
+          "maximumPathSurfaceCm": 3.954
+        },
+        {
+          "frameIndex": 60,
+          "minimumEdgeRatio": 0.0813,
+          "maximumEdgeRatio": 2.12567,
+          "medianPathSurfaceCm": 2.275,
+          "maximumPathSurfaceCm": 3.949
+        },
+        {
+          "frameIndex": 61,
+          "minimumEdgeRatio": 0.06389,
+          "maximumEdgeRatio": 2.10551,
+          "medianPathSurfaceCm": 2.285,
+          "maximumPathSurfaceCm": 3.944
+        },
+        {
+          "frameIndex": 62,
+          "minimumEdgeRatio": 0.05281,
+          "maximumEdgeRatio": 2.08311,
+          "medianPathSurfaceCm": 2.294,
+          "maximumPathSurfaceCm": 3.939
+        },
+        {
+          "frameIndex": 63,
+          "minimumEdgeRatio": 0.05527,
+          "maximumEdgeRatio": 2.05859,
+          "medianPathSurfaceCm": 2.302,
+          "maximumPathSurfaceCm": 3.934
+        },
+        {
+          "frameIndex": 64,
+          "minimumEdgeRatio": 0.07203,
+          "maximumEdgeRatio": 2.03179,
+          "medianPathSurfaceCm": 2.309,
+          "maximumPathSurfaceCm": 3.93
+        },
+        {
+          "frameIndex": 65,
+          "minimumEdgeRatio": 0.0975,
+          "maximumEdgeRatio": 2.00284,
+          "medianPathSurfaceCm": 2.315,
+          "maximumPathSurfaceCm": 3.926
+        },
+        {
+          "frameIndex": 66,
+          "minimumEdgeRatio": 0.12736,
+          "maximumEdgeRatio": 1.97167,
+          "medianPathSurfaceCm": 2.315,
+          "maximumPathSurfaceCm": 3.922
+        },
+        {
+          "frameIndex": 67,
+          "minimumEdgeRatio": 0.14717,
+          "maximumEdgeRatio": 1.93839,
+          "medianPathSurfaceCm": 2.313,
+          "maximumPathSurfaceCm": 3.92
+        },
+        {
+          "frameIndex": 68,
+          "minimumEdgeRatio": 0.17262,
+          "maximumEdgeRatio": 1.90301,
+          "medianPathSurfaceCm": 2.3,
+          "maximumPathSurfaceCm": 3.918
+        },
+        {
+          "frameIndex": 69,
+          "minimumEdgeRatio": 0.20291,
+          "maximumEdgeRatio": 1.86568,
+          "medianPathSurfaceCm": 2.282,
+          "maximumPathSurfaceCm": 3.915
+        },
+        {
+          "frameIndex": 70,
+          "minimumEdgeRatio": 0.23442,
+          "maximumEdgeRatio": 1.82668,
+          "medianPathSurfaceCm": 2.262,
+          "maximumPathSurfaceCm": 3.911
+        },
+        {
+          "frameIndex": 71,
+          "minimumEdgeRatio": 0.26907,
+          "maximumEdgeRatio": 1.78597,
+          "medianPathSurfaceCm": 2.241,
+          "maximumPathSurfaceCm": 3.909
+        },
+        {
+          "frameIndex": 72,
+          "minimumEdgeRatio": 0.30562,
+          "maximumEdgeRatio": 1.74417,
+          "medianPathSurfaceCm": 2.219,
+          "maximumPathSurfaceCm": 3.907
+        },
+        {
+          "frameIndex": 73,
+          "minimumEdgeRatio": 0.34091,
+          "maximumEdgeRatio": 1.70764,
+          "medianPathSurfaceCm": 2.196,
+          "maximumPathSurfaceCm": 3.906
+        },
+        {
+          "frameIndex": 74,
+          "minimumEdgeRatio": 0.37768,
+          "maximumEdgeRatio": 1.66985,
+          "medianPathSurfaceCm": 2.169,
+          "maximumPathSurfaceCm": 3.906
+        },
+        {
+          "frameIndex": 75,
+          "minimumEdgeRatio": 0.41562,
+          "maximumEdgeRatio": 1.63113,
+          "medianPathSurfaceCm": 2.134,
+          "maximumPathSurfaceCm": 3.908
+        },
+        {
+          "frameIndex": 76,
+          "minimumEdgeRatio": 0.45401,
+          "maximumEdgeRatio": 1.59152,
+          "medianPathSurfaceCm": 2.136,
+          "maximumPathSurfaceCm": 3.911
+        },
+        {
+          "frameIndex": 77,
+          "minimumEdgeRatio": 0.49261,
+          "maximumEdgeRatio": 1.55155,
+          "medianPathSurfaceCm": 2.138,
+          "maximumPathSurfaceCm": 3.914
+        },
+        {
+          "frameIndex": 78,
+          "minimumEdgeRatio": 0.53099,
+          "maximumEdgeRatio": 1.51132,
+          "medianPathSurfaceCm": 2.141,
+          "maximumPathSurfaceCm": 3.919
+        },
+        {
+          "frameIndex": 79,
+          "minimumEdgeRatio": 0.56888,
+          "maximumEdgeRatio": 1.47111,
+          "medianPathSurfaceCm": 2.144,
+          "maximumPathSurfaceCm": 3.925
+        },
+        {
+          "frameIndex": 80,
+          "minimumEdgeRatio": 0.60622,
+          "maximumEdgeRatio": 1.43122,
+          "medianPathSurfaceCm": 2.148,
+          "maximumPathSurfaceCm": 3.932
+        },
+        {
+          "frameIndex": 81,
+          "minimumEdgeRatio": 0.64225,
+          "maximumEdgeRatio": 1.39191,
+          "medianPathSurfaceCm": 2.153,
+          "maximumPathSurfaceCm": 3.939
+        },
+        {
+          "frameIndex": 82,
+          "minimumEdgeRatio": 0.67732,
+          "maximumEdgeRatio": 1.35351,
+          "medianPathSurfaceCm": 2.159,
+          "maximumPathSurfaceCm": 3.947
+        },
+        {
+          "frameIndex": 83,
+          "minimumEdgeRatio": 0.71116,
+          "maximumEdgeRatio": 1.31633,
+          "medianPathSurfaceCm": 2.165,
+          "maximumPathSurfaceCm": 3.955
+        },
+        {
+          "frameIndex": 84,
+          "minimumEdgeRatio": 0.74315,
+          "maximumEdgeRatio": 1.28056,
+          "medianPathSurfaceCm": 2.151,
+          "maximumPathSurfaceCm": 3.963
+        },
+        {
+          "frameIndex": 85,
+          "minimumEdgeRatio": 0.77405,
+          "maximumEdgeRatio": 1.24642,
+          "medianPathSurfaceCm": 2.117,
+          "maximumPathSurfaceCm": 3.971
+        },
+        {
+          "frameIndex": 86,
+          "minimumEdgeRatio": 0.80256,
+          "maximumEdgeRatio": 1.21416,
+          "medianPathSurfaceCm": 2.086,
+          "maximumPathSurfaceCm": 3.979
+        },
+        {
+          "frameIndex": 87,
+          "minimumEdgeRatio": 0.82953,
+          "maximumEdgeRatio": 1.18393,
+          "medianPathSurfaceCm": 2.056,
+          "maximumPathSurfaceCm": 3.985
+        },
+        {
+          "frameIndex": 88,
+          "minimumEdgeRatio": 0.85498,
+          "maximumEdgeRatio": 1.15592,
+          "medianPathSurfaceCm": 2.02,
+          "maximumPathSurfaceCm": 3.99
+        },
+        {
+          "frameIndex": 89,
+          "minimumEdgeRatio": 0.87802,
+          "maximumEdgeRatio": 1.13015,
+          "medianPathSurfaceCm": 1.983,
+          "maximumPathSurfaceCm": 3.995
+        },
+        {
+          "frameIndex": 90,
+          "minimumEdgeRatio": 0.89936,
+          "maximumEdgeRatio": 1.10678,
+          "medianPathSurfaceCm": 1.947,
+          "maximumPathSurfaceCm": 3.999
+        },
+        {
+          "frameIndex": 91,
+          "minimumEdgeRatio": 0.91816,
+          "maximumEdgeRatio": 1.08581,
+          "medianPathSurfaceCm": 1.909,
+          "maximumPathSurfaceCm": 4.002
+        },
+        {
+          "frameIndex": 92,
+          "minimumEdgeRatio": 0.93574,
+          "maximumEdgeRatio": 1.06724,
+          "medianPathSurfaceCm": 1.873,
+          "maximumPathSurfaceCm": 4.004
+        },
+        {
+          "frameIndex": 93,
+          "minimumEdgeRatio": 0.95089,
+          "maximumEdgeRatio": 1.05107,
+          "medianPathSurfaceCm": 1.841,
+          "maximumPathSurfaceCm": 4.006
+        },
+        {
+          "frameIndex": 94,
+          "minimumEdgeRatio": 0.96372,
+          "maximumEdgeRatio": 1.03721,
+          "medianPathSurfaceCm": 1.814,
+          "maximumPathSurfaceCm": 4.008
+        },
+        {
+          "frameIndex": 95,
+          "minimumEdgeRatio": 0.97486,
+          "maximumEdgeRatio": 1.02563,
+          "medianPathSurfaceCm": 1.791,
+          "maximumPathSurfaceCm": 4.009
+        },
+        {
+          "frameIndex": 96,
+          "minimumEdgeRatio": 0.98406,
+          "maximumEdgeRatio": 1.01628,
+          "medianPathSurfaceCm": 1.771,
+          "maximumPathSurfaceCm": 4.01
+        },
+        {
+          "frameIndex": 97,
+          "minimumEdgeRatio": 0.99111,
+          "maximumEdgeRatio": 1.00915,
+          "medianPathSurfaceCm": 1.754,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 98,
+          "minimumEdgeRatio": 0.99595,
+          "maximumEdgeRatio": 1.00405,
+          "medianPathSurfaceCm": 1.741,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 99,
+          "minimumEdgeRatio": 0.99877,
+          "maximumEdgeRatio": 1.00099,
+          "medianPathSurfaceCm": 1.734,
+          "maximumPathSurfaceCm": 4.011
+        },
+        {
+          "frameIndex": 100,
+          "minimumEdgeRatio": 0.99985,
+          "maximumEdgeRatio": 1.00034,
+          "medianPathSurfaceCm": 1.731,
+          "maximumPathSurfaceCm": 4.011
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "status": "group_event_kinematic_screen_only",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9658160/",
+  "sourceTable": "Table 1, v_max1 and v_max2",
+  "cohortParticipants": 12,
+  "cohortMeanStatureCm": 183.8,
+  "referenceStatureCm": 175.0,
+  "statureScale": 0.9521218715995647,
+  "demoAscentStrokeM": 0.2842647721424011,
+  "demoBottomBenchAxisDistanceM": 0.16675340404860797,
+  "demoTopBenchAxisDistanceM": 0.07827891108913838,
+  "comparison": {
+    "1RM": {
+      "firstVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.028,
+        "publishedGroupMeanShoulderDistanceM": 0.176,
+        "statureScaledHeightM": 0.026659412404787815,
+        "statureScaledShoulderDistanceM": 0.16757344940152338,
+        "demoBenchAxisDistanceM": 0.15917321537092619,
+        "demoMinusScaledGroupMeanM": -0.008400234030597198
+      },
+      "secondVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.285,
+        "publishedGroupMeanShoulderDistanceM": 0.09,
+        "statureScaledHeightM": 0.2713547334058759,
+        "statureScaledShoulderDistanceM": 0.08569096844396082,
+        "demoBenchAxisDistanceM": 0.0806750421856473,
+        "demoMinusScaledGroupMeanM": -0.005015926258313513
+      }
+    },
+    "3RM": {
+      "firstVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.032,
+        "publishedGroupMeanShoulderDistanceM": 0.16,
+        "statureScaledHeightM": 0.030467899891186073,
+        "statureScaledShoulderDistanceM": 0.15233949945593037,
+        "demoBenchAxisDistanceM": 0.15795780833876022,
+        "demoMinusScaledGroupMeanM": 0.005618308882829853
+      },
+      "secondVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.294,
+        "publishedGroupMeanShoulderDistanceM": 0.07,
+        "statureScaledHeightM": 0.279923830250272,
+        "statureScaledShoulderDistanceM": 0.06664853101196953,
+        "demoBenchAxisDistanceM": 0.07880122134106965,
+        "demoMinusScaledGroupMeanM": 0.012152690329100116
+      }
+    },
+    "6RM": {
+      "firstVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.032,
+        "publishedGroupMeanShoulderDistanceM": 0.169,
+        "statureScaledHeightM": 0.030467899891186073,
+        "statureScaledShoulderDistanceM": 0.16090859630032645,
+        "demoBenchAxisDistanceM": 0.15795780833876022,
+        "demoMinusScaledGroupMeanM": -0.002950787961566226
+      },
+      "secondVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.283,
+        "publishedGroupMeanShoulderDistanceM": 0.086,
+        "statureScaledHeightM": 0.2694504896626768,
+        "statureScaledShoulderDistanceM": 0.08188248095756256,
+        "demoBenchAxisDistanceM": 0.0812223660969196,
+        "demoMinusScaledGroupMeanM": -0.000660114860642963
+      }
+    },
+    "10RM": {
+      "firstVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.04,
+        "publishedGroupMeanShoulderDistanceM": 0.167,
+        "statureScaledHeightM": 0.03808487486398259,
+        "statureScaledShoulderDistanceM": 0.15900435255712733,
+        "demoBenchAxisDistanceM": 0.15544342822715443,
+        "demoMinusScaledGroupMeanM": -0.003560924329972903
+      },
+      "secondVelocityPeak": {
+        "publishedGroupMeanHeightM": 0.294,
+        "publishedGroupMeanShoulderDistanceM": 0.09,
+        "statureScaledHeightM": 0.279923830250272,
+        "statureScaledShoulderDistanceM": 0.08569096844396082,
+        "demoBenchAxisDistanceM": 0.07880122134106965,
+        "demoMinusScaledGroupMeanM": -0.006889747102891169
+      }
+    }
+  },
+  "meanAbsoluteGroupEventDifferenceM": 0.005656091719489243,
+  "maximumAbsoluteGroupEventDifferenceM": 0.012152690329100116,
+  "limitations": [
+    "The source gives cohort means and SDs, not person-level synchronized trajectories.",
+    "All four RM conditions use one illustrative path; the fit cannot predict load-specific kinematics.",
+    "The reported horizontal distance and model bench-axis coordinate have different subject origins and are only approximately aligned.",
+    "Uniform stature scaling is a rough group comparison and does not validate anatomy, forces, contact, or muscle activation."
+  ]
+}

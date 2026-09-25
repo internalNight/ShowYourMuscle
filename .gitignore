@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.vite/
+*.local
+*.log
+__pycache__/
+.cache/
+*.blend1
+*.jks
+*.keystore
+*.hprof
+.venv/
+android/.kotlin/
+assets/blender/myosim_fullbody_structural_review.blend
+assets/blender/myosim_fullbody_structural_review.png

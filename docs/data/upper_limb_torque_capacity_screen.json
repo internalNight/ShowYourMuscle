@@ -1,0 +1,3135 @@
+{
+  "status": "research_only_nominal_capacity_screen_not_personal_force",
+  "source": "https://zenodo.org/records/11209324",
+  "license": "CC BY-SA 4.0",
+  "task": "MJ/T0 upper-limb tracking, not bench or overhead press",
+  "assumption": "0 <= each muscle tension <= its serialized max_isometric_force; instantaneous linear moment-arm torque; no force-length-velocity, passive tissue, reserve actuator, joint coupling or contact",
+  "sampleStrideFrames": 50,
+  "participants": 17,
+  "testedFrames": 1071,
+  "feasibleFrames": 1071,
+  "independentShoulderCapacityExceededFrames": 0,
+  "independentElbowCapacityExceededFrames": 0,
+  "maximumAppliedCoordinateErrorRad": 0.0033239668654490703,
+  "largestMinimumL1TorqueResidualNm": 0.0,
+  "muscleForceIntervalSummary": {
+    "PECT": {
+      "feasibleDetailFrames": 85,
+      "medianWidthFractionOfNominalFmax": 1.0,
+      "framesSpanningAtLeast95PercentOfNominalFmax": 85
+    },
+    "DELTAnt": {
+      "feasibleDetailFrames": 85,
+      "medianWidthFractionOfNominalFmax": 1.0,
+      "framesSpanningAtLeast95PercentOfNominalFmax": 73
+    },
+    "TRILong": {
+      "feasibleDetailFrames": 85,
+      "medianWidthFractionOfNominalFmax": 1.0,
+      "framesSpanningAtLeast95PercentOfNominalFmax": 85
+    }
+  },
+  "subjects": [
+    {
+      "subject": "S01",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 2.14488852980782e-09,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            5.465,
+            0.923
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 7.481653074847827e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            2.418,
+            22.336
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.150040228661055e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            2.578,
+            3.939
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.1636815519750505e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            -7.985,
+            12.421
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.2089581642955056e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              930.39
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.7633,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            7.738,
+            6.571
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.2727131570855477e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S02",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 8.342584751482935e-07,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            10.529,
+            0.338
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 9.109781817784324e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            -5.629,
+            1.359
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.0128680255627742e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              875.84
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.7185,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            0.957,
+            6.579
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.0579146447753374e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            10.807,
+            11.65
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.4567637641202964e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            0.944,
+            1.368
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 5.074023423645713e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S03",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 2.108957097846087e-08,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            -0.879,
+            7.172
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.411635206111707e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            8.345,
+            3.557
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.1938919004280706e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            6.964,
+            8.429
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 5.471095937403803e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            3.807,
+            5.416
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.2375229729855164e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2940,
+          "timeS": 29.4,
+          "demandNm": [
+            0.197,
+            1.253
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 8.569214782205847e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S04",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 5.0418080146811053e-08,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            19.346,
+            3.439
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 9.295408887055601e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            30.616,
+            8.909
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.552305745223693e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            22.321,
+            2.399
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.0270675683018453e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            8.978,
+            2.963
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 9.555638919023224e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2940,
+          "timeS": 29.4,
+          "demandNm": [
+            -3.678,
+            1.131
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 8.476850610339426e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S05",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 2.198046103352169e-06,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            12.828,
+            5.938
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 6.242524275279493e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            0.804,
+            8.368
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.904230189670898e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            -6.156,
+            1.016
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.913629503278116e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              951.11
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.7803,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            12.698,
+            10.307
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.026960795730893e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            7.338,
+            2.017
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.2546265765824303e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S06",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 5.764594579460436e-09,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            8.734,
+            9.289
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.5449571706910876e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            16.662,
+            -3.737
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 6.425836529544426e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            22.394,
+            0.103
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.2072468205551763e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            8.658,
+            2.266
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 7.522859128174242e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            -1.966,
+            1.043
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.8719432908219655e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              737.22
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.6048,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S07",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 4.461632271968163e-09,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            15.104,
+            3.405
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.325164618477039e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            20.723,
+            3.5
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.2200200849576959e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            12.341,
+            3.267
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.6103433173677026e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            21.253,
+            6.365
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.755009974493572e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            5.828,
+            1.399
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.3141156225574564e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S08",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 1.2296499374286896e-07,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            7.883,
+            6.885
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.1918364073437715e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            3.297,
+            8.794
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.3794450854097704e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            1.563,
+            13.676
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.0329184910055096e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            0.89,
+            9.569
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.2006698269239067e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1108.57
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.9095,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            0.53,
+            1.385
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.182863946363246e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1136.49
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.9324,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S09",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 0.0013496861459070253,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            -0.973,
+            11.173
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.6723457908356396e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            3.219,
+            10.418
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 6.487463899418344e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            8.194,
+            8.677
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 7.128651419163745e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            6.216,
+            -0.711
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 8.843246135370464e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2940,
+          "timeS": 29.4,
+          "demandNm": [
+            2.789,
+            0.566
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.1036675660067736e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S10",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 0.0033239668654490703,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            -5.606,
+            15.835
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.547368510048443e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            12.783,
+            9.44
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.7886057525627894e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            11.962,
+            5.273
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.922129508850513e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            20.774,
+            6.162
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 8.104126258956512e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2940,
+          "timeS": 29.4,
+          "demandNm": [
+            2.549,
+            0.271
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.016791890082804e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S11",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 1.8438348551967632e-09,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            15.271,
+            3.482
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.5733775227003717e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            7.12,
+            -0.813
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 5.52121015573448e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            5.005,
+            2.075
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 5.340816677801286e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            15.157,
+            1.027
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 9.587073357408826e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            2.275,
+            1.149
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.7048573146906674e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S12",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 8.434339449081563e-09,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            10.196,
+            12.999
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.3117894537859627e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            14.283,
+            0.897
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.7436903573749283e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            13.257,
+            7.768
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.676911080636614e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            6.84,
+            10.274
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.4737899496105626e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              959.43
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.7871,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            9.061,
+            4.28
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 5.102184447505764e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S13",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 1.0391709645933816e-06,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            17.642,
+            17.809
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.689264861488073e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            -1.144,
+            11.935
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.0472852621300037e-07,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              839.19
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.6885,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            15.302,
+            13.356
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.192610620317282e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            7.636,
+            4.27
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 6.518815487410734e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            7.001,
+            3.973
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.5821839394192239e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S14",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 6.16199728304366e-08,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            1.284,
+            9.815
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 8.142837557012506e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              787.52
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.6461,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            6.567,
+            6.517
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.936632603756095e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            6.563,
+            3.439
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 9.308300796817548e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            1.683,
+            11.585
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.447556376663663e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            6.498,
+            3.735
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.976145996314017e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S15",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 1.5040687362244398e-08,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            9.565,
+            7.626
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.1961045487396404e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            8.588,
+            4.753
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 6.392137930077979e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            12.864,
+            4.913
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 5.747091691432615e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1186.67
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.9736,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            -6.043,
+            8.015
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.7975531688141366e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              477.25
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.3915,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            1.733,
+            0.831
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.525048668760744e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S16",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 0.0024511216913043476,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            1.282,
+            2.234
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 6.396370520918293e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            16.699,
+            4.904
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.777676032574618e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            8.751,
+            8.341
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.0115461213269255e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              941.99
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.7728,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            23.548,
+            17.976
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.8924075579084274e-08,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            7.283,
+            4.465
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.147065277646355e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              951.07
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 0.7803,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "subject": "S17",
+      "modelMuscles": 12,
+      "frames": 63,
+      "feasibleFrames": 63,
+      "independentShoulderCapacityExceededFrames": 0,
+      "independentElbowCapacityExceededFrames": 0,
+      "largestMinimumL1TorqueResidualNm": 0.0,
+      "largestCoordinateErrorRad": 1.5014273158087121e-09,
+      "detailFrames": [
+        {
+          "frame": 0,
+          "timeS": 0.0,
+          "demandNm": [
+            16.013,
+            -1.404
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.945055310732414e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 735,
+          "timeS": 7.35,
+          "demandNm": [
+            6.391,
+            5.007
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 4.81077927494411e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 1470,
+          "timeS": 14.7,
+          "demandNm": [
+            0.937,
+            5.933
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 3.0877486808730814e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2205,
+          "timeS": 22.05,
+          "demandNm": [
+            -2.482,
+            -1.645
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 1.2210775862664391e-09,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        },
+        {
+          "frame": 2939,
+          "timeS": 29.39,
+          "demandNm": [
+            6.882,
+            2.022
+          ],
+          "feasibleUnderNominalFmax": true,
+          "minimumL1TorqueResidualNm": 0.0,
+          "independentCapacityExceeded": [
+            false,
+            false
+          ],
+          "maximumCoordinateErrorRad": 2.83893334621782e-10,
+          "forceIntervalsN": {
+            "PECT": [
+              0.0,
+              444.3
+            ],
+            "DELTAnt": [
+              0.0,
+              1218.9
+            ],
+            "TRILong": [
+              0.0,
+              771.8
+            ]
+          },
+          "intervalWidthFractionOfNominalFmax": {
+            "PECT": 1.0,
+            "DELTAnt": 1.0,
+            "TRILong": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Even a feasible two-coordinate torque does not identify a unique muscle-force allocation.",
+    "The nominal isometric force cap is neither a dynamic eccentric capacity nor a personal strength measurement.",
+    "The processed torque target may depend on the source inverse-dynamics conventions and has not been independently replayed from external forces here.",
+    "Only shoulder elevation and elbow flexion torques are screened; other coordinates and the exoskeleton interaction are omitted.",
+    "No bench, overhead press, or single-muscle ground truth is included."
+  ]
+}

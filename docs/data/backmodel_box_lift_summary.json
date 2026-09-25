@@ -1,0 +1,55 @@
+{
+  "source": "https://github.com/CEINMS-RT/BackModel",
+  "revision": "ca4cbcb9736dbcfc05e9b75ed17a2c3a4c9f0562",
+  "movement": "squat-style box lifting, not barbell squat",
+  "trials": {
+    "5kg": {
+      "loadKg": 5,
+      "idRows": 405,
+      "ikRows": 405,
+      "durationSeconds": 26.935,
+      "lumbarFlexionMoment": {
+        "L5_S1_Flex_Ext": {
+          "median": 64.03,
+          "maximum": 173.0
+        },
+        "L4_L5_Flex_Ext": {
+          "median": 56.53,
+          "maximum": 159.42
+        },
+        "L3_L4_Flex_Ext": {
+          "median": 52.97,
+          "maximum": 144.88
+        }
+      },
+      "ikPelvisTiltRangeRad": [
+        -0.482,
+        0.249
+      ]
+    },
+    "15kg": {
+      "loadKg": 15,
+      "idRows": 405,
+      "ikRows": 406,
+      "durationSeconds": 26.934,
+      "lumbarFlexionMoment": {
+        "L5_S1_Flex_Ext": {
+          "median": 88.41,
+          "maximum": 237.52
+        },
+        "L4_L5_Flex_Ext": {
+          "median": 77.07,
+          "maximum": 223.48
+        },
+        "L3_L4_Flex_Ext": {
+          "median": 68.26,
+          "maximum": 205.99
+        }
+      },
+      "ikPelvisTiltRangeRad": [
+        -0.517,
+        0.279
+      ]
+    }
+  }
+}

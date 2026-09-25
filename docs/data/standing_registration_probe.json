@@ -1,0 +1,19 @@
+{
+  "status": "standing_bbox_translation_probe_only",
+  "anatomySource": "Z-Anatomy / BodyParts3D, CC BY-SA 4.0",
+  "opensimSource": "public/data/squat_opensim_reference.json",
+  "translationM": [
+    -0.01411047950387001,
+    -0.06485551595687866,
+    0.03617636859416962
+  ],
+  "centerResidualsM": {
+    "Femur.r": 0.004724220413565823,
+    "Tibia.r": 0.004724242432693846
+  },
+  "limitations": [
+    "femur and tibia bounding boxes are not joint landmarks",
+    "no rotation, bone-length fitting, muscle attachments, or deformation",
+    "single right-leg standing comparison only"
+  ]
+}

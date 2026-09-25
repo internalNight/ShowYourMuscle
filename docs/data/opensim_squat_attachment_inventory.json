@@ -1,0 +1,714 @@
+{
+  "status": "source_model_attachment_inventory_only",
+  "model": "squatToStand_3dof9musc.osim",
+  "pose": "app squat reference frame 1",
+  "muscles": [
+    {
+      "name": "bifemsh_r",
+      "points": [
+        {
+          "name": "bfsh_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            0.005,
+            -0.2111,
+            0.0234
+          ],
+          "standingViewerPositionM": [
+            0.21647990590131255,
+            0.6836597147424666,
+            0.05315468114847585
+          ],
+          "standingBlenderPositionM": [
+            -0.12647990590131256,
+            -0.05315468114847585,
+            0.6836597147424666
+          ]
+        },
+        {
+          "name": "bfsh_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            -0.0301,
+            -0.0419,
+            0.0318
+          ],
+          "standingViewerPositionM": [
+            0.21901374008034707,
+            0.45468897162517447,
+            0.04821329165716944
+          ],
+          "standingBlenderPositionM": [
+            -0.12901374008034708,
+            -0.04821329165716944,
+            0.45468897162517447
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "BF_at_gastroc_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.22903807292552167
+    },
+    {
+      "name": "med_gas_r",
+      "points": [
+        {
+          "name": "gasmed_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            0.008,
+            -0.3788,
+            -0.0208
+          ],
+          "standingViewerPositionM": [
+            0.16905053124629177,
+            0.5200016662036782,
+            0.08559582120719254
+          ],
+          "standingBlenderPositionM": [
+            -0.07905053124629177,
+            -0.08559582120719254,
+            0.5200016662036782
+          ]
+        },
+        {
+          "name": "gasmed_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            0.0044,
+            0.031,
+            -0.0053
+          ],
+          "standingViewerPositionM": [
+            0.18261999999999995,
+            0.08905000000000002,
+            -0.04437000000000001
+          ],
+          "standingBlenderPositionM": [
+            -0.09261999999999995,
+            0.04437000000000001,
+            0.08905000000000002
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "GasMed_at_shank_r"
+        },
+        {
+          "name": "pathwrap_0",
+          "wrapObject": "Gastroc_at_condyles_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.46248416196950065
+    },
+    {
+      "name": "glut_max2_r",
+      "points": [
+        {
+          "name": "glmax2_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.1317,
+            0.0087,
+            0.0462
+          ],
+          "standingViewerPositionM": [
+            0.16770518756463337,
+            0.9788766556415076,
+            -0.06405732072985673
+          ],
+          "standingBlenderPositionM": [
+            -0.07770518756463338,
+            0.06405732072985673,
+            0.9788766556415076
+          ]
+        },
+        {
+          "name": "glmax2_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.1344,
+            -0.0609,
+            0.0813
+          ],
+          "standingViewerPositionM": [
+            0.20139703277019516,
+            0.9085881388415635,
+            -0.06685803005223254
+          ],
+          "standingBlenderPositionM": [
+            -0.11139703277019516,
+            0.06685803005223254,
+            0.9085881388415635
+          ]
+        },
+        {
+          "name": "glmax2_r-P3",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            -0.045,
+            -0.0584,
+            0.0252
+          ],
+          "standingViewerPositionM": [
+            0.22097260182945982,
+            0.8251662659198773,
+            -0.02284690868471108
+          ],
+          "standingBlenderPositionM": [
+            -0.13097260182945983,
+            0.02284690868471108,
+            0.8251662659198773
+          ]
+        },
+        {
+          "name": "glmax2_r-P4",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            -0.0156,
+            -0.1016,
+            0.0419
+          ],
+          "standingViewerPositionM": [
+            0.23698982228640347,
+            0.7874613175044969,
+            0.013639739747655998
+          ],
+          "standingBlenderPositionM": [
+            -0.14698982228640348,
+            -0.013639739747655998,
+            0.7874613175044969
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "Gmax2_at_pelvis_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.22918495071419243
+    },
+    {
+      "name": "psoas_r",
+      "points": [
+        {
+          "name": "iliacus_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.0605,
+            0.0309,
+            0.0843
+          ],
+          "standingViewerPositionM": [
+            0.20637882696564847,
+            1.0002713530526546,
+            0.0070799166227824145
+          ],
+          "standingBlenderPositionM": [
+            -0.11637882696564847,
+            -0.0070799166227824145,
+            1.0002713530526546
+          ]
+        },
+        {
+          "name": "iliacus_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.0135,
+            -0.0557,
+            0.0756
+          ],
+          "standingViewerPositionM": [
+            0.19603364623931363,
+            0.9138389947980847,
+            0.05405517268693988
+          ],
+          "standingBlenderPositionM": [
+            -0.10603364623931363,
+            -0.05405517268693988,
+            0.9138389947980847
+          ]
+        },
+        {
+          "name": "iliacus_r-P3",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            -0.0023,
+            -0.0565,
+            0.0139
+          ],
+          "standingViewerPositionM": [
+            0.20994269209357747,
+            0.8347465218739041,
+            0.01888017828614784
+          ],
+          "standingBlenderPositionM": [
+            -0.11994269209357747,
+            -0.01888017828614784,
+            0.8347465218739041
+          ]
+        },
+        {
+          "name": "iliacus_r-P4",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            -0.0122,
+            -0.0637,
+            0.0196
+          ],
+          "standingViewerPositionM": [
+            0.21544826453594212,
+            0.8258100816113256,
+            0.010384961542871572
+          ],
+          "standingBlenderPositionM": [
+            -0.12544826453594213,
+            -0.010384961542871572,
+            0.8258100816113256
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "IL_at_brim_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.2015170911457142
+    },
+    {
+      "name": "rect_fem_r",
+      "points": [
+        {
+          "name": "recfem_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.024,
+            -0.0388,
+            0.0933
+          ],
+          "standingViewerPositionM": [
+            0.21404891651111346,
+            0.9303860469647951,
+            0.04352924747220609
+          ],
+          "standingBlenderPositionM": [
+            -0.12404891651111347,
+            -0.04352924747220609,
+            0.9303860469647951
+          ]
+        },
+        {
+          "name": "recfem_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/patella_r",
+          "localPositionM": [
+            0.01,
+            0.049,
+            0.0007
+          ],
+          "standingViewerPositionM": [
+            0.1906088023988568,
+            0.5185129763504293,
+            0.1291700778979616
+          ],
+          "standingBlenderPositionM": [
+            -0.1006088023988568,
+            -0.1291700778979616,
+            0.5185129763504293
+          ]
+        },
+        {
+          "name": "recfem_r-P3",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/patella_r",
+          "localPositionM": [
+            0.0121,
+            0.0437,
+            -0.001
+          ],
+          "standingViewerPositionM": [
+            0.18881002196307545,
+            0.5133755689512991,
+            0.13157037666253493
+          ],
+          "standingBlenderPositionM": [
+            -0.09881002196307545,
+            -0.13157037666253493,
+            0.5133755689512991
+          ]
+        },
+        {
+          "name": "recfem_r-P4",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/patella_r",
+          "localPositionM": [
+            0.005,
+            0.00247,
+            3e-05
+          ],
+          "standingViewerPositionM": [
+            0.18899708684004252,
+            0.47179730181336615,
+            0.1268167981643403
+          ],
+          "standingBlenderPositionM": [
+            -0.09899708684004252,
+            -0.1268167981643403,
+            0.47179730181336615
+          ]
+        },
+        {
+          "name": "recfem_r-P5",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            0.0326,
+            -0.06312,
+            -0.00047
+          ],
+          "standingViewerPositionM": [
+            0.18620421958470035,
+            0.4225990027353313,
+            0.10580409440808301
+          ],
+          "standingBlenderPositionM": [
+            -0.09620421958470035,
+            -0.10580409440808301,
+            0.4225990027353313
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "KnExt_at_fem_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.5227041030462626
+    },
+    {
+      "name": "semimem_r",
+      "points": [
+        {
+          "name": "semimem_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.0987,
+            -0.114,
+            0.0614
+          ],
+          "standingViewerPositionM": [
+            0.18050438087266668,
+            0.8558794836995582,
+            -0.031145220448256572
+          ],
+          "standingBlenderPositionM": [
+            -0.09050438087266668,
+            0.031145220448256572,
+            0.8558794836995582
+          ]
+        },
+        {
+          "name": "semimem_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            -0.029,
+            -0.0417,
+            -0.0196
+          ],
+          "standingViewerPositionM": [
+            0.16762606901038785,
+            0.45570719203055626,
+            0.04943004521140277
+          ],
+          "standingBlenderPositionM": [
+            -0.07762606901038785,
+            -0.04943004521140277,
+            0.45570719203055626
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "SM_at_condyles_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.40840676704991996
+    },
+    {
+      "name": "soleus_r",
+      "points": [
+        {
+          "name": "soleus_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            -0.0076,
+            -0.0916,
+            0.0098
+          ],
+          "standingViewerPositionM": [
+            0.1959782447840196,
+            0.40207177982576564,
+            0.06090726989872519
+          ],
+          "standingBlenderPositionM": [
+            -0.1059782447840196,
+            -0.06090726989872519,
+            0.40207177982576564
+          ]
+        },
+        {
+          "name": "soleus_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            0.0044,
+            0.031,
+            -0.0053
+          ],
+          "standingViewerPositionM": [
+            0.18261999999999995,
+            0.08905000000000002,
+            -0.04437000000000001
+          ],
+          "standingBlenderPositionM": [
+            -0.09261999999999995,
+            0.04437000000000001,
+            0.08905000000000002
+          ]
+        }
+      ],
+      "wraps": [],
+      "standingMusculotendonLengthM": 0.3305213773817495
+    },
+    {
+      "name": "tib_ant_r",
+      "points": [
+        {
+          "name": "tibant_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            0.0154,
+            -0.1312,
+            0.0162
+          ],
+          "standingViewerPositionM": [
+            0.2015385760863399,
+            0.358704195624125,
+            0.07595570358207084
+          ],
+          "standingBlenderPositionM": [
+            -0.11153857608633991,
+            -0.07595570358207084,
+            0.358704195624125
+          ]
+        },
+        {
+          "name": "tibant_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            0.0251,
+            -0.1906,
+            0.0128
+          ],
+          "standingViewerPositionM": [
+            0.19692937773730762,
+            0.2986234216985812,
+            0.0742047338259168
+          ],
+          "standingBlenderPositionM": [
+            -0.10692937773730762,
+            -0.0742047338259168,
+            0.2986234216985812
+          ]
+        },
+        {
+          "name": "tibant_r-P3",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            0.0233,
+            -0.3659,
+            -0.0132
+          ],
+          "standingViewerPositionM": [
+            0.16742253844237914,
+            0.1274129643150699,
+            0.039195367688379674
+          ],
+          "standingBlenderPositionM": [
+            -0.07742253844237915,
+            -0.039195367688379674,
+            0.1274129643150699
+          ]
+        },
+        {
+          "name": "tibant_r-P4",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            0.1166,
+            0.0178,
+            -0.0305
+          ],
+          "standingViewerPositionM": [
+            0.15742,
+            0.07585000000000001,
+            0.06782999999999999
+          ],
+          "standingBlenderPositionM": [
+            -0.06742000000000001,
+            -0.06782999999999999,
+            0.07585000000000001
+          ]
+        }
+      ],
+      "wraps": [],
+      "standingMusculotendonLengthM": 0.29733203212912307
+    },
+    {
+      "name": "vas_int_r",
+      "points": [
+        {
+          "name": "vasint_r-P1",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            0.029,
+            -0.1924,
+            0.031
+          ],
+          "standingViewerPositionM": [
+            0.22457106901801654,
+            0.7061202028112485,
+            0.07348961550123415
+          ],
+          "standingBlenderPositionM": [
+            -0.13457106901801655,
+            -0.07348961550123415,
+            0.7061202028112485
+          ]
+        },
+        {
+          "name": "vasint_r-P2",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            0.0335,
+            -0.2084,
+            0.0285
+          ],
+          "standingViewerPositionM": [
+            0.2217853990975185,
+            0.6912098938146389,
+            0.08072996968591714
+          ],
+          "standingBlenderPositionM": [
+            -0.1317853990975185,
+            -0.08072996968591714,
+            0.6912098938146389
+          ]
+        },
+        {
+          "name": "vasint_r-P3",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/patella_r",
+          "localPositionM": [
+            0.0058,
+            0.048,
+            -0.0006
+          ],
+          "standingViewerPositionM": [
+            0.18927632058867355,
+            0.5173030009107167,
+            0.1250360179490949
+          ],
+          "standingBlenderPositionM": [
+            -0.09927632058867356,
+            -0.1250360179490949,
+            0.5173030009107167
+          ]
+        },
+        {
+          "name": "vasint_r-P4",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/patella_r",
+          "localPositionM": [
+            0.005,
+            0.00247,
+            -0.00039
+          ],
+          "standingViewerPositionM": [
+            0.18857717208395536,
+            0.47180572475629484,
+            0.12681760541442405
+          ],
+          "standingBlenderPositionM": [
+            -0.09857717208395536,
+            -0.12681760541442405,
+            0.47180572475629484
+          ]
+        },
+        {
+          "name": "vasint_r-P5",
+          "class": "PathPoint",
+          "parentFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            0.03257,
+            -0.0632,
+            0.00043
+          ],
+          "standingViewerPositionM": [
+            0.1871024902098109,
+            0.4225081233668963,
+            0.1057577174261167
+          ],
+          "standingBlenderPositionM": [
+            -0.0971024902098109,
+            -0.1057577174261167,
+            0.4225081233668963
+          ]
+        }
+      ],
+      "wraps": [
+        {
+          "name": "pathwrap",
+          "wrapObject": "KnExt_at_fem_r"
+        }
+      ],
+      "standingMusculotendonLengthM": 0.29835587200608715
+    }
+  ],
+  "limits": [
+    "path points belong to the OpenSim example and are not fitted to Z-Anatomy meshes",
+    "pose-dependent wrap points are not listed as fixed attachments",
+    "the model contains only one right leg and a simplified trunk"
+  ]
+}

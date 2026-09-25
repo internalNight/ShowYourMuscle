@@ -1,0 +1,603 @@
+{
+  "status": "research_only_measured_joint_moments_as_input_not_personal_force_validation",
+  "scenarios": {
+    "baseline": "regularization 5 N m; source model strengths",
+    "reg1": "regularization 1 N m",
+    "reg20": "regularization 20 N m",
+    "gmaxhalf": "gluteus maximus max isometric forces x 0.5",
+    "gmaxdouble": "gluteus maximus max isometric forces x 2",
+    "bfhalf": "biceps femoris max isometric forces x 0.5",
+    "bfdouble": "biceps femoris max isometric forces x 2"
+  },
+  "emg_gate": "Use original pilot's >=30 paired frames, >=20% coverage and both-condition active/inactive envelope >=1.5 channel gate; no MVC normalization",
+  "torque_fit_gate": "Per phase/scenario, both trial conditions need median absolute residual <=5 Nm and maximum absolute residual <=50 Nm at hip, knee and ankle; thresholds are exploratory",
+  "participants": {
+    "descent_glut_max": {
+      "AB08": {
+        "observed_emg_ratio": 1.098,
+        "baseline_force_ratio": 1.235,
+        "all_scenario_force_ratio_range": [
+          1.172,
+          1.256
+        ],
+        "all_scenario_loaded_force_n_range": [
+          47.45,
+          620.47
+        ],
+        "loaded_force_max_to_min": 13.076,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          47.45,
+          620.47
+        ],
+        "torque_fit_loaded_force_max_to_min": 13.076,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB09": {
+        "observed_emg_ratio": 1.493,
+        "baseline_force_ratio": 1.079,
+        "all_scenario_force_ratio_range": [
+          1.079,
+          1.095
+        ],
+        "all_scenario_loaded_force_n_range": [
+          47.98,
+          669.23
+        ],
+        "loaded_force_max_to_min": 13.948,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          47.98,
+          669.23
+        ],
+        "torque_fit_loaded_force_max_to_min": 13.948,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      }
+    },
+    "descent_biceps_femoris": {
+      "AB01": {
+        "observed_emg_ratio": 0.731,
+        "baseline_force_ratio": 2.084,
+        "all_scenario_force_ratio_range": [
+          1.874,
+          2.119
+        ],
+        "all_scenario_loaded_force_n_range": [
+          136.8,
+          494.26
+        ],
+        "loaded_force_max_to_min": 3.613,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          136.8,
+          494.26
+        ],
+        "torque_fit_loaded_force_max_to_min": 3.613,
+        "baseline_direction_matches_emg": false,
+        "all_scenarios_direction_match_emg": false
+      },
+      "AB03": {
+        "observed_emg_ratio": 1.115,
+        "baseline_force_ratio": 1.323,
+        "all_scenario_force_ratio_range": [
+          1.243,
+          1.729
+        ],
+        "all_scenario_loaded_force_n_range": [
+          1252.28,
+          3012.27
+        ],
+        "loaded_force_max_to_min": 2.405,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          1252.28,
+          3012.27
+        ],
+        "torque_fit_loaded_force_max_to_min": 2.405,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB11": {
+        "observed_emg_ratio": 1.021,
+        "baseline_force_ratio": 1.717,
+        "all_scenario_force_ratio_range": [
+          1.676,
+          1.767
+        ],
+        "all_scenario_loaded_force_n_range": [
+          412.4,
+          1478.99
+        ],
+        "loaded_force_max_to_min": 3.586,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          412.4,
+          1478.99
+        ],
+        "torque_fit_loaded_force_max_to_min": 3.586,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      }
+    },
+    "ascent_glut_max": {
+      "AB01": {
+        "observed_emg_ratio": 1.623,
+        "baseline_force_ratio": 1.356,
+        "all_scenario_force_ratio_range": [
+          1.227,
+          1.465
+        ],
+        "all_scenario_loaded_force_n_range": [
+          35.81,
+          466.95
+        ],
+        "loaded_force_max_to_min": 13.04,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          35.81,
+          466.95
+        ],
+        "torque_fit_loaded_force_max_to_min": 13.04,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB02": {
+        "observed_emg_ratio": 1.421,
+        "baseline_force_ratio": 1.283,
+        "all_scenario_force_ratio_range": [
+          1.206,
+          1.306
+        ],
+        "all_scenario_loaded_force_n_range": [
+          30.83,
+          436.23
+        ],
+        "loaded_force_max_to_min": 14.15,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          30.83,
+          436.23
+        ],
+        "torque_fit_loaded_force_max_to_min": 14.15,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB06": {
+        "observed_emg_ratio": 1.996,
+        "baseline_force_ratio": 1.319,
+        "all_scenario_force_ratio_range": [
+          1.163,
+          1.519
+        ],
+        "all_scenario_loaded_force_n_range": [
+          74.62,
+          947.52
+        ],
+        "loaded_force_max_to_min": 12.698,
+        "torque_fit_scenarios": [
+          "gmaxdouble",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          175.46,
+          947.52
+        ],
+        "torque_fit_loaded_force_max_to_min": 5.4,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB08": {
+        "observed_emg_ratio": 1.182,
+        "baseline_force_ratio": 1.258,
+        "all_scenario_force_ratio_range": [
+          1.181,
+          1.304
+        ],
+        "all_scenario_loaded_force_n_range": [
+          49.87,
+          656.34
+        ],
+        "loaded_force_max_to_min": 13.161,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          49.87,
+          656.34
+        ],
+        "torque_fit_loaded_force_max_to_min": 13.161,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB09": {
+        "observed_emg_ratio": 1.399,
+        "baseline_force_ratio": 1.386,
+        "all_scenario_force_ratio_range": [
+          1.268,
+          1.437
+        ],
+        "all_scenario_loaded_force_n_range": [
+          60.74,
+          813.94
+        ],
+        "loaded_force_max_to_min": 13.4,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          60.74,
+          813.94
+        ],
+        "torque_fit_loaded_force_max_to_min": 13.4,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB11": {
+        "observed_emg_ratio": 1.128,
+        "baseline_force_ratio": 1.379,
+        "all_scenario_force_ratio_range": [
+          1.237,
+          1.419
+        ],
+        "all_scenario_loaded_force_n_range": [
+          39.47,
+          536.03
+        ],
+        "loaded_force_max_to_min": 13.581,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          39.47,
+          536.03
+        ],
+        "torque_fit_loaded_force_max_to_min": 13.581,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB13": {
+        "observed_emg_ratio": 1.909,
+        "baseline_force_ratio": 1.317,
+        "all_scenario_force_ratio_range": [
+          1.278,
+          1.407
+        ],
+        "all_scenario_loaded_force_n_range": [
+          32.76,
+          463.98
+        ],
+        "loaded_force_max_to_min": 14.163,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          32.76,
+          463.98
+        ],
+        "torque_fit_loaded_force_max_to_min": 14.163,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      }
+    },
+    "ascent_biceps_femoris": {
+      "AB01": {
+        "observed_emg_ratio": 1.318,
+        "baseline_force_ratio": 1.679,
+        "all_scenario_force_ratio_range": [
+          1.676,
+          1.867
+        ],
+        "all_scenario_loaded_force_n_range": [
+          236.56,
+          865.86
+        ],
+        "loaded_force_max_to_min": 3.66,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          236.56,
+          865.86
+        ],
+        "torque_fit_loaded_force_max_to_min": 3.66,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB03": {
+        "observed_emg_ratio": 1.733,
+        "baseline_force_ratio": 1.334,
+        "all_scenario_force_ratio_range": [
+          1.244,
+          1.82
+        ],
+        "all_scenario_loaded_force_n_range": [
+          1291.25,
+          2956.2
+        ],
+        "loaded_force_max_to_min": 2.289,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          1291.25,
+          2956.2
+        ],
+        "torque_fit_loaded_force_max_to_min": 2.289,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB06": {
+        "observed_emg_ratio": 2.089,
+        "baseline_force_ratio": 1.655,
+        "all_scenario_force_ratio_range": [
+          1.475,
+          1.899
+        ],
+        "all_scenario_loaded_force_n_range": [
+          533.06,
+          2110.53
+        ],
+        "loaded_force_max_to_min": 3.959,
+        "torque_fit_scenarios": [
+          "gmaxdouble",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          1023.51,
+          2110.53
+        ],
+        "torque_fit_loaded_force_max_to_min": 2.062,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB08": {
+        "observed_emg_ratio": 1.682,
+        "baseline_force_ratio": 1.425,
+        "all_scenario_force_ratio_range": [
+          1.42,
+          1.458
+        ],
+        "all_scenario_loaded_force_n_range": [
+          442.46,
+          1329.98
+        ],
+        "loaded_force_max_to_min": 3.006,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          442.46,
+          1329.98
+        ],
+        "torque_fit_loaded_force_max_to_min": 3.006,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB11": {
+        "observed_emg_ratio": 1.591,
+        "baseline_force_ratio": 1.606,
+        "all_scenario_force_ratio_range": [
+          1.56,
+          1.7
+        ],
+        "all_scenario_loaded_force_n_range": [
+          416.31,
+          1530.22
+        ],
+        "loaded_force_max_to_min": 3.676,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          416.31,
+          1530.22
+        ],
+        "torque_fit_loaded_force_max_to_min": 3.676,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      },
+      "AB12": {
+        "observed_emg_ratio": 2.248,
+        "baseline_force_ratio": 1.743,
+        "all_scenario_force_ratio_range": [
+          1.675,
+          1.908
+        ],
+        "all_scenario_loaded_force_n_range": [
+          234.53,
+          856.73
+        ],
+        "loaded_force_max_to_min": 3.653,
+        "torque_fit_scenarios": [
+          "baseline",
+          "reg1",
+          "reg20",
+          "gmaxhalf",
+          "gmaxdouble",
+          "bfhalf",
+          "bfdouble"
+        ],
+        "torque_fit_loaded_force_n_range": [
+          234.53,
+          856.73
+        ],
+        "torque_fit_loaded_force_max_to_min": 3.653,
+        "baseline_direction_matches_emg": true,
+        "all_scenarios_direction_match_emg": true
+      }
+    }
+  },
+  "summary": {
+    "descent": {
+      "glut_max": {
+        "eligible_subjects": [
+          "AB08",
+          "AB09"
+        ],
+        "observed_emg_increase_count": 2,
+        "baseline_direction_match_count": 2,
+        "all_scenarios_direction_match_count": 2,
+        "median_loaded_force_max_to_min": 13.512,
+        "max_loaded_force_max_to_min": 13.948,
+        "subjects_with_at_least_three_torque_fit_scenarios": 2,
+        "median_torque_fit_loaded_force_max_to_min": 13.512
+      },
+      "biceps_femoris": {
+        "eligible_subjects": [
+          "AB01",
+          "AB03",
+          "AB11"
+        ],
+        "observed_emg_increase_count": 2,
+        "baseline_direction_match_count": 2,
+        "all_scenarios_direction_match_count": 2,
+        "median_loaded_force_max_to_min": 3.586,
+        "max_loaded_force_max_to_min": 3.613,
+        "subjects_with_at_least_three_torque_fit_scenarios": 3,
+        "median_torque_fit_loaded_force_max_to_min": 3.586
+      }
+    },
+    "ascent": {
+      "glut_max": {
+        "eligible_subjects": [
+          "AB01",
+          "AB02",
+          "AB06",
+          "AB08",
+          "AB09",
+          "AB11",
+          "AB13"
+        ],
+        "observed_emg_increase_count": 7,
+        "baseline_direction_match_count": 7,
+        "all_scenarios_direction_match_count": 7,
+        "median_loaded_force_max_to_min": 13.4,
+        "max_loaded_force_max_to_min": 14.163,
+        "subjects_with_at_least_three_torque_fit_scenarios": 6,
+        "median_torque_fit_loaded_force_max_to_min": 13.4
+      },
+      "biceps_femoris": {
+        "eligible_subjects": [
+          "AB01",
+          "AB03",
+          "AB06",
+          "AB08",
+          "AB11",
+          "AB12"
+        ],
+        "observed_emg_increase_count": 6,
+        "baseline_direction_match_count": 6,
+        "all_scenarios_direction_match_count": 6,
+        "median_loaded_force_max_to_min": 3.657,
+        "max_loaded_force_max_to_min": 3.959,
+        "subjects_with_at_least_three_torque_fit_scenarios": 5,
+        "median_torque_fit_loaded_force_max_to_min": 3.329
+      }
+    }
+  }
+}

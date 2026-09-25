@@ -1,0 +1,169 @@
+{
+  "status": "internal_leave_one_subject_out_tempo_sensitivity_not_personal_validation",
+  "method": "For each held-out subject, choose the template duration with the lowest median subject-level force-plate MAE among the remaining 11; evaluate the chosen duration on the held-out subject. Repetitions and lab time alignment are identical across durations.",
+  "limitations": [
+    "All three duration candidates were inspected on this dataset before the leave-one-subject-out analysis; this is not an external validation cohort.",
+    "The app does not observe the user's true rep duration, motion, bar position, or foot forces.",
+    "Only unloaded squats were tested; no joint moments, single-muscle forces, or other exercises were validated."
+  ],
+  "summary": {
+    "subjects": 12,
+    "reps": 39,
+    "selectedTempoCounts": {
+      "2.0": 1,
+      "2.8": 0,
+      "4.0": 11
+    },
+    "heldOutMedianStaticMaeRatio": 0.1143,
+    "heldOutMedianDefault28sMaeRatio": 0.1117,
+    "heldOutMedianSelectedMaeRatio": 0.1168,
+    "selectedBeatsStaticSubjects": 9,
+    "selectedBeatsDefaultSubjects": 3
+  },
+  "subjects": [
+    {
+      "subject": "AB01",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.2728,
+      "default28sMaeRatio": 0.2705,
+      "staticMaeRatio": 0.2804,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1114,
+        "2.8": 0.1114,
+        "4.0": 0.11
+      }
+    },
+    {
+      "subject": "AB02",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.1117,
+      "default28sMaeRatio": 0.1145,
+      "staticMaeRatio": 0.1168,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1114,
+        "2.8": 0.1114,
+        "4.0": 0.11
+      }
+    },
+    {
+      "subject": "AB03",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.0605,
+      "default28sMaeRatio": 0.0503,
+      "staticMaeRatio": 0.0706,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1185,
+        "2.8": 0.112,
+        "4.0": 0.1117
+      }
+    },
+    {
+      "subject": "AB05",
+      "selectedTempoS": 2.0,
+      "selectedMaeRatio": 0.126,
+      "default28sMaeRatio": 0.112,
+      "staticMaeRatio": 0.1118,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1114,
+        "2.8": 0.1114,
+        "4.0": 0.1117
+      }
+    },
+    {
+      "subject": "AB06",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.0997,
+      "default28sMaeRatio": 0.0969,
+      "staticMaeRatio": 0.1086,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1185,
+        "2.8": 0.112,
+        "4.0": 0.1117
+      }
+    },
+    {
+      "subject": "AB07",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.0604,
+      "default28sMaeRatio": 0.045,
+      "staticMaeRatio": 0.0796,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1185,
+        "2.8": 0.112,
+        "4.0": 0.1117
+      }
+    },
+    {
+      "subject": "AB08",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.1365,
+      "default28sMaeRatio": 0.1281,
+      "staticMaeRatio": 0.1463,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1114,
+        "2.8": 0.1114,
+        "4.0": 0.11
+      }
+    },
+    {
+      "subject": "AB09",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.1567,
+      "default28sMaeRatio": 0.1653,
+      "staticMaeRatio": 0.1516,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1114,
+        "2.8": 0.1114,
+        "4.0": 0.11
+      }
+    },
+    {
+      "subject": "AB10",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.122,
+      "default28sMaeRatio": 0.1114,
+      "staticMaeRatio": 0.1369,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1185,
+        "2.8": 0.112,
+        "4.0": 0.11
+      }
+    },
+    {
+      "subject": "AB11",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.0947,
+      "default28sMaeRatio": 0.1024,
+      "staticMaeRatio": 0.0909,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1185,
+        "2.8": 0.112,
+        "4.0": 0.1117
+      }
+    },
+    {
+      "subject": "AB12",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.1316,
+      "default28sMaeRatio": 0.1308,
+      "staticMaeRatio": 0.1384,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1114,
+        "2.8": 0.1114,
+        "4.0": 0.11
+      }
+    },
+    {
+      "subject": "AB13",
+      "selectedTempoS": 4.0,
+      "selectedMaeRatio": 0.0971,
+      "default28sMaeRatio": 0.0968,
+      "staticMaeRatio": 0.104,
+      "trainingMedianErrorByTempo": {
+        "2.0": 0.1185,
+        "2.8": 0.112,
+        "4.0": 0.1117
+      }
+    }
+  ]
+}

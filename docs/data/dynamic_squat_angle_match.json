@@ -1,0 +1,1338 @@
+{
+  "source": "Scherpereel et al., Scientific Data 10:924 (2023); Georgia Tech repository item 1853/70296",
+  "doi": "10.1038/s41597-023-02840-6",
+  "recordings": "squats_1_0lbs versus squats_1_25lbs, except AB05 uses squats_2_0lbs; within-subject comparison",
+  "sampling_hz": 200,
+  "moment_unit": "N m/kg strongly supported by paper/official plotting code and independent OpenSim IK/ID replay; accompanying README incorrectly or inconsistently says N m",
+  "filters": "Both left/right task activity flags=1 (not foot contact); both knee flexions 45-130 deg; right knee angular speed >=20 deg/s for descent or <=-20 for ascent",
+  "matching": "Nearest 0-lb frame within same phase using 6 angles and right knee speed; reference frames may repeat",
+  "max_abs_angle_error_deg": [
+    5,
+    4,
+    5,
+    5,
+    4,
+    5
+  ],
+  "max_abs_right_knee_speed_error_deg_s": 50,
+  "interpretation": "Descriptive matched-frame differences only; repeated frames are correlated and do not isolate load or validate individual muscle force",
+  "subjects": {
+    "AB01": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          2.985,
+          4.82,
+          6.63,
+          8.73,
+          10.64
+        ],
+        "25lbs": [
+          2.005,
+          4.135,
+          6.085,
+          9.47,
+          11.945
+        ]
+      },
+      "descent": {
+        "reference_frames": 387,
+        "loaded_frames": 465,
+        "accepted_matches": 213,
+        "unique_reference_frames": 151,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.852,
+          "knee_angle_r": 1.382,
+          "ankle_angle_r": 1.068,
+          "hip_flexion_l": 2.402,
+          "knee_angle_l": 1.025,
+          "ankle_angle_l": 1.018
+        },
+        "median_abs_knee_speed_error_deg_s": 20.58,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1395,
+          "p25": 0.0225,
+          "p75": 0.189
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1521,
+          "p25": -0.1762,
+          "p75": -0.1327
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1037,
+          "p25": 0.0058,
+          "p75": 0.184
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1308,
+          "p25": -0.3099,
+          "p75": -0.0573
+        },
+        "vertical_grf_difference_N": {
+          "median": 116.199,
+          "p25": 79.604,
+          "p75": 154.846
+        }
+      },
+      "ascent": {
+        "reference_frames": 422,
+        "loaded_frames": 463,
+        "accepted_matches": 369,
+        "unique_reference_frames": 218,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 2.308,
+          "knee_angle_r": 0.874,
+          "ankle_angle_r": 1.695,
+          "hip_flexion_l": 2.412,
+          "knee_angle_l": 1.283,
+          "ankle_angle_l": 0.98
+        },
+        "median_abs_knee_speed_error_deg_s": 12.2,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1163,
+          "p25": 0.0111,
+          "p75": 0.1621
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2495,
+          "p25": -0.2791,
+          "p75": -0.2179
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1514,
+          "p25": -0.0281,
+          "p75": 0.2237
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1675,
+          "p25": -0.2182,
+          "p75": -0.0972
+        },
+        "vertical_grf_difference_N": {
+          "median": 130.333,
+          "p25": 108.068,
+          "p75": 141.772
+        }
+      }
+    },
+    "AB02": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          1.485,
+          4.08,
+          7.115,
+          10.405,
+          13.29
+        ],
+        "25lbs": [
+          1.445,
+          4.1,
+          6.88,
+          9.975,
+          13.175
+        ]
+      },
+      "descent": {
+        "reference_frames": 704,
+        "loaded_frames": 746,
+        "accepted_matches": 538,
+        "unique_reference_frames": 317,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.796,
+          "knee_angle_r": 1.002,
+          "ankle_angle_r": 1.626,
+          "hip_flexion_l": 1.784,
+          "knee_angle_l": 0.634,
+          "ankle_angle_l": 1.286
+        },
+        "median_abs_knee_speed_error_deg_s": 8.82,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0598,
+          "p25": -0.0153,
+          "p75": 0.1418
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1557,
+          "p25": -0.285,
+          "p75": -0.0686
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0677,
+          "p25": -0.0601,
+          "p75": 0.1406
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2471,
+          "p25": -0.3691,
+          "p75": -0.1384
+        },
+        "vertical_grf_difference_N": {
+          "median": 122.3238,
+          "p25": 109.12,
+          "p75": 140.6279
+        }
+      },
+      "ascent": {
+        "reference_frames": 596,
+        "loaded_frames": 687,
+        "accepted_matches": 558,
+        "unique_reference_frames": 293,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 0.812,
+          "knee_angle_r": 0.847,
+          "ankle_angle_r": 0.853,
+          "hip_flexion_l": 1.215,
+          "knee_angle_l": 1.464,
+          "ankle_angle_l": 2.152
+        },
+        "median_abs_knee_speed_error_deg_s": 8.31,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0325,
+          "p25": -0.0093,
+          "p75": 0.0698
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2521,
+          "p25": -0.3749,
+          "p75": -0.1418
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0349,
+          "p25": -0.0358,
+          "p75": 0.0734
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1564,
+          "p25": -0.2342,
+          "p75": -0.0245
+        },
+        "vertical_grf_difference_N": {
+          "median": 108.269,
+          "p25": 87.5406,
+          "p75": 129.7487
+        }
+      }
+    },
+    "AB03": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          1.165,
+          4.045,
+          6.84,
+          9.29,
+          11.605
+        ],
+        "25lbs": [
+          1.23,
+          3.97,
+          6.965,
+          9.82,
+          12.705
+        ]
+      },
+      "descent": {
+        "reference_frames": 234,
+        "loaded_frames": 220,
+        "accepted_matches": 176,
+        "unique_reference_frames": 109,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.29,
+          "knee_angle_r": 1.432,
+          "ankle_angle_r": 2.212,
+          "hip_flexion_l": 0.901,
+          "knee_angle_l": 2.217,
+          "ankle_angle_l": 2.681
+        },
+        "median_abs_knee_speed_error_deg_s": 5.65,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0644,
+          "p25": 0.0143,
+          "p75": 0.1243
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1779,
+          "p25": -0.2951,
+          "p75": -0.0533
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0282,
+          "p25": -0.0721,
+          "p75": 0.0448
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3804,
+          "p25": -0.3992,
+          "p75": -0.3574
+        },
+        "vertical_grf_difference_N": {
+          "median": 124.097,
+          "p25": 104.2598,
+          "p75": 147.8845
+        }
+      },
+      "ascent": {
+        "reference_frames": 280,
+        "loaded_frames": 226,
+        "accepted_matches": 149,
+        "unique_reference_frames": 108,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.742,
+          "knee_angle_r": 2.126,
+          "ankle_angle_r": 1.677,
+          "hip_flexion_l": 1.567,
+          "knee_angle_l": 0.467,
+          "ankle_angle_l": 3.564
+        },
+        "median_abs_knee_speed_error_deg_s": 5.56,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1019,
+          "p25": 0.0688,
+          "p75": 0.1294
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1795,
+          "p25": -0.4165,
+          "p75": -0.1472
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": -0.019,
+          "p25": -0.1046,
+          "p75": 0.0795
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.4584,
+          "p25": -0.4934,
+          "p75": -0.3414
+        },
+        "vertical_grf_difference_N": {
+          "median": 136.428,
+          "p25": 111.984,
+          "p75": 176.268
+        }
+      }
+    },
+    "AB05": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          1.695,
+          4.565,
+          7.485,
+          10.65,
+          13.915
+        ],
+        "25lbs": [
+          1.835,
+          4.54,
+          7.57,
+          11.245,
+          19.015,
+          22.05
+        ]
+      },
+      "descent": {
+        "reference_frames": 601,
+        "loaded_frames": 765,
+        "accepted_matches": 69,
+        "unique_reference_frames": 45,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 3.366,
+          "knee_angle_r": 2.136,
+          "ankle_angle_r": 0.706,
+          "hip_flexion_l": 1.242,
+          "knee_angle_l": 3.461,
+          "ankle_angle_l": 0.768
+        },
+        "median_abs_knee_speed_error_deg_s": 11.89,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0161,
+          "p25": -0.0734,
+          "p75": -0.0041
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1249,
+          "p25": -0.1697,
+          "p75": -0.0599
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0046,
+          "p25": -0.0025,
+          "p75": 0.0465
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1677,
+          "p25": -0.2229,
+          "p75": -0.125
+        },
+        "vertical_grf_difference_N": {
+          "median": 100.399,
+          "p25": 63.752,
+          "p75": 119.1847
+        }
+      },
+      "ascent": {
+        "reference_frames": 472,
+        "loaded_frames": 795,
+        "accepted_matches": 1,
+        "unique_reference_frames": 1,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 4.394,
+          "knee_angle_r": 1.198,
+          "ankle_angle_r": 3.443,
+          "hip_flexion_l": 0.451,
+          "knee_angle_l": 3.669,
+          "ankle_angle_l": 1.273
+        },
+        "median_abs_knee_speed_error_deg_s": 27.43,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.1262,
+          "p25": -0.1262,
+          "p75": -0.1262
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": 0.1217,
+          "p25": 0.1217,
+          "p75": 0.1217
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1753,
+          "p25": 0.1753,
+          "p75": 0.1753
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2764,
+          "p25": -0.2764,
+          "p75": -0.2764
+        },
+        "vertical_grf_difference_N": {
+          "median": 35.927,
+          "p25": 35.927,
+          "p75": 35.927
+        }
+      }
+    },
+    "AB06": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          1.905,
+          4.865,
+          7.66,
+          10.41,
+          12.865,
+          15.53,
+          18.675,
+          21.67,
+          24.66
+        ],
+        "25lbs": [
+          1.22,
+          3.78,
+          6.49,
+          10.08,
+          12.915,
+          15.555,
+          20.54,
+          23.35,
+          25.97
+        ]
+      },
+      "descent": {
+        "reference_frames": 1330,
+        "loaded_frames": 1328,
+        "accepted_matches": 497,
+        "unique_reference_frames": 318,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.646,
+          "knee_angle_r": 2.14,
+          "ankle_angle_r": 1.267,
+          "hip_flexion_l": 1.73,
+          "knee_angle_l": 1.837,
+          "ankle_angle_l": 1.631
+        },
+        "median_abs_knee_speed_error_deg_s": 13.85,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0099,
+          "p25": -0.0983,
+          "p75": 0.1277
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.4309,
+          "p25": -0.864,
+          "p75": -0.29
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0488,
+          "p25": -0.1165,
+          "p75": 0.0904
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1631,
+          "p25": -0.2116,
+          "p75": -0.0916
+        },
+        "vertical_grf_difference_N": {
+          "median": 88.7155,
+          "p25": 67.9142,
+          "p75": 116.1655
+        }
+      },
+      "ascent": {
+        "reference_frames": 1113,
+        "loaded_frames": 1103,
+        "accepted_matches": 396,
+        "unique_reference_frames": 314,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.384,
+          "knee_angle_r": 1.955,
+          "ankle_angle_r": 1.166,
+          "hip_flexion_l": 1.535,
+          "knee_angle_l": 1.44,
+          "ankle_angle_l": 0.9
+        },
+        "median_abs_knee_speed_error_deg_s": 7.56,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0226,
+          "p25": -0.0665,
+          "p75": 0.0537
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.4229,
+          "p25": -0.6029,
+          "p75": -0.3768
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.007,
+          "p25": -0.1411,
+          "p75": 0.0846
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2107,
+          "p25": -0.3172,
+          "p75": -0.1327
+        },
+        "vertical_grf_difference_N": {
+          "median": 100.0093,
+          "p25": 80.6811,
+          "p75": 133.6827
+        }
+      }
+    },
+    "AB07": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          2.39,
+          5.205,
+          7.77,
+          10.565,
+          13.22
+        ],
+        "25lbs": [
+          0.935,
+          4.105,
+          7.17,
+          10.245,
+          13.06
+        ]
+      },
+      "descent": {
+        "reference_frames": 846,
+        "loaded_frames": 775,
+        "accepted_matches": 323,
+        "unique_reference_frames": 168,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 2.676,
+          "knee_angle_r": 2.174,
+          "ankle_angle_r": 1.348,
+          "hip_flexion_l": 1.547,
+          "knee_angle_l": 1.363,
+          "ankle_angle_l": 3.073
+        },
+        "median_abs_knee_speed_error_deg_s": 6.01,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0298,
+          "p25": -0.0823,
+          "p75": 0.0683
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2574,
+          "p25": -0.3267,
+          "p75": -0.1853
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0371,
+          "p25": -0.0127,
+          "p75": 0.0791
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.235,
+          "p25": -0.2679,
+          "p75": -0.1705
+        },
+        "vertical_grf_difference_N": {
+          "median": 108.9036,
+          "p25": 88.5636,
+          "p75": 129.4724
+        }
+      },
+      "ascent": {
+        "reference_frames": 714,
+        "loaded_frames": 703,
+        "accepted_matches": 348,
+        "unique_reference_frames": 224,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 0.596,
+          "knee_angle_r": 1.224,
+          "ankle_angle_r": 2.038,
+          "hip_flexion_l": 1.131,
+          "knee_angle_l": 1.153,
+          "ankle_angle_l": 3.783
+        },
+        "median_abs_knee_speed_error_deg_s": 4.04,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0577,
+          "p25": -0.0876,
+          "p75": -0.0207
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3138,
+          "p25": -0.3957,
+          "p75": -0.2846
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0165,
+          "p25": -0.0771,
+          "p75": 0.0179
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3143,
+          "p25": -0.3377,
+          "p75": -0.2519
+        },
+        "vertical_grf_difference_N": {
+          "median": 101.9257,
+          "p25": 88.4309,
+          "p75": 113.0596
+        }
+      }
+    },
+    "AB08": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          4.13,
+          6.315,
+          8.535,
+          10.92,
+          13.64
+        ],
+        "25lbs": [
+          1.36,
+          4.045,
+          6.53,
+          9.34,
+          12.29
+        ]
+      },
+      "descent": {
+        "reference_frames": 541,
+        "loaded_frames": 644,
+        "accepted_matches": 575,
+        "unique_reference_frames": 295,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.621,
+          "knee_angle_r": 1.591,
+          "ankle_angle_r": 1.393,
+          "hip_flexion_l": 1.873,
+          "knee_angle_l": 1.278,
+          "ankle_angle_l": 1.167
+        },
+        "median_abs_knee_speed_error_deg_s": 9.54,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0965,
+          "p25": -0.1136,
+          "p75": 0.1661
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1448,
+          "p25": -0.2483,
+          "p75": -0.0332
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0938,
+          "p25": 0.0123,
+          "p75": 0.1923
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2163,
+          "p25": -0.406,
+          "p75": -0.132
+        },
+        "vertical_grf_difference_N": {
+          "median": 97.2678,
+          "p25": 71.555,
+          "p75": 108.2784
+        }
+      },
+      "ascent": {
+        "reference_frames": 502,
+        "loaded_frames": 584,
+        "accepted_matches": 489,
+        "unique_reference_frames": 281,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.536,
+          "knee_angle_r": 1.526,
+          "ankle_angle_r": 1.427,
+          "hip_flexion_l": 2.227,
+          "knee_angle_l": 1.502,
+          "ankle_angle_l": 1.924
+        },
+        "median_abs_knee_speed_error_deg_s": 9.84,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0079,
+          "p25": -0.0592,
+          "p75": 0.1163
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2754,
+          "p25": -0.4174,
+          "p75": -0.1308
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0322,
+          "p25": -0.1041,
+          "p75": 0.1135
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2855,
+          "p25": -0.3724,
+          "p75": -0.2266
+        },
+        "vertical_grf_difference_N": {
+          "median": 91.3851,
+          "p25": 62.549,
+          "p75": 112.7975
+        }
+      }
+    },
+    "AB09": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          3.025,
+          5.835,
+          8.525,
+          11.96,
+          15.665
+        ],
+        "25lbs": [
+          1.73,
+          4.345,
+          7.07,
+          9.985,
+          13.15
+        ]
+      },
+      "descent": {
+        "reference_frames": 660,
+        "loaded_frames": 700,
+        "accepted_matches": 455,
+        "unique_reference_frames": 337,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.524,
+          "knee_angle_r": 1.16,
+          "ankle_angle_r": 1.438,
+          "hip_flexion_l": 1.651,
+          "knee_angle_l": 1.235,
+          "ankle_angle_l": 0.949
+        },
+        "median_abs_knee_speed_error_deg_s": 14.1,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0415,
+          "p25": -0.0709,
+          "p75": 0.1243
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1513,
+          "p25": -0.2773,
+          "p75": -0.0735
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0346,
+          "p25": -0.0177,
+          "p75": 0.086
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3371,
+          "p25": -0.3896,
+          "p75": -0.2348
+        },
+        "vertical_grf_difference_N": {
+          "median": 110.5694,
+          "p25": 88.0887,
+          "p75": 134.7575
+        }
+      },
+      "ascent": {
+        "reference_frames": 532,
+        "loaded_frames": 538,
+        "accepted_matches": 312,
+        "unique_reference_frames": 226,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.171,
+          "knee_angle_r": 1.549,
+          "ankle_angle_r": 1.247,
+          "hip_flexion_l": 1.348,
+          "knee_angle_l": 0.937,
+          "ankle_angle_l": 0.715
+        },
+        "median_abs_knee_speed_error_deg_s": 8.97,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0041,
+          "p25": -0.0885,
+          "p75": 0.0534
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2683,
+          "p25": -0.3574,
+          "p75": -0.2199
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0355,
+          "p25": -0.0069,
+          "p75": 0.0642
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.297,
+          "p25": -0.3278,
+          "p75": -0.2432
+        },
+        "vertical_grf_difference_N": {
+          "median": 130.3118,
+          "p25": 113.9358,
+          "p75": 162.3944
+        }
+      }
+    },
+    "AB10": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          2.53,
+          4.645,
+          6.725,
+          9.16,
+          11.72
+        ],
+        "25lbs": [
+          1.77,
+          4.4,
+          6.955,
+          10.11,
+          13.205
+        ]
+      },
+      "descent": {
+        "reference_frames": 545,
+        "loaded_frames": 637,
+        "accepted_matches": 424,
+        "unique_reference_frames": 187,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.913,
+          "knee_angle_r": 1.093,
+          "ankle_angle_r": 1.849,
+          "hip_flexion_l": 1.749,
+          "knee_angle_l": 0.753,
+          "ankle_angle_l": 1.552
+        },
+        "median_abs_knee_speed_error_deg_s": 14.53,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0179,
+          "p25": -0.0414,
+          "p75": 0.048
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.235,
+          "p25": -0.3082,
+          "p75": -0.1218
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0297,
+          "p25": -0.0097,
+          "p75": 0.1428
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2405,
+          "p25": -0.4656,
+          "p75": -0.176
+        },
+        "vertical_grf_difference_N": {
+          "median": 108.7417,
+          "p25": 92.932,
+          "p75": 144.5701
+        }
+      },
+      "ascent": {
+        "reference_frames": 436,
+        "loaded_frames": 477,
+        "accepted_matches": 223,
+        "unique_reference_frames": 136,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.519,
+          "knee_angle_r": 0.518,
+          "ankle_angle_r": 0.349,
+          "hip_flexion_l": 1.961,
+          "knee_angle_l": 1.393,
+          "ankle_angle_l": 0.796
+        },
+        "median_abs_knee_speed_error_deg_s": 4.19,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0906,
+          "p25": -0.1328,
+          "p75": -0.0471
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1854,
+          "p25": -0.2159,
+          "p75": -0.178
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0104,
+          "p25": -0.0588,
+          "p75": 0.0897
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3819,
+          "p25": -0.4428,
+          "p75": -0.3101
+        },
+        "vertical_grf_difference_N": {
+          "median": 120.1693,
+          "p25": 107.5974,
+          "p75": 137.1719
+        }
+      }
+    },
+    "AB11": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          2.405,
+          5.225,
+          8.67,
+          11.68,
+          14.6
+        ],
+        "25lbs": [
+          1.3,
+          3.865,
+          6.645,
+          9.955,
+          13.015
+        ]
+      },
+      "descent": {
+        "reference_frames": 562,
+        "loaded_frames": 599,
+        "accepted_matches": 483,
+        "unique_reference_frames": 334,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.245,
+          "knee_angle_r": 1.507,
+          "ankle_angle_r": 1.064,
+          "hip_flexion_l": 0.899,
+          "knee_angle_l": 1.179,
+          "ankle_angle_l": 2.307
+        },
+        "median_abs_knee_speed_error_deg_s": 6.25,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0558,
+          "p25": -0.0059,
+          "p75": 0.1179
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.439,
+          "p25": -0.4956,
+          "p75": -0.3294
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0098,
+          "p25": -0.0215,
+          "p75": 0.074
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2495,
+          "p25": -0.3359,
+          "p75": -0.1524
+        },
+        "vertical_grf_difference_N": {
+          "median": 125.2635,
+          "p25": 102.8786,
+          "p75": 139.0077
+        }
+      },
+      "ascent": {
+        "reference_frames": 620,
+        "loaded_frames": 669,
+        "accepted_matches": 504,
+        "unique_reference_frames": 276,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.535,
+          "knee_angle_r": 1.267,
+          "ankle_angle_r": 1.369,
+          "hip_flexion_l": 1.972,
+          "knee_angle_l": 1.835,
+          "ankle_angle_l": 1.991
+        },
+        "median_abs_knee_speed_error_deg_s": 6.48,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0141,
+          "p25": -0.032,
+          "p75": 0.0427
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3813,
+          "p25": -0.5098,
+          "p75": -0.2844
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0166,
+          "p25": -0.0498,
+          "p75": 0.052
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2821,
+          "p25": -0.3627,
+          "p75": -0.2015
+        },
+        "vertical_grf_difference_N": {
+          "median": 117.8916,
+          "p25": 102.1839,
+          "p75": 134.9987
+        }
+      }
+    },
+    "AB12": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          1.75,
+          3.99,
+          6.365,
+          8.79,
+          11.035
+        ],
+        "25lbs": [
+          2.615,
+          5.245,
+          7.805,
+          10.025,
+          12.59
+        ]
+      },
+      "descent": {
+        "reference_frames": 568,
+        "loaded_frames": 645,
+        "accepted_matches": 333,
+        "unique_reference_frames": 180,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.868,
+          "knee_angle_r": 1.831,
+          "ankle_angle_r": 1.505,
+          "hip_flexion_l": 1.811,
+          "knee_angle_l": 1.815,
+          "ankle_angle_l": 2.288
+        },
+        "median_abs_knee_speed_error_deg_s": 4.26,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0112,
+          "p25": -0.0409,
+          "p75": 0.12
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.4124,
+          "p25": -0.4977,
+          "p75": -0.3361
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": -0.014,
+          "p25": -0.0887,
+          "p75": 0.0624
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3456,
+          "p25": -0.4076,
+          "p75": -0.177
+        },
+        "vertical_grf_difference_N": {
+          "median": 108.9391,
+          "p25": 90.5392,
+          "p75": 126.7873
+        }
+      },
+      "ascent": {
+        "reference_frames": 542,
+        "loaded_frames": 614,
+        "accepted_matches": 495,
+        "unique_reference_frames": 263,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.697,
+          "knee_angle_r": 1.488,
+          "ankle_angle_r": 2.086,
+          "hip_flexion_l": 1.861,
+          "knee_angle_l": 2.732,
+          "ankle_angle_l": 1.539
+        },
+        "median_abs_knee_speed_error_deg_s": 7.72,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.1337,
+          "p25": -0.1921,
+          "p75": -0.0769
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3867,
+          "p25": -0.4603,
+          "p75": -0.208
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0809,
+          "p25": -0.1174,
+          "p75": 0.0087
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.4411,
+          "p25": -0.5659,
+          "p75": -0.3827
+        },
+        "vertical_grf_difference_N": {
+          "median": 106.7462,
+          "p25": 92.2687,
+          "p75": 130.0421
+        }
+      }
+    },
+    "AB13": {
+      "deep_squat_peaks": {
+        "0lbs": [
+          2.46,
+          4.815,
+          7.24,
+          9.815,
+          12.61
+        ],
+        "25lbs": [
+          2.575,
+          5.31,
+          8.195,
+          15.62,
+          19.545
+        ]
+      },
+      "descent": {
+        "reference_frames": 573,
+        "loaded_frames": 551,
+        "accepted_matches": 436,
+        "unique_reference_frames": 215,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.09,
+          "knee_angle_r": 1.483,
+          "ankle_angle_r": 0.843,
+          "hip_flexion_l": 1.824,
+          "knee_angle_l": 1.371,
+          "ankle_angle_l": 0.516
+        },
+        "median_abs_knee_speed_error_deg_s": 4.58,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": 0.1073,
+          "p25": -0.0107,
+          "p75": 0.211
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.1847,
+          "p25": -0.291,
+          "p75": -0.1352
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.079,
+          "p25": -0.0115,
+          "p75": 0.2075
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2092,
+          "p25": -0.2814,
+          "p75": -0.1344
+        },
+        "vertical_grf_difference_N": {
+          "median": 103.9636,
+          "p25": 74.2785,
+          "p75": 124.4178
+        }
+      },
+      "ascent": {
+        "reference_frames": 536,
+        "loaded_frames": 523,
+        "accepted_matches": 337,
+        "unique_reference_frames": 143,
+        "median_abs_angle_error_deg": {
+          "hip_flexion_r": 1.619,
+          "knee_angle_r": 1.76,
+          "ankle_angle_r": 2.005,
+          "hip_flexion_l": 0.855,
+          "knee_angle_l": 1.2,
+          "ankle_angle_l": 2.11
+        },
+        "median_abs_knee_speed_error_deg_s": 5.19,
+        "r_knee_moment_loaded_minus_unloaded": {
+          "median": -0.0922,
+          "p25": -0.2302,
+          "p75": -0.0361
+        },
+        "r_hip_moment_loaded_minus_unloaded": {
+          "median": -0.3717,
+          "p25": -0.4407,
+          "p75": -0.2244
+        },
+        "l_knee_moment_loaded_minus_unloaded": {
+          "median": 0.0357,
+          "p25": -0.0117,
+          "p75": 0.121
+        },
+        "l_hip_moment_loaded_minus_unloaded": {
+          "median": -0.2514,
+          "p25": -0.3979,
+          "p75": -0.1523
+        },
+        "vertical_grf_difference_N": {
+          "median": 93.9433,
+          "p25": 81.7316,
+          "p75": 118.1198
+        }
+      }
+    }
+  },
+  "cross_subject_summary": {
+    "descent": {
+      "quality_gate": ">=30 matched frames and >=20% loaded-frame coverage",
+      "accepted_subjects": [
+        "AB01",
+        "AB02",
+        "AB03",
+        "AB06",
+        "AB07",
+        "AB08",
+        "AB09",
+        "AB10",
+        "AB11",
+        "AB12",
+        "AB13"
+      ],
+      "excluded_subjects": [
+        "AB05"
+      ],
+      "median_match_coverage": 0.666,
+      "r_knee_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": 0.0558,
+        "subjects_positive": 9,
+        "subjects_negative": 2,
+        "subject_median_range": [
+          -0.0179,
+          0.1395
+        ]
+      },
+      "l_knee_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": 0.0346,
+        "subjects_positive": 8,
+        "subjects_negative": 3,
+        "subject_median_range": [
+          -0.0488,
+          0.1037
+        ]
+      },
+      "r_hip_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": -0.1847,
+        "subjects_positive": 0,
+        "subjects_negative": 11,
+        "subject_median_range": [
+          -0.439,
+          -0.1448
+        ]
+      },
+      "l_hip_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": -0.2405,
+        "subjects_positive": 0,
+        "subjects_negative": 11,
+        "subject_median_range": [
+          -0.3804,
+          -0.1308
+        ]
+      },
+      "vertical_grf_difference_N": {
+        "median_of_subject_medians": 108.9391,
+        "subjects_positive": 11,
+        "subjects_negative": 0,
+        "subject_median_range": [
+          88.7155,
+          125.2635
+        ]
+      }
+    },
+    "ascent": {
+      "quality_gate": ">=30 matched frames and >=20% loaded-frame coverage",
+      "accepted_subjects": [
+        "AB01",
+        "AB02",
+        "AB03",
+        "AB06",
+        "AB07",
+        "AB08",
+        "AB09",
+        "AB10",
+        "AB11",
+        "AB12",
+        "AB13"
+      ],
+      "excluded_subjects": [
+        "AB05"
+      ],
+      "median_match_coverage": 0.659,
+      "r_knee_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": 0.0041,
+        "subjects_positive": 6,
+        "subjects_negative": 5,
+        "subject_median_range": [
+          -0.1337,
+          0.1163
+        ]
+      },
+      "l_knee_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": 0.0166,
+        "subjects_positive": 8,
+        "subjects_negative": 3,
+        "subject_median_range": [
+          -0.0809,
+          0.1514
+        ]
+      },
+      "r_hip_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": -0.2754,
+        "subjects_positive": 0,
+        "subjects_negative": 11,
+        "subject_median_range": [
+          -0.4229,
+          -0.1795
+        ]
+      },
+      "l_hip_moment_loaded_minus_unloaded": {
+        "median_of_subject_medians": -0.2855,
+        "subjects_positive": 0,
+        "subjects_negative": 11,
+        "subject_median_range": [
+          -0.4584,
+          -0.1564
+        ]
+      },
+      "vertical_grf_difference_N": {
+        "median_of_subject_medians": 108.269,
+        "subjects_positive": 11,
+        "subjects_negative": 0,
+        "subject_median_range": [
+          91.3851,
+          136.428
+        ]
+      }
+    }
+  }
+}

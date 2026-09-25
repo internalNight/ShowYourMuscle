@@ -1,0 +1,150 @@
+{
+  "status": "external_isometric_squat_comparison_not_model_validation",
+  "source": "https://repository.gatech.edu/entities/publication/c7a857c8-79d8-4119-8ce0-be568d942f49",
+  "sourceBitstream": "d56cbae7-5621-401d-9d93-0f9f6fb93045",
+  "license": "CC BY 4.0",
+  "subject": "AB01",
+  "subjectHeightWithoutShoesCm": 173.0,
+  "subjectMassWithoutShoesKg": 86.25,
+  "conditionNote": "30-second symmetric half-squat hold, unloaded versus 25 lb weighted vest",
+  "units": {
+    "angles": "rad",
+    "moments": "N m/kg",
+    "kneeReaction": "bodyweights"
+  },
+  "records": {
+    "unweighted": {
+      "totalRows": 6248,
+      "windowSeconds": [
+        5,
+        25
+      ],
+      "finiteSamples": {
+        "hipFlexionRad": 4000,
+        "kneeAngleRad": 4000,
+        "ankleAngleRad": 4000,
+        "hipMomentNmPerKg": 4000,
+        "kneeMomentNmPerKg": 4000,
+        "ankleMomentNmPerKg": 4000,
+        "kneeReactionBodyWeights": 4000
+      },
+      "median": {
+        "hipFlexionRad": 1.5590242462697952,
+        "kneeAngleRad": -1.34623907530801,
+        "ankleAngleRad": 0.362662011393057,
+        "hipMomentNmPerKg": -0.9103628911017905,
+        "kneeMomentNmPerKg": 0.5998840792155116,
+        "ankleMomentNmPerKg": -0.110102025406628,
+        "kneeReactionBodyWeights": 2.6975810009180297
+      },
+      "range": {
+        "hipFlexionRad": [
+          1.54122938309633,
+          1.58085814993264
+        ],
+        "kneeAngleRad": [
+          -1.37220495969785,
+          -1.3091481939776
+        ],
+        "ankleAngleRad": [
+          0.34604119480516,
+          0.37373957003431
+        ],
+        "hipMomentNmPerKg": [
+          -0.990272549614735,
+          -0.836175209151037
+        ],
+        "kneeMomentNmPerKg": [
+          0.510204118096903,
+          0.659161848349143
+        ],
+        "ankleMomentNmPerKg": [
+          -0.169897439537767,
+          -0.053308908493088
+        ],
+        "kneeReactionBodyWeights": [
+          2.45743893549885,
+          2.86707949041734
+        ]
+      }
+    },
+    "vest_25lb": {
+      "totalRows": 6249,
+      "windowSeconds": [
+        5,
+        25
+      ],
+      "finiteSamples": {
+        "hipFlexionRad": 4000,
+        "kneeAngleRad": 4000,
+        "ankleAngleRad": 4000,
+        "hipMomentNmPerKg": 4000,
+        "kneeMomentNmPerKg": 4000,
+        "ankleMomentNmPerKg": 4000,
+        "kneeReactionBodyWeights": 4000
+      },
+      "median": {
+        "hipFlexionRad": 1.68509793950801,
+        "kneeAngleRad": -1.5848628079013451,
+        "ankleAngleRad": 0.4984686523634585,
+        "hipMomentNmPerKg": -1.04052416570771,
+        "kneeMomentNmPerKg": 0.8414861910241656,
+        "ankleMomentNmPerKg": -0.24943555811277351,
+        "kneeReactionBodyWeights": 3.591019380737825
+      },
+      "range": {
+        "hipFlexionRad": [
+          1.65832807944092,
+          1.70795477139212
+        ],
+        "kneeAngleRad": [
+          -1.63177638553033,
+          -1.54463209597825
+        ],
+        "ankleAngleRad": [
+          0.487603105105168,
+          0.517383658131947
+        ],
+        "hipMomentNmPerKg": [
+          -1.14091599539701,
+          -0.937031070195627
+        ],
+        "kneeMomentNmPerKg": [
+          0.756354430379747,
+          0.925777905638665
+        ],
+        "ankleMomentNmPerKg": [
+          -0.304271576524741,
+          -0.188775604142693
+        ],
+        "kneeReactionBodyWeights": [
+          3.28398710297448,
+          3.88045497037235
+        ]
+      }
+    }
+  },
+  "weightedMinusUnweighted": {
+    "hipFlexionRad": 0.1260736932382147,
+    "kneeAngleRad": -0.23862373259333514,
+    "ankleAngleRad": 0.13580664097040152,
+    "hipMomentNmPerKg": -0.13016127460591953,
+    "kneeMomentNmPerKg": 0.24160211180865399,
+    "ankleMomentNmPerKg": -0.1393335327061455,
+    "kneeReactionBodyWeights": 0.8934383798197953
+  },
+  "angleRangesOverlap": {
+    "hipFlexionRad": false,
+    "kneeAngleRad": false,
+    "ankleAngleRad": false
+  },
+  "canAttemptPoseMatchFromAngleRanges": false,
+  "poseMatchedForLoadComparison": false,
+  "limits": [
+    "one participant and two separate isometric holds; at least one joint angle range does not overlap",
+    "moment difference cannot be attributed to load alone; not a dynamic barbell squat",
+    "published inverse-dynamics outputs are reference labels, not independently measured muscle forces",
+    "vest mass and center of mass differ from a shoulder-supported barbell",
+    "right-knee joint reaction is itself an OpenSim computation; EMG is not analyzed here"
+  ]
+}

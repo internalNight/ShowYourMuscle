@@ -1,0 +1,364 @@
+{
+  "status": "marker_based_cop_lopo_not_phone_or_muscle_force_validation",
+  "load": "0lbs",
+  "target": "Sagittal force-plate COP relative to midpoint of medial/lateral ankle markers, projected onto heel-to-metatarsal marker axis, centimetres. Both feet loaded >=10% body weight. Experimental knee-angle event boundaries provide the 99-point phase; the phone does not observe these events.",
+  "limitations": [
+    "Ankle marker midpoint is not the OpenSim ankle joint centre.",
+    "Heel and metatarsal marker locations are skin-mounted proxies, not measured anatomical joint axes.",
+    "The source 25-lb load placement is unknown and cannot validate barbell back squats.",
+    "COP alone is not a net joint moment; horizontal forces, body inertia and all joint kinematics remain required.",
+    "Even correct joint moment prediction does not identify individual muscle force."
+  ],
+  "quality": {
+    "AB01": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 4.17,
+      "copFromMarkerAnkleP05Cm": -2.38,
+      "copFromMarkerAnkleP95Cm": 11.22,
+      "markerFootLengthMedianCm": 20.39
+    },
+    "AB02": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 4.62,
+      "copFromMarkerAnkleP05Cm": 0.81,
+      "copFromMarkerAnkleP95Cm": 8.06,
+      "markerFootLengthMedianCm": 20.72
+    },
+    "AB03": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 2.85,
+      "copFromMarkerAnkleP05Cm": 0.32,
+      "copFromMarkerAnkleP95Cm": 7.01,
+      "markerFootLengthMedianCm": 20.73
+    },
+    "AB05": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 6.42,
+      "copFromMarkerAnkleP05Cm": 1.76,
+      "copFromMarkerAnkleP95Cm": 9.76,
+      "markerFootLengthMedianCm": 20.61
+    },
+    "AB06": {
+      "trajectories": 14,
+      "copFromMarkerAnkleMedianCm": 3.68,
+      "copFromMarkerAnkleP05Cm": -1.36,
+      "copFromMarkerAnkleP95Cm": 10.6,
+      "markerFootLengthMedianCm": 20.33
+    },
+    "AB07": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 6.23,
+      "copFromMarkerAnkleP05Cm": 1.05,
+      "copFromMarkerAnkleP95Cm": 11.8,
+      "markerFootLengthMedianCm": 19.41
+    },
+    "AB08": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 4.96,
+      "copFromMarkerAnkleP05Cm": 0.49,
+      "copFromMarkerAnkleP95Cm": 8.1,
+      "markerFootLengthMedianCm": 20.95
+    },
+    "AB09": {
+      "trajectories": 4,
+      "copFromMarkerAnkleMedianCm": 0.61,
+      "copFromMarkerAnkleP05Cm": -2.01,
+      "copFromMarkerAnkleP95Cm": 9.8,
+      "markerFootLengthMedianCm": 21.24
+    },
+    "AB10": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 2.41,
+      "copFromMarkerAnkleP05Cm": -0.92,
+      "copFromMarkerAnkleP95Cm": 8.49,
+      "markerFootLengthMedianCm": 20.15
+    },
+    "AB11": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 6.41,
+      "copFromMarkerAnkleP05Cm": 3.51,
+      "copFromMarkerAnkleP95Cm": 9.62,
+      "markerFootLengthMedianCm": 19.6
+    },
+    "AB12": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 5.15,
+      "copFromMarkerAnkleP05Cm": 1.14,
+      "copFromMarkerAnkleP95Cm": 11.41,
+      "markerFootLengthMedianCm": 19.61
+    },
+    "AB13": {
+      "trajectories": 6,
+      "copFromMarkerAnkleMedianCm": 6.0,
+      "copFromMarkerAnkleP05Cm": -0.03,
+      "copFromMarkerAnkleP95Cm": 9.25,
+      "markerFootLengthMedianCm": 18.61
+    }
+  },
+  "excluded": [],
+  "leaveOnePersonOut": {
+    "method": "Whole-person leave-one-out. Within each training person, take the per-phase median across both feet and all repetitions; across the other people, compare the overall constant median with per-phase medians. A body-mass slope is fitted per phase with fixed ridge n*(20 kg)^2. Score every held-out repetition/foot/valid phase, then summarize one MAE per held-out person.",
+    "subjects": 12,
+    "trajectories": 78,
+    "medianSubjectMaeCm": {
+      "flatTrainMedianCm": 2.4876,
+      "phaseTrainMedianCm": 2.5744,
+      "phaseAndBodyMassCm": 2.5382,
+      "fixed6cmExploratory": 2.5558
+    },
+    "phaseBetterThanFlatSubjects": 7,
+    "phaseImprovementMedianCm": 0.0448,
+    "phaseImprovementBootstrap95Cm": [
+      -0.0595,
+      0.0989
+    ],
+    "phaseWinsOneSidedSignP": 0.38721,
+    "perSubject": [
+      {
+        "subject": "AB01",
+        "massKg": 78.9,
+        "trainingFlatCm": 4.654,
+        "maeCm": {
+          "flatTrainMedianCm": 3.6564,
+          "phaseTrainMedianCm": 3.5186,
+          "phaseAndBodyMassCm": 3.5289,
+          "fixed6cmExploratory": 3.8727
+        },
+        "phaseMinusFlatImprovementCm": 0.1377
+      },
+      {
+        "subject": "AB02",
+        "massKg": 82.2,
+        "trainingFlatCm": 4.633,
+        "maeCm": {
+          "flatTrainMedianCm": 1.8108,
+          "phaseTrainMedianCm": 1.7413,
+          "phaseAndBodyMassCm": 1.7086,
+          "fixed6cmExploratory": 2.1197
+        },
+        "phaseMinusFlatImprovementCm": 0.0695
+      },
+      {
+        "subject": "AB03",
+        "massKg": 113.5,
+        "trainingFlatCm": 4.828,
+        "maeCm": {
+          "flatTrainMedianCm": 2.265,
+          "phaseTrainMedianCm": 2.4275,
+          "phaseAndBodyMassCm": 2.1569,
+          "fixed6cmExploratory": 2.9717
+        },
+        "phaseMinusFlatImprovementCm": -0.1625
+      },
+      {
+        "subject": "AB05",
+        "massKg": 71.5,
+        "trainingFlatCm": 4.619,
+        "maeCm": {
+          "flatTrainMedianCm": 2.3715,
+          "phaseTrainMedianCm": 2.446,
+          "phaseAndBodyMassCm": 2.4326,
+          "fixed6cmExploratory": 1.9311
+        },
+        "phaseMinusFlatImprovementCm": -0.0745
+      },
+      {
+        "subject": "AB06",
+        "massKg": 79.1,
+        "trainingFlatCm": 4.874,
+        "maeCm": {
+          "flatTrainMedianCm": 3.0817,
+          "phaseTrainMedianCm": 3.0573,
+          "phaseAndBodyMassCm": 3.0539,
+          "fixed6cmExploratory": 3.3852
+        },
+        "phaseMinusFlatImprovementCm": 0.0245
+      },
+      {
+        "subject": "AB07",
+        "massKg": 62.3,
+        "trainingFlatCm": 4.632,
+        "maeCm": {
+          "flatTrainMedianCm": 3.0422,
+          "phaseTrainMedianCm": 3.0537,
+          "phaseAndBodyMassCm": 2.9139,
+          "fixed6cmExploratory": 2.778
+        },
+        "phaseMinusFlatImprovementCm": -0.0115
+      },
+      {
+        "subject": "AB08",
+        "massKg": 87.6,
+        "trainingFlatCm": 4.724,
+        "maeCm": {
+          "flatTrainMedianCm": 2.0085,
+          "phaseTrainMedianCm": 2.0531,
+          "phaseAndBodyMassCm": 2.1829,
+          "fixed6cmExploratory": 2.1242
+        },
+        "phaseMinusFlatImprovementCm": -0.0446
+      },
+      {
+        "subject": "AB09",
+        "massKg": 84.1,
+        "trainingFlatCm": 4.758,
+        "maeCm": {
+          "flatTrainMedianCm": 4.0552,
+          "phaseTrainMedianCm": 3.896,
+          "phaseAndBodyMassCm": 3.8235,
+          "fixed6cmExploratory": 4.8331
+        },
+        "phaseMinusFlatImprovementCm": 0.1591
+      },
+      {
+        "subject": "AB10",
+        "massKg": 67.5,
+        "trainingFlatCm": 4.886,
+        "maeCm": {
+          "flatTrainMedianCm": 2.9672,
+          "phaseTrainMedianCm": 2.8813,
+          "phaseAndBodyMassCm": 2.9678,
+          "fixed6cmExploratory": 3.6784
+        },
+        "phaseMinusFlatImprovementCm": 0.0858
+      },
+      {
+        "subject": "AB11",
+        "massKg": 65.1,
+        "trainingFlatCm": 4.486,
+        "maeCm": {
+          "flatTrainMedianCm": 2.4326,
+          "phaseTrainMedianCm": 2.6712,
+          "phaseAndBodyMassCm": 2.6438,
+          "fixed6cmExploratory": 1.7606
+        },
+        "phaseMinusFlatImprovementCm": -0.2386
+      },
+      {
+        "subject": "AB12",
+        "massKg": 64.0,
+        "trainingFlatCm": 4.623,
+        "maeCm": {
+          "flatTrainMedianCm": 2.2231,
+          "phaseTrainMedianCm": 2.1112,
+          "phaseAndBodyMassCm": 2.0409,
+          "fixed6cmExploratory": 2.3337
+        },
+        "phaseMinusFlatImprovementCm": 0.112
+      },
+      {
+        "subject": "AB13",
+        "massKg": 67.6,
+        "trainingFlatCm": 4.518,
+        "maeCm": {
+          "flatTrainMedianCm": 2.5427,
+          "phaseTrainMedianCm": 2.4777,
+          "phaseAndBodyMassCm": 2.3934,
+          "fixed6cmExploratory": 2.1899
+        },
+        "phaseMinusFlatImprovementCm": 0.0651
+      }
+    ],
+    "allPersonPhaseMedianCm": [
+      4.7489,
+      4.5408,
+      4.5694,
+      4.712,
+      4.69,
+      4.9128,
+      5.0146,
+      5.0409,
+      5.0179,
+      5.0142,
+      4.9615,
+      4.9763,
+      5.051,
+      5.1311,
+      5.2737,
+      5.1374,
+      4.9944,
+      4.6926,
+      4.3215,
+      4.4112,
+      4.5535,
+      4.4511,
+      4.5343,
+      4.7534,
+      4.8232,
+      4.9111,
+      5.1031,
+      5.1003,
+      5.1863,
+      5.5218,
+      5.5211,
+      5.4034,
+      5.5503,
+      5.6273,
+      5.3605,
+      5.1277,
+      4.8589,
+      4.6342,
+      4.8251,
+      5.0506,
+      5.1541,
+      4.8979,
+      4.7316,
+      4.7342,
+      4.8387,
+      4.927,
+      4.9907,
+      5.2281,
+      5.2216,
+      5.0836,
+      5.041,
+      5.3541,
+      5.448,
+      5.2656,
+      5.1247,
+      5.2985,
+      5.3245,
+      5.3391,
+      5.3677,
+      5.335,
+      5.3207,
+      5.254,
+      5.1223,
+      4.9994,
+      4.9882,
+      4.9927,
+      4.9734,
+      4.9623,
+      4.9398,
+      4.8196,
+      4.5724,
+      4.3025,
+      4.1295,
+      4.0011,
+      3.8341,
+      3.73,
+      3.1501,
+      3.2788,
+      3.4051,
+      3.5051,
+      3.255,
+      3.1059,
+      2.973,
+      2.752,
+      2.9835,
+      3.2182,
+      3.22,
+      3.4152,
+      3.5024,
+      3.4961,
+      3.3302,
+      3.476,
+      3.3382,
+      3.3243,
+      3.4085,
+      3.4176,
+      3.5458,
+      3.6979,
+      3.6076
+    ]
+  }
+}

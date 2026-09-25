@@ -1,0 +1,1572 @@
+{
+  "status": "illustrative_trajectory_dynamic_force_probe_not_validated_personal_prediction",
+  "method": "0.01-phase central second derivative of template segment COM plus barbell height, with the prescribed 2.8 s squat animation. Total vertical support scenario is (body + bar mass) times (g + COM vertical acceleration). No measured motion, foot contact, net joint moments or muscle forces.",
+  "durationS": 2.8,
+  "squatDepthDeg": 117,
+  "rows": [
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "loadKg": 0,
+      "minForceN": 637.3157914467024,
+      "maxForceN": 790.5224955287625,
+      "minimumRatioToStaticWeight": 0.9026128407292534,
+      "maximumRatioToStaticWeight": 1.1195952852978486,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.172829104566146,
+        "forceN": 790.5224955287625,
+        "bodyComHeightM": 0.5144505932085863,
+        "combinedComHeightM": 0.5144505932085863
+      },
+      "frames": [
+        {
+          "phase": 0.01,
+          "accelerationMs2": -0.9550417854624662,
+          "forceN": 637.3157914467024,
+          "bodyComHeightM": 0.9216775711328775,
+          "combinedComHeightM": 0.9216775711328774
+        },
+        {
+          "phase": 0.02,
+          "accelerationMs2": -0.9491343813822446,
+          "forceN": 637.7411245404784,
+          "bodyComHeightM": 0.9205536502494196,
+          "combinedComHeightM": 0.9205536502494197
+        },
+        {
+          "phase": 0.03,
+          "accelerationMs2": -0.9396950691818872,
+          "forceN": 638.4207550189042,
+          "bodyComHeightM": 0.9186856080109582,
+          "combinedComHeightM": 0.9186856080109583
+        },
+        {
+          "phase": 0.04,
+          "accelerationMs2": -0.9270936103196659,
+          "forceN": 639.3280600569841,
+          "bodyComHeightM": 0.9160808448382584,
+          "combinedComHeightM": 0.9160808448382584
+        },
+        {
+          "phase": 0.05,
+          "accelerationMs2": -0.9115970904718601,
+          "forceN": 640.4438094860261,
+          "bodyComHeightM": 0.9127492402750678,
+          "combinedComHeightM": 0.9127492402750678
+        },
+        {
+          "phase": 0.06,
+          "accelerationMs2": -0.893356369452765,
+          "forceN": 641.7571413994009,
+          "bodyComHeightM": 0.9087029435929473,
+          "combinedComHeightM": 0.9087029435929472
+        },
+        {
+          "phase": 0.07,
+          "accelerationMs2": -0.8724398591441237,
+          "forceN": 643.2631301416232,
+          "bodyComHeightM": 0.9039562555171756,
+          "combinedComHeightM": 0.9039562555171757
+        },
+        {
+          "phase": 0.08,
+          "accelerationMs2": -0.848869947289098,
+          "forceN": 644.9601637951849,
+          "bodyComHeightM": 0.8985255745918352,
+          "combinedComHeightM": 0.8985255745918352
+        },
+        {
+          "phase": 0.09,
+          "accelerationMs2": -0.8226483623420857,
+          "forceN": 646.8481179113699,
+          "bodyComHeightM": 0.8924293796278201,
+          "combinedComHeightM": 0.8924293796278201
+        },
+        {
+          "phase": 0.1,
+          "accelerationMs2": -0.7937715358246658,
+          "forceN": 648.9272494206241,
+          "bodyComHeightM": 0.8856882283477288,
+          "combinedComHeightM": 0.8856882283477288
+        },
+        {
+          "phase": 0.11,
+          "accelerationMs2": -0.7622397320214641,
+          "forceN": 651.1975392944546,
+          "bodyComHeightM": 0.8783247601835509,
+          "combinedComHeightM": 0.8783247601835509
+        },
+        {
+          "phase": 0.12,
+          "accelerationMs2": -0.7280627224342575,
+          "forceN": 653.6582839847334,
+          "bodyComHeightM": 0.8703636960694682,
+          "combinedComHeightM": 0.8703636960694682
+        },
+        {
+          "phase": 0.13,
+          "accelerationMs2": -0.6912635498513865,
+          "forceN": 656.3078244107002,
+          "bodyComHeightM": 0.861831830780997,
+          "combinedComHeightM": 0.861831830780997
+        },
+        {
+          "phase": 0.14,
+          "accelerationMs2": -0.6518811487026528,
+          "forceN": 659.143357293409,
+          "bodyComHeightM": 0.8527580148694425,
+          "combinedComHeightM": 0.8527580148694425
+        },
+        {
+          "phase": 0.15,
+          "accelerationMs2": -0.6099721837083077,
+          "forceN": 662.1608027730018,
+          "bodyComHeightM": 0.843173124137305,
+          "combinedComHeightM": 0.843173124137305
+        },
+        {
+          "phase": 0.16,
+          "accelerationMs2": -0.5656122748039767,
+          "forceN": 665.3547162141136,
+          "bodyComHeightM": 0.83311001521314,
+          "combinedComHeightM": 0.83311001521314
+        },
+        {
+          "phase": 0.17,
+          "accelerationMs2": -0.5188966859034804,
+          "forceN": 668.7182386149494,
+          "bodyComHeightM": 0.8226034662655286,
+          "combinedComHeightM": 0.8226034662655286
+        },
+        {
+          "phase": 0.18,
+          "accelerationMs2": -0.46994051097957823,
+          "forceN": 672.2430832094703,
+          "bodyComHeightM": 0.8116901023161689,
+          "combinedComHeightM": 0.8116901023161689
+        },
+        {
+          "phase": 0.19,
+          "accelerationMs2": -0.41887836637769366,
+          "forceN": 675.919557620806,
+          "bodyComHeightM": 0.8004083050062012,
+          "combinedComHeightM": 0.8004083050062012
+        },
+        {
+          "phase": 0.2,
+          "accelerationMs2": -0.3658635809916259,
+          "forceN": 679.7366221686029,
+          "bodyComHeightM": 0.7887981070569934,
+          "combinedComHeightM": 0.7887981070569934
+        },
+        {
+          "phase": 0.21,
+          "accelerationMs2": -0.3110668618039382,
+          "forceN": 683.6819859501164,
+          "bodyComHeightM": 0.7769010720602881,
+          "combinedComHeightM": 0.7769010720602881
+        },
+        {
+          "phase": 0.22,
+          "accelerationMs2": -0.254674401082725,
+          "forceN": 687.7422431220438,
+          "bodyComHeightM": 0.7647601606439286,
+          "combinedComHeightM": 0.7647601606439286
+        },
+        {
+          "phase": 0.23,
+          "accelerationMs2": -0.19688538539432004,
+          "forceN": 691.903052251609,
+          "bodyComHeightM": 0.7524195844971202,
+          "combinedComHeightM": 0.7524195844971202
+        },
+        {
+          "phase": 0.24,
+          "accelerationMs2": -0.13790886930433213,
+          "forceN": 696.1493614100881,
+          "bodyComHeightM": 0.7399246502081627,
+          "combinedComHeightM": 0.7399246502081627
+        },
+        {
+          "phase": 0.25,
+          "accelerationMs2": -0.07795999297779797,
+          "forceN": 700.4656805055986,
+          "bodyComHeightM": 0.7273215953656705,
+          "combinedComHeightM": 0.7273215953656705
+        },
+        {
+          "phase": 0.26,
+          "accelerationMs2": -0.01725555814392284,
+          "forceN": 704.8363998136375,
+          "bodyComHeightM": 0.7146574198886838,
+          "combinedComHeightM": 0.7146574198886838
+        },
+        {
+          "phase": 0.27,
+          "accelerationMs2": 0.043990963747734105,
+          "forceN": 709.2461493898369,
+          "bodyComHeightM": 0.7019797160541122,
+          "combinedComHeightM": 0.7019797160541122
+        },
+        {
+          "phase": 0.28,
+          "accelerationMs2": 0.10557483032714776,
+          "forceN": 713.6801877835546,
+          "bodyComHeightM": 0.6893365011351189,
+          "combinedComHeightM": 0.6893365011351189
+        },
+        {
+          "phase": 0.29,
+          "accelerationMs2": 0.16730555747179518,
+          "forceN": 718.1248001379693,
+          "bodyComHeightM": 0.676776056883102,
+          "combinedComHeightM": 0.676776056883102
+        },
+        {
+          "phase": 0.3,
+          "accelerationMs2": 0.2290121616502047,
+          "forceN": 722.5676756388148,
+          "bodyComHeightM": 0.6643467801881431,
+          "combinedComHeightM": 0.6643467801881431
+        },
+        {
+          "phase": 0.31,
+          "accelerationMs2": 0.29054754279059863,
+          "forceN": 726.9982230809231,
+          "bodyComHeightM": 0.6520970490279179,
+          "combinedComHeightM": 0.6520970490279179
+        },
+        {
+          "phase": 0.32,
+          "accelerationMs2": 0.35179128210140054,
+          "forceN": 731.4077723113008,
+          "bodyComHeightM": 0.6400751071412405,
+          "combinedComHeightM": 0.6400751071412405
+        },
+        {
+          "phase": 0.33,
+          "accelerationMs2": 0.412650004162261,
+          "forceN": 735.7896002996828,
+          "bodyComHeightM": 0.6283289696197306,
+          "combinedComHeightM": 0.6283289696197306
+        },
+        {
+          "phase": 0.34,
+          "accelerationMs2": 0.4730543869965913,
+          "forceN": 740.1387158637546,
+          "bodyComHeightM": 0.616906349701484,
+          "combinedComHeightM": 0.616906349701484
+        },
+        {
+          "phase": 0.35,
+          "accelerationMs2": 0.5329519333860843,
+          "forceN": 744.451339203798,
+          "bodyComHeightM": 0.6058546044226426,
+          "combinedComHeightM": 0.6058546044226426
+        },
+        {
+          "phase": 0.36,
+          "accelerationMs2": 0.5922947781976811,
+          "forceN": 748.7240240302331,
+          "bodyComHeightM": 0.595220693459576,
+          "combinedComHeightM": 0.595220693459576
+        },
+        {
+          "phase": 0.37,
+          "accelerationMs2": 0.651022134150702,
+          "forceN": 752.9523936588505,
+          "bodyComHeightM": 0.5850511416026163,
+          "combinedComHeightM": 0.5850511416026163
+        },
+        {
+          "phase": 0.38,
+          "accelerationMs2": 0.7090375021565236,
+          "forceN": 757.1295001552697,
+          "bodyComHeightM": 0.5753919910988308,
+          "combinedComHeightM": 0.5753919910988308
+        },
+        {
+          "phase": 0.39,
+          "accelerationMs2": 0.7661815140352121,
+          "forceN": 761.2438690105353,
+          "bodyComHeightM": 0.566288725996736,
+          "combinedComHeightM": 0.566288725996736
+        },
+        {
+          "phase": 0.4,
+          "accelerationMs2": 0.8222022425936583,
+          "forceN": 765.2773614667434,
+          "bodyComHeightM": 0.5577861472016448,
+          "combinedComHeightM": 0.5577861472016448
+        },
+        {
+          "phase": 0.41,
+          "accelerationMs2": 0.8767259806665922,
+          "forceN": 769.2030706079946,
+          "bodyComHeightM": 0.5499281749647471,
+          "combinedComHeightM": 0.5499281749647471
+        },
+        {
+          "phase": 0.42,
+          "accelerationMs2": 0.929232761939678,
+          "forceN": 772.9835588596568,
+          "bodyComHeightM": 0.5427575558966921,
+          "combinedComHeightM": 0.5427575558966921
+        },
+        {
+          "phase": 0.43,
+          "accelerationMs2": 0.9790420558341721,
+          "forceN": 776.5698280200604,
+          "bodyComHeightM": 0.5363154553139977,
+          "combinedComHeightM": 0.5363154553139977
+        },
+        {
+          "phase": 0.44,
+          "accelerationMs2": 1.0253147310102644,
+          "forceN": 779.901460632739,
+          "bodyComHeightM": 0.5306409237030774,
+          "combinedComHeightM": 0.5306409237030774
+        },
+        {
+          "phase": 0.45,
+          "accelerationMs2": 1.067076996579043,
+          "forceN": 782.908343753691,
+          "bodyComHeightM": 0.525770238841269,
+          "combinedComHeightM": 0.525770238841269
+        },
+        {
+          "phase": 0.46,
+          "accelerationMs2": 1.1032700045490786,
+          "forceN": 785.5142403275337,
+          "bodyComHeightM": 0.5217361423447787,
+          "combinedComHeightM": 0.5217361423447787
+        },
+        {
+          "phase": 0.47,
+          "accelerationMs2": 1.1328247820019683,
+          "forceN": 787.6421843041417,
+          "bodyComHeightM": 0.5185670095318549,
+          "combinedComHeightM": 0.5185670095318549
+        },
+        {
+          "phase": 0.48,
+          "accelerationMs2": 1.1547564456508255,
+          "forceN": 789.2212640868595,
+          "bodyComHeightM": 0.5162860113480204,
+          "combinedComHeightM": 0.5162860113480204
+        },
+        {
+          "phase": 0.49,
+          "accelerationMs2": 1.1682654610385845,
+          "forceN": 790.1939131947781,
+          "bodyComHeightM": 0.5149103422175763,
+          "combinedComHeightM": 0.5149103422175763
+        },
+        {
+          "phase": 0.5,
+          "accelerationMs2": 1.172829104566146,
+          "forceN": 790.5224955287625,
+          "bodyComHeightM": 0.5144505932085863,
+          "combinedComHeightM": 0.5144505932085863
+        },
+        {
+          "phase": 0.51,
+          "accelerationMs2": 1.1682654610385845,
+          "forceN": 790.1939131947781,
+          "bodyComHeightM": 0.5149103422175763,
+          "combinedComHeightM": 0.5149103422175763
+        },
+        {
+          "phase": 0.52,
+          "accelerationMs2": 1.1547564456508255,
+          "forceN": 789.2212640868595,
+          "bodyComHeightM": 0.5162860113480204,
+          "combinedComHeightM": 0.5162860113480204
+        },
+        {
+          "phase": 0.53,
+          "accelerationMs2": 1.1328247820019683,
+          "forceN": 787.6421843041417,
+          "bodyComHeightM": 0.5185670095318549,
+          "combinedComHeightM": 0.5185670095318549
+        },
+        {
+          "phase": 0.54,
+          "accelerationMs2": 1.1032700045487955,
+          "forceN": 785.5142403275133,
+          "bodyComHeightM": 0.5217361423447788,
+          "combinedComHeightM": 0.5217361423447788
+        },
+        {
+          "phase": 0.55,
+          "accelerationMs2": 1.0670769965791846,
+          "forceN": 782.9083437537013,
+          "bodyComHeightM": 0.525770238841269,
+          "combinedComHeightM": 0.525770238841269
+        },
+        {
+          "phase": 0.56,
+          "accelerationMs2": 1.0253147310102644,
+          "forceN": 779.901460632739,
+          "bodyComHeightM": 0.5306409237030774,
+          "combinedComHeightM": 0.5306409237030774
+        },
+        {
+          "phase": 0.57,
+          "accelerationMs2": 0.9790420558340306,
+          "forceN": 776.5698280200502,
+          "bodyComHeightM": 0.5363154553139977,
+          "combinedComHeightM": 0.5363154553139977
+        },
+        {
+          "phase": 0.58,
+          "accelerationMs2": 0.9292327619398196,
+          "forceN": 772.983558859667,
+          "bodyComHeightM": 0.542757555896692,
+          "combinedComHeightM": 0.542757555896692
+        },
+        {
+          "phase": 0.59,
+          "accelerationMs2": 0.8767259806667339,
+          "forceN": 769.2030706080049,
+          "bodyComHeightM": 0.549928174964747,
+          "combinedComHeightM": 0.549928174964747
+        },
+        {
+          "phase": 0.6,
+          "accelerationMs2": 0.8222022425936583,
+          "forceN": 765.2773614667434,
+          "bodyComHeightM": 0.5577861472016448,
+          "combinedComHeightM": 0.5577861472016448
+        },
+        {
+          "phase": 0.61,
+          "accelerationMs2": 0.7661815140349288,
+          "forceN": 761.2438690105149,
+          "bodyComHeightM": 0.566288725996736,
+          "combinedComHeightM": 0.566288725996736
+        },
+        {
+          "phase": 0.62,
+          "accelerationMs2": 0.7090375021569485,
+          "forceN": 757.1295001553003,
+          "bodyComHeightM": 0.5753919910988305,
+          "combinedComHeightM": 0.5753919910988305
+        },
+        {
+          "phase": 0.63,
+          "accelerationMs2": 0.6510221341508435,
+          "forceN": 752.9523936588607,
+          "bodyComHeightM": 0.5850511416026162,
+          "combinedComHeightM": 0.5850511416026162
+        },
+        {
+          "phase": 0.64,
+          "accelerationMs2": 0.5922947781971146,
+          "forceN": 748.7240240301923,
+          "bodyComHeightM": 0.5952206934595761,
+          "combinedComHeightM": 0.5952206934595761
+        },
+        {
+          "phase": 0.65,
+          "accelerationMs2": 0.5329519333866507,
+          "forceN": 744.4513392038389,
+          "bodyComHeightM": 0.6058546044226425,
+          "combinedComHeightM": 0.6058546044226425
+        },
+        {
+          "phase": 0.66,
+          "accelerationMs2": 0.4730543869961665,
+          "forceN": 740.138715863724,
+          "bodyComHeightM": 0.6169063497014841,
+          "combinedComHeightM": 0.6169063497014841
+        },
+        {
+          "phase": 0.67,
+          "accelerationMs2": 0.4126500041626858,
+          "forceN": 735.7896002997134,
+          "bodyComHeightM": 0.6283289696197306,
+          "combinedComHeightM": 0.6283289696197306
+        },
+        {
+          "phase": 0.68,
+          "accelerationMs2": 0.35179128210083405,
+          "forceN": 731.40777231126,
+          "bodyComHeightM": 0.6400751071412407,
+          "combinedComHeightM": 0.6400751071412407
+        },
+        {
+          "phase": 0.69,
+          "accelerationMs2": 0.29054754279088185,
+          "forceN": 726.9982230809435,
+          "bodyComHeightM": 0.6520970490279178,
+          "combinedComHeightM": 0.6520970490279178
+        },
+        {
+          "phase": 0.7,
+          "accelerationMs2": 0.22901216164992147,
+          "forceN": 722.5676756387943,
+          "bodyComHeightM": 0.6643467801881431,
+          "combinedComHeightM": 0.6643467801881431
+        },
+        {
+          "phase": 0.71,
+          "accelerationMs2": 0.1673055574720784,
+          "forceN": 718.1248001379896,
+          "bodyComHeightM": 0.6767760568831019,
+          "combinedComHeightM": 0.6767760568831019
+        },
+        {
+          "phase": 0.72,
+          "accelerationMs2": 0.10557483032700615,
+          "forceN": 713.6801877835444,
+          "bodyComHeightM": 0.6893365011351189,
+          "combinedComHeightM": 0.6893365011351189
+        },
+        {
+          "phase": 0.73,
+          "accelerationMs2": 0.043990963747734105,
+          "forceN": 709.2461493898369,
+          "bodyComHeightM": 0.7019797160541122,
+          "combinedComHeightM": 0.7019797160541122
+        },
+        {
+          "phase": 0.74,
+          "accelerationMs2": -0.01725555814406445,
+          "forceN": 704.8363998136274,
+          "bodyComHeightM": 0.7146574198886838,
+          "combinedComHeightM": 0.7146574198886838
+        },
+        {
+          "phase": 0.75,
+          "accelerationMs2": -0.07795999297779797,
+          "forceN": 700.4656805055986,
+          "bodyComHeightM": 0.7273215953656704,
+          "combinedComHeightM": 0.7273215953656704
+        },
+        {
+          "phase": 0.76,
+          "accelerationMs2": -0.1379088693039073,
+          "forceN": 696.1493614101187,
+          "bodyComHeightM": 0.7399246502081624,
+          "combinedComHeightM": 0.7399246502081624
+        },
+        {
+          "phase": 0.77,
+          "accelerationMs2": -0.19688538539474487,
+          "forceN": 691.9030522515784,
+          "bodyComHeightM": 0.7524195844971202,
+          "combinedComHeightM": 0.7524195844971202
+        },
+        {
+          "phase": 0.78,
+          "accelerationMs2": -0.25467440108244177,
+          "forceN": 687.7422431220642,
+          "bodyComHeightM": 0.7647601606439285,
+          "combinedComHeightM": 0.7647601606439285
+        },
+        {
+          "phase": 0.79,
+          "accelerationMs2": -0.31106686180422144,
+          "forceN": 683.6819859500961,
+          "bodyComHeightM": 0.7769010720602881,
+          "combinedComHeightM": 0.7769010720602881
+        },
+        {
+          "phase": 0.8,
+          "accelerationMs2": -0.3658635809910595,
+          "forceN": 679.7366221686437,
+          "bodyComHeightM": 0.7887981070569933,
+          "combinedComHeightM": 0.7887981070569933
+        },
+        {
+          "phase": 0.81,
+          "accelerationMs2": -0.4188783663784017,
+          "forceN": 675.9195576207551,
+          "bodyComHeightM": 0.8004083050062014,
+          "combinedComHeightM": 0.8004083050062014
+        },
+        {
+          "phase": 0.82,
+          "accelerationMs2": -0.46994051097957823,
+          "forceN": 672.2430832094703,
+          "bodyComHeightM": 0.8116901023161689,
+          "combinedComHeightM": 0.8116901023161689
+        },
+        {
+          "phase": 0.83,
+          "accelerationMs2": -0.5188966859034804,
+          "forceN": 668.7182386149494,
+          "bodyComHeightM": 0.8226034662655286,
+          "combinedComHeightM": 0.8226034662655286
+        },
+        {
+          "phase": 0.84,
+          "accelerationMs2": -0.5656122748039767,
+          "forceN": 665.3547162141136,
+          "bodyComHeightM": 0.83311001521314,
+          "combinedComHeightM": 0.83311001521314
+        },
+        {
+          "phase": 0.85,
+          "accelerationMs2": -0.6099721837087326,
+          "forceN": 662.1608027729712,
+          "bodyComHeightM": 0.843173124137305,
+          "combinedComHeightM": 0.843173124137305
+        },
+        {
+          "phase": 0.86,
+          "accelerationMs2": -0.6518811487026528,
+          "forceN": 659.143357293409,
+          "bodyComHeightM": 0.8527580148694425,
+          "combinedComHeightM": 0.8527580148694425
+        },
+        {
+          "phase": 0.87,
+          "accelerationMs2": -0.6912635498513865,
+          "forceN": 656.3078244107002,
+          "bodyComHeightM": 0.861831830780997,
+          "combinedComHeightM": 0.861831830780997
+        },
+        {
+          "phase": 0.88,
+          "accelerationMs2": -0.7280627224339743,
+          "forceN": 653.6582839847539,
+          "bodyComHeightM": 0.8703636960694681,
+          "combinedComHeightM": 0.8703636960694681
+        },
+        {
+          "phase": 0.89,
+          "accelerationMs2": -0.7622397320216058,
+          "forceN": 651.1975392944444,
+          "bodyComHeightM": 0.8783247601835509,
+          "combinedComHeightM": 0.8783247601835509
+        },
+        {
+          "phase": 0.9,
+          "accelerationMs2": -0.7937715358246658,
+          "forceN": 648.9272494206241,
+          "bodyComHeightM": 0.8856882283477288,
+          "combinedComHeightM": 0.8856882283477288
+        },
+        {
+          "phase": 0.91,
+          "accelerationMs2": -0.8226483623420857,
+          "forceN": 646.8481179113699,
+          "bodyComHeightM": 0.8924293796278201,
+          "combinedComHeightM": 0.8924293796278201
+        },
+        {
+          "phase": 0.92,
+          "accelerationMs2": -0.848869947289098,
+          "forceN": 644.9601637951849,
+          "bodyComHeightM": 0.8985255745918352,
+          "combinedComHeightM": 0.8985255745918352
+        },
+        {
+          "phase": 0.93,
+          "accelerationMs2": -0.8724398591441237,
+          "forceN": 643.2631301416232,
+          "bodyComHeightM": 0.9039562555171756,
+          "combinedComHeightM": 0.9039562555171757
+        },
+        {
+          "phase": 0.94,
+          "accelerationMs2": -0.893356369452765,
+          "forceN": 641.7571413994009,
+          "bodyComHeightM": 0.9087029435929472,
+          "combinedComHeightM": 0.9087029435929472
+        },
+        {
+          "phase": 0.95,
+          "accelerationMs2": -0.9115970904718601,
+          "forceN": 640.4438094860261,
+          "bodyComHeightM": 0.9127492402750678,
+          "combinedComHeightM": 0.9127492402750678
+        },
+        {
+          "phase": 0.96,
+          "accelerationMs2": -0.9270936103196659,
+          "forceN": 639.3280600569841,
+          "bodyComHeightM": 0.9160808448382582,
+          "combinedComHeightM": 0.9160808448382584
+        },
+        {
+          "phase": 0.97,
+          "accelerationMs2": -0.9396950691818872,
+          "forceN": 638.4207550189042,
+          "bodyComHeightM": 0.9186856080109582,
+          "combinedComHeightM": 0.9186856080109583
+        },
+        {
+          "phase": 0.98,
+          "accelerationMs2": -0.9491343813822446,
+          "forceN": 637.7411245404784,
+          "bodyComHeightM": 0.9205536502494196,
+          "combinedComHeightM": 0.9205536502494197
+        },
+        {
+          "phase": 0.99,
+          "accelerationMs2": -0.9550417854624662,
+          "forceN": 637.3157914467024,
+          "bodyComHeightM": 0.9216775711328775,
+          "combinedComHeightM": 0.9216775711328774
+        }
+      ]
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "loadKg": 20,
+      "minForceN": 810.13792862074,
+      "maxForceN": 1031.8776731152602,
+      "minimumRatioToStaticWeight": 0.8979465006118742,
+      "maximumRatioToStaticWeight": 1.143719992484315,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.4094116642963075,
+        "forceN": 1031.8776731152602,
+        "bodyComHeightM": 0.5144505932085863,
+        "combinedComHeightM": 0.5960963091297561
+      },
+      "frames": [
+        {
+          "phase": 0.01,
+          "accelerationMs2": -1.0008029497745643,
+          "forceN": 810.13792862074,
+          "bodyComHeightM": 0.9216775711328775,
+          "combinedComHeightM": 1.0516483151177811
+        },
+        {
+          "phase": 0.02,
+          "accelerationMs2": -0.9959841073678253,
+          "forceN": 810.58126212216,
+          "bodyComHeightM": 0.9205536502494196,
+          "combinedComHeightM": 1.0504707265221744
+        },
+        {
+          "phase": 0.03,
+          "accelerationMs2": -0.9882489082193853,
+          "forceN": 811.2929004438165,
+          "bodyComHeightM": 0.9186856080109582,
+          "combinedComHeightM": 1.0485122863863914
+        },
+        {
+          "phase": 0.04,
+          "accelerationMs2": -0.9778548338843124,
+          "forceN": 812.2491552826432,
+          "bodyComHeightM": 0.9160808448382584,
+          "combinedComHeightM": 1.0457790591065643
+        },
+        {
+          "phase": 0.05,
+          "accelerationMs2": -0.9649678576453429,
+          "forceN": 813.4347570966283,
+          "bodyComHeightM": 0.9127492402750678,
+          "combinedComHeightM": 1.042279193636972
+        },
+        {
+          "phase": 0.06,
+          "accelerationMs2": -0.9496533302281583,
+          "forceN": 814.8436936190094,
+          "bodyComHeightM": 0.9087029435929473,
+          "combinedComHeightM": 1.0380227933669857
+        },
+        {
+          "phase": 0.07,
+          "accelerationMs2": -0.9319041777722703,
+          "forceN": 816.476615644951,
+          "bodyComHeightM": 0.9039562555171756,
+          "combinedComHeightM": 1.0330218648861005
+        },
+        {
+          "phase": 0.08,
+          "accelerationMs2": -0.9116713481544878,
+          "forceN": 818.338035969787,
+          "bodyComHeightM": 0.8985255745918352,
+          "combinedComHeightM": 1.0272903235298418
+        },
+        {
+          "phase": 0.09,
+          "accelerationMs2": -0.8888856818809194,
+          "forceN": 820.4343172669553,
+          "bodyComHeightM": 0.8924293796278201,
+          "combinedComHeightM": 1.02084403183663
+        },
+        {
+          "phase": 0.1,
+          "accelerationMs2": -0.8634719403037704,
+          "forceN": 822.772381492053,
+          "bodyComHeightM": 0.8856882283477288,
+          "combinedComHeightM": 1.0137008537688237
+        },
+        {
+          "phase": 0.11,
+          "accelerationMs2": -0.8353578575950815,
+          "forceN": 825.3588771012525,
+          "bodyComHeightM": 0.8783247601835509,
+          "combinedComHeightM": 1.0058807136998191
+        },
+        {
+          "phase": 0.12,
+          "accelerationMs2": -0.804480320609191,
+          "forceN": 828.1996105039543,
+          "bodyComHeightM": 0.8703636960694682,
+          "combinedComHeightM": 0.9974056530704599
+        },
+        {
+          "phase": 0.13,
+          "accelerationMs2": -0.7707898330362701,
+          "forceN": 831.2991353606631,
+          "bodyComHeightM": 0.861831830780997,
+          "combinedComHeightM": 0.988299879869743
+        },
+        {
+          "phase": 0.14,
+          "accelerationMs2": -0.7342538287067449,
+          "forceN": 834.6604477589794,
+          "bodyComHeightM": 0.8527580148694425,
+          "combinedComHeightM": 0.9785898074399257
+        },
+        {
+          "phase": 0.15,
+          "accelerationMs2": -0.6948590988908707,
+          "forceN": 838.2847629020398,
+          "bodyComHeightM": 0.843173124137305,
+          "combinedComHeightM": 0.9683040800084024
+        },
+        {
+          "phase": 0.16,
+          "accelerationMs2": -0.6526134613450102,
+          "forceN": 842.171361556259,
+          "bodyComHeightM": 0.83311001521314,
+          "combinedComHeightM": 0.9574735830433482
+        },
+        {
+          "phase": 0.17,
+          "accelerationMs2": -0.6075467402720781,
+          "forceN": 846.3174998949687,
+          "bodyComHeightM": 0.8226034662655286,
+          "combinedComHeightM": 0.9461314371245995
+        },
+        {
+          "phase": 0.18,
+          "accelerationMs2": -0.559711101241699,
+          "forceN": 850.7183786857636,
+          "bodyComHeightM": 0.8116901023161689,
+          "combinedComHeightM": 0.9343129745614774
+        },
+        {
+          "phase": 0.19,
+          "accelerationMs2": -0.5091807725365487,
+          "forceN": 855.3671689266374,
+          "bodyComHeightM": 0.8004083050062012,
+          "combinedComHeightM": 0.9220556984949819
+        },
+        {
+          "phase": 0.2,
+          "accelerationMs2": -0.4560511752783116,
+          "forceN": 860.2550918743952,
+          "bodyComHeightM": 0.7887981070569934,
+          "combinedComHeightM": 0.9093992247028178
+        },
+        {
+          "phase": 0.21,
+          "accelerationMs2": -0.40043747626995274,
+          "forceN": 865.3715521831642,
+          "bodyComHeightM": 0.7769010720602881,
+          "combinedComHeightM": 0.8963852067892354
+        },
+        {
+          "phase": 0.22,
+          "accelerationMs2": -0.342472570396478,
+          "forceN": 870.704323523524,
+          "bodyComHeightM": 0.7647601606439286,
+          "combinedComHeightM": 0.8830572458942574
+        },
+        {
+          "phase": 0.23,
+          "accelerationMs2": -0.28230449609837865,
+          "forceN": 876.2397863589491,
+          "bodyComHeightM": 0.7524195844971202,
+          "combinedComHeightM": 0.8694607865040885
+        },
+        {
+          "phase": 0.24,
+          "accelerationMs2": -0.22009329161993288,
+          "forceN": 881.9632171709661,
+          "bodyComHeightM": 0.7399246502081627,
+          "combinedComHeightM": 0.8556430003889786
+        },
+        {
+          "phase": 0.25,
+          "accelerationMs2": -0.15600731617178376,
+          "forceN": 887.8591269121958,
+          "bodyComHeightM": 0.7273215953656705,
+          "combinedComHeightM": 0.8416526611332386
+        },
+        {
+          "phase": 0.26,
+          "accelerationMs2": -0.09021909370951205,
+          "forceN": 893.9116433787248,
+          "bodyComHeightM": 0.7146574198886838,
+          "combinedComHeightM": 0.8275400121416199
+        },
+        {
+          "phase": 0.27,
+          "accelerationMs2": -0.02290079304449659,
+          "forceN": 900.1049270399062,
+          "bodyComHeightM": 0.7019797160541122,
+          "combinedComHeightM": 0.8133566313805329
+        },
+        {
+          "phase": 0.28,
+          "accelerationMs2": 0.04578046005864632,
+          "forceN": 906.4236023253953,
+          "bodyComHeightM": 0.6893365011351189,
+          "combinedComHeightM": 0.7991552963976991
+        },
+        {
+          "phase": 0.29,
+          "accelerationMs2": 0.11566713309770932,
+          "forceN": 912.8531762449892,
+          "bodyComHeightM": 0.676776056883102,
+          "combinedComHeightM": 0.7849898532955513
+        },
+        {
+          "phase": 0.3,
+          "accelerationMs2": 0.18661525794672293,
+          "forceN": 919.3804037310985,
+          "bodyComHeightM": 0.6643467801881431,
+          "combinedComHeightM": 0.770915093225752
+        },
+        {
+          "phase": 0.31,
+          "accelerationMs2": 0.25849722731743063,
+          "forceN": 925.9935449132036,
+          "bodyComHeightM": 0.6520970490279179,
+          "combinedComHeightM": 0.756986639518183
+        },
+        {
+          "phase": 0.32,
+          "accelerationMs2": 0.3312026626983711,
+          "forceN": 932.68244496825,
+          "bodyComHeightM": 0.6400751071412405,
+          "combinedComHeightM": 0.7432608476368309
+        },
+        {
+          "phase": 0.33,
+          "accelerationMs2": 0.40463645967101464,
+          "forceN": 939.4383542897333,
+          "bodyComHeightM": 0.6283289696197306,
+          "combinedComHeightM": 0.7297947186430342
+        },
+        {
+          "phase": 0.34,
+          "accelerationMs2": 0.47871302462110704,
+          "forceN": 946.2533982651418,
+          "bodyComHeightM": 0.616906349701484,
+          "combinedComHeightM": 0.7166458246336197
+        },
+        {
+          "phase": 0.35,
+          "accelerationMs2": 0.5533457120196031,
+          "forceN": 953.1196055058034,
+          "bodyComHeightM": 0.6058546044226426,
+          "combinedComHeightM": 0.7038722416355081
+        },
+        {
+          "phase": 0.36,
+          "accelerationMs2": 0.6284306002083758,
+          "forceN": 960.0274152191705,
+          "bodyComHeightM": 0.595220693459576,
+          "combinedComHeightM": 0.6915324816756199
+        },
+        {
+          "phase": 0.37,
+          "accelerationMs2": 0.7038240600591349,
+          "forceN": 966.9636135254403,
+          "bodyComHeightM": 0.5850511416026163,
+          "combinedComHeightM": 0.679685411306295
+        },
+        {
+          "phase": 0.38,
+          "accelerationMs2": 0.7793141360379738,
+          "forceN": 973.9087005154935,
+          "bodyComHeightM": 0.5753919910988308,
+          "combinedComHeightM": 0.6683901390000565
+        },
+        {
+          "phase": 0.39,
+          "accelerationMs2": 0.8545866354490809,
+          "forceN": 980.8337704613153,
+          "bodyComHeightM": 0.566288725996736,
+          "combinedComHeightM": 0.6577058489764718
+        },
+        {
+          "phase": 0.4,
+          "accelerationMs2": 0.9291880582111472,
+          "forceN": 987.6971013554255,
+          "bodyComHeightM": 0.5577861472016448,
+          "combinedComHeightM": 0.6476915548750791
+        },
+        {
+          "phase": 0.41,
+          "accelerationMs2": 1.0024890968894953,
+          "forceN": 994.4407969138335,
+          "bodyComHeightM": 0.5499281749647471,
+          "combinedComHeightM": 0.6384057442113241
+        },
+        {
+          "phase": 0.42,
+          "accelerationMs2": 1.0736542844229455,
+          "forceN": 1000.9879941669109,
+          "bodyComHeightM": 0.5427575558966921,
+          "combinedComHeightM": 0.6299058849995305
+        },
+        {
+          "phase": 0.43,
+          "accelerationMs2": 1.1416251592442381,
+          "forceN": 1007.2413146504698,
+          "bodyComHeightM": 0.5363154553139977,
+          "combinedComHeightM": 0.6222477707467244
+        },
+        {
+          "phase": 0.44,
+          "accelerationMs2": 1.2051254784241494,
+          "forceN": 1013.0833440150217,
+          "bodyComHeightM": 0.5306409237030774,
+          "combinedComHeightM": 0.6154846906187659
+        },
+        {
+          "phase": 0.45,
+          "accelerationMs2": 1.2626967014736137,
+          "forceN": 1018.3798965355724,
+          "bodyComHeightM": 0.525770238841269,
+          "combinedComHeightM": 0.6096664288658918
+        },
+        {
+          "phase": 0.46,
+          "accelerationMs2": 1.3127692783353895,
+          "forceN": 1022.9865736068557,
+          "bodyComHeightM": 0.5217361423447787,
+          "combinedComHeightM": 0.6048381213269731
+        },
+        {
+          "phase": 0.47,
+          "accelerationMs2": 1.3537696457623691,
+          "forceN": 1026.758607410138,
+          "bodyComHeightM": 0.5185670095318549,
+          "combinedComHeightM": 0.6010390249022693
+        },
+        {
+          "phase": 0.48,
+          "accelerationMs2": 1.384254648906944,
+          "forceN": 1029.5632276994388,
+          "bodyComHeightM": 0.5162860113480204,
+          "combinedComHeightM": 0.5983012838798433
+        },
+        {
+          "phase": 0.49,
+          "accelerationMs2": 1.4030561291822456,
+          "forceN": 1031.2929638847666,
+          "bodyComHeightM": 0.5149103422175763,
+          "combinedComHeightM": 0.5966487985021602
+        },
+        {
+          "phase": 0.5,
+          "accelerationMs2": 1.4094116642963075,
+          "forceN": 1031.8776731152602,
+          "bodyComHeightM": 0.5144505932085863,
+          "combinedComHeightM": 0.5960963091297561
+        },
+        {
+          "phase": 0.51,
+          "accelerationMs2": 1.4030561291822456,
+          "forceN": 1031.2929638847666,
+          "bodyComHeightM": 0.5149103422175763,
+          "combinedComHeightM": 0.5966487985021602
+        },
+        {
+          "phase": 0.52,
+          "accelerationMs2": 1.384254648906944,
+          "forceN": 1029.5632276994388,
+          "bodyComHeightM": 0.5162860113480204,
+          "combinedComHeightM": 0.5983012838798433
+        },
+        {
+          "phase": 0.53,
+          "accelerationMs2": 1.3537696457623691,
+          "forceN": 1026.758607410138,
+          "bodyComHeightM": 0.5185670095318549,
+          "combinedComHeightM": 0.6010390249022693
+        },
+        {
+          "phase": 0.54,
+          "accelerationMs2": 1.3127692783355311,
+          "forceN": 1022.9865736068688,
+          "bodyComHeightM": 0.5217361423447788,
+          "combinedComHeightM": 0.6048381213269731
+        },
+        {
+          "phase": 0.55,
+          "accelerationMs2": 1.2626967014733306,
+          "forceN": 1018.3798965355463,
+          "bodyComHeightM": 0.525770238841269,
+          "combinedComHeightM": 0.609666428865892
+        },
+        {
+          "phase": 0.56,
+          "accelerationMs2": 1.2051254784242909,
+          "forceN": 1013.0833440150346,
+          "bodyComHeightM": 0.5306409237030774,
+          "combinedComHeightM": 0.6154846906187659
+        },
+        {
+          "phase": 0.57,
+          "accelerationMs2": 1.1416251592439548,
+          "forceN": 1007.2413146504438,
+          "bodyComHeightM": 0.5363154553139977,
+          "combinedComHeightM": 0.6222477707467244
+        },
+        {
+          "phase": 0.58,
+          "accelerationMs2": 1.0736542844230872,
+          "forceN": 1000.987994166924,
+          "bodyComHeightM": 0.542757555896692,
+          "combinedComHeightM": 0.6299058849995304
+        },
+        {
+          "phase": 0.59,
+          "accelerationMs2": 1.002489096889637,
+          "forceN": 994.4407969138465,
+          "bodyComHeightM": 0.549928174964747,
+          "combinedComHeightM": 0.638405744211324
+        },
+        {
+          "phase": 0.6,
+          "accelerationMs2": 0.9291880582111472,
+          "forceN": 987.6971013554255,
+          "bodyComHeightM": 0.5577861472016448,
+          "combinedComHeightM": 0.6476915548750791
+        },
+        {
+          "phase": 0.61,
+          "accelerationMs2": 0.8545866354487976,
+          "forceN": 980.8337704612893,
+          "bodyComHeightM": 0.566288725996736,
+          "combinedComHeightM": 0.6577058489764718
+        },
+        {
+          "phase": 0.62,
+          "accelerationMs2": 0.7793141360383987,
+          "forceN": 973.9087005155326,
+          "bodyComHeightM": 0.5753919910988305,
+          "combinedComHeightM": 0.6683901390000563
+        },
+        {
+          "phase": 0.63,
+          "accelerationMs2": 0.7038240600591349,
+          "forceN": 966.9636135254403,
+          "bodyComHeightM": 0.5850511416026162,
+          "combinedComHeightM": 0.6796854113062949
+        },
+        {
+          "phase": 0.64,
+          "accelerationMs2": 0.628430600207951,
+          "forceN": 960.0274152191314,
+          "bodyComHeightM": 0.5952206934595761,
+          "combinedComHeightM": 0.6915324816756199
+        },
+        {
+          "phase": 0.65,
+          "accelerationMs2": 0.5533457120203111,
+          "forceN": 953.1196055058685,
+          "bodyComHeightM": 0.6058546044226425,
+          "combinedComHeightM": 0.7038722416355079
+        },
+        {
+          "phase": 0.66,
+          "accelerationMs2": 0.4787130246205406,
+          "forceN": 946.2533982650897,
+          "bodyComHeightM": 0.6169063497014841,
+          "combinedComHeightM": 0.7166458246336198
+        },
+        {
+          "phase": 0.67,
+          "accelerationMs2": 0.40463645967143946,
+          "forceN": 939.4383542897724,
+          "bodyComHeightM": 0.6283289696197306,
+          "combinedComHeightM": 0.7297947186430342
+        },
+        {
+          "phase": 0.68,
+          "accelerationMs2": 0.3312026626978047,
+          "forceN": 932.682444968198,
+          "bodyComHeightM": 0.6400751071412407,
+          "combinedComHeightM": 0.7432608476368311
+        },
+        {
+          "phase": 0.69,
+          "accelerationMs2": 0.25849722731799707,
+          "forceN": 925.9935449132556,
+          "bodyComHeightM": 0.6520970490279178,
+          "combinedComHeightM": 0.7569866395181828
+        },
+        {
+          "phase": 0.7,
+          "accelerationMs2": 0.1866152579462981,
+          "forceN": 919.3804037310593,
+          "bodyComHeightM": 0.6643467801881431,
+          "combinedComHeightM": 0.770915093225752
+        },
+        {
+          "phase": 0.71,
+          "accelerationMs2": 0.11566713309799254,
+          "forceN": 912.8531762450152,
+          "bodyComHeightM": 0.6767760568831019,
+          "combinedComHeightM": 0.7849898532955512
+        },
+        {
+          "phase": 0.72,
+          "accelerationMs2": 0.0457804600585047,
+          "forceN": 906.4236023253824,
+          "bodyComHeightM": 0.6893365011351189,
+          "combinedComHeightM": 0.7991552963976991
+        },
+        {
+          "phase": 0.73,
+          "accelerationMs2": -0.02290079304449659,
+          "forceN": 900.1049270399062,
+          "bodyComHeightM": 0.7019797160541122,
+          "combinedComHeightM": 0.8133566313805329
+        },
+        {
+          "phase": 0.74,
+          "accelerationMs2": -0.09021909370979526,
+          "forceN": 893.9116433786987,
+          "bodyComHeightM": 0.7146574198886838,
+          "combinedComHeightM": 0.8275400121416199
+        },
+        {
+          "phase": 0.75,
+          "accelerationMs2": -0.1560073161713589,
+          "forceN": 887.859126912235,
+          "bodyComHeightM": 0.7273215953656704,
+          "combinedComHeightM": 0.8416526611332383
+        },
+        {
+          "phase": 0.76,
+          "accelerationMs2": -0.22009329161993288,
+          "forceN": 881.9632171709661,
+          "bodyComHeightM": 0.7399246502081624,
+          "combinedComHeightM": 0.8556430003889784
+        },
+        {
+          "phase": 0.77,
+          "accelerationMs2": -0.2823044960986619,
+          "forceN": 876.2397863589231,
+          "bodyComHeightM": 0.7524195844971202,
+          "combinedComHeightM": 0.8694607865040885
+        },
+        {
+          "phase": 0.78,
+          "accelerationMs2": -0.3424725703961948,
+          "forceN": 870.70432352355,
+          "bodyComHeightM": 0.7647601606439285,
+          "combinedComHeightM": 0.8830572458942573
+        },
+        {
+          "phase": 0.79,
+          "accelerationMs2": -0.4004374762700944,
+          "forceN": 865.3715521831513,
+          "bodyComHeightM": 0.7769010720602881,
+          "combinedComHeightM": 0.8963852067892354
+        },
+        {
+          "phase": 0.8,
+          "accelerationMs2": -0.4560511752778868,
+          "forceN": 860.2550918744344,
+          "bodyComHeightM": 0.7887981070569933,
+          "combinedComHeightM": 0.9093992247028178
+        },
+        {
+          "phase": 0.81,
+          "accelerationMs2": -0.5091807725373984,
+          "forceN": 855.3671689265593,
+          "bodyComHeightM": 0.8004083050062014,
+          "combinedComHeightM": 0.9220556984949823
+        },
+        {
+          "phase": 0.82,
+          "accelerationMs2": -0.559711101241699,
+          "forceN": 850.7183786857636,
+          "bodyComHeightM": 0.8116901023161689,
+          "combinedComHeightM": 0.9343129745614774
+        },
+        {
+          "phase": 0.83,
+          "accelerationMs2": -0.6075467402720781,
+          "forceN": 846.3174998949687,
+          "bodyComHeightM": 0.8226034662655286,
+          "combinedComHeightM": 0.9461314371245995
+        },
+        {
+          "phase": 0.84,
+          "accelerationMs2": -0.6526134613450102,
+          "forceN": 842.171361556259,
+          "bodyComHeightM": 0.83311001521314,
+          "combinedComHeightM": 0.9574735830433482
+        },
+        {
+          "phase": 0.85,
+          "accelerationMs2": -0.6948590988914372,
+          "forceN": 838.2847629019877,
+          "bodyComHeightM": 0.843173124137305,
+          "combinedComHeightM": 0.9683040800084024
+        },
+        {
+          "phase": 0.86,
+          "accelerationMs2": -0.7342538287067449,
+          "forceN": 834.6604477589794,
+          "bodyComHeightM": 0.8527580148694425,
+          "combinedComHeightM": 0.9785898074399257
+        },
+        {
+          "phase": 0.87,
+          "accelerationMs2": -0.7707898330362701,
+          "forceN": 831.2991353606631,
+          "bodyComHeightM": 0.861831830780997,
+          "combinedComHeightM": 0.988299879869743
+        },
+        {
+          "phase": 0.88,
+          "accelerationMs2": -0.8044803206090494,
+          "forceN": 828.1996105039674,
+          "bodyComHeightM": 0.8703636960694681,
+          "combinedComHeightM": 0.9974056530704598
+        },
+        {
+          "phase": 0.89,
+          "accelerationMs2": -0.8353578575953647,
+          "forceN": 825.3588771012264,
+          "bodyComHeightM": 0.8783247601835509,
+          "combinedComHeightM": 1.0058807136998191
+        },
+        {
+          "phase": 0.9,
+          "accelerationMs2": -0.8634719403037704,
+          "forceN": 822.772381492053,
+          "bodyComHeightM": 0.8856882283477288,
+          "combinedComHeightM": 1.0137008537688237
+        },
+        {
+          "phase": 0.91,
+          "accelerationMs2": -0.8888856818809194,
+          "forceN": 820.4343172669553,
+          "bodyComHeightM": 0.8924293796278201,
+          "combinedComHeightM": 1.02084403183663
+        },
+        {
+          "phase": 0.92,
+          "accelerationMs2": -0.9116713481544878,
+          "forceN": 818.338035969787,
+          "bodyComHeightM": 0.8985255745918352,
+          "combinedComHeightM": 1.0272903235298418
+        },
+        {
+          "phase": 0.93,
+          "accelerationMs2": -0.9319041777722703,
+          "forceN": 816.476615644951,
+          "bodyComHeightM": 0.9039562555171756,
+          "combinedComHeightM": 1.0330218648861005
+        },
+        {
+          "phase": 0.94,
+          "accelerationMs2": -0.9496533302281583,
+          "forceN": 814.8436936190094,
+          "bodyComHeightM": 0.9087029435929472,
+          "combinedComHeightM": 1.0380227933669857
+        },
+        {
+          "phase": 0.95,
+          "accelerationMs2": -0.9649678576456261,
+          "forceN": 813.4347570966023,
+          "bodyComHeightM": 0.9127492402750678,
+          "combinedComHeightM": 1.042279193636972
+        },
+        {
+          "phase": 0.96,
+          "accelerationMs2": -0.9778548338837459,
+          "forceN": 812.2491552826953,
+          "bodyComHeightM": 0.9160808448382582,
+          "combinedComHeightM": 1.045779059106564
+        },
+        {
+          "phase": 0.97,
+          "accelerationMs2": -0.9882489082196685,
+          "forceN": 811.2929004437905,
+          "bodyComHeightM": 0.9186856080109582,
+          "combinedComHeightM": 1.0485122863863914
+        },
+        {
+          "phase": 0.98,
+          "accelerationMs2": -0.9959841073678253,
+          "forceN": 810.58126212216,
+          "bodyComHeightM": 0.9205536502494196,
+          "combinedComHeightM": 1.0504707265221744
+        },
+        {
+          "phase": 0.99,
+          "accelerationMs2": -1.0008029497745643,
+          "forceN": 810.13792862074,
+          "bodyComHeightM": 0.9216775711328775,
+          "combinedComHeightM": 1.0516483151177811
+        }
+      ]
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72
+      },
+      "loadKg": 60,
+      "minForceN": 1155.7822029689105,
+      "maxForceN": 1514.588028288249,
+      "minimumRatioToStaticWeight": 0.8928559477566248,
+      "maximumRatioToStaticWeight": 1.170037854869546,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.6675017294564318,
+        "forceN": 1514.588028288249,
+        "bodyComHeightM": 0.5144505932085863,
+        "combinedComHeightM": 0.6851643628619413
+      }
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "loadKg": 0,
+      "minForceN": 786.6611914383764,
+      "maxForceN": 999.6593208038012,
+      "minimumRatioToStaticWeight": 0.8913013011447181,
+      "maximumRatioToStaticWeight": 1.132632018753489,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.300675786708903,
+        "forceN": 999.6593208038012,
+        "bodyComHeightM": 0.565554686189826,
+        "combinedComHeightM": 0.565554686189826
+      }
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "loadKg": 20,
+      "minForceN": 956.7883186489787,
+      "maxForceN": 1245.5620946225008,
+      "minimumRatioToStaticWeight": 0.8869568735584145,
+      "maximumRatioToStaticWeight": 1.1546544201430116,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.5166417692954621,
+        "forceN": 1245.5620946225008,
+        "bodyComHeightM": 0.565554686189826,
+        "combinedComHeightM": 0.6352088565953825
+      }
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "loadKg": 60,
+      "minForceN": 1297.0425730700563,
+      "maxForceN": 1737.3676422600104,
+      "minimumRatioToStaticWeight": 0.8817435604547638,
+      "maximumRatioToStaticWeight": 1.1810813018105133,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.7758009484000694,
+        "forceN": 1737.3676422600104,
+        "bodyComHeightM": 0.565554686189826,
+        "combinedComHeightM": 0.7187938610820503
+      }
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "loadKg": 0,
+      "minForceN": 413.268275500863,
+      "maxForceN": 497.9874384405662,
+      "minimumRatioToStaticWeight": 0.9161225235601287,
+      "maximumRatioToStaticWeight": 1.1039257931243334,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.0191638791427449,
+        "forceN": 497.9874384405662,
+        "bodyComHeightM": 0.44080751733053214,
+        "combinedComHeightM": 0.44080751733053214
+      }
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "loadKg": 20,
+      "minForceN": 589.3253887637013,
+      "maxForceN": 733.6127199133674,
+      "minimumRatioToStaticWeight": 0.910522202487677,
+      "maximumRatioToStaticWeight": 1.1334496735492374,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.308694241111629,
+        "forceN": 733.6127199133674,
+        "bodyComHeightM": 0.44080751733053214,
+        "combinedComHeightM": 0.5408320961557448
+      }
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "loadKg": 60,
+      "minForceN": 941.4396152893488,
+      "maxForceN": 1204.8632828589223,
+      "minimumRatioToStaticWeight": 0.9056615464625024,
+      "maximumRatioToStaticWeight": 1.1590741735406176,
+      "deepest": {
+        "phase": 0.5,
+        "accelerationMs2": 1.5599847439520982,
+        "forceN": 1204.8632828589223,
+        "bodyComHeightM": 0.44080751733053214,
+        "combinedComHeightM": 0.6276458815512125
+      }
+    }
+  ]
+}

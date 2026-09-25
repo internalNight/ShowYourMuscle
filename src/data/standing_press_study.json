@@ -1,0 +1,12 @@
+{
+  "sourceUrl": "https://e-kjab.org/archive/detail/304",
+  "study": "An et al. (2025), Korean Journal of Applied Biomechanics 35(2), Table 5",
+  "participants": 14,
+  "meanHeightCm": 173.32,
+  "loadPercentOneRm": 70,
+  "barbellAscentVerticalRangeCm": { "mean": 44.33, "sd": 4.88 },
+  "barbellAscentAnteriorMaxCm": { "mean": 13.99, "sd": 3.39 },
+  "barbellAscentAnteriorMinCm": { "mean": 4.72, "sd": 4.19 },
+  "barbellAscentAnteriorPosteriorRangeCm": { "mean": 9.28, "sd": 3.44 },
+  "status": "published_group_summary_not_individual_validation"
+}

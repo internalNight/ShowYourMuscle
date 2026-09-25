@@ -1,0 +1,294 @@
+{
+  "status": "research_only_source_vs_candidate_inverse_dynamics",
+  "source": "AB02 subject-scaled gait2354 model, measured IK and force plates",
+  "candidate": "RajagopalLaiUhlrich2023, joint-center segment and total-mass scaled",
+  "comparison": "source ten-axis ID mapped to candidate joint axes, then compared with separately recomputed candidate ID on the same measured inputs",
+  "freeForcePlateMomentIncluded": false,
+  "windows": {
+    "shallow": {
+      "intervalS": [
+        23.0,
+        23.1
+      ],
+      "frameCount": 21,
+      "tenJointAxes": {
+        "hip_flexion_r": {
+          "sourceMappedMedianNm": -56.189,
+          "candidateMedianNm": -42.628,
+          "candidateMinusMappedSourceMedianNm": 14.135,
+          "candidateMinusMappedSourceMaeNm": 13.484,
+          "candidateMinusMappedSourceMaxAbsNm": 14.591
+        },
+        "hip_adduction_r": {
+          "sourceMappedMedianNm": 9.945,
+          "candidateMedianNm": 8.662,
+          "candidateMinusMappedSourceMedianNm": -1.225,
+          "candidateMinusMappedSourceMaeNm": 1.354,
+          "candidateMinusMappedSourceMaxAbsNm": 2.352
+        },
+        "hip_rotation_r": {
+          "sourceMappedMedianNm": 0.666,
+          "candidateMedianNm": -2.448,
+          "candidateMinusMappedSourceMedianNm": -3.391,
+          "candidateMinusMappedSourceMaeNm": 3.266,
+          "candidateMinusMappedSourceMaxAbsNm": 3.633
+        },
+        "knee_angle_r": {
+          "sourceMappedMedianNm": -29.042,
+          "candidateMedianNm": -35.284,
+          "candidateMinusMappedSourceMedianNm": -6.241,
+          "candidateMinusMappedSourceMaeNm": 5.951,
+          "candidateMinusMappedSourceMaxAbsNm": 6.605
+        },
+        "ankle_angle_r": {
+          "sourceMappedMedianNm": -2.927,
+          "candidateMedianNm": 1.685,
+          "candidateMinusMappedSourceMedianNm": 4.612,
+          "candidateMinusMappedSourceMaeNm": 4.639,
+          "candidateMinusMappedSourceMaxAbsNm": 5.128
+        },
+        "hip_flexion_l": {
+          "sourceMappedMedianNm": -53.114,
+          "candidateMedianNm": -39.861,
+          "candidateMinusMappedSourceMedianNm": 13.253,
+          "candidateMinusMappedSourceMaeNm": 12.84,
+          "candidateMinusMappedSourceMaxAbsNm": 13.4
+        },
+        "hip_adduction_l": {
+          "sourceMappedMedianNm": 1.768,
+          "candidateMedianNm": 0.213,
+          "candidateMinusMappedSourceMedianNm": -1.246,
+          "candidateMinusMappedSourceMaeNm": 1.377,
+          "candidateMinusMappedSourceMaxAbsNm": 2.0
+        },
+        "hip_rotation_l": {
+          "sourceMappedMedianNm": 2.535,
+          "candidateMedianNm": 1.783,
+          "candidateMinusMappedSourceMedianNm": -0.752,
+          "candidateMinusMappedSourceMaeNm": 0.729,
+          "candidateMinusMappedSourceMaxAbsNm": 0.825
+        },
+        "knee_angle_l": {
+          "sourceMappedMedianNm": -32.306,
+          "candidateMedianNm": -38.502,
+          "candidateMinusMappedSourceMedianNm": -6.072,
+          "candidateMinusMappedSourceMaeNm": 5.882,
+          "candidateMinusMappedSourceMaxAbsNm": 6.229
+        },
+        "ankle_angle_l": {
+          "sourceMappedMedianNm": -9.265,
+          "candidateMedianNm": -5.933,
+          "candidateMinusMappedSourceMedianNm": 3.332,
+          "candidateMinusMappedSourceMaeNm": 3.356,
+          "candidateMinusMappedSourceMaxAbsNm": 3.92
+        }
+      },
+      "pelvis": {
+        "pelvis_tx_force": {
+          "sourceMappedMedianN": -11.856,
+          "candidateMedianN": -9.691,
+          "candidateMinusMappedSourceMedianN": 2.165,
+          "candidateMinusMappedSourceMaeN": 3.324,
+          "candidateMinusMappedSourceMaxAbsN": 9.415
+        },
+        "pelvis_ty_force": {
+          "sourceMappedMedianN": 24.844,
+          "candidateMedianN": 24.426,
+          "candidateMinusMappedSourceMedianN": -0.418,
+          "candidateMinusMappedSourceMaeN": 6.182,
+          "candidateMinusMappedSourceMaxAbsN": 15.838
+        },
+        "pelvis_tz_force": {
+          "sourceMappedMedianN": 2.255,
+          "candidateMedianN": -20.103,
+          "candidateMinusMappedSourceMedianN": -22.26,
+          "candidateMinusMappedSourceMaeN": 17.723,
+          "candidateMinusMappedSourceMaxAbsN": 24.621
+        },
+        "pelvis_tilt_moment": {
+          "sourceMappedMedianNm": -2.288,
+          "candidateMedianNm": -6.271,
+          "candidateMinusMappedSourceMedianNm": -4.222,
+          "candidateMinusMappedSourceMaeNm": 4.238,
+          "candidateMinusMappedSourceMaxAbsNm": 4.818
+        },
+        "pelvis_list_moment": {
+          "sourceMappedMedianNm": -2.455,
+          "candidateMedianNm": -15.928,
+          "candidateMinusMappedSourceMedianNm": -12.114,
+          "candidateMinusMappedSourceMaeNm": 11.987,
+          "candidateMinusMappedSourceMaxAbsNm": 14.901
+        },
+        "pelvis_rotation_moment": {
+          "sourceMappedMedianNm": 3.485,
+          "candidateMedianNm": 4.794,
+          "candidateMinusMappedSourceMedianNm": 1.309,
+          "candidateMinusMappedSourceMaeNm": 1.105,
+          "candidateMinusMappedSourceMaxAbsNm": 1.861
+        }
+      },
+      "soPelvisReserveVsCandidateId": {
+        "tx": {
+          "convergedFrameCount": 21,
+          "meanAbsoluteDifferenceN": 2.476,
+          "maximumAbsoluteDifferenceN": 2.989
+        },
+        "ty": {
+          "convergedFrameCount": 21,
+          "meanAbsoluteDifferenceN": 0.614,
+          "maximumAbsoluteDifferenceN": 0.864
+        },
+        "tz": {
+          "convergedFrameCount": 21,
+          "meanAbsoluteDifferenceN": 0.405,
+          "maximumAbsoluteDifferenceN": 0.76
+        }
+      }
+    },
+    "deep": {
+      "intervalS": [
+        23.6,
+        23.7
+      ],
+      "frameCount": 21,
+      "tenJointAxes": {
+        "hip_flexion_r": {
+          "sourceMappedMedianNm": -73.954,
+          "candidateMedianNm": -50.176,
+          "candidateMinusMappedSourceMedianNm": 23.037,
+          "candidateMinusMappedSourceMaeNm": 23.245,
+          "candidateMinusMappedSourceMaxAbsNm": 24.024
+        },
+        "hip_adduction_r": {
+          "sourceMappedMedianNm": -20.603,
+          "candidateMedianNm": -20.301,
+          "candidateMinusMappedSourceMedianNm": 0.301,
+          "candidateMinusMappedSourceMaeNm": 0.668,
+          "candidateMinusMappedSourceMaxAbsNm": 1.184
+        },
+        "hip_rotation_r": {
+          "sourceMappedMedianNm": -41.696,
+          "candidateMedianNm": -53.823,
+          "candidateMinusMappedSourceMedianNm": -12.127,
+          "candidateMinusMappedSourceMaeNm": 12.225,
+          "candidateMinusMappedSourceMaxAbsNm": 12.607
+        },
+        "knee_angle_r": {
+          "sourceMappedMedianNm": -60.174,
+          "candidateMedianNm": -58.626,
+          "candidateMinusMappedSourceMedianNm": 1.603,
+          "candidateMinusMappedSourceMaeNm": 1.441,
+          "candidateMinusMappedSourceMaxAbsNm": 1.873
+        },
+        "ankle_angle_r": {
+          "sourceMappedMedianNm": -37.88,
+          "candidateMedianNm": -37.376,
+          "candidateMinusMappedSourceMedianNm": 0.504,
+          "candidateMinusMappedSourceMaeNm": 0.592,
+          "candidateMinusMappedSourceMaxAbsNm": 1.25
+        },
+        "hip_flexion_l": {
+          "sourceMappedMedianNm": -72.405,
+          "candidateMedianNm": -58.312,
+          "candidateMinusMappedSourceMedianNm": 14.079,
+          "candidateMinusMappedSourceMaeNm": 14.043,
+          "candidateMinusMappedSourceMaxAbsNm": 14.124
+        },
+        "hip_adduction_l": {
+          "sourceMappedMedianNm": 6.045,
+          "candidateMedianNm": 3.159,
+          "candidateMinusMappedSourceMedianNm": -2.887,
+          "candidateMinusMappedSourceMaeNm": 2.733,
+          "candidateMinusMappedSourceMaxAbsNm": 3.823
+        },
+        "hip_rotation_l": {
+          "sourceMappedMedianNm": -49.834,
+          "candidateMedianNm": -47.681,
+          "candidateMinusMappedSourceMedianNm": 2.152,
+          "candidateMinusMappedSourceMaeNm": 2.007,
+          "candidateMinusMappedSourceMaxAbsNm": 3.352
+        },
+        "knee_angle_l": {
+          "sourceMappedMedianNm": -66.387,
+          "candidateMedianNm": -68.231,
+          "candidateMinusMappedSourceMedianNm": -1.871,
+          "candidateMinusMappedSourceMaeNm": 1.882,
+          "candidateMinusMappedSourceMaxAbsNm": 2.069
+        },
+        "ankle_angle_l": {
+          "sourceMappedMedianNm": -32.064,
+          "candidateMedianNm": -30.708,
+          "candidateMinusMappedSourceMedianNm": 1.356,
+          "candidateMinusMappedSourceMaeNm": 1.348,
+          "candidateMinusMappedSourceMaxAbsNm": 1.763
+        }
+      },
+      "pelvis": {
+        "pelvis_tx_force": {
+          "sourceMappedMedianN": -6.177,
+          "candidateMedianN": -16.788,
+          "candidateMinusMappedSourceMedianN": -11.344,
+          "candidateMinusMappedSourceMaeN": 9.716,
+          "candidateMinusMappedSourceMaxAbsN": 15.008
+        },
+        "pelvis_ty_force": {
+          "sourceMappedMedianN": 8.842,
+          "candidateMedianN": -30.654,
+          "candidateMinusMappedSourceMedianN": -39.549,
+          "candidateMinusMappedSourceMaeN": 39.343,
+          "candidateMinusMappedSourceMaxAbsN": 39.761
+        },
+        "pelvis_tz_force": {
+          "sourceMappedMedianN": -2.715,
+          "candidateMedianN": 4.545,
+          "candidateMinusMappedSourceMedianN": 7.26,
+          "candidateMinusMappedSourceMaeN": 7.203,
+          "candidateMinusMappedSourceMaxAbsN": 13.192
+        },
+        "pelvis_tilt_moment": {
+          "sourceMappedMedianNm": -12.74,
+          "candidateMedianNm": -13.466,
+          "candidateMinusMappedSourceMedianNm": -0.726,
+          "candidateMinusMappedSourceMaeNm": 2.047,
+          "candidateMinusMappedSourceMaxAbsNm": 5.197
+        },
+        "pelvis_list_moment": {
+          "sourceMappedMedianNm": -27.755,
+          "candidateMedianNm": -44.643,
+          "candidateMinusMappedSourceMedianNm": -16.889,
+          "candidateMinusMappedSourceMaeNm": 16.805,
+          "candidateMinusMappedSourceMaxAbsNm": 18.769
+        },
+        "pelvis_rotation_moment": {
+          "sourceMappedMedianNm": 0.269,
+          "candidateMedianNm": 0.945,
+          "candidateMinusMappedSourceMedianNm": 1.413,
+          "candidateMinusMappedSourceMaeNm": 1.33,
+          "candidateMinusMappedSourceMaxAbsNm": 1.987
+        }
+      },
+      "soPelvisReserveVsCandidateId": {
+        "tx": {
+          "convergedFrameCount": 8,
+          "meanAbsoluteDifferenceN": 0.721,
+          "maximumAbsoluteDifferenceN": 1.019
+        },
+        "ty": {
+          "convergedFrameCount": 8,
+          "meanAbsoluteDifferenceN": 0.305,
+          "maximumAbsoluteDifferenceN": 0.616
+        },
+        "tz": {
+          "convergedFrameCount": 8,
+          "meanAbsoluteDifferenceN": 0.201,
+          "maximumAbsoluteDifferenceN": 0.954
+        }
+      }
+    }
+  },
+  "limitations": [
+    "matching total mass and selected joint-center distances does not match body inertias, centers of mass or ground-contact frames",
+    "candidate subtalar and MTP motion was locked rather than reproduced",
+    "neither ID calculation identifies individual muscle force or predicts phone-user dynamics"
+  ]
+}

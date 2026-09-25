@@ -1,0 +1,38 @@
+{
+  "status": "group_repetition_velocity_comparison_only",
+  "sourceArticle": "https://doi.org/10.1519/JSC.0000000000004593",
+  "sourceData": "https://figshare.com/articles/dataset/22615546",
+  "sourceFile": "data_VBTapp.csv",
+  "sourceLicense": "CC BY 4.0",
+  "sourceParticipants": 27,
+  "repetitionsPerLoad": 135,
+  "measured": {
+    "fiftyPercentOneRmLpt": {
+      "repetitions": 135,
+      "medianMPerS": 0.8,
+      "meanMPerS": 0.7978518518518518,
+      "minimumMPerS": 0.35,
+      "maximumMPerS": 1.24
+    },
+    "seventyFivePercentOneRmLpt": {
+      "repetitions": 135,
+      "medianMPerS": 0.55,
+      "meanMPerS": 0.5567407407407408,
+      "minimumMPerS": 0.17,
+      "maximumMPerS": 0.97
+    }
+  },
+  "demo": {
+    "referenceStatureCm": 175,
+    "referenceHandVerticalStrokeM": 0.2842647721424011,
+    "ascentFractionOfCycle": 0.5,
+    "defaultCycleS": 2.8,
+    "defaultMeanAscentVelocityMPerS": 0.2030462658160008
+  },
+  "limitations": [
+    "Source rows are repetitions, not 135 independent participants.",
+    "The source records only mean concentric velocity; it cannot validate frame-wise kinematics or muscle force.",
+    "Load levels are percentages of self-reported 1RM, whereas demo load is not a calibrated percentage.",
+    "The viewer path is artificial and assumes symmetric descent/ascent timing."
+  ]
+}

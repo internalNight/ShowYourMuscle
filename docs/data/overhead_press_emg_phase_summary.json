@@ -1,0 +1,356 @@
+{
+  "source": {
+    "workbook_url": "https://zenodo.org/api/records/5744051/files/Raw%20data_new.xlsx/content",
+    "paper_url": "https://doi.org/10.3389/fphys.2022.825880",
+    "zenodo_record": "https://zenodo.org/records/5744051",
+    "md5": "e8b6c718179c993b0817208341e84130",
+    "license": "CC BY 4.0"
+  },
+  "measurement": "phase-averaged, normalized surface EMG RMS; percent of maximal voluntary excitation",
+  "protocol": "8 male competitive bodybuilders; seated press with 80-degree backrest; 80% exercise-specific 1RM; 6 repetitions; 2-second ascending and descending phases",
+  "participant_count": 8,
+  "limitations": [
+    "No frame-level kinematics",
+    "No measured hand forces or support reactions",
+    "Seated protocol differs from app standing press",
+    "EMG is not muscle force"
+  ],
+  "muscles": {
+    "pectoralis_major_clavicular": {
+      "conditions": {
+        "front_barbell_ascending": {
+          "mean_percent": 70.089,
+          "sd_percent": 4.071
+        },
+        "front_barbell_descending": {
+          "mean_percent": 40.027,
+          "sd_percent": 3.988
+        },
+        "back_barbell_ascending": {
+          "mean_percent": 58.038,
+          "sd_percent": 3.213
+        },
+        "back_barbell_descending": {
+          "mean_percent": 26.429,
+          "sd_percent": 1.687
+        },
+        "front_machine_ascending": {
+          "mean_percent": 61.833,
+          "sd_percent": 1.354
+        },
+        "front_machine_descending": {
+          "mean_percent": 28.219,
+          "sd_percent": 3.755
+        },
+        "back_machine_ascending": {
+          "mean_percent": 21.546,
+          "sd_percent": 2.254
+        },
+        "back_machine_descending": {
+          "mean_percent": 7.684,
+          "sd_percent": 1.008
+        }
+      },
+      "comparisons": {
+        "front_minus_back_barbell_ascending": {
+          "mean_difference_percentage_points": 12.051,
+          "sd_difference_percentage_points": 2.242,
+          "participants_positive": 8,
+          "participants_negative": 0
+        },
+        "front_minus_back_barbell_descending": {
+          "mean_difference_percentage_points": 13.598,
+          "sd_difference_percentage_points": 4.653,
+          "participants_positive": 8,
+          "participants_negative": 0
+        },
+        "front_barbell_ascending_minus_descending": {
+          "mean_difference_percentage_points": 30.062,
+          "sd_difference_percentage_points": 7.286,
+          "participants_positive": 8,
+          "participants_negative": 0
+        }
+      }
+    },
+    "triceps_brachii_lateral": {
+      "conditions": {
+        "front_barbell_ascending": {
+          "mean_percent": 89.687,
+          "sd_percent": 2.737
+        },
+        "front_barbell_descending": {
+          "mean_percent": 65.05,
+          "sd_percent": 2.199
+        },
+        "back_barbell_ascending": {
+          "mean_percent": 88.208,
+          "sd_percent": 2.872
+        },
+        "back_barbell_descending": {
+          "mean_percent": 48.672,
+          "sd_percent": 3.445
+        },
+        "front_machine_ascending": {
+          "mean_percent": 95.507,
+          "sd_percent": 3.267
+        },
+        "front_machine_descending": {
+          "mean_percent": 56.297,
+          "sd_percent": 2.802
+        },
+        "back_machine_ascending": {
+          "mean_percent": 86.82,
+          "sd_percent": 3.741
+        },
+        "back_machine_descending": {
+          "mean_percent": 49.686,
+          "sd_percent": 5.364
+        }
+      },
+      "comparisons": {
+        "front_minus_back_barbell_ascending": {
+          "mean_difference_percentage_points": 1.478,
+          "sd_difference_percentage_points": 2.951,
+          "participants_positive": 5,
+          "participants_negative": 3
+        },
+        "front_minus_back_barbell_descending": {
+          "mean_difference_percentage_points": 16.378,
+          "sd_difference_percentage_points": 4.338,
+          "participants_positive": 8,
+          "participants_negative": 0
+        },
+        "front_barbell_ascending_minus_descending": {
+          "mean_difference_percentage_points": 24.637,
+          "sd_difference_percentage_points": 3.17,
+          "participants_positive": 8,
+          "participants_negative": 0
+        }
+      }
+    },
+    "upper_trapezius": {
+      "conditions": {
+        "front_barbell_ascending": {
+          "mean_percent": 53.171,
+          "sd_percent": 3.537
+        },
+        "front_barbell_descending": {
+          "mean_percent": 28.048,
+          "sd_percent": 3.588
+        },
+        "back_barbell_ascending": {
+          "mean_percent": 52.471,
+          "sd_percent": 3.121
+        },
+        "back_barbell_descending": {
+          "mean_percent": 28.103,
+          "sd_percent": 3.025
+        },
+        "front_machine_ascending": {
+          "mean_percent": 53.296,
+          "sd_percent": 2.983
+        },
+        "front_machine_descending": {
+          "mean_percent": 28.51,
+          "sd_percent": 2.605
+        },
+        "back_machine_ascending": {
+          "mean_percent": 51.845,
+          "sd_percent": 1.958
+        },
+        "back_machine_descending": {
+          "mean_percent": 26.369,
+          "sd_percent": 2.16
+        }
+      },
+      "comparisons": {
+        "front_minus_back_barbell_ascending": {
+          "mean_difference_percentage_points": 0.7,
+          "sd_difference_percentage_points": 1.031,
+          "participants_positive": 4,
+          "participants_negative": 0
+        },
+        "front_minus_back_barbell_descending": {
+          "mean_difference_percentage_points": -0.055,
+          "sd_difference_percentage_points": 0.932,
+          "participants_positive": 2,
+          "participants_negative": 3
+        },
+        "front_barbell_ascending_minus_descending": {
+          "mean_difference_percentage_points": 25.124,
+          "sd_difference_percentage_points": 6.089,
+          "participants_positive": 8,
+          "participants_negative": 0
+        }
+      }
+    },
+    "anterior_deltoid": {
+      "conditions": {
+        "front_barbell_ascending": {
+          "mean_percent": 86.092,
+          "sd_percent": 6.416
+        },
+        "front_barbell_descending": {
+          "mean_percent": 45.106,
+          "sd_percent": 2.129
+        },
+        "back_barbell_ascending": {
+          "mean_percent": 91.688,
+          "sd_percent": 2.914
+        },
+        "back_barbell_descending": {
+          "mean_percent": 63.201,
+          "sd_percent": 2.334
+        },
+        "front_machine_ascending": {
+          "mean_percent": 83.089,
+          "sd_percent": 3.078
+        },
+        "front_machine_descending": {
+          "mean_percent": 47.272,
+          "sd_percent": 3.13
+        },
+        "back_machine_ascending": {
+          "mean_percent": 87.917,
+          "sd_percent": 2.038
+        },
+        "back_machine_descending": {
+          "mean_percent": 55.434,
+          "sd_percent": 2.177
+        }
+      },
+      "comparisons": {
+        "front_minus_back_barbell_ascending": {
+          "mean_difference_percentage_points": -5.596,
+          "sd_difference_percentage_points": 7.392,
+          "participants_positive": 1,
+          "participants_negative": 7
+        },
+        "front_minus_back_barbell_descending": {
+          "mean_difference_percentage_points": -18.095,
+          "sd_difference_percentage_points": 3.207,
+          "participants_positive": 0,
+          "participants_negative": 8
+        },
+        "front_barbell_ascending_minus_descending": {
+          "mean_difference_percentage_points": 40.986,
+          "sd_difference_percentage_points": 4.897,
+          "participants_positive": 8,
+          "participants_negative": 0
+        }
+      }
+    },
+    "middle_deltoid": {
+      "conditions": {
+        "front_barbell_ascending": {
+          "mean_percent": 57.706,
+          "sd_percent": 6.592
+        },
+        "front_barbell_descending": {
+          "mean_percent": 31.993,
+          "sd_percent": 2.767
+        },
+        "back_barbell_ascending": {
+          "mean_percent": 82.379,
+          "sd_percent": 6.062
+        },
+        "back_barbell_descending": {
+          "mean_percent": 51.439,
+          "sd_percent": 4.983
+        },
+        "front_machine_ascending": {
+          "mean_percent": 41.097,
+          "sd_percent": 7.34
+        },
+        "front_machine_descending": {
+          "mean_percent": 25.28,
+          "sd_percent": 1.663
+        },
+        "back_machine_ascending": {
+          "mean_percent": 52.489,
+          "sd_percent": 4.067
+        },
+        "back_machine_descending": {
+          "mean_percent": 41.793,
+          "sd_percent": 3.944
+        }
+      },
+      "comparisons": {
+        "front_minus_back_barbell_ascending": {
+          "mean_difference_percentage_points": -24.673,
+          "sd_difference_percentage_points": 7.883,
+          "participants_positive": 0,
+          "participants_negative": 8
+        },
+        "front_minus_back_barbell_descending": {
+          "mean_difference_percentage_points": -19.447,
+          "sd_difference_percentage_points": 6.392,
+          "participants_positive": 0,
+          "participants_negative": 8
+        },
+        "front_barbell_ascending_minus_descending": {
+          "mean_difference_percentage_points": 25.714,
+          "sd_difference_percentage_points": 8.483,
+          "participants_positive": 8,
+          "participants_negative": 0
+        }
+      }
+    },
+    "posterior_deltoid": {
+      "conditions": {
+        "front_barbell_ascending": {
+          "mean_percent": 28.623,
+          "sd_percent": 4.137
+        },
+        "front_barbell_descending": {
+          "mean_percent": 23.579,
+          "sd_percent": 1.736
+        },
+        "back_barbell_ascending": {
+          "mean_percent": 75.42,
+          "sd_percent": 5.582
+        },
+        "back_barbell_descending": {
+          "mean_percent": 51.559,
+          "sd_percent": 3.959
+        },
+        "front_machine_ascending": {
+          "mean_percent": 21.763,
+          "sd_percent": 1.497
+        },
+        "front_machine_descending": {
+          "mean_percent": 16.436,
+          "sd_percent": 0.913
+        },
+        "back_machine_ascending": {
+          "mean_percent": 46.897,
+          "sd_percent": 7.459
+        },
+        "back_machine_descending": {
+          "mean_percent": 33.541,
+          "sd_percent": 4.449
+        }
+      },
+      "comparisons": {
+        "front_minus_back_barbell_ascending": {
+          "mean_difference_percentage_points": -46.797,
+          "sd_difference_percentage_points": 6.304,
+          "participants_positive": 0,
+          "participants_negative": 8
+        },
+        "front_minus_back_barbell_descending": {
+          "mean_difference_percentage_points": -27.98,
+          "sd_difference_percentage_points": 4.882,
+          "participants_positive": 0,
+          "participants_negative": 8
+        },
+        "front_barbell_ascending_minus_descending": {
+          "mean_difference_percentage_points": 5.044,
+          "sd_difference_percentage_points": 4.266,
+          "participants_positive": 6,
+          "participants_negative": 2
+        }
+      }
+    }
+  }
+}

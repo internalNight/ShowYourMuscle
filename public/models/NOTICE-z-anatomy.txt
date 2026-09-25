@@ -1,0 +1,15 @@
+Anatomical reference mesh provenance
+
+The z_anatomy_reference.glb file is derived from Z-Anatomy, the libre 3D atlas
+of anatomy, licensed under CC BY-SA 4.0. Its models include derivatives of
+BodyParts3D, The Database Center for Life Science, licensed CC BY-SA 2.1 Japan.
+
+Attribution requested by the source project:
+"BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan"
+"Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0"
+
+Source: https://github.com/Z-Anatomy/Models-of-human-anatomy
+License: https://creativecommons.org/licenses/by-sa/4.0/
+
+This exported reference mesh remains under CC BY-SA 4.0. It is static and
+does not supply a rig, muscle paths, physiological parameters, or force data.

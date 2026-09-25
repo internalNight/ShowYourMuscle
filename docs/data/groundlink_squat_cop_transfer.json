@@ -1,0 +1,115 @@
+{
+  "status": "external_lab_cop_transfer_not_personal_joint_or_muscle_force_validation",
+  "sourceTemplate": "Georgia Tech 12-person unloaded squat force-plate COP relative to skin-marker ankle midpoint, sagittal heel-to-metatarsal axis; no GroundLink fitting",
+  "target": "GroundLink 7-person unloaded squat force-plate COP projected from skin-marker ankle midpoint onto heel-to-M1/M5 axis",
+  "alignment": "63 repetitions are segmented by measured pelvis height, then resampled to the same 99 phase points as the source knee-angle event segmentation. This measured alignment is unavailable to the phone.",
+  "externalMomentProbe": "Keep measured per-foot vertical force and all other experimental terms identical, replace only the measured sagittal COP arm by the Georgia Tech constant or phase template. Error due to this COP substitution is abs(COP_arm_error * measured_vertical_force); it is not full external or net ankle moment prediction.",
+  "limitations": [
+    "The two studies use different marker placements and event definitions.",
+    "The fixed point and phase template are both learned only from the Georgia Tech sample, with no GroundLink calibration.",
+    "GroundLink foot plate order was checked against left/right marker locations; the source foot-marker proxy is not an anatomical ankle joint centre.",
+    "These are unloaded squats and pressure-centre positions, not personal loaded net joint moments or individual muscle forces."
+  ],
+  "sourceFlatCm": 4.6667,
+  "summary": {
+    "subjects": 7,
+    "trials": 21,
+    "trajectories": 126,
+    "sourceFlatMedianSubjectMaeCm": 2.6772,
+    "sourcePhaseMedianSubjectMaeCm": 2.4526,
+    "flatCopOnlyExternalMomentMedianSubjectMaeNm": 6.973,
+    "phaseCopOnlyExternalMomentMedianSubjectMaeNm": 6.7176,
+    "phaseBetterSubjects": 6,
+    "phaseImprovementMedianCm": 0.1067,
+    "phaseImprovementBootstrap95Cm": [
+      0.0272,
+      0.2143
+    ]
+  },
+  "subjects": [
+    {
+      "subject": "s001",
+      "massKg": 69.86,
+      "trajectories": 18,
+      "copForwardMedianCm": 3.691,
+      "footLengthMedianCm": 18.675,
+      "sourceFlatMaeCm": 1.6556,
+      "sourcePhaseMaeCm": 1.681,
+      "flatCopOnlyExternalMomentMaeNm": 6.2127,
+      "phaseCopOnlyExternalMomentMaeNm": 6.3841,
+      "phaseMinusFlatImprovementCm": -0.0254
+    },
+    {
+      "subject": "s002",
+      "massKg": 66.68,
+      "trajectories": 18,
+      "copForwardMedianCm": 1.161,
+      "footLengthMedianCm": 20.36,
+      "sourceFlatMaeCm": 3.5848,
+      "sourcePhaseMaeCm": 3.5576,
+      "flatCopOnlyExternalMomentMaeNm": 12.675,
+      "phaseCopOnlyExternalMomentMaeNm": 12.5154,
+      "phaseMinusFlatImprovementCm": 0.0272
+    },
+    {
+      "subject": "s003",
+      "massKg": 53.07,
+      "trajectories": 18,
+      "copForwardMedianCm": 2.144,
+      "footLengthMedianCm": 16.31,
+      "sourceFlatMaeCm": 2.6879,
+      "sourcePhaseMaeCm": 2.5811,
+      "flatCopOnlyExternalMomentMaeNm": 6.9549,
+      "phaseCopOnlyExternalMomentMaeNm": 6.7176,
+      "phaseMinusFlatImprovementCm": 0.1067
+    },
+    {
+      "subject": "s004",
+      "massKg": 71.67,
+      "trajectories": 18,
+      "copForwardMedianCm": 4.694,
+      "footLengthMedianCm": 20.775,
+      "sourceFlatMaeCm": 1.6963,
+      "sourcePhaseMaeCm": 1.5814,
+      "flatCopOnlyExternalMomentMaeNm": 6.5693,
+      "phaseCopOnlyExternalMomentMaeNm": 6.1499,
+      "phaseMinusFlatImprovementCm": 0.1149
+    },
+    {
+      "subject": "s005",
+      "massKg": 90.7,
+      "trajectories": 18,
+      "copForwardMedianCm": 3.721,
+      "footLengthMedianCm": 22.85,
+      "sourceFlatMaeCm": 2.6772,
+      "sourcePhaseMaeCm": 2.4526,
+      "flatCopOnlyExternalMomentMaeNm": 13.6583,
+      "phaseCopOnlyExternalMomentMaeNm": 12.552,
+      "phaseMinusFlatImprovementCm": 0.2246
+    },
+    {
+      "subject": "s006",
+      "massKg": 48.99,
+      "trajectories": 18,
+      "copForwardMedianCm": -0.434,
+      "footLengthMedianCm": 17.58,
+      "sourceFlatMaeCm": 4.9477,
+      "sourcePhaseMaeCm": 4.8483,
+      "flatCopOnlyExternalMomentMaeNm": 12.4621,
+      "phaseCopOnlyExternalMomentMaeNm": 12.2388,
+      "phaseMinusFlatImprovementCm": 0.0994
+    },
+    {
+      "subject": "s007",
+      "massKg": 63.96,
+      "trajectories": 18,
+      "copForwardMedianCm": 3.984,
+      "footLengthMedianCm": 18.91,
+      "sourceFlatMaeCm": 2.1175,
+      "sourcePhaseMaeCm": 1.9032,
+      "flatCopOnlyExternalMomentMaeNm": 6.973,
+      "phaseCopOnlyExternalMomentMaeNm": 6.2722,
+      "phaseMinusFlatImprovementCm": 0.2143
+    }
+  ]
+}

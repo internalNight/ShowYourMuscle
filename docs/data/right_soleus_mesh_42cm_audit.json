@@ -1,0 +1,133 @@
+{
+  "status": "research_only_unvalidated_soleus_deformation",
+  "sourceScene": "assets\\blender\\opensim_five_muscle_motion.blend",
+  "outputScene": "assets\\blender\\opensim_six_muscle_42cm.blend",
+  "opensimMuscle": "soleus_r",
+  "atlasMesh": "Soleus muscle.r",
+  "vertexCount": 3379,
+  "shapeKeys": 102,
+  "requestedCalfCircumferenceCm": 42.0,
+  "appliedThicknessScale": 1.1666666666666667,
+  "referenceHighZ": 0.44568514823913574,
+  "referenceLowZ": 0.16993243992328644,
+  "radialMappingSamples": [
+    {
+      "vertexIndex": 0,
+      "originalBlenderM": [
+        -0.10539500415325165,
+        0.0056230127811431885,
+        0.18603529036045074
+      ],
+      "personalizedBlenderM": [
+        -0.10773356258869171,
+        0.009199459105730057,
+        0.18668603897094727
+      ],
+      "pathFraction": 0.9416040171082564
+    },
+    {
+      "vertexIndex": 844,
+      "originalBlenderM": [
+        -0.08524884283542633,
+        0.008805148303508759,
+        0.24051104485988617
+      ],
+      "personalizedBlenderM": [
+        -0.08408693969249725,
+        0.014569971710443497,
+        0.2416418492794037
+      ],
+      "pathFraction": 0.7440510906759311
+    },
+    {
+      "vertexIndex": 1689,
+      "originalBlenderM": [
+        -0.09967878460884094,
+        0.012597307562828064,
+        0.3357880115509033
+      ],
+      "personalizedBlenderM": [
+        -0.10066904872655869,
+        0.021930135786533356,
+        0.33757102489471436
+      ],
+      "pathFraction": 0.39853511270814207
+    },
+    {
+      "vertexIndex": 2534,
+      "originalBlenderM": [
+        -0.09473036229610443,
+        -0.020425084978342056,
+        0.37449783086776733
+      ],
+      "personalizedBlenderM": [
+        -0.09477587789297104,
+        -0.015202280133962631,
+        0.3755040764808655
+      ],
+      "pathFraction": 0.2581563670077536
+    },
+    {
+      "vertexIndex": 3378,
+      "originalBlenderM": [
+        -0.08002349734306335,
+        -0.02071019634604454,
+        0.39186739921569824
+      ],
+      "personalizedBlenderM": [
+        -0.0775720477104187,
+        -0.015002749860286713,
+        0.3930085599422455
+      ],
+      "pathFraction": 0.19516671060867416
+    }
+  ],
+  "referenceMaximumRadialDistanceM": 0.06998777454339185,
+  "personalizedMaximumRadialDistanceM": 0.08165239120697455,
+  "limitations": [
+    "standing path lower tendon endpoint is 8.9 cm beyond the atlas surface",
+    "nearest surface/path agreement is a standing geometry screen, not an attachment validation",
+    "calf girth scales mesh cross section only",
+    "no measured fiber strain, EMG or muscle force"
+  ],
+  "sampledFrameDistortion": {
+    "1": {
+      "minimumEdgeRatio": 0.9998,
+      "maximumEdgeRatio": 1.0,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "26": {
+      "minimumEdgeRatio": 0.9921,
+      "maximumEdgeRatio": 1.1135,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "51": {
+      "minimumEdgeRatio": 0.9921,
+      "maximumEdgeRatio": 1.1125,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "76": {
+      "minimumEdgeRatio": 0.9921,
+      "maximumEdgeRatio": 1.1135,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "101": {
+      "minimumEdgeRatio": 0.9998,
+      "maximumEdgeRatio": 1.0,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    }
+  },
+  "sampledFrames": [
+    1,
+    26,
+    51,
+    76,
+    101
+  ],
+  "checkedVertices": 25
+}

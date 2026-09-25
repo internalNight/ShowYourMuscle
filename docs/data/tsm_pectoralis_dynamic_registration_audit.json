@@ -1,0 +1,1084 @@
+{
+  "status": "chest_mesh_rigid_and_endpoint_blend_geometry_audit_not_anatomical_or_force_validation",
+  "fit": "four proxy landmarks at frame 0, including the middle pectoralis path origin",
+  "method": "Apply the corresponding TSM clavicle or thorax rigid transform relative to frame 0 to each fitted atlas mesh. Endpoint-blend candidates add 100% or 80% of a linearly interpolated offset from rigidly transported baseline path endpoints to current TSM path endpoints, with vertex fraction projected onto the original endpoint axis and clamped to [0,1]. Compare 21 arc-length path samples with the nearest surface and all source mesh edge-length ratios at all 101 frames.",
+  "cases": [
+    {
+      "exercise": "bench",
+      "muscles": [
+        {
+          "atlasMesh": "Clavicular head of pectoralis major muscle.r",
+          "modelMuscle": "PectoralisMajorClavicle_S",
+          "rigidParent": "clavicle",
+          "frameCount": 101,
+          "endpointBlendMinimumEdgeLengthRatio": 0.986,
+          "endpointBlendMaximumEdgeLengthRatio": 1.516,
+          "endpointBlend80MinimumEdgeLengthRatio": 0.988,
+          "endpointBlend80MaximumEdgeLengthRatio": 1.412,
+          "scenarios": {
+            "rigid": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.96,
+                "maximumCm": 3.54,
+                "originCm": 2.95,
+                "insertionCm": 3.42
+              },
+              "worst": {
+                "frameIndex": 49,
+                "medianCm": 2.56,
+                "maximumCm": 4.05,
+                "originCm": 2.95,
+                "insertionCm": 4.05
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.54,
+                  "originCm": 2.95,
+                  "insertionCm": 3.42
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.65,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 2.8
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.56,
+                  "maximumCm": 4.05,
+                  "originCm": 2.95,
+                  "insertionCm": 4.05
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.65,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 2.8
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.54,
+                  "originCm": 2.95,
+                  "insertionCm": 3.42
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.96,
+                "maximumCm": 3.54,
+                "originCm": 2.95,
+                "insertionCm": 3.42
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 2.96,
+                "maximumCm": 3.54,
+                "originCm": 2.95,
+                "insertionCm": 3.42
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.54,
+                  "originCm": 2.95,
+                  "insertionCm": 3.42
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 3.01,
+                  "maximumCm": 3.53,
+                  "originCm": 3.01,
+                  "insertionCm": 3.4
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 3.0,
+                  "maximumCm": 3.51,
+                  "originCm": 3.03,
+                  "insertionCm": 3.39
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 3.01,
+                  "maximumCm": 3.53,
+                  "originCm": 3.01,
+                  "insertionCm": 3.4
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.54,
+                  "originCm": 2.95,
+                  "insertionCm": 3.42
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend_80": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.96,
+                "maximumCm": 3.54,
+                "originCm": 2.95,
+                "insertionCm": 3.42
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 2.96,
+                "maximumCm": 3.54,
+                "originCm": 2.95,
+                "insertionCm": 3.42
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.54,
+                  "originCm": 2.95,
+                  "insertionCm": 3.42
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 3.0,
+                  "maximumCm": 3.4,
+                  "originCm": 3.0,
+                  "insertionCm": 3.16
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.92,
+                  "maximumCm": 3.31,
+                  "originCm": 3.03,
+                  "insertionCm": 3.11
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 3.0,
+                  "maximumCm": 3.4,
+                  "originCm": 3.0,
+                  "insertionCm": 3.16
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.54,
+                  "originCm": 2.95,
+                  "insertionCm": 3.42
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            }
+          }
+        },
+        {
+          "atlasMesh": "Sternocostal head of pectoralis major muscle.r",
+          "modelMuscle": "PectoralisMajorThorax_M",
+          "rigidParent": "thorax",
+          "frameCount": 101,
+          "endpointBlendMinimumEdgeLengthRatio": 0.969,
+          "endpointBlendMaximumEdgeLengthRatio": 1.179,
+          "endpointBlend80MinimumEdgeLengthRatio": 0.975,
+          "endpointBlend80MaximumEdgeLengthRatio": 1.143,
+          "scenarios": {
+            "rigid": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.62,
+                "maximumCm": 3.32,
+                "originCm": 0.86,
+                "insertionCm": 3.32
+              },
+              "worst": {
+                "frameIndex": 49,
+                "medianCm": 2.11,
+                "maximumCm": 3.39,
+                "originCm": 0.86,
+                "insertionCm": 3.39
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.62,
+                  "maximumCm": 3.32,
+                  "originCm": 0.86,
+                  "insertionCm": 3.32
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.2,
+                  "maximumCm": 2.95,
+                  "originCm": 0.86,
+                  "insertionCm": 2.63
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.11,
+                  "maximumCm": 3.39,
+                  "originCm": 0.86,
+                  "insertionCm": 3.39
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.2,
+                  "maximumCm": 2.95,
+                  "originCm": 0.86,
+                  "insertionCm": 2.63
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.62,
+                  "maximumCm": 3.32,
+                  "originCm": 0.86,
+                  "insertionCm": 3.32
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.62,
+                "maximumCm": 3.32,
+                "originCm": 0.86,
+                "insertionCm": 3.32
+              },
+              "worst": {
+                "frameIndex": 49,
+                "medianCm": 2.96,
+                "maximumCm": 3.44,
+                "originCm": 0.88,
+                "insertionCm": 3.23
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.62,
+                  "maximumCm": 3.32,
+                  "originCm": 0.86,
+                  "insertionCm": 3.32
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.79,
+                  "maximumCm": 3.23,
+                  "originCm": 0.87,
+                  "insertionCm": 3.23
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.96,
+                  "maximumCm": 3.44,
+                  "originCm": 0.88,
+                  "insertionCm": 3.23
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.79,
+                  "maximumCm": 3.23,
+                  "originCm": 0.87,
+                  "insertionCm": 3.23
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.62,
+                  "maximumCm": 3.32,
+                  "originCm": 0.86,
+                  "insertionCm": 3.32
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend_80": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.62,
+                "maximumCm": 3.32,
+                "originCm": 0.86,
+                "insertionCm": 3.32
+              },
+              "worst": {
+                "frameIndex": 46,
+                "medianCm": 2.76,
+                "maximumCm": 3.34,
+                "originCm": 0.88,
+                "insertionCm": 3.09
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.62,
+                  "maximumCm": 3.32,
+                  "originCm": 0.86,
+                  "insertionCm": 3.32
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.67,
+                  "maximumCm": 3.14,
+                  "originCm": 0.87,
+                  "insertionCm": 3.05
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.76,
+                  "maximumCm": 3.34,
+                  "originCm": 0.88,
+                  "insertionCm": 3.09
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.67,
+                  "maximumCm": 3.14,
+                  "originCm": 0.87,
+                  "insertionCm": 3.05
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.62,
+                  "maximumCm": 3.32,
+                  "originCm": 0.86,
+                  "insertionCm": 3.32
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            }
+          }
+        },
+        {
+          "atlasMesh": "(Abdominal part of pectoralis major muscle).r",
+          "modelMuscle": "PectoralisMajorThorax_I",
+          "rigidParent": "thorax",
+          "frameCount": 101,
+          "endpointBlendMinimumEdgeLengthRatio": 0.952,
+          "endpointBlendMaximumEdgeLengthRatio": 1.126,
+          "endpointBlend80MinimumEdgeLengthRatio": 0.961,
+          "endpointBlend80MaximumEdgeLengthRatio": 1.1,
+          "scenarios": {
+            "rigid": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.9,
+                "maximumCm": 3.85,
+                "originCm": 2.0,
+                "insertionCm": 3.24
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 2.9,
+                "maximumCm": 3.85,
+                "originCm": 2.0,
+                "insertionCm": 3.24
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.9,
+                  "maximumCm": 3.85,
+                  "originCm": 2.0,
+                  "insertionCm": 3.24
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.29,
+                  "maximumCm": 3.53,
+                  "originCm": 2.0,
+                  "insertionCm": 2.7
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.28,
+                  "maximumCm": 3.56,
+                  "originCm": 2.0,
+                  "insertionCm": 3.56
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.29,
+                  "maximumCm": 3.53,
+                  "originCm": 2.0,
+                  "insertionCm": 2.7
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.9,
+                  "maximumCm": 3.85,
+                  "originCm": 2.0,
+                  "insertionCm": 3.24
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.9,
+                "maximumCm": 3.85,
+                "originCm": 2.0,
+                "insertionCm": 3.24
+              },
+              "worst": {
+                "frameIndex": 49,
+                "medianCm": 3.11,
+                "maximumCm": 4.29,
+                "originCm": 2.0,
+                "insertionCm": 3.12
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.9,
+                  "maximumCm": 3.85,
+                  "originCm": 2.0,
+                  "insertionCm": 3.24
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.92,
+                  "maximumCm": 4.01,
+                  "originCm": 2.0,
+                  "insertionCm": 3.13
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 3.11,
+                  "maximumCm": 4.29,
+                  "originCm": 2.0,
+                  "insertionCm": 3.12
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.92,
+                  "maximumCm": 4.01,
+                  "originCm": 2.0,
+                  "insertionCm": 3.13
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.9,
+                  "maximumCm": 3.85,
+                  "originCm": 2.0,
+                  "insertionCm": 3.24
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend_80": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.9,
+                "maximumCm": 3.85,
+                "originCm": 2.0,
+                "insertionCm": 3.24
+              },
+              "worst": {
+                "frameIndex": 47,
+                "medianCm": 2.83,
+                "maximumCm": 4.13,
+                "originCm": 2.0,
+                "insertionCm": 2.98
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.9,
+                  "maximumCm": 3.85,
+                  "originCm": 2.0,
+                  "insertionCm": 3.24
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.81,
+                  "maximumCm": 3.91,
+                  "originCm": 2.0,
+                  "insertionCm": 2.97
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 2.83,
+                  "maximumCm": 4.13,
+                  "originCm": 2.0,
+                  "insertionCm": 2.98
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.81,
+                  "maximumCm": 3.91,
+                  "originCm": 2.0,
+                  "insertionCm": 2.97
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.9,
+                  "maximumCm": 3.85,
+                  "originCm": 2.0,
+                  "insertionCm": 3.24
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "exercise": "press",
+      "muscles": [
+        {
+          "atlasMesh": "Clavicular head of pectoralis major muscle.r",
+          "modelMuscle": "PectoralisMajorClavicle_S",
+          "rigidParent": "clavicle",
+          "frameCount": 101,
+          "endpointBlendMinimumEdgeLengthRatio": 0.701,
+          "endpointBlendMaximumEdgeLengthRatio": 1.329,
+          "endpointBlend80MinimumEdgeLengthRatio": 0.753,
+          "endpointBlend80MaximumEdgeLengthRatio": 1.256,
+          "scenarios": {
+            "rigid": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 1.5,
+                "maximumCm": 2.95,
+                "originCm": 2.95,
+                "insertionCm": 1.78
+              },
+              "worst": {
+                "frameIndex": 50,
+                "medianCm": 4.03,
+                "maximumCm": 7.74,
+                "originCm": 2.95,
+                "insertionCm": 7.74
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 1.5,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 1.78
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 3.01,
+                  "maximumCm": 4.86,
+                  "originCm": 2.95,
+                  "insertionCm": 4.86
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 4.03,
+                  "maximumCm": 7.74,
+                  "originCm": 2.95,
+                  "insertionCm": 7.74
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 3.01,
+                  "maximumCm": 4.86,
+                  "originCm": 2.95,
+                  "insertionCm": 4.86
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 1.5,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 1.78
+                }
+              ],
+              "framesWithMaximumOver5cm": 49,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 1.5,
+                "maximumCm": 2.95,
+                "originCm": 2.95,
+                "insertionCm": 1.78
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 1.5,
+                "maximumCm": 2.95,
+                "originCm": 2.95,
+                "insertionCm": 1.78
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 1.5,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 1.78
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 1.47,
+                  "maximumCm": 2.75,
+                  "originCm": 2.75,
+                  "insertionCm": 1.87
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 1.56,
+                  "maximumCm": 2.65,
+                  "originCm": 2.65,
+                  "insertionCm": 2.0
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 1.47,
+                  "maximumCm": 2.75,
+                  "originCm": 2.75,
+                  "insertionCm": 1.87
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 1.5,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 1.78
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend_80": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 1.5,
+                "maximumCm": 2.95,
+                "originCm": 2.95,
+                "insertionCm": 1.78
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 1.5,
+                "maximumCm": 2.95,
+                "originCm": 2.95,
+                "insertionCm": 1.78
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 1.5,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 1.78
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 1.72,
+                  "maximumCm": 2.78,
+                  "originCm": 2.78,
+                  "insertionCm": 2.26
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 1.86,
+                  "maximumCm": 2.86,
+                  "originCm": 2.69,
+                  "insertionCm": 2.86
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 1.72,
+                  "maximumCm": 2.78,
+                  "originCm": 2.78,
+                  "insertionCm": 2.26
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 1.5,
+                  "maximumCm": 2.95,
+                  "originCm": 2.95,
+                  "insertionCm": 1.78
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            }
+          }
+        },
+        {
+          "atlasMesh": "Sternocostal head of pectoralis major muscle.r",
+          "modelMuscle": "PectoralisMajorThorax_M",
+          "rigidParent": "thorax",
+          "frameCount": 101,
+          "endpointBlendMinimumEdgeLengthRatio": 0.871,
+          "endpointBlendMaximumEdgeLengthRatio": 1.343,
+          "endpointBlend80MinimumEdgeLengthRatio": 0.893,
+          "endpointBlend80MaximumEdgeLengthRatio": 1.271,
+          "scenarios": {
+            "rigid": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 1.94,
+                "maximumCm": 2.64,
+                "originCm": 0.86,
+                "insertionCm": 2.09
+              },
+              "worst": {
+                "frameIndex": 50,
+                "medianCm": 3.58,
+                "maximumCm": 8.91,
+                "originCm": 0.86,
+                "insertionCm": 8.91
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 1.94,
+                  "maximumCm": 2.64,
+                  "originCm": 0.86,
+                  "insertionCm": 2.09
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.61,
+                  "maximumCm": 5.17,
+                  "originCm": 0.86,
+                  "insertionCm": 5.17
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 3.58,
+                  "maximumCm": 8.91,
+                  "originCm": 0.86,
+                  "insertionCm": 8.91
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.61,
+                  "maximumCm": 5.17,
+                  "originCm": 0.86,
+                  "insertionCm": 5.17
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 1.94,
+                  "maximumCm": 2.64,
+                  "originCm": 0.86,
+                  "insertionCm": 2.09
+                }
+              ],
+              "framesWithMaximumOver5cm": 51,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 1.94,
+                "maximumCm": 2.64,
+                "originCm": 0.86,
+                "insertionCm": 2.09
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 1.94,
+                "maximumCm": 2.64,
+                "originCm": 0.86,
+                "insertionCm": 2.09
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 1.94,
+                  "maximumCm": 2.64,
+                  "originCm": 0.86,
+                  "insertionCm": 2.09
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 1.49,
+                  "maximumCm": 2.33,
+                  "originCm": 0.85,
+                  "insertionCm": 2.33
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 1.21,
+                  "maximumCm": 2.53,
+                  "originCm": 0.84,
+                  "insertionCm": 2.53
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 1.49,
+                  "maximumCm": 2.33,
+                  "originCm": 0.85,
+                  "insertionCm": 2.33
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 1.94,
+                  "maximumCm": 2.64,
+                  "originCm": 0.86,
+                  "insertionCm": 2.09
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend_80": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 1.94,
+                "maximumCm": 2.64,
+                "originCm": 0.86,
+                "insertionCm": 2.09
+              },
+              "worst": {
+                "frameIndex": 48,
+                "medianCm": 1.58,
+                "maximumCm": 3.63,
+                "originCm": 0.85,
+                "insertionCm": 3.63
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 1.94,
+                  "maximumCm": 2.64,
+                  "originCm": 0.86,
+                  "insertionCm": 2.09
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 1.62,
+                  "maximumCm": 2.77,
+                  "originCm": 0.85,
+                  "insertionCm": 2.77
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 1.57,
+                  "maximumCm": 3.63,
+                  "originCm": 0.85,
+                  "insertionCm": 3.63
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 1.62,
+                  "maximumCm": 2.77,
+                  "originCm": 0.85,
+                  "insertionCm": 2.77
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 1.94,
+                  "maximumCm": 2.64,
+                  "originCm": 0.86,
+                  "insertionCm": 2.09
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            }
+          }
+        },
+        {
+          "atlasMesh": "(Abdominal part of pectoralis major muscle).r",
+          "modelMuscle": "PectoralisMajorThorax_I",
+          "rigidParent": "thorax",
+          "frameCount": 101,
+          "endpointBlendMinimumEdgeLengthRatio": 0.942,
+          "endpointBlendMaximumEdgeLengthRatio": 1.38,
+          "endpointBlend80MinimumEdgeLengthRatio": 0.951,
+          "endpointBlend80MaximumEdgeLengthRatio": 1.303,
+          "scenarios": {
+            "rigid": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.04,
+                "maximumCm": 3.46,
+                "originCm": 2.0,
+                "insertionCm": 1.66
+              },
+              "worst": {
+                "frameIndex": 49,
+                "medianCm": 3.98,
+                "maximumCm": 8.95,
+                "originCm": 2.0,
+                "insertionCm": 8.95
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.04,
+                  "maximumCm": 3.46,
+                  "originCm": 2.0,
+                  "insertionCm": 1.66
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.77,
+                  "maximumCm": 5.14,
+                  "originCm": 2.0,
+                  "insertionCm": 5.14
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 3.98,
+                  "maximumCm": 8.95,
+                  "originCm": 2.0,
+                  "insertionCm": 8.95
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.77,
+                  "maximumCm": 5.14,
+                  "originCm": 2.0,
+                  "insertionCm": 5.14
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.04,
+                  "maximumCm": 3.46,
+                  "originCm": 2.0,
+                  "insertionCm": 1.66
+                }
+              ],
+              "framesWithMaximumOver5cm": 51,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.04,
+                "maximumCm": 3.46,
+                "originCm": 2.0,
+                "insertionCm": 1.66
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 2.04,
+                "maximumCm": 3.46,
+                "originCm": 2.0,
+                "insertionCm": 1.66
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.04,
+                  "maximumCm": 3.46,
+                  "originCm": 2.0,
+                  "insertionCm": 1.66
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 1.96,
+                  "maximumCm": 3.3,
+                  "originCm": 2.0,
+                  "insertionCm": 1.81
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 1.95,
+                  "maximumCm": 3.14,
+                  "originCm": 1.98,
+                  "insertionCm": 1.95
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 1.96,
+                  "maximumCm": 3.3,
+                  "originCm": 2.0,
+                  "insertionCm": 1.81
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.04,
+                  "maximumCm": 3.46,
+                  "originCm": 2.0,
+                  "insertionCm": 1.66
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            },
+            "endpoint_blend_80": {
+              "initial": {
+                "frameIndex": 0,
+                "medianCm": 2.04,
+                "maximumCm": 3.46,
+                "originCm": 2.0,
+                "insertionCm": 1.66
+              },
+              "worst": {
+                "frameIndex": 0,
+                "medianCm": 2.04,
+                "maximumCm": 3.46,
+                "originCm": 2.0,
+                "insertionCm": 1.66
+              },
+              "sampled": [
+                {
+                  "frameIndex": 0,
+                  "medianCm": 2.04,
+                  "maximumCm": 3.46,
+                  "originCm": 2.0,
+                  "insertionCm": 1.66
+                },
+                {
+                  "frameIndex": 25,
+                  "medianCm": 2.01,
+                  "maximumCm": 3.36,
+                  "originCm": 2.0,
+                  "insertionCm": 2.33
+                },
+                {
+                  "frameIndex": 50,
+                  "medianCm": 1.98,
+                  "maximumCm": 3.29,
+                  "originCm": 1.98,
+                  "insertionCm": 3.12
+                },
+                {
+                  "frameIndex": 75,
+                  "medianCm": 2.01,
+                  "maximumCm": 3.36,
+                  "originCm": 2.0,
+                  "insertionCm": 2.33
+                },
+                {
+                  "frameIndex": 100,
+                  "medianCm": 2.04,
+                  "maximumCm": 3.46,
+                  "originCm": 2.0,
+                  "insertionCm": 1.66
+                }
+              ],
+              "framesWithMaximumOver5cm": 0,
+              "framesWithMaximumOver10cm": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "The endpoint blend is a visual deformation heuristic, not measured muscle fiber strain",
+    "The atlas points and TSM coordinates are only geometric proxies",
+    "Path-to-surface proximity does not establish fiber direction, attachment, activation or force"
+  ]
+}

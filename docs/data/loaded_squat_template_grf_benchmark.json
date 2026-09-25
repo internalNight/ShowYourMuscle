@@ -1,0 +1,1732 @@
+{
+  "status": "research_only_not_validated_personal_force_or_muscle_force",
+  "source": "Scherpereel et al. 2023 public 0/25-lb squat angle and bilateral force-plate CSVs",
+  "viewerDurationS": 2.8,
+  "viewerHeightAssumptionCm": 175,
+  "appTemplate": "Exact squatVerticalSupportScenario at 175 cm, measured subject mass, app 2.8-s cycle, zero bar offset, 25 lb converted to kg; actual load placement is unreported",
+  "observedNormalization": "bilateral vertical GRF divided by (subject mass + condition load) * 9.80665",
+  "maeRatio": "99 phase-point mean absolute error versus observed normalized GRF; static baseline equals 1",
+  "barMotionAblation": "For 25 lb, compare exact app scenario against (body mass * 0-lb app support ratio + added-load static mass) / total mass; both share the same prescribed body motion",
+  "segmentation": "Consecutive standing-like right-knee valleys enclosing one deep peak; 0.9-4 s, peak >= 50 deg, >=40 deg excursion, >= 50% bilateral activity flags; align experimental boundaries to app phases",
+  "summary": {
+    "0lbs": {
+      "subjects": 12,
+      "reps": 39,
+      "subjectMedianDurationS": 2.6525,
+      "subjectMedianStaticMaeRatio": 0.1143,
+      "subjectMedianBodyMotionPlusStaticLoadMaeRatio": 0.1117,
+      "subjectMedianFixedMaeRatio": 0.1117,
+      "subjectMedianTimedMaeRatio": 0.105,
+      "subjectMedianObservedMeanWeightRatio": 1.0028,
+      "pairedSubjectMedianFixedImprovementRatio": 0.0087,
+      "pairedSubjectMedianFixedImprovementBootstrap95": [
+        0.001,
+        0.0193
+      ],
+      "pairedSubjectMedianTimedImprovementRatio": 0.011,
+      "subjectsFixedBeatsStatic": 9,
+      "subjectsTimedBeatsStatic": 10,
+      "pairedSubjectMedianBarMotionImprovementRatio": 0.0,
+      "subjectsBarMotionBeatsStaticLoad": 0,
+      "perSubject": [
+        {
+          "subject": "AB01",
+          "reps": 3,
+          "medianDurationS": 1.845,
+          "medianStaticMaeRatio": 0.2804,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.2705,
+          "medianFixedMaeRatio": 0.2705,
+          "medianTimedMaeRatio": 0.2142,
+          "medianObservedMeanWeightRatio": 1.0029
+        },
+        {
+          "subject": "AB02",
+          "reps": 3,
+          "medianDurationS": 3.09,
+          "medianStaticMaeRatio": 0.1168,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1145,
+          "medianFixedMaeRatio": 0.1145,
+          "medianTimedMaeRatio": 0.1119,
+          "medianObservedMeanWeightRatio": 1.0029
+        },
+        {
+          "subject": "AB03",
+          "reps": 3,
+          "medianDurationS": 2.62,
+          "medianStaticMaeRatio": 0.0706,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0503,
+          "medianFixedMaeRatio": 0.0503,
+          "medianTimedMaeRatio": 0.0505,
+          "medianObservedMeanWeightRatio": 1.0044
+        },
+        {
+          "subject": "AB05",
+          "reps": 3,
+          "medianDurationS": 3.165,
+          "medianStaticMaeRatio": 0.1118,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.112,
+          "medianFixedMaeRatio": 0.112,
+          "medianTimedMaeRatio": 0.1107,
+          "medianObservedMeanWeightRatio": 1.0007
+        },
+        {
+          "subject": "AB06",
+          "reps": 7,
+          "medianDurationS": 2.975,
+          "medianStaticMaeRatio": 0.1086,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0969,
+          "medianFixedMaeRatio": 0.0969,
+          "medianTimedMaeRatio": 0.0938,
+          "medianObservedMeanWeightRatio": 1.0038
+        },
+        {
+          "subject": "AB07",
+          "reps": 3,
+          "medianDurationS": 2.685,
+          "medianStaticMaeRatio": 0.0796,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.045,
+          "medianFixedMaeRatio": 0.045,
+          "medianTimedMaeRatio": 0.0446,
+          "medianObservedMeanWeightRatio": 0.995
+        },
+        {
+          "subject": "AB08",
+          "reps": 3,
+          "medianDurationS": 2.23,
+          "medianStaticMaeRatio": 0.1463,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1281,
+          "medianFixedMaeRatio": 0.1281,
+          "medianTimedMaeRatio": 0.1192,
+          "medianObservedMeanWeightRatio": 1.0061
+        },
+        {
+          "subject": "AB09",
+          "reps": 2,
+          "medianDurationS": 2.735,
+          "medianStaticMaeRatio": 0.1516,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1653,
+          "medianFixedMaeRatio": 0.1653,
+          "medianTimedMaeRatio": 0.166,
+          "medianObservedMeanWeightRatio": 1.0043
+        },
+        {
+          "subject": "AB10",
+          "reps": 3,
+          "medianDurationS": 2.12,
+          "medianStaticMaeRatio": 0.1369,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1114,
+          "medianFixedMaeRatio": 0.1114,
+          "medianTimedMaeRatio": 0.0976,
+          "medianObservedMeanWeightRatio": 1.0027
+        },
+        {
+          "subject": "AB11",
+          "reps": 3,
+          "medianDurationS": 3.055,
+          "medianStaticMaeRatio": 0.0909,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1024,
+          "medianFixedMaeRatio": 0.1024,
+          "medianTimedMaeRatio": 0.0992,
+          "medianObservedMeanWeightRatio": 0.9971
+        },
+        {
+          "subject": "AB12",
+          "reps": 3,
+          "medianDurationS": 2.27,
+          "medianStaticMaeRatio": 0.1384,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1308,
+          "medianFixedMaeRatio": 0.1308,
+          "medianTimedMaeRatio": 0.1362,
+          "medianObservedMeanWeightRatio": 1.0011
+        },
+        {
+          "subject": "AB13",
+          "reps": 3,
+          "medianDurationS": 2.435,
+          "medianStaticMaeRatio": 0.104,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0968,
+          "medianFixedMaeRatio": 0.0968,
+          "medianTimedMaeRatio": 0.0968,
+          "medianObservedMeanWeightRatio": 0.9988
+        }
+      ]
+    },
+    "25lbs": {
+      "subjects": 12,
+      "reps": 36,
+      "subjectMedianDurationS": 2.7837,
+      "subjectMedianStaticMaeRatio": 0.116,
+      "subjectMedianBodyMotionPlusStaticLoadMaeRatio": 0.1091,
+      "subjectMedianFixedMaeRatio": 0.1085,
+      "subjectMedianTimedMaeRatio": 0.0985,
+      "subjectMedianObservedMeanWeightRatio": 1.001,
+      "pairedSubjectMedianFixedImprovementRatio": 0.0152,
+      "pairedSubjectMedianFixedImprovementBootstrap95": [
+        0.0059,
+        0.0255
+      ],
+      "pairedSubjectMedianTimedImprovementRatio": 0.0209,
+      "subjectsFixedBeatsStatic": 10,
+      "subjectsTimedBeatsStatic": 10,
+      "pairedSubjectMedianBarMotionImprovementRatio": 0.0028,
+      "subjectsBarMotionBeatsStaticLoad": 9,
+      "perSubject": [
+        {
+          "subject": "AB01",
+          "reps": 3,
+          "medianDurationS": 1.86,
+          "medianStaticMaeRatio": 0.2586,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.2343,
+          "medianFixedMaeRatio": 0.2285,
+          "medianTimedMaeRatio": 0.2052,
+          "medianObservedMeanWeightRatio": 1.0019
+        },
+        {
+          "subject": "AB02",
+          "reps": 3,
+          "medianDurationS": 2.74,
+          "medianStaticMaeRatio": 0.1255,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1115,
+          "medianFixedMaeRatio": 0.1092,
+          "medianTimedMaeRatio": 0.1084,
+          "medianObservedMeanWeightRatio": 1.0008
+        },
+        {
+          "subject": "AB03",
+          "reps": 2,
+          "medianDurationS": 2.8075,
+          "medianStaticMaeRatio": 0.0585,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0591,
+          "medianFixedMaeRatio": 0.0611,
+          "medianTimedMaeRatio": 0.0607,
+          "medianObservedMeanWeightRatio": 1.0055
+        },
+        {
+          "subject": "AB05",
+          "reps": 2,
+          "medianDurationS": 2.8875,
+          "medianStaticMaeRatio": 0.1252,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1194,
+          "medianFixedMaeRatio": 0.1189,
+          "medianTimedMaeRatio": 0.1188,
+          "medianObservedMeanWeightRatio": 1.0011
+        },
+        {
+          "subject": "AB06",
+          "reps": 7,
+          "medianDurationS": 2.85,
+          "medianStaticMaeRatio": 0.1056,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0938,
+          "medianFixedMaeRatio": 0.09,
+          "medianTimedMaeRatio": 0.0777,
+          "medianObservedMeanWeightRatio": 1.0004
+        },
+        {
+          "subject": "AB07",
+          "reps": 3,
+          "medianDurationS": 3.05,
+          "medianStaticMaeRatio": 0.074,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0491,
+          "medianFixedMaeRatio": 0.0473,
+          "medianTimedMaeRatio": 0.0493,
+          "medianObservedMeanWeightRatio": 0.9894
+        },
+        {
+          "subject": "AB08",
+          "reps": 3,
+          "medianDurationS": 2.59,
+          "medianStaticMaeRatio": 0.1132,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1066,
+          "medianFixedMaeRatio": 0.1077,
+          "medianTimedMaeRatio": 0.1098,
+          "medianObservedMeanWeightRatio": 1.0042
+        },
+        {
+          "subject": "AB09",
+          "reps": 3,
+          "medianDurationS": 2.575,
+          "medianStaticMaeRatio": 0.1367,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1432,
+          "medianFixedMaeRatio": 0.1446,
+          "medianTimedMaeRatio": 0.147,
+          "medianObservedMeanWeightRatio": 1.0028
+        },
+        {
+          "subject": "AB10",
+          "reps": 3,
+          "medianDurationS": 2.825,
+          "medianStaticMaeRatio": 0.0988,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.0874,
+          "medianFixedMaeRatio": 0.0839,
+          "medianTimedMaeRatio": 0.084,
+          "medianObservedMeanWeightRatio": 1.0037
+        },
+        {
+          "subject": "AB11",
+          "reps": 3,
+          "medianDurationS": 2.76,
+          "medianStaticMaeRatio": 0.1188,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.116,
+          "medianFixedMaeRatio": 0.1118,
+          "medianTimedMaeRatio": 0.0887,
+          "medianObservedMeanWeightRatio": 0.9909
+        },
+        {
+          "subject": "AB12",
+          "reps": 3,
+          "medianDurationS": 2.265,
+          "medianStaticMaeRatio": 0.1431,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.1244,
+          "medianFixedMaeRatio": 0.1177,
+          "medianTimedMaeRatio": 0.1112,
+          "medianObservedMeanWeightRatio": 0.9993
+        },
+        {
+          "subject": "AB13",
+          "reps": 1,
+          "medianDurationS": 2.825,
+          "medianStaticMaeRatio": 0.0932,
+          "medianBodyMotionPlusStaticLoadMaeRatio": 0.071,
+          "medianFixedMaeRatio": 0.0677,
+          "medianTimedMaeRatio": 0.0678,
+          "medianObservedMeanWeightRatio": 0.995
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "The 25-lb weight placement and trajectory are not reported, so the app's load path is an unverified assumption.",
+    "The source lacks participant heights; all app predictions use 175 cm and a prescribed symmetric motion.",
+    "Experimental repetition boundaries provide optimistic alignment unavailable from user-entered body and training parameters.",
+    "The measured-duration scaling uses laboratory timing and is diagnostic only.",
+    "Total vertical force does not determine a joint net moment or individual muscle force.",
+    "Bootstrap resamples people, not correlated repetitions, and describes only this sample."
+  ],
+  "repetitions": [
+    {
+      "subject": "AB01",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 50.635,
+      "deepestS": 51.32,
+      "endS": 52.48,
+      "durationS": 1.845,
+      "peakKneeFlexionDeg": 142.32,
+      "observedMeanWeightRatio": 1.0029,
+      "observedMinMaxWeightRatio": [
+        0.308,
+        2.047
+      ],
+      "staticMaeRatio": 0.2804,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.2705,
+      "fixedMaeRatio": 0.2705,
+      "timedMaeRatio": 0.2813
+    },
+    {
+      "subject": "AB01",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 52.48,
+      "deepestS": 53.13,
+      "endS": 53.855,
+      "durationS": 1.375,
+      "peakKneeFlexionDeg": 147.79,
+      "observedMeanWeightRatio": 1.0023,
+      "observedMinMaxWeightRatio": [
+        0.24,
+        2.227
+      ],
+      "staticMaeRatio": 0.3762,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.3287,
+      "fixedMaeRatio": 0.3287,
+      "timedMaeRatio": 0.2142
+    },
+    {
+      "subject": "AB01",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 53.855,
+      "deepestS": 55.23,
+      "endS": 56.03,
+      "durationS": 2.175,
+      "peakKneeFlexionDeg": 124.83,
+      "observedMeanWeightRatio": 1.0053,
+      "observedMinMaxWeightRatio": [
+        0.534,
+        1.64
+      ],
+      "staticMaeRatio": 0.1751,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1657,
+      "fixedMaeRatio": 0.1657,
+      "timedMaeRatio": 0.172
+    },
+    {
+      "subject": "AB01",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.12,
+      "deepestS": 4.135,
+      "endS": 4.96,
+      "durationS": 1.84,
+      "peakKneeFlexionDeg": 142.24,
+      "observedMeanWeightRatio": 1.0003,
+      "observedMinMaxWeightRatio": [
+        0.441,
+        1.901
+      ],
+      "staticMaeRatio": 0.2586,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.2343,
+      "fixedMaeRatio": 0.2285,
+      "timedMaeRatio": 0.2052
+    },
+    {
+      "subject": "AB01",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 4.96,
+      "deepestS": 6.085,
+      "endS": 6.82,
+      "durationS": 1.86,
+      "peakKneeFlexionDeg": 144.36,
+      "observedMeanWeightRatio": 1.0019,
+      "observedMinMaxWeightRatio": [
+        0.233,
+        2.052
+      ],
+      "staticMaeRatio": 0.2821,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.2719,
+      "fixedMaeRatio": 0.2701,
+      "timedMaeRatio": 0.2685
+    },
+    {
+      "subject": "AB01",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 6.82,
+      "deepestS": 9.47,
+      "endS": 10.47,
+      "durationS": 3.65,
+      "peakKneeFlexionDeg": 129.46,
+      "observedMeanWeightRatio": 1.0041,
+      "observedMinMaxWeightRatio": [
+        0.686,
+        1.63
+      ],
+      "staticMaeRatio": 0.0905,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1111,
+      "fixedMaeRatio": 0.1187,
+      "timedMaeRatio": 0.1053
+    },
+    {
+      "subject": "AB02",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 24.585,
+      "deepestS": 26.28,
+      "endS": 27.32,
+      "durationS": 2.735,
+      "peakKneeFlexionDeg": 137.14,
+      "observedMeanWeightRatio": 1.0029,
+      "observedMinMaxWeightRatio": [
+        0.638,
+        1.393
+      ],
+      "staticMaeRatio": 0.1523,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1356,
+      "fixedMaeRatio": 0.1356,
+      "timedMaeRatio": 0.1357
+    },
+    {
+      "subject": "AB02",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 27.32,
+      "deepestS": 29.315,
+      "endS": 30.41,
+      "durationS": 3.09,
+      "peakKneeFlexionDeg": 132.77,
+      "observedMeanWeightRatio": 1.0027,
+      "observedMinMaxWeightRatio": [
+        0.725,
+        1.388
+      ],
+      "staticMaeRatio": 0.1168,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1145,
+      "fixedMaeRatio": 0.1145,
+      "timedMaeRatio": 0.1119
+    },
+    {
+      "subject": "AB02",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 30.41,
+      "deepestS": 32.605,
+      "endS": 33.765,
+      "durationS": 3.355,
+      "peakKneeFlexionDeg": 112.24,
+      "observedMeanWeightRatio": 1.003,
+      "observedMinMaxWeightRatio": [
+        0.708,
+        1.19
+      ],
+      "staticMaeRatio": 0.0868,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0817,
+      "fixedMaeRatio": 0.0817,
+      "timedMaeRatio": 0.0782
+    },
+    {
+      "subject": "AB02",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.36,
+      "deepestS": 4.9,
+      "endS": 6.0,
+      "durationS": 2.64,
+      "peakKneeFlexionDeg": 134.8,
+      "observedMeanWeightRatio": 1.0,
+      "observedMinMaxWeightRatio": [
+        0.645,
+        1.413
+      ],
+      "staticMaeRatio": 0.1307,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1115,
+      "fixedMaeRatio": 0.1092,
+      "timedMaeRatio": 0.1084
+    },
+    {
+      "subject": "AB02",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 6.0,
+      "deepestS": 7.68,
+      "endS": 8.74,
+      "durationS": 2.74,
+      "peakKneeFlexionDeg": 136.14,
+      "observedMeanWeightRatio": 1.0008,
+      "observedMinMaxWeightRatio": [
+        0.711,
+        1.464
+      ],
+      "staticMaeRatio": 0.1255,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1146,
+      "fixedMaeRatio": 0.1155,
+      "timedMaeRatio": 0.116
+    },
+    {
+      "subject": "AB02",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 8.74,
+      "deepestS": 10.775,
+      "endS": 12.03,
+      "durationS": 3.29,
+      "peakKneeFlexionDeg": 124.51,
+      "observedMeanWeightRatio": 1.0015,
+      "observedMinMaxWeightRatio": [
+        0.681,
+        1.182
+      ],
+      "staticMaeRatio": 0.0861,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.071,
+      "fixedMaeRatio": 0.0733,
+      "timedMaeRatio": 0.0713
+    },
+    {
+      "subject": "AB03",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 26.42,
+      "deepestS": 28.045,
+      "endS": 29.345,
+      "durationS": 2.925,
+      "peakKneeFlexionDeg": 68.52,
+      "observedMeanWeightRatio": 1.0044,
+      "observedMinMaxWeightRatio": [
+        0.892,
+        1.158
+      ],
+      "staticMaeRatio": 0.0531,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.045,
+      "fixedMaeRatio": 0.045,
+      "timedMaeRatio": 0.0448
+    },
+    {
+      "subject": "AB03",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 29.345,
+      "deepestS": 30.84,
+      "endS": 31.965,
+      "durationS": 2.62,
+      "peakKneeFlexionDeg": 69.14,
+      "observedMeanWeightRatio": 1.0044,
+      "observedMinMaxWeightRatio": [
+        0.865,
+        1.223
+      ],
+      "staticMaeRatio": 0.0706,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.063,
+      "fixedMaeRatio": 0.063,
+      "timedMaeRatio": 0.0629
+    },
+    {
+      "subject": "AB03",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 31.965,
+      "deepestS": 33.29,
+      "endS": 34.225,
+      "durationS": 2.26,
+      "peakKneeFlexionDeg": 55.5,
+      "observedMeanWeightRatio": 1.0049,
+      "observedMinMaxWeightRatio": [
+        0.783,
+        1.141
+      ],
+      "staticMaeRatio": 0.0749,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0503,
+      "fixedMaeRatio": 0.0503,
+      "timedMaeRatio": 0.0505
+    },
+    {
+      "subject": "AB03",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.36,
+      "deepestS": 4.97,
+      "endS": 6.12,
+      "durationS": 2.76,
+      "peakKneeFlexionDeg": 71.27,
+      "observedMeanWeightRatio": 1.004,
+      "observedMinMaxWeightRatio": [
+        0.851,
+        1.192
+      ],
+      "staticMaeRatio": 0.0632,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0549,
+      "fixedMaeRatio": 0.0552,
+      "timedMaeRatio": 0.0555
+    },
+    {
+      "subject": "AB03",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 6.12,
+      "deepestS": 7.965,
+      "endS": 8.975,
+      "durationS": 2.855,
+      "peakKneeFlexionDeg": 66.09,
+      "observedMeanWeightRatio": 1.007,
+      "observedMinMaxWeightRatio": [
+        0.868,
+        1.173
+      ],
+      "staticMaeRatio": 0.0538,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0632,
+      "fixedMaeRatio": 0.0669,
+      "timedMaeRatio": 0.0659
+    },
+    {
+      "subject": "AB05",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 2.87,
+      "deepestS": 4.565,
+      "endS": 5.61,
+      "durationS": 2.74,
+      "peakKneeFlexionDeg": 97.63,
+      "observedMeanWeightRatio": 0.9998,
+      "observedMinMaxWeightRatio": [
+        0.563,
+        1.295
+      ],
+      "staticMaeRatio": 0.121,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1176,
+      "fixedMaeRatio": 0.1176,
+      "timedMaeRatio": 0.1178
+    },
+    {
+      "subject": "AB05",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 5.61,
+      "deepestS": 7.485,
+      "endS": 8.775,
+      "durationS": 3.165,
+      "peakKneeFlexionDeg": 97.9,
+      "observedMeanWeightRatio": 1.0011,
+      "observedMinMaxWeightRatio": [
+        0.589,
+        1.307
+      ],
+      "staticMaeRatio": 0.1118,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.112,
+      "fixedMaeRatio": 0.112,
+      "timedMaeRatio": 0.1107
+    },
+    {
+      "subject": "AB05",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 8.775,
+      "deepestS": 10.65,
+      "endS": 12.355,
+      "durationS": 3.58,
+      "peakKneeFlexionDeg": 89.37,
+      "observedMeanWeightRatio": 1.0007,
+      "observedMinMaxWeightRatio": [
+        0.583,
+        1.269
+      ],
+      "staticMaeRatio": 0.0926,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0905,
+      "fixedMaeRatio": 0.0905,
+      "timedMaeRatio": 0.0873
+    },
+    {
+      "subject": "AB05",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 2.955,
+      "deepestS": 4.54,
+      "endS": 5.765,
+      "durationS": 2.81,
+      "peakKneeFlexionDeg": 111.63,
+      "observedMeanWeightRatio": 1.001,
+      "observedMinMaxWeightRatio": [
+        0.495,
+        1.245
+      ],
+      "staticMaeRatio": 0.1277,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1189,
+      "fixedMaeRatio": 0.1178,
+      "timedMaeRatio": 0.1178
+    },
+    {
+      "subject": "AB05",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 5.765,
+      "deepestS": 7.57,
+      "endS": 8.73,
+      "durationS": 2.965,
+      "peakKneeFlexionDeg": 113.28,
+      "observedMeanWeightRatio": 1.0012,
+      "observedMinMaxWeightRatio": [
+        0.535,
+        1.257
+      ],
+      "staticMaeRatio": 0.1226,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1198,
+      "fixedMaeRatio": 0.12,
+      "timedMaeRatio": 0.1198
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 47.055,
+      "deepestS": 48.865,
+      "endS": 50.03,
+      "durationS": 2.975,
+      "peakKneeFlexionDeg": 121.96,
+      "observedMeanWeightRatio": 1.0038,
+      "observedMinMaxWeightRatio": [
+        0.593,
+        1.176
+      ],
+      "staticMaeRatio": 0.1101,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0923,
+      "fixedMaeRatio": 0.0923,
+      "timedMaeRatio": 0.0938
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 50.03,
+      "deepestS": 51.66,
+      "endS": 52.815,
+      "durationS": 2.785,
+      "peakKneeFlexionDeg": 116.17,
+      "observedMeanWeightRatio": 1.0043,
+      "observedMinMaxWeightRatio": [
+        0.647,
+        1.213
+      ],
+      "staticMaeRatio": 0.1017,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0795,
+      "fixedMaeRatio": 0.0795,
+      "timedMaeRatio": 0.0794
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 52.815,
+      "deepestS": 54.41,
+      "endS": 55.36,
+      "durationS": 2.545,
+      "peakKneeFlexionDeg": 107.49,
+      "observedMeanWeightRatio": 1.0048,
+      "observedMinMaxWeightRatio": [
+        0.706,
+        1.284
+      ],
+      "staticMaeRatio": 0.1086,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.097,
+      "fixedMaeRatio": 0.097,
+      "timedMaeRatio": 0.0979
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 4,
+      "startS": 55.36,
+      "deepestS": 56.865,
+      "endS": 58.485,
+      "durationS": 3.125,
+      "peakKneeFlexionDeg": 110.33,
+      "observedMeanWeightRatio": 1.0027,
+      "observedMinMaxWeightRatio": [
+        0.72,
+        1.278
+      ],
+      "staticMaeRatio": 0.0899,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0765,
+      "fixedMaeRatio": 0.0765,
+      "timedMaeRatio": 0.0764
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 5,
+      "startS": 58.485,
+      "deepestS": 59.53,
+      "endS": 60.575,
+      "durationS": 2.09,
+      "peakKneeFlexionDeg": 104.49,
+      "observedMeanWeightRatio": 1.0065,
+      "observedMinMaxWeightRatio": [
+        0.69,
+        1.292
+      ],
+      "staticMaeRatio": 0.1473,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1062,
+      "fixedMaeRatio": 0.1062,
+      "timedMaeRatio": 0.077
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 6,
+      "startS": 60.575,
+      "deepestS": 62.675,
+      "endS": 63.825,
+      "durationS": 3.25,
+      "peakKneeFlexionDeg": 101.03,
+      "observedMeanWeightRatio": 1.0019,
+      "observedMinMaxWeightRatio": [
+        0.688,
+        1.19
+      ],
+      "staticMaeRatio": 0.1052,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0969,
+      "fixedMaeRatio": 0.0969,
+      "timedMaeRatio": 0.0984
+    },
+    {
+      "subject": "AB06",
+      "condition": "0lbs",
+      "rep": 7,
+      "startS": 63.825,
+      "deepestS": 65.67,
+      "endS": 67.135,
+      "durationS": 3.31,
+      "peakKneeFlexionDeg": 96.94,
+      "observedMeanWeightRatio": 1.0037,
+      "observedMinMaxWeightRatio": [
+        0.665,
+        1.213
+      ],
+      "staticMaeRatio": 0.1094,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.097,
+      "fixedMaeRatio": 0.097,
+      "timedMaeRatio": 0.0993
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 2.51,
+      "deepestS": 3.78,
+      "endS": 5.035,
+      "durationS": 2.525,
+      "peakKneeFlexionDeg": 121.34,
+      "observedMeanWeightRatio": 1.0004,
+      "observedMinMaxWeightRatio": [
+        0.647,
+        1.331
+      ],
+      "staticMaeRatio": 0.1242,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0964,
+      "fixedMaeRatio": 0.09,
+      "timedMaeRatio": 0.0838
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 5.035,
+      "deepestS": 6.49,
+      "endS": 8.385,
+      "durationS": 3.35,
+      "peakKneeFlexionDeg": 125.76,
+      "observedMeanWeightRatio": 1.0013,
+      "observedMinMaxWeightRatio": [
+        0.541,
+        1.333
+      ],
+      "staticMaeRatio": 0.1056,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0986,
+      "fixedMaeRatio": 0.0975,
+      "timedMaeRatio": 0.0985
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 8.385,
+      "deepestS": 10.08,
+      "endS": 11.92,
+      "durationS": 3.535,
+      "peakKneeFlexionDeg": 107.7,
+      "observedMeanWeightRatio": 0.9978,
+      "observedMinMaxWeightRatio": [
+        0.752,
+        1.27
+      ],
+      "staticMaeRatio": 0.0891,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0751,
+      "fixedMaeRatio": 0.0733,
+      "timedMaeRatio": 0.0747
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 4,
+      "startS": 11.92,
+      "deepestS": 12.915,
+      "endS": 13.885,
+      "durationS": 1.965,
+      "peakKneeFlexionDeg": 109.51,
+      "observedMeanWeightRatio": 1.0136,
+      "observedMinMaxWeightRatio": [
+        0.672,
+        1.263
+      ],
+      "staticMaeRatio": 0.1378,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1024,
+      "fixedMaeRatio": 0.0955,
+      "timedMaeRatio": 0.0577
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 5,
+      "startS": 13.885,
+      "deepestS": 15.555,
+      "endS": 17.705,
+      "durationS": 3.82,
+      "peakKneeFlexionDeg": 137.77,
+      "observedMeanWeightRatio": 1.001,
+      "observedMinMaxWeightRatio": [
+        0.645,
+        1.274
+      ],
+      "staticMaeRatio": 0.0968,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0938,
+      "fixedMaeRatio": 0.094,
+      "timedMaeRatio": 0.0929
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 6,
+      "startS": 19.195,
+      "deepestS": 20.54,
+      "endS": 22.045,
+      "durationS": 2.85,
+      "peakKneeFlexionDeg": 90.78,
+      "observedMeanWeightRatio": 1.0001,
+      "observedMinMaxWeightRatio": [
+        0.759,
+        1.221
+      ],
+      "staticMaeRatio": 0.1014,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0805,
+      "fixedMaeRatio": 0.0745,
+      "timedMaeRatio": 0.0753
+    },
+    {
+      "subject": "AB06",
+      "condition": "25lbs",
+      "rep": 7,
+      "startS": 22.045,
+      "deepestS": 23.35,
+      "endS": 24.665,
+      "durationS": 2.62,
+      "peakKneeFlexionDeg": 101.36,
+      "observedMeanWeightRatio": 0.9999,
+      "observedMinMaxWeightRatio": [
+        0.663,
+        1.27
+      ],
+      "staticMaeRatio": 0.1136,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0875,
+      "fixedMaeRatio": 0.0813,
+      "timedMaeRatio": 0.0777
+    },
+    {
+      "subject": "AB07",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 33.685,
+      "deepestS": 35.205,
+      "endS": 36.46,
+      "durationS": 2.775,
+      "peakKneeFlexionDeg": 128.44,
+      "observedMeanWeightRatio": 0.9953,
+      "observedMinMaxWeightRatio": [
+        0.765,
+        1.146
+      ],
+      "staticMaeRatio": 0.0808,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.054,
+      "fixedMaeRatio": 0.054,
+      "timedMaeRatio": 0.054
+    },
+    {
+      "subject": "AB07",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 36.46,
+      "deepestS": 37.77,
+      "endS": 39.12,
+      "durationS": 2.66,
+      "peakKneeFlexionDeg": 123.64,
+      "observedMeanWeightRatio": 0.995,
+      "observedMinMaxWeightRatio": [
+        0.81,
+        1.117
+      ],
+      "staticMaeRatio": 0.0796,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.045,
+      "fixedMaeRatio": 0.045,
+      "timedMaeRatio": 0.0427
+    },
+    {
+      "subject": "AB07",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 39.12,
+      "deepestS": 40.565,
+      "endS": 41.805,
+      "durationS": 2.685,
+      "peakKneeFlexionDeg": 115.29,
+      "observedMeanWeightRatio": 0.99,
+      "observedMinMaxWeightRatio": [
+        0.797,
+        1.142
+      ],
+      "staticMaeRatio": 0.0717,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0449,
+      "fixedMaeRatio": 0.0449,
+      "timedMaeRatio": 0.0446
+    },
+    {
+      "subject": "AB07",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 2.43,
+      "deepestS": 4.105,
+      "endS": 5.55,
+      "durationS": 3.12,
+      "peakKneeFlexionDeg": 137.19,
+      "observedMeanWeightRatio": 0.9894,
+      "observedMinMaxWeightRatio": [
+        0.805,
+        1.148
+      ],
+      "staticMaeRatio": 0.0719,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0439,
+      "fixedMaeRatio": 0.0409,
+      "timedMaeRatio": 0.0429
+    },
+    {
+      "subject": "AB07",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 5.55,
+      "deepestS": 7.17,
+      "endS": 8.6,
+      "durationS": 3.05,
+      "peakKneeFlexionDeg": 134.86,
+      "observedMeanWeightRatio": 0.9911,
+      "observedMinMaxWeightRatio": [
+        0.776,
+        1.143
+      ],
+      "staticMaeRatio": 0.0766,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0513,
+      "fixedMaeRatio": 0.0473,
+      "timedMaeRatio": 0.0493
+    },
+    {
+      "subject": "AB07",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 8.6,
+      "deepestS": 10.245,
+      "endS": 11.46,
+      "durationS": 2.86,
+      "peakKneeFlexionDeg": 119.73,
+      "observedMeanWeightRatio": 0.9808,
+      "observedMinMaxWeightRatio": [
+        0.809,
+        1.116
+      ],
+      "staticMaeRatio": 0.074,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0491,
+      "fixedMaeRatio": 0.0503,
+      "timedMaeRatio": 0.05
+    },
+    {
+      "subject": "AB08",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 32.14,
+      "deepestS": 33.315,
+      "endS": 34.21,
+      "durationS": 2.07,
+      "peakKneeFlexionDeg": 104.14,
+      "observedMeanWeightRatio": 1.0013,
+      "observedMinMaxWeightRatio": [
+        0.676,
+        1.314
+      ],
+      "staticMaeRatio": 0.1463,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1281,
+      "fixedMaeRatio": 0.1281,
+      "timedMaeRatio": 0.1192
+    },
+    {
+      "subject": "AB08",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 34.21,
+      "deepestS": 35.535,
+      "endS": 36.44,
+      "durationS": 2.23,
+      "peakKneeFlexionDeg": 104.36,
+      "observedMeanWeightRatio": 1.0065,
+      "observedMinMaxWeightRatio": [
+        0.577,
+        1.366
+      ],
+      "staticMaeRatio": 0.1476,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1422,
+      "fixedMaeRatio": 0.1422,
+      "timedMaeRatio": 0.146
+    },
+    {
+      "subject": "AB08",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 36.44,
+      "deepestS": 37.92,
+      "endS": 38.905,
+      "durationS": 2.465,
+      "peakKneeFlexionDeg": 93.88,
+      "observedMeanWeightRatio": 1.0061,
+      "observedMinMaxWeightRatio": [
+        0.796,
+        1.171
+      ],
+      "staticMaeRatio": 0.0921,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0657,
+      "fixedMaeRatio": 0.0657,
+      "timedMaeRatio": 0.0649
+    },
+    {
+      "subject": "AB08",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.455,
+      "deepestS": 5.045,
+      "endS": 6.045,
+      "durationS": 2.59,
+      "peakKneeFlexionDeg": 108.01,
+      "observedMeanWeightRatio": 1.0042,
+      "observedMinMaxWeightRatio": [
+        0.711,
+        1.3
+      ],
+      "staticMaeRatio": 0.1132,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1066,
+      "fixedMaeRatio": 0.1077,
+      "timedMaeRatio": 0.1098
+    },
+    {
+      "subject": "AB08",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 6.045,
+      "deepestS": 7.53,
+      "endS": 8.49,
+      "durationS": 2.445,
+      "peakKneeFlexionDeg": 106.21,
+      "observedMeanWeightRatio": 1.0041,
+      "observedMinMaxWeightRatio": [
+        0.652,
+        1.336
+      ],
+      "staticMaeRatio": 0.1169,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1136,
+      "fixedMaeRatio": 0.1149,
+      "timedMaeRatio": 0.119
+    },
+    {
+      "subject": "AB08",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 8.49,
+      "deepestS": 10.34,
+      "endS": 11.395,
+      "durationS": 2.905,
+      "peakKneeFlexionDeg": 93.41,
+      "observedMeanWeightRatio": 1.0062,
+      "observedMinMaxWeightRatio": [
+        0.785,
+        1.148
+      ],
+      "staticMaeRatio": 0.0737,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0643,
+      "fixedMaeRatio": 0.0662,
+      "timedMaeRatio": 0.0654
+    },
+    {
+      "subject": "AB09",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 21.92,
+      "deepestS": 23.835,
+      "endS": 24.82,
+      "durationS": 2.9,
+      "peakKneeFlexionDeg": 124.67,
+      "observedMeanWeightRatio": 1.0044,
+      "observedMinMaxWeightRatio": [
+        0.475,
+        1.582
+      ],
+      "staticMaeRatio": 0.1457,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1606,
+      "fixedMaeRatio": 0.1606,
+      "timedMaeRatio": 0.1591
+    },
+    {
+      "subject": "AB09",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 24.82,
+      "deepestS": 26.525,
+      "endS": 27.39,
+      "durationS": 2.57,
+      "peakKneeFlexionDeg": 122.92,
+      "observedMeanWeightRatio": 1.0042,
+      "observedMinMaxWeightRatio": [
+        0.52,
+        1.565
+      ],
+      "staticMaeRatio": 0.1574,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1699,
+      "fixedMaeRatio": 0.1699,
+      "timedMaeRatio": 0.1729
+    },
+    {
+      "subject": "AB09",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 2.755,
+      "deepestS": 4.345,
+      "endS": 5.33,
+      "durationS": 2.575,
+      "peakKneeFlexionDeg": 124.92,
+      "observedMeanWeightRatio": 1.0027,
+      "observedMinMaxWeightRatio": [
+        0.47,
+        1.422
+      ],
+      "staticMaeRatio": 0.1422,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1432,
+      "fixedMaeRatio": 0.1446,
+      "timedMaeRatio": 0.147
+    },
+    {
+      "subject": "AB09",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 5.33,
+      "deepestS": 7.07,
+      "endS": 7.89,
+      "durationS": 2.56,
+      "peakKneeFlexionDeg": 121.54,
+      "observedMeanWeightRatio": 1.0028,
+      "observedMinMaxWeightRatio": [
+        0.485,
+        1.386
+      ],
+      "staticMaeRatio": 0.1367,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1457,
+      "fixedMaeRatio": 0.1503,
+      "timedMaeRatio": 0.1546
+    },
+    {
+      "subject": "AB09",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 7.89,
+      "deepestS": 9.985,
+      "endS": 10.94,
+      "durationS": 3.05,
+      "peakKneeFlexionDeg": 112.7,
+      "observedMeanWeightRatio": 1.0042,
+      "observedMinMaxWeightRatio": [
+        0.602,
+        1.327
+      ],
+      "staticMaeRatio": 0.0973,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1138,
+      "fixedMaeRatio": 0.1203,
+      "timedMaeRatio": 0.1155
+    },
+    {
+      "subject": "AB10",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 26.65,
+      "deepestS": 27.645,
+      "endS": 28.62,
+      "durationS": 1.97,
+      "peakKneeFlexionDeg": 108.68,
+      "observedMeanWeightRatio": 1.0012,
+      "observedMinMaxWeightRatio": [
+        0.674,
+        1.301
+      ],
+      "staticMaeRatio": 0.1506,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1198,
+      "fixedMaeRatio": 0.1198,
+      "timedMaeRatio": 0.0976
+    },
+    {
+      "subject": "AB10",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 28.62,
+      "deepestS": 29.725,
+      "endS": 30.74,
+      "durationS": 2.12,
+      "peakKneeFlexionDeg": 113.15,
+      "observedMeanWeightRatio": 1.0027,
+      "observedMinMaxWeightRatio": [
+        0.718,
+        1.339
+      ],
+      "staticMaeRatio": 0.1369,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1114,
+      "fixedMaeRatio": 0.1114,
+      "timedMaeRatio": 0.1038
+    },
+    {
+      "subject": "AB10",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 30.74,
+      "deepestS": 32.16,
+      "endS": 33.41,
+      "durationS": 2.67,
+      "peakKneeFlexionDeg": 72.04,
+      "observedMeanWeightRatio": 1.0038,
+      "observedMinMaxWeightRatio": [
+        0.783,
+        1.17
+      ],
+      "staticMaeRatio": 0.0657,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0526,
+      "fixedMaeRatio": 0.0526,
+      "timedMaeRatio": 0.0538
+    },
+    {
+      "subject": "AB10",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.875,
+      "deepestS": 5.4,
+      "endS": 6.415,
+      "durationS": 2.54,
+      "peakKneeFlexionDeg": 105.82,
+      "observedMeanWeightRatio": 1.0034,
+      "observedMinMaxWeightRatio": [
+        0.735,
+        1.232
+      ],
+      "staticMaeRatio": 0.1069,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0922,
+      "fixedMaeRatio": 0.0903,
+      "timedMaeRatio": 0.0917
+    },
+    {
+      "subject": "AB10",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 6.415,
+      "deepestS": 7.955,
+      "endS": 9.24,
+      "durationS": 2.825,
+      "peakKneeFlexionDeg": 117.21,
+      "observedMeanWeightRatio": 1.0037,
+      "observedMinMaxWeightRatio": [
+        0.797,
+        1.201
+      ],
+      "staticMaeRatio": 0.0988,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0874,
+      "fixedMaeRatio": 0.0839,
+      "timedMaeRatio": 0.084
+    },
+    {
+      "subject": "AB10",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 9.24,
+      "deepestS": 11.11,
+      "endS": 12.225,
+      "durationS": 2.985,
+      "peakKneeFlexionDeg": 72.65,
+      "observedMeanWeightRatio": 1.0058,
+      "observedMinMaxWeightRatio": [
+        0.867,
+        1.135
+      ],
+      "staticMaeRatio": 0.051,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0386,
+      "fixedMaeRatio": 0.0446,
+      "timedMaeRatio": 0.0413
+    },
+    {
+      "subject": "AB11",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 23.76,
+      "deepestS": 25.225,
+      "endS": 26.605,
+      "durationS": 2.845,
+      "peakKneeFlexionDeg": 117.64,
+      "observedMeanWeightRatio": 0.9971,
+      "observedMinMaxWeightRatio": [
+        0.71,
+        1.281
+      ],
+      "staticMaeRatio": 0.1083,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1034,
+      "fixedMaeRatio": 0.1034,
+      "timedMaeRatio": 0.1034
+    },
+    {
+      "subject": "AB11",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 26.605,
+      "deepestS": 28.67,
+      "endS": 29.75,
+      "durationS": 3.145,
+      "peakKneeFlexionDeg": 117.42,
+      "observedMeanWeightRatio": 0.9972,
+      "observedMinMaxWeightRatio": [
+        0.75,
+        1.259
+      ],
+      "staticMaeRatio": 0.0909,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1024,
+      "fixedMaeRatio": 0.1024,
+      "timedMaeRatio": 0.0992
+    },
+    {
+      "subject": "AB11",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 29.75,
+      "deepestS": 31.68,
+      "endS": 32.805,
+      "durationS": 3.055,
+      "peakKneeFlexionDeg": 108.91,
+      "observedMeanWeightRatio": 0.9889,
+      "observedMinMaxWeightRatio": [
+        0.747,
+        1.215
+      ],
+      "staticMaeRatio": 0.0841,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0922,
+      "fixedMaeRatio": 0.0922,
+      "timedMaeRatio": 0.09
+    },
+    {
+      "subject": "AB11",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.825,
+      "deepestS": 4.865,
+      "endS": 5.96,
+      "durationS": 2.135,
+      "peakKneeFlexionDeg": 119.62,
+      "observedMeanWeightRatio": 0.9909,
+      "observedMinMaxWeightRatio": [
+        0.681,
+        1.309
+      ],
+      "staticMaeRatio": 0.1518,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1209,
+      "fixedMaeRatio": 0.1118,
+      "timedMaeRatio": 0.0887
+    },
+    {
+      "subject": "AB11",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 5.96,
+      "deepestS": 7.645,
+      "endS": 8.72,
+      "durationS": 2.76,
+      "peakKneeFlexionDeg": 120.16,
+      "observedMeanWeightRatio": 0.9916,
+      "observedMinMaxWeightRatio": [
+        0.648,
+        1.251
+      ],
+      "staticMaeRatio": 0.1188,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.116,
+      "fixedMaeRatio": 0.1172,
+      "timedMaeRatio": 0.1174
+    },
+    {
+      "subject": "AB11",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 8.72,
+      "deepestS": 10.955,
+      "endS": 12.0,
+      "durationS": 3.28,
+      "peakKneeFlexionDeg": 101.89,
+      "observedMeanWeightRatio": 0.9881,
+      "observedMinMaxWeightRatio": [
+        0.691,
+        1.135
+      ],
+      "staticMaeRatio": 0.0726,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0813,
+      "fixedMaeRatio": 0.0876,
+      "timedMaeRatio": 0.0811
+    },
+    {
+      "subject": "AB12",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 22.65,
+      "deepestS": 23.99,
+      "endS": 24.92,
+      "durationS": 2.27,
+      "peakKneeFlexionDeg": 124.44,
+      "observedMeanWeightRatio": 1.0007,
+      "observedMinMaxWeightRatio": [
+        0.56,
+        1.422
+      ],
+      "staticMaeRatio": 0.1539,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.139,
+      "fixedMaeRatio": 0.139,
+      "timedMaeRatio": 0.1413
+    },
+    {
+      "subject": "AB12",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 24.92,
+      "deepestS": 26.365,
+      "endS": 27.405,
+      "durationS": 2.485,
+      "peakKneeFlexionDeg": 130.98,
+      "observedMeanWeightRatio": 1.0011,
+      "observedMinMaxWeightRatio": [
+        0.565,
+        1.379
+      ],
+      "staticMaeRatio": 0.1384,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1268,
+      "fixedMaeRatio": 0.1268,
+      "timedMaeRatio": 0.1272
+    },
+    {
+      "subject": "AB12",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 27.405,
+      "deepestS": 28.79,
+      "endS": 29.605,
+      "durationS": 2.2,
+      "peakKneeFlexionDeg": 113.12,
+      "observedMeanWeightRatio": 1.0023,
+      "observedMinMaxWeightRatio": [
+        0.632,
+        1.324
+      ],
+      "staticMaeRatio": 0.1373,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1308,
+      "fixedMaeRatio": 0.1308,
+      "timedMaeRatio": 0.1362
+    },
+    {
+      "subject": "AB12",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 4.06,
+      "deepestS": 5.245,
+      "endS": 6.525,
+      "durationS": 2.465,
+      "peakKneeFlexionDeg": 129.42,
+      "observedMeanWeightRatio": 0.9994,
+      "observedMinMaxWeightRatio": [
+        0.601,
+        1.378
+      ],
+      "staticMaeRatio": 0.1431,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1244,
+      "fixedMaeRatio": 0.1177,
+      "timedMaeRatio": 0.1112
+    },
+    {
+      "subject": "AB12",
+      "condition": "25lbs",
+      "rep": 2,
+      "startS": 6.525,
+      "deepestS": 7.805,
+      "endS": 8.77,
+      "durationS": 2.245,
+      "peakKneeFlexionDeg": 130.87,
+      "observedMeanWeightRatio": 0.9983,
+      "observedMinMaxWeightRatio": [
+        0.548,
+        1.382
+      ],
+      "staticMaeRatio": 0.1536,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1332,
+      "fixedMaeRatio": 0.1272,
+      "timedMaeRatio": 0.1199
+    },
+    {
+      "subject": "AB12",
+      "condition": "25lbs",
+      "rep": 3,
+      "startS": 8.77,
+      "deepestS": 10.025,
+      "endS": 11.035,
+      "durationS": 2.265,
+      "peakKneeFlexionDeg": 118.63,
+      "observedMeanWeightRatio": 0.9993,
+      "observedMinMaxWeightRatio": [
+        0.695,
+        1.305
+      ],
+      "staticMaeRatio": 0.1299,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1063,
+      "fixedMaeRatio": 0.1013,
+      "timedMaeRatio": 0.0964
+    },
+    {
+      "subject": "AB13",
+      "condition": "0lbs",
+      "rep": 1,
+      "startS": 34.555,
+      "deepestS": 35.815,
+      "endS": 36.86,
+      "durationS": 2.305,
+      "peakKneeFlexionDeg": 118.95,
+      "observedMeanWeightRatio": 0.9966,
+      "observedMinMaxWeightRatio": [
+        0.756,
+        1.429
+      ],
+      "staticMaeRatio": 0.1302,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.1069,
+      "fixedMaeRatio": 0.1069,
+      "timedMaeRatio": 0.1031
+    },
+    {
+      "subject": "AB13",
+      "condition": "0lbs",
+      "rep": 2,
+      "startS": 36.86,
+      "deepestS": 38.24,
+      "endS": 39.645,
+      "durationS": 2.785,
+      "peakKneeFlexionDeg": 115.88,
+      "observedMeanWeightRatio": 0.9988,
+      "observedMinMaxWeightRatio": [
+        0.758,
+        1.345
+      ],
+      "staticMaeRatio": 0.104,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0968,
+      "fixedMaeRatio": 0.0968,
+      "timedMaeRatio": 0.0968
+    },
+    {
+      "subject": "AB13",
+      "condition": "0lbs",
+      "rep": 3,
+      "startS": 39.645,
+      "deepestS": 40.815,
+      "endS": 42.08,
+      "durationS": 2.435,
+      "peakKneeFlexionDeg": 96.71,
+      "observedMeanWeightRatio": 1.0,
+      "observedMinMaxWeightRatio": [
+        0.828,
+        1.195
+      ],
+      "staticMaeRatio": 0.0923,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.0641,
+      "fixedMaeRatio": 0.0641,
+      "timedMaeRatio": 0.0578
+    },
+    {
+      "subject": "AB13",
+      "condition": "25lbs",
+      "rep": 1,
+      "startS": 3.75,
+      "deepestS": 5.31,
+      "endS": 6.575,
+      "durationS": 2.825,
+      "peakKneeFlexionDeg": 121.4,
+      "observedMeanWeightRatio": 0.995,
+      "observedMinMaxWeightRatio": [
+        0.786,
+        1.215
+      ],
+      "staticMaeRatio": 0.0932,
+      "bodyMotionPlusStaticLoadMaeRatio": 0.071,
+      "fixedMaeRatio": 0.0677,
+      "timedMaeRatio": 0.0678
+    }
+  ]
+}

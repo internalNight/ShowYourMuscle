@@ -1,0 +1,180 @@
+{
+  "status": "research_only_optimistic_independent_hip_upper_bound",
+  "sourceModel": "RajagopalLaiUhlrich2023 generic 80 lower-limb muscles",
+  "candidateMassKg": 75.337,
+  "target": "published AB01/AB02 raw inverse-dynamics CSV hip rotation moments, assumed N m/kg and multiplied by participant mass",
+  "definition": "same-direction moment arms times maximum isometric force, independently per hip; ignores force-length, coupling, passive tissues and personal strength",
+  "frameSelection": "only deepest-interval frames within both knees' 0–140 degree candidate range",
+  "subjects": {
+    "AB01": {
+      "inputFrameCount": 21,
+      "excludedOutsideKneeRange": 17,
+      "matchedFrameCount": 4,
+      "participantMassKg": 78.9,
+      "hipRotation": {
+        "hip_rotation_r": {
+          "absoluteMomentDemandNm": {
+            "median": 37.861,
+            "min": 36.102,
+            "max": 39.571
+          },
+          "subject54": {
+            "frameCount": 4,
+            "exceededFrameCount": 4,
+            "medianDemandToCapacity": 3.09,
+            "minDemandToCapacity": 2.897,
+            "maxDemandToCapacity": 3.269,
+            "optimisticCapacityNm": {
+              "median": 12.254,
+              "min": 12.105,
+              "max": 12.462
+            }
+          },
+          "highFlex80": {
+            "frameCount": 4,
+            "exceededFrameCount": 4,
+            "medianDemandToCapacity": 1.271,
+            "minDemandToCapacity": 1.204,
+            "maxDemandToCapacity": 1.337,
+            "optimisticCapacityNm": {
+              "median": 29.789,
+              "min": 29.597,
+              "max": 29.997
+            }
+          }
+        },
+        "hip_rotation_l": {
+          "absoluteMomentDemandNm": {
+            "median": 41.775,
+            "min": 39.503,
+            "max": 44.014
+          },
+          "subject54": {
+            "frameCount": 4,
+            "exceededFrameCount": 4,
+            "medianDemandToCapacity": 3.957,
+            "minDemandToCapacity": 3.676,
+            "maxDemandToCapacity": 4.23,
+            "optimisticCapacityNm": {
+              "median": 10.559,
+              "min": 10.406,
+              "max": 10.747
+            }
+          },
+          "highFlex80": {
+            "frameCount": 4,
+            "exceededFrameCount": 4,
+            "medianDemandToCapacity": 1.378,
+            "minDemandToCapacity": 1.295,
+            "maxDemandToCapacity": 1.462,
+            "optimisticCapacityNm": {
+              "median": 30.307,
+              "min": 30.114,
+              "max": 30.514
+            }
+          }
+        }
+      },
+      "hipAxisCosineSourceVsCandidate": {
+        "hip_rotation_r": {
+          "min": 1.0,
+          "median": 1.0,
+          "max": 1.0
+        },
+        "hip_rotation_l": {
+          "min": 1.0,
+          "median": 1.0,
+          "max": 1.0
+        }
+      }
+    },
+    "AB02": {
+      "inputFrameCount": 21,
+      "excludedOutsideKneeRange": 0,
+      "matchedFrameCount": 21,
+      "participantMassKg": 82.2,
+      "hipRotation": {
+        "hip_rotation_r": {
+          "absoluteMomentDemandNm": {
+            "median": 52.212,
+            "min": 48.855,
+            "max": 53.049
+          },
+          "subject54": {
+            "frameCount": 21,
+            "exceededFrameCount": 21,
+            "medianDemandToCapacity": 3.743,
+            "minDemandToCapacity": 3.527,
+            "maxDemandToCapacity": 3.834,
+            "optimisticCapacityNm": {
+              "median": 13.855,
+              "min": 13.795,
+              "max": 14.279
+            }
+          },
+          "highFlex80": {
+            "frameCount": 21,
+            "exceededFrameCount": 21,
+            "medianDemandToCapacity": 2.071,
+            "minDemandToCapacity": 1.942,
+            "maxDemandToCapacity": 2.11,
+            "optimisticCapacityNm": {
+              "median": 25.163,
+              "min": 25.104,
+              "max": 25.59
+            }
+          }
+        },
+        "hip_rotation_l": {
+          "absoluteMomentDemandNm": {
+            "median": 49.241,
+            "min": 46.806,
+            "max": 49.849
+          },
+          "subject54": {
+            "frameCount": 21,
+            "exceededFrameCount": 21,
+            "medianDemandToCapacity": 2.436,
+            "minDemandToCapacity": 2.314,
+            "maxDemandToCapacity": 2.473,
+            "optimisticCapacityNm": {
+              "median": 20.13,
+              "min": 19.925,
+              "max": 20.717
+            }
+          },
+          "highFlex80": {
+            "frameCount": 21,
+            "exceededFrameCount": 21,
+            "medianDemandToCapacity": 1.607,
+            "minDemandToCapacity": 1.536,
+            "maxDemandToCapacity": 1.628,
+            "optimisticCapacityNm": {
+              "median": 30.576,
+              "min": 30.463,
+              "max": 31.02
+            }
+          }
+        }
+      },
+      "hipAxisCosineSourceVsCandidate": {
+        "hip_rotation_r": {
+          "min": 0.99892,
+          "median": 0.99898,
+          "max": 0.9991
+        },
+        "hip_rotation_l": {
+          "min": 0.99887,
+          "median": 0.99892,
+          "max": 0.99905
+        }
+      }
+    }
+  },
+  "limitations": [
+    "candidate mass and segment geometry are not scaled to participants",
+    "hip axes and body geometry are not exactly registered to the gait2354 subject models",
+    "AB01 has only four deepest-interval frames inside range",
+    "released moment convention is strongly supported by no-free-moment ID replay, but exact author processing and AB02 residual remain"
+  ]
+}

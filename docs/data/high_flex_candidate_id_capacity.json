@@ -1,0 +1,527 @@
+{
+  "status": "research_only_candidate_id_capacity_not_personal_muscle_force",
+  "subject": "AB02",
+  "intervalS": [
+    23.6,
+    23.7
+  ],
+  "target": "ID recomputed on the scaled candidate using the same measured IK and force plates, without free plate moment",
+  "coordinates": [
+    "hip_flexion_r",
+    "hip_adduction_r",
+    "hip_rotation_r",
+    "knee_angle_r",
+    "ankle_angle_r",
+    "hip_flexion_l",
+    "hip_adduction_l",
+    "hip_rotation_l",
+    "knee_angle_l",
+    "ankle_angle_l"
+  ],
+  "nominal": {
+    "feasibleAtAnyMultiplierFrames": 21,
+    "feasibleAtNominalStrengthFrames": 0,
+    "feasibleAt4p2TimesFrames": 21,
+    "minimum": 3.2279,
+    "median": 3.5117,
+    "maximum": 3.8036
+  },
+  "passiveAdjusted": {
+    "feasibleAtAnyMultiplierFrames": 21,
+    "feasibleAtNominalStrengthFrames": 0,
+    "feasibleAt4p2TimesFrames": 1,
+    "minimum": 4.1986,
+    "median": 4.4614,
+    "maximum": 4.704
+  },
+  "limitations": [
+    "only ten hip, knee and ankle moments are constrained; pelvis, lumbar and foot constraints are omitted",
+    "measured IK and ground forces are inputs, not phone predictions",
+    "active capacity is nominal max isometric force times common multiplier; no force-length-velocity or individual calibration"
+  ],
+  "frames": [
+    {
+      "timeS": 23.6,
+      "hipRotationTargetNm": {
+        "r": -51.039,
+        "l": -43.276
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.2279,
+        "largestIndependentAxisLowerBound": 1.9248,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.3032,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.1986,
+        "largestIndependentAxisLowerBound": 2.1268,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.0719,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.605,
+      "hipRotationTargetNm": {
+        "r": -51.398,
+        "l": -44.317
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.2571,
+        "largestIndependentAxisLowerBound": 1.9431,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.314,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.2275,
+        "largestIndependentAxisLowerBound": 2.144,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.0835,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.61,
+      "hipRotationTargetNm": {
+        "r": -51.742,
+        "l": -45.224
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.286,
+        "largestIndependentAxisLowerBound": 1.9614,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.3246,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.2571,
+        "largestIndependentAxisLowerBound": 2.1612,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.0959,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.615,
+      "hipRotationTargetNm": {
+        "r": -52.065,
+        "l": -45.951
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.3151,
+        "largestIndependentAxisLowerBound": 1.9791,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.336,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.2863,
+        "largestIndependentAxisLowerBound": 2.1777,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1085,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.62,
+      "hipRotationTargetNm": {
+        "r": -52.355,
+        "l": -46.483
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.3449,
+        "largestIndependentAxisLowerBound": 1.9937,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.3512,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.3136,
+        "largestIndependentAxisLowerBound": 2.1914,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1222,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.625,
+      "hipRotationTargetNm": {
+        "r": -52.605,
+        "l": -46.838
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.3722,
+        "largestIndependentAxisLowerBound": 2.0071,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.3651,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.3397,
+        "largestIndependentAxisLowerBound": 2.2038,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1359,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.63,
+      "hipRotationTargetNm": {
+        "r": -52.817,
+        "l": -47.059
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.3979,
+        "largestIndependentAxisLowerBound": 2.0187,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.3792,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.3631,
+        "largestIndependentAxisLowerBound": 2.2145,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1486,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.635,
+      "hipRotationTargetNm": {
+        "r": -53.009,
+        "l": -47.205
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.4226,
+        "largestIndependentAxisLowerBound": 2.0291,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.3934,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.3847,
+        "largestIndependentAxisLowerBound": 2.2239,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1608,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.64,
+      "hipRotationTargetNm": {
+        "r": -53.216,
+        "l": -47.332
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.4482,
+        "largestIndependentAxisLowerBound": 2.0396,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.4086,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.4067,
+        "largestIndependentAxisLowerBound": 2.2336,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1731,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.645,
+      "hipRotationTargetNm": {
+        "r": -53.476,
+        "l": -47.483
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.4772,
+        "largestIndependentAxisLowerBound": 2.0518,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.4254,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.4315,
+        "largestIndependentAxisLowerBound": 2.245,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.1866,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.65,
+      "hipRotationTargetNm": {
+        "r": -53.823,
+        "l": -47.681
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.5117,
+        "largestIndependentAxisLowerBound": 2.067,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.4447,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.4614,
+        "largestIndependentAxisLowerBound": 2.2593,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.2021,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.655,
+      "hipRotationTargetNm": {
+        "r": -54.27,
+        "l": -47.933
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.5523,
+        "largestIndependentAxisLowerBound": 2.0856,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.4666,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.4969,
+        "largestIndependentAxisLowerBound": 2.2773,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.2197,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.66,
+      "hipRotationTargetNm": {
+        "r": -54.806,
+        "l": -48.223
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.598,
+        "largestIndependentAxisLowerBound": 2.1074,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.4907,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.5373,
+        "largestIndependentAxisLowerBound": 2.2983,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.239,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.665,
+      "hipRotationTargetNm": {
+        "r": -55.39,
+        "l": -48.53
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.6462,
+        "largestIndependentAxisLowerBound": 2.1306,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.5157,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.5797,
+        "largestIndependentAxisLowerBound": 2.3209,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.2589,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.67,
+      "hipRotationTargetNm": {
+        "r": -55.964,
+        "l": -48.827
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.6931,
+        "largestIndependentAxisLowerBound": 2.1531,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.5399,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.6207,
+        "largestIndependentAxisLowerBound": 2.3428,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.2779,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.675,
+      "hipRotationTargetNm": {
+        "r": -56.469,
+        "l": -49.093
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.7346,
+        "largestIndependentAxisLowerBound": 2.173,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.5616,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.6572,
+        "largestIndependentAxisLowerBound": 2.3622,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.295,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.68,
+      "hipRotationTargetNm": {
+        "r": -56.853,
+        "l": -49.314
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.7668,
+        "largestIndependentAxisLowerBound": 2.1872,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.5796,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.6822,
+        "largestIndependentAxisLowerBound": 2.3759,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.3064,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.685,
+      "hipRotationTargetNm": {
+        "r": -57.093,
+        "l": -49.485
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.7889,
+        "largestIndependentAxisLowerBound": 2.1957,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.5931,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.6986,
+        "largestIndependentAxisLowerBound": 2.3841,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.3145,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.69,
+      "hipRotationTargetNm": {
+        "r": -57.19,
+        "l": -49.607
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.8005,
+        "largestIndependentAxisLowerBound": 2.1984,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.6021,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.704,
+        "largestIndependentAxisLowerBound": 2.3864,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.3176,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.695,
+      "hipRotationTargetNm": {
+        "r": -57.17,
+        "l": -49.689
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.8036,
+        "largestIndependentAxisLowerBound": 2.1963,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.6073,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.7015,
+        "largestIndependentAxisLowerBound": 2.3841,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.3174,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    },
+    {
+      "timeS": 23.7,
+      "hipRotationTargetNm": {
+        "r": -57.071,
+        "l": -49.741
+      },
+      "nominal": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 3.8002,
+        "largestIndependentAxisLowerBound": 2.1908,
+        "minimumJointlyFeasibleAboveIndependentBound": 1.6094,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      },
+      "passiveAdjusted": {
+        "feasibleAtAnyUniformStrength": true,
+        "minimumUniformFmaxMultiplier": 4.6926,
+        "largestIndependentAxisLowerBound": 2.3785,
+        "minimumJointlyFeasibleAboveIndependentBound": 2.3142,
+        "largestTorqueResidualNm": 0.0,
+        "atNominalStrengthFeasible": false
+      }
+    }
+  ]
+}

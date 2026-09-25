@@ -1,0 +1,24 @@
+The opensim_anatomy_registration.blend, opensim_anatomy_bone_motion.blend,
+opensim_rectus_mesh_motion.blend, opensim_thigh_mesh_motion.blend,
+opensim_thigh_mesh_62cm.blend,
+and opensim_attachment_review.blend files
+contain selected right-leg Z-Anatomy / BodyParts3D anatomical meshes.
+The anatomical mesh derivative
+remains under CC BY-SA 4.0. Attribution and source details are in
+../../public/models/NOTICE-z-anatomy.txt.
+
+They also overlay joint and muscle-path geometry derived from the OpenSim
+exampleSquatToStand model. The OpenSim model credits and license are in
+../opensim/NOTICE.txt.
+
+The standing overlay uses a provisional translation of mesh bounding-box
+centers. The second file moves six bones with OpenSim body transforms
+through 101 frames. The third also adds a heuristic deformation of the right
+rectus femoris mesh. The fourth adds the right biceps femoris short head and
+semimembranosus using the same provisional deformation method. The 62-cm
+variant scales their cross sections around the reference femur axis as a
+visual girth scenario, without identifying individual muscle volume.
+The last contains eight candidate muscle meshes and
+source-model point markers for review. Patella and calcaneus have no independent
+landmark registration. They are research alignment views,
+not a validated anatomical rig or force model.

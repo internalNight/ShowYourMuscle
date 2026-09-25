@@ -1,0 +1,718 @@
+{
+  "source": "src/model.ts createPose",
+  "profile": {
+    "heightCm": 175,
+    "weightKg": 72,
+    "armSpanCm": 175,
+    "inseamCm": 80
+  },
+  "frames": [
+    {
+      "phase": 0,
+      "barSagittalRelativeAnkleM": -0.045,
+      "hip_flexion_r": -0.17671795131246348,
+      "knee_angle_r": -0.3673161354135335,
+      "ankle_angle_r": -0.19215119350758444
+    },
+    {
+      "phase": 0.01,
+      "barSagittalRelativeAnkleM": -0.04488160370569629,
+      "hip_flexion_r": -0.1795903320964154,
+      "knee_angle_r": -0.3712314324792758,
+      "ankle_angle_r": -0.1939447397258318
+    },
+    {
+      "phase": 0.02,
+      "barSagittalRelativeAnkleM": -0.044526882078868665,
+      "hip_flexion_r": -0.18808718700980798,
+      "knee_angle_r": -0.3827208306545655,
+      "ankle_angle_r": -0.19919135020127746
+    },
+    {
+      "phase": 0.03,
+      "barSagittalRelativeAnkleM": -0.043937235043721316,
+      "hip_flexion_r": -0.20187958633165382,
+      "knee_angle_r": -0.4010875437923622,
+      "ankle_angle_r": -0.20752693527083757
+    },
+    {
+      "phase": 0.04,
+      "barSagittalRelativeAnkleM": -0.043114989667717867,
+      "hip_flexion_r": -0.22050741918590644,
+      "knee_angle_r": -0.42536884003304154,
+      "ankle_angle_r": -0.21844847079125923
+    },
+    {
+      "phase": 0.05,
+      "barSagittalRelativeAnkleM": -0.04206339097770921,
+      "hip_flexion_r": -0.24346405907626112,
+      "knee_angle_r": -0.4545226175806101,
+      "ankle_angle_r": -0.23141151771881757
+    },
+    {
+      "phase": 0.06,
+      "barSagittalRelativeAnkleM": -0.04078658915329508,
+      "hip_flexion_r": -0.2702592286653447,
+      "knee_angle_r": -0.48756181700550716,
+      "ankle_angle_r": -0.2459004836362849
+    },
+    {
+      "phase": 0.07,
+      "barSagittalRelativeAnkleM": -0.03928962314796117,
+      "hip_flexion_r": -0.3004523155227776,
+      "knee_angle_r": -0.5236224138183694,
+      "ankle_angle_r": -0.26146418260011667
+    },
+    {
+      "phase": 0.08,
+      "barSagittalRelativeAnkleM": -0.03757840080263181,
+      "hip_flexion_r": -0.33366260466316966,
+      "knee_angle_r": -0.561981586478816,
+      "ankle_angle_r": -0.27772537376710776
+    },
+    {
+      "phase": 0.09,
+      "barSagittalRelativeAnkleM": -0.03565967553012091,
+      "hip_flexion_r": -0.36956633553237417,
+      "knee_angle_r": -0.6020485528515316,
+      "ankle_angle_r": -0.29437603903388343
+    },
+    {
+      "phase": 0.1,
+      "barSagittalRelativeAnkleM": -0.033541019662496854,
+      "hip_flexion_r": -0.4078882334568803,
+      "knee_angle_r": -0.6433445967908193,
+      "ankle_angle_r": -0.3111670363974941
+    },
+    {
+      "phase": 0.11,
+      "barSagittalRelativeAnkleM": -0.03123079456654736,
+      "hip_flexion_r": -0.4483918994861118,
+      "knee_angle_r": -0.6854814017475235,
+      "ankle_angle_r": -0.3278968941052214
+    },
+    {
+      "phase": 0.12,
+      "barSagittalRelativeAnkleM": -0.0287381176452847,
+      "hip_flexion_r": -0.49087104911029433,
+      "knee_angle_r": -0.7281416672547678,
+      "ankle_angle_r": -0.3444018230839259
+    },
+    {
+      "phase": 0.13,
+      "barSagittalRelativeAnkleM": -0.02607282635572132,
+      "hip_flexion_r": -0.5351422468695777,
+      "knee_angle_r": -0.7710632030462463,
+      "ankle_angle_r": -0.36054757144596017
+    },
+    {
+      "phase": 0.14,
+      "barSagittalRelativeAnkleM": -0.02324543938492138,
+      "hip_flexion_r": -0.5810391571578126,
+      "knee_angle_r": -0.8140264431262607,
+      "ankle_angle_r": -0.37622309025428124
+    },
+    {
+      "phase": 0.15,
+      "barSagittalRelativeAnkleM": -0.0202671151375484,
+      "hip_flexion_r": -0.6284080954112516,
+      "knee_angle_r": -0.8568448741089623,
+      "ankle_angle_r": -0.39133574548405076
+    },
+    {
+      "phase": 0.16,
+      "barSagittalRelativeAnkleM": -0.0171496076987398,
+      "hip_flexion_r": -0.6771046112954444,
+      "knee_angle_r": -0.8993577901191729,
+      "ankle_angle_r": -0.4058077679979711
+    },
+    {
+      "phase": 0.17,
+      "barSagittalRelativeAnkleM": -0.013905220446102921,
+      "hip_flexion_r": -0.7269908570326793,
+      "knee_angle_r": -0.9414248460410661,
+      "ankle_angle_r": -0.4195736640136196
+    },
+    {
+      "phase": 0.18,
+      "barSagittalRelativeAnkleM": -0.010546757493904366,
+      "hip_flexion_r": -0.777933538299453,
+      "knee_angle_r": -0.982921979577748,
+      "ankle_angle_r": -0.4325783594894042
+    },
+    {
+      "phase": 0.19,
+      "barSagittalRelativeAnkleM": -0.007087473161080687,
+      "hip_flexion_r": -0.8298022906728821,
+      "knee_angle_r": -1.023738369107547,
+      "ankle_angle_r": -0.44477590149061097
+    },
+    {
+      "phase": 0.2,
+      "barSagittalRelativeAnkleM": -0.0035410196624968554,
+      "hip_flexion_r": -0.8824683638676758,
+      "knee_angle_r": -1.063774175131774,
+      "ankle_angle_r": -0.45612858084338265
+    },
+    {
+      "phase": 0.21,
+      "barSagittalRelativeAnkleM": 0.00007860677010868011,
+      "hip_flexion_r": -0.935803527394103,
+      "knee_angle_r": -1.1029388761658643,
+      "ankle_angle_r": -0.4666063721985637
+    },
+    {
+      "phase": 0.22,
+      "barSagittalRelativeAnkleM": 0.0037571211248565023,
+      "hip_flexion_r": -0.9896791354444292,
+      "knee_angle_r": -1.1411500573298534,
+      "ankle_angle_r": -0.47618661113949656
+    },
+    {
+      "phase": 0.23,
+      "barSagittalRelativeAnkleM": 0.007480005986141722,
+      "hip_flexion_r": -1.0439653070812032,
+      "knee_angle_r": -1.1783325447641269,
+      "ankle_angle_r": -0.48485384485670546
+    },
+    {
+      "phase": 0.24,
+      "barSagittalRelativeAnkleM": 0.011232568828241168,
+      "hip_flexion_r": -1.0985301914601688,
+      "knee_angle_r": -1.2144178042923193,
+      "ankle_angle_r": -0.4925998047906628
+    },
+    {
+      "phase": 0.25,
+      "barSagittalRelativeAnkleM": 0.014999999999999986,
+      "hip_flexion_r": -1.1532392979745065,
+      "knee_angle_r": -1.2493435409234273,
+      "ankle_angle_r": -0.49942345787504455
+    },
+    {
+      "phase": 0.26,
+      "barSagittalRelativeAnkleM": 0.01876743117175879,
+      "hip_flexion_r": -1.207954878722833,
+      "knee_angle_r": -1.2830534487400185,
+      "ankle_angle_r": -0.5053310986965442
+    },
+    {
+      "phase": 0.27,
+      "barSagittalRelativeAnkleM": 0.022519994013858277,
+      "hip_flexion_r": -1.262535356249497,
+      "knee_angle_r": -1.315497069914006,
+      "ankle_angle_r": -0.510336448898281
+    },
+    {
+      "phase": 0.28,
+      "barSagittalRelativeAnkleM": 0.02624287887514347,
+      "hip_flexion_r": -1.3168347936069846,
+      "knee_angle_r": -1.346629728127054,
+      "ankle_angle_r": -0.5144607331886853
+    },
+    {
+      "phase": 0.29,
+      "barSagittalRelativeAnkleM": 0.02992139322989125,
+      "hip_flexion_r": -1.3707024068846203,
+      "knee_angle_r": -1.3764125063883157,
+      "ankle_angle_r": -0.5177327039326579
+    },
+    {
+      "phase": 0.3,
+      "barSagittalRelativeAnkleM": 0.03354101966249683,
+      "hip_flexion_r": -1.423982122838119,
+      "knee_angle_r": -1.4048122427832879,
+      "ankle_angle_r": -0.5201885889358211
+    },
+    {
+      "phase": 0.31,
+      "barSagittalRelativeAnkleM": 0.037087473161080645,
+      "hip_flexion_r": -1.4765121865536164,
+      "knee_angle_r": -1.431801520556051,
+      "ankle_angle_r": -0.5218719400195437
+    },
+    {
+      "phase": 0.32,
+      "barSagittalRelativeAnkleM": 0.04054675749390434,
+      "hip_flexion_r": -1.5281248266439558,
+      "knee_angle_r": -1.45735863151263,
+      "ankle_angle_r": -0.5228333635541984
+    },
+    {
+      "phase": 0.33,
+      "barSagittalRelativeAnkleM": 0.04390522044610291,
+      "hip_flexion_r": -1.5786459888232767,
+      "knee_angle_r": -1.4814674943323016,
+      "ankle_angle_r": -0.5231301183949842
+    },
+    {
+      "phase": 0.34,
+      "barSagittalRelativeAnkleM": 0.047149607698739784,
+      "hip_flexion_r": -1.6278951534155524,
+      "knee_angle_r": -1.504117512199049,
+      "ankle_angle_r": -0.5228255716635499
+    },
+    {
+      "phase": 0.35,
+      "barSagittalRelativeAnkleM": 0.05026711513754835,
+      "hip_flexion_r": -1.675685259020323,
+      "knee_angle_r": -1.525303357350063,
+      "ankle_angle_r": -0.5219885084466863
+    },
+    {
+      "phase": 0.36,
+      "barSagittalRelativeAnkleM": 0.053245439384921364,
+      "hip_flexion_r": -1.721822763712047,
+      "knee_angle_r": -1.5450246737378166,
+      "ankle_angle_r": -0.5206922975482544
+    },
+    {
+      "phase": 0.37,
+      "barSagittalRelativeAnkleM": 0.05607282635572132,
+      "hip_flexion_r": -1.766107887090453,
+      "knee_angle_r": -1.5632856929974435,
+      "ankle_angle_r": -0.5190139216588381
+    },
+    {
+      "phase": 0.38,
+      "barSagittalRelativeAnkleM": 0.058738117645284624,
+      "hip_flexion_r": -1.808335091065679,
+      "knee_angle_r": -1.5800947632145095,
+      "ankle_angle_r": -0.517032886372689
+    },
+    {
+      "phase": 0.39,
+      "barSagittalRelativeAnkleM": 0.06123079456654733,
+      "hip_flexion_r": -1.8482938734976944,
+      "knee_angle_r": -1.5954637944538756,
+      "ankle_angle_r": -0.5148300280385879
+    },
+    {
+      "phase": 0.4,
+      "barSagittalRelativeAnkleM": 0.0635410196624968,
+      "hip_flexion_r": -1.8857699645708514,
+      "knee_angle_r": -1.609407629449473,
+      "ankle_angle_r": -0.5124862451565226
+    },
+    {
+      "phase": 0.41,
+      "barSagittalRelativeAnkleM": 0.06565967553012085,
+      "hip_flexion_r": -1.920547027359005,
+      "knee_angle_r": -1.6219433520542865,
+      "ankle_angle_r": -0.5100811816598955
+    },
+    {
+      "phase": 0.42,
+      "barSagittalRelativeAnkleM": 0.06757840080263179,
+      "hip_flexion_r": -1.9524089659447919,
+      "knee_angle_r": -1.633089549792924,
+      "ankle_angle_r": -0.5076918927757177
+    },
+    {
+      "phase": 0.43,
+      "barSagittalRelativeAnkleM": 0.0692896231479611,
+      "hip_flexion_r": -1.9811429297108396,
+      "knee_angle_r": -1.6428655499456433,
+      "ankle_angle_r": -0.505391525161374
+    },
+    {
+      "phase": 0.44,
+      "barSagittalRelativeAnkleM": 0.07078658915329504,
+      "hip_flexion_r": -2.006543063601424,
+      "knee_angle_r": -1.6512906508571585,
+      "ankle_angle_r": -0.5032480427140366
+    },
+    {
+      "phase": 0.45,
+      "barSagittalRelativeAnkleM": 0.07206339097770921,
+      "hip_flexion_r": -2.0284149856023648,
+      "knee_angle_r": -1.6583833714876715,
+      "ankle_angle_r": -0.5013230279734203
+    },
+    {
+      "phase": 0.46,
+      "barSagittalRelativeAnkleM": 0.07311498966771786,
+      "hip_flexion_r": -2.0465808737941273,
+      "knee_angle_r": -1.66416074254404,
+      "ankle_angle_r": -0.49967058659968067
+    },
+    {
+      "phase": 0.47,
+      "barSagittalRelativeAnkleM": 0.07393723504372128,
+      "hip_flexion_r": -2.0608849241937226,
+      "knee_angle_r": -1.6686376618385892,
+      "ankle_angle_r": -0.49833637925622326
+    },
+    {
+      "phase": 0.48,
+      "barSagittalRelativeAnkleM": 0.07452688207886864,
+      "hip_flexion_r": -2.0711988164112825,
+      "knee_angle_r": -1.671826334866439,
+      "ankle_angle_r": -0.49735680161792173
+    },
+    {
+      "phase": 0.49,
+      "barSagittalRelativeAnkleM": 0.07488160370569626,
+      "hip_flexion_r": -2.0774267260828085,
+      "knee_angle_r": -1.6737358190586216,
+      "ankle_angle_r": -0.49675832938773773
+    },
+    {
+      "phase": 0.5,
+      "barSagittalRelativeAnkleM": 0.07499999999999997,
+      "hip_flexion_r": -2.0795093838936958,
+      "knee_angle_r": -1.6743716868812064,
+      "ankle_angle_r": -0.49655704131599054
+    },
+    {
+      "phase": 0.51,
+      "barSagittalRelativeAnkleM": 0.07488160370569626,
+      "hip_flexion_r": -2.0774267260828085,
+      "knee_angle_r": -1.6737358190586216,
+      "ankle_angle_r": -0.49675832938773773
+    },
+    {
+      "phase": 0.52,
+      "barSagittalRelativeAnkleM": 0.07452688207886864,
+      "hip_flexion_r": -2.0711988164112825,
+      "knee_angle_r": -1.671826334866439,
+      "ankle_angle_r": -0.49735680161792173
+    },
+    {
+      "phase": 0.53,
+      "barSagittalRelativeAnkleM": 0.07393723504372128,
+      "hip_flexion_r": -2.0608849241937226,
+      "knee_angle_r": -1.6686376618385892,
+      "ankle_angle_r": -0.49833637925622326
+    },
+    {
+      "phase": 0.54,
+      "barSagittalRelativeAnkleM": 0.07311498966771783,
+      "hip_flexion_r": -2.046580873794127,
+      "knee_angle_r": -1.6641607425440397,
+      "ankle_angle_r": -0.4996705865996809
+    },
+    {
+      "phase": 0.55,
+      "barSagittalRelativeAnkleM": 0.07206339097770915,
+      "hip_flexion_r": -2.028414985602364,
+      "knee_angle_r": -1.6583833714876708,
+      "ankle_angle_r": -0.5013230279734202
+    },
+    {
+      "phase": 0.56,
+      "barSagittalRelativeAnkleM": 0.07078658915329504,
+      "hip_flexion_r": -2.006543063601424,
+      "knee_angle_r": -1.6512906508571585,
+      "ankle_angle_r": -0.5032480427140366
+    },
+    {
+      "phase": 0.57,
+      "barSagittalRelativeAnkleM": 0.06928962314796115,
+      "hip_flexion_r": -1.9811429297108405,
+      "knee_angle_r": -1.6428655499456437,
+      "ankle_angle_r": -0.5053915251613741
+    },
+    {
+      "phase": 0.58,
+      "barSagittalRelativeAnkleM": 0.06757840080263182,
+      "hip_flexion_r": -1.9524089659447927,
+      "knee_angle_r": -1.6330895497929248,
+      "ankle_angle_r": -0.5076918927757177
+    },
+    {
+      "phase": 0.59,
+      "barSagittalRelativeAnkleM": 0.06565967553012085,
+      "hip_flexion_r": -1.9205470273590053,
+      "knee_angle_r": -1.6219433520542865,
+      "ankle_angle_r": -0.5100811816598955
+    },
+    {
+      "phase": 0.6,
+      "barSagittalRelativeAnkleM": 0.06354101966249685,
+      "hip_flexion_r": -1.8857699645708519,
+      "knee_angle_r": -1.6094076294494728,
+      "ankle_angle_r": -0.5124862451565225
+    },
+    {
+      "phase": 0.61,
+      "barSagittalRelativeAnkleM": 0.06123079456654733,
+      "hip_flexion_r": -1.8482938734976944,
+      "knee_angle_r": -1.5954637944538756,
+      "ankle_angle_r": -0.5148300280385879
+    },
+    {
+      "phase": 0.62,
+      "barSagittalRelativeAnkleM": 0.05873811764528471,
+      "hip_flexion_r": -1.8083350910656792,
+      "knee_angle_r": -1.5800947632145095,
+      "ankle_angle_r": -0.517032886372689
+    },
+    {
+      "phase": 0.63,
+      "barSagittalRelativeAnkleM": 0.05607282635572132,
+      "hip_flexion_r": -1.7661078870904534,
+      "knee_angle_r": -1.5632856929974435,
+      "ankle_angle_r": -0.519013921658838
+    },
+    {
+      "phase": 0.64,
+      "barSagittalRelativeAnkleM": 0.053245439384921364,
+      "hip_flexion_r": -1.7218227637120467,
+      "knee_angle_r": -1.5450246737378166,
+      "ankle_angle_r": -0.5206922975482545
+    },
+    {
+      "phase": 0.65,
+      "barSagittalRelativeAnkleM": 0.05026711513754835,
+      "hip_flexion_r": -1.675685259020323,
+      "knee_angle_r": -1.5253033573500632,
+      "ankle_angle_r": -0.5219885084466865
+    },
+    {
+      "phase": 0.66,
+      "barSagittalRelativeAnkleM": 0.04714960769873976,
+      "hip_flexion_r": -1.627895153415552,
+      "knee_angle_r": -1.5041175121990484,
+      "ankle_angle_r": -0.5228255716635496
+    },
+    {
+      "phase": 0.67,
+      "barSagittalRelativeAnkleM": 0.04390522044610291,
+      "hip_flexion_r": -1.5786459888232767,
+      "knee_angle_r": -1.4814674943323016,
+      "ankle_angle_r": -0.5231301183949842
+    },
+    {
+      "phase": 0.68,
+      "barSagittalRelativeAnkleM": 0.04054675749390431,
+      "hip_flexion_r": -1.528124826643955,
+      "knee_angle_r": -1.4573586315126292,
+      "ankle_angle_r": -0.5228333635541981
+    },
+    {
+      "phase": 0.69,
+      "barSagittalRelativeAnkleM": 0.0370874731610807,
+      "hip_flexion_r": -1.4765121865536173,
+      "knee_angle_r": -1.4318015205560517,
+      "ankle_angle_r": -0.5218719400195437
+    },
+    {
+      "phase": 0.7,
+      "barSagittalRelativeAnkleM": 0.03354101966249683,
+      "hip_flexion_r": -1.423982122838119,
+      "knee_angle_r": -1.4048122427832879,
+      "ankle_angle_r": -0.5201885889358211
+    },
+    {
+      "phase": 0.71,
+      "barSagittalRelativeAnkleM": 0.029921393229891305,
+      "hip_flexion_r": -1.3707024068846207,
+      "knee_angle_r": -1.3764125063883161,
+      "ankle_angle_r": -0.517732703932658
+    },
+    {
+      "phase": 0.72,
+      "barSagittalRelativeAnkleM": 0.02624287887514347,
+      "hip_flexion_r": -1.3168347936069846,
+      "knee_angle_r": -1.346629728127054,
+      "ankle_angle_r": -0.5144607331886853
+    },
+    {
+      "phase": 0.73,
+      "barSagittalRelativeAnkleM": 0.022519994013858277,
+      "hip_flexion_r": -1.262535356249497,
+      "knee_angle_r": -1.315497069914006,
+      "ankle_angle_r": -0.510336448898281
+    },
+    {
+      "phase": 0.74,
+      "barSagittalRelativeAnkleM": 0.01876743117175876,
+      "hip_flexion_r": -1.2079548787228327,
+      "knee_angle_r": -1.2830534487400183,
+      "ankle_angle_r": -0.5053310986965441
+    },
+    {
+      "phase": 0.75,
+      "barSagittalRelativeAnkleM": 0.014999999999999986,
+      "hip_flexion_r": -1.1532392979745067,
+      "knee_angle_r": -1.2493435409234273,
+      "ankle_angle_r": -0.49942345787504444
+    },
+    {
+      "phase": 0.76,
+      "barSagittalRelativeAnkleM": 0.011232568828241196,
+      "hip_flexion_r": -1.0985301914601697,
+      "knee_angle_r": -1.2144178042923204,
+      "ankle_angle_r": -0.4925998047906631
+    },
+    {
+      "phase": 0.77,
+      "barSagittalRelativeAnkleM": 0.007480005986141722,
+      "hip_flexion_r": -1.0439653070812032,
+      "knee_angle_r": -1.1783325447641269,
+      "ankle_angle_r": -0.48485384485670546
+    },
+    {
+      "phase": 0.78,
+      "barSagittalRelativeAnkleM": 0.00375712112485653,
+      "hip_flexion_r": -0.9896791354444296,
+      "knee_angle_r": -1.1411500573298548,
+      "ankle_angle_r": -0.476186611139497
+    },
+    {
+      "phase": 0.79,
+      "barSagittalRelativeAnkleM": 0.00007860677010868011,
+      "hip_flexion_r": -0.935803527394103,
+      "knee_angle_r": -1.1029388761658643,
+      "ankle_angle_r": -0.4666063721985637
+    },
+    {
+      "phase": 0.8,
+      "barSagittalRelativeAnkleM": -0.0035410196624968276,
+      "hip_flexion_r": -0.8824683638676767,
+      "knee_angle_r": -1.0637741751317744,
+      "ankle_angle_r": -0.4561285808433828
+    },
+    {
+      "phase": 0.81,
+      "barSagittalRelativeAnkleM": -0.007087473161080701,
+      "hip_flexion_r": -0.8298022906728821,
+      "knee_angle_r": -1.023738369107547,
+      "ankle_angle_r": -0.44477590149061097
+    },
+    {
+      "phase": 0.82,
+      "barSagittalRelativeAnkleM": -0.010546757493904324,
+      "hip_flexion_r": -0.7779335382994539,
+      "knee_angle_r": -0.9829219795777484,
+      "ankle_angle_r": -0.4325783594894044
+    },
+    {
+      "phase": 0.83,
+      "barSagittalRelativeAnkleM": -0.0139052204461029,
+      "hip_flexion_r": -0.7269908570326797,
+      "knee_angle_r": -0.9414248460410657,
+      "ankle_angle_r": -0.41957366401361956
+    },
+    {
+      "phase": 0.84,
+      "barSagittalRelativeAnkleM": -0.017149607698739765,
+      "hip_flexion_r": -0.6771046112954449,
+      "knee_angle_r": -0.8993577901191743,
+      "ankle_angle_r": -0.4058077679979715
+    },
+    {
+      "phase": 0.85,
+      "barSagittalRelativeAnkleM": -0.02026711513754839,
+      "hip_flexion_r": -0.6284080954112516,
+      "knee_angle_r": -0.8568448741089623,
+      "ankle_angle_r": -0.39133574548405076
+    },
+    {
+      "phase": 0.86,
+      "barSagittalRelativeAnkleM": -0.023245439384921372,
+      "hip_flexion_r": -0.5810391571578126,
+      "knee_angle_r": -0.8140264431262607,
+      "ankle_angle_r": -0.37622309025428124
+    },
+    {
+      "phase": 0.87,
+      "barSagittalRelativeAnkleM": -0.02607282635572132,
+      "hip_flexion_r": -0.5351422468695777,
+      "knee_angle_r": -0.7710632030462463,
+      "ankle_angle_r": -0.36054757144596017
+    },
+    {
+      "phase": 0.88,
+      "barSagittalRelativeAnkleM": -0.028738117645284677,
+      "hip_flexion_r": -0.4908710491102952,
+      "knee_angle_r": -0.7281416672547696,
+      "ankle_angle_r": -0.34440182308392686
+    },
+    {
+      "phase": 0.89,
+      "barSagittalRelativeAnkleM": -0.031230794566547364,
+      "hip_flexion_r": -0.4483918994861118,
+      "knee_angle_r": -0.6854814017475235,
+      "ankle_angle_r": -0.3278968941052214
+    },
+    {
+      "phase": 0.9,
+      "barSagittalRelativeAnkleM": -0.03354101966249684,
+      "hip_flexion_r": -0.4078882334568803,
+      "knee_angle_r": -0.6433445967908193,
+      "ankle_angle_r": -0.3111670363974941
+    },
+    {
+      "phase": 0.91,
+      "barSagittalRelativeAnkleM": -0.035659675530120914,
+      "hip_flexion_r": -0.3695663355323737,
+      "knee_angle_r": -0.6020485528515316,
+      "ankle_angle_r": -0.2943760390338835
+    },
+    {
+      "phase": 0.92,
+      "barSagittalRelativeAnkleM": -0.03757840080263181,
+      "hip_flexion_r": -0.33366260466316966,
+      "knee_angle_r": -0.561981586478816,
+      "ankle_angle_r": -0.27772537376710776
+    },
+    {
+      "phase": 0.93,
+      "barSagittalRelativeAnkleM": -0.03928962314796119,
+      "hip_flexion_r": -0.3004523155227776,
+      "knee_angle_r": -0.5236224138183694,
+      "ankle_angle_r": -0.26146418260011667
+    },
+    {
+      "phase": 0.94,
+      "barSagittalRelativeAnkleM": -0.04078658915329507,
+      "hip_flexion_r": -0.2702592286653447,
+      "knee_angle_r": -0.48756181700550716,
+      "ankle_angle_r": -0.24590048363628483
+    },
+    {
+      "phase": 0.95,
+      "barSagittalRelativeAnkleM": -0.04206339097770921,
+      "hip_flexion_r": -0.24346405907626112,
+      "knee_angle_r": -0.4545226175806101,
+      "ankle_angle_r": -0.23141151771881754
+    },
+    {
+      "phase": 0.96,
+      "barSagittalRelativeAnkleM": -0.04311498966771786,
+      "hip_flexion_r": -0.22050741918590644,
+      "knee_angle_r": -0.42536884003304154,
+      "ankle_angle_r": -0.2184484707912592
+    },
+    {
+      "phase": 0.97,
+      "barSagittalRelativeAnkleM": -0.043937235043721316,
+      "hip_flexion_r": -0.20187958633165382,
+      "knee_angle_r": -0.4010875437923622,
+      "ankle_angle_r": -0.20752693527083754
+    },
+    {
+      "phase": 0.98,
+      "barSagittalRelativeAnkleM": -0.044526882078868665,
+      "hip_flexion_r": -0.18808718700980798,
+      "knee_angle_r": -0.3827208306545655,
+      "ankle_angle_r": -0.19919135020127746
+    },
+    {
+      "phase": 0.99,
+      "barSagittalRelativeAnkleM": -0.04488160370569629,
+      "hip_flexion_r": -0.1795903320964154,
+      "knee_angle_r": -0.3712314324792758,
+      "ankle_angle_r": -0.1939447397258318
+    },
+    {
+      "phase": 1,
+      "barSagittalRelativeAnkleM": -0.045,
+      "hip_flexion_r": -0.17671795131246348,
+      "knee_angle_r": -0.3673161354135335,
+      "ankle_angle_r": -0.19215119350758444
+    }
+  ]
+}

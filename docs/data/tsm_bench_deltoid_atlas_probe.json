@@ -1,0 +1,559 @@
+{
+  "status": "research_only_unvalidated_deltoid_atlas_motion",
+  "exercise": "bench",
+  "scene": "assets\\blender\\opensim_tsm_bench_deltoid_atlas_probe.blend",
+  "source": "assets\\blender\\opensim_tsm_bench_upper_bones.blend",
+  "method": "Humerus-proxy atlas fit at first pose; each vertex projects onto first model path origin-to-insertion axis. Humerus rigid motion plus 0.25*(1-fraction)^2 of the model path displacement relative to rigid motion; all 101 synthetic poses per exercise audited.",
+  "muscles": [
+    {
+      "muscle": "DeltoideusClavicle_A",
+      "atlasMesh": "Clavicular part of deltoid muscle.r",
+      "vertexCount": 1453,
+      "shapeKeys": 102,
+      "minimumEdgeRatio": 0.87216,
+      "maximumEdgeRatio": 1.20768,
+      "maximumPathSurfaceCm": 4.789,
+      "sampledVerticesBlenderM": {
+        "0": {
+          "0": [
+            0.26482815,
+            -0.0211584,
+            0.83187675
+          ],
+          "363": [
+            0.26882261,
+            -0.00767479,
+            0.80297333
+          ],
+          "726": [
+            0.28523868,
+            0.02853227,
+            0.7789709
+          ],
+          "1089": [
+            0.29715109,
+            0.01796805,
+            0.7275604
+          ],
+          "1452": [
+            0.33062595,
+            0.04619305,
+            0.73179257
+          ]
+        },
+        "25": {
+          "0": [
+            0.31106153,
+            -0.06112249,
+            0.79182428
+          ],
+          "363": [
+            0.29592881,
+            -0.03455037,
+            0.78112137
+          ],
+          "726": [
+            0.28373739,
+            0.01019405,
+            0.78946757
+          ],
+          "1089": [
+            0.27472863,
+            0.04315884,
+            0.74496841
+          ],
+          "1452": [
+            0.2916919,
+            0.0757977,
+            0.76799506
+          ]
+        },
+        "50": {
+          "0": [
+            0.32997161,
+            -0.05935314,
+            0.74308378
+          ],
+          "363": [
+            0.308882,
+            -0.03606055,
+            0.75148368
+          ],
+          "726": [
+            0.29441828,
+            -0.00514642,
+            0.78412646
+          ],
+          "1089": [
+            0.26699218,
+            0.04201178,
+            0.76609564
+          ],
+          "1452": [
+            0.28639579,
+            0.06281703,
+            0.79906952
+          ]
+        },
+        "75": {
+          "0": [
+            0.31106153,
+            -0.06112249,
+            0.79182428
+          ],
+          "363": [
+            0.29592881,
+            -0.03455037,
+            0.78112137
+          ],
+          "726": [
+            0.28373739,
+            0.01019405,
+            0.78946757
+          ],
+          "1089": [
+            0.27472863,
+            0.04315884,
+            0.74496841
+          ],
+          "1452": [
+            0.2916919,
+            0.0757977,
+            0.76799506
+          ]
+        },
+        "100": {
+          "0": [
+            0.26482815,
+            -0.0211584,
+            0.83187675
+          ],
+          "363": [
+            0.26882261,
+            -0.00767479,
+            0.80297333
+          ],
+          "726": [
+            0.28523868,
+            0.02853227,
+            0.7789709
+          ],
+          "1089": [
+            0.29715109,
+            0.01796805,
+            0.7275604
+          ],
+          "1452": [
+            0.33062595,
+            0.04619305,
+            0.73179257
+          ]
+        }
+      }
+    },
+    {
+      "muscle": "DeltoideusScapula_M",
+      "atlasMesh": "Acromial part of deltoid muscle.r",
+      "vertexCount": 1482,
+      "shapeKeys": 102,
+      "minimumEdgeRatio": 0.80764,
+      "maximumEdgeRatio": 1.13483,
+      "maximumPathSurfaceCm": 4.006,
+      "sampledVerticesBlenderM": {
+        "0": {
+          "0": [
+            0.24895221,
+            -0.02580123,
+            0.81977016
+          ],
+          "370": [
+            0.25283915,
+            -0.04595876,
+            0.80861449
+          ],
+          "741": [
+            0.25690615,
+            -0.02064586,
+            0.78161979
+          ],
+          "1111": [
+            0.26600105,
+            0.00939144,
+            0.74531847
+          ],
+          "1481": [
+            0.27707392,
+            -0.0229434,
+            0.72935104
+          ]
+        },
+        "25": {
+          "0": [
+            0.2949616,
+            -0.06657792,
+            0.78035289
+          ],
+          "370": [
+            0.3013812,
+            -0.06923203,
+            0.75806439
+          ],
+          "741": [
+            0.28247741,
+            -0.03749166,
+            0.75695741
+          ],
+          "1111": [
+            0.26340476,
+            0.00529772,
+            0.75014853
+          ],
+          "1481": [
+            0.27754205,
+            0.00246429,
+            0.71695286
+          ]
+        },
+        "50": {
+          "0": [
+            0.3118338,
+            -0.06309722,
+            0.73429346
+          ],
+          "370": [
+            0.31083485,
+            -0.05312623,
+            0.71321142
+          ],
+          "741": [
+            0.28882739,
+            -0.03130175,
+            0.73303968
+          ],
+          "1111": [
+            0.2639949,
+            0.00227725,
+            0.75245762
+          ],
+          "1481": [
+            0.2662881,
+            0.01928309,
+            0.7218346
+          ]
+        },
+        "75": {
+          "0": [
+            0.2949616,
+            -0.06657792,
+            0.78035289
+          ],
+          "370": [
+            0.3013812,
+            -0.06923203,
+            0.75806439
+          ],
+          "741": [
+            0.28247741,
+            -0.03749166,
+            0.75695741
+          ],
+          "1111": [
+            0.26340476,
+            0.00529772,
+            0.75014853
+          ],
+          "1481": [
+            0.27754205,
+            0.00246429,
+            0.71695286
+          ]
+        },
+        "100": {
+          "0": [
+            0.24895221,
+            -0.02580123,
+            0.81977016
+          ],
+          "370": [
+            0.25283915,
+            -0.04595876,
+            0.80861449
+          ],
+          "741": [
+            0.25690615,
+            -0.02064586,
+            0.78161979
+          ],
+          "1111": [
+            0.26600105,
+            0.00939144,
+            0.74531847
+          ],
+          "1481": [
+            0.27707392,
+            -0.0229434,
+            0.72935104
+          ]
+        }
+      }
+    },
+    {
+      "muscle": "DeltoideusScapula_P",
+      "atlasMesh": "Scapular spinal part of deltoid muscle.r",
+      "vertexCount": 2189,
+      "shapeKeys": 102,
+      "minimumEdgeRatio": 0.91741,
+      "maximumEdgeRatio": 1.01423,
+      "maximumPathSurfaceCm": 6.917,
+      "sampledVerticesBlenderM": {
+        "0": {
+          "0": [
+            0.26732838,
+            -0.05381383,
+            0.84627664
+          ],
+          "547": [
+            0.26183474,
+            -0.06542651,
+            0.80503523
+          ],
+          "1094": [
+            0.2720114,
+            -0.06680851,
+            0.77110159
+          ],
+          "1641": [
+            0.30216944,
+            -0.04704169,
+            0.75758177
+          ],
+          "2188": [
+            0.35268974,
+            -0.03569069,
+            0.73112345
+          ]
+        },
+        "25": {
+          "0": [
+            0.33289444,
+            -0.08608744,
+            0.77838147
+          ],
+          "547": [
+            0.31495622,
+            -0.07267706,
+            0.74144542
+          ],
+          "1094": [
+            0.30854341,
+            -0.0481837,
+            0.71663886
+          ],
+          "1641": [
+            0.31839412,
+            -0.01123079,
+            0.72087133
+          ],
+          "2188": [
+            0.34213889,
+            0.04064742,
+            0.70971173
+          ]
+        },
+        "50": {
+          "0": [
+            0.34915447,
+            -0.06797806,
+            0.71414179
+          ],
+          "547": [
+            0.31849989,
+            -0.04447409,
+            0.69480926
+          ],
+          "1094": [
+            0.30122864,
+            -0.01415326,
+            0.68876904
+          ],
+          "1641": [
+            0.30715215,
+            0.01759107,
+            0.7096163
+          ],
+          "2188": [
+            0.31910175,
+            0.07292544,
+            0.72271138
+          ]
+        },
+        "75": {
+          "0": [
+            0.33289444,
+            -0.08608744,
+            0.77838147
+          ],
+          "547": [
+            0.31495622,
+            -0.07267706,
+            0.74144542
+          ],
+          "1094": [
+            0.30854341,
+            -0.0481837,
+            0.71663886
+          ],
+          "1641": [
+            0.31839412,
+            -0.01123079,
+            0.72087133
+          ],
+          "2188": [
+            0.34213889,
+            0.04064742,
+            0.70971173
+          ]
+        },
+        "100": {
+          "0": [
+            0.26732838,
+            -0.05381383,
+            0.84627664
+          ],
+          "547": [
+            0.26183474,
+            -0.06542651,
+            0.80503523
+          ],
+          "1094": [
+            0.2720114,
+            -0.06680851,
+            0.77110159
+          ],
+          "1641": [
+            0.30216944,
+            -0.04704169,
+            0.75758177
+          ],
+          "2188": [
+            0.35268974,
+            -0.03569069,
+            0.73112345
+          ]
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Source mesh does not have validated individual attachment landmarks",
+    "The TSM paths and bench/press poses are model-generated, not measured workouts",
+    "Nearest path-surface distance does not validate skinning, tissue strain, activation or force"
+  ],
+  "reopenedSceneAudit": [
+    {
+      "muscle": "DeltoideusClavicle_A",
+      "frameIndex": 0,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.99993,
+      "maximumEdgeRatio": 1.00007
+    },
+    {
+      "muscle": "DeltoideusClavicle_A",
+      "frameIndex": 25,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.91033,
+      "maximumEdgeRatio": 1.15786
+    },
+    {
+      "muscle": "DeltoideusClavicle_A",
+      "frameIndex": 50,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.87216,
+      "maximumEdgeRatio": 1.20768
+    },
+    {
+      "muscle": "DeltoideusClavicle_A",
+      "frameIndex": 75,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.91033,
+      "maximumEdgeRatio": 1.15786
+    },
+    {
+      "muscle": "DeltoideusClavicle_A",
+      "frameIndex": 100,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.99993,
+      "maximumEdgeRatio": 1.00007
+    },
+    {
+      "muscle": "DeltoideusScapula_M",
+      "frameIndex": 0,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.99988,
+      "maximumEdgeRatio": 1.00015
+    },
+    {
+      "muscle": "DeltoideusScapula_M",
+      "frameIndex": 25,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.89498,
+      "maximumEdgeRatio": 1.12416
+    },
+    {
+      "muscle": "DeltoideusScapula_M",
+      "frameIndex": 50,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.80764,
+      "maximumEdgeRatio": 1.13466
+    },
+    {
+      "muscle": "DeltoideusScapula_M",
+      "frameIndex": 75,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.89498,
+      "maximumEdgeRatio": 1.12416
+    },
+    {
+      "muscle": "DeltoideusScapula_M",
+      "frameIndex": 100,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.99988,
+      "maximumEdgeRatio": 1.00015
+    },
+    {
+      "muscle": "DeltoideusScapula_P",
+      "frameIndex": 0,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.99991,
+      "maximumEdgeRatio": 1.0001
+    },
+    {
+      "muscle": "DeltoideusScapula_P",
+      "frameIndex": 25,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.95187,
+      "maximumEdgeRatio": 1.01023
+    },
+    {
+      "muscle": "DeltoideusScapula_P",
+      "frameIndex": 50,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.91741,
+      "maximumEdgeRatio": 1.0142
+    },
+    {
+      "muscle": "DeltoideusScapula_P",
+      "frameIndex": 75,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.95187,
+      "maximumEdgeRatio": 1.01023
+    },
+    {
+      "muscle": "DeltoideusScapula_P",
+      "frameIndex": 100,
+      "checkedVertices": 5,
+      "minimumEdgeRatio": 0.99991,
+      "maximumEdgeRatio": 1.0001
+    }
+  ]
+}

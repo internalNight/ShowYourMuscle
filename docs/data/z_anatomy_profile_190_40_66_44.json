@@ -1,0 +1,32 @@
+{
+  "status": "static_visual_profile_not_anatomical_personalization_or_muscle_force",
+  "source": "public/models/z_anatomy_reference.glb",
+  "attribution": "public/models/NOTICE-z-anatomy.txt",
+  "profile": {
+    "heightCm": 190.0,
+    "upperArmCm": 40.0,
+    "thighCm": 66.0,
+    "calfCm": 44.0
+  },
+  "statureScale": 1.0857142857142856,
+  "girthWidthScales": {
+    "arm": 1.1513157894736843,
+    "thigh": 1.1257309941520468,
+    "calf": 1.1257309941520468
+  },
+  "changedMeshCounts": {
+    "arm": 12,
+    "thigh": 16,
+    "calf": 8
+  },
+  "totalReferenceMeshes": 165,
+  "maximumLocalVertexDisplacementM": {
+    "arm": 0.004772424039245648,
+    "thigh": 0.005279149735285233,
+    "calf": 0.0053456808724221625
+  },
+  "maximumEndpointDisplacementM": 2.990724118634178e-08,
+  "blend": "assets/blender/z_anatomy_profile_190_40_66_44.blend",
+  "preview": "assets/blender/z_anatomy_profile_190_40_66_44.png",
+  "limits": "Generic atlas geometry; fixed muscle identity and attachment topology; width-only visual change, no muscle volume or force calibration."
+}

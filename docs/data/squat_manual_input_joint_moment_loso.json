@@ -1,0 +1,840 @@
+{
+  "status": "optimistic_laboratory_manual_input_squat_joint_moment_screen_not_personal_or_muscle_force_validation",
+  "source": "Scherpereel et al. 2023, DOI 10.1038/s41597-023-02840-6",
+  "protocol": "Separate 0 and 25 lb conditions; hold out one whole person. Every remaining person contributes one median moment curve and one median mass/depth/duration feature vector per condition. Predict each held-out repetition at 99 normalized phases. Ridge 11 on physically scaled input features fixed before evaluation. Source moment N m/kg interpretation is supported by independent IK/ID replay.",
+  "models": {
+    "phase_median": "training-person median curve; no personal input",
+    "mass_only": "mass plus phase, fixed ridge",
+    "coarse_manual": "mass plus nearest phone depth (75/96/117 degrees) and duration (2/2.8/4 seconds), fixed ridge",
+    "exact_oracle": "mass plus exact laboratory peak depth and repetition duration, fixed ridge; optimistic bound"
+  },
+  "limitations": [
+    "The exact repetition boundaries and phase alignment come from laboratory knee angles; the phone does not observe them.",
+    "Depth and duration choices are selected from laboratory truth, while actual user entries may be inaccurate.",
+    "The 25-lb object's placement is unspecified and is not validated as a back barbell.",
+    "Only 12 people and one protocol; models were designed after earlier inspection of this dataset.",
+    "Inverse-dynamics net joint moments do not identify individual muscle forces or activation."
+  ],
+  "loads": {
+    "0lbs": {
+      "subjects": 12,
+      "repetitions": 39,
+      "summary": {
+        "hip_flexion_r_moment": {
+          "phaseMedianSubjectMae": 0.2168,
+          "mass_only": {
+            "subjectMedianMaeNmPerKg": 0.2119,
+            "subjectsBeatingPhaseMedian": 11,
+            "pairedMedianImprovementNmPerKg": 0.0037,
+            "pairedMedianImprovementBootstrap95": [
+              0.0009,
+              0.0088
+            ]
+          },
+          "coarse_manual": {
+            "subjectMedianMaeNmPerKg": 0.2203,
+            "subjectsBeatingPhaseMedian": 9,
+            "pairedMedianImprovementNmPerKg": 0.0011,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0003,
+              0.0052
+            ]
+          },
+          "exact_oracle": {
+            "subjectMedianMaeNmPerKg": 0.223,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": -0.0001,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0072,
+              0.0049
+            ]
+          }
+        },
+        "knee_angle_r_moment": {
+          "phaseMedianSubjectMae": 0.2639,
+          "mass_only": {
+            "subjectMedianMaeNmPerKg": 0.2671,
+            "subjectsBeatingPhaseMedian": 5,
+            "pairedMedianImprovementNmPerKg": -0.0005,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0058,
+              0.0018
+            ]
+          },
+          "coarse_manual": {
+            "subjectMedianMaeNmPerKg": 0.2675,
+            "subjectsBeatingPhaseMedian": 7,
+            "pairedMedianImprovementNmPerKg": 0.0014,
+            "pairedMedianImprovementBootstrap95": [
+              -0.007,
+              0.011
+            ]
+          },
+          "exact_oracle": {
+            "subjectMedianMaeNmPerKg": 0.2652,
+            "subjectsBeatingPhaseMedian": 8,
+            "pairedMedianImprovementNmPerKg": 0.0084,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0029,
+              0.0232
+            ]
+          }
+        },
+        "ankle_angle_r_moment": {
+          "phaseMedianSubjectMae": 0.1624,
+          "mass_only": {
+            "subjectMedianMaeNmPerKg": 0.1616,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": -0.0001,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0029,
+              0.0016
+            ]
+          },
+          "coarse_manual": {
+            "subjectMedianMaeNmPerKg": 0.1613,
+            "subjectsBeatingPhaseMedian": 9,
+            "pairedMedianImprovementNmPerKg": 0.0011,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0013,
+              0.0026
+            ]
+          },
+          "exact_oracle": {
+            "subjectMedianMaeNmPerKg": 0.1583,
+            "subjectsBeatingPhaseMedian": 7,
+            "pairedMedianImprovementNmPerKg": 0.0019,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0012,
+              0.0086
+            ]
+          }
+        }
+      },
+      "heldOutPeople": [
+        {
+          "subject": "AB01",
+          "repetitions": 3,
+          "medianDepthDeg": 142.3225,
+          "medianDurationS": 1.845,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.285,
+              "mass_only": 0.2874,
+              "coarse_manual": 0.2836,
+              "exact_oracle": 0.2817
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.5084,
+              "mass_only": 0.5091,
+              "coarse_manual": 0.5018,
+              "exact_oracle": 0.4949
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.2246,
+              "mass_only": 0.2253,
+              "coarse_manual": 0.2217,
+              "exact_oracle": 0.2129
+            }
+          }
+        },
+        {
+          "subject": "AB02",
+          "repetitions": 3,
+          "medianDepthDeg": 132.7696,
+          "medianDurationS": 3.09,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2211,
+              "mass_only": 0.2187,
+              "coarse_manual": 0.2209,
+              "exact_oracle": 0.2342
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2393,
+              "mass_only": 0.2365,
+              "coarse_manual": 0.2363,
+              "exact_oracle": 0.2319
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1308,
+              "mass_only": 0.1298,
+              "coarse_manual": 0.1295,
+              "exact_oracle": 0.1302
+            }
+          }
+        },
+        {
+          "subject": "AB03",
+          "repetitions": 3,
+          "medianDepthDeg": 68.5192,
+          "medianDurationS": 2.62,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2586,
+              "mass_only": 0.2479,
+              "coarse_manual": 0.2468,
+              "exact_oracle": 0.2454
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2173,
+              "mass_only": 0.2517,
+              "coarse_manual": 0.2321,
+              "exact_oracle": 0.1851
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1576,
+              "mass_only": 0.1558,
+              "coarse_manual": 0.1553,
+              "exact_oracle": 0.1336
+            }
+          }
+        },
+        {
+          "subject": "AB05",
+          "repetitions": 3,
+          "medianDepthDeg": 97.6301,
+          "medianDurationS": 3.165,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2107,
+              "mass_only": 0.2056,
+              "coarse_manual": 0.2166,
+              "exact_oracle": 0.2183
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.3213,
+              "mass_only": 0.3244,
+              "coarse_manual": 0.2979,
+              "exact_oracle": 0.285
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1129,
+              "mass_only": 0.1173,
+              "coarse_manual": 0.1095,
+              "exact_oracle": 0.102
+            }
+          }
+        },
+        {
+          "subject": "AB06",
+          "repetitions": 7,
+          "medianDepthDeg": 107.4913,
+          "medianDurationS": 2.975,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.3432,
+              "mass_only": 0.3427,
+              "coarse_manual": 0.3413,
+              "exact_oracle": 0.3422
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2668,
+              "mass_only": 0.2671,
+              "coarse_manual": 0.2736,
+              "exact_oracle": 0.2847
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1894,
+              "mass_only": 0.1891,
+              "coarse_manual": 0.1885,
+              "exact_oracle": 0.1917
+            }
+          }
+        },
+        {
+          "subject": "AB07",
+          "repetitions": 3,
+          "medianDepthDeg": 123.6414,
+          "medianDurationS": 2.685,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2078,
+              "mass_only": 0.1802,
+              "coarse_manual": 0.1782,
+              "exact_oracle": 0.1778
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.1917,
+              "mass_only": 0.1914,
+              "coarse_manual": 0.1936,
+              "exact_oracle": 0.1925
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1404,
+              "mass_only": 0.1362,
+              "coarse_manual": 0.1402,
+              "exact_oracle": 0.134
+            }
+          }
+        },
+        {
+          "subject": "AB08",
+          "repetitions": 3,
+          "medianDepthDeg": 104.1386,
+          "medianDurationS": 2.23,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2652,
+              "mass_only": 0.2596,
+              "coarse_manual": 0.2627,
+              "exact_oracle": 0.265
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.261,
+              "mass_only": 0.265,
+              "coarse_manual": 0.2593,
+              "exact_oracle": 0.2555
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1847,
+              "mass_only": 0.1897,
+              "coarse_manual": 0.188,
+              "exact_oracle": 0.1893
+            }
+          }
+        },
+        {
+          "subject": "AB09",
+          "repetitions": 2,
+          "medianDepthDeg": 123.7989,
+          "medianDurationS": 2.735,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2197,
+              "mass_only": 0.2127,
+              "coarse_manual": 0.2205,
+              "exact_oracle": 0.2265
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.3523,
+              "mass_only": 0.3505,
+              "coarse_manual": 0.3512,
+              "exact_oracle": 0.3573
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1724,
+              "mass_only": 0.171,
+              "coarse_manual": 0.1689,
+              "exact_oracle": 0.1734
+            }
+          }
+        },
+        {
+          "subject": "AB10",
+          "repetitions": 3,
+          "medianDepthDeg": 108.6821,
+          "medianDurationS": 2.12,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.214,
+              "mass_only": 0.1971,
+              "coarse_manual": 0.2061,
+              "exact_oracle": 0.2075
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2447,
+              "mass_only": 0.2419,
+              "coarse_manual": 0.2194,
+              "exact_oracle": 0.2087
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1388,
+              "mass_only": 0.1431,
+              "coarse_manual": 0.144,
+              "exact_oracle": 0.1402
+            }
+          }
+        },
+        {
+          "subject": "AB11",
+          "repetitions": 3,
+          "medianDepthDeg": 117.4196,
+          "medianDurationS": 3.055,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.1886,
+              "mass_only": 0.1873,
+              "coarse_manual": 0.1878,
+              "exact_oracle": 0.189
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.311,
+              "mass_only": 0.3224,
+              "coarse_manual": 0.3181,
+              "exact_oracle": 0.3016
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1851,
+              "mass_only": 0.1865,
+              "coarse_manual": 0.1878,
+              "exact_oracle": 0.1859
+            }
+          }
+        },
+        {
+          "subject": "AB12",
+          "repetitions": 3,
+          "medianDepthDeg": 124.436,
+          "medianDurationS": 2.27,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.1215,
+              "mass_only": 0.1193,
+              "coarse_manual": 0.1212,
+              "exact_oracle": 0.1265
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2594,
+              "mass_only": 0.267,
+              "coarse_manual": 0.2716,
+              "exact_oracle": 0.2658
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1652,
+              "mass_only": 0.163,
+              "coarse_manual": 0.1637,
+              "exact_oracle": 0.1602
+            }
+          }
+        },
+        {
+          "subject": "AB13",
+          "repetitions": 3,
+          "medianDepthDeg": 115.8849,
+          "medianDurationS": 2.435,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2113,
+              "mass_only": 0.2112,
+              "coarse_manual": 0.2201,
+              "exact_oracle": 0.2195
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2789,
+              "mass_only": 0.2771,
+              "coarse_manual": 0.2634,
+              "exact_oracle": 0.2647
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1596,
+              "mass_only": 0.1602,
+              "coarse_manual": 0.1588,
+              "exact_oracle": 0.1564
+            }
+          }
+        }
+      ]
+    },
+    "25lbs": {
+      "subjects": 12,
+      "repetitions": 36,
+      "summary": {
+        "hip_flexion_r_moment": {
+          "phaseMedianSubjectMae": 0.2566,
+          "mass_only": {
+            "subjectMedianMaeNmPerKg": 0.2515,
+            "subjectsBeatingPhaseMedian": 7,
+            "pairedMedianImprovementNmPerKg": 0.0019,
+            "pairedMedianImprovementBootstrap95": [
+              -0.001,
+              0.0066
+            ]
+          },
+          "coarse_manual": {
+            "subjectMedianMaeNmPerKg": 0.2566,
+            "subjectsBeatingPhaseMedian": 5,
+            "pairedMedianImprovementNmPerKg": -0.0001,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0029,
+              0.0023
+            ]
+          },
+          "exact_oracle": {
+            "subjectMedianMaeNmPerKg": 0.2422,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": -0.0,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0071,
+              0.0068
+            ]
+          }
+        },
+        "knee_angle_r_moment": {
+          "phaseMedianSubjectMae": 0.2389,
+          "mass_only": {
+            "subjectMedianMaeNmPerKg": 0.2395,
+            "subjectsBeatingPhaseMedian": 7,
+            "pairedMedianImprovementNmPerKg": 0.0003,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0032,
+              0.0026
+            ]
+          },
+          "coarse_manual": {
+            "subjectMedianMaeNmPerKg": 0.2383,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": -0.0,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0056,
+              0.0068
+            ]
+          },
+          "exact_oracle": {
+            "subjectMedianMaeNmPerKg": 0.2281,
+            "subjectsBeatingPhaseMedian": 8,
+            "pairedMedianImprovementNmPerKg": 0.0058,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0008,
+              0.0101
+            ]
+          }
+        },
+        "ankle_angle_r_moment": {
+          "phaseMedianSubjectMae": 0.176,
+          "mass_only": {
+            "subjectMedianMaeNmPerKg": 0.1772,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": 0.0003,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0017,
+              0.005
+            ]
+          },
+          "coarse_manual": {
+            "subjectMedianMaeNmPerKg": 0.1744,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": 0.0003,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0023,
+              0.006
+            ]
+          },
+          "exact_oracle": {
+            "subjectMedianMaeNmPerKg": 0.1739,
+            "subjectsBeatingPhaseMedian": 6,
+            "pairedMedianImprovementNmPerKg": 0.0004,
+            "pairedMedianImprovementBootstrap95": [
+              -0.0027,
+              0.0056
+            ]
+          }
+        }
+      },
+      "heldOutPeople": [
+        {
+          "subject": "AB01",
+          "repetitions": 3,
+          "medianDepthDeg": 142.2391,
+          "medianDurationS": 1.86,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2268,
+              "mass_only": 0.2276,
+              "coarse_manual": 0.2256,
+              "exact_oracle": 0.2187
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.4759,
+              "mass_only": 0.4753,
+              "coarse_manual": 0.4692,
+              "exact_oracle": 0.4571
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1759,
+              "mass_only": 0.1762,
+              "coarse_manual": 0.1715,
+              "exact_oracle": 0.1712
+            }
+          }
+        },
+        {
+          "subject": "AB02",
+          "repetitions": 3,
+          "medianDepthDeg": 134.7995,
+          "medianDurationS": 2.74,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2014,
+              "mass_only": 0.205,
+              "coarse_manual": 0.2022,
+              "exact_oracle": 0.1998
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.1547,
+              "mass_only": 0.1513,
+              "coarse_manual": 0.1539,
+              "exact_oracle": 0.1513
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1698,
+              "mass_only": 0.1673,
+              "coarse_manual": 0.1711,
+              "exact_oracle": 0.1733
+            }
+          }
+        },
+        {
+          "subject": "AB03",
+          "repetitions": 2,
+          "medianDepthDeg": 68.6784,
+          "medianDurationS": 2.8075,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2711,
+              "mass_only": 0.2629,
+              "coarse_manual": 0.2706,
+              "exact_oracle": 0.2407
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.1587,
+              "mass_only": 0.1871,
+              "coarse_manual": 0.1861,
+              "exact_oracle": 0.1694
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.2027,
+              "mass_only": 0.1955,
+              "coarse_manual": 0.1858,
+              "exact_oracle": 0.1746
+            }
+          }
+        },
+        {
+          "subject": "AB05",
+          "repetitions": 2,
+          "medianDepthDeg": 112.4538,
+          "medianDurationS": 2.8875,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.1619,
+              "mass_only": 0.1599,
+              "coarse_manual": 0.1585,
+              "exact_oracle": 0.1666
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2365,
+              "mass_only": 0.2395,
+              "coarse_manual": 0.2431,
+              "exact_oracle": 0.2283
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.0607,
+              "mass_only": 0.0598,
+              "coarse_manual": 0.0595,
+              "exact_oracle": 0.0613
+            }
+          }
+        },
+        {
+          "subject": "AB06",
+          "repetitions": 7,
+          "medianDepthDeg": 109.5119,
+          "medianDurationS": 2.85,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.4903,
+              "mass_only": 0.4916,
+              "coarse_manual": 0.4903,
+              "exact_oracle": 0.4872
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.4076,
+              "mass_only": 0.4088,
+              "coarse_manual": 0.4136,
+              "exact_oracle": 0.4122
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1929,
+              "mass_only": 0.1935,
+              "coarse_manual": 0.1935,
+              "exact_oracle": 0.1947
+            }
+          }
+        },
+        {
+          "subject": "AB07",
+          "repetitions": 3,
+          "medianDepthDeg": 134.8636,
+          "medianDurationS": 3.05,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2775,
+              "mass_only": 0.2669,
+              "coarse_manual": 0.2675,
+              "exact_oracle": 0.2694
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.1445,
+              "mass_only": 0.1383,
+              "coarse_manual": 0.1375,
+              "exact_oracle": 0.1377
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1871,
+              "mass_only": 0.1898,
+              "coarse_manual": 0.1904,
+              "exact_oracle": 0.1907
+            }
+          }
+        },
+        {
+          "subject": "AB08",
+          "repetitions": 3,
+          "medianDepthDeg": 106.2121,
+          "medianDurationS": 2.59,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.3482,
+              "mass_only": 0.3448,
+              "coarse_manual": 0.3485,
+              "exact_oracle": 0.3527
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2993,
+              "mass_only": 0.3027,
+              "coarse_manual": 0.3046,
+              "exact_oracle": 0.3005
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1677,
+              "mass_only": 0.1679,
+              "coarse_manual": 0.1654,
+              "exact_oracle": 0.1668
+            }
+          }
+        },
+        {
+          "subject": "AB09",
+          "repetitions": 3,
+          "medianDepthDeg": 121.54,
+          "medianDurationS": 2.575,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.242,
+              "mass_only": 0.2401,
+              "coarse_manual": 0.2456,
+              "exact_oracle": 0.2436
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.3252,
+              "mass_only": 0.321,
+              "coarse_manual": 0.329,
+              "exact_oracle": 0.3179
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.2259,
+              "mass_only": 0.2227,
+              "coarse_manual": 0.2297,
+              "exact_oracle": 0.2259
+            }
+          }
+        },
+        {
+          "subject": "AB10",
+          "repetitions": 3,
+          "medianDepthDeg": 105.8188,
+          "medianDurationS": 2.825,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.3037,
+              "mass_only": 0.2934,
+              "coarse_manual": 0.3112,
+              "exact_oracle": 0.3204
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2397,
+              "mass_only": 0.2396,
+              "coarse_manual": 0.2301,
+              "exact_oracle": 0.2076
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1664,
+              "mass_only": 0.1782,
+              "coarse_manual": 0.1774,
+              "exact_oracle": 0.1759
+            }
+          }
+        },
+        {
+          "subject": "AB11",
+          "repetitions": 3,
+          "medianDepthDeg": 119.6243,
+          "medianDurationS": 2.76,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2751,
+              "mass_only": 0.2889,
+              "coarse_manual": 0.2922,
+              "exact_oracle": 0.2918
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2327,
+              "mass_only": 0.236,
+              "coarse_manual": 0.2335,
+              "exact_oracle": 0.2279
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1891,
+              "mass_only": 0.1931,
+              "coarse_manual": 0.1901,
+              "exact_oracle": 0.1867
+            }
+          }
+        },
+        {
+          "subject": "AB12",
+          "repetitions": 3,
+          "medianDepthDeg": 129.4214,
+          "medianDurationS": 2.265,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.2167,
+              "mass_only": 0.2174,
+              "coarse_manual": 0.2188,
+              "exact_oracle": 0.2261
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.2381,
+              "mass_only": 0.2363,
+              "coarse_manual": 0.2297,
+              "exact_oracle": 0.226
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.1761,
+              "mass_only": 0.1669,
+              "coarse_manual": 0.1635,
+              "exact_oracle": 0.1658
+            }
+          }
+        },
+        {
+          "subject": "AB13",
+          "repetitions": 1,
+          "medianDepthDeg": 121.3957,
+          "medianDurationS": 2.825,
+          "maeNmPerKg": {
+            "hip_flexion_r_moment": {
+              "phase_median": 0.1693,
+              "mass_only": 0.1644,
+              "coarse_manual": 0.1626,
+              "exact_oracle": 0.1637
+            },
+            "knee_angle_r_moment": {
+              "phase_median": 0.318,
+              "mass_only": 0.3165,
+              "coarse_manual": 0.3169,
+              "exact_oracle": 0.3183
+            },
+            "ankle_angle_r_moment": {
+              "phase_median": 0.0998,
+              "mass_only": 0.093,
+              "coarse_manual": 0.0922,
+              "exact_oracle": 0.0934
+            }
+          }
+        }
+      ]
+    }
+  }
+}

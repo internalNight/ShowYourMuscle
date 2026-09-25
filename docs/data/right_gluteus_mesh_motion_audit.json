@@ -1,0 +1,103 @@
+{
+  "status": "research_only_unvalidated_gluteus_deformation",
+  "sourceScene": "assets\\blender\\opensim_four_muscle_motion.blend",
+  "outputScene": "assets\\blender\\opensim_five_muscle_motion.blend",
+  "opensimMuscle": "glut_max2_r",
+  "atlasMesh": "Gluteus maximus muscle.r",
+  "vertexCount": 1663,
+  "shapeKeys": 102,
+  "referenceHighZ": 1.0153777599334717,
+  "referenceLowZ": 0.7458915710449219,
+  "radialMappingSamples": [
+    {
+      "vertexIndex": 0,
+      "originalBlenderM": [
+        -0.15721561014652252,
+        -0.02396494895219803,
+        0.8950332999229431
+      ],
+      "pathFraction": 0.4465700468987629
+    },
+    {
+      "vertexIndex": 415,
+      "originalBlenderM": [
+        -0.12790216505527496,
+        -9.749084711074829e-05,
+        0.8366687893867493
+      ],
+      "pathFraction": 0.6631470476605028
+    },
+    {
+      "vertexIndex": 831,
+      "originalBlenderM": [
+        -0.09775623679161072,
+        0.016567379236221313,
+        0.9348037838935852
+      ],
+      "pathFraction": 0.29899111480332335
+    },
+    {
+      "vertexIndex": 1247,
+      "originalBlenderM": [
+        -0.04870619624853134,
+        0.031648240983486176,
+        0.9348037838935852
+      ],
+      "pathFraction": 0.29899111480332335
+    },
+    {
+      "vertexIndex": 1662,
+      "originalBlenderM": [
+        -0.01713293418288231,
+        0.00728192925453186,
+        0.8674048781394958
+      ],
+      "pathFraction": 0.549092635894496
+    }
+  ],
+  "limitations": [
+    "nearest surface/path agreement is a standing geometry screen, not an attachment validation",
+    "waist or hip circumference is not used to infer the gluteal muscle volume",
+    "no measured fiber strain, EMG or muscle force"
+  ],
+  "sampledFrameDistortion": {
+    "1": {
+      "minimumEdgeRatio": 1.0,
+      "maximumEdgeRatio": 1.0,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "26": {
+      "minimumEdgeRatio": 0.8604,
+      "maximumEdgeRatio": 1.0357,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "51": {
+      "minimumEdgeRatio": 0.664,
+      "maximumEdgeRatio": 1.0268,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "76": {
+      "minimumEdgeRatio": 0.8604,
+      "maximumEdgeRatio": 1.0357,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "101": {
+      "minimumEdgeRatio": 1.0,
+      "maximumEdgeRatio": 1.0,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    }
+  },
+  "sampledFrames": [
+    1,
+    26,
+    51,
+    76,
+    101
+  ],
+  "checkedVertices": 25
+}

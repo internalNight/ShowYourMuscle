@@ -1,0 +1,1266 @@
+{
+  "status": "research_only_multiaxis_strength_feasibility_not_personal_force",
+  "candidateModel": "RajagopalLaiUhlrich2023.osim; segment-scaled to source model joint-center distances and total mass",
+  "targetDefinition": "same subject 3D hip moment reconstructed from no-free-forceplate-moment OpenSim ID for six hip coordinates, then projected onto candidate axes",
+  "optimization": "minimum common multiplier s of all 80 nominal maximum isometric forces so six hip torques can be balanced simultaneously with nonnegative muscle tensions; ignores all other joint torques",
+  "limitations": [
+    "source IK and inverse-dynamics joint torques are supplied as inputs, not predicted from phone parameters",
+    "single common strength multiplier is a mathematical diagnostic, not measured individual strength",
+    "muscle force-length-velocity, passive tissue, co-contraction, other joints, and full contact constraints are omitted",
+    "candidate remains anatomically unregistered and lacks individual muscle calibration",
+    "no solution here can be displayed as personal muscle-force coloring"
+  ],
+  "subjects": {
+    "AB01": {
+      "matchedFrames": 4,
+      "framesFeasibleAtAnyUniformStrength": 4,
+      "framesFeasibleAtNominalStrength": 0,
+      "medianMinimumUniformFmaxMultiplier": 3.3723,
+      "medianLargestIndependentAxisLowerBound": 1.5648,
+      "rangeMinimumUniformFmaxMultiplier": [
+        3.1773,
+        3.565
+      ],
+      "frames": [
+        {
+          "timeS": 51.25,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.936482,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -96.079,
+                -19.227,
+                -36.102
+              ],
+              "candidateGeneralizedNm": [
+                -96.079,
+                -19.227,
+                -36.102
+              ],
+              "physicalMomentNormNm": 123.109
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.944325,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -90.45,
+                -18.575,
+                -39.502
+              ],
+              "candidateGeneralizedNm": [
+                -90.45,
+                -18.575,
+                -39.502
+              ],
+              "physicalMomentNormNm": 117.922
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.1773,
+          "largestIndependentAxisLowerBound": 1.4696,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.7077,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 51.255,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.936037,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -98.535,
+                -20.087,
+                -37.276
+              ],
+              "candidateGeneralizedNm": [
+                -98.535,
+                -20.087,
+                -37.276
+              ],
+              "physicalMomentNormNm": 126.575
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.94398,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -93.379,
+                -19.755,
+                -41.019
+              ],
+              "candidateGeneralizedNm": [
+                -93.379,
+                -19.755,
+                -41.019
+              ],
+              "physicalMomentNormNm": 122.069
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.3071,
+          "largestIndependentAxisLowerBound": 1.5331,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.7739,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 51.26,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.935639,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -100.94,
+                -21.018,
+                -38.446
+              ],
+              "candidateGeneralizedNm": [
+                -100.94,
+                -21.018,
+                -38.446
+              ],
+              "physicalMomentNormNm": 129.994
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.943697,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -96.252,
+                -21.01,
+                -42.531
+              ],
+              "candidateGeneralizedNm": [
+                -96.252,
+                -21.01,
+                -42.531
+              ],
+              "physicalMomentNormNm": 126.161
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.4376,
+          "largestIndependentAxisLowerBound": 1.5966,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.841,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 51.265,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.935304,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -103.155,
+                -21.982,
+                -39.571
+              ],
+              "candidateGeneralizedNm": [
+                -103.155,
+                -21.982,
+                -39.571
+              ],
+              "physicalMomentNormNm": 133.189
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.943478,
+              "sameNamedAxisCosines": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "sourceGeneralizedNm": [
+                -98.868,
+                -22.27,
+                -44.014
+              ],
+              "candidateGeneralizedNm": [
+                -98.868,
+                -22.27,
+                -44.014
+              ],
+              "physicalMomentNormNm": 129.976
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.565,
+          "largestIndependentAxisLowerBound": 1.6591,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.906,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        }
+      ]
+    },
+    "AB02": {
+      "matchedFrames": 21,
+      "framesFeasibleAtAnyUniformStrength": 21,
+      "framesFeasibleAtNominalStrength": 0,
+      "medianMinimumUniformFmaxMultiplier": 2.9928,
+      "medianLargestIndependentAxisLowerBound": 1.7066,
+      "rangeMinimumUniformFmaxMultiplier": [
+        2.8158,
+        3.0426
+      ],
+      "frames": [
+        {
+          "timeS": 23.65,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.800732,
+              "sameNamedAxisCosines": [
+                0.999018,
+                0.999876,
+                0.999098
+              ],
+              "sourceGeneralizedNm": [
+                -67.661,
+                -21.706,
+                -46.894
+              ],
+              "candidateGeneralizedNm": [
+                -72.458,
+                -20.603,
+                -41.696
+              ],
+              "physicalMomentNormNm": 130.267
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.864513,
+              "sameNamedAxisCosines": [
+                0.999018,
+                0.999959,
+                0.999049
+              ],
+              "sourceGeneralizedNm": [
+                -76.605,
+                6.719,
+                -44.927
+              ],
+              "candidateGeneralizedNm": [
+                -72.405,
+                6.045,
+                -49.834
+              ],
+              "physicalMomentNormNm": 123.397
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.8158,
+          "largestIndependentAxisLowerBound": 1.6013,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2145,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.655,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.801155,
+              "sameNamedAxisCosines": [
+                0.999,
+                0.999873,
+                0.999081
+              ],
+              "sourceGeneralizedNm": [
+                -67.616,
+                -22.128,
+                -47.436
+              ],
+              "candidateGeneralizedNm": [
+                -72.485,
+                -21.013,
+                -42.176
+              ],
+              "physicalMomentNormNm": 130.766
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.86545,
+              "sameNamedAxisCosines": [
+                0.999,
+                0.999958,
+                0.999031
+              ],
+              "sourceGeneralizedNm": [
+                -77.009,
+                6.193,
+                -45.296
+              ],
+              "candidateGeneralizedNm": [
+                -72.747,
+                5.508,
+                -50.269
+              ],
+              "physicalMomentNormNm": 123.943
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.8493,
+          "largestIndependentAxisLowerBound": 1.6209,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2284,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.66,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.801651,
+              "sameNamedAxisCosines": [
+                0.998982,
+                0.999871,
+                0.999065
+              ],
+              "sourceGeneralizedNm": [
+                -67.767,
+                -22.605,
+                -48.057
+              ],
+              "candidateGeneralizedNm": [
+                -72.717,
+                -21.475,
+                -42.723
+              ],
+              "physicalMomentNormNm": 131.565
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.86638,
+              "sameNamedAxisCosines": [
+                0.998982,
+                0.999957,
+                0.999015
+              ],
+              "sourceGeneralizedNm": [
+                -77.361,
+                5.738,
+                -45.698
+              ],
+              "candidateGeneralizedNm": [
+                -73.038,
+                5.042,
+                -50.733
+              ],
+              "physicalMomentNormNm": 124.467
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.8838,
+          "largestIndependentAxisLowerBound": 1.6428,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.241,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.665,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.802212,
+              "sameNamedAxisCosines": [
+                0.998967,
+                0.999869,
+                0.999051
+              ],
+              "sourceGeneralizedNm": [
+                -68.06,
+                -23.108,
+                -48.716
+              ],
+              "candidateGeneralizedNm": [
+                -73.094,
+                -21.963,
+                -43.305
+              ],
+              "physicalMomentNormNm": 132.558
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.867266,
+              "sameNamedAxisCosines": [
+                0.998967,
+                0.999956,
+                0.999
+              ],
+              "sourceGeneralizedNm": [
+                -77.653,
+                5.351,
+                -46.109
+              ],
+              "candidateGeneralizedNm": [
+                -73.276,
+                4.645,
+                -51.201
+              ],
+              "physicalMomentNormNm": 124.949
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9175,
+          "largestIndependentAxisLowerBound": 1.6658,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2518,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.67,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.802815,
+              "sameNamedAxisCosines": [
+                0.998951,
+                0.999866,
+                0.999037
+              ],
+              "sourceGeneralizedNm": [
+                -68.417,
+                -23.601,
+                -49.359
+              ],
+              "candidateGeneralizedNm": [
+                -73.535,
+                -22.441,
+                -43.869
+              ],
+              "physicalMomentNormNm": 133.596
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.868149,
+              "sameNamedAxisCosines": [
+                0.998951,
+                0.999955,
+                0.998984
+              ],
+              "sourceGeneralizedNm": [
+                -77.897,
+                5.029,
+                -46.503
+              ],
+              "candidateGeneralizedNm": [
+                -73.467,
+                4.315,
+                -51.648
+              ],
+              "physicalMomentNormNm": 125.365
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9492,
+          "largestIndependentAxisLowerBound": 1.6877,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2614,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.675,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.803385,
+              "sameNamedAxisCosines": [
+                0.998929,
+                0.999863,
+                0.999017
+              ],
+              "sourceGeneralizedNm": [
+                -68.743,
+                -24.042,
+                -49.928
+              ],
+              "candidateGeneralizedNm": [
+                -73.954,
+                -22.862,
+                -44.347
+              ],
+              "physicalMomentNormNm": 134.517
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.869073,
+              "sameNamedAxisCosines": [
+                0.998929,
+                0.999954,
+                0.998964
+              ],
+              "sourceGeneralizedNm": [
+                -78.103,
+                4.772,
+                -46.856
+              ],
+              "candidateGeneralizedNm": [
+                -73.612,
+                4.048,
+                -52.064
+              ],
+              "physicalMomentNormNm": 125.698
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9785,
+          "largestIndependentAxisLowerBound": 1.7066,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2719,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.68,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.804132,
+              "sameNamedAxisCosines": [
+                0.998923,
+                0.999863,
+                0.999012
+              ],
+              "sourceGeneralizedNm": [
+                -68.941,
+                -24.384,
+                -50.378
+              ],
+              "candidateGeneralizedNm": [
+                -74.194,
+                -23.199,
+                -44.76
+              ],
+              "physicalMomentNormNm": 135.113
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.869751,
+              "sameNamedAxisCosines": [
+                0.998923,
+                0.999954,
+                0.998958
+              ],
+              "sourceGeneralizedNm": [
+                -78.279,
+                4.582,
+                -47.153
+              ],
+              "candidateGeneralizedNm": [
+                -73.761,
+                3.854,
+                -52.385
+              ],
+              "physicalMomentNormNm": 126.001
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0,
+          "largestIndependentAxisLowerBound": 1.722,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2781,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.685,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.804801,
+              "sameNamedAxisCosines": [
+                0.998911,
+                0.999862,
+                0.999
+              ],
+              "sourceGeneralizedNm": [
+                -68.935,
+                -24.59,
+                -50.688
+              ],
+              "candidateGeneralizedNm": [
+                -74.231,
+                -23.398,
+                -45.031
+              ],
+              "physicalMomentNormNm": 135.322
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.870493,
+              "sameNamedAxisCosines": [
+                0.998911,
+                0.999954,
+                0.998946
+              ],
+              "sourceGeneralizedNm": [
+                -78.417,
+                4.466,
+                -47.387
+              ],
+              "candidateGeneralizedNm": [
+                -73.864,
+                3.733,
+                -52.657
+              ],
+              "physicalMomentNormNm": 126.197
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0181,
+          "largestIndependentAxisLowerBound": 1.7318,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2862,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.69,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.805495,
+              "sameNamedAxisCosines": [
+                0.998902,
+                0.999861,
+                0.998993
+              ],
+              "sourceGeneralizedNm": [
+                -68.686,
+                -24.636,
+                -50.86
+              ],
+              "candidateGeneralizedNm": [
+                -73.997,
+                -23.446,
+                -45.196
+              ],
+              "physicalMomentNormNm": 135.08
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.871121,
+              "sameNamedAxisCosines": [
+                0.998902,
+                0.999954,
+                0.998938
+              ],
+              "sourceGeneralizedNm": [
+                -78.498,
+                4.432,
+                -47.563
+              ],
+              "candidateGeneralizedNm": [
+                -73.924,
+                3.697,
+                -52.854
+              ],
+              "physicalMomentNormNm": 126.306
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0302,
+          "largestIndependentAxisLowerBound": 1.7374,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2928,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.695,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.806202,
+              "sameNamedAxisCosines": [
+                0.998892,
+                0.99986,
+                0.998983
+              ],
+              "sourceGeneralizedNm": [
+                -68.21,
+                -24.521,
+                -50.919
+              ],
+              "candidateGeneralizedNm": [
+                -73.525,
+                -23.336,
+                -45.261
+              ],
+              "physicalMomentNormNm": 134.432
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.871752,
+              "sameNamedAxisCosines": [
+                0.998892,
+                0.999953,
+                0.998928
+              ],
+              "sourceGeneralizedNm": [
+                -78.502,
+                4.487,
+                -47.687
+              ],
+              "candidateGeneralizedNm": [
+                -73.907,
+                3.751,
+                -53.0
+              ],
+              "physicalMomentNormNm": 126.288
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0384,
+          "largestIndependentAxisLowerBound": 1.7388,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2996,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.7,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.806885,
+              "sameNamedAxisCosines": [
+                0.998885,
+                0.99986,
+                0.998976
+              ],
+              "sourceGeneralizedNm": [
+                -67.572,
+                -24.271,
+                -50.901
+              ],
+              "candidateGeneralizedNm": [
+                -72.872,
+                -23.095,
+                -45.268
+              ],
+              "physicalMomentNormNm": 133.503
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.872304,
+              "sameNamedAxisCosines": [
+                0.998885,
+                0.999953,
+                0.99892
+              ],
+              "sourceGeneralizedNm": [
+                -78.414,
+                4.636,
+                -47.772
+              ],
+              "candidateGeneralizedNm": [
+                -73.809,
+                3.9,
+                -53.093
+              ],
+              "physicalMomentNormNm": 126.158
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0421,
+          "largestIndependentAxisLowerBound": 1.7377,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.3044,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.705,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.80753,
+              "sameNamedAxisCosines": [
+                0.998878,
+                0.99986,
+                0.998969
+              ],
+              "sourceGeneralizedNm": [
+                -66.876,
+                -23.927,
+                -50.836
+              ],
+              "candidateGeneralizedNm": [
+                -72.155,
+                -22.762,
+                -45.234
+              ],
+              "physicalMomentNormNm": 132.454
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.872792,
+              "sameNamedAxisCosines": [
+                0.998878,
+                0.999953,
+                0.998913
+              ],
+              "sourceGeneralizedNm": [
+                -78.237,
+                4.877,
+                -47.824
+              ],
+              "candidateGeneralizedNm": [
+                -73.626,
+                4.144,
+                -53.149
+              ],
+              "physicalMomentNormNm": 125.921
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0426,
+          "largestIndependentAxisLowerBound": 1.7348,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.3079,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.71,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.808173,
+              "sameNamedAxisCosines": [
+                0.998872,
+                0.99986,
+                0.998963
+              ],
+              "sourceGeneralizedNm": [
+                -66.237,
+                -23.541,
+                -50.745
+              ],
+              "candidateGeneralizedNm": [
+                -71.492,
+                -22.387,
+                -45.175
+              ],
+              "physicalMomentNormNm": 131.436
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.873244,
+              "sameNamedAxisCosines": [
+                0.998872,
+                0.999954,
+                0.998907
+              ],
+              "sourceGeneralizedNm": [
+                -77.99,
+                5.206,
+                -47.848
+              ],
+              "candidateGeneralizedNm": [
+                -73.38,
+                4.477,
+                -53.169
+              ],
+              "physicalMomentNormNm": 125.598
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0399,
+          "largestIndependentAxisLowerBound": 1.7307,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.3093,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.715,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.808768,
+              "sameNamedAxisCosines": [
+                0.998866,
+                0.99986,
+                0.998958
+              ],
+              "sourceGeneralizedNm": [
+                -65.754,
+                -23.159,
+                -50.634
+              ],
+              "candidateGeneralizedNm": [
+                -70.988,
+                -22.014,
+                -45.09
+              ],
+              "physicalMomentNormNm": 130.587
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.873653,
+              "sameNamedAxisCosines": [
+                0.998866,
+                0.999954,
+                0.998902
+              ],
+              "sourceGeneralizedNm": [
+                -77.702,
+                5.615,
+                -47.84
+              ],
+              "candidateGeneralizedNm": [
+                -73.098,
+                4.89,
+                -53.154
+              ],
+              "physicalMomentNormNm": 125.218
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0341,
+          "largestIndependentAxisLowerBound": 1.7252,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.3089,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.72,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.809322,
+              "sameNamedAxisCosines": [
+                0.998862,
+                0.99986,
+                0.998953
+              ],
+              "sourceGeneralizedNm": [
+                -65.484,
+                -22.809,
+                -50.498
+              ],
+              "candidateGeneralizedNm": [
+                -70.702,
+                -21.671,
+                -44.969
+              ],
+              "physicalMomentNormNm": 129.965
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.874016,
+              "sameNamedAxisCosines": [
+                0.998862,
+                0.999954,
+                0.998897
+              ],
+              "sourceGeneralizedNm": [
+                -77.402,
+                6.092,
+                -47.792
+              ],
+              "candidateGeneralizedNm": [
+                -72.806,
+                5.373,
+                -53.094
+              ],
+              "physicalMomentNormNm": 124.803
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0248,
+          "largestIndependentAxisLowerBound": 1.7182,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.3066,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.725,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.809834,
+              "sameNamedAxisCosines": [
+                0.998857,
+                0.999861,
+                0.998948
+              ],
+              "sourceGeneralizedNm": [
+                -65.431,
+                -22.496,
+                -50.327
+              ],
+              "candidateGeneralizedNm": [
+                -70.638,
+                -21.361,
+                -44.804
+              ],
+              "physicalMomentNormNm": 129.567
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.874359,
+              "sameNamedAxisCosines": [
+                0.998857,
+                0.999955,
+                0.998892
+              ],
+              "sourceGeneralizedNm": [
+                -77.103,
+                6.627,
+                -47.689
+              ],
+              "candidateGeneralizedNm": [
+                -72.52,
+                5.914,
+                -52.978
+              ],
+              "physicalMomentNormNm": 124.35
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 3.0112,
+          "largestIndependentAxisLowerBound": 1.7092,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.3021,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.73,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.810299,
+              "sameNamedAxisCosines": [
+                0.998853,
+                0.999862,
+                0.998944
+              ],
+              "sourceGeneralizedNm": [
+                -65.549,
+                -22.199,
+                -50.116
+              ],
+              "candidateGeneralizedNm": [
+                -70.748,
+                -21.065,
+                -44.588
+              ],
+              "physicalMomentNormNm": 129.329
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.874671,
+              "sameNamedAxisCosines": [
+                0.998853,
+                0.999955,
+                0.998888
+              ],
+              "sourceGeneralizedNm": [
+                -76.799,
+                7.21,
+                -47.517
+              ],
+              "candidateGeneralizedNm": [
+                -72.233,
+                6.503,
+                -52.792
+              ],
+              "physicalMomentNormNm": 123.843
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9928,
+          "largestIndependentAxisLowerBound": 1.698,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2949,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.735,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.81072,
+              "sameNamedAxisCosines": [
+                0.998849,
+                0.999863,
+                0.998939
+              ],
+              "sourceGeneralizedNm": [
+                -65.754,
+                -21.879,
+                -49.87
+              ],
+              "candidateGeneralizedNm": [
+                -70.948,
+                -20.746,
+                -44.334
+              ],
+              "physicalMomentNormNm": 129.16
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.874988,
+              "sameNamedAxisCosines": [
+                0.998849,
+                0.999955,
+                0.998883
+              ],
+              "sourceGeneralizedNm": [
+                -76.467,
+                7.834,
+                -47.264
+              ],
+              "candidateGeneralizedNm": [
+                -71.923,
+                7.134,
+                -52.519
+              ],
+              "physicalMomentNormNm": 123.238
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9687,
+          "largestIndependentAxisLowerBound": 1.685,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2837,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.74,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.811092,
+              "sameNamedAxisCosines": [
+                0.998844,
+                0.999864,
+                0.998934
+              ],
+              "sourceGeneralizedNm": [
+                -65.959,
+                -21.494,
+                -49.6
+              ],
+              "candidateGeneralizedNm": [
+                -71.145,
+                -20.361,
+                -44.056
+              ],
+              "physicalMomentNormNm": 128.967
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.875301,
+              "sameNamedAxisCosines": [
+                0.998844,
+                0.999956,
+                0.998878
+              ],
+              "sourceGeneralizedNm": [
+                -76.075,
+                8.493,
+                -46.925
+              ],
+              "candidateGeneralizedNm": [
+                -71.559,
+                7.799,
+                -52.156
+              ],
+              "physicalMomentNormNm": 122.501
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9388,
+          "largestIndependentAxisLowerBound": 1.671,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2678,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.745,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.811427,
+              "sameNamedAxisCosines": [
+                0.99884,
+                0.999865,
+                0.998929
+              ],
+              "sourceGeneralizedNm": [
+                -66.089,
+                -21.007,
+                -49.33
+              ],
+              "candidateGeneralizedNm": [
+                -71.264,
+                -19.877,
+                -43.781
+              ],
+              "physicalMomentNormNm": 128.681
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.875634,
+              "sameNamedAxisCosines": [
+                0.99884,
+                0.999956,
+                0.998873
+              ],
+              "sourceGeneralizedNm": [
+                -75.596,
+                9.181,
+                -46.505
+              ],
+              "candidateGeneralizedNm": [
+                -71.114,
+                8.495,
+                -51.706
+              ],
+              "physicalMomentNormNm": 121.603
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.9034,
+          "largestIndependentAxisLowerBound": 1.6568,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2466,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        },
+        {
+          "timeS": 23.75,
+          "axisMapping": {
+            "r": {
+              "sourceAxisDeterminant": 0.811722,
+              "sameNamedAxisCosines": [
+                0.998834,
+                0.999866,
+                0.998923
+              ],
+              "sourceGeneralizedNm": [
+                -66.103,
+                -20.4,
+                -49.077
+              ],
+              "candidateGeneralizedNm": [
+                -71.265,
+                -19.274,
+                -43.528
+              ],
+              "physicalMomentNormNm": 128.275
+            },
+            "l": {
+              "sourceAxisDeterminant": 0.875988,
+              "sameNamedAxisCosines": [
+                0.998834,
+                0.999957,
+                0.998867
+              ],
+              "sourceGeneralizedNm": [
+                -75.026,
+                9.891,
+                -46.014
+              ],
+              "candidateGeneralizedNm": [
+                -70.585,
+                9.215,
+                -51.18
+              ],
+              "physicalMomentNormNm": 120.551
+            }
+          },
+          "feasibleAtAnyUniformStrength": true,
+          "minimumUniformFmaxMultiplier": 2.8633,
+          "largestIndependentAxisLowerBound": 1.6432,
+          "minimumJointlyFeasibleAboveIndependentBound": 1.2201,
+          "largestTorqueResidualNm": 0.0,
+          "atNominalStrengthFeasible": false
+        }
+      ]
+    }
+  }
+}

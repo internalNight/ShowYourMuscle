@@ -1,0 +1,151 @@
+{
+  "status": "research_physics_audit_not_phone_or_muscle_force_validation",
+  "source": "Scherpereel et al. 2023, doi:10.1038/s41597-023-02840-6",
+  "method": "Public scaled subject models + replayed experimental IK; compare m(g+a_COM) with two measured force plates during 0-lb squats. No barbell or individual muscle forces in this audit.",
+  "cases": [
+    {
+      "subject": "AB01",
+      "intervalS": [
+        50,
+        52
+      ],
+      "bodyMassModelKg": 78.84999999999994,
+      "usableFrames": 236,
+      "verticalGrfN": {
+        "mean": 816.8809618644068,
+        "min": 238.394,
+        "max": 1590.4499999999998
+      },
+      "modelComVerticalRangeCm": 54.087533884469785,
+      "staticBodyWeightOnly": {
+        "maeN": 284.03025201271186,
+        "maeFractionBodyWeight": 0.36731801262342345,
+        "biasN": -43.62660936440749,
+        "p90AbsoluteErrorN": 606.1501475000007,
+        "r2": -0.01536665417024663
+      },
+      "bodyWeightPlusComAccelerationBySmoothingWindow": {
+        "21": {
+          "windowMs": 105.0,
+          "modelComVerticalAccelerationRangeMs2": [
+            -6.523686617919481,
+            10.33047365313773
+          ],
+          "maeN": 28.90341849994779,
+          "maeFractionBodyWeight": 0.03737892765362458,
+          "biasN": -1.602435154209527,
+          "p90AbsoluteErrorN": 55.399455884418416,
+          "r2": 0.9894256052654969
+        },
+        "41": {
+          "windowMs": 205.0,
+          "modelComVerticalAccelerationRangeMs2": [
+            -6.076780136691646,
+            9.624222000925911
+          ],
+          "maeN": 28.52262354438772,
+          "maeFractionBodyWeight": 0.03688647008862164,
+          "biasN": 0.5975044341232487,
+          "p90AbsoluteErrorN": 61.659729368568634,
+          "r2": 0.9893234465666891
+        },
+        "61": {
+          "windowMs": 305.0,
+          "modelComVerticalAccelerationRangeMs2": [
+            -5.459906386856109,
+            8.688575091565784
+          ],
+          "maeN": 35.48241360622611,
+          "maeFractionBodyWeight": 0.04588711785650911,
+          "biasN": 3.42179726167201,
+          "p90AbsoluteErrorN": 100.40708958472496,
+          "r2": 0.9784298746544985
+        }
+      },
+      "horizontalForceConsistency205ms": {
+        "ForceX": {
+          "measuredMeanN": 3.3921076271186448,
+          "maeN": 7.396236220313046,
+          "biasN": -1.242208202318455
+        },
+        "ForceZ": {
+          "measuredMeanN": -8.994066686228816,
+          "maeN": 18.997103005490175,
+          "biasN": 11.419249957347281
+        }
+      }
+    },
+    {
+      "subject": "AB02",
+      "intervalS": [
+        23,
+        25
+      ],
+      "bodyMassModelKg": 82.17899999999997,
+      "usableFrames": 276,
+      "verticalGrfN": {
+        "mean": 849.5443036231884,
+        "min": 435.5803,
+        "max": 1157.3923
+      },
+      "modelComVerticalRangeCm": 50.78969908865314,
+      "staticBodyWeightOnly": {
+        "maeN": 155.15122951340592,
+        "maeFractionBodyWeight": 0.19251904281906537,
+        "biasN": -43.64361327318874,
+        "p90AbsoluteErrorN": 335.96985,
+        "r2": -0.05276255503947014
+      },
+      "bodyWeightPlusComAccelerationBySmoothingWindow": {
+        "21": {
+          "windowMs": 105.0,
+          "modelComVerticalAccelerationRangeMs2": [
+            -4.05741554245094,
+            4.262875894570939
+          ],
+          "maeN": 18.35392623617826,
+          "maeFractionBodyWeight": 0.022774426745071057,
+          "biasN": -3.3755752165798745,
+          "p90AbsoluteErrorN": 39.92669359260054,
+          "r2": 0.9811220089653893
+        },
+        "41": {
+          "windowMs": 205.0,
+          "modelComVerticalAccelerationRangeMs2": [
+            -3.680935627696698,
+            4.206113228377468
+          ],
+          "maeN": 19.680244973771845,
+          "maeFractionBodyWeight": 0.0244201862703763,
+          "biasN": -1.9115723726535174,
+          "p90AbsoluteErrorN": 35.61764482451406,
+          "r2": 0.9745102165555776
+        },
+        "61": {
+          "windowMs": 305.0,
+          "modelComVerticalAccelerationRangeMs2": [
+            -3.2256113822207535,
+            4.083354145976102
+          ],
+          "maeN": 23.230888563628277,
+          "maeFractionBodyWeight": 0.028825994122848052,
+          "biasN": -0.04132377243966368,
+          "p90AbsoluteErrorN": 56.84246003124724,
+          "r2": 0.9595955411927808
+        }
+      },
+      "horizontalForceConsistency205ms": {
+        "ForceX": {
+          "measuredMeanN": 0.8903860362318842,
+          "maeN": 8.26007204575561,
+          "biasN": -2.6921578596014037
+        },
+        "ForceZ": {
+          "measuredMeanN": -0.14656721304347964,
+          "maeN": 9.943931392164624,
+          "biasN": 0.7232999747736522
+        }
+      }
+    }
+  ]
+}

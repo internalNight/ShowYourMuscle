@@ -1,0 +1,299 @@
+{
+  "status": "research_only",
+  "runs": [
+    {
+      "case": "barbell-0kg-half-axial",
+      "barbellKg": 0.0,
+      "barbellLocalForwardM": 0.0,
+      "loadLineOverAnkle": false,
+      "halfAxialMassAndInertia": true,
+      "personHeightCm": null,
+      "personWeightKg": null,
+      "modelMassKg": 33.963499999999996,
+      "passiveFiberForcesEnabled": true,
+      "viewerBarPath": false,
+      "viewerBarOffsetCm": 0,
+      "kinematicsSha256": "7b85b4f29cb8d5b0850a28519c4fa32ceb3c7727f81a17356db9e8a12623b077",
+      "deepestTimeS": 1.4,
+      "muscles": {
+        "glut_max2_r": {
+          "activation": 0.005290661652051398,
+          "activeFiberForceN": 16.75008422161124,
+          "normalizedFiberLength": 1.526443221689537,
+          "passiveForceMultiplier": 0.3708066851317025
+        },
+        "vas_int_r": {
+          "activation": 0.1639801399849641,
+          "activeFiberForceN": 2522.166903579373,
+          "normalizedFiberLength": 1.293948817066104,
+          "passiveForceMultiplier": 0.09807398483699112
+        },
+        "tib_ant_r": {
+          "activation": 5.176374468686791e-08,
+          "activeFiberForceN": 0.000177004218714092,
+          "normalizedFiberLength": 0.6602896822577043,
+          "passiveForceMultiplier": 0.002439888728314306
+        }
+      },
+      "reserves": {
+        "hip_r_hip_flexion_r": {
+          "deepestNm": 0.004952749434928976,
+          "peakAbsoluteNm": 0.0586307791672565
+        },
+        "knee_r_knee_angle_r": {
+          "deepestNm": 0.00765302429196684,
+          "peakAbsoluteNm": 0.00869825237388526
+        },
+        "ankle_r_ankle_angle_r": {
+          "deepestNm": 0.002400055901018514,
+          "peakAbsoluteNm": 0.0410973290394475
+        }
+      }
+    },
+    {
+      "case": "barbell-20kg-viewer-bar-path-half-axial",
+      "barbellKg": 20.0,
+      "barbellLocalForwardM": 0.0,
+      "loadLineOverAnkle": false,
+      "halfAxialMassAndInertia": true,
+      "personHeightCm": null,
+      "personWeightKg": null,
+      "modelMassKg": 33.963499999999996,
+      "passiveFiberForcesEnabled": true,
+      "viewerBarPath": true,
+      "viewerBarOffsetCm": 0,
+      "kinematicsSha256": "7b85b4f29cb8d5b0850a28519c4fa32ceb3c7727f81a17356db9e8a12623b077",
+      "deepestTimeS": 1.4,
+      "muscles": {
+        "glut_max2_r": {
+          "activation": 0.2473537250788182,
+          "activeFiberForceN": 787.6296591686327,
+          "normalizedFiberLength": 1.524424636325347,
+          "passiveForceMultiplier": 0.3665519145030413
+        },
+        "vas_int_r": {
+          "activation": 0.2865922986394759,
+          "activeFiberForceN": 4460.647892505051,
+          "normalizedFiberLength": 1.286548124697297,
+          "passiveForceMultiplier": 0.09400509770142151
+        },
+        "tib_ant_r": {
+          "activation": 7.474101037234398e-07,
+          "activeFiberForceN": 0.002555691906648837,
+          "normalizedFiberLength": 0.6602894733014856,
+          "passiveForceMultiplier": 0.002439885588759204
+        }
+      },
+      "reserves": {
+        "hip_r_hip_flexion_r": {
+          "deepestNm": 0.04741571171282542,
+          "peakAbsoluteNm": 0.04741571171282542
+        },
+        "knee_r_knee_angle_r": {
+          "deepestNm": 0.013795045278445685,
+          "peakAbsoluteNm": 0.014001548024702923
+        },
+        "ankle_r_ankle_angle_r": {
+          "deepestNm": 0.0017912061245365834,
+          "peakAbsoluteNm": 0.04920879216676896
+        }
+      }
+    },
+    {
+      "case": "barbell-60kg-viewer-bar-path-half-axial",
+      "barbellKg": 60.0,
+      "barbellLocalForwardM": 0.0,
+      "loadLineOverAnkle": false,
+      "halfAxialMassAndInertia": true,
+      "personHeightCm": null,
+      "personWeightKg": null,
+      "modelMassKg": 33.963499999999996,
+      "passiveFiberForcesEnabled": true,
+      "viewerBarPath": true,
+      "viewerBarOffsetCm": 0,
+      "kinematicsSha256": "7b85b4f29cb8d5b0850a28519c4fa32ceb3c7727f81a17356db9e8a12623b077",
+      "deepestTimeS": 1.4,
+      "muscles": {
+        "glut_max2_r": {
+          "activation": 0.6068375564971049,
+          "activeFiberForceN": 1946.081536318661,
+          "normalizedFiberLength": 1.521917992645593,
+          "passiveForceMultiplier": 0.3613362715975978
+        },
+        "vas_int_r": {
+          "activation": 0.5697899588920172,
+          "activeFiberForceN": 9052.799559861907,
+          "normalizedFiberLength": 1.2732509808726,
+          "passiveForceMultiplier": 0.08711300620289963
+        },
+        "tib_ant_r": {
+          "activation": 4.107501719833428e-07,
+          "activeFiberForceN": 0.00140468747203662,
+          "normalizedFiberLength": 0.660289377899435,
+          "passiveForceMultiplier": 0.002439884155350158
+        }
+      },
+      "reserves": {
+        "hip_r_hip_flexion_r": {
+          "deepestNm": 0.11065121920917045,
+          "peakAbsoluteNm": 0.11065121920917045
+        },
+        "knee_r_knee_angle_r": {
+          "deepestNm": 0.02629992629631778,
+          "peakAbsoluteNm": 0.02643100906887876
+        },
+        "ankle_r_ankle_angle_r": {
+          "deepestNm": 0.004382631180708124,
+          "peakAbsoluteNm": 0.06913058858989216
+        }
+      }
+    },
+    {
+      "case": "barbell-60kg-no-passive-viewer-bar-path-half-axial",
+      "barbellKg": 60.0,
+      "barbellLocalForwardM": 0.0,
+      "loadLineOverAnkle": false,
+      "halfAxialMassAndInertia": true,
+      "personHeightCm": null,
+      "personWeightKg": null,
+      "modelMassKg": 33.963499999999996,
+      "passiveFiberForcesEnabled": false,
+      "viewerBarPath": true,
+      "viewerBarOffsetCm": 0,
+      "kinematicsSha256": "7b85b4f29cb8d5b0850a28519c4fa32ceb3c7727f81a17356db9e8a12623b077",
+      "deepestTimeS": 1.4,
+      "muscles": {
+        "glut_max2_r": {
+          "activation": 0.9998881768463761,
+          "activeFiberForceN": 3173.193255951157,
+          "normalizedFiberLength": 1.524578518591038,
+          "passiveForceMultiplier": 0.0
+        },
+        "vas_int_r": {
+          "activation": 0.704035426343787,
+          "activeFiberForceN": 11215.68437332398,
+          "normalizedFiberLength": 1.272043985807136,
+          "passiveForceMultiplier": 0.0
+        },
+        "tib_ant_r": {
+          "activation": 9.268201263191266e-07,
+          "activeFiberForceN": 0.003172958094130674,
+          "normalizedFiberLength": 0.6613561851214484,
+          "passiveForceMultiplier": 0.0
+        }
+      },
+      "reserves": {
+        "hip_r_hip_flexion_r": {
+          "deepestNm": 11.997971820529237,
+          "peakAbsoluteNm": 11.997971820529237
+        },
+        "knee_r_knee_angle_r": {
+          "deepestNm": 0.0267809264082056,
+          "peakAbsoluteNm": 0.04719541016779772
+        },
+        "ankle_r_ankle_angle_r": {
+          "deepestNm": 0.005854580960394826,
+          "peakAbsoluteNm": 0.03187848981057474
+        }
+      }
+    },
+    {
+      "case": "barbell-60kg-viewer-bar-path-offset+6cm-half-axial",
+      "barbellKg": 60.0,
+      "barbellLocalForwardM": 0.0,
+      "loadLineOverAnkle": false,
+      "halfAxialMassAndInertia": true,
+      "personHeightCm": null,
+      "personWeightKg": null,
+      "modelMassKg": 33.963499999999996,
+      "passiveFiberForcesEnabled": true,
+      "viewerBarPath": true,
+      "viewerBarOffsetCm": 6.0,
+      "kinematicsSha256": "7b85b4f29cb8d5b0850a28519c4fa32ceb3c7727f81a17356db9e8a12623b077",
+      "deepestTimeS": 1.4,
+      "muscles": {
+        "glut_max2_r": {
+          "activation": 0.7002219785411935,
+          "activeFiberForceN": 2249.21003810188,
+          "normalizedFiberLength": 1.521341154090544,
+          "passiveForceMultiplier": 0.3601465649232989
+        },
+        "vas_int_r": {
+          "activation": 0.5931478128491939,
+          "activeFiberForceN": 9436.457233842879,
+          "normalizedFiberLength": 1.272326775881862,
+          "passiveForceMultiplier": 0.08665316215018966
+        },
+        "tib_ant_r": {
+          "activation": 3.054599171210679e-07,
+          "activeFiberForceN": 0.001044599791000803,
+          "normalizedFiberLength": 0.6602894400971852,
+          "passiveForceMultiplier": 0.002439885089866856
+        }
+      },
+      "reserves": {
+        "hip_r_hip_flexion_r": {
+          "deepestNm": 0.12580025054942062,
+          "peakAbsoluteNm": 0.12580025054942062
+        },
+        "knee_r_knee_angle_r": {
+          "deepestNm": 0.0280854174833659,
+          "peakAbsoluteNm": 0.0280854174833659
+        },
+        "ankle_r_ankle_angle_r": {
+          "deepestNm": 0.005457017443761366,
+          "peakAbsoluteNm": 0.03760041225861232
+        }
+      }
+    },
+    {
+      "case": "barbell-60kg-viewer-bar-path-offset-6cm-half-axial",
+      "barbellKg": 60.0,
+      "barbellLocalForwardM": 0.0,
+      "loadLineOverAnkle": false,
+      "halfAxialMassAndInertia": true,
+      "personHeightCm": null,
+      "personWeightKg": null,
+      "modelMassKg": 33.963499999999996,
+      "passiveFiberForcesEnabled": true,
+      "viewerBarPath": true,
+      "viewerBarOffsetCm": -6.0,
+      "kinematicsSha256": "7b85b4f29cb8d5b0850a28519c4fa32ceb3c7727f81a17356db9e8a12623b077",
+      "deepestTimeS": 1.4,
+      "muscles": {
+        "glut_max2_r": {
+          "activation": 0.5134463635779309,
+          "activeFiberForceN": 1643.762173269466,
+          "normalizedFiberLength": 1.522522776387401,
+          "passiveForceMultiplier": 0.3625878323933391
+        },
+        "vas_int_r": {
+          "activation": 0.54632088946301,
+          "activeFiberForceN": 8667.336408633095,
+          "normalizedFiberLength": 1.274203116969452,
+          "passiveForceMultiplier": 0.08758929412368342
+        },
+        "tib_ant_r": {
+          "activation": 5.12065891904574e-07,
+          "activeFiberForceN": 0.001751116262740319,
+          "normalizedFiberLength": 0.6602893946058751,
+          "passiveForceMultiplier": 0.002439884406363179
+        }
+      },
+      "reserves": {
+        "hip_r_hip_flexion_r": {
+          "deepestNm": 0.09320506283007936,
+          "peakAbsoluteNm": 0.09320506283007936
+        },
+        "knee_r_knee_angle_r": {
+          "deepestNm": 0.02296763380214472,
+          "peakAbsoluteNm": 0.02324462139986866
+        },
+        "ankle_r_ankle_angle_r": {
+          "deepestNm": 0.0017062348501080196,
+          "peakAbsoluteNm": 0.1055307730856089
+        }
+      }
+    }
+  ]
+}

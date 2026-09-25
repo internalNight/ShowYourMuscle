@@ -1,0 +1,108 @@
+{
+  "status": "animated_bone_surface_proximity_screen_only",
+  "frames": [
+    1,
+    26,
+    51,
+    76,
+    101
+  ],
+  "records": [
+    {
+      "frame": 1,
+      "smallBone": "atlas_Patella.r",
+      "largeBone": "atlas_Femur.r",
+      "smallVertexCount": 140,
+      "minimumDistanceM": 0.002252936130389571,
+      "medianVertexDistanceM": 0.010258033871650696,
+      "maximumVertexDistanceM": 0.022501524537801743
+    },
+    {
+      "frame": 1,
+      "smallBone": "atlas_Calcaneus.r",
+      "largeBone": "atlas_Tibia.r",
+      "smallVertexCount": 726,
+      "minimumDistanceM": 0.0175434872508049,
+      "medianVertexDistanceM": 0.0393018014729023,
+      "maximumVertexDistanceM": 0.07275514304637909
+    },
+    {
+      "frame": 26,
+      "smallBone": "atlas_Patella.r",
+      "largeBone": "atlas_Femur.r",
+      "smallVertexCount": 140,
+      "minimumDistanceM": 0.000132092391140759,
+      "medianVertexDistanceM": 0.007148289820179343,
+      "maximumVertexDistanceM": 0.01673774980008602
+    },
+    {
+      "frame": 26,
+      "smallBone": "atlas_Calcaneus.r",
+      "largeBone": "atlas_Tibia.r",
+      "smallVertexCount": 726,
+      "minimumDistanceM": 0.009346000850200653,
+      "medianVertexDistanceM": 0.031277879141271114,
+      "maximumVertexDistanceM": 0.07108364999294281
+    },
+    {
+      "frame": 51,
+      "smallBone": "atlas_Patella.r",
+      "largeBone": "atlas_Femur.r",
+      "smallVertexCount": 140,
+      "minimumDistanceM": 9.020415018312633e-05,
+      "medianVertexDistanceM": 0.011461139656603336,
+      "maximumVertexDistanceM": 0.017931323498487473
+    },
+    {
+      "frame": 51,
+      "smallBone": "atlas_Calcaneus.r",
+      "largeBone": "atlas_Tibia.r",
+      "smallVertexCount": 726,
+      "minimumDistanceM": 0.009417077526450157,
+      "medianVertexDistanceM": 0.03132878616452217,
+      "maximumVertexDistanceM": 0.07110545039176941
+    },
+    {
+      "frame": 76,
+      "smallBone": "atlas_Patella.r",
+      "largeBone": "atlas_Femur.r",
+      "smallVertexCount": 140,
+      "minimumDistanceM": 0.00013205019058659673,
+      "medianVertexDistanceM": 0.007148339645937085,
+      "maximumVertexDistanceM": 0.01673775166273117
+    },
+    {
+      "frame": 76,
+      "smallBone": "atlas_Calcaneus.r",
+      "largeBone": "atlas_Tibia.r",
+      "smallVertexCount": 726,
+      "minimumDistanceM": 0.00934602227061987,
+      "medianVertexDistanceM": 0.03127790242433548,
+      "maximumVertexDistanceM": 0.0710836797952652
+    },
+    {
+      "frame": 101,
+      "smallBone": "atlas_Patella.r",
+      "largeBone": "atlas_Femur.r",
+      "smallVertexCount": 140,
+      "minimumDistanceM": 0.002252936130389571,
+      "medianVertexDistanceM": 0.010258033871650696,
+      "maximumVertexDistanceM": 0.022501524537801743
+    },
+    {
+      "frame": 101,
+      "smallBone": "atlas_Calcaneus.r",
+      "largeBone": "atlas_Tibia.r",
+      "smallVertexCount": 726,
+      "minimumDistanceM": 0.0175434872508049,
+      "medianVertexDistanceM": 0.0393018014729023,
+      "maximumVertexDistanceM": 0.07275514304637909
+    }
+  ],
+  "limitations": [
+    "both atlas bones use the same standing translation fit only to femur/tibia bounding boxes",
+    "minimum distance between sampled bone vertices and another bone surface is not a contact or collision test",
+    "patella and calcaneus are not landmark-fitted to OpenSim bones",
+    "single right-leg research motion and no tissue mechanics or force"
+  ]
+}

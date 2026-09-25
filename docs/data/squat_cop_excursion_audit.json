@@ -1,0 +1,425 @@
+{
+  "status": "laboratory_pressure_center_input_audit_not_phone_prediction",
+  "source": "Scherpereel et al. 2023 processed public squat angle and force-plate CSVs",
+  "method": "Same 39 unloaded squat repetitions and 99 interior phases as the force benchmark. Combine the two plate COP Z coordinates using each plate vertical force, require each plate to carry at least 10% of body weight for at least 80 phases, then report the 95th-minus-5th percentile Z excursion. Z is the laboratory plate coordinate; no foot or ankle registration is attempted.",
+  "minimumFootLoadFractionOfBodyWeight": 0.1,
+  "limitations": [
+    "The plate coordinate is global and has not been registered to an individual foot or ankle, so the signed shift is not a validated joint lever arm.",
+    "Body weight times total COP excursion is only a scale for possible external-moment sensitivity, not an observed joint moment or an error estimate.",
+    "The phone has no pressure plate; this audit does not predict a user pressure-center trajectory.",
+    "Only 0-lb trials were analyzed, and both feet must meet a simple force threshold."
+  ],
+  "summary": {
+    "subjects": 12,
+    "reps": 39,
+    "rejectedReps": 0,
+    "subjectMedianPlateZExcursionCm": 6.68,
+    "subjectMedianAbsStartToBottomShiftCm": 3.92,
+    "subjectMedianStaticBodyWeightTimesExcursionNm": 48.5,
+    "rangeOfSubjectMedianPlateZExcursionCm": [
+      5.27,
+      10.04
+    ]
+  },
+  "subjects": [
+    {
+      "subject": "AB01",
+      "reps": 3,
+      "medianPlateZExcursionCm": 10.04,
+      "medianAbsStartToBottomShiftCm": 6.45,
+      "medianStaticBodyWeightTimesExcursionNm": 77.7
+    },
+    {
+      "subject": "AB02",
+      "reps": 3,
+      "medianPlateZExcursionCm": 5.57,
+      "medianAbsStartToBottomShiftCm": 1.18,
+      "medianStaticBodyWeightTimesExcursionNm": 44.9
+    },
+    {
+      "subject": "AB03",
+      "reps": 3,
+      "medianPlateZExcursionCm": 5.27,
+      "medianAbsStartToBottomShiftCm": 3.43,
+      "medianStaticBodyWeightTimesExcursionNm": 58.7
+    },
+    {
+      "subject": "AB05",
+      "reps": 3,
+      "medianPlateZExcursionCm": 5.44,
+      "medianAbsStartToBottomShiftCm": 1.46,
+      "medianStaticBodyWeightTimesExcursionNm": 38.2
+    },
+    {
+      "subject": "AB06",
+      "reps": 7,
+      "medianPlateZExcursionCm": 8.61,
+      "medianAbsStartToBottomShiftCm": 5.16,
+      "medianStaticBodyWeightTimesExcursionNm": 66.8
+    },
+    {
+      "subject": "AB07",
+      "reps": 3,
+      "medianPlateZExcursionCm": 7.25,
+      "medianAbsStartToBottomShiftCm": 6.9,
+      "medianStaticBodyWeightTimesExcursionNm": 44.3
+    },
+    {
+      "subject": "AB08",
+      "reps": 3,
+      "medianPlateZExcursionCm": 8.0,
+      "medianAbsStartToBottomShiftCm": 4.32,
+      "medianStaticBodyWeightTimesExcursionNm": 68.7
+    },
+    {
+      "subject": "AB09",
+      "reps": 2,
+      "medianPlateZExcursionCm": 6.31,
+      "medianAbsStartToBottomShiftCm": 3.54,
+      "medianStaticBodyWeightTimesExcursionNm": 52.1
+    },
+    {
+      "subject": "AB10",
+      "reps": 3,
+      "medianPlateZExcursionCm": 6.66,
+      "medianAbsStartToBottomShiftCm": 4.05,
+      "medianStaticBodyWeightTimesExcursionNm": 44.1
+    },
+    {
+      "subject": "AB11",
+      "reps": 3,
+      "medianPlateZExcursionCm": 5.57,
+      "medianAbsStartToBottomShiftCm": 3.78,
+      "medianStaticBodyWeightTimesExcursionNm": 35.5
+    },
+    {
+      "subject": "AB12",
+      "reps": 3,
+      "medianPlateZExcursionCm": 6.7,
+      "medianAbsStartToBottomShiftCm": 3.24,
+      "medianStaticBodyWeightTimesExcursionNm": 42.1
+    },
+    {
+      "subject": "AB13",
+      "reps": 3,
+      "medianPlateZExcursionCm": 8.62,
+      "medianAbsStartToBottomShiftCm": 4.26,
+      "medianStaticBodyWeightTimesExcursionNm": 57.1
+    }
+  ],
+  "repetitions": [
+    {
+      "subject": "AB01",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 10.04,
+      "startToBottomPlateZShiftCm": 4.39,
+      "staticBodyWeightTimesExcursionNm": 77.7
+    },
+    {
+      "subject": "AB01",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 14.53,
+      "startToBottomPlateZShiftCm": 8.78,
+      "staticBodyWeightTimesExcursionNm": 112.4
+    },
+    {
+      "subject": "AB01",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 9.43,
+      "startToBottomPlateZShiftCm": 6.45,
+      "staticBodyWeightTimesExcursionNm": 73.0
+    },
+    {
+      "subject": "AB02",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.57,
+      "startToBottomPlateZShiftCm": 1.44,
+      "staticBodyWeightTimesExcursionNm": 44.9
+    },
+    {
+      "subject": "AB02",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 4.96,
+      "startToBottomPlateZShiftCm": 1.18,
+      "staticBodyWeightTimesExcursionNm": 40.0
+    },
+    {
+      "subject": "AB02",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.36,
+      "startToBottomPlateZShiftCm": -0.32,
+      "staticBodyWeightTimesExcursionNm": 67.4
+    },
+    {
+      "subject": "AB03",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 4.88,
+      "startToBottomPlateZShiftCm": -1.45,
+      "staticBodyWeightTimesExcursionNm": 54.3
+    },
+    {
+      "subject": "AB03",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.59,
+      "startToBottomPlateZShiftCm": -3.65,
+      "staticBodyWeightTimesExcursionNm": 62.2
+    },
+    {
+      "subject": "AB03",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.27,
+      "startToBottomPlateZShiftCm": -3.43,
+      "staticBodyWeightTimesExcursionNm": 58.7
+    },
+    {
+      "subject": "AB05",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 7.52,
+      "startToBottomPlateZShiftCm": -3.88,
+      "staticBodyWeightTimesExcursionNm": 52.7
+    },
+    {
+      "subject": "AB05",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.44,
+      "startToBottomPlateZShiftCm": -1.46,
+      "staticBodyWeightTimesExcursionNm": 38.2
+    },
+    {
+      "subject": "AB05",
+      "rep": 3,
+      "validPhases": 98,
+      "plateZExcursionP95MinusP5Cm": 4.73,
+      "startToBottomPlateZShiftCm": 0.5,
+      "staticBodyWeightTimesExcursionNm": 33.2
+    },
+    {
+      "subject": "AB06",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 6.67,
+      "startToBottomPlateZShiftCm": 5.7,
+      "staticBodyWeightTimesExcursionNm": 51.8
+    },
+    {
+      "subject": "AB06",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 7.28,
+      "startToBottomPlateZShiftCm": 5.16,
+      "staticBodyWeightTimesExcursionNm": 56.5
+    },
+    {
+      "subject": "AB06",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.61,
+      "startToBottomPlateZShiftCm": 3.77,
+      "staticBodyWeightTimesExcursionNm": 66.8
+    },
+    {
+      "subject": "AB06",
+      "rep": 4,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.54,
+      "startToBottomPlateZShiftCm": -4.68,
+      "staticBodyWeightTimesExcursionNm": 66.3
+    },
+    {
+      "subject": "AB06",
+      "rep": 5,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.8,
+      "startToBottomPlateZShiftCm": -8.91,
+      "staticBodyWeightTimesExcursionNm": 68.3
+    },
+    {
+      "subject": "AB06",
+      "rep": 6,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 10.62,
+      "startToBottomPlateZShiftCm": -4.34,
+      "staticBodyWeightTimesExcursionNm": 82.4
+    },
+    {
+      "subject": "AB06",
+      "rep": 7,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 14.04,
+      "startToBottomPlateZShiftCm": -11.4,
+      "staticBodyWeightTimesExcursionNm": 108.9
+    },
+    {
+      "subject": "AB07",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 7.24,
+      "startToBottomPlateZShiftCm": 4.6,
+      "staticBodyWeightTimesExcursionNm": 44.2
+    },
+    {
+      "subject": "AB07",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 7.25,
+      "startToBottomPlateZShiftCm": 6.9,
+      "staticBodyWeightTimesExcursionNm": 44.3
+    },
+    {
+      "subject": "AB07",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 10.02,
+      "startToBottomPlateZShiftCm": 7.8,
+      "staticBodyWeightTimesExcursionNm": 61.2
+    },
+    {
+      "subject": "AB08",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.47,
+      "startToBottomPlateZShiftCm": -6.02,
+      "staticBodyWeightTimesExcursionNm": 72.7
+    },
+    {
+      "subject": "AB08",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.0,
+      "startToBottomPlateZShiftCm": -4.32,
+      "staticBodyWeightTimesExcursionNm": 68.7
+    },
+    {
+      "subject": "AB08",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 2.19,
+      "startToBottomPlateZShiftCm": -0.67,
+      "staticBodyWeightTimesExcursionNm": 18.8
+    },
+    {
+      "subject": "AB09",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.71,
+      "startToBottomPlateZShiftCm": 4.89,
+      "staticBodyWeightTimesExcursionNm": 71.9
+    },
+    {
+      "subject": "AB09",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 3.9,
+      "startToBottomPlateZShiftCm": 2.19,
+      "staticBodyWeightTimesExcursionNm": 32.2
+    },
+    {
+      "subject": "AB10",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 3.55,
+      "startToBottomPlateZShiftCm": -2.61,
+      "staticBodyWeightTimesExcursionNm": 23.5
+    },
+    {
+      "subject": "AB10",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 6.66,
+      "startToBottomPlateZShiftCm": -4.05,
+      "staticBodyWeightTimesExcursionNm": 44.1
+    },
+    {
+      "subject": "AB10",
+      "rep": 3,
+      "validPhases": 89,
+      "plateZExcursionP95MinusP5Cm": 10.57,
+      "startToBottomPlateZShiftCm": -8.84,
+      "staticBodyWeightTimesExcursionNm": 69.9
+    },
+    {
+      "subject": "AB11",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.7,
+      "startToBottomPlateZShiftCm": -4.21,
+      "staticBodyWeightTimesExcursionNm": 36.4
+    },
+    {
+      "subject": "AB11",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 4.61,
+      "startToBottomPlateZShiftCm": -3.78,
+      "staticBodyWeightTimesExcursionNm": 29.4
+    },
+    {
+      "subject": "AB11",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.57,
+      "startToBottomPlateZShiftCm": -1.96,
+      "staticBodyWeightTimesExcursionNm": 35.5
+    },
+    {
+      "subject": "AB12",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 5.38,
+      "startToBottomPlateZShiftCm": -1.73,
+      "staticBodyWeightTimesExcursionNm": 33.8
+    },
+    {
+      "subject": "AB12",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 6.7,
+      "startToBottomPlateZShiftCm": -3.24,
+      "staticBodyWeightTimesExcursionNm": 42.1
+    },
+    {
+      "subject": "AB12",
+      "rep": 3,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 12.84,
+      "startToBottomPlateZShiftCm": -6.98,
+      "staticBodyWeightTimesExcursionNm": 80.6
+    },
+    {
+      "subject": "AB13",
+      "rep": 1,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 11.83,
+      "startToBottomPlateZShiftCm": -2.44,
+      "staticBodyWeightTimesExcursionNm": 78.4
+    },
+    {
+      "subject": "AB13",
+      "rep": 2,
+      "validPhases": 99,
+      "plateZExcursionP95MinusP5Cm": 8.62,
+      "startToBottomPlateZShiftCm": -8.5,
+      "staticBodyWeightTimesExcursionNm": 57.1
+    },
+    {
+      "subject": "AB13",
+      "rep": 3,
+      "validPhases": 92,
+      "plateZExcursionP95MinusP5Cm": 4.82,
+      "startToBottomPlateZShiftCm": -4.26,
+      "staticBodyWeightTimesExcursionNm": 32.0
+    }
+  ],
+  "rejected": []
+}

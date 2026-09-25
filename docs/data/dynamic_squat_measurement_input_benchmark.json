@@ -1,0 +1,138 @@
+{
+  "status": "research_only_exploratory_measurement_feature_screen",
+  "source": "Scherpereel et al. 2023 dynamic squat files",
+  "protocol": "Leave one whole participant out; same frame eligibility, targets and ridge penalty as benchmark_squat_moments.py; no separate model-selection cohort",
+  "momentUnit": "N m/kg, supported by independent IK/ID replay",
+  "featureDefinitions": {
+    "simple": "body mass, nominal 0/25-lb load, measured right knee angle, descent/ascent",
+    "normload": "simple plus load kg / body mass and its knee-angle interaction",
+    "legonly": "simple plus neutral source-model hip-to-knee + knee-to-ankle length and its knee-angle interaction",
+    "anthro": "simple plus neutral source-model hip-to-knee, knee-to-ankle, hip width, and knee-angle/leg-length interaction",
+    "both": "normload and anthro together"
+  },
+  "limitations": [
+    "12 participants and one squat protocol; exploratory feature comparison",
+    "scaled-model joint-center distances are not participant tape measurements or phone inputs",
+    "all variants use laboratory knee angle, while the app uses a preset animation",
+    "trial load location is unspecified and training capacity records are unavailable",
+    "joint net moment is not individual muscle force"
+  ],
+  "subjectModelDimensionsM": {
+    "AB01": {
+      "hipToKneeM": 0.4493,
+      "kneeToAnkleM": 0.4856,
+      "hipCenterWidthM": 0.1266
+    },
+    "AB02": {
+      "hipToKneeM": 0.4099,
+      "kneeToAnkleM": 0.4765,
+      "hipCenterWidthM": 0.1556
+    },
+    "AB03": {
+      "hipToKneeM": 0.4685,
+      "kneeToAnkleM": 0.4838,
+      "hipCenterWidthM": 0.1842
+    },
+    "AB05": {
+      "hipToKneeM": 0.3852,
+      "kneeToAnkleM": 0.497,
+      "hipCenterWidthM": 0.1804
+    },
+    "AB06": {
+      "hipToKneeM": 0.4777,
+      "kneeToAnkleM": 0.5197,
+      "hipCenterWidthM": 0.1588
+    },
+    "AB07": {
+      "hipToKneeM": 0.4469,
+      "kneeToAnkleM": 0.4452,
+      "hipCenterWidthM": 0.1488
+    },
+    "AB08": {
+      "hipToKneeM": 0.4266,
+      "kneeToAnkleM": 0.4482,
+      "hipCenterWidthM": 0.1599
+    },
+    "AB09": {
+      "hipToKneeM": 0.3966,
+      "kneeToAnkleM": 0.4855,
+      "hipCenterWidthM": 0.201
+    },
+    "AB10": {
+      "hipToKneeM": 0.4227,
+      "kneeToAnkleM": 0.4826,
+      "hipCenterWidthM": 0.1609
+    },
+    "AB11": {
+      "hipToKneeM": 0.4119,
+      "kneeToAnkleM": 0.4197,
+      "hipCenterWidthM": 0.156
+    },
+    "AB12": {
+      "hipToKneeM": 0.4204,
+      "kneeToAnkleM": 0.4576,
+      "hipCenterWidthM": 0.1618
+    },
+    "AB13": {
+      "hipToKneeM": 0.4042,
+      "kneeToAnkleM": 0.454,
+      "hipCenterWidthM": 0.1427
+    }
+  },
+  "summary": {
+    "hip_flexion_r_moment": {
+      "simple": {
+        "pooledR2": 0.2296,
+        "pooledMaeNmPerKg": 0.3473,
+        "medianSubjectMaeNmPerKg": 0.3143
+      },
+      "normload": {
+        "pooledR2": 0.2279,
+        "pooledMaeNmPerKg": 0.3459,
+        "medianSubjectMaeNmPerKg": 0.3134
+      },
+      "legonly": {
+        "pooledR2": 0.1565,
+        "pooledMaeNmPerKg": 0.354,
+        "medianSubjectMaeNmPerKg": 0.3161
+      },
+      "anthro": {
+        "pooledR2": 0.1556,
+        "pooledMaeNmPerKg": 0.3546,
+        "medianSubjectMaeNmPerKg": 0.3152
+      },
+      "both": {
+        "pooledR2": 0.1523,
+        "pooledMaeNmPerKg": 0.3539,
+        "medianSubjectMaeNmPerKg": 0.3136
+      }
+    },
+    "knee_angle_r_moment": {
+      "simple": {
+        "pooledR2": 0.2573,
+        "pooledMaeNmPerKg": 0.2773,
+        "medianSubjectMaeNmPerKg": 0.2708
+      },
+      "normload": {
+        "pooledR2": 0.2556,
+        "pooledMaeNmPerKg": 0.2769,
+        "medianSubjectMaeNmPerKg": 0.2732
+      },
+      "legonly": {
+        "pooledR2": 0.2563,
+        "pooledMaeNmPerKg": 0.2754,
+        "medianSubjectMaeNmPerKg": 0.2675
+      },
+      "anthro": {
+        "pooledR2": 0.2567,
+        "pooledMaeNmPerKg": 0.2795,
+        "medianSubjectMaeNmPerKg": 0.2652
+      },
+      "both": {
+        "pooledR2": 0.2548,
+        "pooledMaeNmPerKg": 0.2791,
+        "medianSubjectMaeNmPerKg": 0.268
+      }
+    }
+  }
+}

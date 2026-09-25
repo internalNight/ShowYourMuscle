@@ -1,0 +1,442 @@
+{
+  "status": "research_only_emg_trend_screen_not_personal_muscle_force",
+  "strengthMultiplier": 4.2,
+  "strengthMultiplierMeaning": "arbitrary uniform multiplier of nominal maximum isometric force to make the ten-axis problem feasible; not subject calibration",
+  "forceSharingPrior": "minimize sum of squared normalized muscle tensions at each measured pose and net joint moment; passive torque from 1% activation and zero-speed equilibrium is subtracted first",
+  "emgProcessing": "same-trial 20-450 Hz zero-phase bandpass and centered 100 ms RMS; no MVC normalization",
+  "sampling": "one frame every 100 ms across each two-second measured squat window, excluding candidate knee out-of-range poses",
+  "limitations": [
+    "measured poses and force-plate ID torques are inputs; the phone has neither",
+    "surface EMG is electrical activity, not direct muscle force, and channels do not uniquely identify modeled heads",
+    "the strength multiplier is a numerical feasibility choice; fiber force-length-velocity, contact and individual anatomy remain uncalibrated",
+    "two subjects and about twenty highly correlated frames each are insufficient for product validation"
+  ],
+  "subjects": {
+    "AB01": {
+      "sampledFrames": 21,
+      "excludedOutsideKneeRange": [
+        51.3
+      ],
+      "solverFailures": [],
+      "solvedFrames": 20,
+      "channelTrends": {
+        "RRF": {
+          "spearman": 0.7639,
+          "kneeFlexionBaselineSpearman": 0.8992,
+          "modelNonzeroFrames": 19,
+          "modelRange": [
+            0.0,
+            2.022
+          ],
+          "emgRangeV": [
+            1.212e-05,
+            0.0001541
+          ]
+        },
+        "RVL": {
+          "spearman": 0.7098,
+          "kneeFlexionBaselineSpearman": 0.7068,
+          "modelNonzeroFrames": 20,
+          "modelRange": [
+            0.0048,
+            1.0211
+          ],
+          "emgRangeV": [
+            4.279e-05,
+            0.00055969
+          ]
+        },
+        "RGMAX": {
+          "spearman": 0.5714,
+          "kneeFlexionBaselineSpearman": 0.4421,
+          "modelNonzeroFrames": 20,
+          "modelRange": [
+            0.0132,
+            1.2031
+          ],
+          "emgRangeV": [
+            5.53e-06,
+            3.465e-05
+          ]
+        },
+        "RBF": {
+          "spearman": 0.6737,
+          "kneeFlexionBaselineSpearman": 0.8241,
+          "modelNonzeroFrames": 16,
+          "modelRange": [
+            0.0,
+            1.6986
+          ],
+          "emgRangeV": [
+            2.62e-06,
+            4.144e-05
+          ]
+        },
+        "RGMED": {
+          "spearman": -0.5699,
+          "kneeFlexionBaselineSpearman": 0.9158,
+          "modelNonzeroFrames": 11,
+          "modelRange": [
+            0.0,
+            0.0489
+          ],
+          "emgRangeV": [
+            2.97e-06,
+            2.627e-05
+          ]
+        },
+        "RMGAS": {
+          "spearman": -0.1569,
+          "kneeFlexionBaselineSpearman": 0.5278,
+          "modelNonzeroFrames": 5,
+          "modelRange": [
+            0.0,
+            0.0258
+          ],
+          "emgRangeV": [
+            5.98e-06,
+            0.00031486
+          ]
+        },
+        "RTA": {
+          "spearman": 0.2337,
+          "kneeFlexionBaselineSpearman": 0.6647,
+          "modelNonzeroFrames": 12,
+          "modelRange": [
+            0.0,
+            0.2099
+          ],
+          "emgRangeV": [
+            3.3e-06,
+            0.00018302
+          ]
+        },
+        "RGRAC": {
+          "spearman": -0.1992,
+          "kneeFlexionBaselineSpearman": 0.8752,
+          "modelNonzeroFrames": 1,
+          "modelRange": [
+            0.0,
+            0.0049
+          ],
+          "emgRangeV": [
+            6.7e-06,
+            0.0001151
+          ]
+        },
+        "LRF": {
+          "spearman": 0.7579,
+          "kneeFlexionBaselineSpearman": 0.8226,
+          "modelNonzeroFrames": 17,
+          "modelRange": [
+            0.0,
+            2.4102
+          ],
+          "emgRangeV": [
+            1.037e-05,
+            0.00013539
+          ]
+        },
+        "LVL": {
+          "spearman": 0.6481,
+          "kneeFlexionBaselineSpearman": 0.5624,
+          "modelNonzeroFrames": 20,
+          "modelRange": [
+            0.0011,
+            0.6847
+          ],
+          "emgRangeV": [
+            1.63e-05,
+            0.00032832
+          ]
+        },
+        "LGMAX": {
+          "spearman": -0.382,
+          "kneeFlexionBaselineSpearman": -0.4827,
+          "modelNonzeroFrames": 20,
+          "modelRange": [
+            0.0088,
+            1.3324
+          ],
+          "emgRangeV": [
+            5.25e-06,
+            3.476e-05
+          ]
+        },
+        "LBF": {
+          "spearman": 0.7519,
+          "kneeFlexionBaselineSpearman": 0.8872,
+          "modelNonzeroFrames": 18,
+          "modelRange": [
+            0.0,
+            1.8004
+          ],
+          "emgRangeV": [
+            2.62e-06,
+            2.202e-05
+          ]
+        },
+        "LGMED": {
+          "spearman": -0.2226,
+          "kneeFlexionBaselineSpearman": 0.1248,
+          "modelNonzeroFrames": 9,
+          "modelRange": [
+            0.0,
+            0.0318
+          ],
+          "emgRangeV": [
+            3.64e-06,
+            1.244e-05
+          ]
+        },
+        "LMGAS": {
+          "spearman": -0.1065,
+          "kneeFlexionBaselineSpearman": 0.4782,
+          "modelNonzeroFrames": 4,
+          "modelRange": [
+            0.0,
+            0.0217
+          ],
+          "emgRangeV": [
+            6.69e-06,
+            2.542e-05
+          ]
+        },
+        "LTA": {
+          "spearman": 0.0023,
+          "kneeFlexionBaselineSpearman": 0.8556,
+          "modelNonzeroFrames": 9,
+          "modelRange": [
+            0.0,
+            0.1989
+          ],
+          "emgRangeV": [
+            2.29e-06,
+            0.00023333
+          ]
+        },
+        "LGRAC": {
+          "spearman": 0.0575,
+          "kneeFlexionBaselineSpearman": 0.9173,
+          "modelNonzeroFrames": 3,
+          "modelRange": [
+            0.0,
+            0.0176
+          ],
+          "emgRangeV": [
+            6.02e-06,
+            5.956e-05
+          ]
+        }
+      }
+    },
+    "AB02": {
+      "sampledFrames": 21,
+      "excludedOutsideKneeRange": [],
+      "solverFailures": [],
+      "solvedFrames": 21,
+      "channelTrends": {
+        "RRF": {
+          "spearman": 0.6961,
+          "kneeFlexionBaselineSpearman": 0.6649,
+          "modelNonzeroFrames": 16,
+          "modelRange": [
+            0.0,
+            0.9923
+          ],
+          "emgRangeV": [
+            1.394e-05,
+            8.407e-05
+          ]
+        },
+        "RVL": {
+          "spearman": 0.3935,
+          "kneeFlexionBaselineSpearman": 0.3519,
+          "modelNonzeroFrames": 18,
+          "modelRange": [
+            0.0,
+            1.1879
+          ],
+          "emgRangeV": [
+            5.613e-05,
+            0.00031073
+          ]
+        },
+        "RGMAX": {
+          "spearman": 0.6727,
+          "kneeFlexionBaselineSpearman": 0.5896,
+          "modelNonzeroFrames": 21,
+          "modelRange": [
+            0.0092,
+            0.7797
+          ],
+          "emgRangeV": [
+            3.84e-06,
+            5.235e-05
+          ]
+        },
+        "RBF": {
+          "spearman": 0.3662,
+          "kneeFlexionBaselineSpearman": 0.3675,
+          "modelNonzeroFrames": 19,
+          "modelRange": [
+            0.0,
+            2.1
+          ],
+          "emgRangeV": [
+            1.82e-06,
+            5.456e-05
+          ]
+        },
+        "RGMED": {
+          "spearman": 0.6099,
+          "kneeFlexionBaselineSpearman": -0.3351,
+          "modelNonzeroFrames": 6,
+          "modelRange": [
+            0.0,
+            0.1187
+          ],
+          "emgRangeV": [
+            5.2e-06,
+            0.00013302
+          ]
+        },
+        "RMGAS": {
+          "spearman": 0.0828,
+          "kneeFlexionBaselineSpearman": -0.0416,
+          "modelNonzeroFrames": 6,
+          "modelRange": [
+            0.0,
+            0.0784
+          ],
+          "emgRangeV": [
+            4.32e-06,
+            2.3e-05
+          ]
+        },
+        "RTA": {
+          "spearman": 0.3929,
+          "kneeFlexionBaselineSpearman": 0.7948,
+          "modelNonzeroFrames": 13,
+          "modelRange": [
+            0.0,
+            0.1861
+          ],
+          "emgRangeV": [
+            2.58e-06,
+            0.00013773
+          ]
+        },
+        "RGRAC": {
+          "spearman": 0.0122,
+          "kneeFlexionBaselineSpearman": 0.5403,
+          "modelNonzeroFrames": 3,
+          "modelRange": [
+            0.0,
+            0.0188
+          ],
+          "emgRangeV": [
+            6.31e-06,
+            0.00017201
+          ]
+        },
+        "LRF": {
+          "spearman": 0.7831,
+          "kneeFlexionBaselineSpearman": 0.7883,
+          "modelNonzeroFrames": 20,
+          "modelRange": [
+            0.0,
+            2.1495
+          ],
+          "emgRangeV": [
+            6.06e-06,
+            7.135e-05
+          ]
+        },
+        "LVL": {
+          "spearman": 0.5748,
+          "kneeFlexionBaselineSpearman": 0.5857,
+          "modelNonzeroFrames": 16,
+          "modelRange": [
+            0.0,
+            0.9081
+          ],
+          "emgRangeV": [
+            1.707e-05,
+            0.0002852
+          ]
+        },
+        "LGMAX": {
+          "spearman": 0.5961,
+          "kneeFlexionBaselineSpearman": 0.5597,
+          "modelNonzeroFrames": 21,
+          "modelRange": [
+            0.0093,
+            1.0041
+          ],
+          "emgRangeV": [
+            2.81e-06,
+            2.931e-05
+          ]
+        },
+        "LBF": {
+          "spearman": 0.6221,
+          "kneeFlexionBaselineSpearman": 0.6039,
+          "modelNonzeroFrames": 20,
+          "modelRange": [
+            0.0,
+            2.1
+          ],
+          "emgRangeV": [
+            1.34e-06,
+            1.41e-05
+          ]
+        },
+        "LGMED": {
+          "spearman": 0.674,
+          "kneeFlexionBaselineSpearman": -0.413,
+          "modelNonzeroFrames": 7,
+          "modelRange": [
+            0.0,
+            0.1099
+          ],
+          "emgRangeV": [
+            3.34e-06,
+            0.00010676
+          ]
+        },
+        "LMGAS": {
+          "spearman": -0.0805,
+          "kneeFlexionBaselineSpearman": 0.2857,
+          "modelNonzeroFrames": 6,
+          "modelRange": [
+            0.0,
+            0.0971
+          ],
+          "emgRangeV": [
+            3.47e-06,
+            4.517e-05
+          ]
+        },
+        "LTA": {
+          "spearman": 0.5897,
+          "kneeFlexionBaselineSpearman": 0.7974,
+          "modelNonzeroFrames": 14,
+          "modelRange": [
+            0.0,
+            0.1942
+          ],
+          "emgRangeV": [
+            3e-06,
+            0.00013698
+          ]
+        },
+        "LGRAC": {
+          "spearman": null,
+          "kneeFlexionBaselineSpearman": 0.4208,
+          "reason": "insufficient nonconstant model activity"
+        }
+      }
+    }
+  }
+}

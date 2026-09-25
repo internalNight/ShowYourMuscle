@@ -1,0 +1,186 @@
+{
+  "status": "illustrative_depth_geometry_not_validated_squat_technique_or_force",
+  "description": "Knee target changes the bottom hip height with fixed femur and tibia lengths; posterior hip offset and torso lean remain the illustrative defaults. 20 kg barbell COM is a static gravity probe only.",
+  "rows": [
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72,
+        "armSpanCm": 175,
+        "inseamCm": 80
+      },
+      "targetDepthDeg": null,
+      "startingKneeFlexionDeg": 21.045664306251297,
+      "bottomKneeFlexionDeg": 95.93443099449333,
+      "bottomPelvisHeightM": 0.645,
+      "bottomKneeForwardRelativeAnkleCm": 19.998444401612907,
+      "bottomCombinedComRelativeAnkleCm": -1.9628228911770211,
+      "maximumAbsoluteComRelativeAnkleCm": 1.9628228911770211
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72,
+        "armSpanCm": 175,
+        "inseamCm": 80
+      },
+      "targetDepthDeg": 75,
+      "startingKneeFlexionDeg": 21.045664306251297,
+      "bottomKneeFlexionDeg": 74.99999999999996,
+      "bottomPelvisHeightM": 0.7610466541989408,
+      "bottomKneeForwardRelativeAnkleCm": 14.851823983477974,
+      "bottomCombinedComRelativeAnkleCm": -2.618095306367645,
+      "maximumAbsoluteComRelativeAnkleCm": 2.618095306367645
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72,
+        "armSpanCm": 175,
+        "inseamCm": 80
+      },
+      "targetDepthDeg": 117,
+      "startingKneeFlexionDeg": 21.045664306251297,
+      "bottomKneeFlexionDeg": 117,
+      "bottomPelvisHeightM": 0.5019366503575396,
+      "bottomKneeForwardRelativeAnkleCm": 23.201327549889303,
+      "bottomCombinedComRelativeAnkleCm": -1.5550288815879114,
+      "maximumAbsoluteComRelativeAnkleCm": 1.616216858396545
+    },
+    {
+      "profile": {
+        "heightCm": 175,
+        "weightKg": 72,
+        "armSpanCm": 175,
+        "inseamCm": 80
+      },
+      "targetDepthDeg": 130,
+      "startingKneeFlexionDeg": 21.045664306251297,
+      "bottomKneeFlexionDeg": 130,
+      "bottomPelvisHeightM": 0.3976606584974258,
+      "bottomKneeForwardRelativeAnkleCm": 23.208299231959725,
+      "bottomCombinedComRelativeAnkleCm": -1.5541412406552073,
+      "maximumAbsoluteComRelativeAnkleCm": 1.616216858396545
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "targetDepthDeg": null,
+      "startingKneeFlexionDeg": 20.981058466815597,
+      "bottomKneeFlexionDeg": 95.68992487882872,
+      "bottomPelvisHeightM": 0.5575714285714286,
+      "bottomKneeForwardRelativeAnkleCm": 17.286037579451342,
+      "bottomCombinedComRelativeAnkleCm": -0.973272252753599,
+      "maximumAbsoluteComRelativeAnkleCm": 1.8481279530359658
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "targetDepthDeg": 75,
+      "startingKneeFlexionDeg": 20.981058466815597,
+      "bottomKneeFlexionDeg": 75,
+      "bottomPelvisHeightM": 0.6562791000645883,
+      "bottomKneeForwardRelativeAnkleCm": 12.881246271520983,
+      "bottomCombinedComRelativeAnkleCm": -1.4727248908836315,
+      "maximumAbsoluteComRelativeAnkleCm": 1.8481279530359658
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "targetDepthDeg": 117,
+      "startingKneeFlexionDeg": 20.981058466815597,
+      "bottomKneeFlexionDeg": 117,
+      "bottomPelvisHeightM": 0.433061950819275,
+      "bottomKneeForwardRelativeAnkleCm": 20.115783735211178,
+      "bottomCombinedComRelativeAnkleCm": -0.6524116071679545,
+      "maximumAbsoluteComRelativeAnkleCm": 1.8481279530359658
+    },
+    {
+      "profile": {
+        "heightCm": 150,
+        "weightKg": 46,
+        "armSpanCm": 146,
+        "inseamCm": 69
+      },
+      "targetDepthDeg": 130,
+      "startingKneeFlexionDeg": 20.981058466815597,
+      "bottomKneeFlexionDeg": 130,
+      "bottomPelvisHeightM": 0.3433604469243031,
+      "bottomKneeForwardRelativeAnkleCm": 20.158123241301585,
+      "bottomCombinedComRelativeAnkleCm": -0.6476107944765777,
+      "maximumAbsoluteComRelativeAnkleCm": 1.8481279530359658
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "targetDepthDeg": null,
+      "startingKneeFlexionDeg": 20.67966900982867,
+      "bottomKneeFlexionDeg": 94.5366966067644,
+      "bottomPelvisHeightM": 0.7348571428571431,
+      "bottomKneeForwardRelativeAnkleCm": 22.754480828901137,
+      "bottomCombinedComRelativeAnkleCm": -3.2771553180111876,
+      "maximumAbsoluteComRelativeAnkleCm": 3.2771553180111876
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "targetDepthDeg": 75,
+      "startingKneeFlexionDeg": 20.67966900982867,
+      "bottomKneeFlexionDeg": 75.00000000000001,
+      "bottomPelvisHeightM": 0.8552224168927196,
+      "bottomKneeForwardRelativeAnkleCm": 17.231154744139694,
+      "bottomCombinedComRelativeAnkleCm": -4.0123554668131565,
+      "maximumAbsoluteComRelativeAnkleCm": 4.0123554668131565
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "targetDepthDeg": 117,
+      "startingKneeFlexionDeg": 20.67966900982867,
+      "bottomKneeFlexionDeg": 117,
+      "bottomPelvisHeightM": 0.5656240519918156,
+      "bottomKneeForwardRelativeAnkleCm": 26.8613984261097,
+      "bottomCombinedComRelativeAnkleCm": -2.73049079336624,
+      "maximumAbsoluteComRelativeAnkleCm": 2.73049079336624
+    },
+    {
+      "profile": {
+        "heightCm": 190,
+        "weightKg": 90,
+        "armSpanCm": 197,
+        "inseamCm": 90
+      },
+      "targetDepthDeg": 130,
+      "startingKneeFlexionDeg": 20.67966900982867,
+      "bottomKneeFlexionDeg": 130,
+      "bottomPelvisHeightM": 0.44999233291056795,
+      "bottomKneeForwardRelativeAnkleCm": 27.127527838237427,
+      "bottomCombinedComRelativeAnkleCm": -2.695066778851381,
+      "maximumAbsoluteComRelativeAnkleCm": 2.695066778851381
+    }
+  ]
+}

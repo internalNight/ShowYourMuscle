@@ -1,0 +1,26 @@
+{
+  "status": "research_solution_tendon_diagnostic_only",
+  "case": "barbell-0kg-half-axial",
+  "model": "squatToStand_3dof9musc.osim",
+  "sampleCount": 113,
+  "nearSlackToleranceM": 1e-06,
+  "soleusTendonSlackM": 0.276755872375976,
+  "soleusTendonLengthRangeM": [
+    0.276755872123819,
+    0.2767741394135989
+  ],
+  "nearSlackSamples": 61,
+  "nearSlackFraction": 0.5398230088495575,
+  "bucklingLogLines": 21,
+  "exampleNearSlack": {
+    "timeS": 0.8249999999999998,
+    "tendonLengthM": 0.2767558721815954,
+    "fiberLengthAlongTendonM": 0.06446006643888708
+  },
+  "interpretation": "Tendon length is often at the slack-length lower bound. This is consistent with the buckling messages, but does not validate the anatomical force result.",
+  "limits": [
+    "one research configuration; no measured motion or ground reaction forces",
+    "muscle parameters and single-leg mass split are unvalidated",
+    "numerical convergence does not validate muscle recruitment"
+  ]
+}

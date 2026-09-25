@@ -1,0 +1,959 @@
+{
+  "status": "external_research_screen_not_app_or_bench_force_validation",
+  "source": "https://zenodo.org/records/11209324",
+  "license": "CC BY-SA 4.0",
+  "archiveMd5AsPublished": "ea2dd9d26ec61a5870b6455b8abe5918",
+  "scope": "17 participants, one multi-joint shoulder/elbow tracking trial (MJ/T0) each",
+  "method": "100 Hz processed signals sampled every fifth frame; exact timestamp check; leave one whole participant out; train-only standardization; fixed ridge=10; shoulder_elv and elbow_flexion torques in N.m",
+  "inputs": {
+    "body": "height, weight, arm and forearm length",
+    "pose": "body plus shoulder and elbow angles and angular velocities",
+    "pose_emg": "pose plus 12 MVC-normalized EMG channels; sensor data unavailable from app inputs"
+  },
+  "summary": {
+    "shoulder_elv": {
+      "train_mean": {
+        "subjectMedianMaeNm": 6.417,
+        "subjectRangeMaeNm": [
+          4.969,
+          9.891
+        ],
+        "positiveR2Subjects": 0
+      },
+      "body": {
+        "subjectMedianMaeNm": 6.272,
+        "subjectRangeMaeNm": [
+          5.481,
+          9.626
+        ],
+        "positiveR2Subjects": 0
+      },
+      "pose": {
+        "subjectMedianMaeNm": 3.601,
+        "subjectRangeMaeNm": [
+          2.348,
+          7.733
+        ],
+        "positiveR2Subjects": 17
+      },
+      "pose_emg": {
+        "subjectMedianMaeNm": 3.577,
+        "subjectRangeMaeNm": [
+          2.204,
+          11.736
+        ],
+        "positiveR2Subjects": 16
+      },
+      "poseToPoseEmgPairedImprovementNm": {
+        "median": 0.116,
+        "bootstrap95": [
+          -0.233,
+          0.309
+        ],
+        "improvedSubjects": 10
+      }
+    },
+    "elbow_flexion": {
+      "train_mean": {
+        "subjectMedianMaeNm": 3.375,
+        "subjectRangeMaeNm": [
+          2.441,
+          4.615
+        ],
+        "positiveR2Subjects": 0
+      },
+      "body": {
+        "subjectMedianMaeNm": 3.449,
+        "subjectRangeMaeNm": [
+          2.353,
+          4.616
+        ],
+        "positiveR2Subjects": 0
+      },
+      "pose": {
+        "subjectMedianMaeNm": 2.448,
+        "subjectRangeMaeNm": [
+          1.787,
+          3.873
+        ],
+        "positiveR2Subjects": 14
+      },
+      "pose_emg": {
+        "subjectMedianMaeNm": 2.261,
+        "subjectRangeMaeNm": [
+          1.322,
+          3.443
+        ],
+        "positiveR2Subjects": 16
+      },
+      "poseToPoseEmgPairedImprovementNm": {
+        "median": 0.336,
+        "bootstrap95": [
+          -0.236,
+          0.699
+        ],
+        "improvedSubjects": 12
+      }
+    }
+  },
+  "subjects": [
+    {
+      "subject": "S01",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 177.0,
+      "weightKg": 75.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.577,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 7.342,
+            "r2": -0.007
+          },
+          "elbow_flexion": {
+            "maeNm": 4.141,
+            "r2": -0.055
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 7.472,
+            "r2": -0.0
+          },
+          "elbow_flexion": {
+            "maeNm": 4.092,
+            "r2": -0.007
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.956,
+            "r2": 0.693
+          },
+          "elbow_flexion": {
+            "maeNm": 2.47,
+            "r2": 0.524
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 4.156,
+            "r2": 0.669
+          },
+          "elbow_flexion": {
+            "maeNm": 2.261,
+            "r2": 0.621
+          }
+        }
+      }
+    },
+    {
+      "subject": "S02",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 173.0,
+      "weightKg": 70.5,
+      "anteriorDeltoidEmgP99MvcRatio": 0.79,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.781,
+            "r2": -0.054
+          },
+          "elbow_flexion": {
+            "maeNm": 3.17,
+            "r2": -0.018
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 6.584,
+            "r2": -0.003
+          },
+          "elbow_flexion": {
+            "maeNm": 3.309,
+            "r2": -0.23
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.813,
+            "r2": 0.581
+          },
+          "elbow_flexion": {
+            "maeNm": 1.988,
+            "r2": 0.514
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.577,
+            "r2": 0.619
+          },
+          "elbow_flexion": {
+            "maeNm": 1.806,
+            "r2": 0.664
+          }
+        }
+      }
+    },
+    {
+      "subject": "S03",
+      "samples": 589,
+      "durationS": 29.4,
+      "heightCm": 177,
+      "weightKg": 65.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.643,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 5.444,
+            "r2": -0.069
+          },
+          "elbow_flexion": {
+            "maeNm": 2.65,
+            "r2": -0.052
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.679,
+            "r2": -0.172
+          },
+          "elbow_flexion": {
+            "maeNm": 2.631,
+            "r2": -0.032
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.477,
+            "r2": 0.522
+          },
+          "elbow_flexion": {
+            "maeNm": 1.822,
+            "r2": 0.439
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.07,
+            "r2": 0.61
+          },
+          "elbow_flexion": {
+            "maeNm": 1.322,
+            "r2": 0.677
+          }
+        }
+      }
+    },
+    {
+      "subject": "S04",
+      "samples": 589,
+      "durationS": 29.4,
+      "heightCm": 179,
+      "weightKg": 67.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.813,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 9.891,
+            "r2": -0.366
+          },
+          "elbow_flexion": {
+            "maeNm": 2.99,
+            "r2": -0.215
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 9.495,
+            "r2": -0.272
+          },
+          "elbow_flexion": {
+            "maeNm": 2.988,
+            "r2": -0.213
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 7.733,
+            "r2": 0.284
+          },
+          "elbow_flexion": {
+            "maeNm": 3.236,
+            "r2": -0.475
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 6.055,
+            "r2": 0.523
+          },
+          "elbow_flexion": {
+            "maeNm": 2.202,
+            "r2": 0.363
+          }
+        }
+      }
+    },
+    {
+      "subject": "S05",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 183.0,
+      "weightKg": 80.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.439,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.513,
+            "r2": -0.085
+          },
+          "elbow_flexion": {
+            "maeNm": 3.34,
+            "r2": -0.0
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 6.272,
+            "r2": -0.009
+          },
+          "elbow_flexion": {
+            "maeNm": 3.327,
+            "r2": -0.002
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 2.414,
+            "r2": 0.842
+          },
+          "elbow_flexion": {
+            "maeNm": 1.787,
+            "r2": 0.668
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 2.804,
+            "r2": 0.785
+          },
+          "elbow_flexion": {
+            "maeNm": 1.451,
+            "r2": 0.801
+          }
+        }
+      }
+    },
+    {
+      "subject": "S06",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 172.0,
+      "weightKg": 71.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.371,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 8.677,
+            "r2": -0.309
+          },
+          "elbow_flexion": {
+            "maeNm": 3.944,
+            "r2": -0.0
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 9.626,
+            "r2": -0.571
+          },
+          "elbow_flexion": {
+            "maeNm": 4.152,
+            "r2": -0.066
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 5.757,
+            "r2": 0.378
+          },
+          "elbow_flexion": {
+            "maeNm": 3.872,
+            "r2": 0.007
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 5.99,
+            "r2": 0.397
+          },
+          "elbow_flexion": {
+            "maeNm": 2.861,
+            "r2": 0.405
+          }
+        }
+      }
+    },
+    {
+      "subject": "S07",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 179.0,
+      "weightKg": 96.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.353,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.759,
+            "r2": -0.031
+          },
+          "elbow_flexion": {
+            "maeNm": 3.375,
+            "r2": -0.023
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 7.318,
+            "r2": -0.174
+          },
+          "elbow_flexion": {
+            "maeNm": 3.449,
+            "r2": -0.001
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.072,
+            "r2": 0.744
+          },
+          "elbow_flexion": {
+            "maeNm": 2.367,
+            "r2": 0.403
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.124,
+            "r2": 0.737
+          },
+          "elbow_flexion": {
+            "maeNm": 2.609,
+            "r2": 0.348
+          }
+        }
+      }
+    },
+    {
+      "subject": "S08",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 177.0,
+      "weightKg": 81.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.493,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 5.528,
+            "r2": -0.022
+          },
+          "elbow_flexion": {
+            "maeNm": 4.129,
+            "r2": -0.097
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.578,
+            "r2": -0.035
+          },
+          "elbow_flexion": {
+            "maeNm": 4.252,
+            "r2": -0.14
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.054,
+            "r2": 0.647
+          },
+          "elbow_flexion": {
+            "maeNm": 2.721,
+            "r2": 0.523
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 2.979,
+            "r2": 0.646
+          },
+          "elbow_flexion": {
+            "maeNm": 2.957,
+            "r2": 0.471
+          }
+        }
+      }
+    },
+    {
+      "subject": "S09",
+      "samples": 589,
+      "durationS": 29.4,
+      "heightCm": 168.0,
+      "weightKg": 58.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.944,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.327,
+            "r2": -0.449
+          },
+          "elbow_flexion": {
+            "maeNm": 3.126,
+            "r2": -0.029
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.795,
+            "r2": -0.214
+          },
+          "elbow_flexion": {
+            "maeNm": 3.072,
+            "r2": -0.001
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.316,
+            "r2": 0.605
+          },
+          "elbow_flexion": {
+            "maeNm": 2.448,
+            "r2": 0.361
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.2,
+            "r2": 0.652
+          },
+          "elbow_flexion": {
+            "maeNm": 1.863,
+            "r2": 0.564
+          }
+        }
+      }
+    },
+    {
+      "subject": "S10",
+      "samples": 589,
+      "durationS": 29.4,
+      "heightCm": 172.0,
+      "weightKg": 63.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.729,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.431,
+            "r2": -0.064
+          },
+          "elbow_flexion": {
+            "maeNm": 3.733,
+            "r2": -0.011
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 6.54,
+            "r2": -0.093
+          },
+          "elbow_flexion": {
+            "maeNm": 3.752,
+            "r2": -0.003
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 2.797,
+            "r2": 0.78
+          },
+          "elbow_flexion": {
+            "maeNm": 2.268,
+            "r2": 0.559
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.674,
+            "r2": 0.635
+          },
+          "elbow_flexion": {
+            "maeNm": 2.057,
+            "r2": 0.724
+          }
+        }
+      }
+    },
+    {
+      "subject": "S11",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 166.0,
+      "weightKg": 51.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.861,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 5.742,
+            "r2": -0.061
+          },
+          "elbow_flexion": {
+            "maeNm": 4.392,
+            "r2": -0.049
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.481,
+            "r2": -0.0
+          },
+          "elbow_flexion": {
+            "maeNm": 4.504,
+            "r2": -0.089
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 4.194,
+            "r2": 0.36
+          },
+          "elbow_flexion": {
+            "maeNm": 2.846,
+            "r2": 0.465
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.885,
+            "r2": 0.412
+          },
+          "elbow_flexion": {
+            "maeNm": 3.148,
+            "r2": 0.224
+          }
+        }
+      }
+    },
+    {
+      "subject": "S12",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 181.0,
+      "weightKg": 69.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.575,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.027,
+            "r2": -0.148
+          },
+          "elbow_flexion": {
+            "maeNm": 3.236,
+            "r2": -0.015
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.539,
+            "r2": -0.009
+          },
+          "elbow_flexion": {
+            "maeNm": 3.243,
+            "r2": -0.003
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 2.348,
+            "r2": 0.796
+          },
+          "elbow_flexion": {
+            "maeNm": 1.824,
+            "r2": 0.642
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 2.204,
+            "r2": 0.825
+          },
+          "elbow_flexion": {
+            "maeNm": 1.326,
+            "r2": 0.787
+          }
+        }
+      }
+    },
+    {
+      "subject": "S13",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 175.0,
+      "weightKg": 68.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.304,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 5.585,
+            "r2": -0.061
+          },
+          "elbow_flexion": {
+            "maeNm": 2.999,
+            "r2": -0.027
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.8,
+            "r2": -0.152
+          },
+          "elbow_flexion": {
+            "maeNm": 3.032,
+            "r2": -0.079
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.103,
+            "r2": 0.623
+          },
+          "elbow_flexion": {
+            "maeNm": 2.226,
+            "r2": 0.513
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 2.862,
+            "r2": 0.684
+          },
+          "elbow_flexion": {
+            "maeNm": 2.49,
+            "r2": 0.411
+          }
+        }
+      }
+    },
+    {
+      "subject": "S14",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 159.0,
+      "weightKg": 52.0,
+      "anteriorDeltoidEmgP99MvcRatio": 3.694,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 4.969,
+            "r2": -0.08
+          },
+          "elbow_flexion": {
+            "maeNm": 2.441,
+            "r2": -0.039
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.969,
+            "r2": -0.418
+          },
+          "elbow_flexion": {
+            "maeNm": 2.353,
+            "r2": -0.01
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.926,
+            "r2": 0.372
+          },
+          "elbow_flexion": {
+            "maeNm": 2.337,
+            "r2": -0.062
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 11.736,
+            "r2": -6.234
+          },
+          "elbow_flexion": {
+            "maeNm": 3.443,
+            "r2": -1.398
+          }
+        }
+      }
+    },
+    {
+      "subject": "S15",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 172.0,
+      "weightKg": 70.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.615,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 7.068,
+            "r2": -0.025
+          },
+          "elbow_flexion": {
+            "maeNm": 4.615,
+            "r2": -0.023
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 8.0,
+            "r2": -0.405
+          },
+          "elbow_flexion": {
+            "maeNm": 4.616,
+            "r2": -0.136
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 4.399,
+            "r2": 0.572
+          },
+          "elbow_flexion": {
+            "maeNm": 3.873,
+            "r2": 0.234
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.478,
+            "r2": 0.723
+          },
+          "elbow_flexion": {
+            "maeNm": 2.702,
+            "r2": 0.626
+          }
+        }
+      }
+    },
+    {
+      "subject": "S16",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 187.0,
+      "weightKg": 83.0,
+      "anteriorDeltoidEmgP99MvcRatio": 0.432,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.329,
+            "r2": -0.201
+          },
+          "elbow_flexion": {
+            "maeNm": 3.593,
+            "r2": -0.057
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 5.8,
+            "r2": -0.003
+          },
+          "elbow_flexion": {
+            "maeNm": 3.596,
+            "r2": -0.078
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 3.601,
+            "r2": 0.475
+          },
+          "elbow_flexion": {
+            "maeNm": 2.698,
+            "r2": 0.43
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 3.995,
+            "r2": 0.35
+          },
+          "elbow_flexion": {
+            "maeNm": 1.999,
+            "r2": 0.718
+          }
+        }
+      }
+    },
+    {
+      "subject": "S17",
+      "samples": 588,
+      "durationS": 29.39,
+      "heightCm": 184.0,
+      "weightKg": 77.5,
+      "anteriorDeltoidEmgP99MvcRatio": 0.649,
+      "methods": {
+        "train_mean": {
+          "shoulder_elv": {
+            "maeNm": 6.417,
+            "r2": -0.0
+          },
+          "elbow_flexion": {
+            "maeNm": 4.104,
+            "r2": -0.916
+          }
+        },
+        "body": {
+          "shoulder_elv": {
+            "maeNm": 6.367,
+            "r2": -0.079
+          },
+          "elbow_flexion": {
+            "maeNm": 4.529,
+            "r2": -1.254
+          }
+        },
+        "pose": {
+          "shoulder_elv": {
+            "maeNm": 4.719,
+            "r2": 0.44
+          },
+          "elbow_flexion": {
+            "maeNm": 3.598,
+            "r2": -0.382
+          }
+        },
+        "pose_emg": {
+          "shoulder_elv": {
+            "maeNm": 4.376,
+            "r2": 0.522
+          },
+          "elbow_flexion": {
+            "maeNm": 2.433,
+            "r2": 0.341
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Upper-limb exoskeleton tracking is not barbell bench press or overhead press.",
+    "Joint torque labels are study processed values, not independent single-muscle force measurements.",
+    "The app does not measure joint angles, velocities, EMG or MVC; body-only predictions cannot produce within-repetition variation.",
+    "One trial per participant and a fixed linear ridge model are only a feasibility screen, not hyperparameter tuning or validation of a deployable model.",
+    "Subject-level bootstrap intervals describe this sample and are not population performance guarantees.",
+    "S14 anterior deltoid processed EMG reaches 3.694 times its supplied MVC normalization at the 99th percentile; this may reflect task/MVC differences or signal quality and is retained in the primary benchmark."
+  ]
+}

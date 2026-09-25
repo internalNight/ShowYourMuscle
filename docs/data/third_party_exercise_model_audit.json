@@ -1,0 +1,65 @@
+{
+  "status": "third_party_model_candidate_audit_not_product_validation",
+  "source": "https://github.com/D-sorganization/OpenSim_Models",
+  "sourceCommit": "ac9e4b2eb17a16b44110e94e65abc3ecb9444a49",
+  "license": "MIT per repository LICENSE; confirm attribution if integrated",
+  "input": "72 kg body, 1.75 m height, 20 kg empty barbell",
+  "runs": [
+    {
+      "exercise": "squat",
+      "xmlSha256": "cec7c03541222c6db8ad47b6a563e5f46c185aeb35b71755d75aada5c6ee709d",
+      "xmlBodies": 18,
+      "xmlJoints": 18,
+      "xmlForces": 8,
+      "xmlMuscleElements": 0,
+      "barbellAttachmentJointNames": [
+        "barbell_to_torso"
+      ],
+      "opensimLoadAndInit": "passed_but_check_counts",
+      "opensimBodies": 0,
+      "opensimJoints": 0,
+      "opensimMuscles": 0,
+      "opensimTotalMassKg": 0.0,
+      "wrappedSetDiagnostic": "failed",
+      "wrappedSetError": "std::exception in 'OpenSim::Model::Model(std::string const &)': CustomJoint 'wrist_l' has collinear axes and are not well-defined. Please fix and retry loading."
+    },
+    {
+      "exercise": "bench_press",
+      "xmlSha256": "faea864cd0eb5718a4f2ff5e060afb996168466bf4c06c6933a4598573b7756c",
+      "xmlBodies": 19,
+      "xmlJoints": 20,
+      "xmlForces": 9,
+      "xmlMuscleElements": 0,
+      "barbellAttachmentJointNames": [
+        "barbell_to_left_hand",
+        "barbell_to_right_hand"
+      ],
+      "opensimLoadAndInit": "passed_but_check_counts",
+      "opensimBodies": 0,
+      "opensimJoints": 0,
+      "opensimMuscles": 0,
+      "opensimTotalMassKg": 0.0,
+      "wrappedSetDiagnostic": "failed",
+      "wrappedSetError": "std::exception in 'OpenSim::Model::Model(std::string const &)': CustomJoint 'wrist_l' has collinear axes and are not well-defined. Please fix and retry loading."
+    },
+    {
+      "exercise": "clean_and_jerk",
+      "xmlSha256": "b64f5ef79aef292c3b2ddc7483c8e1bb00a73303e92cdea69ed2bd28895ac027",
+      "xmlBodies": 18,
+      "xmlJoints": 19,
+      "xmlForces": 8,
+      "xmlMuscleElements": 0,
+      "barbellAttachmentJointNames": [
+        "barbell_to_left_hand",
+        "barbell_to_right_hand"
+      ],
+      "opensimLoadAndInit": "passed_but_check_counts",
+      "opensimBodies": 0,
+      "opensimJoints": 0,
+      "opensimMuscles": 0,
+      "opensimTotalMassKg": 0.0,
+      "wrappedSetDiagnostic": "failed",
+      "wrappedSetError": "std::exception in 'OpenSim::Model::Model(std::string const &)': CustomJoint 'wrist_l' has collinear axes and are not well-defined. Please fix and retry loading."
+    }
+  ]
+}

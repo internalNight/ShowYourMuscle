@@ -1,0 +1,343 @@
+{
+  "status": "research_only_released_vs_replayed_inverse_dynamics_diagnostic",
+  "momentUnitAssumption": "released CSV N m/kg multiplied by participant mass",
+  "replayMethod": "OpenSim 4.6 ID, original scaled model and forceplate loads, independent IK, 6 Hz coordinate lowpass",
+  "controlledVariation": "same model, IK, forceplate force and COP; include versus omit free forceplate moment vector",
+  "limitations": [
+    "released author's forceplate processing and exact ID settings are unknown",
+    "replayed IK has small angle discrepancies but is not identical",
+    "joint moments are not muscle forces"
+  ],
+  "subjects": {
+    "AB01": {
+      "intervalS": [
+        51.25,
+        51.35
+      ],
+      "frames": 21,
+      "sourceMassKg": 78.9,
+      "moments": {
+        "hip_rotation_r_moment": {
+          "sourceMedianNm": -44.284,
+          "replayMedianNm": -64.0303,
+          "signedBiasNm": -19.3354,
+          "meanAbsoluteErrorNm": 19.3354,
+          "maximumAbsoluteErrorNm": 20.4458,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -44.284,
+            "replayMedianNm": -44.2829,
+            "signedBiasNm": 0.001,
+            "meanAbsoluteErrorNm": 0.0011,
+            "maximumAbsoluteErrorNm": 0.0018,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -19.3343
+        },
+        "hip_rotation_l_moment": {
+          "sourceMedianNm": -49.5919,
+          "replayMedianNm": -93.5537,
+          "signedBiasNm": -43.2391,
+          "meanAbsoluteErrorNm": 43.2391,
+          "maximumAbsoluteErrorNm": 44.84,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -49.5919,
+            "replayMedianNm": -49.5931,
+            "signedBiasNm": -0.001,
+            "meanAbsoluteErrorNm": 0.0013,
+            "maximumAbsoluteErrorNm": 0.0023,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -43.2378
+        },
+        "hip_flexion_r_moment": {
+          "sourceMedianNm": -110.0738,
+          "replayMedianNm": -84.4186,
+          "signedBiasNm": 25.4267,
+          "meanAbsoluteErrorNm": 25.4267,
+          "maximumAbsoluteErrorNm": 26.8444,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -110.0738,
+            "replayMedianNm": -110.0744,
+            "signedBiasNm": -0.0019,
+            "meanAbsoluteErrorNm": 0.0019,
+            "maximumAbsoluteErrorNm": 0.0031,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -25.4248
+        },
+        "hip_flexion_l_moment": {
+          "sourceMedianNm": -105.6429,
+          "replayMedianNm": -96.9686,
+          "signedBiasNm": 7.9555,
+          "meanAbsoluteErrorNm": 7.9555,
+          "maximumAbsoluteErrorNm": 9.2966,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -105.6429,
+            "replayMedianNm": -105.6412,
+            "signedBiasNm": 0.0015,
+            "meanAbsoluteErrorNm": 0.0016,
+            "maximumAbsoluteErrorNm": 0.0031,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -7.9539
+        },
+        "hip_adduction_r_moment": {
+          "sourceMedianNm": -28.5583,
+          "replayMedianNm": -45.5163,
+          "signedBiasNm": -16.6093,
+          "meanAbsoluteErrorNm": 16.6093,
+          "maximumAbsoluteErrorNm": 17.0158,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -28.5583,
+            "replayMedianNm": -28.5559,
+            "signedBiasNm": 0.0015,
+            "meanAbsoluteErrorNm": 0.0015,
+            "maximumAbsoluteErrorNm": 0.0024,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -16.6078
+        },
+        "hip_adduction_l_moment": {
+          "sourceMedianNm": -29.7161,
+          "replayMedianNm": -56.7816,
+          "signedBiasNm": -25.8252,
+          "meanAbsoluteErrorNm": 25.8252,
+          "maximumAbsoluteErrorNm": 27.1754,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -29.7161,
+            "replayMedianNm": -29.7187,
+            "signedBiasNm": -0.0021,
+            "meanAbsoluteErrorNm": 0.0021,
+            "maximumAbsoluteErrorNm": 0.0031,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -25.8231
+        }
+      },
+      "interiorFrames": 241,
+      "interiorMomentErrors": {
+        "hip_rotation_r_moment": {
+          "withForcePlateMomentMaENm": 11.1802,
+          "withoutForcePlateMomentMaENm": 0.0024
+        },
+        "hip_rotation_l_moment": {
+          "withForcePlateMomentMaENm": 23.1067,
+          "withoutForcePlateMomentMaENm": 0.0031
+        },
+        "hip_flexion_r_moment": {
+          "withForcePlateMomentMaENm": 12.9233,
+          "withoutForcePlateMomentMaENm": 0.0017
+        },
+        "hip_flexion_l_moment": {
+          "withForcePlateMomentMaENm": 5.853,
+          "withoutForcePlateMomentMaENm": 0.003
+        },
+        "hip_adduction_r_moment": {
+          "withForcePlateMomentMaENm": 10.3017,
+          "withoutForcePlateMomentMaENm": 0.0086
+        },
+        "hip_adduction_l_moment": {
+          "withForcePlateMomentMaENm": 17.7941,
+          "withoutForcePlateMomentMaENm": 0.01
+        }
+      },
+      "angles": {
+        "hip_rotation_r": {
+          "meanAbsoluteErrorDeg": 0.0013,
+          "maximumAbsoluteErrorDeg": 0.0084
+        },
+        "hip_rotation_l": {
+          "meanAbsoluteErrorDeg": 0.0018,
+          "maximumAbsoluteErrorDeg": 0.0122
+        },
+        "hip_flexion_r": {
+          "meanAbsoluteErrorDeg": 0.0029,
+          "maximumAbsoluteErrorDeg": 0.0244
+        },
+        "hip_flexion_l": {
+          "meanAbsoluteErrorDeg": 0.004,
+          "maximumAbsoluteErrorDeg": 0.031
+        },
+        "hip_adduction_r": {
+          "meanAbsoluteErrorDeg": 0.0016,
+          "maximumAbsoluteErrorDeg": 0.0126
+        },
+        "hip_adduction_l": {
+          "meanAbsoluteErrorDeg": 0.0015,
+          "maximumAbsoluteErrorDeg": 0.0118
+        }
+      }
+    },
+    "AB02": {
+      "intervalS": [
+        23.65,
+        23.75
+      ],
+      "frames": 21,
+      "sourceMassKg": 82.2,
+      "moments": {
+        "hip_rotation_r_moment": {
+          "sourceMedianNm": -52.2123,
+          "replayMedianNm": -67.4252,
+          "signedBiasNm": -15.3265,
+          "meanAbsoluteErrorNm": 15.3265,
+          "maximumAbsoluteErrorNm": 15.7463,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -52.2123,
+            "replayMedianNm": -50.1162,
+            "signedBiasNm": 2.0816,
+            "meanAbsoluteErrorNm": 2.0816,
+            "maximumAbsoluteErrorNm": 2.1297,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -13.2449
+        },
+        "hip_rotation_l_moment": {
+          "sourceMedianNm": -49.2412,
+          "replayMedianNm": -35.6658,
+          "signedBiasNm": 13.3945,
+          "meanAbsoluteErrorNm": 13.3945,
+          "maximumAbsoluteErrorNm": 14.0246,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -49.2412,
+            "replayMedianNm": -47.2644,
+            "signedBiasNm": 1.9641,
+            "meanAbsoluteErrorNm": 1.9641,
+            "maximumAbsoluteErrorNm": 2.0012,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -11.4304
+        },
+        "hip_flexion_r_moment": {
+          "sourceMedianNm": -70.3983,
+          "replayMedianNm": -86.7965,
+          "signedBiasNm": -16.4843,
+          "meanAbsoluteErrorNm": 16.4843,
+          "maximumAbsoluteErrorNm": 19.9698,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -70.3983,
+            "replayMedianNm": -67.5721,
+            "signedBiasNm": 2.8079,
+            "meanAbsoluteErrorNm": 2.8079,
+            "maximumAbsoluteErrorNm": 2.8835,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -13.6764
+        },
+        "hip_flexion_l_moment": {
+          "sourceMedianNm": -80.901,
+          "replayMedianNm": -105.4702,
+          "signedBiasNm": -24.3455,
+          "meanAbsoluteErrorNm": 24.3455,
+          "maximumAbsoluteErrorNm": 26.2575,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -80.901,
+            "replayMedianNm": -77.6531,
+            "signedBiasNm": 3.2368,
+            "meanAbsoluteErrorNm": 3.2368,
+            "maximumAbsoluteErrorNm": 3.2834,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -21.1087
+        },
+        "hip_adduction_r_moment": {
+          "sourceMedianNm": -24.0743,
+          "replayMedianNm": -44.361,
+          "signedBiasNm": -20.1431,
+          "meanAbsoluteErrorNm": 20.1431,
+          "maximumAbsoluteErrorNm": 21.4807,
+          "sameSignFrameCount": 21,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": -24.0743,
+            "replayMedianNm": -23.1078,
+            "signedBiasNm": 0.9609,
+            "meanAbsoluteErrorNm": 0.9609,
+            "maximumAbsoluteErrorNm": 1.0304,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -19.1822
+        },
+        "hip_adduction_l_moment": {
+          "sourceMedianNm": 5.8498,
+          "replayMedianNm": 0.3914,
+          "signedBiasNm": -5.2033,
+          "meanAbsoluteErrorNm": 5.2033,
+          "maximumAbsoluteErrorNm": 6.4942,
+          "sameSignFrameCount": 13,
+          "withoutForcePlateMoment": {
+            "sourceMedianNm": 5.8498,
+            "replayMedianNm": 5.6151,
+            "signedBiasNm": -0.2537,
+            "meanAbsoluteErrorNm": 0.2537,
+            "maximumAbsoluteErrorNm": 0.4134,
+            "sameSignFrameCount": 21
+          },
+          "maeChangeWithoutForcePlateMomentNm": -4.9496
+        }
+      },
+      "interiorFrames": 241,
+      "interiorMomentErrors": {
+        "hip_rotation_r_moment": {
+          "withForcePlateMomentMaENm": 14.6573,
+          "withoutForcePlateMomentMaENm": 0.8092
+        },
+        "hip_rotation_l_moment": {
+          "withForcePlateMomentMaENm": 3.9049,
+          "withoutForcePlateMomentMaENm": 0.7161
+        },
+        "hip_flexion_r_moment": {
+          "withForcePlateMomentMaENm": 7.8167,
+          "withoutForcePlateMomentMaENm": 2.2131
+        },
+        "hip_flexion_l_moment": {
+          "withForcePlateMomentMaENm": 13.4575,
+          "withoutForcePlateMomentMaENm": 1.8051
+        },
+        "hip_adduction_r_moment": {
+          "withForcePlateMomentMaENm": 14.6941,
+          "withoutForcePlateMomentMaENm": 0.44
+        },
+        "hip_adduction_l_moment": {
+          "withForcePlateMomentMaENm": 4.9055,
+          "withoutForcePlateMomentMaENm": 0.3574
+        }
+      },
+      "angles": {
+        "hip_rotation_r": {
+          "meanAbsoluteErrorDeg": 0.0,
+          "maximumAbsoluteErrorDeg": 0.0
+        },
+        "hip_rotation_l": {
+          "meanAbsoluteErrorDeg": 0.0,
+          "maximumAbsoluteErrorDeg": 0.0
+        },
+        "hip_flexion_r": {
+          "meanAbsoluteErrorDeg": 0.0,
+          "maximumAbsoluteErrorDeg": 0.0
+        },
+        "hip_flexion_l": {
+          "meanAbsoluteErrorDeg": 0.0,
+          "maximumAbsoluteErrorDeg": 0.0
+        },
+        "hip_adduction_r": {
+          "meanAbsoluteErrorDeg": 0.0,
+          "maximumAbsoluteErrorDeg": 0.0
+        },
+        "hip_adduction_l": {
+          "meanAbsoluteErrorDeg": 0.0,
+          "maximumAbsoluteErrorDeg": 0.0
+        }
+      }
+    }
+  }
+}

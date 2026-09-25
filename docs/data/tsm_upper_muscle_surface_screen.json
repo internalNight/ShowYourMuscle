@@ -1,0 +1,2845 @@
+{
+  "status": "research_candidate_screen_only",
+  "sampleCountPerMusclePerFrame": 21,
+  "checkedFrameIndices": [
+    0,
+    25,
+    50,
+    75,
+    100
+  ],
+  "muscles": [
+    {
+      "exercise": "bench",
+      "modelMuscle": "BIC_long",
+      "atlasMesh": "Long head of biceps brachii.r",
+      "registeredVia": "humerus endpoint proxy transform",
+      "vertexCount": 1611,
+      "pathPointCount": 3,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "medianUnsignedSurfaceDistanceM": 0.016114,
+          "p95UnsignedSurfaceDistanceM": 0.023895,
+          "maximumUnsignedSurfaceDistanceM": 0.030384,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.022536
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.015188
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.01724
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.010526
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.02041
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.018038
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.016114
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.013325
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.012463
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.012747
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.013894
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.014099
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.014712
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.014805
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.015532
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.016253
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.016754
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.017845
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.019953
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.023895
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.030384
+            }
+          ]
+        },
+        {
+          "frameIndex": 25,
+          "medianUnsignedSurfaceDistanceM": 0.020461,
+          "p95UnsignedSurfaceDistanceM": 0.039064,
+          "maximumUnsignedSurfaceDistanceM": 0.041775,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.021927
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.016981
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.012189
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.015699
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.020708
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.020461
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.020566
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.018994
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.016539
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.015472
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.015214
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.015711
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.017696
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.020258
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.02337
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.027166
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.031009
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.03375
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.036763
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.039064
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.041775
+            }
+          ]
+        },
+        {
+          "frameIndex": 50,
+          "medianUnsignedSurfaceDistanceM": 0.019085,
+          "p95UnsignedSurfaceDistanceM": 0.032431,
+          "maximumUnsignedSurfaceDistanceM": 0.035286,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.020403
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.014947
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.017378
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.011581
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.016552
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.020152
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.019877
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.019811
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.019229
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.016508
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.014707
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.014068
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.013718
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.014573
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.016579
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.019085
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.022116
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.025895
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.029635
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.032431
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.035286
+            }
+          ]
+        },
+        {
+          "frameIndex": 75,
+          "medianUnsignedSurfaceDistanceM": 0.020461,
+          "p95UnsignedSurfaceDistanceM": 0.039064,
+          "maximumUnsignedSurfaceDistanceM": 0.041775,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.021927
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.016981
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.012189
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.015699
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.020708
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.020461
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.020566
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.018994
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.016539
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.015472
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.015214
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.015711
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.017696
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.020258
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.02337
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.027166
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.031009
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.03375
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.036763
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.039064
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.041775
+            }
+          ]
+        },
+        {
+          "frameIndex": 100,
+          "medianUnsignedSurfaceDistanceM": 0.016114,
+          "p95UnsignedSurfaceDistanceM": 0.023895,
+          "maximumUnsignedSurfaceDistanceM": 0.030384,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.022536
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.015188
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.01724
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.010526
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.02041
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.018038
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.016114
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.013325
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.012463
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.012747
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.013894
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.014099
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.014712
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.014805
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.015532
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.016253
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.016754
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.017845
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.019953
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.023895
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.030384
+            }
+          ]
+        }
+      ],
+      "maximumAcrossFramesM": 0.041775
+    },
+    {
+      "exercise": "bench",
+      "modelMuscle": "BIC_brevis",
+      "atlasMesh": "Short head of biceps brachii.r",
+      "registeredVia": "humerus endpoint proxy transform",
+      "vertexCount": 1344,
+      "pathPointCount": 2,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "medianUnsignedSurfaceDistanceM": 0.020833,
+          "p95UnsignedSurfaceDistanceM": 0.064276,
+          "maximumUnsignedSurfaceDistanceM": 0.078862,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.041164
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.035874
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.032759
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.030494
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.025792
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.02182
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.019083
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.016275
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.014451
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.011855
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.009702
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.006688
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.003782
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.001211
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.00063
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.007547
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.020833
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.035196
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.049711
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.064276
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.078862
+            }
+          ]
+        },
+        {
+          "frameIndex": 25,
+          "medianUnsignedSurfaceDistanceM": 0.027831,
+          "p95UnsignedSurfaceDistanceM": 0.044369,
+          "maximumUnsignedSurfaceDistanceM": 0.053688,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.040839
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.034624
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.030109
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.028432
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.028558
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.028437
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.026528
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.022416
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.018925
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.01602
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.014991
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.015393
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.016231
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.017962
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.020555
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.023934
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.027831
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.032576
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.037562
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.044369
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.053688
+            }
+          ]
+        },
+        {
+          "frameIndex": 50,
+          "medianUnsignedSurfaceDistanceM": 0.016848,
+          "p95UnsignedSurfaceDistanceM": 0.033722,
+          "maximumUnsignedSurfaceDistanceM": 0.042767,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.042767
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.033655
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.02607
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.020646
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.016848
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.016385
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.01757
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.017599
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.016307
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.013332
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.010851
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.008889
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.008402
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.009521
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.011012
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.013312
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.016387
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.019892
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.023792
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.028621
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.033722
+            }
+          ]
+        },
+        {
+          "frameIndex": 75,
+          "medianUnsignedSurfaceDistanceM": 0.027831,
+          "p95UnsignedSurfaceDistanceM": 0.044369,
+          "maximumUnsignedSurfaceDistanceM": 0.053688,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.040839
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.034624
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.030109
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.028432
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.028558
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.028437
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.026528
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.022416
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.018925
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.01602
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.014991
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.015393
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.016231
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.017962
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.020555
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.023934
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.027831
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.032576
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.037562
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.044369
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.053688
+            }
+          ]
+        },
+        {
+          "frameIndex": 100,
+          "medianUnsignedSurfaceDistanceM": 0.020833,
+          "p95UnsignedSurfaceDistanceM": 0.064276,
+          "maximumUnsignedSurfaceDistanceM": 0.078862,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.041164
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.035874
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.032759
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.030494
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.025792
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.02182
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.019083
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.016275
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.014451
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.011855
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.009702
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.006688
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.003782
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.001211
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.00063
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.007547
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.020833
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.035196
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.049711
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.064276
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.078862
+            }
+          ]
+        }
+      ],
+      "maximumAcrossFramesM": 0.078862
+    },
+    {
+      "exercise": "bench",
+      "modelMuscle": "TRIlong",
+      "atlasMesh": "Long head of triceps brachii.r",
+      "registeredVia": "humerus endpoint proxy transform",
+      "vertexCount": 1977,
+      "pathPointCount": 2,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "medianUnsignedSurfaceDistanceM": 0.016916,
+          "p95UnsignedSurfaceDistanceM": 0.056365,
+          "maximumUnsignedSurfaceDistanceM": 0.067245,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.032735
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.018104
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.007026
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.008687
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.008608
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.009288
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.009772
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.010403
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.010848
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.011787
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.013286
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.014618
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.016916
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.019831
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.024204
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.029372
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.035272
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.040971
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.047621
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.056365
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.067245
+            }
+          ]
+        },
+        {
+          "frameIndex": 25,
+          "medianUnsignedSurfaceDistanceM": 0.035773,
+          "p95UnsignedSurfaceDistanceM": 0.055949,
+          "maximumUnsignedSurfaceDistanceM": 0.066671,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.047746
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.041843
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.04043
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.039259
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.038037
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.03665
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.034805
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.032823
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.030696
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.028183
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.026147
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.02459
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.024933
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.025568
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.028359
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.031802
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.035773
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.040776
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.04719
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.055949
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.066671
+            }
+          ]
+        },
+        {
+          "frameIndex": 50,
+          "medianUnsignedSurfaceDistanceM": 0.035316,
+          "p95UnsignedSurfaceDistanceM": 0.05104,
+          "maximumUnsignedSurfaceDistanceM": 0.059622,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.05104
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.049401
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.047036
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.04473
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.042266
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.03932
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.036181
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.032957
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.02911
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.025654
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.022474
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.020657
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.020049
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.020168
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.02286
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.02596
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.030132
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.035316
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.041446
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.049593
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.059622
+            }
+          ]
+        },
+        {
+          "frameIndex": 75,
+          "medianUnsignedSurfaceDistanceM": 0.035773,
+          "p95UnsignedSurfaceDistanceM": 0.055949,
+          "maximumUnsignedSurfaceDistanceM": 0.066671,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.047746
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.041843
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.04043
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.039259
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.038037
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.03665
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.034805
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.032823
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.030696
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.028183
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.026147
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.02459
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.024933
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.025568
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.028359
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.031802
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.035773
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.040776
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.04719
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.055949
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.066671
+            }
+          ]
+        },
+        {
+          "frameIndex": 100,
+          "medianUnsignedSurfaceDistanceM": 0.016916,
+          "p95UnsignedSurfaceDistanceM": 0.056365,
+          "maximumUnsignedSurfaceDistanceM": 0.067245,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.032735
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.018104
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.007026
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.008687
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.008608
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.009288
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.009772
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.010403
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.010848
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.011787
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.013286
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.014618
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.016916
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.019831
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.024204
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.029372
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.035272
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.040971
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.047621
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.056365
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.067245
+            }
+          ]
+        }
+      ],
+      "maximumAcrossFramesM": 0.067245
+    },
+    {
+      "exercise": "press",
+      "modelMuscle": "BIC_long",
+      "atlasMesh": "Long head of biceps brachii.r",
+      "registeredVia": "humerus endpoint proxy transform",
+      "vertexCount": 1611,
+      "pathPointCount": 3,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "medianUnsignedSurfaceDistanceM": 0.015229,
+          "p95UnsignedSurfaceDistanceM": 0.029156,
+          "maximumUnsignedSurfaceDistanceM": 0.032598,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.032598
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.021388
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.018962
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.013198
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.011003
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.013095
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.016213
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.01821
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.011859
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.00658
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.003264
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.002975
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.004318
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.006515
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.010251
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.015229
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.020691
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.024997
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.027998
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.029156
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.027781
+            }
+          ]
+        },
+        {
+          "frameIndex": 25,
+          "medianUnsignedSurfaceDistanceM": 0.009937,
+          "p95UnsignedSurfaceDistanceM": 0.018719,
+          "maximumUnsignedSurfaceDistanceM": 0.0227,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.0227
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.017001
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.018719
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.011907
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.010248
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.011603
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.013406
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.011531
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.003427
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.001553
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.003966
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.00429
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.002683
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.000486
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.004133
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.007026
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.008911
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.009937
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.010199
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.009474
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.01526
+            }
+          ]
+        },
+        {
+          "frameIndex": 50,
+          "medianUnsignedSurfaceDistanceM": 0.009294,
+          "p95UnsignedSurfaceDistanceM": 0.021326,
+          "maximumUnsignedSurfaceDistanceM": 0.029753,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.003284
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.006262
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.011468
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.018724
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.008941
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.01012
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.010146
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.009435
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.002917
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.000773
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.000906
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.00281
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.004446
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.006309
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.007433
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.009294
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.010909
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.012949
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.016169
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.021326
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.029753
+            }
+          ]
+        },
+        {
+          "frameIndex": 75,
+          "medianUnsignedSurfaceDistanceM": 0.009937,
+          "p95UnsignedSurfaceDistanceM": 0.018719,
+          "maximumUnsignedSurfaceDistanceM": 0.0227,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.0227
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.017001
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.018719
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.011907
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.010248
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.011603
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.013406
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.011531
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.003427
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.001553
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.003966
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.00429
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.002683
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.000486
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.004133
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.007026
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.008911
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.009937
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.010199
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.009474
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.01526
+            }
+          ]
+        },
+        {
+          "frameIndex": 100,
+          "medianUnsignedSurfaceDistanceM": 0.015229,
+          "p95UnsignedSurfaceDistanceM": 0.029156,
+          "maximumUnsignedSurfaceDistanceM": 0.032598,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.032598
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.021388
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.018962
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.013198
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.011003
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.013095
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.016213
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.01821
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.011859
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.00658
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.003264
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.002975
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.004318
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.006515
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.010251
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.015229
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.020691
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.024997
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.027998
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.029156
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.027781
+            }
+          ]
+        }
+      ],
+      "maximumAcrossFramesM": 0.032598
+    },
+    {
+      "exercise": "press",
+      "modelMuscle": "BIC_brevis",
+      "atlasMesh": "Short head of biceps brachii.r",
+      "registeredVia": "humerus endpoint proxy transform",
+      "vertexCount": 1344,
+      "pathPointCount": 2,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "medianUnsignedSurfaceDistanceM": 0.033625,
+          "p95UnsignedSurfaceDistanceM": 0.051728,
+          "maximumUnsignedSurfaceDistanceM": 0.063757,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.048114
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.042999
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.039383
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.038046
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.038285
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.03773
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.035482
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.033345
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.031426
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.030519
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.029627
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.028708
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.028584
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.027786
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.027499
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.027854
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.029587
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.033625
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.041203
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.051728
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.063757
+            }
+          ]
+        },
+        {
+          "frameIndex": 25,
+          "medianUnsignedSurfaceDistanceM": 0.015969,
+          "p95UnsignedSurfaceDistanceM": 0.058462,
+          "maximumUnsignedSurfaceDistanceM": 0.074426,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.042096
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.031505
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.024039
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.018613
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.01708
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.017304
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.015969
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.013092
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.011998
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.011865
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.010829
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.009219
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.00788
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.005613
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.005262
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.007331
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.013297
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.027515
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.042818
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.058462
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.074426
+            }
+          ]
+        },
+        {
+          "frameIndex": 50,
+          "medianUnsignedSurfaceDistanceM": 0.006206,
+          "p95UnsignedSurfaceDistanceM": 0.063786,
+          "maximumUnsignedSurfaceDistanceM": 0.079658,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.020896
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.006934
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.002745
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.005191
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.007935
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.006206
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.001726
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.002017
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.003828
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.004243
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.004209
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.003086
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.000556
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.003719
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.009858
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.01469
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.021216
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.033481
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.048241
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.063786
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.079658
+            }
+          ]
+        },
+        {
+          "frameIndex": 75,
+          "medianUnsignedSurfaceDistanceM": 0.015969,
+          "p95UnsignedSurfaceDistanceM": 0.058462,
+          "maximumUnsignedSurfaceDistanceM": 0.074426,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.042096
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.031505
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.024039
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.018613
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.01708
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.017304
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.015969
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.013092
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.011998
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.011865
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.010829
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.009219
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.00788
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.005613
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.005262
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.007331
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.013297
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.027515
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.042818
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.058462
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.074426
+            }
+          ]
+        },
+        {
+          "frameIndex": 100,
+          "medianUnsignedSurfaceDistanceM": 0.033625,
+          "p95UnsignedSurfaceDistanceM": 0.051728,
+          "maximumUnsignedSurfaceDistanceM": 0.063757,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.048114
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.042999
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.039383
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.038046
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.038285
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.03773
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.035482
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.033345
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.031426
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.030519
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.029627
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.028708
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.028584
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.027786
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.027499
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.027854
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.029587
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.033625
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.041203
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.051728
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.063757
+            }
+          ]
+        }
+      ],
+      "maximumAcrossFramesM": 0.079658
+    },
+    {
+      "exercise": "press",
+      "modelMuscle": "TRIlong",
+      "atlasMesh": "Long head of triceps brachii.r",
+      "registeredVia": "humerus endpoint proxy transform",
+      "vertexCount": 1977,
+      "pathPointCount": 2,
+      "frames": [
+        {
+          "frameIndex": 0,
+          "medianUnsignedSurfaceDistanceM": 0.030373,
+          "p95UnsignedSurfaceDistanceM": 0.048628,
+          "maximumUnsignedSurfaceDistanceM": 0.054264,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.044605
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.035732
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.030576
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.029369
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.030373
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.030451
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.03017
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.028816
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.028468
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.027698
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.027368
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.027328
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.026975
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.027415
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.029017
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.031028
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.034535
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.038948
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.043541
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.048628
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.054264
+            }
+          ]
+        },
+        {
+          "frameIndex": 25,
+          "medianUnsignedSurfaceDistanceM": 0.019826,
+          "p95UnsignedSurfaceDistanceM": 0.051683,
+          "maximumUnsignedSurfaceDistanceM": 0.061866,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.040034
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.028016
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.020386
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.019826
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.019308
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.018861
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.018175
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.017469
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.016352
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.015753
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.0155
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.0157
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.016493
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.018517
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.021638
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.026544
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.031879
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.037585
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.044045
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.051683
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.061866
+            }
+          ]
+        },
+        {
+          "frameIndex": 50,
+          "medianUnsignedSurfaceDistanceM": 0.010182,
+          "p95UnsignedSurfaceDistanceM": 0.041949,
+          "maximumUnsignedSurfaceDistanceM": 0.055537,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.033564
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.0211
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.012748
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.011879
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.010927
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.010182
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.008839
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.007845
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.00574
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.003183
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.000484
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.002224
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.003269
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.001466
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.002602
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.008223
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.014715
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.021724
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.029964
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.041949
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.055537
+            }
+          ]
+        },
+        {
+          "frameIndex": 75,
+          "medianUnsignedSurfaceDistanceM": 0.019826,
+          "p95UnsignedSurfaceDistanceM": 0.051683,
+          "maximumUnsignedSurfaceDistanceM": 0.061866,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.040034
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.028016
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.020386
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.019826
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.019308
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.018861
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.018175
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.017469
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.016352
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.015753
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.0155
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.0157
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.016493
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.018517
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.021638
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.026544
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.031879
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.037585
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.044045
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.051683
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.061866
+            }
+          ]
+        },
+        {
+          "frameIndex": 100,
+          "medianUnsignedSurfaceDistanceM": 0.030373,
+          "p95UnsignedSurfaceDistanceM": 0.048628,
+          "maximumUnsignedSurfaceDistanceM": 0.054264,
+          "samples": [
+            {
+              "fraction": 0.0,
+              "surfaceDistanceM": 0.044605
+            },
+            {
+              "fraction": 0.05,
+              "surfaceDistanceM": 0.035732
+            },
+            {
+              "fraction": 0.1,
+              "surfaceDistanceM": 0.030576
+            },
+            {
+              "fraction": 0.15,
+              "surfaceDistanceM": 0.029369
+            },
+            {
+              "fraction": 0.2,
+              "surfaceDistanceM": 0.030373
+            },
+            {
+              "fraction": 0.25,
+              "surfaceDistanceM": 0.030451
+            },
+            {
+              "fraction": 0.3,
+              "surfaceDistanceM": 0.03017
+            },
+            {
+              "fraction": 0.35,
+              "surfaceDistanceM": 0.028816
+            },
+            {
+              "fraction": 0.4,
+              "surfaceDistanceM": 0.028468
+            },
+            {
+              "fraction": 0.45,
+              "surfaceDistanceM": 0.027698
+            },
+            {
+              "fraction": 0.5,
+              "surfaceDistanceM": 0.027368
+            },
+            {
+              "fraction": 0.55,
+              "surfaceDistanceM": 0.027328
+            },
+            {
+              "fraction": 0.6,
+              "surfaceDistanceM": 0.026975
+            },
+            {
+              "fraction": 0.65,
+              "surfaceDistanceM": 0.027415
+            },
+            {
+              "fraction": 0.7,
+              "surfaceDistanceM": 0.029017
+            },
+            {
+              "fraction": 0.75,
+              "surfaceDistanceM": 0.031028
+            },
+            {
+              "fraction": 0.8,
+              "surfaceDistanceM": 0.034535
+            },
+            {
+              "fraction": 0.85,
+              "surfaceDistanceM": 0.038948
+            },
+            {
+              "fraction": 0.9,
+              "surfaceDistanceM": 0.043541
+            },
+            {
+              "fraction": 0.95,
+              "surfaceDistanceM": 0.048628
+            },
+            {
+              "fraction": 1.0,
+              "surfaceDistanceM": 0.054264
+            }
+          ]
+        }
+      ],
+      "maximumAcrossFramesM": 0.061866
+    }
+  ],
+  "limits": [
+    "Five synthetic exercise poses per action",
+    "All three muscle meshes use a humerus bone proxy transform",
+    "Unsigned surface distance is not a fiber path or attachment landmark",
+    "No mesh deformation, EMG comparison, or muscle force validation"
+  ]
+}

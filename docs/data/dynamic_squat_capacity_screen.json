@@ -1,0 +1,1645 @@
+{
+  "assumption": "Published moment CSV interpreted as Nm/kg, multiplied by subject mass; independent IK/ID replay strongly supports this despite conflicting README",
+  "capacity_definition": "Sum of all same-side same-direction moment arms times each muscle's max isometric force at recorded hip/knee/ankle angles. Task active and both knees at 10-150 deg flexion. Missing pelvis/lumbar coordinates stay at model defaults. This is an optimistic independent-joint capacity screen, not a muscle-force solution.",
+  "stride": 5,
+  "subjects": {
+    "AB01": {
+      "0lbs": {
+        "sampled_frames": 300,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.1,
+            "max_demand_to_optimistic_capacity": 0.735,
+            "max_ratio_frame": {
+              "time_s": 57.185,
+              "target_Nm": -158.65,
+              "optimistic_capacity_Nm": 215.88
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 29,
+            "median_demand_to_optimistic_capacity": 0.302,
+            "max_demand_to_optimistic_capacity": 1.307,
+            "max_ratio_frame": {
+              "time_s": 57.15,
+              "target_Nm": 267.63,
+              "optimistic_capacity_Nm": 204.7
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.066,
+            "max_demand_to_optimistic_capacity": 0.486,
+            "max_ratio_frame": {
+              "time_s": 53.15,
+              "target_Nm": -95.67,
+              "optimistic_capacity_Nm": 196.77
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.093,
+            "max_demand_to_optimistic_capacity": 0.894,
+            "max_ratio_frame": {
+              "time_s": 55.22,
+              "target_Nm": -184.83,
+              "optimistic_capacity_Nm": 206.63
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.159,
+            "max_demand_to_optimistic_capacity": 0.871,
+            "max_ratio_frame": {
+              "time_s": 55.225,
+              "target_Nm": 150.61,
+              "optimistic_capacity_Nm": 172.91
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.08,
+            "max_demand_to_optimistic_capacity": 0.458,
+            "max_ratio_frame": {
+              "time_s": 55.235,
+              "target_Nm": -96.39,
+              "optimistic_capacity_Nm": 210.66
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 327,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.168,
+            "max_demand_to_optimistic_capacity": 0.787,
+            "max_ratio_frame": {
+              "time_s": 11.975,
+              "target_Nm": -179.05,
+              "optimistic_capacity_Nm": 227.5
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 31,
+            "median_demand_to_optimistic_capacity": 0.395,
+            "max_demand_to_optimistic_capacity": 1.305,
+            "max_ratio_frame": {
+              "time_s": 11.965,
+              "target_Nm": 264.74,
+              "optimistic_capacity_Nm": 202.83
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.127,
+            "max_demand_to_optimistic_capacity": 0.473,
+            "max_ratio_frame": {
+              "time_s": 11.965,
+              "target_Nm": -98.88,
+              "optimistic_capacity_Nm": 208.89
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.126,
+            "max_demand_to_optimistic_capacity": 0.766,
+            "max_ratio_frame": {
+              "time_s": 9.475,
+              "target_Nm": -171.93,
+              "optimistic_capacity_Nm": 224.42
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.227,
+            "max_demand_to_optimistic_capacity": 0.955,
+            "max_ratio_frame": {
+              "time_s": 9.465,
+              "target_Nm": 182.3,
+              "optimistic_capacity_Nm": 190.97
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.1,
+            "max_demand_to_optimistic_capacity": 0.605,
+            "max_ratio_frame": {
+              "time_s": 9.485,
+              "target_Nm": -124.35,
+              "optimistic_capacity_Nm": 205.37
+            }
+          }
+        }
+      }
+    },
+    "AB02": {
+      "0lbs": {
+        "sampled_frames": 406,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.166,
+            "max_demand_to_optimistic_capacity": 0.615,
+            "max_ratio_frame": {
+              "time_s": 34.92,
+              "target_Nm": -137.97,
+              "optimistic_capacity_Nm": 224.29
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.219,
+            "max_demand_to_optimistic_capacity": 0.81,
+            "max_ratio_frame": {
+              "time_s": 35.62,
+              "target_Nm": 98.76,
+              "optimistic_capacity_Nm": 121.97
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.057,
+            "max_demand_to_optimistic_capacity": 0.304,
+            "max_ratio_frame": {
+              "time_s": 35.72,
+              "target_Nm": -64.84,
+              "optimistic_capacity_Nm": 213.26
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.159,
+            "max_demand_to_optimistic_capacity": 0.626,
+            "max_ratio_frame": {
+              "time_s": 32.815,
+              "target_Nm": -146.17,
+              "optimistic_capacity_Nm": 233.58
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.169,
+            "max_demand_to_optimistic_capacity": 0.859,
+            "max_ratio_frame": {
+              "time_s": 32.705,
+              "target_Nm": 107.74,
+              "optimistic_capacity_Nm": 125.38
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.063,
+            "max_demand_to_optimistic_capacity": 0.286,
+            "max_ratio_frame": {
+              "time_s": 32.33,
+              "target_Nm": -63.59,
+              "optimistic_capacity_Nm": 222.12
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 436,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.23,
+            "max_demand_to_optimistic_capacity": 0.716,
+            "max_ratio_frame": {
+              "time_s": 13.38,
+              "target_Nm": -160.81,
+              "optimistic_capacity_Nm": 224.62
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.266,
+            "max_demand_to_optimistic_capacity": 0.895,
+            "max_ratio_frame": {
+              "time_s": 14.23,
+              "target_Nm": 109.11,
+              "optimistic_capacity_Nm": 121.92
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.096,
+            "max_demand_to_optimistic_capacity": 0.515,
+            "max_ratio_frame": {
+              "time_s": 14.23,
+              "target_Nm": -104.23,
+              "optimistic_capacity_Nm": 202.55
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.205,
+            "max_demand_to_optimistic_capacity": 0.625,
+            "max_ratio_frame": {
+              "time_s": 10.28,
+              "target_Nm": -138.51,
+              "optimistic_capacity_Nm": 221.64
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.19,
+            "max_demand_to_optimistic_capacity": 0.797,
+            "max_ratio_frame": {
+              "time_s": 10.98,
+              "target_Nm": 97.13,
+              "optimistic_capacity_Nm": 121.83
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.08,
+            "max_demand_to_optimistic_capacity": 0.318,
+            "max_ratio_frame": {
+              "time_s": 10.555,
+              "target_Nm": -67.1,
+              "optimistic_capacity_Nm": 210.98
+            }
+          }
+        }
+      }
+    },
+    "AB03": {
+      "0lbs": {
+        "sampled_frames": 329,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 8,
+            "median_demand_to_optimistic_capacity": 0.301,
+            "max_demand_to_optimistic_capacity": 1.026,
+            "max_ratio_frame": {
+              "time_s": 35.66,
+              "target_Nm": -255.81,
+              "optimistic_capacity_Nm": 249.23
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.154,
+            "max_demand_to_optimistic_capacity": 0.64,
+            "max_ratio_frame": {
+              "time_s": 35.635,
+              "target_Nm": 153.71,
+              "optimistic_capacity_Nm": 240.18
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.07,
+            "max_demand_to_optimistic_capacity": 0.463,
+            "max_ratio_frame": {
+              "time_s": 35.66,
+              "target_Nm": -104.44,
+              "optimistic_capacity_Nm": 225.71
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.282,
+            "max_demand_to_optimistic_capacity": 0.795,
+            "max_ratio_frame": {
+              "time_s": 33.16,
+              "target_Nm": -212.81,
+              "optimistic_capacity_Nm": 267.61
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.131,
+            "max_demand_to_optimistic_capacity": 0.632,
+            "max_ratio_frame": {
+              "time_s": 33.06,
+              "target_Nm": 155.3,
+              "optimistic_capacity_Nm": 245.8
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.043,
+            "max_demand_to_optimistic_capacity": 0.406,
+            "max_ratio_frame": {
+              "time_s": 33.56,
+              "target_Nm": -97.89,
+              "optimistic_capacity_Nm": 240.94
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 332,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 26,
+            "median_demand_to_optimistic_capacity": 0.345,
+            "max_demand_to_optimistic_capacity": 1.353,
+            "max_ratio_frame": {
+              "time_s": 13.64,
+              "target_Nm": -319.08,
+              "optimistic_capacity_Nm": 235.84
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.146,
+            "max_demand_to_optimistic_capacity": 0.647,
+            "max_ratio_frame": {
+              "time_s": 13.695,
+              "target_Nm": 159.62,
+              "optimistic_capacity_Nm": 246.73
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.075,
+            "max_demand_to_optimistic_capacity": 0.357,
+            "max_ratio_frame": {
+              "time_s": 13.815,
+              "target_Nm": -85.93,
+              "optimistic_capacity_Nm": 240.99
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.418,
+            "max_demand_to_optimistic_capacity": 0.919,
+            "max_ratio_frame": {
+              "time_s": 10.765,
+              "target_Nm": -264.72,
+              "optimistic_capacity_Nm": 288.16
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.156,
+            "max_demand_to_optimistic_capacity": 0.795,
+            "max_ratio_frame": {
+              "time_s": 10.86,
+              "target_Nm": 186.77,
+              "optimistic_capacity_Nm": 234.98
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.116,
+            "max_demand_to_optimistic_capacity": 0.694,
+            "max_ratio_frame": {
+              "time_s": 10.835,
+              "target_Nm": -143.43,
+              "optimistic_capacity_Nm": 206.7
+            }
+          }
+        }
+      }
+    },
+    "AB05": {
+      "0lbs": {
+        "sampled_frames": 389,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.152,
+            "max_demand_to_optimistic_capacity": 0.443,
+            "max_ratio_frame": {
+              "time_s": 13.57,
+              "target_Nm": -96.84,
+              "optimistic_capacity_Nm": 218.55
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.118,
+            "max_demand_to_optimistic_capacity": 0.295,
+            "max_ratio_frame": {
+              "time_s": 13.445,
+              "target_Nm": 43.49,
+              "optimistic_capacity_Nm": 147.26
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.037,
+            "max_demand_to_optimistic_capacity": 0.215,
+            "max_ratio_frame": {
+              "time_s": 14.445,
+              "target_Nm": -53.28,
+              "optimistic_capacity_Nm": 247.62
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.153,
+            "max_demand_to_optimistic_capacity": 0.446,
+            "max_ratio_frame": {
+              "time_s": 11.185,
+              "target_Nm": -99.63,
+              "optimistic_capacity_Nm": 223.27
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.066,
+            "max_demand_to_optimistic_capacity": 0.253,
+            "max_ratio_frame": {
+              "time_s": 10.235,
+              "target_Nm": 38.03,
+              "optimistic_capacity_Nm": 150.41
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.049,
+            "max_demand_to_optimistic_capacity": 0.175,
+            "max_ratio_frame": {
+              "time_s": 10.165,
+              "target_Nm": -45.83,
+              "optimistic_capacity_Nm": 261.8
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 448,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.168,
+            "max_demand_to_optimistic_capacity": 0.565,
+            "max_ratio_frame": {
+              "time_s": 21.825,
+              "target_Nm": -121.52,
+              "optimistic_capacity_Nm": 214.89
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.15,
+            "max_demand_to_optimistic_capacity": 0.489,
+            "max_ratio_frame": {
+              "time_s": 22.075,
+              "target_Nm": 50.8,
+              "optimistic_capacity_Nm": 103.95
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.105,
+            "max_demand_to_optimistic_capacity": 0.314,
+            "max_ratio_frame": {
+              "time_s": 22.0,
+              "target_Nm": -71.28,
+              "optimistic_capacity_Nm": 226.71
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.18,
+            "max_demand_to_optimistic_capacity": 0.594,
+            "max_ratio_frame": {
+              "time_s": 18.84,
+              "target_Nm": -128.22,
+              "optimistic_capacity_Nm": 215.84
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.121,
+            "max_demand_to_optimistic_capacity": 0.347,
+            "max_ratio_frame": {
+              "time_s": 18.615,
+              "target_Nm": 49.99,
+              "optimistic_capacity_Nm": 144.01
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.086,
+            "max_demand_to_optimistic_capacity": 0.303,
+            "max_ratio_frame": {
+              "time_s": 18.565,
+              "target_Nm": -76.16,
+              "optimistic_capacity_Nm": 251.71
+            }
+          }
+        }
+      }
+    },
+    "AB06": {
+      "0lbs": {
+        "sampled_frames": 720,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.136,
+            "max_demand_to_optimistic_capacity": 0.936,
+            "max_ratio_frame": {
+              "time_s": 68.785,
+              "target_Nm": -179.14,
+              "optimistic_capacity_Nm": 191.45
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.265,
+            "max_demand_to_optimistic_capacity": 0.737,
+            "max_ratio_frame": {
+              "time_s": 45.905,
+              "target_Nm": 116.19,
+              "optimistic_capacity_Nm": 157.69
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.06,
+            "max_demand_to_optimistic_capacity": 0.377,
+            "max_ratio_frame": {
+              "time_s": 65.33,
+              "target_Nm": -95.76,
+              "optimistic_capacity_Nm": 253.91
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.099,
+            "max_demand_to_optimistic_capacity": 0.907,
+            "max_ratio_frame": {
+              "time_s": 54.415,
+              "target_Nm": -172.68,
+              "optimistic_capacity_Nm": 190.43
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.233,
+            "max_demand_to_optimistic_capacity": 0.88,
+            "max_ratio_frame": {
+              "time_s": 54.3,
+              "target_Nm": 144.79,
+              "optimistic_capacity_Nm": 164.62
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.083,
+            "max_demand_to_optimistic_capacity": 0.417,
+            "max_ratio_frame": {
+              "time_s": 59.53,
+              "target_Nm": -94.68,
+              "optimistic_capacity_Nm": 227.14
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 733,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 71,
+            "median_demand_to_optimistic_capacity": 0.207,
+            "max_demand_to_optimistic_capacity": 1.311,
+            "max_ratio_frame": {
+              "time_s": 23.36,
+              "target_Nm": -248.88,
+              "optimistic_capacity_Nm": 189.83
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.251,
+            "max_demand_to_optimistic_capacity": 0.802,
+            "max_ratio_frame": {
+              "time_s": 3.815,
+              "target_Nm": 120.06,
+              "optimistic_capacity_Nm": 149.74
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.152,
+            "max_demand_to_optimistic_capacity": 0.49,
+            "max_ratio_frame": {
+              "time_s": 15.67,
+              "target_Nm": -87.04,
+              "optimistic_capacity_Nm": 177.65
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 54,
+            "median_demand_to_optimistic_capacity": 0.184,
+            "max_demand_to_optimistic_capacity": 1.427,
+            "max_ratio_frame": {
+              "time_s": 10.06,
+              "target_Nm": -277.0,
+              "optimistic_capacity_Nm": 194.06
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.221,
+            "max_demand_to_optimistic_capacity": 0.802,
+            "max_ratio_frame": {
+              "time_s": 3.79,
+              "target_Nm": 122.74,
+              "optimistic_capacity_Nm": 153.14
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.115,
+            "max_demand_to_optimistic_capacity": 0.524,
+            "max_ratio_frame": {
+              "time_s": 12.815,
+              "target_Nm": -129.77,
+              "optimistic_capacity_Nm": 247.89
+            }
+          }
+        }
+      }
+    },
+    "AB07": {
+      "0lbs": {
+        "sampled_frames": 464,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.045,
+            "max_demand_to_optimistic_capacity": 0.104,
+            "max_ratio_frame": {
+              "time_s": 32.425,
+              "target_Nm": -31.52,
+              "optimistic_capacity_Nm": 302.39
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.198,
+            "max_demand_to_optimistic_capacity": 0.364,
+            "max_ratio_frame": {
+              "time_s": 37.935,
+              "target_Nm": 56.55,
+              "optimistic_capacity_Nm": 155.26
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.119,
+            "max_demand_to_optimistic_capacity": 0.369,
+            "max_ratio_frame": {
+              "time_s": 43.055,
+              "target_Nm": -58.48,
+              "optimistic_capacity_Nm": 158.64
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.035,
+            "max_demand_to_optimistic_capacity": 0.102,
+            "max_ratio_frame": {
+              "time_s": 32.35,
+              "target_Nm": -27.86,
+              "optimistic_capacity_Nm": 274.2
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.209,
+            "max_demand_to_optimistic_capacity": 0.439,
+            "max_ratio_frame": {
+              "time_s": 40.2,
+              "target_Nm": 68.08,
+              "optimistic_capacity_Nm": 154.9
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.085,
+            "max_demand_to_optimistic_capacity": 0.394,
+            "max_ratio_frame": {
+              "time_s": 40.005,
+              "target_Nm": -60.54,
+              "optimistic_capacity_Nm": 153.66
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 474,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.094,
+            "max_demand_to_optimistic_capacity": 0.226,
+            "max_ratio_frame": {
+              "time_s": 12.68,
+              "target_Nm": -86.45,
+              "optimistic_capacity_Nm": 382.51
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.202,
+            "max_demand_to_optimistic_capacity": 0.395,
+            "max_ratio_frame": {
+              "time_s": 12.605,
+              "target_Nm": 65.9,
+              "optimistic_capacity_Nm": 166.92
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.135,
+            "max_demand_to_optimistic_capacity": 0.414,
+            "max_ratio_frame": {
+              "time_s": 12.565,
+              "target_Nm": -74.19,
+              "optimistic_capacity_Nm": 179.14
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.087,
+            "max_demand_to_optimistic_capacity": 0.183,
+            "max_ratio_frame": {
+              "time_s": 10.195,
+              "target_Nm": -65.57,
+              "optimistic_capacity_Nm": 358.37
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.231,
+            "max_demand_to_optimistic_capacity": 0.475,
+            "max_ratio_frame": {
+              "time_s": 9.795,
+              "target_Nm": 73.38,
+              "optimistic_capacity_Nm": 154.51
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.106,
+            "max_demand_to_optimistic_capacity": 0.454,
+            "max_ratio_frame": {
+              "time_s": 10.195,
+              "target_Nm": -62.27,
+              "optimistic_capacity_Nm": 137.31
+            }
+          }
+        }
+      }
+    },
+    "AB08": {
+      "0lbs": {
+        "sampled_frames": 340,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.149,
+            "max_demand_to_optimistic_capacity": 0.596,
+            "max_ratio_frame": {
+              "time_s": 40.43,
+              "target_Nm": -183.56,
+              "optimistic_capacity_Nm": 308.04
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.259,
+            "max_demand_to_optimistic_capacity": 0.986,
+            "max_ratio_frame": {
+              "time_s": 40.73,
+              "target_Nm": 167.17,
+              "optimistic_capacity_Nm": 169.54
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.138,
+            "max_demand_to_optimistic_capacity": 0.381,
+            "max_ratio_frame": {
+              "time_s": 40.35,
+              "target_Nm": -92.61,
+              "optimistic_capacity_Nm": 242.97
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.159,
+            "max_demand_to_optimistic_capacity": 0.675,
+            "max_ratio_frame": {
+              "time_s": 38.1,
+              "target_Nm": -213.86,
+              "optimistic_capacity_Nm": 316.7
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.159,
+            "max_demand_to_optimistic_capacity": 0.814,
+            "max_ratio_frame": {
+              "time_s": 38.025,
+              "target_Nm": 143.42,
+              "optimistic_capacity_Nm": 176.15
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.16,
+            "max_demand_to_optimistic_capacity": 0.479,
+            "max_ratio_frame": {
+              "time_s": 38.1,
+              "target_Nm": -108.39,
+              "optimistic_capacity_Nm": 226.21
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 382,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.222,
+            "max_demand_to_optimistic_capacity": 0.628,
+            "max_ratio_frame": {
+              "time_s": 13.425,
+              "target_Nm": -197.7,
+              "optimistic_capacity_Nm": 314.57
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 28,
+            "median_demand_to_optimistic_capacity": 0.326,
+            "max_demand_to_optimistic_capacity": 1.179,
+            "max_ratio_frame": {
+              "time_s": 13.075,
+              "target_Nm": 185.3,
+              "optimistic_capacity_Nm": 157.14
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.152,
+            "max_demand_to_optimistic_capacity": 0.58,
+            "max_ratio_frame": {
+              "time_s": 13.425,
+              "target_Nm": -140.51,
+              "optimistic_capacity_Nm": 242.12
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.24,
+            "max_demand_to_optimistic_capacity": 0.787,
+            "max_ratio_frame": {
+              "time_s": 10.46,
+              "target_Nm": -251.9,
+              "optimistic_capacity_Nm": 319.96
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.227,
+            "max_demand_to_optimistic_capacity": 0.886,
+            "max_ratio_frame": {
+              "time_s": 10.185,
+              "target_Nm": 151.09,
+              "optimistic_capacity_Nm": 170.47
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.159,
+            "max_demand_to_optimistic_capacity": 0.611,
+            "max_ratio_frame": {
+              "time_s": 10.535,
+              "target_Nm": -139.09,
+              "optimistic_capacity_Nm": 227.54
+            }
+          }
+        }
+      }
+    },
+    "AB09": {
+      "0lbs": {
+        "sampled_frames": 350,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.188,
+            "max_demand_to_optimistic_capacity": 0.799,
+            "max_ratio_frame": {
+              "time_s": 33.875,
+              "target_Nm": -172.59,
+              "optimistic_capacity_Nm": 215.88
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 25,
+            "median_demand_to_optimistic_capacity": 0.225,
+            "max_demand_to_optimistic_capacity": 1.16,
+            "max_ratio_frame": {
+              "time_s": 33.85,
+              "target_Nm": 137.23,
+              "optimistic_capacity_Nm": 118.25
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.043,
+            "max_demand_to_optimistic_capacity": 0.167,
+            "max_ratio_frame": {
+              "time_s": 33.525,
+              "target_Nm": -38.63,
+              "optimistic_capacity_Nm": 231.46
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.1,
+            "max_demand_to_optimistic_capacity": 0.692,
+            "max_ratio_frame": {
+              "time_s": 30.1,
+              "target_Nm": -151.24,
+              "optimistic_capacity_Nm": 218.52
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 18,
+            "median_demand_to_optimistic_capacity": 0.197,
+            "max_demand_to_optimistic_capacity": 1.342,
+            "max_ratio_frame": {
+              "time_s": 29.96,
+              "target_Nm": 151.01,
+              "optimistic_capacity_Nm": 112.52
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.023,
+            "max_demand_to_optimistic_capacity": 0.203,
+            "max_ratio_frame": {
+              "time_s": 29.955,
+              "target_Nm": -47.27,
+              "optimistic_capacity_Nm": 232.36
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 352,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.249,
+            "max_demand_to_optimistic_capacity": 0.876,
+            "max_ratio_frame": {
+              "time_s": 13.28,
+              "target_Nm": -186.65,
+              "optimistic_capacity_Nm": 213.1
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 29,
+            "median_demand_to_optimistic_capacity": 0.224,
+            "max_demand_to_optimistic_capacity": 1.379,
+            "max_ratio_frame": {
+              "time_s": 13.17,
+              "target_Nm": 154.84,
+              "optimistic_capacity_Nm": 112.25
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.056,
+            "max_demand_to_optimistic_capacity": 0.272,
+            "max_ratio_frame": {
+              "time_s": 13.105,
+              "target_Nm": -60.7,
+              "optimistic_capacity_Nm": 222.96
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.192,
+            "max_demand_to_optimistic_capacity": 0.992,
+            "max_ratio_frame": {
+              "time_s": 10.06,
+              "target_Nm": -217.59,
+              "optimistic_capacity_Nm": 219.37
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 17,
+            "median_demand_to_optimistic_capacity": 0.227,
+            "max_demand_to_optimistic_capacity": 1.162,
+            "max_ratio_frame": {
+              "time_s": 9.97,
+              "target_Nm": 145.71,
+              "optimistic_capacity_Nm": 125.43
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.03,
+            "max_demand_to_optimistic_capacity": 0.144,
+            "max_ratio_frame": {
+              "time_s": 9.825,
+              "target_Nm": -37.28,
+              "optimistic_capacity_Nm": 258.41
+            }
+          }
+        }
+      }
+    },
+    "AB10": {
+      "0lbs": {
+        "sampled_frames": 359,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.068,
+            "max_demand_to_optimistic_capacity": 0.242,
+            "max_ratio_frame": {
+              "time_s": 27.69,
+              "target_Nm": -48.27,
+              "optimistic_capacity_Nm": 199.42
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.137,
+            "max_demand_to_optimistic_capacity": 0.497,
+            "max_ratio_frame": {
+              "time_s": 34.37,
+              "target_Nm": 90.94,
+              "optimistic_capacity_Nm": 182.81
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.043,
+            "max_demand_to_optimistic_capacity": 0.341,
+            "max_ratio_frame": {
+              "time_s": 35.245,
+              "target_Nm": -75.43,
+              "optimistic_capacity_Nm": 220.88
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.069,
+            "max_demand_to_optimistic_capacity": 0.245,
+            "max_ratio_frame": {
+              "time_s": 32.585,
+              "target_Nm": -71.67,
+              "optimistic_capacity_Nm": 293.0
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.164,
+            "max_demand_to_optimistic_capacity": 0.521,
+            "max_ratio_frame": {
+              "time_s": 29.73,
+              "target_Nm": 73.59,
+              "optimistic_capacity_Nm": 141.2
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.026,
+            "max_demand_to_optimistic_capacity": 0.291,
+            "max_ratio_frame": {
+              "time_s": 32.285,
+              "target_Nm": -60.73,
+              "optimistic_capacity_Nm": 208.67
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 404,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.124,
+            "max_demand_to_optimistic_capacity": 0.346,
+            "max_ratio_frame": {
+              "time_s": 14.465,
+              "target_Nm": -103.26,
+              "optimistic_capacity_Nm": 298.12
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.146,
+            "max_demand_to_optimistic_capacity": 0.518,
+            "max_ratio_frame": {
+              "time_s": 7.975,
+              "target_Nm": 68.33,
+              "optimistic_capacity_Nm": 131.88
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.048,
+            "max_demand_to_optimistic_capacity": 0.338,
+            "max_ratio_frame": {
+              "time_s": 14.565,
+              "target_Nm": -80.67,
+              "optimistic_capacity_Nm": 238.85
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.118,
+            "max_demand_to_optimistic_capacity": 0.318,
+            "max_ratio_frame": {
+              "time_s": 11.33,
+              "target_Nm": -95.4,
+              "optimistic_capacity_Nm": 300.19
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.142,
+            "max_demand_to_optimistic_capacity": 0.599,
+            "max_ratio_frame": {
+              "time_s": 7.975,
+              "target_Nm": 78.82,
+              "optimistic_capacity_Nm": 131.5
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.047,
+            "max_demand_to_optimistic_capacity": 0.33,
+            "max_ratio_frame": {
+              "time_s": 11.405,
+              "target_Nm": -78.37,
+              "optimistic_capacity_Nm": 237.56
+            }
+          }
+        }
+      }
+    },
+    "AB11": {
+      "0lbs": {
+        "sampled_frames": 346,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.124,
+            "max_demand_to_optimistic_capacity": 0.564,
+            "max_ratio_frame": {
+              "time_s": 34.58,
+              "target_Nm": -116.57,
+              "optimistic_capacity_Nm": 206.79
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.147,
+            "max_demand_to_optimistic_capacity": 0.562,
+            "max_ratio_frame": {
+              "time_s": 34.55,
+              "target_Nm": 78.45,
+              "optimistic_capacity_Nm": 139.48
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.088,
+            "max_demand_to_optimistic_capacity": 0.308,
+            "max_ratio_frame": {
+              "time_s": 34.58,
+              "target_Nm": -61.4,
+              "optimistic_capacity_Nm": 199.06
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.082,
+            "max_demand_to_optimistic_capacity": 0.478,
+            "max_ratio_frame": {
+              "time_s": 31.665,
+              "target_Nm": -93.5,
+              "optimistic_capacity_Nm": 195.52
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.16,
+            "max_demand_to_optimistic_capacity": 0.61,
+            "max_ratio_frame": {
+              "time_s": 31.58,
+              "target_Nm": 85.51,
+              "optimistic_capacity_Nm": 140.18
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.066,
+            "max_demand_to_optimistic_capacity": 0.35,
+            "max_ratio_frame": {
+              "time_s": 31.64,
+              "target_Nm": -62.55,
+              "optimistic_capacity_Nm": 178.83
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 376,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.229,
+            "max_demand_to_optimistic_capacity": 0.706,
+            "max_ratio_frame": {
+              "time_s": 13.925,
+              "target_Nm": -153.01,
+              "optimistic_capacity_Nm": 216.83
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.167,
+            "max_demand_to_optimistic_capacity": 0.534,
+            "max_ratio_frame": {
+              "time_s": 13.95,
+              "target_Nm": 76.02,
+              "optimistic_capacity_Nm": 142.48
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.134,
+            "max_demand_to_optimistic_capacity": 0.345,
+            "max_ratio_frame": {
+              "time_s": 14.0,
+              "target_Nm": -73.04,
+              "optimistic_capacity_Nm": 211.86
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.156,
+            "max_demand_to_optimistic_capacity": 0.527,
+            "max_ratio_frame": {
+              "time_s": 11.125,
+              "target_Nm": -112.75,
+              "optimistic_capacity_Nm": 214.02
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.17,
+            "max_demand_to_optimistic_capacity": 0.644,
+            "max_ratio_frame": {
+              "time_s": 10.775,
+              "target_Nm": 91.56,
+              "optimistic_capacity_Nm": 142.19
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.077,
+            "max_demand_to_optimistic_capacity": 0.36,
+            "max_ratio_frame": {
+              "time_s": 10.865,
+              "target_Nm": -68.3,
+              "optimistic_capacity_Nm": 189.48
+            }
+          }
+        }
+      }
+    },
+    "AB12": {
+      "0lbs": {
+        "sampled_frames": 314,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.106,
+            "max_demand_to_optimistic_capacity": 0.419,
+            "max_ratio_frame": {
+              "time_s": 31.06,
+              "target_Nm": -87.38,
+              "optimistic_capacity_Nm": 208.65
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.261,
+            "max_demand_to_optimistic_capacity": 0.819,
+            "max_ratio_frame": {
+              "time_s": 30.92,
+              "target_Nm": 108.92,
+              "optimistic_capacity_Nm": 132.99
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.131,
+            "max_demand_to_optimistic_capacity": 0.587,
+            "max_ratio_frame": {
+              "time_s": 31.045,
+              "target_Nm": -90.83,
+              "optimistic_capacity_Nm": 154.68
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.091,
+            "max_demand_to_optimistic_capacity": 0.33,
+            "max_ratio_frame": {
+              "time_s": 28.69,
+              "target_Nm": -93.71,
+              "optimistic_capacity_Nm": 284.41
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.223,
+            "max_demand_to_optimistic_capacity": 0.585,
+            "max_ratio_frame": {
+              "time_s": 24.01,
+              "target_Nm": 76.96,
+              "optimistic_capacity_Nm": 131.5
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.102,
+            "max_demand_to_optimistic_capacity": 0.426,
+            "max_ratio_frame": {
+              "time_s": 28.69,
+              "target_Nm": -81.19,
+              "optimistic_capacity_Nm": 190.5
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 348,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.187,
+            "max_demand_to_optimistic_capacity": 0.432,
+            "max_ratio_frame": {
+              "time_s": 12.61,
+              "target_Nm": -91.41,
+              "optimistic_capacity_Nm": 211.45
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.269,
+            "max_demand_to_optimistic_capacity": 0.807,
+            "max_ratio_frame": {
+              "time_s": 12.56,
+              "target_Nm": 106.53,
+              "optimistic_capacity_Nm": 131.94
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.172,
+            "max_demand_to_optimistic_capacity": 0.407,
+            "max_ratio_frame": {
+              "time_s": 12.535,
+              "target_Nm": -68.79,
+              "optimistic_capacity_Nm": 168.95
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.186,
+            "max_demand_to_optimistic_capacity": 0.445,
+            "max_ratio_frame": {
+              "time_s": 10.075,
+              "target_Nm": -108.21,
+              "optimistic_capacity_Nm": 242.93
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.232,
+            "max_demand_to_optimistic_capacity": 0.63,
+            "max_ratio_frame": {
+              "time_s": 10.025,
+              "target_Nm": 88.06,
+              "optimistic_capacity_Nm": 139.81
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.145,
+            "max_demand_to_optimistic_capacity": 0.385,
+            "max_ratio_frame": {
+              "time_s": 10.025,
+              "target_Nm": -71.16,
+              "optimistic_capacity_Nm": 184.62
+            }
+          }
+        }
+      }
+    },
+    "AB13": {
+      "0lbs": {
+        "sampled_frames": 336,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.111,
+            "max_demand_to_optimistic_capacity": 0.658,
+            "max_ratio_frame": {
+              "time_s": 43.625,
+              "target_Nm": -136.89,
+              "optimistic_capacity_Nm": 207.95
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.189,
+            "max_demand_to_optimistic_capacity": 0.74,
+            "max_ratio_frame": {
+              "time_s": 35.85,
+              "target_Nm": 93.09,
+              "optimistic_capacity_Nm": 125.87
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.068,
+            "max_demand_to_optimistic_capacity": 0.271,
+            "max_ratio_frame": {
+              "time_s": 43.7,
+              "target_Nm": -70.58,
+              "optimistic_capacity_Nm": 260.76
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.08,
+            "max_demand_to_optimistic_capacity": 0.741,
+            "max_ratio_frame": {
+              "time_s": 41.01,
+              "target_Nm": -151.93,
+              "optimistic_capacity_Nm": 205.16
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.129,
+            "max_demand_to_optimistic_capacity": 0.58,
+            "max_ratio_frame": {
+              "time_s": 38.245,
+              "target_Nm": 74.95,
+              "optimistic_capacity_Nm": 129.16
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.083,
+            "max_demand_to_optimistic_capacity": 0.305,
+            "max_ratio_frame": {
+              "time_s": 40.84,
+              "target_Nm": -75.77,
+              "optimistic_capacity_Nm": 248.56
+            }
+          }
+        }
+      },
+      "25lbs": {
+        "sampled_frames": 331,
+        "joints": {
+          "r_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.26,
+            "max_demand_to_optimistic_capacity": 0.765,
+            "max_ratio_frame": {
+              "time_s": 19.74,
+              "target_Nm": -161.54,
+              "optimistic_capacity_Nm": 211.08
+            }
+          },
+          "r_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.359,
+            "max_demand_to_optimistic_capacity": 0.718,
+            "max_ratio_frame": {
+              "time_s": 5.415,
+              "target_Nm": 89.18,
+              "optimistic_capacity_Nm": 124.19
+            }
+          },
+          "r_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.142,
+            "max_demand_to_optimistic_capacity": 0.341,
+            "max_ratio_frame": {
+              "time_s": 19.74,
+              "target_Nm": -88.1,
+              "optimistic_capacity_Nm": 258.0
+            }
+          },
+          "l_hip": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.144,
+            "max_demand_to_optimistic_capacity": 0.412,
+            "max_ratio_frame": {
+              "time_s": 2.71,
+              "target_Nm": -80.74,
+              "optimistic_capacity_Nm": 195.81
+            }
+          },
+          "l_knee": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.14,
+            "max_demand_to_optimistic_capacity": 0.559,
+            "max_ratio_frame": {
+              "time_s": 2.685,
+              "target_Nm": 69.98,
+              "optimistic_capacity_Nm": 125.17
+            }
+          },
+          "l_ankle": {
+            "capacity_exceeded_frames": 0,
+            "median_demand_to_optimistic_capacity": 0.112,
+            "max_demand_to_optimistic_capacity": 0.264,
+            "max_ratio_frame": {
+              "time_s": 8.315,
+              "target_Nm": -56.59,
+              "optimistic_capacity_Nm": 214.09
+            }
+          }
+        }
+      }
+    }
+  },
+  "cross_subject_summary": {
+    "0lbs": {
+      "r_hip": {
+        "subjects_with_any_capacity_exceedance": 1,
+        "median_of_subject_max_demand_to_capacity": 0.605
+      },
+      "r_knee": {
+        "subjects_with_any_capacity_exceedance": 2,
+        "median_of_subject_max_demand_to_capacity": 0.738
+      },
+      "r_ankle": {
+        "subjects_with_any_capacity_exceedance": 0,
+        "median_of_subject_max_demand_to_capacity": 0.355
+      },
+      "l_hip": {
+        "subjects_with_any_capacity_exceedance": 0,
+        "median_of_subject_max_demand_to_capacity": 0.651
+      },
+      "l_knee": {
+        "subjects_with_any_capacity_exceedance": 1,
+        "median_of_subject_max_demand_to_capacity": 0.621
+      },
+      "l_ankle": {
+        "subjects_with_any_capacity_exceedance": 0,
+        "median_of_subject_max_demand_to_capacity": 0.372
+      }
+    },
+    "25lbs": {
+      "r_hip": {
+        "subjects_with_any_capacity_exceedance": 2,
+        "median_of_subject_max_demand_to_capacity": 0.711
+      },
+      "r_knee": {
+        "subjects_with_any_capacity_exceedance": 3,
+        "median_of_subject_max_demand_to_capacity": 0.76
+      },
+      "r_ankle": {
+        "subjects_with_any_capacity_exceedance": 0,
+        "median_of_subject_max_demand_to_capacity": 0.382
+      },
+      "l_hip": {
+        "subjects_with_any_capacity_exceedance": 1,
+        "median_of_subject_max_demand_to_capacity": 0.609
+      },
+      "l_knee": {
+        "subjects_with_any_capacity_exceedance": 1,
+        "median_of_subject_max_demand_to_capacity": 0.72
+      },
+      "l_ankle": {
+        "subjects_with_any_capacity_exceedance": 0,
+        "median_of_subject_max_demand_to_capacity": 0.372
+      }
+    }
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "status": "research_only_unvalidated_deformation",
+  "sourceScene": "assets\\blender\\opensim_anatomy_bone_motion.blend",
+  "outputScene": "assets\\blender\\opensim_thigh_mesh_62cm.blend",
+  "reference": "Z-Anatomy static GLB plus app OpenSim squat lookup",
+  "frameCount": 101,
+  "requestedThighCircumferenceCm": 62.0,
+  "appliedMuscleThicknessScale": 1.1481481481481481,
+  "muscles": [
+    {
+      "opensimMuscle": "rect_fem_r",
+      "atlasMesh": "Rectus femoris muscle.r",
+      "object": "atlas_rectus_femoris_r_research",
+      "vertexCount": 4136,
+      "restMeshHeightM": 0.5476,
+      "shapeKeys": 102,
+      "referenceHighZ": 0.95198327,
+      "referenceLowZ": 0.40665519,
+      "radialMappingSamples": [
+        {
+          "vertexIndex": 0,
+          "originalBlenderM": [
+            -0.16206853,
+            -0.090385,
+            0.77177101
+          ],
+          "personalizedBlenderM": [
+            -0.17070425,
+            -0.09913714,
+            0.77292228
+          ],
+          "pathFraction": 0.33046576
+        },
+        {
+          "vertexIndex": 1034,
+          "originalBlenderM": [
+            -0.12596974,
+            -0.06615154,
+            0.92402738
+          ],
+          "personalizedBlenderM": [
+            -0.12866186,
+            -0.07484862,
+            0.9253279
+          ],
+          "pathFraction": 0.05126435
+        },
+        {
+          "vertexIndex": 2068,
+          "originalBlenderM": [
+            -0.11282513,
+            -0.07462855,
+            0.85412633
+          ],
+          "personalizedBlenderM": [
+            -0.11384478,
+            -0.08295005,
+            0.85541207
+          ],
+          "pathFraction": 0.17944599
+        },
+        {
+          "vertexIndex": 3102,
+          "originalBlenderM": [
+            -0.09918086,
+            -0.06824654,
+            0.49137008
+          ],
+          "personalizedBlenderM": [
+            -0.09956957,
+            -0.06737024,
+            0.49122149
+          ],
+          "pathFraction": 0.84465335
+        },
+        {
+          "vertexIndex": 4135,
+          "originalBlenderM": [
+            -0.0825841,
+            -0.06828915,
+            0.48306966
+          ],
+          "personalizedBlenderM": [
+            -0.08054762,
+            -0.0672198,
+            0.48295507
+          ],
+          "pathFraction": 0.85987432
+        }
+      ],
+      "referenceMaximumRadialDistanceM": 0.09427,
+      "personalizedMaximumRadialDistanceM": 0.10824,
+      "sampledFrameDistortion": {
+        "1": {
+          "minimumEdgeRatio": 1.0,
+          "p01EdgeRatio": 1.0,
+          "p99EdgeRatio": 1.0,
+          "maximumEdgeRatio": 1.0,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "26": {
+          "minimumEdgeRatio": 0.7278,
+          "p01EdgeRatio": 0.8525,
+          "p99EdgeRatio": 1.1029,
+          "maximumEdgeRatio": 1.1514,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "51": {
+          "minimumEdgeRatio": 0.5789,
+          "p01EdgeRatio": 0.7264,
+          "p99EdgeRatio": 1.1173,
+          "maximumEdgeRatio": 1.1801,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "76": {
+          "minimumEdgeRatio": 0.7278,
+          "p01EdgeRatio": 0.8525,
+          "p99EdgeRatio": 1.1029,
+          "maximumEdgeRatio": 1.1514,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "101": {
+          "minimumEdgeRatio": 1.0,
+          "p01EdgeRatio": 1.0,
+          "p99EdgeRatio": 1.0,
+          "maximumEdgeRatio": 1.0,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        }
+      }
+    },
+    {
+      "opensimMuscle": "bifemsh_r",
+      "atlasMesh": "Short head of biceps femoris.r",
+      "object": "atlas_biceps_femoris_short_r_research",
+      "vertexCount": 1238,
+      "restMeshHeightM": 0.3031,
+      "shapeKeys": 102,
+      "referenceHighZ": 0.74072891,
+      "referenceLowZ": 0.43937999,
+      "radialMappingSamples": [
+        {
+          "vertexIndex": 0,
+          "originalBlenderM": [
+            -0.1370448,
+            -0.0172023,
+            0.4405275
+          ],
+          "personalizedBlenderM": [
+            -0.14320342,
+            -0.00781169,
+            0.43888226
+          ],
+          "pathFraction": 0.99619209
+        },
+        {
+          "vertexIndex": 309,
+          "originalBlenderM": [
+            -0.1292381,
+            -0.03544996,
+            0.51188493
+          ],
+          "personalizedBlenderM": [
+            -0.13397802,
+            -0.03031855,
+            0.51094937
+          ],
+          "pathFraction": 0.75939872
+        },
+        {
+          "vertexIndex": 619,
+          "originalBlenderM": [
+            -0.12025751,
+            -0.02159607,
+            0.57875323
+          ],
+          "personalizedBlenderM": [
+            -0.12340274,
+            -0.0159805,
+            0.5777837
+          ],
+          "pathFraction": 0.53750211
+        },
+        {
+          "vertexIndex": 928,
+          "originalBlenderM": [
+            -0.10661018,
+            -0.03702001,
+            0.54821694
+          ],
+          "personalizedBlenderM": [
+            -0.10786158,
+            -0.03292984,
+            0.5475384
+          ],
+          "pathFraction": 0.63883412
+        },
+        {
+          "vertexIndex": 1237,
+          "originalBlenderM": [
+            -0.10582061,
+            -0.0496163,
+            0.67913193
+          ],
+          "personalizedBlenderM": [
+            -0.10646006,
+            -0.05032995,
+            0.67922753
+          ],
+          "pathFraction": 0.20440421
+        }
+      ],
+      "referenceMaximumRadialDistanceM": 0.07863,
+      "personalizedMaximumRadialDistanceM": 0.09028,
+      "sampledFrameDistortion": {
+        "1": {
+          "minimumEdgeRatio": 1.0,
+          "p01EdgeRatio": 1.0,
+          "p99EdgeRatio": 1.0,
+          "maximumEdgeRatio": 1.0,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "26": {
+          "minimumEdgeRatio": 0.7592,
+          "p01EdgeRatio": 0.7777,
+          "p99EdgeRatio": 1.0153,
+          "maximumEdgeRatio": 1.0166,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "51": {
+          "minimumEdgeRatio": 0.6131,
+          "p01EdgeRatio": 0.6475,
+          "p99EdgeRatio": 1.0215,
+          "maximumEdgeRatio": 1.0229,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "76": {
+          "minimumEdgeRatio": 0.7592,
+          "p01EdgeRatio": 0.7777,
+          "p99EdgeRatio": 1.0153,
+          "maximumEdgeRatio": 1.0166,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "101": {
+          "minimumEdgeRatio": 1.0,
+          "p01EdgeRatio": 1.0,
+          "p99EdgeRatio": 1.0,
+          "maximumEdgeRatio": 1.0,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        }
+      }
+    },
+    {
+      "opensimMuscle": "semimem_r",
+      "atlasMesh": "Semimembranosus muscle.r",
+      "object": "atlas_semimembranosus_r_research",
+      "vertexCount": 3725,
+      "restMeshHeightM": 0.4192,
+      "shapeKeys": 102,
+      "referenceHighZ": 0.83924782,
+      "referenceLowZ": 0.42153615,
+      "radialMappingSamples": [
+        {
+          "vertexIndex": 0,
+          "originalBlenderM": [
+            -0.07201706,
+            -0.0402993,
+            0.42276138
+          ],
+          "personalizedBlenderM": [
+            -0.06863078,
+            -0.03380314,
+            0.42182651
+          ],
+          "pathFraction": 0.9970668
+        },
+        {
+          "vertexIndex": 931,
+          "originalBlenderM": [
+            -0.06838554,
+            -0.03063766,
+            0.5292955
+          ],
+          "personalizedBlenderM": [
+            -0.06404671,
+            -0.02517053,
+            0.5285483
+          ],
+          "pathFraction": 0.74202455
+        },
+        {
+          "vertexIndex": 1862,
+          "originalBlenderM": [
+            -0.08865964,
+            -0.00481854,
+            0.60678273
+          ],
+          "personalizedBlenderM": [
+            -0.08700915,
+            0.00260265,
+            0.60565579
+          ],
+          "pathFraction": 0.55652045
+        },
+        {
+          "vertexIndex": 2793,
+          "originalBlenderM": [
+            -0.04610953,
+            -0.00872042,
+            0.68977135
+          ],
+          "personalizedBlenderM": [
+            -0.03784336,
+            -0.00372875,
+            0.68920356
+          ],
+          "pathFraction": 0.35784604
+        },
+        {
+          "vertexIndex": 3724,
+          "originalBlenderM": [
+            -0.04754091,
+            -0.03512721,
+            0.83924782
+          ],
+          "personalizedBlenderM": [
+            -0.03892869,
+            -0.03736005,
+            0.83982903
+          ],
+          "pathFraction": 0.0
+        }
+      ],
+      "referenceMaximumRadialDistanceM": 0.08191,
+      "personalizedMaximumRadialDistanceM": 0.09405,
+      "sampledFrameDistortion": {
+        "1": {
+          "minimumEdgeRatio": 1.0,
+          "p01EdgeRatio": 1.0,
+          "p99EdgeRatio": 1.0,
+          "maximumEdgeRatio": 1.0,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "26": {
+          "minimumEdgeRatio": 0.8868,
+          "p01EdgeRatio": 0.9038,
+          "p99EdgeRatio": 1.2405,
+          "maximumEdgeRatio": 1.2652,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "51": {
+          "minimumEdgeRatio": 0.8491,
+          "p01EdgeRatio": 0.8675,
+          "p99EdgeRatio": 1.4272,
+          "maximumEdgeRatio": 1.4726,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "76": {
+          "minimumEdgeRatio": 0.8869,
+          "p01EdgeRatio": 0.9038,
+          "p99EdgeRatio": 1.2405,
+          "maximumEdgeRatio": 1.2652,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        },
+        "101": {
+          "minimumEdgeRatio": 1.0,
+          "p01EdgeRatio": 1.0,
+          "p99EdgeRatio": 1.0,
+          "maximumEdgeRatio": 1.0,
+          "edgesBelowHalf": 0,
+          "edgesAboveOneAndHalf": 0
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "standing meshes registered by bone bounding boxes, not anatomical attachments",
+    "vertical mesh fraction is a deformation heuristic, not fiber direction",
+    "thigh girth scales all three mesh cross sections together; no individual muscle distribution inferred",
+    "no load, activation, or individual muscle force"
+  ],
+  "sampledFrames": [
+    1,
+    26,
+    51,
+    76,
+    101
+  ],
+  "checkedVertices": 75
+}

@@ -1,0 +1,324 @@
+{
+  "status": "public_scaled_model_parameter_audit_not_individual_strength_validation",
+  "source": "Scherpereel et al. 2023, doi:10.1038/s41597-023-02840-6",
+  "modelCount": 12,
+  "muscleCountEach": 54,
+  "subjects": [
+    {
+      "id": "AB01",
+      "massKg": 78.9
+    },
+    {
+      "id": "AB02",
+      "massKg": 82.2
+    },
+    {
+      "id": "AB03",
+      "massKg": 113.5
+    },
+    {
+      "id": "AB05",
+      "massKg": 71.5
+    },
+    {
+      "id": "AB06",
+      "massKg": 79.1
+    },
+    {
+      "id": "AB07",
+      "massKg": 62.3
+    },
+    {
+      "id": "AB08",
+      "massKg": 87.6
+    },
+    {
+      "id": "AB09",
+      "massKg": 84.1
+    },
+    {
+      "id": "AB10",
+      "massKg": 67.5
+    },
+    {
+      "id": "AB11",
+      "massKg": 65.1
+    },
+    {
+      "id": "AB12",
+      "massKg": 64.0
+    },
+    {
+      "id": "AB13",
+      "massKg": 67.6
+    }
+  ],
+  "summary": {
+    "max_isometric_force": {
+      "exactlyUnchangedMuscles": 54,
+      "largestAcrossSubjectMaxMinRatio": 1.0,
+      "medianAcrossSubjectMaxMinRatio": 1.0
+    },
+    "optimal_fiber_length": {
+      "exactlyUnchangedMuscles": 0,
+      "largestAcrossSubjectMaxMinRatio": 1.6094742651525522,
+      "medianAcrossSubjectMaxMinRatio": 1.253640785156302
+    },
+    "tendon_slack_length": {
+      "exactlyUnchangedMuscles": 0,
+      "largestAcrossSubjectMaxMinRatio": 1.6094742651525495,
+      "medianAcrossSubjectMaxMinRatio": 1.2536407851562996
+    }
+  },
+  "examples": {
+    "glut_max1_r": {
+      "AB01": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.131492403383075,
+        "tendon_slack_length": 0.115750355090735
+      },
+      "AB02": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.140673439135415,
+        "tendon_slack_length": 0.123832252760048
+      },
+      "AB03": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.146429217928306,
+        "tendon_slack_length": 0.128898959443932
+      },
+      "AB05": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.135048411272815,
+        "tendon_slack_length": 0.11888064372607
+      },
+      "AB06": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.119648165276449,
+        "tendon_slack_length": 0.105324089151804
+      },
+      "AB07": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.140186768219873,
+        "tendon_slack_length": 0.123403845263973
+      },
+      "AB08": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.140171806122871,
+        "tendon_slack_length": 0.123390674403936
+      },
+      "AB09": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.136063783845038,
+        "tendon_slack_length": 0.119774457610069
+      },
+      "AB10": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.12630224397049,
+        "tendon_slack_length": 0.111181552790925
+      },
+      "AB11": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.12688064674941,
+        "tendon_slack_length": 0.111690710166734
+      },
+      "AB12": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.141027131446367,
+        "tendon_slack_length": 0.124143601625323
+      },
+      "AB13": {
+        "max_isometric_force": 573.0,
+        "optimal_fiber_length": 0.126128249531681,
+        "tendon_slack_length": 0.111028388672254
+      }
+    },
+    "glut_max2_r": {
+      "AB01": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.145780973992242,
+        "tendon_slack_length": 0.125946827870848
+      },
+      "AB02": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.148521281806335,
+        "tendon_slack_length": 0.128314304689827
+      },
+      "AB03": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.165107672655487,
+        "tendon_slack_length": 0.142644043722768
+      },
+      "AB05": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.143753619472792,
+        "tendon_slack_length": 0.124195303898263
+      },
+      "AB06": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.141944524202281,
+        "tendon_slack_length": 0.122632344038706
+      },
+      "AB07": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.151399007181589,
+        "tendon_slack_length": 0.130800502803142
+      },
+      "AB08": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.152613099558884,
+        "tendon_slack_length": 0.13184941254407
+      },
+      "AB09": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.147599620461898,
+        "tendon_slack_length": 0.127518039446674
+      },
+      "AB10": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.142002397731779,
+        "tendon_slack_length": 0.122682343618612
+      },
+      "AB11": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.138312607320217,
+        "tendon_slack_length": 0.119494565507943
+      },
+      "AB12": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.14868031847279,
+        "tendon_slack_length": 0.128451703714588
+      },
+      "AB13": {
+        "max_isometric_force": 819.0,
+        "optimal_fiber_length": 0.135583642897744,
+        "tendon_slack_length": 0.117136888761996
+      }
+    },
+    "vas_int_r": {
+      "AB01": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.121883246978293,
+        "tendon_slack_length": 0.132135108873664
+      },
+      "AB02": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.110903406457737,
+        "tendon_slack_length": 0.120231730365398
+      },
+      "AB03": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.129081559915359,
+        "tendon_slack_length": 0.139938887384875
+      },
+      "AB05": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.102965348163322,
+        "tendon_slack_length": 0.111625984924723
+      },
+      "AB06": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.128579971196827,
+        "tendon_slack_length": 0.139395108961046
+      },
+      "AB07": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.122032421017811,
+        "tendon_slack_length": 0.1322968302623
+      },
+      "AB08": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.116218991061368,
+        "tendon_slack_length": 0.125994420216063
+      },
+      "AB09": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.107199541179056,
+        "tendon_slack_length": 0.116216325016547
+      },
+      "AB10": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.114502124357905,
+        "tendon_slack_length": 0.12413314416371
+      },
+      "AB11": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.113005892670132,
+        "tendon_slack_length": 0.12251106121248
+      },
+      "AB12": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.114540157637147,
+        "tendon_slack_length": 0.124174376503823
+      },
+      "AB13": {
+        "max_isometric_force": 5000.0,
+        "optimal_fiber_length": 0.10933734274854,
+        "tendon_slack_length": 0.118533941671314
+      }
+    },
+    "bifemlh_r": {
+      "AB01": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.126763691897456,
+        "tendon_slack_length": 0.379128106041933
+      },
+      "AB02": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.114986932925836,
+        "tendon_slack_length": 0.343905872787364
+      },
+      "AB03": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.132172267477787,
+        "tendon_slack_length": 0.395304212823473
+      },
+      "AB05": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.109650882954368,
+        "tendon_slack_length": 0.327946677459854
+      },
+      "AB06": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.136529033967931,
+        "tendon_slack_length": 0.408334541959133
+      },
+      "AB07": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.123720237067461,
+        "tendon_slack_length": 0.370025663155892
+      },
+      "AB08": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.119003532161402,
+        "tendon_slack_length": 0.355918820959788
+      },
+      "AB09": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.112804704378257,
+        "tendon_slack_length": 0.337379207590017
+      },
+      "AB10": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.120451879128726,
+        "tendon_slack_length": 0.360250574274904
+      },
+      "AB11": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.114941070658055,
+        "tendon_slack_length": 0.34376870673877
+      },
+      "AB12": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.116943793738176,
+        "tendon_slack_length": 0.349758502372892
+      },
+      "AB13": {
+        "max_isometric_force": 2700.0,
+        "optimal_fiber_length": 0.113716421177556,
+        "tendon_slack_length": 0.340105993613607
+      }
+    }
+  },
+  "interpretation": "Scaling changes geometry and total body mass, but muscle maximum isometric force must be checked independently before treating outputs as personalized force predictions."
+}

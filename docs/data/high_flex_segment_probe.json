@@ -1,0 +1,83 @@
+{
+  "status": "research_only_unscaled_dimension_probe",
+  "subjects": {
+    "AB01": {
+      "timeS": 51.0,
+      "sourceMassKg": 78.84999999999994,
+      "candidateMassKg": 75.33699999999999,
+      "source": {
+        "r": {
+          "effectiveHipToKneeM": 0.4691152672908543,
+          "modelParentHipToKneeM": 0.0,
+          "tibiaKneeToAnkleM": 0.48556399999999983,
+          "footAnkleToMtpM": 0.17384802902534366,
+          "kneeParentToChildFrameM": 0.4691152672908543
+        },
+        "l": {
+          "effectiveHipToKneeM": 0.46909136917286515,
+          "modelParentHipToKneeM": 0.0,
+          "tibiaKneeToAnkleM": 0.48556399999999994,
+          "footAnkleToMtpM": 0.17398888566002452,
+          "kneeParentToChildFrameM": 0.46909136917286515
+        },
+        "hipCenterWidthM": 0.126601
+      },
+      "candidate": {
+        "r": {
+          "effectiveHipToKneeM": 0.4152261618543063,
+          "modelParentHipToKneeM": 0.4096284566530992,
+          "tibiaKneeToAnkleM": 0.39647258306384703,
+          "footAnkleToMtpM": 0.1375514572805391,
+          "kneeParentToChildFrameM": 0.006198840262090185
+        },
+        "l": {
+          "effectiveHipToKneeM": 0.41522056280764524,
+          "modelParentHipToKneeM": 0.4096284566530995,
+          "tibiaKneeToAnkleM": 0.39647258306384714,
+          "footAnkleToMtpM": 0.137551457280539,
+          "kneeParentToChildFrameM": 0.0061962646307110476
+        },
+        "hipCenterWidthM": 0.15452000000000002
+      }
+    },
+    "AB02": {
+      "timeS": 23.4,
+      "sourceMassKg": 82.17899999999997,
+      "candidateMassKg": 75.33699999999999,
+      "source": {
+        "r": {
+          "effectiveHipToKneeM": 0.4360884403881029,
+          "modelParentHipToKneeM": 0.0,
+          "tibiaKneeToAnkleM": 0.476521,
+          "footAnkleToMtpM": 0.16527645136185817,
+          "kneeParentToChildFrameM": 0.4360884403881029
+        },
+        "l": {
+          "effectiveHipToKneeM": 0.43526091858601884,
+          "modelParentHipToKneeM": 0.0,
+          "tibiaKneeToAnkleM": 0.47652099999999986,
+          "footAnkleToMtpM": 0.1651678645757756,
+          "kneeParentToChildFrameM": 0.43526091858601884
+        },
+        "hipCenterWidthM": 0.15559640000000002
+      },
+      "candidate": {
+        "r": {
+          "effectiveHipToKneeM": 0.4164211452671042,
+          "modelParentHipToKneeM": 0.40962845665309944,
+          "tibiaKneeToAnkleM": 0.3964725830638471,
+          "footAnkleToMtpM": 0.13755145728053952,
+          "kneeParentToChildFrameM": 0.006917232945691044
+        },
+        "l": {
+          "effectiveHipToKneeM": 0.41639481755479907,
+          "modelParentHipToKneeM": 0.4096284566530995,
+          "tibiaKneeToAnkleM": 0.39647258306384736,
+          "footAnkleToMtpM": 0.1375514572805392,
+          "kneeParentToChildFrameM": 0.006876961921868989
+        },
+        "hipCenterWidthM": 0.15452
+      }
+    }
+  }
+}

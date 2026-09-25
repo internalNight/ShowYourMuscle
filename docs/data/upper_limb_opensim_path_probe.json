@@ -1,0 +1,533 @@
+{
+  "status": "pose_to_path_feasibility_only_not_bench_or_muscle_force_validation",
+  "source": "https://zenodo.org/records/11209324",
+  "subject": "S01",
+  "task": "MJ/T0 multi-joint tracking",
+  "modelName": "Arm_REF_SURF_2D",
+  "bodyCount": 11,
+  "jointCount": 11,
+  "muscleCount": 12,
+  "modelMassKg": 5.617205079395632,
+  "frames": [
+    {
+      "sourceFrame": 0,
+      "timeS": 0.0,
+      "maximumAppliedCoordinateErrorRad": 7.481653074847827e-10,
+      "muscles": [
+        {
+          "muscle": "DELTAnt",
+          "pathLengthM": 0.22578,
+          "momentArmM": {
+            "shoulder_elv": 0.015023,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTMed",
+          "pathLengthM": 0.215621,
+          "momentArmM": {
+            "shoulder_elv": 0.026061,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTPost",
+          "pathLengthM": 0.158104,
+          "momentArmM": {
+            "shoulder_elv": -0.006989,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "PECT",
+          "pathLengthM": 0.142961,
+          "momentArmM": {
+            "shoulder_elv": -0.020386,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "LATI",
+          "pathLengthM": 0.338113,
+          "momentArmM": {
+            "shoulder_elv": -0.032624,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "TRILong",
+          "pathLengthM": 0.350306,
+          "momentArmM": {
+            "shoulder_elv": -0.021594,
+            "elbow_flexion": -0.021335
+          }
+        },
+        {
+          "muscle": "TRILat",
+          "pathLengthM": 0.225618,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": -0.021345
+          }
+        },
+        {
+          "muscle": "TRIMed",
+          "pathLengthM": 0.212029,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": -0.021345
+          }
+        },
+        {
+          "muscle": "BICLong",
+          "pathLengthM": 0.406868,
+          "momentArmM": {
+            "shoulder_elv": 0.015753,
+            "elbow_flexion": 0.048427
+          }
+        },
+        {
+          "muscle": "BICShort",
+          "pathLengthM": 0.327348,
+          "momentArmM": {
+            "shoulder_elv": -0.023196,
+            "elbow_flexion": 0.048427
+          }
+        },
+        {
+          "muscle": "BRA",
+          "pathLengthM": 0.127805,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": 0.024866
+          }
+        },
+        {
+          "muscle": "BRD",
+          "pathLengthM": 0.252392,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": 0.093168
+          }
+        }
+      ]
+    },
+    {
+      "sourceFrame": 735,
+      "timeS": 7.35,
+      "maximumAppliedCoordinateErrorRad": 3.032412658650341e-10,
+      "muscles": [
+        {
+          "muscle": "DELTAnt",
+          "pathLengthM": 0.218214,
+          "momentArmM": {
+            "shoulder_elv": 0.030673,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTMed",
+          "pathLengthM": 0.215148,
+          "momentArmM": {
+            "shoulder_elv": 0.016478,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTPost",
+          "pathLengthM": 0.16505,
+          "momentArmM": {
+            "shoulder_elv": -0.023119,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "PECT",
+          "pathLengthM": 0.143173,
+          "momentArmM": {
+            "shoulder_elv": -0.001098,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "LATI",
+          "pathLengthM": 0.352623,
+          "momentArmM": {
+            "shoulder_elv": -0.044935,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "TRILong",
+          "pathLengthM": 0.345879,
+          "momentArmM": {
+            "shoulder_elv": -0.02523,
+            "elbow_flexion": -0.021524
+          }
+        },
+        {
+          "muscle": "TRILat",
+          "pathLengthM": 0.214829,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": -0.021524
+          }
+        },
+        {
+          "muscle": "TRIMed",
+          "pathLengthM": 0.20124,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": -0.021524
+          }
+        },
+        {
+          "muscle": "BICLong",
+          "pathLengthM": 0.430845,
+          "momentArmM": {
+            "shoulder_elv": 0.011758,
+            "elbow_flexion": 0.044293
+          }
+        },
+        {
+          "muscle": "BICShort",
+          "pathLengthM": 0.354165,
+          "momentArmM": {
+            "shoulder_elv": -0.012407,
+            "elbow_flexion": 0.044293
+          }
+        },
+        {
+          "muscle": "BRA",
+          "pathLengthM": 0.139591,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": 0.021281
+          }
+        },
+        {
+          "muscle": "BRD",
+          "pathLengthM": 0.294655,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": 0.075799
+          }
+        }
+      ]
+    },
+    {
+      "sourceFrame": 1470,
+      "timeS": 14.7,
+      "maximumAppliedCoordinateErrorRad": 6.439194251590952e-10,
+      "muscles": [
+        {
+          "muscle": "DELTAnt",
+          "pathLengthM": 0.223579,
+          "momentArmM": {
+            "shoulder_elv": 0.024125,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTMed",
+          "pathLengthM": 0.21476,
+          "momentArmM": {
+            "shoulder_elv": 0.021773,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTPost",
+          "pathLengthM": 0.160142,
+          "momentArmM": {
+            "shoulder_elv": -0.016389,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "PECT",
+          "pathLengthM": 0.145436,
+          "momentArmM": {
+            "shoulder_elv": -0.010349,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "LATI",
+          "pathLengthM": 0.345262,
+          "momentArmM": {
+            "shoulder_elv": -0.040498,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "TRILong",
+          "pathLengthM": 0.343324,
+          "momentArmM": {
+            "shoulder_elv": -0.024706,
+            "elbow_flexion": -0.021538
+          }
+        },
+        {
+          "muscle": "TRILat",
+          "pathLengthM": 0.215438,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": -0.021538
+          }
+        },
+        {
+          "muscle": "TRIMed",
+          "pathLengthM": 0.201849,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": -0.021538
+          }
+        },
+        {
+          "muscle": "BICLong",
+          "pathLengthM": 0.427748,
+          "momentArmM": {
+            "shoulder_elv": 0.015684,
+            "elbow_flexion": 0.045105
+          }
+        },
+        {
+          "muscle": "BICShort",
+          "pathLengthM": 0.351664,
+          "momentArmM": {
+            "shoulder_elv": -0.01798,
+            "elbow_flexion": 0.045105
+          }
+        },
+        {
+          "muscle": "BRA",
+          "pathLengthM": 0.138984,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": 0.021608
+          }
+        },
+        {
+          "muscle": "BRD",
+          "pathLengthM": 0.292826,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": 0.07649
+          }
+        }
+      ]
+    },
+    {
+      "sourceFrame": 2205,
+      "timeS": 22.05,
+      "maximumAppliedCoordinateErrorRad": 5.84902964603784e-10,
+      "muscles": [
+        {
+          "muscle": "DELTAnt",
+          "pathLengthM": 0.203579,
+          "momentArmM": {
+            "shoulder_elv": 0.03142,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTMed",
+          "pathLengthM": 0.205346,
+          "momentArmM": {
+            "shoulder_elv": 0.021295,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTPost",
+          "pathLengthM": 0.172938,
+          "momentArmM": {
+            "shoulder_elv": -0.015081,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "PECT",
+          "pathLengthM": 0.138159,
+          "momentArmM": {
+            "shoulder_elv": -0.003031,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "LATI",
+          "pathLengthM": 0.362452,
+          "momentArmM": {
+            "shoulder_elv": -0.041551,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "TRILong",
+          "pathLengthM": 0.369438,
+          "momentArmM": {
+            "shoulder_elv": -0.02403,
+            "elbow_flexion": -0.021022
+          }
+        },
+        {
+          "muscle": "TRILat",
+          "pathLengthM": 0.230096,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": -0.02104
+          }
+        },
+        {
+          "muscle": "TRIMed",
+          "pathLengthM": 0.216507,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": -0.02104
+          }
+        },
+        {
+          "muscle": "BICLong",
+          "pathLengthM": 0.390801,
+          "momentArmM": {
+            "shoulder_elv": 0.015585,
+            "elbow_flexion": 0.047596
+          }
+        },
+        {
+          "muscle": "BICShort",
+          "pathLengthM": 0.324633,
+          "momentArmM": {
+            "shoulder_elv": -0.0203,
+            "elbow_flexion": 0.047596
+          }
+        },
+        {
+          "muscle": "BRA",
+          "pathLengthM": 0.122548,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": 0.0247
+          }
+        },
+        {
+          "muscle": "BRD",
+          "pathLengthM": 0.231377,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": 0.09836
+          }
+        }
+      ]
+    },
+    {
+      "sourceFrame": 2939,
+      "timeS": 29.39,
+      "maximumAppliedCoordinateErrorRad": 3.5353859857006897e-10,
+      "muscles": [
+        {
+          "muscle": "DELTAnt",
+          "pathLengthM": 0.215261,
+          "momentArmM": {
+            "shoulder_elv": 0.022386,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTMed",
+          "pathLengthM": 0.206375,
+          "momentArmM": {
+            "shoulder_elv": 0.024101,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "DELTPost",
+          "pathLengthM": 0.164423,
+          "momentArmM": {
+            "shoulder_elv": -0.010611,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "PECT",
+          "pathLengthM": 0.145918,
+          "momentArmM": {
+            "shoulder_elv": -0.00793,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "LATI",
+          "pathLengthM": 0.355192,
+          "momentArmM": {
+            "shoulder_elv": -0.039281,
+            "elbow_flexion": 0.0
+          }
+        },
+        {
+          "muscle": "TRILong",
+          "pathLengthM": 0.356014,
+          "momentArmM": {
+            "shoulder_elv": -0.022923,
+            "elbow_flexion": -0.021516
+          }
+        },
+        {
+          "muscle": "TRILat",
+          "pathLengthM": 0.221225,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": -0.021521
+          }
+        },
+        {
+          "muscle": "TRIMed",
+          "pathLengthM": 0.207636,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": -0.021521
+          }
+        },
+        {
+          "muscle": "BICLong",
+          "pathLengthM": 0.410704,
+          "momentArmM": {
+            "shoulder_elv": 0.016509,
+            "elbow_flexion": 0.048139
+          }
+        },
+        {
+          "muscle": "BICShort",
+          "pathLengthM": 0.345581,
+          "momentArmM": {
+            "shoulder_elv": -0.023045,
+            "elbow_flexion": 0.048139
+          }
+        },
+        {
+          "muscle": "BRA",
+          "pathLengthM": 0.132829,
+          "momentArmM": {
+            "shoulder_elv": 0.0,
+            "elbow_flexion": 0.024012
+          }
+        },
+        {
+          "muscle": "BRD",
+          "pathLengthM": 0.270698,
+          "momentArmM": {
+            "shoulder_elv": -0.0,
+            "elbow_flexion": 0.087058
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only 5 frames from one person; no torque balance or external-force replay.",
+    "The archive lacks referenced VTP display meshes; OpenSim path computation succeeds without them.",
+    "The task is not bench press or overhead press, and path lengths/moment arms are not single-muscle forces."
+  ]
+}

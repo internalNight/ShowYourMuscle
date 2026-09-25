@@ -1,0 +1,364 @@
+{
+  "status": "independent_bench_action_capacity_audit_not_muscle_force_validation",
+  "sourceArticle": "https://doi.org/10.1371/journal.pone.0278909",
+  "sourceWorkbook": "https://doi.org/10.1371/journal.pone.0278909.s001",
+  "sourceSha256": "bb35251d44626daf1c3fafff95055f6dbc3acd7f08764116ad555b2b86d5fdd0",
+  "license": "CC BY 4.0",
+  "method": "Ten participants x three nominal %1RM loads x three prescribed concentric velocities x two disc distributions. Directly tested 1RM each session; use only failure sets of 1–10 repetitions. Apply the app's fixed Epley proxy: load*(1+reps/30), except an observed 1RM is the load itself. Divide by the measured session 1RM; absolute loads are not disclosed. Conditions within a person are repeated measures, so subject MAE is calculated before the subject median.",
+  "allSets": 180,
+  "eligible": {
+    "sets": 74,
+    "subjects": 10,
+    "setMedianSignedPercent": -9.33,
+    "setMedianAbsolutePercent": 9.33,
+    "subjectMedianMeanAbsolutePercent": 8.76,
+    "subjectRangeMeanAbsolutePercent": [
+      5.33,
+      11.43
+    ],
+    "setPercentWithinTenPercent": 63.5
+  },
+  "byNominalLoadPercent": {
+    "50": {
+      "sets": 0
+    },
+    "65": {
+      "sets": 14,
+      "subjects": 9,
+      "setMedianSignedPercent": -13.33,
+      "setMedianAbsolutePercent": 13.33,
+      "subjectMedianMeanAbsolutePercent": 13.33,
+      "subjectRangeMeanAbsolutePercent": [
+        13.33,
+        14.42
+      ],
+      "setPercentWithinTenPercent": 0.0
+    },
+    "80": {
+      "sets": 60,
+      "subjects": 10,
+      "setMedianSignedPercent": -6.67,
+      "setMedianAbsolutePercent": 6.67,
+      "subjectMedianMeanAbsolutePercent": 8.0,
+      "subjectRangeMeanAbsolutePercent": [
+        4.0,
+        11.11
+      ],
+      "setPercentWithinTenPercent": 78.3
+    }
+  },
+  "byPrescribedVelocityPercent": {
+    "50": {
+      "sets": 31,
+      "subjects": 10,
+      "setMedianSignedPercent": -12.0,
+      "setMedianAbsolutePercent": 12.0,
+      "subjectMedianMeanAbsolutePercent": 10.67,
+      "subjectRangeMeanAbsolutePercent": [
+        5.33,
+        12.54
+      ],
+      "setPercentWithinTenPercent": 45.2
+    },
+    "70": {
+      "sets": 23,
+      "subjects": 10,
+      "setMedianSignedPercent": -6.67,
+      "setMedianAbsolutePercent": 6.67,
+      "subjectMedianMeanAbsolutePercent": 6.89,
+      "subjectRangeMeanAbsolutePercent": [
+        5.33,
+        13.33
+      ],
+      "setPercentWithinTenPercent": 65.2
+    },
+    "90": {
+      "sets": 20,
+      "subjects": 10,
+      "setMedianSignedPercent": -6.67,
+      "setMedianAbsolutePercent": 6.67,
+      "subjectMedianMeanAbsolutePercent": 5.33,
+      "subjectRangeMeanAbsolutePercent": [
+        2.67,
+        10.67
+      ],
+      "setPercentWithinTenPercent": 90.0
+    }
+  },
+  "byDiscDistribution": {
+    "wide": {
+      "sets": 40,
+      "subjects": 10,
+      "setMedianSignedPercent": -9.33,
+      "setMedianAbsolutePercent": 9.33,
+      "subjectMedianMeanAbsolutePercent": 10.27,
+      "subjectRangeMeanAbsolutePercent": [
+        4.89,
+        11.47
+      ],
+      "setPercentWithinTenPercent": 57.5
+    },
+    "narrow": {
+      "sets": 34,
+      "subjects": 10,
+      "setMedianSignedPercent": -6.67,
+      "setMedianAbsolutePercent": 6.67,
+      "subjectMedianMeanAbsolutePercent": 7.28,
+      "subjectRangeMeanAbsolutePercent": [
+        3.11,
+        11.67
+      ],
+      "setPercentWithinTenPercent": 70.6
+    }
+  },
+  "atEightyPercent": {
+    "byPrescribedVelocityPercent": {
+      "50": {
+        "sets": 20,
+        "subjects": 10,
+        "setMedianSignedPercent": -9.33,
+        "setMedianAbsolutePercent": 9.33,
+        "subjectMedianMeanAbsolutePercent": 10.0,
+        "subjectRangeMeanAbsolutePercent": [
+          5.33,
+          10.67
+        ],
+        "setPercentWithinTenPercent": 70.0
+      },
+      "70": {
+        "sets": 20,
+        "subjects": 10,
+        "setMedianSignedPercent": -6.67,
+        "setMedianAbsolutePercent": 6.67,
+        "subjectMedianMeanAbsolutePercent": 6.67,
+        "subjectRangeMeanAbsolutePercent": [
+          4.0,
+          13.33
+        ],
+        "setPercentWithinTenPercent": 75.0
+      },
+      "90": {
+        "sets": 20,
+        "subjects": 10,
+        "setMedianSignedPercent": -6.67,
+        "setMedianAbsolutePercent": 6.67,
+        "subjectMedianMeanAbsolutePercent": 5.33,
+        "subjectRangeMeanAbsolutePercent": [
+          2.67,
+          10.67
+        ],
+        "setPercentWithinTenPercent": 90.0
+      }
+    },
+    "byDiscDistribution": {
+      "wide": {
+        "sets": 30,
+        "subjects": 10,
+        "setMedianSignedPercent": -6.67,
+        "setMedianAbsolutePercent": 6.67,
+        "subjectMedianMeanAbsolutePercent": 8.89,
+        "subjectRangeMeanAbsolutePercent": [
+          4.89,
+          11.11
+        ],
+        "setPercentWithinTenPercent": 76.7
+      },
+      "narrow": {
+        "sets": 30,
+        "subjects": 10,
+        "setMedianSignedPercent": -6.67,
+        "setMedianAbsolutePercent": 6.67,
+        "subjectMedianMeanAbsolutePercent": 6.67,
+        "subjectRangeMeanAbsolutePercent": [
+          3.11,
+          11.11
+        ],
+        "setPercentWithinTenPercent": 80.0
+      }
+    },
+    "withinSubjectFastMinusSlowEstimatePercent": {
+      "median": 2.6667,
+      "range": [
+        0.0,
+        5.3333
+      ]
+    },
+    "withinSubjectWideMinusNarrowEstimatePercent": {
+      "median": -0.4444,
+      "range": [
+        -3.5556,
+        1.7778
+      ]
+    },
+    "subjectEstimateRanges": [
+      {
+        "subject": 1,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.88,
+        "maxEstimatedToMeasured1rm": 0.96,
+        "medianAbsolutePercent": 6.67
+      },
+      {
+        "subject": 2,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.8533,
+        "maxEstimatedToMeasured1rm": 0.96,
+        "medianAbsolutePercent": 10.67
+      },
+      {
+        "subject": 3,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.9067,
+        "maxEstimatedToMeasured1rm": 0.9867,
+        "medianAbsolutePercent": 5.33
+      },
+      {
+        "subject": 4,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.9333,
+        "maxEstimatedToMeasured1rm": 1.0133,
+        "medianAbsolutePercent": 4.0
+      },
+      {
+        "subject": 5,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.9333,
+        "maxEstimatedToMeasured1rm": 0.96,
+        "medianAbsolutePercent": 5.33
+      },
+      {
+        "subject": 6,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.88,
+        "maxEstimatedToMeasured1rm": 0.96,
+        "medianAbsolutePercent": 8.0
+      },
+      {
+        "subject": 7,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.88,
+        "maxEstimatedToMeasured1rm": 0.9333,
+        "medianAbsolutePercent": 8.0
+      },
+      {
+        "subject": 8,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.88,
+        "maxEstimatedToMeasured1rm": 0.9067,
+        "medianAbsolutePercent": 12.0
+      },
+      {
+        "subject": 9,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.88,
+        "maxEstimatedToMeasured1rm": 0.96,
+        "medianAbsolutePercent": 9.33
+      },
+      {
+        "subject": 10,
+        "eligibleSets": 6,
+        "minEstimatedToMeasured1rm": 0.9333,
+        "maxEstimatedToMeasured1rm": 1.0133,
+        "medianAbsolutePercent": 6.67
+      }
+    ]
+  },
+  "recordAggregationAtEightyPercent": {
+    "scope": "Only six failure sets at nominal 80% of each session's tested 1RM for each of ten people; all six conditions differ in prescribed speed or plate placement.",
+    "participants": 10,
+    "setsPerParticipant": 6,
+    "bestSetSubjectMedianAbsoluteErrorPercent": 4.0,
+    "medianSetSubjectMedianAbsoluteErrorPercent": 7.33,
+    "bestSetLowerAbsoluteErrorParticipants": 10,
+    "individuals": [
+      {
+        "subject": 1,
+        "sets": 6,
+        "bestSetRatio": 0.96,
+        "medianSetRatio": 0.9333,
+        "bestSetAbsoluteErrorPercent": 4.0,
+        "medianSetAbsoluteErrorPercent": 6.67
+      },
+      {
+        "subject": 2,
+        "sets": 6,
+        "bestSetRatio": 0.96,
+        "medianSetRatio": 0.8933,
+        "bestSetAbsoluteErrorPercent": 4.0,
+        "medianSetAbsoluteErrorPercent": 10.67
+      },
+      {
+        "subject": 3,
+        "sets": 6,
+        "bestSetRatio": 0.9867,
+        "medianSetRatio": 0.9467,
+        "bestSetAbsoluteErrorPercent": 1.33,
+        "medianSetAbsoluteErrorPercent": 5.33
+      },
+      {
+        "subject": 4,
+        "sets": 6,
+        "bestSetRatio": 1.0133,
+        "medianSetRatio": 0.96,
+        "bestSetAbsoluteErrorPercent": 1.33,
+        "medianSetAbsoluteErrorPercent": 4.0
+      },
+      {
+        "subject": 5,
+        "sets": 6,
+        "bestSetRatio": 0.96,
+        "medianSetRatio": 0.9467,
+        "bestSetAbsoluteErrorPercent": 4.0,
+        "medianSetAbsoluteErrorPercent": 5.33
+      },
+      {
+        "subject": 6,
+        "sets": 6,
+        "bestSetRatio": 0.96,
+        "medianSetRatio": 0.92,
+        "bestSetAbsoluteErrorPercent": 4.0,
+        "medianSetAbsoluteErrorPercent": 8.0
+      },
+      {
+        "subject": 7,
+        "sets": 6,
+        "bestSetRatio": 0.9333,
+        "medianSetRatio": 0.92,
+        "bestSetAbsoluteErrorPercent": 6.67,
+        "medianSetAbsoluteErrorPercent": 8.0
+      },
+      {
+        "subject": 8,
+        "sets": 6,
+        "bestSetRatio": 0.9067,
+        "medianSetRatio": 0.88,
+        "bestSetAbsoluteErrorPercent": 9.33,
+        "medianSetAbsoluteErrorPercent": 12.0
+      },
+      {
+        "subject": 9,
+        "sets": 6,
+        "bestSetRatio": 0.96,
+        "medianSetRatio": 0.9067,
+        "bestSetAbsoluteErrorPercent": 4.0,
+        "medianSetAbsoluteErrorPercent": 9.33
+      },
+      {
+        "subject": 10,
+        "sets": 6,
+        "bestSetRatio": 1.0133,
+        "medianSetRatio": 0.9333,
+        "bestSetAbsoluteErrorPercent": 1.33,
+        "medianSetAbsoluteErrorPercent": 6.67
+      }
+    ]
+  },
+  "limitations": [
+    "The publication provides nominal percentages rather than each session's exact load in kilograms; ratio errors inherit this approximation.",
+    "All participants were ten trained men; 180 repeated sets are not 180 independent people.",
+    "Sets were performed to failure; the phone's 1-2 reps-in-reserve adjustment is not evaluated here.",
+    "The experiment manipulated tempo and barbell disc distribution; neither is recorded in the phone's training log.",
+    "The best-versus-median comparison uses all six sets from one session per participant; it cannot establish an optimal rule for a variable number of records across days.",
+    "This evaluates an action-level 1RM proxy, not muscle mass, single-muscle strength, or personal force during an exercise."
+  ]
+}

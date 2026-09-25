@@ -1,0 +1,121 @@
+{
+  "status": "research_mesh_only_not_anatomy_or_force",
+  "exercise": "press",
+  "sourceScene": "assets\\blender\\opensim_tsm_press_upper_bones.blend",
+  "outputScene": "assets\\blender\\opensim_tsm_press_biceps_long_probe.blend",
+  "preview": "assets\\blender\\opensim_tsm_press_biceps_long_probe.png",
+  "atlasMesh": "Long head of biceps brachii.r",
+  "modelMuscle": "BIC_long",
+  "vertexCount": 1611,
+  "shapeKeys": 102,
+  "heightCm": 175,
+  "requestedArmCircumferenceCm": 32,
+  "referenceArmCircumferenceCm": 32.0,
+  "appliedThicknessScale": 1.0,
+  "radialMappingSamples": [
+    {
+      "vertexIndex": 0,
+      "originalBlenderM": [
+        0.3587796092033386,
+        -0.004520397633314133,
+        1.1710820198059082
+      ],
+      "personalizedBlenderM": [
+        0.3587796092033386,
+        -0.004520397633314133,
+        1.1710820198059082
+      ],
+      "pathFraction": 1.0
+    },
+    {
+      "vertexIndex": 402,
+      "originalBlenderM": [
+        0.3508327603340149,
+        -0.005190802272409201,
+        1.2474424839019775
+      ],
+      "personalizedBlenderM": [
+        0.3508327603340149,
+        -0.005190801806747913,
+        1.2474424839019775
+      ],
+      "pathFraction": 0.7651064963694435
+    },
+    {
+      "vertexIndex": 805,
+      "originalBlenderM": [
+        0.3215126097202301,
+        -0.023865187540650368,
+        1.3066675662994385
+      ],
+      "personalizedBlenderM": [
+        0.3215126097202301,
+        -0.023865187540650368,
+        1.3066675662994385
+      ],
+      "pathFraction": 0.5657896004929805
+    },
+    {
+      "vertexIndex": 1208,
+      "originalBlenderM": [
+        0.3096614480018616,
+        -0.007955051027238369,
+        1.3685312271118164
+      ],
+      "personalizedBlenderM": [
+        0.3096614480018616,
+        -0.007955051027238369,
+        1.3685312271118164
+      ],
+      "pathFraction": 0.35527629876177497
+    },
+    {
+      "vertexIndex": 1610,
+      "originalBlenderM": [
+        0.30377402901649475,
+        -0.009133481420576572,
+        1.461412787437439
+      ],
+      "personalizedBlenderM": [
+        0.30377402901649475,
+        -0.009133481420576572,
+        1.461412787437439
+      ],
+      "pathFraction": 0.05698657163819355
+    }
+  ],
+  "pathFractionMethod": "projection onto synthetic start path endpoint axis, clamped to 0-1",
+  "pathCorrectionWeight": "0.25 * abs(2*fraction - 1)^2",
+  "sampledEdgeLengthRatios": [
+    {
+      "frameIndex": 0,
+      "minimumEdgeLengthRatio": 1.0,
+      "maximumEdgeLengthRatio": 1.0
+    },
+    {
+      "frameIndex": 25,
+      "minimumEdgeLengthRatio": 0.92481,
+      "maximumEdgeLengthRatio": 1.1235
+    },
+    {
+      "frameIndex": 50,
+      "minimumEdgeLengthRatio": 0.78893,
+      "maximumEdgeLengthRatio": 1.16803
+    },
+    {
+      "frameIndex": 75,
+      "minimumEdgeLengthRatio": 0.92481,
+      "maximumEdgeLengthRatio": 1.1235
+    },
+    {
+      "frameIndex": 100,
+      "minimumEdgeLengthRatio": 1.0,
+      "maximumEdgeLengthRatio": 1.0
+    }
+  ],
+  "limitations": [
+    "Atlas surface and model fiber path have centimeter-scale mismatch",
+    "Synthetic single-side poses are not measured bench press or overhead press",
+    "No validated attachment, tissue strain, EMG, activation, or force"
+  ]
+}

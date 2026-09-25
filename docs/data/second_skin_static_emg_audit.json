@@ -1,0 +1,1247 @@
+{
+  "source": "Georgia Tech EPIC Lab The Second Skin; repository DOI 10.35090/gatech/78043; CC BY 4.0",
+  "status": "static_posture_screen_only_not_load_effect_or_muscle_force_validation",
+  "intervalSeconds": [
+    10,
+    20
+  ],
+  "protocol": "Symmetric ~30 s half squat at fixed hand-work height, unweighted versus 25 lb vest. EMG is source filtered and MVC-normalized MATLAB table; ML CSV contains OpenSim IK and inverse-dynamics values. Each condition is summarized over the same 10-20 s time window. A separate exploratory comparison nearest-matches each vest frame to an unweighted frame by right hip, knee and ankle angle within 3 degrees per joint; coverage gate requires >=20% of vest frames and >=10% unique unweighted frames in the 10 s windows. It does not control fatigue or other trial differences.",
+  "caveats": [
+    "The two condition trials are separate and posture can differ; medians are descriptive, not a controlled load effect.",
+    "Surface EMG in source MVC units does not measure individual muscle force or mechanical tension.",
+    "Net moments are source OpenSim outputs normalized by mass; they are not directly measured single-muscle forces.",
+    "Static half squat with a vest is not the app's dynamic barbell squat."
+  ],
+  "summary": {
+    "subjects": 10,
+    "subjectsWithP5P95OverlapAtAllThreeJoints": 1,
+    "subjectsPassingPoseMatchCoverageGate": 0,
+    "trialsWithExactlyDuplicatedSemitendinosusSemimembranosus": 20,
+    "subjectsRightRectusFemorisMedianHigherWithVest": 6
+  },
+  "subjects": {
+    "AB01": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 89.34,
+          "knee_angle_r": -77.37,
+          "ankle_angle_r": 20.87
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            88.94,
+            89.87
+          ],
+          "knee_angle_r": [
+            -78.2,
+            -75.75
+          ],
+          "ankle_angle_r": [
+            20.43,
+            21.4
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.9083,
+          "knee_angle_r": 0.6002,
+          "ankle_angle_r": -0.1132
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1637,
+          "lat_gas_r": 0.0065,
+          "tib_ant_r": 0.155,
+          "vas_med_r": 0.1751,
+          "vas_lat_r": 0.172,
+          "bifemlh_r": 0.0235,
+          "semiten_r": 0.0115,
+          "semimem_r": 0.0115,
+          "vas_int_r": 0.1755
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 96.77,
+          "knee_angle_r": -90.91,
+          "ankle_angle_r": 28.62
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            95.25,
+            97.79
+          ],
+          "knee_angle_r": [
+            -92.53,
+            -88.67
+          ],
+          "ankle_angle_r": [
+            27.96,
+            29.44
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -1.0425,
+          "knee_angle_r": 0.8501,
+          "ankle_angle_r": -0.2514
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.3301,
+          "lat_gas_r": 0.0096,
+          "tib_ant_r": 0.2954,
+          "vas_med_r": 0.2931,
+          "vas_lat_r": 0.3117,
+          "bifemlh_r": 0.0397,
+          "semiten_r": 0.018,
+          "semimem_r": 0.018,
+          "vas_int_r": 0.3041
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": 7.43,
+          "knee_angle_r": -13.54,
+          "ankle_angle_r": 7.75
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 0,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.1342,
+          "knee_angle_r": 0.2499,
+          "ankle_angle_r": -0.1382
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 2.016,
+          "lat_gas_r": 1.477,
+          "tib_ant_r": 1.906,
+          "vas_med_r": 1.674,
+          "vas_lat_r": 1.812,
+          "bifemlh_r": 1.689,
+          "semiten_r": 1.565,
+          "semimem_r": 1.565,
+          "vas_int_r": 1.733
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    },
+    "AB02": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 57.46,
+          "knee_angle_r": -71.47,
+          "ankle_angle_r": 28.26
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            57.24,
+            57.66
+          ],
+          "knee_angle_r": [
+            -72.18,
+            -70.89
+          ],
+          "ankle_angle_r": [
+            27.87,
+            28.3
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.4804,
+          "knee_angle_r": 0.5663,
+          "ankle_angle_r": -0.2703
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1258,
+          "lat_gas_r": 0.0314,
+          "tib_ant_r": 0.0114,
+          "vas_med_r": 0.0724,
+          "vas_lat_r": 0.0851,
+          "bifemlh_r": 0.0229,
+          "semiten_r": 0.0091,
+          "semimem_r": 0.0091,
+          "vas_int_r": 0.0792
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 71.29,
+          "knee_angle_r": -65.07,
+          "ankle_angle_r": 29.44
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            70.81,
+            72.02
+          ],
+          "knee_angle_r": [
+            -65.73,
+            -64.66
+          ],
+          "ankle_angle_r": [
+            29.35,
+            29.9
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.7433,
+          "knee_angle_r": 0.4976,
+          "ankle_angle_r": -0.3018
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0372,
+          "lat_gas_r": 0.0335,
+          "tib_ant_r": 0.0069,
+          "vas_med_r": 0.0611,
+          "vas_lat_r": 0.067,
+          "bifemlh_r": 0.0195,
+          "semiten_r": 0.0099,
+          "semimem_r": 0.0099,
+          "vas_int_r": 0.064
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": 13.83,
+          "knee_angle_r": 6.4,
+          "ankle_angle_r": 1.18
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 0,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.2629,
+          "knee_angle_r": -0.0687,
+          "ankle_angle_r": -0.0315
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 0.296,
+          "lat_gas_r": 1.067,
+          "tib_ant_r": 0.605,
+          "vas_med_r": 0.844,
+          "vas_lat_r": 0.787,
+          "bifemlh_r": 0.852,
+          "semiten_r": 1.088,
+          "semimem_r": 1.088,
+          "vas_int_r": 0.808
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    },
+    "AB03": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 93.75,
+          "knee_angle_r": -105.71,
+          "ankle_angle_r": 37.27
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            93.22,
+            94.1
+          ],
+          "knee_angle_r": [
+            -105.93,
+            -104.88
+          ],
+          "ankle_angle_r": [
+            37.12,
+            37.43
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.8117,
+          "knee_angle_r": 0.6386,
+          "ankle_angle_r": -0.3075
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1574,
+          "lat_gas_r": 0.0122,
+          "tib_ant_r": 0.3662,
+          "vas_med_r": 0.079,
+          "vas_lat_r": 0.1414,
+          "bifemlh_r": 0.0174,
+          "semiten_r": 0.0108,
+          "semimem_r": 0.0108,
+          "vas_int_r": 0.1106
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 92.13,
+          "knee_angle_r": -108.64,
+          "ankle_angle_r": 41.7
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            91.66,
+            92.96
+          ],
+          "knee_angle_r": [
+            -110.0,
+            -106.94
+          ],
+          "ankle_angle_r": [
+            41.07,
+            41.92
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.9229,
+          "knee_angle_r": 0.6643,
+          "ankle_angle_r": -0.6627
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1679,
+          "lat_gas_r": 0.0093,
+          "tib_ant_r": 0.157,
+          "vas_med_r": 0.0736,
+          "vas_lat_r": 0.1747,
+          "bifemlh_r": 0.0197,
+          "semiten_r": 0.0165,
+          "semimem_r": 0.0165,
+          "vas_int_r": 0.1251
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": -1.62,
+          "knee_angle_r": -2.93,
+          "ankle_angle_r": 4.43
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 0,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.1112,
+          "knee_angle_r": 0.0257,
+          "ankle_angle_r": -0.3552
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 1.067,
+          "lat_gas_r": 0.762,
+          "tib_ant_r": 0.429,
+          "vas_med_r": 0.932,
+          "vas_lat_r": 1.236,
+          "bifemlh_r": 1.132,
+          "semiten_r": 1.528,
+          "semimem_r": 1.528,
+          "vas_int_r": 1.131
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    },
+    "AB04": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 72.5,
+          "knee_angle_r": -88.54,
+          "ankle_angle_r": 31.76
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            71.4,
+            73.09
+          ],
+          "knee_angle_r": [
+            -88.89,
+            -87.76
+          ],
+          "ankle_angle_r": [
+            31.42,
+            31.88
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.7149,
+          "knee_angle_r": 0.7514,
+          "ankle_angle_r": -0.1528
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1338,
+          "lat_gas_r": 0.0216,
+          "tib_ant_r": 0.1404,
+          "vas_med_r": 0.1325,
+          "vas_lat_r": 0.1388,
+          "bifemlh_r": 0.0524,
+          "semiten_r": 0.0171,
+          "semimem_r": 0.0171,
+          "vas_int_r": 0.1382
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 57.91,
+          "knee_angle_r": -57.85,
+          "ankle_angle_r": 15.73
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            57.03,
+            58.1
+          ],
+          "knee_angle_r": [
+            -58.54,
+            -56.48
+          ],
+          "ankle_angle_r": [
+            15.42,
+            15.84
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.9559,
+          "knee_angle_r": 0.2699,
+          "ankle_angle_r": -0.1273
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0228,
+          "lat_gas_r": 0.0086,
+          "tib_ant_r": 0.0772,
+          "vas_med_r": 0.0703,
+          "vas_lat_r": 0.0981,
+          "bifemlh_r": 0.0292,
+          "semiten_r": 0.0159,
+          "semimem_r": 0.0159,
+          "vas_int_r": 0.0848
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": -14.59,
+          "knee_angle_r": 30.69,
+          "ankle_angle_r": -16.03
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 0,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.241,
+          "knee_angle_r": -0.4815,
+          "ankle_angle_r": 0.0255
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 0.17,
+          "lat_gas_r": 0.398,
+          "tib_ant_r": 0.55,
+          "vas_med_r": 0.531,
+          "vas_lat_r": 0.707,
+          "bifemlh_r": 0.557,
+          "semiten_r": 0.93,
+          "semimem_r": 0.93,
+          "vas_int_r": 0.614
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    },
+    "AB05": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 50.69,
+          "knee_angle_r": -47.39,
+          "ankle_angle_r": 16.81
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            49.31,
+            52.42
+          ],
+          "knee_angle_r": [
+            -48.55,
+            -46.55
+          ],
+          "ankle_angle_r": [
+            16.46,
+            17.12
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.4343,
+          "knee_angle_r": 0.2894,
+          "ankle_angle_r": -0.1691
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0912,
+          "lat_gas_r": 0.0418,
+          "tib_ant_r": 0.2144,
+          "vas_med_r": 0.2752,
+          "vas_lat_r": 0.1732,
+          "bifemlh_r": 0.0565,
+          "semiten_r": 0.0232,
+          "semimem_r": 0.0232,
+          "vas_int_r": 0.2209
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 58.69,
+          "knee_angle_r": -49.61,
+          "ankle_angle_r": 14.61
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            58.49,
+            59.33
+          ],
+          "knee_angle_r": [
+            -50.68,
+            -49.25
+          ],
+          "ankle_angle_r": [
+            14.52,
+            14.79
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.5595,
+          "knee_angle_r": 0.3335,
+          "ankle_angle_r": -0.1602
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1278,
+          "lat_gas_r": 0.0437,
+          "tib_ant_r": 0.2168,
+          "vas_med_r": 0.3823,
+          "vas_lat_r": 0.2115,
+          "bifemlh_r": 0.0746,
+          "semiten_r": 0.0295,
+          "semimem_r": 0.0295,
+          "vas_int_r": 0.2957
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": 8.0,
+          "knee_angle_r": -2.22,
+          "ankle_angle_r": -2.2
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 0,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.1252,
+          "knee_angle_r": 0.0441,
+          "ankle_angle_r": 0.0089
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 1.401,
+          "lat_gas_r": 1.045,
+          "tib_ant_r": 1.011,
+          "vas_med_r": 1.389,
+          "vas_lat_r": 1.221,
+          "bifemlh_r": 1.32,
+          "semiten_r": 1.272,
+          "semimem_r": 1.272,
+          "vas_int_r": 1.339
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    },
+    "AB06": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 84.66,
+          "knee_angle_r": -87.5,
+          "ankle_angle_r": 30.99
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            83.66,
+            86.07
+          ],
+          "knee_angle_r": [
+            -88.91,
+            -86.32
+          ],
+          "ankle_angle_r": [
+            30.37,
+            32.16
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.9136,
+          "knee_angle_r": 0.6545,
+          "ankle_angle_r": -0.5681
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.2615,
+          "lat_gas_r": 0.0325,
+          "tib_ant_r": 0.0146,
+          "vas_med_r": 0.1405,
+          "vas_lat_r": 0.1789,
+          "bifemlh_r": 0.0855,
+          "semiten_r": 0.0121,
+          "semimem_r": 0.0121,
+          "vas_int_r": 0.1624
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 83.9,
+          "knee_angle_r": -77.24,
+          "ankle_angle_r": 31.78
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            81.66,
+            84.97
+          ],
+          "knee_angle_r": [
+            -78.2,
+            -75.28
+          ],
+          "ankle_angle_r": [
+            30.79,
+            32.2
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -1.4456,
+          "knee_angle_r": 0.4774,
+          "ankle_angle_r": -0.7546
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1327,
+          "lat_gas_r": 0.0564,
+          "tib_ant_r": 0.0211,
+          "vas_med_r": 0.1747,
+          "vas_lat_r": 0.2462,
+          "bifemlh_r": 0.1114,
+          "semiten_r": 0.0244,
+          "semimem_r": 0.0244,
+          "vas_int_r": 0.2139
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": -0.76,
+          "knee_angle_r": 10.26,
+          "ankle_angle_r": 0.79
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 1.31,
+          "knee_angle_r": 0,
+          "ankle_angle_r": 1.37
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.532,
+          "knee_angle_r": -0.1771,
+          "ankle_angle_r": -0.1865
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 0.507,
+          "lat_gas_r": 1.735,
+          "tib_ant_r": 1.445,
+          "vas_med_r": 1.243,
+          "vas_lat_r": 1.376,
+          "bifemlh_r": 1.303,
+          "semiten_r": 2.017,
+          "semimem_r": 2.017,
+          "vas_int_r": 1.317
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    },
+    "AB08": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 39.56,
+          "knee_angle_r": -61.85,
+          "ankle_angle_r": 25.37
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            38.34,
+            39.98
+          ],
+          "knee_angle_r": [
+            -64.61,
+            -59.34
+          ],
+          "ankle_angle_r": [
+            24.01,
+            26.42
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.4514,
+          "knee_angle_r": 0.4431,
+          "ankle_angle_r": -0.364
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0553,
+          "lat_gas_r": 0.0072,
+          "tib_ant_r": 0.0031,
+          "vas_med_r": 0.1327,
+          "vas_lat_r": 0.1553,
+          "bifemlh_r": 0.018,
+          "semiten_r": 0.0075,
+          "semimem_r": 0.0075,
+          "vas_int_r": 0.1431
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 40.02,
+          "knee_angle_r": -62.5,
+          "ankle_angle_r": 29.24
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            38.55,
+            40.89
+          ],
+          "knee_angle_r": [
+            -63.05,
+            -60.69
+          ],
+          "ankle_angle_r": [
+            28.66,
+            29.39
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.6521,
+          "knee_angle_r": 0.4163,
+          "ankle_angle_r": -0.6014
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.043,
+          "lat_gas_r": 0.0202,
+          "tib_ant_r": 0.0045,
+          "vas_med_r": 0.1425,
+          "vas_lat_r": 0.1602,
+          "bifemlh_r": 0.0208,
+          "semiten_r": 0.0087,
+          "semimem_r": 0.0087,
+          "vas_int_r": 0.1507
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": 0.46,
+          "knee_angle_r": -0.65,
+          "ankle_angle_r": 3.87
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 1.43,
+          "knee_angle_r": 2.36,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.2007,
+          "knee_angle_r": -0.0268,
+          "ankle_angle_r": -0.2374
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 0.778,
+          "lat_gas_r": 2.806,
+          "tib_ant_r": 1.452,
+          "vas_med_r": 1.074,
+          "vas_lat_r": 1.032,
+          "bifemlh_r": 1.156,
+          "semiten_r": 1.16,
+          "semimem_r": 1.16,
+          "vas_int_r": 1.053
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 1669,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 59,
+        "uniqueUnweightedCoverageFraction": 0.0295,
+        "medianMaximumAngleErrorDeg": 2.871,
+        "emgVestToUnweightedMatchedMedianRatio": {
+          "rect_fem_r": 0.559,
+          "lat_gas_r": 3.053,
+          "tib_ant_r": 1.389,
+          "vas_med_r": 1.059,
+          "vas_lat_r": 0.891,
+          "bifemlh_r": 1.052,
+          "semiten_r": 1.016,
+          "semimem_r": 1.016,
+          "vas_int_r": 0.957
+        },
+        "passesCoverageGate": false
+      }
+    },
+    "AB09": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 47.05,
+          "knee_angle_r": -60.83,
+          "ankle_angle_r": 20.51
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            43.86,
+            48.81
+          ],
+          "knee_angle_r": [
+            -62.71,
+            -58.82
+          ],
+          "ankle_angle_r": [
+            18.71,
+            21.19
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.7501,
+          "knee_angle_r": 0.3157,
+          "ankle_angle_r": -0.3835
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0254,
+          "lat_gas_r": 0.0139,
+          "tib_ant_r": 0.0195,
+          "vas_med_r": 0.1539,
+          "vas_lat_r": 0.0993,
+          "bifemlh_r": 0.0261,
+          "semiten_r": 0.0054,
+          "semimem_r": 0.0054,
+          "vas_int_r": 0.1253
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 49.85,
+          "knee_angle_r": -56.74,
+          "ankle_angle_r": 19.4
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            48.29,
+            51.45
+          ],
+          "knee_angle_r": [
+            -58.91,
+            -54.53
+          ],
+          "ankle_angle_r": [
+            18.47,
+            19.92
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.9473,
+          "knee_angle_r": 0.2801,
+          "ankle_angle_r": -0.5054
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0277,
+          "lat_gas_r": 0.0152,
+          "tib_ant_r": 0.011,
+          "vas_med_r": 0.1774,
+          "vas_lat_r": 0.1096,
+          "bifemlh_r": 0.027,
+          "semiten_r": 0.0061,
+          "semimem_r": 0.0061,
+          "vas_int_r": 0.1416
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": 2.8,
+          "knee_angle_r": 4.09,
+          "ankle_angle_r": -1.11
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0.52,
+          "knee_angle_r": 0.09,
+          "ankle_angle_r": 1.21
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.1972,
+          "knee_angle_r": -0.0356,
+          "ankle_angle_r": -0.1219
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 1.091,
+          "lat_gas_r": 1.094,
+          "tib_ant_r": 0.564,
+          "vas_med_r": 1.153,
+          "vas_lat_r": 1.104,
+          "bifemlh_r": 1.034,
+          "semiten_r": 1.13,
+          "semimem_r": 1.13,
+          "vas_int_r": 1.13
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 1785,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 29,
+        "uniqueUnweightedCoverageFraction": 0.0145,
+        "medianMaximumAngleErrorDeg": 2.071,
+        "emgVestToUnweightedMatchedMedianRatio": {
+          "rect_fem_r": 1.125,
+          "lat_gas_r": 0.976,
+          "tib_ant_r": 0.225,
+          "vas_med_r": 1.276,
+          "vas_lat_r": 1.23,
+          "bifemlh_r": 1.612,
+          "semiten_r": 1.772,
+          "semimem_r": 1.772,
+          "vas_int_r": 1.242
+        },
+        "passesCoverageGate": false
+      }
+    },
+    "AB10": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 92.5,
+          "knee_angle_r": -84.68,
+          "ankle_angle_r": 26.13
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            92.06,
+            93.39
+          ],
+          "knee_angle_r": [
+            -86.16,
+            -82.91
+          ],
+          "ankle_angle_r": [
+            25.36,
+            26.91
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -1.0151,
+          "knee_angle_r": 0.3217,
+          "ankle_angle_r": -0.5578
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1521,
+          "lat_gas_r": 0.0207,
+          "tib_ant_r": 0.2609,
+          "vas_med_r": 0.2071,
+          "vas_lat_r": 0.2754,
+          "bifemlh_r": 0.1046,
+          "semiten_r": 0.0265,
+          "semimem_r": 0.0265,
+          "vas_int_r": 0.2417
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 89.83,
+          "knee_angle_r": -83.66,
+          "ankle_angle_r": 25.97
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            89.22,
+            90.13
+          ],
+          "knee_angle_r": [
+            -84.7,
+            -82.87
+          ],
+          "ankle_angle_r": [
+            25.47,
+            26.37
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -1.0346,
+          "knee_angle_r": 0.4849,
+          "ankle_angle_r": -0.5888
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.1972,
+          "lat_gas_r": 0.0179,
+          "tib_ant_r": 0.2023,
+          "vas_med_r": 0.3259,
+          "vas_lat_r": 0.4695,
+          "bifemlh_r": 0.1697,
+          "semiten_r": 0.0424,
+          "semimem_r": 0.0424,
+          "vas_int_r": 0.3999
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": -2.67,
+          "knee_angle_r": 1.02,
+          "ankle_angle_r": -0.16
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 1.79,
+          "ankle_angle_r": 0.9
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.0195,
+          "knee_angle_r": 0.1632,
+          "ankle_angle_r": -0.031
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 1.297,
+          "lat_gas_r": 0.865,
+          "tib_ant_r": 0.775,
+          "vas_med_r": 1.574,
+          "vas_lat_r": 1.705,
+          "bifemlh_r": 1.622,
+          "semiten_r": 1.6,
+          "semimem_r": 1.6,
+          "vas_int_r": 1.655
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 2000,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 44,
+        "uniqueUnweightedCoverageFraction": 0.022,
+        "medianMaximumAngleErrorDeg": 2.195,
+        "emgVestToUnweightedMatchedMedianRatio": {
+          "rect_fem_r": 0.892,
+          "lat_gas_r": 0.841,
+          "tib_ant_r": 0.836,
+          "vas_med_r": 1.52,
+          "vas_lat_r": 1.554,
+          "bifemlh_r": 2.004,
+          "semiten_r": 1.93,
+          "semimem_r": 1.93,
+          "vas_int_r": 1.633
+        },
+        "passesCoverageGate": false
+      }
+    },
+    "AB11": {
+      "unweighted": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 64.08,
+          "knee_angle_r": -46.46,
+          "ankle_angle_r": 14.8
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            63.1,
+            64.73
+          ],
+          "knee_angle_r": [
+            -49.11,
+            -45.3
+          ],
+          "ankle_angle_r": [
+            13.73,
+            15.16
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.7271,
+          "knee_angle_r": 0.1609,
+          "ankle_angle_r": -0.1789
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0179,
+          "lat_gas_r": 0.0195,
+          "tib_ant_r": 0.067,
+          "vas_med_r": 0.0681,
+          "vas_lat_r": 0.0849,
+          "bifemlh_r": 0.0327,
+          "semiten_r": 0.0483,
+          "semimem_r": 0.0483,
+          "vas_int_r": 0.0776
+        }
+      },
+      "vest_25lb": {
+        "emgSamples": 20001,
+        "kineticSamples": 2000,
+        "semitendinosusSemimembranosusSamplesExactlyEqual": true,
+        "angleMedianDeg": {
+          "hip_flexion_r": 77.41,
+          "knee_angle_r": -50.43,
+          "ankle_angle_r": 22.85
+        },
+        "angleP5P95Deg": {
+          "hip_flexion_r": [
+            74.33,
+            78.82
+          ],
+          "knee_angle_r": [
+            -53.9,
+            -41.47
+          ],
+          "ankle_angle_r": [
+            17.26,
+            23.89
+          ]
+        },
+        "netMomentMedianNmPerKg": {
+          "hip_flexion_r": -0.9125,
+          "knee_angle_r": 0.1601,
+          "ankle_angle_r": -0.3071
+        },
+        "emgMedianSourceMvcNormalized": {
+          "rect_fem_r": 0.0249,
+          "lat_gas_r": 0.0232,
+          "tib_ant_r": 0.0275,
+          "vas_med_r": 0.0947,
+          "vas_lat_r": 0.1236,
+          "bifemlh_r": 0.0348,
+          "semiten_r": 0.0448,
+          "semimem_r": 0.0448,
+          "vas_int_r": 0.1107
+        }
+      },
+      "difference": {
+        "angleMedianVestMinusUnweightedDeg": {
+          "hip_flexion_r": 13.33,
+          "knee_angle_r": -3.97,
+          "ankle_angle_r": 8.05
+        },
+        "angleP5P95OverlapDeg": {
+          "hip_flexion_r": 0,
+          "knee_angle_r": 3.81,
+          "ankle_angle_r": 0
+        },
+        "netMomentVestMinusUnweightedNmPerKg": {
+          "hip_flexion_r": -0.1854,
+          "knee_angle_r": -0.0008,
+          "ankle_angle_r": -0.1282
+        },
+        "emgVestToUnweightedMedianRatio": {
+          "rect_fem_r": 1.391,
+          "lat_gas_r": 1.19,
+          "tib_ant_r": 0.41,
+          "vas_med_r": 1.391,
+          "vas_lat_r": 1.456,
+          "bifemlh_r": 1.064,
+          "semiten_r": 0.928,
+          "semimem_r": 0.928,
+          "vas_int_r": 1.427
+        }
+      },
+      "poseMatched": {
+        "angleToleranceDegEachJoint": 3,
+        "acceptedVestFrames": 0,
+        "totalVestFrames": 2000,
+        "uniqueUnweightedFrames": 0,
+        "uniqueUnweightedCoverageFraction": 0.0,
+        "medianMaximumAngleErrorDeg": null,
+        "passesCoverageGate": false
+      }
+    }
+  }
+}

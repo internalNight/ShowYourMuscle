@@ -1,0 +1,257 @@
+{
+  "status": "scaled_geometry_not_personalized_maximum_muscle_force",
+  "source": "https://zenodo.org/records/11209324",
+  "license": "CC BY-SA 4.0",
+  "models": 17,
+  "musclesPerModel": 12,
+  "unchangedMaxIsometricForceMuscles": 12,
+  "changedOptimalFiberLengthMuscles": 12,
+  "changedTendonSlackLengthMuscles": 12,
+  "muscles": [
+    {
+      "muscle": "BICLong",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 525.1,
+          "max": 525.1,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.09807696772395232,
+          "max": 0.1253748570209282,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.23082418592249104,
+          "max": 0.2950697801797645,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "BICShort",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 316.8,
+          "max": 316.8,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.11104878957274737,
+          "max": 0.14346891451222382,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.16165542948402212,
+          "max": 0.20884990356321456,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "BRA",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 1177.37,
+          "max": 1177.37,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.07173964007252313,
+          "max": 0.09342263254949681,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.044732759252680505,
+          "max": 0.05825304010953473,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "BRD",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 276.0,
+          "max": 276.0,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.14576924141037778,
+          "max": 0.1821712731981169,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.11232508173569088,
+          "max": 0.14037531480503795,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "DELTAnt",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 1218.9,
+          "max": 1218.9,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.09013647711018011,
+          "max": 0.11190470885980479,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.08588824150867572,
+          "max": 0.1066305115160025,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "DELTMed",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 1103.5,
+          "max": 1103.5,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.09608056711417672,
+          "max": 0.11513056183864429,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.09759575230985483,
+          "max": 0.11694616439083069,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "DELTPost",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 201.6,
+          "max": 201.6,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.127720525487254,
+          "max": 0.14228044227966116,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.03550387687282847,
+          "max": 0.03955125681512161,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "LATI",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 189.0,
+          "max": 189.0,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.2706335906003283,
+          "max": 0.31877030835096504,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.13614160186886365,
+          "max": 0.16035666640961063,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "PECT",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 444.3,
+          "max": 444.3,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.13490964903192648,
+          "max": 0.18748053027707712,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.0026196048355713883,
+          "max": 0.0036403986461568377,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "TRILat",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 717.5,
+          "max": 717.5,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.0939492775471316,
+          "max": 0.1269976668061323,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.08090535324796923,
+          "max": 0.10936530181898917,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "TRILong",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 771.8,
+          "max": 771.8,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.11164539454752431,
+          "max": 0.14842959440762196,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.11914396582310428,
+          "max": 0.15839874627082043,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    },
+    {
+      "muscle": "TRIMed",
+      "parameters": {
+        "max_isometric_force": {
+          "min": 717.5,
+          "max": 717.5,
+          "uniqueAt1eMinus8": 1
+        },
+        "optimal_fiber_length": {
+          "min": 0.09391983674742764,
+          "max": 0.12711325546101743,
+          "uniqueAt1eMinus8": 17
+        },
+        "tendon_slack_length": {
+          "min": 0.0749377959285275,
+          "max": 0.10142252720439704,
+          "uniqueAt1eMinus8": 17
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "This inspects serialized model parameters, not model performance or participants' measured strength.",
+    "The tracking task is not bench press or overhead press.",
+    "Identical maximum isometric forces cannot justify personal muscle-force estimates from height and weight alone."
+  ]
+}

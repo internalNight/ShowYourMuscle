@@ -1,0 +1,305 @@
+{
+  "status": "research_only_high_flex_static_optimization_rejected_for_personal_force",
+  "method": "OpenSim 4.6 StaticOptimization on measured AB02 IK and force plates; no force-plate free moment; candidate segment scaled and generic max isometric forces uniformly multiplied by 4.2",
+  "runs": [
+    {
+      "run": "AB02_23_23.1_strength4.2_physiology",
+      "toolCompleted": true,
+      "intervalS": [
+        23.0,
+        23.1
+      ],
+      "musclePhysiology": true,
+      "strengthMultiplier": 4.2,
+      "jointReserveOptimalForceNmPerControl": 1,
+      "frameCount": 21,
+      "frameConvergenceVerifiedByWarningLog": true,
+      "failedFrameCount": 0,
+      "failedFrameTimesS": [],
+      "convergedFrameCount": 21,
+      "muscleCount": 80,
+      "musclesAtActivationUpperBoundConvergedFrames": 0,
+      "upperBoundMuscleFrameCountsConverged": {},
+      "maximumConvergedMuscleActivation": 0.27,
+      "pelvisTranslationReserveNConverged": {
+        "reserve_pelvis_tx": 20.027,
+        "reserve_pelvis_ty": 138.61,
+        "reserve_pelvis_tz": 98.774
+      },
+      "pelvisRotationReserveNmConverged": {
+        "reserve_pelvis_tilt": 7.845,
+        "reserve_pelvis_list": 48.655,
+        "reserve_pelvis_rotation": 6.412
+      },
+      "hipKneeAnkleReserveNmConverged": {
+        "reserve_hip_flexion_r": 0.0,
+        "reserve_hip_adduction_r": 0.003,
+        "reserve_hip_rotation_r": 0.011,
+        "reserve_knee_angle_r": 0.0,
+        "reserve_ankle_angle_r": 0.001,
+        "reserve_hip_flexion_l": 0.001,
+        "reserve_hip_adduction_l": 0.004,
+        "reserve_hip_rotation_l": 0.01,
+        "reserve_knee_angle_l": 0.0,
+        "reserve_ankle_angle_l": 0.0
+      },
+      "builtInLumbarActuatorNmConverged": {
+        "lumbar_ext": 64.335,
+        "lumbar_bend": 8.128,
+        "lumbar_rot": 6.546
+      }
+    },
+    {
+      "run": "AB02_23.6_23.7_strength4.2_physiology",
+      "toolCompleted": true,
+      "intervalS": [
+        23.6,
+        23.7
+      ],
+      "musclePhysiology": true,
+      "strengthMultiplier": 4.2,
+      "jointReserveOptimalForceNmPerControl": 1,
+      "frameCount": 21,
+      "frameConvergenceVerifiedByWarningLog": true,
+      "failedFrameCount": 13,
+      "failedFrameTimesS": [
+        23.62,
+        23.625,
+        23.63,
+        23.64,
+        23.645,
+        23.66,
+        23.665,
+        23.67,
+        23.675,
+        23.68,
+        23.685,
+        23.69,
+        23.695
+      ],
+      "convergedFrameCount": 8,
+      "muscleCount": 80,
+      "musclesAtActivationUpperBoundConvergedFrames": 8,
+      "upperBoundMuscleFrameCountsConverged": {
+        "addmagProx_r": 8,
+        "bflh_r": 8,
+        "glmax3_r": 8,
+        "sart_r": 8,
+        "addmagProx_l": 8,
+        "bflh_l": 8,
+        "glmax3_l": 6,
+        "sart_l": 8
+      },
+      "maximumConvergedMuscleActivation": 1.0,
+      "pelvisTranslationReserveNConverged": {
+        "reserve_pelvis_tx": 17.384,
+        "reserve_pelvis_ty": 36.959,
+        "reserve_pelvis_tz": 19.171
+      },
+      "pelvisRotationReserveNmConverged": {
+        "reserve_pelvis_tilt": 11.821,
+        "reserve_pelvis_list": 47.672,
+        "reserve_pelvis_rotation": 1.649
+      },
+      "hipKneeAnkleReserveNmConverged": {
+        "reserve_hip_flexion_r": 1.157,
+        "reserve_hip_adduction_r": 1.683,
+        "reserve_hip_rotation_r": 7.173,
+        "reserve_knee_angle_r": 0.001,
+        "reserve_ankle_angle_r": 0.0,
+        "reserve_hip_flexion_l": 0.364,
+        "reserve_hip_adduction_l": 1.845,
+        "reserve_hip_rotation_l": 8.016,
+        "reserve_knee_angle_l": 0.001,
+        "reserve_ankle_angle_l": 0.0
+      },
+      "builtInLumbarActuatorNmConverged": {
+        "lumbar_ext": 86.224,
+        "lumbar_bend": 14.402,
+        "lumbar_rot": 6.542
+      }
+    },
+    {
+      "run": "AB02_23.6_23.7_strength4.2_no-physiology",
+      "toolCompleted": true,
+      "intervalS": [
+        23.6,
+        23.7
+      ],
+      "musclePhysiology": false,
+      "strengthMultiplier": 4.2,
+      "jointReserveOptimalForceNmPerControl": 1,
+      "frameCount": 21,
+      "frameConvergenceVerifiedByWarningLog": true,
+      "failedFrameCount": 2,
+      "failedFrameTimesS": [
+        23.675,
+        23.7
+      ],
+      "convergedFrameCount": 19,
+      "muscleCount": 80,
+      "musclesAtActivationUpperBoundConvergedFrames": 19,
+      "upperBoundMuscleFrameCountsConverged": {
+        "addmagProx_r": 8,
+        "bflh_r": 19,
+        "glmax3_r": 8,
+        "sart_r": 19,
+        "addmagProx_l": 16,
+        "bflh_l": 19,
+        "glmax3_l": 7,
+        "sart_l": 19
+      },
+      "maximumConvergedMuscleActivation": 1.0,
+      "pelvisTranslationReserveNConverged": {
+        "reserve_pelvis_tx": 20.802,
+        "reserve_pelvis_ty": 39.757,
+        "reserve_pelvis_tz": 19.171
+      },
+      "pelvisRotationReserveNmConverged": {
+        "reserve_pelvis_tilt": 13.873,
+        "reserve_pelvis_list": 48.394,
+        "reserve_pelvis_rotation": 1.649
+      },
+      "hipKneeAnkleReserveNmConverged": {
+        "reserve_hip_flexion_r": 0.482,
+        "reserve_hip_adduction_r": 0.69,
+        "reserve_hip_rotation_r": 2.939,
+        "reserve_knee_angle_r": 0.001,
+        "reserve_ankle_angle_r": 0.0,
+        "reserve_hip_flexion_l": 0.087,
+        "reserve_hip_adduction_l": 0.426,
+        "reserve_hip_rotation_l": 1.843,
+        "reserve_knee_angle_l": 0.0,
+        "reserve_ankle_angle_l": 0.0
+      },
+      "builtInLumbarActuatorNmConverged": {
+        "lumbar_ext": 86.228,
+        "lumbar_bend": 14.402,
+        "lumbar_rot": 6.77
+      }
+    },
+    {
+      "run": "AB02_23.6_23.7_strength4.2_no-physiology_jointreserve0.01",
+      "toolCompleted": true,
+      "intervalS": [
+        23.6,
+        23.7
+      ],
+      "musclePhysiology": false,
+      "strengthMultiplier": 4.2,
+      "jointReserveOptimalForceNmPerControl": 0.01,
+      "frameCount": 21,
+      "frameConvergenceVerifiedByWarningLog": true,
+      "failedFrameCount": 10,
+      "failedFrameTimesS": [
+        23.655,
+        23.66,
+        23.665,
+        23.67,
+        23.675,
+        23.68,
+        23.685,
+        23.69,
+        23.695,
+        23.7
+      ],
+      "convergedFrameCount": 11,
+      "muscleCount": 80,
+      "musclesAtActivationUpperBoundConvergedFrames": 11,
+      "upperBoundMuscleFrameCountsConverged": {
+        "addmagProx_r": 1,
+        "bflh_r": 11,
+        "sart_r": 11,
+        "addmagProx_l": 8,
+        "bflh_l": 11,
+        "sart_l": 11
+      },
+      "maximumConvergedMuscleActivation": 1.0,
+      "pelvisTranslationReserveNConverged": {
+        "reserve_pelvis_tx": 16.441,
+        "reserve_pelvis_ty": 35.126,
+        "reserve_pelvis_tz": 19.171
+      },
+      "pelvisRotationReserveNmConverged": {
+        "reserve_pelvis_tilt": 7.443,
+        "reserve_pelvis_list": 44.754,
+        "reserve_pelvis_rotation": 1.634
+      },
+      "hipKneeAnkleReserveNmConverged": {
+        "reserve_hip_flexion_r": 0.0,
+        "reserve_hip_adduction_r": 0.0,
+        "reserve_hip_rotation_r": 0.0,
+        "reserve_knee_angle_r": 0.0,
+        "reserve_ankle_angle_r": 0.0,
+        "reserve_hip_flexion_l": 0.0,
+        "reserve_hip_adduction_l": 0.0,
+        "reserve_hip_rotation_l": 0.0,
+        "reserve_knee_angle_l": 0.0,
+        "reserve_ankle_angle_l": 0.0
+      },
+      "builtInLumbarActuatorNmConverged": {
+        "lumbar_ext": 86.228,
+        "lumbar_bend": 14.402,
+        "lumbar_rot": 5.524
+      }
+    },
+    {
+      "run": "AB02_23.6_23.7_strength6_physiology",
+      "toolCompleted": true,
+      "intervalS": [
+        23.6,
+        23.7
+      ],
+      "musclePhysiology": true,
+      "strengthMultiplier": 6.0,
+      "jointReserveOptimalForceNmPerControl": 1,
+      "frameCount": 21,
+      "frameConvergenceVerifiedByWarningLog": true,
+      "failedFrameCount": 0,
+      "failedFrameTimesS": [],
+      "convergedFrameCount": 21,
+      "muscleCount": 80,
+      "musclesAtActivationUpperBoundConvergedFrames": 21,
+      "upperBoundMuscleFrameCountsConverged": {
+        "bflh_r": 21,
+        "bflh_l": 21
+      },
+      "maximumConvergedMuscleActivation": 1.0,
+      "pelvisTranslationReserveNConverged": {
+        "reserve_pelvis_tx": 20.802,
+        "reserve_pelvis_ty": 39.757,
+        "reserve_pelvis_tz": 19.171
+      },
+      "pelvisRotationReserveNmConverged": {
+        "reserve_pelvis_tilt": 13.873,
+        "reserve_pelvis_list": 48.394,
+        "reserve_pelvis_rotation": 1.649
+      },
+      "hipKneeAnkleReserveNmConverged": {
+        "reserve_hip_flexion_r": 0.01,
+        "reserve_hip_adduction_r": 0.014,
+        "reserve_hip_rotation_r": 0.063,
+        "reserve_knee_angle_r": 0.001,
+        "reserve_ankle_angle_r": 0.0,
+        "reserve_hip_flexion_l": 0.004,
+        "reserve_hip_adduction_l": 0.013,
+        "reserve_hip_rotation_l": 0.053,
+        "reserve_knee_angle_l": 0.0,
+        "reserve_ankle_angle_l": 0.0
+      },
+      "builtInLumbarActuatorNmConverged": {
+        "lumbar_ext": 86.228,
+        "lumbar_bend": 14.402,
+        "lumbar_rot": 6.77
+      }
+    }
+  ],
+  "limitations": [
+    "tool completion and 21 output rows do not prove every frame converged; runs without captured warning logs are unverified",
+    "metrics exclude warning-identified failed frames where warning logs are available",
+    "force and muscle activation columns were parsed separately; reserve and built-in lumbar actuators are not muscle force",
+    "candidate has generic pelvis/trunk mass properties and unregistered contact geometry",
+    "measured kinematics and ground force are inputs, not predicted by phone data",
+    "4.2x muscle strength is a numerical feasibility choice, not individual calibration"
+  ]
+}

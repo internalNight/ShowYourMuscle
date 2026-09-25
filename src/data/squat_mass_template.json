@@ -1,0 +1,15 @@
+{
+  "status": "generic_gait2354_mass_fraction_template_not_personal_measurement",
+  "source": "Scherpereel et al. 2023 public OpenSim scaled models",
+  "sourceUrl": "https://www.nature.com/articles/s41597-023-02840-6",
+  "modelCount": 12,
+  "maxFractionDeviation": 6.38378239159465e-16,
+  "fractions": {
+    "torso": 0.4554883549,
+    "pelvis": 0.1566828001,
+    "thighEach": 0.1237470831,
+    "shankEach": 0.0493250812,
+    "footEach": 0.0208422582
+  },
+  "note": "The paper says segment mass distribution was preserved during scaling; the 12 models are not 12 independent mass-fraction measurements."
+}

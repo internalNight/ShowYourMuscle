@@ -1,0 +1,290 @@
+{
+  "status": "standing_mesh_path_screen_only",
+  "muscles": [
+    {
+      "opensimMuscle": "rect_fem_r",
+      "mesh": "Rectus femoris muscle.r",
+      "vertexCount": 4136,
+      "meshHeightM": 0.5453280806541443,
+      "modelPathLengthM": 0.5227041176299673,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.031989102270402185,
+          "sliceVertexCount": 227
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.02582170805139043,
+          "sliceVertexCount": 129
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.021171844240076957,
+          "sliceVertexCount": 80
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.03464373405083756,
+          "sliceVertexCount": 63
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.04661128597453293,
+          "sliceVertexCount": 67
+        }
+      ],
+      "maximumCenterDistanceM": 0.04661128597453293
+    },
+    {
+      "opensimMuscle": "vas_int_r",
+      "mesh": "Vastus intermedius muscle.r",
+      "vertexCount": 3076,
+      "meshHeightM": 0.40839701890945435,
+      "modelPathLengthM": 0.29835586510066,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.13180589035473103,
+          "sliceVertexCount": 100
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.10509399055383671,
+          "sliceVertexCount": 113
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.08081372035485451,
+          "sliceVertexCount": 152
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.06809133096146479,
+          "sliceVertexCount": 122
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.04950477250453266,
+          "sliceVertexCount": 91
+        }
+      ],
+      "maximumCenterDistanceM": 0.13180589035473103
+    },
+    {
+      "opensimMuscle": "bifemsh_r",
+      "mesh": "Short head of biceps femoris.r",
+      "vertexCount": 1238,
+      "meshHeightM": 0.3013489246368408,
+      "modelPathLengthM": 0.2290380970609829,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.055236401312675196,
+          "sliceVertexCount": 17
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.043189610929454864,
+          "sliceVertexCount": 37
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.030433141006413356,
+          "sliceVertexCount": 78
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.02497513753657403,
+          "sliceVertexCount": 90
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.03578661450380047,
+          "sliceVertexCount": 75
+        }
+      ],
+      "maximumCenterDistanceM": 0.055236401312675196
+    },
+    {
+      "opensimMuscle": "semimem_r",
+      "mesh": "Semimembranosus muscle.r",
+      "vertexCount": 3725,
+      "meshHeightM": 0.41771167516708374,
+      "modelPathLengthM": 0.4084067656990177,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.06668822403325526,
+          "sliceVertexCount": 94
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.051478890851309723,
+          "sliceVertexCount": 124
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.03895212781765569,
+          "sliceVertexCount": 189
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.03740007873604123,
+          "sliceVertexCount": 208
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.038284156036175646,
+          "sliceVertexCount": 163
+        }
+      ],
+      "maximumCenterDistanceM": 0.06668822403325526
+    },
+    {
+      "opensimMuscle": "med_gas_r",
+      "mesh": "Medial head of gastrocnemius.r",
+      "vertexCount": 3233,
+      "meshHeightM": 0.2996520400047302,
+      "modelPathLengthM": 0.4633572665736182,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.04367046511107278,
+          "sliceVertexCount": 272
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.03960652584223923,
+          "sliceVertexCount": 200
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.07558116080879962,
+          "sliceVertexCount": 160
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.11630877377990992,
+          "sliceVertexCount": 159
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.15010399013559467,
+          "sliceVertexCount": 90
+        }
+      ],
+      "maximumCenterDistanceM": 0.15010399013559467
+    },
+    {
+      "opensimMuscle": "soleus_r",
+      "mesh": "Soleus muscle.r",
+      "vertexCount": 3379,
+      "meshHeightM": 0.2757527083158493,
+      "modelPathLengthM": 0.33052138235172845,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.06416052462288448,
+          "sliceVertexCount": 147
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.05661077644391096,
+          "sliceVertexCount": 209
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.06334201252473672,
+          "sliceVertexCount": 232
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.07385645197606219,
+          "sliceVertexCount": 163
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.08453752220895215,
+          "sliceVertexCount": 89
+        }
+      ],
+      "maximumCenterDistanceM": 0.08453752220895215
+    },
+    {
+      "opensimMuscle": "tib_ant_r",
+      "mesh": "Tibialis anterior muscle.r",
+      "vertexCount": 1761,
+      "meshHeightM": 0.3688609004020691,
+      "modelPathLengthM": 0.2973320405767332,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.08852625617357929,
+          "sliceVertexCount": 103
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.07399408041712574,
+          "sliceVertexCount": 100
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.05381121810771911,
+          "sliceVertexCount": 85
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.034065773862130555,
+          "sliceVertexCount": 22
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.02266973943849826,
+          "sliceVertexCount": 125
+        }
+      ],
+      "maximumCenterDistanceM": 0.08852625617357929
+    },
+    {
+      "opensimMuscle": "glut_max2_r",
+      "mesh": "Gluteus maximus muscle.r",
+      "vertexCount": 1663,
+      "meshHeightM": 0.2694861888885498,
+      "modelPathLengthM": 0.22918492760776737,
+      "samples": [
+        {
+          "fractionFromTop": 0.05,
+          "centerDistanceM": 0.06814853492338059,
+          "sliceVertexCount": 32
+        },
+        {
+          "fractionFromTop": 0.25,
+          "centerDistanceM": 0.05471430301557361,
+          "sliceVertexCount": 130
+        },
+        {
+          "fractionFromTop": 0.5,
+          "centerDistanceM": 0.056630747735847684,
+          "sliceVertexCount": 154
+        },
+        {
+          "fractionFromTop": 0.75,
+          "centerDistanceM": 0.047985510525062246,
+          "sliceVertexCount": 97
+        },
+        {
+          "fractionFromTop": 0.95,
+          "centerDistanceM": 0.05493080429923995,
+          "sliceVertexCount": 30
+        }
+      ],
+      "maximumCenterDistanceM": 0.06814853492338059
+    }
+  ],
+  "limits": [
+    "z-slice centroids are not attachments or fiber paths",
+    "bbox registration is shared between bones, not fitted per muscle",
+    "one standing pose and right-side reference only"
+  ]
+}

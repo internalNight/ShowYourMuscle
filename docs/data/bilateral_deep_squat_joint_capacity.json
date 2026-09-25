@@ -1,0 +1,562 @@
+{
+  "status": "research_only_optimistic_independent_joint_upper_bound",
+  "subject": "AB01",
+  "timeS": 51.32,
+  "input": "replayed experimental inverse-dynamics moments, original released raw CSV joint moments, and full experimental IK",
+  "sourceRawMomentUnitAssumption": "N m/kg multiplied by the subject-mass table; supported but not conclusively proven for every coordinate",
+  "subjectMassKgForSourceCsv": 78.9,
+  "muscleCount": 54,
+  "definition": "For each rotational coordinate independently, sum all same-direction moment arms times max isometric muscle force; ignores force-length, passive tissue and simultaneous multi-joint allocation.",
+  "pelvisIdResidual": {
+    "pelvis_tx_force": -5.052,
+    "pelvis_ty_force": 17.578,
+    "pelvis_tz_force": 37.538,
+    "pelvis_tilt_moment": -50.653,
+    "pelvis_list_moment": 51.802,
+    "pelvis_rotation_moment": -0.099
+  },
+  "exceededCoordinates": [
+    "hip_rotation_r",
+    "knee_angle_r",
+    "hip_rotation_l",
+    "lumbar_extension"
+  ],
+  "unactuatedCoordinates": [
+    "pelvis_tilt",
+    "pelvis_list",
+    "pelvis_rotation",
+    "mtp_angle_r",
+    "mtp_angle_l"
+  ],
+  "intervalS": [
+    51.25,
+    51.35
+  ],
+  "intervalSummary": {
+    "hip_rotation_r": {
+      "frameCount": 21,
+      "exceededFrameCount": 21,
+      "minDemandToCapacity": 4.311,
+      "medianDemandToCapacity": 5.104,
+      "maxDemandToCapacity": 5.318,
+      "sourceRawCsvAssumingNmPerKg": {
+        "frameCount": 21,
+        "exceededFrameCount": 21,
+        "minDemandToCapacity": 2.897,
+        "medianDemandToCapacity": 3.533,
+        "maxDemandToCapacity": 3.709,
+        "replayedIdVsSourceRawMaeNm": 19.335
+      }
+    },
+    "hip_rotation_l": {
+      "frameCount": 21,
+      "exceededFrameCount": 21,
+      "minDemandToCapacity": 7.304,
+      "medianDemandToCapacity": 8.976,
+      "maxDemandToCapacity": 9.232,
+      "sourceRawCsvAssumingNmPerKg": {
+        "frameCount": 21,
+        "exceededFrameCount": 21,
+        "minDemandToCapacity": 3.676,
+        "medianDemandToCapacity": 4.764,
+        "maxDemandToCapacity": 4.903,
+        "replayedIdVsSourceRawMaeNm": 43.239
+      }
+    },
+    "knee_angle_r": {
+      "frameCount": 21,
+      "exceededFrameCount": 20,
+      "minDemandToCapacity": 0.98,
+      "medianDemandToCapacity": 1.179,
+      "maxDemandToCapacity": 1.219,
+      "sourceRawCsvAssumingNmPerKg": {
+        "frameCount": 21,
+        "exceededFrameCount": 17,
+        "minDemandToCapacity": 0.919,
+        "medianDemandToCapacity": 1.106,
+        "maxDemandToCapacity": 1.15,
+        "replayedIdVsSourceRawMaeNm": 13.148
+      }
+    },
+    "lumbar_extension": {
+      "frameCount": 21,
+      "exceededFrameCount": 21,
+      "minDemandToCapacity": 1.084,
+      "medianDemandToCapacity": 1.199,
+      "maxDemandToCapacity": 1.232
+    }
+  },
+  "coordinates": [
+    {
+      "coordinate": "pelvis_tilt",
+      "targetMomentNm": -50.653,
+      "optimisticIndependentCapacityNm": 0.0,
+      "demandToCapacity": null,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [],
+      "unsupportedByMuscles": true,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "pelvis_list",
+      "targetMomentNm": 51.802,
+      "optimisticIndependentCapacityNm": 0.0,
+      "demandToCapacity": null,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [],
+      "unsupportedByMuscles": true,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "pelvis_rotation",
+      "targetMomentNm": -0.099,
+      "optimisticIndependentCapacityNm": 0.0,
+      "demandToCapacity": null,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [],
+      "unsupportedByMuscles": true,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "hip_flexion_r",
+      "targetMomentNm": -86.777,
+      "optimisticIndependentCapacityNm": 199.595,
+      "demandToCapacity": 0.435,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -113.432,
+      "sourceCsvDemandToCapacity": 0.568,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "add_mag2_r",
+          "optimisticMomentNm": 62.41
+        },
+        {
+          "muscle": "bifemlh_r",
+          "optimisticMomentNm": 25.834
+        },
+        {
+          "muscle": "psoas_r",
+          "optimisticMomentNm": 17.756
+        },
+        {
+          "muscle": "glut_med3_r",
+          "optimisticMomentNm": 16.343
+        },
+        {
+          "muscle": "iliacus_r",
+          "optimisticMomentNm": 15.741
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "hip_adduction_r",
+      "targetMomentNm": -48.937,
+      "optimisticIndependentCapacityNm": 165.001,
+      "demandToCapacity": 0.297,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -32.185,
+      "sourceCsvDemandToCapacity": 0.195,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "bifemlh_r",
+          "optimisticMomentNm": 44.788
+        },
+        {
+          "muscle": "glut_max2_r",
+          "optimisticMomentNm": 30.612
+        },
+        {
+          "muscle": "glut_med3_r",
+          "optimisticMomentNm": 28.898
+        },
+        {
+          "muscle": "glut_max1_r",
+          "optimisticMomentNm": 16.66
+        },
+        {
+          "muscle": "peri_r",
+          "optimisticMomentNm": 15.069
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "hip_rotation_r",
+      "targetMomentNm": -65.932,
+      "optimisticIndependentCapacityNm": 12.566,
+      "demandToCapacity": 5.247,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -45.732,
+      "sourceCsvDemandToCapacity": 3.639,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "quad_fem_r",
+          "optimisticMomentNm": 4.656
+        },
+        {
+          "muscle": "add_mag2_r",
+          "optimisticMomentNm": 3.328
+        },
+        {
+          "muscle": "bifemlh_r",
+          "optimisticMomentNm": 1.852
+        },
+        {
+          "muscle": "pect_r",
+          "optimisticMomentNm": 1.543
+        },
+        {
+          "muscle": "sar_r",
+          "optimisticMomentNm": 0.725
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": true
+    },
+    {
+      "coordinate": "knee_angle_r",
+      "targetMomentNm": 239.367,
+      "optimisticIndependentCapacityNm": 196.605,
+      "demandToCapacity": 1.218,
+      "sourceRawCsvMomentNmAssumingNmPerKg": 225.588,
+      "sourceCsvDemandToCapacity": 1.147,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "vas_int_r",
+          "optimisticMomentNm": 108.014
+        },
+        {
+          "muscle": "bifemlh_r",
+          "optimisticMomentNm": 53.728
+        },
+        {
+          "muscle": "rect_fem_r",
+          "optimisticMomentNm": 21.29
+        },
+        {
+          "muscle": "bifemsh_r",
+          "optimisticMomentNm": 13.573
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": true
+    },
+    {
+      "coordinate": "ankle_angle_r",
+      "targetMomentNm": -51.454,
+      "optimisticIndependentCapacityNm": 197.28,
+      "demandToCapacity": 0.261,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -61.399,
+      "sourceCsvDemandToCapacity": 0.311,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "soleus_r",
+          "optimisticMomentNm": 118.578
+        },
+        {
+          "muscle": "med_gas_r",
+          "optimisticMomentNm": 78.702
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "subtalar_angle_r",
+      "targetMomentNm": 19.08,
+      "optimisticIndependentCapacityNm": 136.164,
+      "demandToCapacity": 0.14,
+      "sourceRawCsvMomentNmAssumingNmPerKg": 12.546,
+      "sourceCsvDemandToCapacity": 0.092,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "tib_post_r",
+          "optimisticMomentNm": 70.072
+        },
+        {
+          "muscle": "tib_ant_r",
+          "optimisticMomentNm": 36.221
+        },
+        {
+          "muscle": "soleus_r",
+          "optimisticMomentNm": 21.216
+        },
+        {
+          "muscle": "med_gas_r",
+          "optimisticMomentNm": 8.654
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "mtp_angle_r",
+      "targetMomentNm": 0.038,
+      "optimisticIndependentCapacityNm": 0.0,
+      "demandToCapacity": null,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [],
+      "unsupportedByMuscles": true,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "hip_flexion_l",
+      "targetMomentNm": -98.055,
+      "optimisticIndependentCapacityNm": 192.525,
+      "demandToCapacity": 0.509,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -107.299,
+      "sourceCsvDemandToCapacity": 0.557,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "add_mag2_l",
+          "optimisticMomentNm": 59.578
+        },
+        {
+          "muscle": "psoas_l",
+          "optimisticMomentNm": 25.192
+        },
+        {
+          "muscle": "iliacus_l",
+          "optimisticMomentNm": 23.323
+        },
+        {
+          "muscle": "bifemlh_l",
+          "optimisticMomentNm": 16.297
+        },
+        {
+          "muscle": "glut_med3_l",
+          "optimisticMomentNm": 14.784
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "hip_adduction_l",
+      "targetMomentNm": -59.973,
+      "optimisticIndependentCapacityNm": 153.724,
+      "demandToCapacity": 0.39,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -32.885,
+      "sourceCsvDemandToCapacity": 0.214,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "bifemlh_l",
+          "optimisticMomentNm": 41.174
+        },
+        {
+          "muscle": "glut_max2_l",
+          "optimisticMomentNm": 29.229
+        },
+        {
+          "muscle": "glut_med3_l",
+          "optimisticMomentNm": 25.681
+        },
+        {
+          "muscle": "glut_max1_l",
+          "optimisticMomentNm": 15.193
+        },
+        {
+          "muscle": "peri_l",
+          "optimisticMomentNm": 14.029
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "hip_rotation_l",
+      "targetMomentNm": -95.49,
+      "optimisticIndependentCapacityNm": 10.385,
+      "demandToCapacity": 9.195,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -50.755,
+      "sourceCsvDemandToCapacity": 4.887,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "quad_fem_l",
+          "optimisticMomentNm": 3.946
+        },
+        {
+          "muscle": "add_mag2_l",
+          "optimisticMomentNm": 2.865
+        },
+        {
+          "muscle": "pect_l",
+          "optimisticMomentNm": 1.681
+        },
+        {
+          "muscle": "bifemlh_l",
+          "optimisticMomentNm": 1.034
+        },
+        {
+          "muscle": "sar_l",
+          "optimisticMomentNm": 0.592
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": true
+    },
+    {
+      "coordinate": "knee_angle_l",
+      "targetMomentNm": 109.069,
+      "optimisticIndependentCapacityNm": 185.755,
+      "demandToCapacity": 0.587,
+      "sourceRawCsvMomentNmAssumingNmPerKg": 124.077,
+      "sourceCsvDemandToCapacity": 0.668,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "vas_int_l",
+          "optimisticMomentNm": 109.757
+        },
+        {
+          "muscle": "bifemlh_l",
+          "optimisticMomentNm": 43.385
+        },
+        {
+          "muscle": "rect_fem_l",
+          "optimisticMomentNm": 22.047
+        },
+        {
+          "muscle": "bifemsh_l",
+          "optimisticMomentNm": 10.565
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "ankle_angle_l",
+      "targetMomentNm": -76.322,
+      "optimisticIndependentCapacityNm": 226.128,
+      "demandToCapacity": 0.338,
+      "sourceRawCsvMomentNmAssumingNmPerKg": -53.522,
+      "sourceCsvDemandToCapacity": 0.237,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "soleus_l",
+          "optimisticMomentNm": 129.503
+        },
+        {
+          "muscle": "med_gas_l",
+          "optimisticMomentNm": 85.128
+        },
+        {
+          "muscle": "tib_post_l",
+          "optimisticMomentNm": 11.498
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "subtalar_angle_l",
+      "targetMomentNm": 46.913,
+      "optimisticIndependentCapacityNm": 108.524,
+      "demandToCapacity": 0.432,
+      "sourceRawCsvMomentNmAssumingNmPerKg": 15.08,
+      "sourceCsvDemandToCapacity": 0.139,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "tib_post_l",
+          "optimisticMomentNm": 72.41
+        },
+        {
+          "muscle": "soleus_l",
+          "optimisticMomentNm": 16.695
+        },
+        {
+          "muscle": "tib_ant_l",
+          "optimisticMomentNm": 14.424
+        },
+        {
+          "muscle": "med_gas_l",
+          "optimisticMomentNm": 4.995
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "mtp_angle_l",
+      "targetMomentNm": 0.04,
+      "optimisticIndependentCapacityNm": 0.0,
+      "demandToCapacity": null,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [],
+      "unsupportedByMuscles": true,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "lumbar_extension",
+      "targetMomentNm": 157.798,
+      "optimisticIndependentCapacityNm": 128.725,
+      "demandToCapacity": 1.226,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "ercspn_r",
+          "optimisticMomentNm": 66.478
+        },
+        {
+          "muscle": "ercspn_l",
+          "optimisticMomentNm": 62.247
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": true
+    },
+    {
+      "coordinate": "lumbar_bending",
+      "targetMomentNm": -19.6,
+      "optimisticIndependentCapacityNm": 171.754,
+      "demandToCapacity": 0.114,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "intobl_l",
+          "optimisticMomentNm": 85.192
+        },
+        {
+          "muscle": "ercspn_l",
+          "optimisticMomentNm": 70.971
+        },
+        {
+          "muscle": "extobl_l",
+          "optimisticMomentNm": 15.591
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    },
+    {
+      "coordinate": "lumbar_rotation",
+      "targetMomentNm": 1.497,
+      "optimisticIndependentCapacityNm": 135.431,
+      "demandToCapacity": 0.011,
+      "sourceRawCsvMomentNmAssumingNmPerKg": null,
+      "sourceCsvDemandToCapacity": null,
+      "topMuscleCapacityContributors": [
+        {
+          "muscle": "extobl_r",
+          "optimisticMomentNm": 71.946
+        },
+        {
+          "muscle": "intobl_l",
+          "optimisticMomentNm": 36.109
+        },
+        {
+          "muscle": "ercspn_r",
+          "optimisticMomentNm": 27.376
+        }
+      ],
+      "unsupportedByMuscles": false,
+      "capacityExceeded": false
+    }
+  ]
+}

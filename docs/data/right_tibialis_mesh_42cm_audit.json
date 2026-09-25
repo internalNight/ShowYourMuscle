@@ -1,0 +1,132 @@
+{
+  "status": "research_only_unvalidated_tibialis_deformation",
+  "sourceScene": "assets\\blender\\opensim_thigh_mesh_motion.blend",
+  "outputScene": "assets\\blender\\opensim_four_muscle_42cm.blend",
+  "opensimMuscle": "tib_ant_r",
+  "atlasMesh": "Tibialis anterior muscle.r",
+  "vertexCount": 1761,
+  "shapeKeys": 102,
+  "requestedCalfCircumferenceCm": 42.0,
+  "appliedThicknessScale": 1.1666666666666667,
+  "referenceHighZ": 0.44729483127593994,
+  "referenceLowZ": 0.07843393087387085,
+  "radialMappingSamples": [
+    {
+      "vertexIndex": 0,
+      "originalBlenderM": [
+        -0.07408448308706284,
+        -0.09773752093315125,
+        0.08384925127029419
+      ],
+      "personalizedBlenderM": [
+        -0.0714254155755043,
+        -0.11395183950662613,
+        0.08076710999011993
+      ],
+      "pathFraction": 0.9853188006901233
+    },
+    {
+      "vertexIndex": 440,
+      "originalBlenderM": [
+        -0.10246199369430542,
+        -0.06705188751220703,
+        0.35051000118255615
+      ],
+      "personalizedBlenderM": [
+        -0.10383577644824982,
+        -0.07006078958511353,
+        0.3499070405960083
+      ],
+      "pathFraction": 0.2623884233538592
+    },
+    {
+      "vertexIndex": 880,
+      "originalBlenderM": [
+        -0.11329427361488342,
+        -0.06059635430574417,
+        0.29465097188949585
+      ],
+      "personalizedBlenderM": [
+        -0.11662526428699493,
+        -0.0642925500869751,
+        0.29388299584388733
+      ],
+      "pathFraction": 0.41382499261932576
+    },
+    {
+      "vertexIndex": 1320,
+      "originalBlenderM": [
+        -0.12112312018871307,
+        -0.0543273501098156,
+        0.4462234377861023
+      ],
+      "personalizedBlenderM": [
+        -0.1253575086593628,
+        -0.05231717228889465,
+        0.4465407133102417
+      ],
+      "pathFraction": 0.0029046003213400945
+    },
+    {
+      "vertexIndex": 1760,
+      "originalBlenderM": [
+        -0.1309284120798111,
+        -0.04409036040306091,
+        0.36293017864227295
+      ],
+      "personalizedBlenderM": [
+        -0.13702401518821716,
+        -0.04301012307405472,
+        0.36303725838661194
+      ],
+      "pathFraction": 0.22871671283594186
+    }
+  ],
+  "referenceMaximumRadialDistanceM": 0.10530920421604857,
+  "personalizedMaximumRadialDistanceM": 0.12286072796895674,
+  "limitations": [
+    "nearest surface/path agreement is a standing geometry screen, not an attachment validation",
+    "calf girth scales mesh cross section only",
+    "no measured fiber strain, EMG or muscle force"
+  ],
+  "sampledFrameDistortion": {
+    "1": {
+      "minimumEdgeRatio": 1.0,
+      "maximumEdgeRatio": 1.0,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "26": {
+      "minimumEdgeRatio": 0.7896,
+      "maximumEdgeRatio": 1.0149,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "51": {
+      "minimumEdgeRatio": 0.7917,
+      "maximumEdgeRatio": 1.0149,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "76": {
+      "minimumEdgeRatio": 0.7896,
+      "maximumEdgeRatio": 1.0149,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    },
+    "101": {
+      "minimumEdgeRatio": 1.0,
+      "maximumEdgeRatio": 1.0,
+      "edgesBelowHalf": 0,
+      "edgesAboveOneAndHalf": 0
+    }
+  },
+  "sampledFrames": [
+    1,
+    26,
+    51,
+    76,
+    101
+  ],
+  "checkedVertices": 25
+}

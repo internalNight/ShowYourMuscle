@@ -1,0 +1,2437 @@
+{
+  "source": "https://zenodo.org/records/12786141",
+  "paper": "https://doi.org/10.1371/journal.pone.0307949",
+  "method": "Each force-platform file is one continuous set at 100 Hz. The third column is tentatively interpreted as vertical force in N when its scale is plausible (>250 median and >400 N p95); the fourth is numerically checked as the resultant of the first three. These thresholds are a transparent screening heuristic, not a validated quality standard. Per-set statistics are descriptive only. Repetitions are not segmented.",
+  "summary": {
+    "archiveForceFiles": 380,
+    "uniqueSubjectIds": 76,
+    "paperParticipants": 72,
+    "allFiveLoadSeries": 76,
+    "plausibleForceScaleTraces": 365,
+    "allFivePlausibleForceScaleSubjects": 70,
+    "invalidForceScaleFiles": [
+      "S24_30",
+      "S33_10",
+      "S33_30",
+      "S33_50",
+      "S33_70",
+      "S33_90",
+      "S38_10",
+      "S38_30",
+      "S38_50",
+      "S38_70",
+      "S38_90",
+      "S49_10",
+      "S60_30",
+      "S65_50",
+      "S65_70"
+    ],
+    "monotonicMeanForceSubjects": 70,
+    "monotonicMedianForceSubjects": 71,
+    "validSubjectsMonotonicMedianForce": 70,
+    "endpointInterpolatedMiddleLoadMedianAbsoluteErrorN": {
+      "median": 37.15,
+      "min": 0.35,
+      "max": 195.7
+    },
+    "endpointInterpolatedMiddleLoadAbsoluteErrorFraction": {
+      "median": 0.0318,
+      "min": 0.0003,
+      "max": 0.1193
+    },
+    "linearMeanForceR2": {
+      "median": 0.9986,
+      "min": 0.0,
+      "max": 0.9999
+    },
+    "validSubjectsLinearMedianForceR2": {
+      "median": 0.9889,
+      "min": 0.9524,
+      "max": 0.9995
+    },
+    "maxResultantColumnErrorN": 5e-07,
+    "negativeVerticalForceSamples": 10647,
+    "byLoad": {
+      "10": {
+        "traces": 76,
+        "durationS": {
+          "median": 14.105,
+          "min": 9.16,
+          "max": 53.55
+        },
+        "meanFzN": {
+          "median": 753.7486,
+          "min": -9.9456,
+          "max": 1129.7511
+        },
+        "withinTraceP05ToP95FzN": {
+          "median": 489.6148,
+          "min": 0.0811,
+          "max": 1091.166
+        }
+      },
+      "30": {
+        "traces": 76,
+        "durationS": {
+          "median": 13.335,
+          "min": 8.76,
+          "max": 45.7
+        },
+        "meanFzN": {
+          "median": 925.097,
+          "min": -9.9419,
+          "max": 1483.5926
+        },
+        "withinTraceP05ToP95FzN": {
+          "median": 664.2443,
+          "min": 0.0826,
+          "max": 1679.2572
+        }
+      },
+      "50": {
+        "traces": 76,
+        "durationS": {
+          "median": 13.875,
+          "min": 9.12,
+          "max": 44.56
+        },
+        "meanFzN": {
+          "median": 1135.5937,
+          "min": -9.8119,
+          "max": 1824.1308
+        },
+        "withinTraceP05ToP95FzN": {
+          "median": 758.0972,
+          "min": 0.0782,
+          "max": 1803.7755
+        }
+      },
+      "70": {
+        "traces": 76,
+        "durationS": {
+          "median": 15.36,
+          "min": 8.32,
+          "max": 47.04
+        },
+        "meanFzN": {
+          "median": 1343.439,
+          "min": -9.9544,
+          "max": 2187.7986
+        },
+        "withinTraceP05ToP95FzN": {
+          "median": 809.4873,
+          "min": 0.0751,
+          "max": 2067.3885
+        }
+      },
+      "90": {
+        "traces": 76,
+        "durationS": {
+          "median": 18.855,
+          "min": 10.14,
+          "max": 55.93
+        },
+        "meanFzN": {
+          "median": 1521.2909,
+          "min": 9.5476,
+          "max": 2533.8341
+        },
+        "withinTraceP05ToP95FzN": {
+          "median": 720.1473,
+          "min": 0.0807,
+          "max": 1979.7634
+        }
+      }
+    }
+  },
+  "limitations": [
+    "The archive contains 76 complete subject IDs, while the paper reports 72 analyzed participants; no exclusion mapping is supplied.",
+    "Several force-platform files have a vertical-channel scale near 9.8 or near zero instead of hundreds of N; their meaning cannot be resolved from the archive. They fail the screening heuristic and cannot be pooled with putative force traces.",
+    "Individual body mass and 1RM are absent, so the exact external load and expected absolute support force cannot be reconstructed independently.",
+    "The traces contain multiple repetitions and possible setup/rerack periods, but no phase labels or individual joint kinematics. Means do not identify peak effort or muscle force.",
+    "Regressing the measured force against percentage load is a within-archive consistency check, not validation of the app model. Fitting individual 1RM or body mass from the same force trace would leak the target.",
+    "The 30/50/70% endpoint interpolation uses each person’s measured 10% and 90% forces as calibration. It holds out load conditions, not people, and the phone app cannot collect those force plate calibration values."
+  ],
+  "subjects": [
+    {
+      "subject": "01",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        864.4,
+        1097.8,
+        1313.9,
+        1511.5,
+        1697.7
+      ],
+      "durationSByLoad": [
+        11.72,
+        13.71,
+        14.72,
+        16.02,
+        21.15
+      ],
+      "linearMeanForceR2": 0.9979,
+      "linearMeanForceSlopeNPerPercent1RM": 10.402,
+      "linearMeanForceInterceptN": 777.0,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        903.9,
+        1151.4,
+        1388.3,
+        1639.1,
+        1765.2
+      ]
+    },
+    {
+      "subject": "02",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        800.2,
+        1027.2,
+        1226.9,
+        1442.4,
+        1633.0
+      ],
+      "durationSByLoad": [
+        18.02,
+        14.66,
+        13.65,
+        15.04,
+        17.34
+      ],
+      "linearMeanForceR2": 0.9992,
+      "linearMeanForceSlopeNPerPercent1RM": 10.404,
+      "linearMeanForceInterceptN": 705.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        815.9,
+        1061.8,
+        1252.6,
+        1477.7,
+        1688.6
+      ]
+    },
+    {
+      "subject": "03",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        900.0,
+        1130.3,
+        1346.3,
+        1559.7,
+        1754.3
+      ],
+      "durationSByLoad": [
+        14.32,
+        13.5,
+        14.29,
+        15.52,
+        16.72
+      ],
+      "linearMeanForceR2": 0.9991,
+      "linearMeanForceSlopeNPerPercent1RM": 10.689,
+      "linearMeanForceInterceptN": 803.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        898.8,
+        1153.4,
+        1399.6,
+        1630.6,
+        1850.7
+      ]
+    },
+    {
+      "subject": "05",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        868.2,
+        1118.7,
+        1343.1,
+        1565.7,
+        1783.6
+      ],
+      "durationSByLoad": [
+        14.86,
+        13.46,
+        15.37,
+        15.8,
+        17.66
+      ],
+      "linearMeanForceR2": 0.9993,
+      "linearMeanForceSlopeNPerPercent1RM": 11.389,
+      "linearMeanForceInterceptN": 766.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        882.5,
+        1143.5,
+        1372.8,
+        1660.3,
+        1861.6
+      ]
+    },
+    {
+      "subject": "06",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        879.3,
+        1092.4,
+        1317.4,
+        1504.5,
+        1698.3
+      ],
+      "durationSByLoad": [
+        18.52,
+        14.42,
+        13.53,
+        14.79,
+        15.95
+      ],
+      "linearMeanForceR2": 0.9987,
+      "linearMeanForceSlopeNPerPercent1RM": 10.25,
+      "linearMeanForceInterceptN": 785.9,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        880.2,
+        1095.0,
+        1342.7,
+        1541.8,
+        1722.8
+      ]
+    },
+    {
+      "subject": "07",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        887.9,
+        1146.9,
+        1391.5,
+        1612.8,
+        1853.0
+      ],
+      "durationSByLoad": [
+        15.56,
+        11.58,
+        12.32,
+        12.79,
+        18.83
+      ],
+      "linearMeanForceR2": 0.9993,
+      "linearMeanForceSlopeNPerPercent1RM": 11.981,
+      "linearMeanForceInterceptN": 779.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        918.3,
+        1216.6,
+        1521.2,
+        1796.5,
+        1972.8
+      ]
+    },
+    {
+      "subject": "08",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        886.1,
+        1111.5,
+        1328.3,
+        1546.7,
+        1744.9
+      ],
+      "durationSByLoad": [
+        14.29,
+        16.53,
+        18.75,
+        21.17,
+        23.75
+      ],
+      "linearMeanForceR2": 0.9995,
+      "linearMeanForceSlopeNPerPercent1RM": 10.764,
+      "linearMeanForceInterceptN": 785.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        910.8,
+        1135.7,
+        1356.4,
+        1579.3,
+        1778.2
+      ]
+    },
+    {
+      "subject": "09",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        814.2,
+        1064.2,
+        1257.0,
+        1502.9,
+        1716.1
+      ],
+      "durationSByLoad": [
+        17.32,
+        18.55,
+        18.51,
+        18.72,
+        20.55
+      ],
+      "linearMeanForceR2": 0.9987,
+      "linearMeanForceSlopeNPerPercent1RM": 11.212,
+      "linearMeanForceInterceptN": 710.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        825.0,
+        1077.2,
+        1262.0,
+        1531.3,
+        1749.4
+      ]
+    },
+    {
+      "subject": "10",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        974.3,
+        1333.8,
+        1681.8,
+        2022.2,
+        2328.9
+      ],
+      "durationSByLoad": [
+        14.87,
+        13.44,
+        13.02,
+        15.55,
+        16.68
+      ],
+      "linearMeanForceR2": 0.9992,
+      "linearMeanForceSlopeNPerPercent1RM": 16.988,
+      "linearMeanForceInterceptN": 818.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        992.6,
+        1397.7,
+        1780.0,
+        2157.5,
+        2429.5
+      ]
+    },
+    {
+      "subject": "11",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        838.4,
+        1096.6,
+        1346.6,
+        1578.3,
+        1823.8
+      ],
+      "durationSByLoad": [
+        18.9,
+        12.6,
+        11.32,
+        15.46,
+        14.69
+      ],
+      "linearMeanForceR2": 0.9996,
+      "linearMeanForceSlopeNPerPercent1RM": 12.262,
+      "linearMeanForceInterceptN": 723.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        852.8,
+        1149.5,
+        1468.7,
+        1655.7,
+        1975.0
+      ]
+    },
+    {
+      "subject": "12",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        853.1,
+        1060.7,
+        1232.5,
+        1427.9,
+        1591.6
+      ],
+      "durationSByLoad": [
+        11.04,
+        11.66,
+        11.44,
+        13.86,
+        19.41
+      ],
+      "linearMeanForceR2": 0.9986,
+      "linearMeanForceSlopeNPerPercent1RM": 9.221,
+      "linearMeanForceInterceptN": 772.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        896.8,
+        1133.9,
+        1385.8,
+        1567.3,
+        1672.9
+      ]
+    },
+    {
+      "subject": "14",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        692.6,
+        910.9,
+        1106.9,
+        1303.1,
+        1493.0
+      ],
+      "durationSByLoad": [
+        16.12,
+        14.81,
+        14.17,
+        15.95,
+        17.84
+      ],
+      "linearMeanForceR2": 0.9993,
+      "linearMeanForceSlopeNPerPercent1RM": 9.964,
+      "linearMeanForceInterceptN": 603.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        698.2,
+        914.9,
+        1133.1,
+        1366.5,
+        1552.4
+      ]
+    },
+    {
+      "subject": "15",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        587.5,
+        700.2,
+        833.5,
+        978.6,
+        1102.1
+      ],
+      "durationSByLoad": [
+        11.43,
+        10.05,
+        11.21,
+        11.95,
+        18.03
+      ],
+      "linearMeanForceR2": 0.9984,
+      "linearMeanForceSlopeNPerPercent1RM": 6.539,
+      "linearMeanForceInterceptN": 513.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        589.3,
+        761.9,
+        932.4,
+        1085.4,
+        1151.5
+      ]
+    },
+    {
+      "subject": "16",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        697.5,
+        773.7,
+        886.2,
+        1008.9,
+        1103.7
+      ],
+      "durationSByLoad": [
+        18.4,
+        17.27,
+        17.08,
+        19.74,
+        21.65
+      ],
+      "linearMeanForceR2": 0.9948,
+      "linearMeanForceSlopeNPerPercent1RM": 5.239,
+      "linearMeanForceInterceptN": 632.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        700.1,
+        777.5,
+        893.4,
+        1032.5,
+        1134.0
+      ]
+    },
+    {
+      "subject": "17",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        593.5,
+        640.1,
+        781.3,
+        880.3,
+        972.9
+      ],
+      "durationSByLoad": [
+        13.05,
+        13.87,
+        13.87,
+        14.71,
+        15.37
+      ],
+      "linearMeanForceR2": 0.984,
+      "linearMeanForceSlopeNPerPercent1RM": 4.996,
+      "linearMeanForceInterceptN": 523.9,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        593.3,
+        630.0,
+        802.0,
+        927.1,
+        1037.8
+      ]
+    },
+    {
+      "subject": "18",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        596.8,
+        672.3,
+        788.6,
+        910.9,
+        1010.1
+      ],
+      "durationSByLoad": [
+        11.47,
+        11.39,
+        15.61,
+        10.82,
+        11.43
+      ],
+      "linearMeanForceR2": 0.9946,
+      "linearMeanForceSlopeNPerPercent1RM": 5.326,
+      "linearMeanForceInterceptN": 529.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        624.8,
+        716.0,
+        834.9,
+        1018.3,
+        1126.9
+      ]
+    },
+    {
+      "subject": "19",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        637.7,
+        837.6,
+        1023.6,
+        1211.5,
+        1397.7
+      ],
+      "durationSByLoad": [
+        9.77,
+        10.56,
+        11.32,
+        12.62,
+        20.19
+      ],
+      "linearMeanForceR2": 0.9998,
+      "linearMeanForceSlopeNPerPercent1RM": 9.47,
+      "linearMeanForceInterceptN": 548.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        675.5,
+        894.0,
+        1103.8,
+        1351.4,
+        1453.8
+      ]
+    },
+    {
+      "subject": "20",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        915.1,
+        1123.4,
+        1291.4,
+        1451.5,
+        1661.3
+      ],
+      "durationSByLoad": [
+        11.16,
+        11.07,
+        9.56,
+        13.22,
+        14.55
+      ],
+      "linearMeanForceR2": 0.9975,
+      "linearMeanForceSlopeNPerPercent1RM": 9.102,
+      "linearMeanForceInterceptN": 833.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        942.6,
+        1188.4,
+        1425.2,
+        1575.0,
+        1812.1
+      ]
+    },
+    {
+      "subject": "21",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        704.8,
+        817.8,
+        943.3,
+        1062.2,
+        1206.6
+      ],
+      "durationSByLoad": [
+        10.67,
+        12.39,
+        14.2,
+        17.75,
+        20.43
+      ],
+      "linearMeanForceR2": 0.9982,
+      "linearMeanForceSlopeNPerPercent1RM": 6.241,
+      "linearMeanForceInterceptN": 634.9,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        753.6,
+        868.4,
+        1021.3,
+        1122.6,
+        1256.0
+      ]
+    },
+    {
+      "subject": "22",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        638.5,
+        755.0,
+        870.2,
+        997.3,
+        1107.7
+      ],
+      "durationSByLoad": [
+        11.28,
+        11.3,
+        11.95,
+        14.76,
+        13.09
+      ],
+      "linearMeanForceR2": 0.9997,
+      "linearMeanForceSlopeNPerPercent1RM": 5.904,
+      "linearMeanForceInterceptN": 578.6,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        662.6,
+        808.1,
+        957.2,
+        1078.8,
+        1162.3
+      ]
+    },
+    {
+      "subject": "23",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        592.9,
+        636.2,
+        730.8,
+        828.1,
+        911.1
+      ],
+      "durationSByLoad": [
+        14.92,
+        12.81,
+        12.77,
+        14.03,
+        19.19
+      ],
+      "linearMeanForceR2": 0.9867,
+      "linearMeanForceSlopeNPerPercent1RM": 4.142,
+      "linearMeanForceInterceptN": 532.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        596.0,
+        650.0,
+        759.8,
+        892.7,
+        937.9
+      ]
+    },
+    {
+      "subject": "24",
+      "monotonicMeanFz": false,
+      "monotonicMedianFz": false,
+      "meanFzNByLoad": [
+        755.0,
+        116.3,
+        1186.8,
+        1380.1,
+        1592.7
+      ],
+      "durationSByLoad": [
+        12.72,
+        14.44,
+        12.6,
+        14.03,
+        17.95
+      ],
+      "linearMeanForceR2": 0.6299,
+      "linearMeanForceSlopeNPerPercent1RM": 14.696,
+      "linearMeanForceInterceptN": 271.4,
+      "allFivePlausibleForceScale": false,
+      "medianFzNByLoad": [
+        771.1,
+        144.6,
+        1266.4,
+        1507.4,
+        1707.0
+      ]
+    },
+    {
+      "subject": "25",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        1129.8,
+        1483.6,
+        1824.1,
+        2187.8,
+        2533.8
+      ],
+      "durationSByLoad": [
+        21.05,
+        14.48,
+        16.28,
+        15.84,
+        22.21
+      ],
+      "linearMeanForceR2": 0.9999,
+      "linearMeanForceSlopeNPerPercent1RM": 17.562,
+      "linearMeanForceInterceptN": 953.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        1127.4,
+        1530.9,
+        1892.0,
+        2302.5,
+        2658.3
+      ]
+    },
+    {
+      "subject": "26",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        665.6,
+        748.0,
+        875.9,
+        974.1,
+        1098.6
+      ],
+      "durationSByLoad": [
+        9.52,
+        9.4,
+        9.12,
+        8.32,
+        12.86
+      ],
+      "linearMeanForceR2": 0.9959,
+      "linearMeanForceSlopeNPerPercent1RM": 5.46,
+      "linearMeanForceInterceptN": 599.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        660.3,
+        795.1,
+        985.1,
+        988.4,
+        1183.2
+      ]
+    },
+    {
+      "subject": "28",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        692.3,
+        910.0,
+        1235.1,
+        1324.5,
+        1524.2
+      ],
+      "durationSByLoad": [
+        14.57,
+        15.08,
+        17.06,
+        15.98,
+        16.92
+      ],
+      "linearMeanForceR2": 0.9729,
+      "linearMeanForceSlopeNPerPercent1RM": 10.39,
+      "linearMeanForceInterceptN": 617.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        701.9,
+        932.3,
+        1262.9,
+        1371.2,
+        1581.4
+      ]
+    },
+    {
+      "subject": "29",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        721.7,
+        907.2,
+        1104.0,
+        1280.8,
+        1458.7
+      ],
+      "durationSByLoad": [
+        14.67,
+        14.8,
+        12.77,
+        12.7,
+        27.68
+      ],
+      "linearMeanForceR2": 0.9996,
+      "linearMeanForceSlopeNPerPercent1RM": 9.237,
+      "linearMeanForceInterceptN": 632.6,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        746.3,
+        939.0,
+        1187.1,
+        1384.2,
+        1493.9
+      ]
+    },
+    {
+      "subject": "30",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        823.0,
+        1085.0,
+        1357.1,
+        1602.7,
+        1838.9
+      ],
+      "durationSByLoad": [
+        13.8,
+        14.72,
+        14.86,
+        17.04,
+        21.16
+      ],
+      "linearMeanForceR2": 0.9992,
+      "linearMeanForceSlopeNPerPercent1RM": 12.747,
+      "linearMeanForceInterceptN": 704.0,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        820.2,
+        1099.1,
+        1386.2,
+        1640.4,
+        1895.6
+      ]
+    },
+    {
+      "subject": "31",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        715.2,
+        853.6,
+        973.3,
+        1126.2,
+        1263.4
+      ],
+      "durationSByLoad": [
+        16.36,
+        14.94,
+        13.83,
+        16.51,
+        22.54
+      ],
+      "linearMeanForceR2": 0.9989,
+      "linearMeanForceSlopeNPerPercent1RM": 6.845,
+      "linearMeanForceInterceptN": 644.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        731.2,
+        886.6,
+        1032.0,
+        1171.8,
+        1296.1
+      ]
+    },
+    {
+      "subject": "32",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        760.3,
+        1019.2,
+        1251.0,
+        1458.6,
+        1656.1
+      ],
+      "durationSByLoad": [
+        13.15,
+        12.96,
+        15.16,
+        15.72,
+        19.41
+      ],
+      "linearMeanForceR2": 0.9968,
+      "linearMeanForceSlopeNPerPercent1RM": 11.155,
+      "linearMeanForceInterceptN": 671.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        765.1,
+        1062.3,
+        1331.5,
+        1591.5,
+        1694.4
+      ]
+    },
+    {
+      "subject": "33",
+      "monotonicMeanFz": false,
+      "monotonicMedianFz": false,
+      "meanFzNByLoad": [
+        9.6,
+        9.6,
+        -9.8,
+        9.5,
+        9.5
+      ],
+      "durationSByLoad": [
+        18.8,
+        21.61,
+        20.83,
+        20.32,
+        25.23
+      ],
+      "linearMeanForceR2": 0.0,
+      "linearMeanForceSlopeNPerPercent1RM": -0.001,
+      "linearMeanForceInterceptN": 5.7,
+      "allFivePlausibleForceScale": false,
+      "medianFzNByLoad": [
+        9.6,
+        9.6,
+        -10.0,
+        9.5,
+        9.5
+      ]
+    },
+    {
+      "subject": "34",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        621.8,
+        730.4,
+        902.9,
+        1029.8,
+        1172.1
+      ],
+      "durationSByLoad": [
+        15.28,
+        17.81,
+        16.4,
+        19.22,
+        23.19
+      ],
+      "linearMeanForceR2": 0.9965,
+      "linearMeanForceSlopeNPerPercent1RM": 7.0,
+      "linearMeanForceInterceptN": 541.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        629.4,
+        731.1,
+        938.1,
+        1056.5,
+        1203.7
+      ]
+    },
+    {
+      "subject": "35",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        967.5,
+        1238.1,
+        1531.1,
+        1800.2,
+        2086.5
+      ],
+      "durationSByLoad": [
+        13.78,
+        12.4,
+        14.24,
+        19.39,
+        23.82
+      ],
+      "linearMeanForceR2": 0.9999,
+      "linearMeanForceSlopeNPerPercent1RM": 14.0,
+      "linearMeanForceInterceptN": 824.6,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        987.7,
+        1289.1,
+        1636.5,
+        1871.0,
+        2152.7
+      ]
+    },
+    {
+      "subject": "36",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        865.7,
+        1044.9,
+        1232.4,
+        1435.8,
+        1600.0
+      ],
+      "durationSByLoad": [
+        9.16,
+        9.16,
+        9.16,
+        9.34,
+        10.14
+      ],
+      "linearMeanForceR2": 0.9991,
+      "linearMeanForceSlopeNPerPercent1RM": 9.297,
+      "linearMeanForceInterceptN": 770.9,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        904.3,
+        1049.4,
+        1276.1,
+        1527.5,
+        1759.2
+      ]
+    },
+    {
+      "subject": "37",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        639.8,
+        782.1,
+        956.7,
+        1100.0,
+        1269.2
+      ],
+      "durationSByLoad": [
+        14.23,
+        13.28,
+        11.8,
+        13.52,
+        15.75
+      ],
+      "linearMeanForceR2": 0.999,
+      "linearMeanForceSlopeNPerPercent1RM": 7.883,
+      "linearMeanForceInterceptN": 555.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        653.3,
+        801.5,
+        1008.6,
+        1183.2,
+        1348.1
+      ]
+    },
+    {
+      "subject": "38",
+      "monotonicMeanFz": false,
+      "monotonicMedianFz": false,
+      "meanFzNByLoad": [
+        -9.9,
+        -9.9,
+        9.6,
+        -10.0,
+        9.6
+      ],
+      "durationSByLoad": [
+        17.42,
+        16.3,
+        16.65,
+        19.58,
+        33.34
+      ],
+      "linearMeanForceR2": 0.3327,
+      "linearMeanForceSlopeNPerPercent1RM": 0.195,
+      "linearMeanForceInterceptN": -11.9,
+      "allFivePlausibleForceScale": false,
+      "medianFzNByLoad": [
+        -9.9,
+        -10.0,
+        9.6,
+        -10.0,
+        9.6
+      ]
+    },
+    {
+      "subject": "41",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        952.8,
+        1084.8,
+        1331.5,
+        1575.0,
+        1786.3
+      ],
+      "durationSByLoad": [
+        14.36,
+        13.84,
+        14.76,
+        17.32,
+        11.6
+      ],
+      "linearMeanForceR2": 0.9915,
+      "linearMeanForceSlopeNPerPercent1RM": 10.786,
+      "linearMeanForceInterceptN": 806.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        968.0,
+        1144.3,
+        1431.6,
+        1685.1,
+        1828.3
+      ]
+    },
+    {
+      "subject": "42",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        849.7,
+        1169.1,
+        1413.9,
+        1685.2,
+        1970.1
+      ],
+      "durationSByLoad": [
+        15.12,
+        10.0,
+        10.96,
+        13.12,
+        16.67
+      ],
+      "linearMeanForceR2": 0.9986,
+      "linearMeanForceSlopeNPerPercent1RM": 13.784,
+      "linearMeanForceInterceptN": 728.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        867.9,
+        1234.0,
+        1519.9,
+        1844.4,
+        2093.8
+      ]
+    },
+    {
+      "subject": "43",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        803.4,
+        1061.5,
+        1281.3,
+        1506.1,
+        1713.4
+      ],
+      "durationSByLoad": [
+        14.28,
+        15.87,
+        17.03,
+        19.16,
+        34.86
+      ],
+      "linearMeanForceR2": 0.9985,
+      "linearMeanForceSlopeNPerPercent1RM": 11.323,
+      "linearMeanForceInterceptN": 707.0,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        809.9,
+        1066.7,
+        1323.6,
+        1587.8,
+        1733.7
+      ]
+    },
+    {
+      "subject": "45",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        717.9,
+        859.2,
+        1033.6,
+        1180.3,
+        1299.4
+      ],
+      "durationSByLoad": [
+        14.02,
+        16.92,
+        16.8,
+        20.73,
+        28.2
+      ],
+      "linearMeanForceR2": 0.9964,
+      "linearMeanForceSlopeNPerPercent1RM": 7.42,
+      "linearMeanForceInterceptN": 647.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        710.5,
+        870.2,
+        1077.5,
+        1208.8,
+        1304.4
+      ]
+    },
+    {
+      "subject": "46",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        775.3,
+        889.1,
+        1021.5,
+        1143.6,
+        1286.6
+      ],
+      "durationSByLoad": [
+        18.19,
+        17.39,
+        16.36,
+        18.68,
+        18.48
+      ],
+      "linearMeanForceR2": 0.9987,
+      "linearMeanForceSlopeNPerPercent1RM": 6.385,
+      "linearMeanForceInterceptN": 704.0,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        779.7,
+        893.0,
+        1046.6,
+        1172.9,
+        1347.1
+      ]
+    },
+    {
+      "subject": "47",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        849.7,
+        1108.7,
+        1404.7,
+        1689.2,
+        1908.6
+      ],
+      "durationSByLoad": [
+        11.68,
+        13.04,
+        13.9,
+        16.08,
+        30.2
+      ],
+      "linearMeanForceR2": 0.9978,
+      "linearMeanForceSlopeNPerPercent1RM": 13.492,
+      "linearMeanForceInterceptN": 717.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        875.0,
+        1177.0,
+        1505.0,
+        1792.7,
+        1955.9
+      ]
+    },
+    {
+      "subject": "48",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        614.8,
+        728.4,
+        881.4,
+        1029.9,
+        1119.5
+      ],
+      "durationSByLoad": [
+        12.82,
+        12.32,
+        12.57,
+        13.76,
+        16.92
+      ],
+      "linearMeanForceR2": 0.9933,
+      "linearMeanForceSlopeNPerPercent1RM": 6.554,
+      "linearMeanForceInterceptN": 547.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        612.5,
+        766.7,
+        963.7,
+        1127.4,
+        1188.0
+      ]
+    },
+    {
+      "subject": "49",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        9.7,
+        759.9,
+        884.3,
+        984.1,
+        1061.7
+      ],
+      "durationSByLoad": [
+        14.17,
+        13.96,
+        15.0,
+        15.23,
+        15.85
+      ],
+      "linearMeanForceR2": 0.7554,
+      "linearMeanForceSlopeNPerPercent1RM": 11.641,
+      "linearMeanForceInterceptN": 157.9,
+      "allFivePlausibleForceScale": false,
+      "medianFzNByLoad": [
+        5.3,
+        774.6,
+        914.8,
+        1037.0,
+        1124.9
+      ]
+    },
+    {
+      "subject": "50",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        831.3,
+        1037.3,
+        1116.7,
+        1362.4,
+        1540.7
+      ],
+      "durationSByLoad": [
+        14.04,
+        13.24,
+        12.68,
+        14.31,
+        14.12
+      ],
+      "linearMeanForceR2": 0.9832,
+      "linearMeanForceSlopeNPerPercent1RM": 8.72,
+      "linearMeanForceInterceptN": 741.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        842.4,
+        1120.8,
+        1192.6,
+        1448.9,
+        1655.2
+      ]
+    },
+    {
+      "subject": "51",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        724.3,
+        834.4,
+        954.9,
+        1076.3,
+        1107.9
+      ],
+      "durationSByLoad": [
+        11.06,
+        11.32,
+        11.2,
+        12.78,
+        12.42
+      ],
+      "linearMeanForceR2": 0.9729,
+      "linearMeanForceSlopeNPerPercent1RM": 5.046,
+      "linearMeanForceInterceptN": 687.2,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        793.4,
+        917.9,
+        1054.0,
+        1158.2,
+        1187.7
+      ]
+    },
+    {
+      "subject": "52",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        693.1,
+        809.0,
+        937.0,
+        981.8,
+        1177.9
+      ],
+      "durationSByLoad": [
+        12.12,
+        12.84,
+        13.41,
+        13.27,
+        17.47
+      ],
+      "linearMeanForceR2": 0.9709,
+      "linearMeanForceSlopeNPerPercent1RM": 5.712,
+      "linearMeanForceInterceptN": 634.2,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        740.0,
+        865.5,
+        1038.9,
+        1074.7,
+        1245.7
+      ]
+    },
+    {
+      "subject": "53",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        877.8,
+        1116.2,
+        1319.3,
+        1517.1,
+        1730.2
+      ],
+      "durationSByLoad": [
+        25.56,
+        18.56,
+        19.48,
+        21.04,
+        27.9
+      ],
+      "linearMeanForceR2": 0.9989,
+      "linearMeanForceSlopeNPerPercent1RM": 10.528,
+      "linearMeanForceInterceptN": 785.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        876.1,
+        1140.4,
+        1381.7,
+        1591.3,
+        1778.2
+      ]
+    },
+    {
+      "subject": "56",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        932.4,
+        1201.9,
+        1422.8,
+        1648.9,
+        1842.0
+      ],
+      "durationSByLoad": [
+        19.5,
+        14.76,
+        15.98,
+        19.29,
+        25.81
+      ],
+      "linearMeanForceR2": 0.9967,
+      "linearMeanForceSlopeNPerPercent1RM": 11.332,
+      "linearMeanForceInterceptN": 843.0,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        929.1,
+        1273.2,
+        1521.4,
+        1757.3,
+        1908.7
+      ]
+    },
+    {
+      "subject": "57",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        739.7,
+        956.3,
+        1180.1,
+        1368.9,
+        1564.2
+      ],
+      "durationSByLoad": [
+        10.66,
+        10.39,
+        11.4,
+        13.66,
+        22.52
+      ],
+      "linearMeanForceR2": 0.9987,
+      "linearMeanForceSlopeNPerPercent1RM": 10.307,
+      "linearMeanForceInterceptN": 646.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        762.3,
+        1021.5,
+        1320.8,
+        1504.9,
+        1626.5
+      ]
+    },
+    {
+      "subject": "59",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        752.5,
+        943.7,
+        1113.5,
+        1303.2,
+        1470.5
+      ],
+      "durationSByLoad": [
+        24.38,
+        26.09,
+        27.62,
+        26.89,
+        37.78
+      ],
+      "linearMeanForceR2": 0.9995,
+      "linearMeanForceSlopeNPerPercent1RM": 8.978,
+      "linearMeanForceInterceptN": 667.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        747.4,
+        951.5,
+        1161.4,
+        1426.0,
+        1528.7
+      ]
+    },
+    {
+      "subject": "60",
+      "monotonicMeanFz": false,
+      "monotonicMedianFz": false,
+      "meanFzNByLoad": [
+        735.5,
+        3.1,
+        1205.1,
+        1450.8,
+        1662.7
+      ],
+      "durationSByLoad": [
+        26.02,
+        23.36,
+        21.34,
+        24.33,
+        38.2
+      ],
+      "linearMeanForceR2": 0.6239,
+      "linearMeanForceSlopeNPerPercent1RM": 16.51,
+      "linearMeanForceInterceptN": 185.9,
+      "allFivePlausibleForceScale": false,
+      "medianFzNByLoad": [
+        719.3,
+        2.9,
+        1250.1,
+        1607.0,
+        1748.8
+      ]
+    },
+    {
+      "subject": "62",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        788.9,
+        994.9,
+        1188.6,
+        1413.1,
+        1609.4
+      ],
+      "durationSByLoad": [
+        25.73,
+        24.84,
+        28.41,
+        33.76,
+        41.02
+      ],
+      "linearMeanForceR2": 0.9996,
+      "linearMeanForceSlopeNPerPercent1RM": 10.296,
+      "linearMeanForceInterceptN": 684.2,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        776.5,
+        1023.3,
+        1239.0,
+        1456.2,
+        1633.1
+      ]
+    },
+    {
+      "subject": "63",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        696.1,
+        861.1,
+        1037.5,
+        1209.5,
+        1354.8
+      ],
+      "durationSByLoad": [
+        31.03,
+        32.18,
+        32.41,
+        33.88,
+        35.93
+      ],
+      "linearMeanForceR2": 0.999,
+      "linearMeanForceSlopeNPerPercent1RM": 8.329,
+      "linearMeanForceInterceptN": 615.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        694.3,
+        854.2,
+        1025.0,
+        1231.8,
+        1402.8
+      ]
+    },
+    {
+      "subject": "64",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        713.1,
+        998.3,
+        1100.2,
+        1296.5,
+        1470.5
+      ],
+      "durationSByLoad": [
+        53.55,
+        45.7,
+        44.56,
+        47.04,
+        55.93
+      ],
+      "linearMeanForceR2": 0.9821,
+      "linearMeanForceSlopeNPerPercent1RM": 9.065,
+      "linearMeanForceInterceptN": 662.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        719.0,
+        1008.3,
+        1124.7,
+        1323.5,
+        1499.2
+      ]
+    },
+    {
+      "subject": "65",
+      "monotonicMeanFz": false,
+      "monotonicMedianFz": false,
+      "meanFzNByLoad": [
+        617.0,
+        833.5,
+        8.8,
+        7.0,
+        1451.6
+      ],
+      "durationSByLoad": [
+        14.57,
+        14.1,
+        14.13,
+        15.61,
+        20.42
+      ],
+      "linearMeanForceR2": 0.048,
+      "linearMeanForceSlopeNPerPercent1RM": 4.214,
+      "linearMeanForceInterceptN": 372.9,
+      "allFivePlausibleForceScale": false,
+      "medianFzNByLoad": [
+        611.3,
+        832.5,
+        6.2,
+        36.9,
+        1488.7
+      ]
+    },
+    {
+      "subject": "66",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        844.9,
+        1107.6,
+        1334.5,
+        1558.9,
+        1749.9
+      ],
+      "durationSByLoad": [
+        11.39,
+        12.87,
+        14.7,
+        14.01,
+        17.91
+      ],
+      "linearMeanForceR2": 0.9969,
+      "linearMeanForceSlopeNPerPercent1RM": 11.307,
+      "linearMeanForceInterceptN": 753.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        906.6,
+        1166.5,
+        1418.1,
+        1695.2,
+        1803.0
+      ]
+    },
+    {
+      "subject": "67",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        869.1,
+        1112.3,
+        1341.7,
+        1558.6,
+        1730.1
+      ],
+      "durationSByLoad": [
+        14.19,
+        13.93,
+        14.42,
+        19.49,
+        23.76
+      ],
+      "linearMeanForceR2": 0.9961,
+      "linearMeanForceSlopeNPerPercent1RM": 10.841,
+      "linearMeanForceInterceptN": 780.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        900.3,
+        1164.6,
+        1456.0,
+        1649.4,
+        1791.3
+      ]
+    },
+    {
+      "subject": "68",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        734.4,
+        974.6,
+        1172.0,
+        1390.4,
+        1518.4
+      ],
+      "durationSByLoad": [
+        12.45,
+        12.58,
+        11.8,
+        15.4,
+        24.23
+      ],
+      "linearMeanForceR2": 0.9909,
+      "linearMeanForceSlopeNPerPercent1RM": 9.919,
+      "linearMeanForceInterceptN": 662.0,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        733.5,
+        994.2,
+        1259.0,
+        1443.4,
+        1525.9
+      ]
+    },
+    {
+      "subject": "69",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        646.6,
+        817.0,
+        984.3,
+        1160.5,
+        1333.2
+      ],
+      "durationSByLoad": [
+        9.7,
+        10.52,
+        10.53,
+        11.08,
+        12.87
+      ],
+      "linearMeanForceR2": 0.9999,
+      "linearMeanForceSlopeNPerPercent1RM": 8.583,
+      "linearMeanForceInterceptN": 559.2,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        661.8,
+        859.4,
+        1083.5,
+        1330.7,
+        1468.2
+      ]
+    },
+    {
+      "subject": "71",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        852.9,
+        1040.5,
+        1238.1,
+        1432.7,
+        1616.6
+      ],
+      "durationSByLoad": [
+        10.97,
+        11.08,
+        14.28,
+        16.4,
+        26.04
+      ],
+      "linearMeanForceR2": 0.9999,
+      "linearMeanForceSlopeNPerPercent1RM": 9.598,
+      "linearMeanForceInterceptN": 756.2,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        910.6,
+        1143.1,
+        1370.2,
+        1561.0,
+        1692.4
+      ]
+    },
+    {
+      "subject": "73",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        832.5,
+        1116.8,
+        1398.0,
+        1634.5,
+        1863.8
+      ],
+      "durationSByLoad": [
+        10.18,
+        8.76,
+        9.76,
+        11.12,
+        17.37
+      ],
+      "linearMeanForceR2": 0.9973,
+      "linearMeanForceSlopeNPerPercent1RM": 12.901,
+      "linearMeanForceInterceptN": 724.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        909.0,
+        1207.5,
+        1639.8,
+        1853.1,
+        1979.2
+      ]
+    },
+    {
+      "subject": "74",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        1077.2,
+        1339.7,
+        1568.4,
+        1810.5,
+        2041.2
+      ],
+      "durationSByLoad": [
+        15.02,
+        12.85,
+        13.54,
+        14.87,
+        20.15
+      ],
+      "linearMeanForceR2": 0.9995,
+      "linearMeanForceSlopeNPerPercent1RM": 11.993,
+      "linearMeanForceInterceptN": 967.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        1113.8,
+        1447.9,
+        1743.4,
+        1989.1,
+        2130.3
+      ]
+    },
+    {
+      "subject": "75",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        793.5,
+        907.2,
+        1055.8,
+        1203.3,
+        1320.5
+      ],
+      "durationSByLoad": [
+        14.69,
+        12.56,
+        12.14,
+        13.56,
+        13.38
+      ],
+      "linearMeanForceR2": 0.9977,
+      "linearMeanForceSlopeNPerPercent1RM": 6.75,
+      "linearMeanForceInterceptN": 718.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        815.4,
+        958.8,
+        1165.2,
+        1333.9,
+        1453.1
+      ]
+    },
+    {
+      "subject": "76",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        627.0,
+        778.9,
+        924.8,
+        1099.7,
+        1247.6
+      ],
+      "durationSByLoad": [
+        14.44,
+        15.63,
+        16.11,
+        17.48,
+        18.86
+      ],
+      "linearMeanForceR2": 0.9992,
+      "linearMeanForceSlopeNPerPercent1RM": 7.81,
+      "linearMeanForceInterceptN": 545.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        642.3,
+        798.0,
+        975.9,
+        1142.4,
+        1291.5
+      ]
+    },
+    {
+      "subject": "77",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        667.6,
+        816.6,
+        985.8,
+        1165.7,
+        1337.7
+      ],
+      "durationSByLoad": [
+        11.47,
+        10.9,
+        11.07,
+        14.24,
+        16.78
+      ],
+      "linearMeanForceR2": 0.9989,
+      "linearMeanForceSlopeNPerPercent1RM": 8.446,
+      "linearMeanForceInterceptN": 572.4,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        710.7,
+        884.8,
+        1137.8,
+        1263.2,
+        1411.8
+      ]
+    },
+    {
+      "subject": "82",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        712.2,
+        875.6,
+        1027.5,
+        1177.3,
+        1315.2
+      ],
+      "durationSByLoad": [
+        11.59,
+        13.39,
+        12.73,
+        15.32,
+        18.7
+      ],
+      "linearMeanForceR2": 0.9991,
+      "linearMeanForceSlopeNPerPercent1RM": 7.538,
+      "linearMeanForceInterceptN": 644.6,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        764.9,
+        913.4,
+        1112.6,
+        1261.7,
+        1384.1
+      ]
+    },
+    {
+      "subject": "83",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        769.2,
+        911.5,
+        1085.5,
+        1237.9,
+        1373.0
+      ],
+      "durationSByLoad": [
+        10.62,
+        10.6,
+        11.35,
+        14.49,
+        18.85
+      ],
+      "linearMeanForceR2": 0.9984,
+      "linearMeanForceSlopeNPerPercent1RM": 7.67,
+      "linearMeanForceInterceptN": 691.9,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        856.5,
+        1023.2,
+        1246.1,
+        1348.3,
+        1469.9
+      ]
+    },
+    {
+      "subject": "85",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        1056.6,
+        1353.6,
+        1599.6,
+        1862.8,
+        2139.3
+      ],
+      "durationSByLoad": [
+        13.18,
+        11.53,
+        15.42,
+        15.14,
+        21.25
+      ],
+      "linearMeanForceR2": 0.9993,
+      "linearMeanForceSlopeNPerPercent1RM": 13.372,
+      "linearMeanForceInterceptN": 933.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        1098.8,
+        1497.1,
+        1786.7,
+        2085.2,
+        2212.3
+      ]
+    },
+    {
+      "subject": "86",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        749.7,
+        938.7,
+        1154.5,
+        1374.0,
+        1552.4
+      ],
+      "durationSByLoad": [
+        15.06,
+        17.99,
+        16.08,
+        14.95,
+        15.38
+      ],
+      "linearMeanForceR2": 0.9988,
+      "linearMeanForceSlopeNPerPercent1RM": 10.204,
+      "linearMeanForceInterceptN": 643.7,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        755.2,
+        970.4,
+        1203.7,
+        1495.9,
+        1599.3
+      ]
+    },
+    {
+      "subject": "87",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        999.0,
+        1161.8,
+        1336.4,
+        1509.7,
+        1649.1
+      ],
+      "durationSByLoad": [
+        12.92,
+        14.88,
+        13.59,
+        15.27,
+        21.0
+      ],
+      "linearMeanForceR2": 0.9986,
+      "linearMeanForceSlopeNPerPercent1RM": 8.24,
+      "linearMeanForceInterceptN": 919.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        1028.0,
+        1209.6,
+        1448.7,
+        1618.5,
+        1715.5
+      ]
+    },
+    {
+      "subject": "88",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        668.5,
+        786.9,
+        912.1,
+        1057.7,
+        1180.9
+      ],
+      "durationSByLoad": [
+        12.54,
+        12.17,
+        12.43,
+        14.79,
+        17.89
+      ],
+      "linearMeanForceR2": 0.9988,
+      "linearMeanForceSlopeNPerPercent1RM": 6.478,
+      "linearMeanForceInterceptN": 597.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        668.9,
+        846.1,
+        1010.7,
+        1142.5,
+        1247.6
+      ]
+    },
+    {
+      "subject": "89",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        693.8,
+        807.8,
+        935.6,
+        1051.8,
+        1174.8
+      ],
+      "durationSByLoad": [
+        10.96,
+        11.07,
+        10.74,
+        15.9,
+        19.79
+      ],
+      "linearMeanForceR2": 0.9998,
+      "linearMeanForceSlopeNPerPercent1RM": 6.03,
+      "linearMeanForceInterceptN": 631.3,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        686.8,
+        804.0,
+        992.3,
+        1067.7,
+        1203.0
+      ]
+    },
+    {
+      "subject": "90",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        741.4,
+        890.7,
+        1064.9,
+        1212.3,
+        1353.6
+      ],
+      "durationSByLoad": [
+        10.94,
+        10.57,
+        11.33,
+        11.88,
+        16.42
+      ],
+      "linearMeanForceR2": 0.9987,
+      "linearMeanForceSlopeNPerPercent1RM": 7.73,
+      "linearMeanForceInterceptN": 666.1,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        772.2,
+        990.3,
+        1144.8,
+        1333.8,
+        1417.0
+      ]
+    },
+    {
+      "subject": "92",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        770.7,
+        1035.6,
+        1264.6,
+        1477.2,
+        1679.1
+      ],
+      "durationSByLoad": [
+        11.49,
+        11.24,
+        13.88,
+        16.11,
+        18.88
+      ],
+      "linearMeanForceR2": 0.997,
+      "linearMeanForceSlopeNPerPercent1RM": 11.292,
+      "linearMeanForceInterceptN": 680.8,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        773.2,
+        1081.3,
+        1327.8,
+        1547.1,
+        1698.9
+      ]
+    },
+    {
+      "subject": "93",
+      "monotonicMeanFz": false,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        761.9,
+        601.7,
+        1056.8,
+        1240.7,
+        1398.3
+      ],
+      "durationSByLoad": [
+        10.66,
+        9.77,
+        12.53,
+        12.9,
+        17.97
+      ],
+      "linearMeanForceR2": 0.8414,
+      "linearMeanForceSlopeNPerPercent1RM": 9.56,
+      "linearMeanForceInterceptN": 533.9,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        806.2,
+        909.8,
+        1129.9,
+        1322.9,
+        1438.9
+      ]
+    },
+    {
+      "subject": "94",
+      "monotonicMeanFz": true,
+      "monotonicMedianFz": true,
+      "meanFzNByLoad": [
+        608.7,
+        744.7,
+        886.5,
+        1041.6,
+        1179.6
+      ],
+      "durationSByLoad": [
+        10.77,
+        11.24,
+        12.19,
+        12.24,
+        11.64
+      ],
+      "linearMeanForceR2": 0.9995,
+      "linearMeanForceSlopeNPerPercent1RM": 7.194,
+      "linearMeanForceInterceptN": 532.5,
+      "allFivePlausibleForceScale": true,
+      "medianFzNByLoad": [
+        605.4,
+        762.3,
+        891.8,
+        1092.8,
+        1283.9
+      ]
+    }
+  ]
+}

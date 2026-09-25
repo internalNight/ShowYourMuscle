@@ -1,0 +1,710 @@
+{
+  "status": "surface_proximity_screen_not_anatomical_registration",
+  "sourcePoints": 30,
+  "screenedPoints": 30,
+  "unmatchedPoints": 0,
+  "distanceMedianM": 0.021984457038342953,
+  "distanceMaximumM": 0.08893851935863495,
+  "pointsOver20mm": 18,
+  "pointsOver50mm": 4,
+  "points": [
+    {
+      "muscle": "bifemsh_r",
+      "point": "bfsh_r-P1",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.12647990882396698,
+        -0.053154680877923965,
+        0.6836597323417664
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.12333408743143082,
+        -0.05600081756711006,
+        0.6839790940284729
+      ],
+      "nearestDistanceM": 0.004254254046827555,
+      "nearestFaceIndex": 2762,
+      "nearestFaceNormal": [
+        -0.7394542098045349,
+        0.6690086722373962,
+        -0.07506603747606277
+      ]
+    },
+    {
+      "muscle": "bifemsh_r",
+      "point": "bfsh_r-P2",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.12901374697685242,
+        -0.04821329191327095,
+        0.4546889662742615
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.12476453930139542,
+        -0.04629335179924965,
+        0.45484310388565063
+      ],
+      "nearestDistanceM": 0.004665371496230364,
+      "nearestFaceIndex": 1340,
+      "nearestFaceNormal": [
+        -0.910797119140625,
+        -0.41153019666671753,
+        -0.03303849697113037
+      ]
+    },
+    {
+      "muscle": "med_gas_r",
+      "point": "gasmed_r-P1",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.07905053347349167,
+        -0.08559582382440567,
+        0.5200016498565674
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.08295311033725739,
+        -0.0652945265173912,
+        0.5219950079917908
+      ],
+      "nearestDistanceM": 0.020768877118825912,
+      "nearestFaceIndex": 2837,
+      "nearestFaceNormal": [
+        0.07933730632066727,
+        -0.9856839179992676,
+        -0.14877039194107056
+      ]
+    },
+    {
+      "muscle": "med_gas_r",
+      "point": "gasmed_r-P2",
+      "parentFrame": "/bodyset/calcn_r",
+      "atlasBone": "Calcaneus.r",
+      "sourceBlenderM": [
+        -0.09262000024318695,
+        0.04436999931931496,
+        0.08905000239610672
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09138461947441101,
+        0.025349773466587067,
+        0.08251318335533142
+      ],
+      "nearestDistanceM": 0.020150067284703255,
+      "nearestFaceIndex": 491,
+      "nearestFaceNormal": [
+        0.14696358144283295,
+        0.9323025345802307,
+        0.33047497272491455
+      ]
+    },
+    {
+      "muscle": "glut_max2_r",
+      "point": "glmax2_r-P1",
+      "parentFrame": "/bodyset/pelvis",
+      "atlasBone": "Hip bone.r",
+      "sourceBlenderM": [
+        -0.07770518958568573,
+        0.06405732035636902,
+        0.9788766503334045
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.06403578817844391,
+        0.020774446427822113,
+        0.9914928078651428
+      ],
+      "nearestDistanceM": 0.047110795974731445,
+      "nearestFaceIndex": 1761,
+      "nearestFaceNormal": [
+        -0.4999741315841675,
+        0.8641476035118103,
+        -0.05722740665078163
+      ]
+    },
+    {
+      "muscle": "glut_max2_r",
+      "point": "glmax2_r-P2",
+      "parentFrame": "/bodyset/pelvis",
+      "atlasBone": "Hip bone.r",
+      "sourceBlenderM": [
+        -0.11139703541994095,
+        0.06685803085565567,
+        0.9085881114006042
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.08130581676959991,
+        -0.009811555966734886,
+        0.8750269412994385
+      ],
+      "nearestDistanceM": 0.08893851935863495,
+      "nearestFaceIndex": 3136,
+      "nearestFaceNormal": [
+        -0.3337922692298889,
+        0.8629522323608398,
+        0.3793363869190216
+      ]
+    },
+    {
+      "muscle": "glut_max2_r",
+      "point": "glmax2_r-P3",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.13097260892391205,
+        0.02284690923988819,
+        0.8251662850379944
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.13158255815505981,
+        -0.02987735904753208,
+        0.8412067294120789
+      ],
+      "nearestDistanceM": 0.055113665759563446,
+      "nearestFaceIndex": 3726,
+      "nearestFaceNormal": [
+        0.06119934841990471,
+        0.963175892829895,
+        -0.261814683675766
+      ]
+    },
+    {
+      "muscle": "glut_max2_r",
+      "point": "glmax2_r-P4",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.1469898223876953,
+        -0.013639739714562893,
+        0.7874613404273987
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.1364227682352066,
+        -0.045287586748600006,
+        0.7920450568199158
+      ],
+      "nearestDistanceM": 0.03367876634001732,
+      "nearestFaceIndex": 3736,
+      "nearestFaceNormal": [
+        -0.5512911677360535,
+        0.826286256313324,
+        -0.11545099318027496
+      ]
+    },
+    {
+      "muscle": "psoas_r",
+      "point": "iliacus_r-P1",
+      "parentFrame": "/bodyset/pelvis",
+      "atlasBone": "Hip bone.r",
+      "sourceBlenderM": [
+        -0.11637882888317108,
+        -0.007079916540533304,
+        1.0002713203430176
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09465326368808746,
+        -0.030486099421977997,
+        1.005700945854187
+      ],
+      "nearestDistanceM": 0.03239336982369423,
+      "nearestFaceIndex": 2430,
+      "nearestFaceNormal": [
+        -0.6706792712211609,
+        0.7225610017776489,
+        -0.16761541366577148
+      ]
+    },
+    {
+      "muscle": "psoas_r",
+      "point": "iliacus_r-P2",
+      "parentFrame": "/bodyset/pelvis",
+      "atlasBone": "Hip bone.r",
+      "sourceBlenderM": [
+        -0.10603364557027817,
+        -0.05405517295002937,
+        0.9138389825820923
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.10664459317922592,
+        -0.05186493694782257,
+        0.9200390577316284
+      ],
+      "nearestDistanceM": 0.006603886839002371,
+      "nearestFaceIndex": 1143,
+      "nearestFaceNormal": [
+        0.09251387417316437,
+        -0.3316590189933777,
+        -0.9388522505760193
+      ]
+    },
+    {
+      "muscle": "psoas_r",
+      "point": "iliacus_r-P3",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.11994269490242004,
+        -0.018880179151892662,
+        0.8347465395927429
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.12294889986515045,
+        -0.03189133480191231,
+        0.8358158469200134
+      ],
+      "nearestDistanceM": 0.013396672904491425,
+      "nearestFaceIndex": 3697,
+      "nearestFaceNormal": [
+        0.06120622158050537,
+        0.9631766676902771,
+        -0.2618102431297302
+      ]
+    },
+    {
+      "muscle": "psoas_r",
+      "point": "iliacus_r-P4",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.12544827163219452,
+        -0.01038496196269989,
+        0.8258100748062134
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.12606336176395416,
+        -0.03263391926884651,
+        0.8323558568954468
+      ],
+      "nearestDistanceM": 0.023200036957859993,
+      "nearestFaceIndex": 3726,
+      "nearestFaceNormal": [
+        0.06119934841990471,
+        0.963175892829895,
+        -0.261814683675766
+      ]
+    },
+    {
+      "muscle": "rect_fem_r",
+      "point": "recfem_r-P1",
+      "parentFrame": "/bodyset/pelvis",
+      "atlasBone": "Hip bone.r",
+      "sourceBlenderM": [
+        -0.12404891848564148,
+        -0.043529246002435684,
+        0.9303860664367676
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.11269450187683105,
+        -0.0491965152323246,
+        0.9236980080604553
+      ],
+      "nearestDistanceM": 0.0143447145819664,
+      "nearestFaceIndex": 1125,
+      "nearestFaceNormal": [
+        -0.7915412187576294,
+        0.3950773775577545,
+        0.4662363529205322
+      ]
+    },
+    {
+      "muscle": "rect_fem_r",
+      "point": "recfem_r-P2",
+      "parentFrame": "/bodyset/patella_r",
+      "atlasBone": "Patella.r",
+      "sourceBlenderM": [
+        -0.10060880333185196,
+        -0.12917007505893707,
+        0.5185129642486572
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.10676312446594238,
+        -0.08287689089775085,
+        0.4927785396575928
+      ],
+      "nearestDistanceM": 0.05332162231206894,
+      "nearestFaceIndex": 86,
+      "nearestFaceNormal": [
+        0.17539741098880768,
+        -0.7758574485778809,
+        0.6060372591018677
+      ]
+    },
+    {
+      "muscle": "rect_fem_r",
+      "point": "recfem_r-P3",
+      "parentFrame": "/bodyset/patella_r",
+      "atlasBone": "Patella.r",
+      "sourceBlenderM": [
+        -0.09881002455949783,
+        -0.13157038390636444,
+        0.5133755803108215
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.10516656190156937,
+        -0.0829673558473587,
+        0.492095023393631
+      ],
+      "nearestDistanceM": 0.05343708395957947,
+      "nearestFaceIndex": 104,
+      "nearestFaceNormal": [
+        0.18537047505378723,
+        -0.819995105266571,
+        0.5415218472480774
+      ]
+    },
+    {
+      "muscle": "rect_fem_r",
+      "point": "recfem_r-P4",
+      "parentFrame": "/bodyset/patella_r",
+      "atlasBone": "Patella.r",
+      "sourceBlenderM": [
+        -0.0989970862865448,
+        -0.1268167942762375,
+        0.47179728746414185
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09839659929275513,
+        -0.08288048952817917,
+        0.4834246039390564
+      ],
+      "nearestDistanceM": 0.04545276612043381,
+      "nearestFaceIndex": 178,
+      "nearestFaceNormal": [
+        -0.05757324397563934,
+        -0.9137051105499268,
+        -0.40227892994880676
+      ]
+    },
+    {
+      "muscle": "rect_fem_r",
+      "point": "recfem_r-P5",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.09620422124862671,
+        -0.10580409318208694,
+        0.42259901762008667
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09585190564393997,
+        -0.06927401572465897,
+        0.4248579144477844
+      ],
+      "nearestDistanceM": 0.03660154715180397,
+      "nearestFaceIndex": 1127,
+      "nearestFaceNormal": [
+        -0.12609107792377472,
+        -0.988594651222229,
+        -0.08235065639019012
+      ]
+    },
+    {
+      "muscle": "semimem_r",
+      "point": "semimem_r-P1",
+      "parentFrame": "/bodyset/pelvis",
+      "atlasBone": "Hip bone.r",
+      "sourceBlenderM": [
+        -0.09050437808036804,
+        0.03114522062242031,
+        0.8558794856071472
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.07655936479568481,
+        -0.006761811673641205,
+        0.8619040250778198
+      ],
+      "nearestDistanceM": 0.04083750396966934,
+      "nearestFaceIndex": 3147,
+      "nearestFaceNormal": [
+        -0.32645025849342346,
+        0.9451695680618286,
+        0.009199144318699837
+      ]
+    },
+    {
+      "muscle": "semimem_r",
+      "point": "semimem_r-P2",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.077626071870327,
+        -0.04943004623055458,
+        0.4557071924209595
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.07646462321281433,
+        -0.05763596296310425,
+        0.458956778049469
+      ],
+      "nearestDistanceM": 0.008902013301849365,
+      "nearestFaceIndex": 612,
+      "nearestFaceNormal": [
+        0.130471333861351,
+        -0.9218053817749023,
+        0.36503735184669495
+      ]
+    },
+    {
+      "muscle": "soleus_r",
+      "point": "soleus_r-P1",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.10597824305295944,
+        -0.0609072707593441,
+        0.4020717740058899
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.10777685046195984,
+        -0.06111457943916321,
+        0.40200358629226685
+      ],
+      "nearestDistanceM": 0.0018117987783625722,
+      "nearestFaceIndex": 1209,
+      "nearestFaceNormal": [
+        -0.9927188754081726,
+        -0.114421047270298,
+        -0.03764339163899422
+      ]
+    },
+    {
+      "muscle": "soleus_r",
+      "point": "soleus_r-P2",
+      "parentFrame": "/bodyset/calcn_r",
+      "atlasBone": "Calcaneus.r",
+      "sourceBlenderM": [
+        -0.09262000024318695,
+        0.04436999931931496,
+        0.08905000239610672
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09138461947441101,
+        0.025349773466587067,
+        0.08251318335533142
+      ],
+      "nearestDistanceM": 0.020150067284703255,
+      "nearestFaceIndex": 491,
+      "nearestFaceNormal": [
+        0.14696358144283295,
+        0.9323025345802307,
+        0.33047497272491455
+      ]
+    },
+    {
+      "muscle": "tib_ant_r",
+      "point": "tibant_r-P1",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.11153857409954071,
+        -0.07595570385456085,
+        0.35870420932769775
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.10315880179405212,
+        -0.06369075179100037,
+        0.36018431186676025
+      ],
+      "nearestDistanceM": 0.014927837997674942,
+      "nearestFaceIndex": 890,
+      "nearestFaceNormal": [
+        -0.46507078409194946,
+        -0.8796468377113342,
+        -0.09965285658836365
+      ]
+    },
+    {
+      "muscle": "tib_ant_r",
+      "point": "tibant_r-P2",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.10692937672138214,
+        -0.07420473545789719,
+        0.2986234128475189
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09915211796760559,
+        -0.05902811139822006,
+        0.3003278374671936
+      ],
+      "nearestDistanceM": 0.01713828183710575,
+      "nearestFaceIndex": 890,
+      "nearestFaceNormal": [
+        -0.46507078409194946,
+        -0.8796468377113342,
+        -0.09965285658836365
+      ]
+    },
+    {
+      "muscle": "tib_ant_r",
+      "point": "tibant_r-P3",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.07742253690958023,
+        -0.03919536620378494,
+        0.12741295993328094
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.07701922208070755,
+        -0.041594505310058594,
+        0.1245071142911911
+      ],
+      "nearestDistanceM": 0.003789785085245967,
+      "nearestFaceIndex": 319,
+      "nearestFaceNormal": [
+        0.10642049461603165,
+        -0.6330541968345642,
+        -0.7667574286460876
+      ]
+    },
+    {
+      "muscle": "tib_ant_r",
+      "point": "tibant_r-P4",
+      "parentFrame": "/bodyset/calcn_r",
+      "atlasBone": "Calcaneus.r",
+      "sourceBlenderM": [
+        -0.06741999834775925,
+        -0.06782999634742737,
+        0.0758500024676323
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.0851759985089302,
+        -0.04165739193558693,
+        0.08626031875610352
+      ],
+      "nearestDistanceM": 0.03329647704958916,
+      "nearestFaceIndex": 961,
+      "nearestFaceNormal": [
+        0.5363204479217529,
+        -0.7894870042800903,
+        -0.2984468638896942
+      ]
+    },
+    {
+      "muscle": "vas_int_r",
+      "point": "vasint_r-P1",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.13457107543945312,
+        -0.07348961383104324,
+        0.7061201930046082
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.12811321020126343,
+        -0.0689469501376152,
+        0.706717848777771
+      ],
+      "nearestDistanceM": 0.007918144576251507,
+      "nearestFaceIndex": 497,
+      "nearestFaceNormal": [
+        -0.8155789375305176,
+        -0.5737016201019287,
+        -0.07548178732395172
+      ]
+    },
+    {
+      "muscle": "vas_int_r",
+      "point": "vasint_r-P2",
+      "parentFrame": "/bodyset/femur_r",
+      "atlasBone": "Femur.r",
+      "sourceBlenderM": [
+        -0.13178539276123047,
+        -0.08072996884584427,
+        0.6912099123001099
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.12342879921197891,
+        -0.07275237888097763,
+        0.6919982433319092
+      ],
+      "nearestDistanceM": 0.011579985730350018,
+      "nearestFaceIndex": 679,
+      "nearestFaceNormal": [
+        -0.7418293356895447,
+        -0.6670244336128235,
+        -0.06904753297567368
+      ]
+    },
+    {
+      "muscle": "vas_int_r",
+      "point": "vasint_r-P3",
+      "parentFrame": "/bodyset/patella_r",
+      "atlasBone": "Patella.r",
+      "sourceBlenderM": [
+        -0.09927631914615631,
+        -0.12503601610660553,
+        0.5173029899597168
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.10676312446594238,
+        -0.08287689089775085,
+        0.4927785396575928
+      ],
+      "nearestDistanceM": 0.049344632774591446,
+      "nearestFaceIndex": 86,
+      "nearestFaceNormal": [
+        0.17539741098880768,
+        -0.7758574485778809,
+        0.6060372591018677
+      ]
+    },
+    {
+      "muscle": "vas_int_r",
+      "point": "vasint_r-P4",
+      "parentFrame": "/bodyset/patella_r",
+      "atlasBone": "Patella.r",
+      "sourceBlenderM": [
+        -0.09857717156410217,
+        -0.12681759893894196,
+        0.47180572152137756
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09801095724105835,
+        -0.08285708725452423,
+        0.4833162724971771
+      ],
+      "nearestDistanceM": 0.045446012169122696,
+      "nearestFaceIndex": 178,
+      "nearestFaceNormal": [
+        -0.05757324397563934,
+        -0.9137051105499268,
+        -0.40227892994880676
+      ]
+    },
+    {
+      "muscle": "vas_int_r",
+      "point": "vasint_r-P5",
+      "parentFrame": "/bodyset/tibia_r",
+      "atlasBone": "Tibia.r",
+      "sourceBlenderM": [
+        -0.09710249304771423,
+        -0.10575772076845169,
+        0.4225081205368042
+      ],
+      "nearestSurfaceBlenderM": [
+        -0.09586416929960251,
+        -0.0692780613899231,
+        0.424925297498703
+      ],
+      "nearestDistanceM": 0.03658061847090721,
+      "nearestFaceIndex": 1127,
+      "nearestFaceNormal": [
+        -0.12609107792377472,
+        -0.988594651222229,
+        -0.08235065639019012
+      ]
+    }
+  ],
+  "unmatched": [],
+  "limitations": [
+    "bone registration uses only a shared bounding-box translation",
+    "nearest surface is not an identified origin, insertion, or tendon attachment",
+    "OpenSim path points may be abstract model anchors away from bone cortex",
+    "patella and calcaneus have no independent landmark registration",
+    "single standing right-leg pose only"
+  ]
+}
