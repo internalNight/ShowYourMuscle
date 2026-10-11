@@ -3,6 +3,9 @@
 This is a research candidate for the elbow/upper-arm portion of a press. It
 does not model pectoralis, deltoid, scapular rotation, a barbell, or force.
 Run with .cache/opensim-venv/Scripts/python.exe.
+
+The output is written to docs/data because the shipping app stopped fetching it;
+it stays a research artifact rather than a bundled asset.
 """
 
 import json
@@ -14,7 +17,7 @@ import opensim as osim
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = ROOT / "assets" / "opensim" / "arm26.osim"
-OUTPUT = ROOT / "public" / "data" / "press_arm26_reference.json"
+OUTPUT = ROOT / "docs" / "data" / "press_arm26_reference.json"
 
 # Arm26 is a planar model. This trajectory is a controlled parameter sweep,
 # not a measured overhead-press motion or inverse-kinematics solution.

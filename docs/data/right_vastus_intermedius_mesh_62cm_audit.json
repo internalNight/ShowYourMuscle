@@ -1,0 +1,104 @@
+{
+  "status": "research_only_unvalidated_vastus_intermedius_deformation",
+  "sourceScene": "assets\\blender\\opensim_six_muscle_motion.blend",
+  "outputScene": "assets\\blender\\opensim_seven_muscle_62cm.blend",
+  "opensimMuscle": "vas_int_r",
+  "atlasMesh": "Vastus intermedius muscle.r",
+  "body": "femur_r",
+  "vertexCount": 3076,
+  "shapeKeys": 102,
+  "requestedThighCircumferenceCm": 62.0,
+  "appliedThicknessScale": 1.1481481481481481,
+  "referenceHighZ": 0.8431246280670166,
+  "referenceLowZ": 0.43472760915756226,
+  "standingSurfaceScreen": {
+    "source": "docs\\data\\right_leg_muscle_surface_path_screen.json",
+    "medianSurfaceDistanceM": 0.019817261025309563,
+    "p95SurfaceDistanceM": 0.05632440745830536,
+    "maximumSurfaceDistanceM": 0.06000731512904167,
+    "samplesWithinMeshHeight": 20,
+    "sampleCountPerMuscle": 21
+  },
+  "radialMappingSamples": [
+    {
+      "vertexIndex": 0,
+      "originalBlenderM": [
+        -0.14489683508872986,
+        -0.0593663826584816,
+        0.8285085558891296
+      ],
+      "personalizedBlenderM": [
+        -0.1507537066936493,
+        -0.06491730362176895,
+        0.8292286396026611
+      ],
+      "pathFraction": 0.035788880675271265
+    },
+    {
+      "vertexIndex": 769,
+      "originalBlenderM": [
+        -0.13416075706481934,
+        -0.06291776150465012,
+        0.641986608505249
+      ],
+      "personalizedBlenderM": [
+        -0.13914653658866882,
+        -0.06472481787204742,
+        0.642139196395874
+      ],
+      "pathFraction": 0.4925060914961327
+    },
+    {
+      "vertexIndex": 1538,
+      "originalBlenderM": [
+        -0.11403417587280273,
+        -0.07038621604442596,
+        0.7851975560188293
+      ],
+      "personalizedBlenderM": [
+        -0.11549492925405502,
+        -0.07652436196804047,
+        0.7861270904541016
+      ],
+      "pathFraction": 0.14184009521634205
+    },
+    {
+      "vertexIndex": 2307,
+      "originalBlenderM": [
+        -0.10421665012836456,
+        -0.08238565921783447,
+        0.6915846467018127
+      ],
+      "personalizedBlenderM": [
+        -0.10459067672491074,
+        -0.0881190299987793,
+        0.6924792528152466
+      ],
+      "pathFraction": 0.3710604493878585
+    },
+    {
+      "vertexIndex": 3075,
+      "originalBlenderM": [
+        -0.09318684041500092,
+        -0.08306828141212463,
+        0.5846680998802185
+      ],
+      "personalizedBlenderM": [
+        -0.09233888983726501,
+        -0.08645708113908768,
+        0.5852252840995789
+      ],
+      "pathFraction": 0.6328560597160002
+    }
+  ],
+  "referenceMaximumRadialDistanceM": 0.06868211786407943,
+  "personalizedMaximumRadialDistanceM": 0.07885725399455633,
+  "limitations": [
+    "standing registration uses bone bounding-box centres, not anatomical attachments",
+    "standing path to atlas surface reaches 6.00 cm (median 1.98 cm) in the 21-sample screen",
+    "the atlas mesh is a surface shell; the model path runs inside the mesh, so surface proximity does not show whether the path sits inside the right head",
+    "vertical mesh fraction is a deformation heuristic, not fiber direction",
+    "thigh girth scales the mesh cross section only",
+    "no measured fiber strain, EMG or muscle force"
+  ]
+}

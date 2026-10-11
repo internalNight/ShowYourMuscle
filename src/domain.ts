@@ -14,18 +14,79 @@ export type BodyProfile = {
   inseamCm?: number;
 };
 
+export type TrainingEquipment = 'barbell' | 'dumbbell' | 'machine' | 'smith' | 'bodyweight' | 'other';
+
 export type TrainingEntry = {
   exercise: ExerciseId;
   loadKg: number;
   repetitions: number;
   repsInReserve?: number;
   date: string;
+  /** Self-reported technique variant. Recorded for the user's own log; the app has one preset motion per exercise and does not model variants. */
+  variation?: string;
+  /** Self-reported range of motion, chosen from a coarse list. Not a measured joint angle or bar travel. */
+  range?: string;
+  /** Self-reported equipment. Only barbell entries enter the action-level 1RM comparison pool. */
+  equipment?: TrainingEquipment;
+  /** Local date-time of entry in ISO 8601. Absent on records saved before this field existed. */
+  recordedAt?: string;
 };
+
+export const trainingVariations: Record<ExerciseId, readonly string[]> = {
+  squat: ['高杠位', '低杠位', '前蹲', '箱式深蹲', '其他'],
+  bench: ['平板', '上斜', '下斜', '窄握', '其他'],
+  press: ['站姿实力举', '坐姿推举', '借力推举', '其他'],
+};
+
+export const trainingRanges: Record<ExerciseId, readonly string[]> = {
+  squat: ['全程（大腿低于水平）', '至水平', '半蹲'],
+  bench: ['触胸', '距胸数厘米', '半程'],
+  press: ['锁定位全程', '部分幅度'],
+};
+
+export const trainingEquipments: ReadonlyArray<{ id: TrainingEquipment; label: string }> = [
+  { id: 'barbell', label: '杠铃' },
+  { id: 'dumbbell', label: '哑铃' },
+  { id: 'smith', label: '史密斯机' },
+  { id: 'machine', label: '固定器械' },
+  { id: 'bodyweight', label: '自重／辅助' },
+  { id: 'other', label: '其他' },
+];
+
+export function trainingEquipmentLabel(entry: TrainingEntry): string {
+  // Records saved before the field existed all came from the barbell form.
+  const id = entry.equipment ?? 'barbell';
+  return trainingEquipments.find(item => item.id === id)?.label ?? '其他';
+}
+
+// The action-level 1RM comparison pool assumes a barbell load in kilograms. Dumbbell,
+// machine and bodyweight loads are not interchangeable with it, so they are excluded.
+export function entersBarbellCapacityPool(entry: TrainingEntry): boolean {
+  return (entry.equipment ?? 'barbell') === 'barbell';
+}
+
+export function isTrainingVariation(exercise: ExerciseId, value: unknown): value is string {
+  return typeof value === 'string' && trainingVariations[exercise].includes(value);
+}
+
+export function isTrainingRange(exercise: ExerciseId, value: unknown): value is string {
+  return typeof value === 'string' && trainingRanges[exercise].includes(value);
+}
+
+export function isTrainingEquipment(value: unknown): value is TrainingEquipment {
+  return typeof value === 'string' && trainingEquipments.some(item => item.id === value);
+}
+
+export function isIsoTimestamp(value: unknown): value is string {
+  return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$/.test(value)
+    && Number.isFinite(Date.parse(value));
+}
 
 // A set-level capacity proxy, never an estimate of an individual muscle's mass or force.
 // Deliberately limited to near-failure sets of at most ten effective repetitions.
 // The form's RIR=3 option means "three or more", so it cannot yield a point estimate.
 export function estimatedOneRepMax(entry: TrainingEntry): number | undefined {
+  if (!entersBarbellCapacityPool(entry)) return undefined;
   if (!Number.isFinite(entry.loadKg) || entry.loadKg <= 0 ||
       !Number.isInteger(entry.repetitions) || entry.repetitions < 1 ||
       entry.repsInReserve === undefined || !Number.isInteger(entry.repsInReserve) ||
@@ -71,10 +132,32 @@ export const bodyFields: Array<{
   { key: 'inseamCm', label: '内侧腿长 cm', min: 45, max: 120, step: 0.1 },
 ];
 
+// Where each input is meant to be measured. The diagram and the form share this list so the
+// stated landmarks cannot drift apart. Every value is a self-reported measurement; the app
+// derives outline geometry from it and never claims to have measured the user.
+export type MeasurementAnchor =
+  | 'stature' | 'mass' | 'fat' | 'chest' | 'arm' | 'waist' | 'thigh' | 'calf' | 'span' | 'inseam';
+
+export const measurementSites: ReadonlyArray<{
+  key: keyof BodyProfile;
+  anchor: MeasurementAnchor;
+  note: string;
+}> = [
+  { key: 'heightCm', anchor: 'stature', note: '不穿鞋靠墙站立，头顶到地面' },
+  { key: 'weightKg', anchor: 'mass', note: '自报体重，不用于推算单块肌肉' },
+  { key: 'bodyFatPct', anchor: 'fat', note: '自报估计值；不同设备或公式结果不同' },
+  { key: 'chestCm', anchor: 'chest', note: '平静呼气末，经乳头水平的水平围' },
+  { key: 'upperArmCm', anchor: 'arm', note: '手臂放松下垂，上臂中点水平围' },
+  { key: 'waistCm', anchor: 'waist', note: '自然呼气末，经脐上方的水平围' },
+  { key: 'thighCm', anchor: 'thigh', note: '站立放松，大腿最粗处水平围' },
+  { key: 'calfCm', anchor: 'calf', note: '站立放松，小腿最粗处水平围' },
+  { key: 'armSpanCm', anchor: 'span', note: '双臂侧平举，两手中指指尖的距离' },
+  { key: 'inseamCm', anchor: 'inseam', note: '裆部到地面，内侧腿长' },
+];
+
 export function clamp(value: number, low: number, high: number): number {
   return Math.min(high, Math.max(low, value));
 }
-
 export function parseProfile(form: HTMLFormElement): BodyProfile {
   const data = new FormData(form);
   const profile: Partial<BodyProfile> = {};
@@ -111,22 +194,40 @@ export function saveProfile(profile: BodyProfile): void {
   localStorage.setItem('muscle-atlas-profile-v1', JSON.stringify(profile));
 }
 
+// Shared by localStorage reads and backup imports so both accept exactly the same records.
+export function isTrainingEntry(value: unknown): value is TrainingEntry {
+  if (!value || typeof value !== 'object') return false;
+  const entry = value as Partial<TrainingEntry>;
+  if (entry.exercise !== 'squat' && entry.exercise !== 'bench' && entry.exercise !== 'press') return false;
+  if (typeof entry.loadKg !== 'number' || !Number.isFinite(entry.loadKg) ||
+      entry.loadKg < 0 || entry.loadKg > 600) return false;
+  if (!Number.isInteger(entry.repetitions) || entry.repetitions! < 1 || entry.repetitions! > 50) return false;
+  if (entry.repsInReserve !== undefined &&
+      (!Number.isInteger(entry.repsInReserve) || entry.repsInReserve < 0 || entry.repsInReserve > 3)) return false;
+  if (typeof entry.date !== 'string' || !/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(entry.date)) return false;
+  if (entry.variation !== undefined && !isTrainingVariation(entry.exercise, entry.variation)) return false;
+  if (entry.range !== undefined && !isTrainingRange(entry.exercise, entry.range)) return false;
+  if (entry.equipment !== undefined && !isTrainingEquipment(entry.equipment)) return false;
+  if (entry.recordedAt !== undefined && !isIsoTimestamp(entry.recordedAt)) return false;
+  return true;
+}
+
+export function copyTrainingEntry(entry: TrainingEntry): TrainingEntry {
+  return {
+    exercise: entry.exercise, loadKg: entry.loadKg,
+    repetitions: entry.repetitions, repsInReserve: entry.repsInReserve,
+    date: entry.date, variation: entry.variation, range: entry.range,
+    equipment: entry.equipment, recordedAt: entry.recordedAt,
+  };
+}
+
 export function loadTraining(): TrainingEntry[] {
   try {
     const stored = localStorage.getItem('muscle-atlas-training-v1');
     if (!stored) return [];
     const parsed: unknown = JSON.parse(stored);
     if (!Array.isArray(parsed)) return [];
-    return parsed.filter((item): item is TrainingEntry => {
-      if (!item || typeof item !== 'object') return false;
-      const entry = item as Partial<TrainingEntry>;
-      return (entry.exercise === 'squat' || entry.exercise === 'bench' || entry.exercise === 'press') &&
-        typeof entry.loadKg === 'number' && Number.isFinite(entry.loadKg) && entry.loadKg >= 0 && entry.loadKg <= 600 &&
-        Number.isInteger(entry.repetitions) && entry.repetitions! >= 1 && entry.repetitions! <= 50 &&
-        (entry.repsInReserve === undefined ||
-          (Number.isInteger(entry.repsInReserve) && entry.repsInReserve >= 0 && entry.repsInReserve <= 3)) &&
-        typeof entry.date === 'string' && /^\d{4}\/\d{1,2}\/\d{1,2}$/.test(entry.date);
-    });
+    return parsed.filter(isTrainingEntry).map(copyTrainingEntry);
   } catch {
     return [];
   }
@@ -173,21 +274,8 @@ export function parseLocalBackup(value: unknown): LocalBackup {
     throw new Error('备份中的训练记录数量无效');
   }
   const training: TrainingEntry[] = data.training.map((item, index) => {
-    if (!item || typeof item !== 'object') throw new Error(`第 ${index + 1} 条训练记录格式错误`);
-    const entry = item as Partial<TrainingEntry>;
-    if ((entry.exercise !== 'squat' && entry.exercise !== 'bench' && entry.exercise !== 'press') ||
-        typeof entry.loadKg !== 'number' || !Number.isFinite(entry.loadKg) || entry.loadKg < 0 || entry.loadKg > 600 ||
-        !Number.isInteger(entry.repetitions) || entry.repetitions! < 1 || entry.repetitions! > 50 ||
-        (entry.repsInReserve !== undefined && (!Number.isInteger(entry.repsInReserve) ||
-          entry.repsInReserve < 0 || entry.repsInReserve > 3)) ||
-        typeof entry.date !== 'string' || !/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(entry.date)) {
-      throw new Error(`第 ${index + 1} 条训练记录不在有效范围内`);
-    }
-    return {
-      exercise: entry.exercise, loadKg: entry.loadKg,
-      repetitions: entry.repetitions!, repsInReserve: entry.repsInReserve,
-      date: entry.date,
-    };
+    if (!isTrainingEntry(item)) throw new Error(`第 ${index + 1} 条训练记录不在有效范围内`);
+    return copyTrainingEntry(item);
   });
   return { format: 'muscle-atlas-local-backup', version: 1,
     exportedAt: data.exportedAt, profile: profile as BodyProfile, training };

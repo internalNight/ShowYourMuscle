@@ -15,6 +15,16 @@ const { profileOuterDimensions, illustrativeMuscleRadius,
 function ellipseCm(a, b) {
   return 100 * Math.PI * (3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)));
 }
+// A vertex cross-check is only as good as its sample list: five copies of one vertex would satisfy every
+// distance assertion below while proving nothing at all, so each list is checked for size and for
+// distinct vertex indices before it is trusted.
+function assertAuditSamples(label, samples) {
+  assert(Array.isArray(samples) && samples.length >= 5,
+    `${label}: expected at least five vertex samples, found ${samples?.length}`);
+  const indices = new Set(samples.map(item => item.vertexIndex));
+  assert.equal(indices.size, samples.length,
+    `${label}: the sample list repeats vertex indices (${samples.length} samples, ${indices.size} distinct)`);
+}
 function polygonEllipseCm(a, b, sides = 64) {
   let perimeter = 0;
   for (let index = 0; index < sides; index++) {
@@ -125,6 +135,7 @@ const toBlender = ([x, y, z]) => new Vector3(0.09 - x, -z, y);
 const hip = toBlender(standing.viewerJointsM.hip);
 const femurAxis = toBlender(standing.viewerJointsM.knee).sub(hip).normalize();
 for (const muscle of blenderSample.muscles) {
+  assertAuditSamples(`${muscle.opensimMuscle} thigh audit`, muscle.radialMappingSamples);
   for (const item of muscle.radialMappingSamples) {
     const vertex = new Vector3(...item.originalBlenderM);
     scaleRegisteredThighPoint(vertex, hip, femurAxis, blenderSample.appliedMuscleThicknessScale,
@@ -137,10 +148,62 @@ for (const muscle of blenderSample.muscles) {
       `${muscle.opensimMuscle} vertex ${item.vertexIndex} path fraction differs`);
   }
 }
+const vasIntSample = JSON.parse(readFileSync('docs/data/right_vastus_intermedius_mesh_62cm_audit.json', 'utf8'));
+assert.equal(vasIntSample.opensimMuscle, 'vas_int_r');
+assert.equal(vasIntSample.atlasMesh, 'Vastus intermedius muscle.r');
+assert.equal(vasIntSample.body, 'femur_r');
+assert.equal(vasIntSample.requestedThighCircumferenceCm, 62);
+assertAuditSamples('vas_int_r audit', vasIntSample.radialMappingSamples);
+assert(Math.abs(registeredThighThicknessScale({ heightCm: 175, weightKg: 72, thighCm: 62 }) -
+  vasIntSample.appliedThicknessScale) < 1e-9);
+for (const item of vasIntSample.radialMappingSamples) {
+  const vertex = new Vector3(...item.originalBlenderM);
+  scaleRegisteredThighPoint(vertex, hip, femurAxis, vasIntSample.appliedThicknessScale, new Vector3());
+  assert(vertex.distanceTo(new Vector3(...item.personalizedBlenderM)) < 1e-6,
+    `vas_int_r vertex ${item.vertexIndex} differs from Blender`);
+  const fraction = (vasIntSample.referenceHighZ - item.originalBlenderM[2]) /
+    (vasIntSample.referenceHighZ - vasIntSample.referenceLowZ);
+  assert(Math.abs(fraction - item.pathFraction) < 1e-6,
+    `vas_int_r vertex ${item.vertexIndex} path fraction differs`);
+}
+// The atlas mesh reaches the phone under GLTFLoader's sanitized name, so the registered key must
+// keep the ".r" suffix collapsed into "r" and stay in the femur/thigh group.
+const modelSource = readFileSync('src/model.ts', 'utf8');
+const vasIntSpec = modelSource.split('\n').find(line => line.includes("'Vastus intermedius muscler'"));
+assert(vasIntSpec, 'model.ts must register the vastus intermedius atlas mesh');
+assert(vasIntSpec.includes("id: 'vas_int_r'"), 'the vastus intermedius spec must use the OpenSim vas_int_r id');
+assert(vasIntSpec.includes("body: 'femur_r'") && vasIntSpec.includes("girth: 'thigh'"),
+  'the vastus intermedius mesh must follow the femur body and the thigh girth group');
+// Every registered mesh key must resolve to a node in the atlas GLB under GLTFLoader's sanitized
+// name, and to a muscle in the squat lookup. A typo would silently drop the whole research layer.
+const glb = readFileSync('public/models/z_anatomy_reference.glb');
+const glbNames = new Set(JSON.parse(glb.subarray(20, 20 + glb.readUInt32LE(12)).toString('utf8'))
+  .nodes.map(node => String(node.name ?? '').replaceAll('_', ' ').replace(/\.r$/, 'r')));
+const muscleSpecs = [...modelSource.matchAll(
+  /'([^']+)': \{ id: '([^']+)', color: 0x([0-9a-f]{6}), body: '([^']+)', girth: '([^']+)' \}/g)]
+  .map(match => ({ key: match[1], id: match[2], color: match[3], body: match[4], girth: match[5] }));
+assert.equal(muscleSpecs.length, 8, 'the research layer must register eight muscle meshes');
+assert.equal(new Set(muscleSpecs.map(spec => spec.id)).size, 8, 'registered muscle ids must be unique');
+const squatMuscles = new Set(Object.keys(JSON.parse(
+  readFileSync('public/data/squat_opensim_reference.json', 'utf8')).frames[0].muscles));
+for (const spec of muscleSpecs) {
+  assert(glbNames.has(spec.key), `the atlas GLB has no node matching the registered key ${spec.key}`);
+  assert(squatMuscles.has(spec.id), `the squat lookup has no muscle ${spec.id}`);
+  assert(['pelvis', 'femur_r', 'tibia_r'].includes(spec.body), `${spec.id} has an unknown body ${spec.body}`);
+  assert(['none', 'thigh', 'calf'].includes(spec.girth), `${spec.id} has an unknown girth group ${spec.girth}`);
+}
 const calfSample = JSON.parse(readFileSync('docs/data/right_tibialis_mesh_42cm_audit.json', 'utf8'));
 assert.equal(calfSample.requestedCalfCircumferenceCm, 42);
+assertAuditSamples('tib_ant_r audit', calfSample.radialMappingSamples);
 assert(Math.abs(registeredCalfThicknessScale({ heightCm: 175, weightKg: 72, calfCm: 42 }) -
   calfSample.appliedThicknessScale) < 1e-9);
+const medialGastrocnemiusSample = JSON.parse(
+  readFileSync('docs/data/right_medial_gastrocnemius_mesh_42cm_audit.json', 'utf8'));
+assert.equal(medialGastrocnemiusSample.opensimMuscle, 'med_gas_r');
+assert.equal(medialGastrocnemiusSample.atlasMesh, 'Medial head of gastrocnemius.r');
+assert.equal(medialGastrocnemiusSample.body, 'tibia_r');
+assert.equal(medialGastrocnemiusSample.sceneStored, false);
+assertAuditSamples('med_gas_r audit', medialGastrocnemiusSample.radialMappingSamples);
 const knee = toBlender(standing.viewerJointsM.knee);
 const tibiaAxis = toBlender(standing.viewerJointsM.ankle).sub(knee).normalize();
 for (const item of calfSample.radialMappingSamples) {
@@ -152,9 +215,25 @@ for (const item of calfSample.radialMappingSamples) {
     (calfSample.referenceHighZ - calfSample.referenceLowZ);
   assert(Math.abs(fraction - item.pathFraction) < 1e-6);
 }
+// The 42 cm medial gastrocnemius variant stores only its audit, so this is the mesh-specific
+// cross-check of the shared calf scaling rule for that mesh.
+assert.equal(medialGastrocnemiusSample.requestedCalfCircumferenceCm, 42);
+assert.equal(medialGastrocnemiusSample.appliedThicknessScale, calfSample.appliedThicknessScale);
+for (const item of medialGastrocnemiusSample.radialMappingSamples) {
+  const vertex = new Vector3(...item.originalBlenderM);
+  scaleRegisteredLimbPoint(vertex, knee, tibiaAxis, medialGastrocnemiusSample.appliedThicknessScale,
+    new Vector3());
+  assert(vertex.distanceTo(new Vector3(...item.personalizedBlenderM)) < 1e-6,
+    `med_gas_r vertex ${item.vertexIndex} differs from Blender`);
+  const fraction = (medialGastrocnemiusSample.referenceHighZ - item.originalBlenderM[2]) /
+    (medialGastrocnemiusSample.referenceHighZ - medialGastrocnemiusSample.referenceLowZ);
+  assert(Math.abs(fraction - item.pathFraction) < 1e-6,
+    `med_gas_r vertex ${item.vertexIndex} path fraction differs`);
+}
 const soleusSample = JSON.parse(readFileSync('docs/data/right_soleus_mesh_42cm_audit.json', 'utf8'));
 assert.equal(soleusSample.opensimMuscle, 'soleus_r');
 assert.equal(soleusSample.requestedCalfCircumferenceCm, 42);
+assertAuditSamples('soleus_r audit', soleusSample.radialMappingSamples);
 assert(Math.abs(registeredCalfThicknessScale({ heightCm: 175, weightKg: 72, calfCm: 42 }) -
   soleusSample.appliedThicknessScale) < 1e-9);
 for (const item of soleusSample.radialMappingSamples) {
@@ -168,6 +247,7 @@ for (const item of soleusSample.radialMappingSamples) {
 }
 const armSample = JSON.parse(readFileSync('docs/data/tsm_bench_biceps_long_38cm.json', 'utf8'));
 assert.equal(armSample.requestedArmCircumferenceCm, 38);
+assertAuditSamples('BIC_long audit', armSample.radialMappingSamples);
 assert(Math.abs(registeredArmThicknessScale({ heightCm: 175, weightKg: 72, upperArmCm: 38 }) -
   armSample.appliedThicknessScale) < 1e-9);
 const tsmStanding = JSON.parse(readFileSync('public/data/bench_tsm_reference.json', 'utf8')).frames[0];
@@ -186,4 +266,4 @@ for (const item of armSample.radialMappingSamples) {
   assert(vertex.distanceTo(new Vector3(...item.personalizedBlenderM)) < 1e-6,
     `BIC_long vertex ${item.vertexIndex} differs from Blender`);
 }
-console.log('3 profiles match girths; five local inputs alter intended illustrative muscle groups; Blender radii and static chest/waist plus research thigh/two calf/arm scaling match phone rules.');
+console.log('3 profiles match girths; five local inputs alter intended illustrative muscle groups; Blender radii and static chest/waist plus research thigh (four meshes), three calf and arm scaling match phone rules.');

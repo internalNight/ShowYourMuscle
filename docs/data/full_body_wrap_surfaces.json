@@ -1,0 +1,503 @@
+{
+  "status": "exported from the Rajagopal 2023 lower-limb model",
+  "model": "RajagopalLaiUhlrich2023.osim",
+  "radiusSource": "parsed from the .osim XML: the Python bindings do not expose WrapObject.getRadius for these objects",
+  "wrapObjects": 44,
+  "withRadius": 44,
+  "types": {
+    "WrapCylinder": 44
+  },
+  "bodies": [
+    "femur_l",
+    "femur_r",
+    "pelvis",
+    "tibia_l",
+    "tibia_r"
+  ],
+  "records": [
+    {
+      "name": "Gmax1_at_pelvis_r",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.077,
+        -0.099,
+        0.061
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "Gmax2_at_pelvis_r",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.08,
+        -0.083,
+        0.068
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "Gmax3_at_pelvis_r",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.083,
+        -0.088,
+        0.068
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "Gmax1_at_pelvis_l",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.077,
+        -0.099,
+        -0.061
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "Gmax2_at_pelvis_l",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.08,
+        -0.083,
+        -0.068
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "Gmax3_at_pelvis_l",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.083,
+        -0.088,
+        -0.068
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "PS_at_brim_r",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.074,
+        -0.06,
+        0.0656
+      ],
+      "radiusM": 0.05
+    },
+    {
+      "name": "PS_at_brim_l",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.074,
+        -0.06,
+        -0.0656
+      ],
+      "radiusM": 0.05
+    },
+    {
+      "name": "IL_at_brim_r",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.071,
+        -0.065,
+        0.0756
+      ],
+      "radiusM": 0.0549
+    },
+    {
+      "name": "IL_at_brim_l",
+      "type": "WrapCylinder",
+      "body": "pelvis",
+      "translationM": [
+        -0.071,
+        -0.065,
+        -0.0756
+      ],
+      "radiusM": 0.0549
+    },
+    {
+      "name": "GasLat_at_condyles_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.005,
+        -0.41,
+        0.0
+      ],
+      "radiusM": 0.026
+    },
+    {
+      "name": "GasMed_at_condyles_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.005,
+        -0.41,
+        0.0
+      ],
+      "radiusM": 0.025
+    },
+    {
+      "name": "KnExt_at_fem_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.003588,
+        -0.402732,
+        0.002091
+      ],
+      "radiusM": 0.025
+    },
+    {
+      "name": "KnExtVL_at_fem_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.001888,
+        -0.402732,
+        0.002091
+      ],
+      "radiusM": 0.025
+    },
+    {
+      "name": "AB_at_femshaft_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.014643,
+        -0.112595,
+        0.023365
+      ],
+      "radiusM": 0.0165
+    },
+    {
+      "name": "AL_at_femshaft_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.030733,
+        -0.231909,
+        0.015114
+      ],
+      "radiusM": 0.0201
+    },
+    {
+      "name": "AMprox_at_femshaft_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.005183,
+        -0.072895,
+        0.025403
+      ],
+      "radiusM": 0.0211
+    },
+    {
+      "name": "AMmid_at_femshaft_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.023013,
+        -0.160711,
+        0.020584
+      ],
+      "radiusM": 0.0214
+    },
+    {
+      "name": "AMdist_at_femshaft_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.031607,
+        -0.260736,
+        0.009365
+      ],
+      "radiusM": 0.0218
+    },
+    {
+      "name": "AMisch_at_condyles_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        -0.022651,
+        -0.376831,
+        -0.003154
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "PECT_at_femshaft_r",
+      "type": "WrapCylinder",
+      "body": "femur_r",
+      "translationM": [
+        0.006086,
+        -0.084503,
+        0.03044
+      ],
+      "radiusM": 0.015
+    },
+    {
+      "name": "GasLat_at_shank_r",
+      "type": "WrapCylinder",
+      "body": "tibia_r",
+      "translationM": [
+        -0.0074,
+        -0.074,
+        -0.0033
+      ],
+      "radiusM": 0.055
+    },
+    {
+      "name": "GasMed_at_shank_r",
+      "type": "WrapCylinder",
+      "body": "tibia_r",
+      "translationM": [
+        -0.0074,
+        -0.074,
+        -0.0033
+      ],
+      "radiusM": 0.059
+    },
+    {
+      "name": "GR_at_condyles_r",
+      "type": "WrapCylinder",
+      "body": "tibia_r",
+      "translationM": [
+        -0.003,
+        -0.02,
+        0.0
+      ],
+      "radiusM": 0.036
+    },
+    {
+      "name": "SM_at_condyles_r",
+      "type": "WrapCylinder",
+      "body": "tibia_r",
+      "translationM": [
+        -0.001,
+        -0.02,
+        0.0
+      ],
+      "radiusM": 0.0345
+    },
+    {
+      "name": "ST_at_condyles_r",
+      "type": "WrapCylinder",
+      "body": "tibia_r",
+      "translationM": [
+        -0.002,
+        -0.0205,
+        0.0
+      ],
+      "radiusM": 0.0425
+    },
+    {
+      "name": "BF_at_gastroc_r",
+      "type": "WrapCylinder",
+      "body": "tibia_r",
+      "translationM": [
+        -0.039,
+        -0.06,
+        0.0
+      ],
+      "radiusM": 0.029
+    },
+    {
+      "name": "GasLat_at_condyles_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.005,
+        -0.41,
+        0.0
+      ],
+      "radiusM": 0.026
+    },
+    {
+      "name": "GasMed_at_condyles_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.005,
+        -0.41,
+        0.0
+      ],
+      "radiusM": 0.025
+    },
+    {
+      "name": "KnExt_at_fem_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.003588,
+        -0.402732,
+        -0.002091
+      ],
+      "radiusM": 0.025
+    },
+    {
+      "name": "KnExtVL_at_fem_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.001888,
+        -0.402732,
+        -0.002091
+      ],
+      "radiusM": 0.025
+    },
+    {
+      "name": "AB_at_femshaft_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.014643,
+        -0.112595,
+        -0.023365
+      ],
+      "radiusM": 0.0165
+    },
+    {
+      "name": "AL_at_femshaft_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.030733,
+        -0.231909,
+        -0.015114
+      ],
+      "radiusM": 0.0201
+    },
+    {
+      "name": "AMprox_at_femshaft_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.005183,
+        -0.072895,
+        -0.025403
+      ],
+      "radiusM": 0.0211
+    },
+    {
+      "name": "AMmid_at_femshaft_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.023013,
+        -0.160711,
+        -0.020584
+      ],
+      "radiusM": 0.0214
+    },
+    {
+      "name": "AMdist_at_femshaft_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.031607,
+        -0.260736,
+        -0.009365
+      ],
+      "radiusM": 0.0218
+    },
+    {
+      "name": "AMisch_at_condyles_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        -0.022651,
+        -0.376831,
+        0.003154
+      ],
+      "radiusM": 0.04
+    },
+    {
+      "name": "PECT_at_femshaft_l",
+      "type": "WrapCylinder",
+      "body": "femur_l",
+      "translationM": [
+        0.006086,
+        -0.084503,
+        -0.03044
+      ],
+      "radiusM": 0.015
+    },
+    {
+      "name": "GasLat_at_shank_l",
+      "type": "WrapCylinder",
+      "body": "tibia_l",
+      "translationM": [
+        -0.0074,
+        -0.074,
+        0.0033
+      ],
+      "radiusM": 0.055
+    },
+    {
+      "name": "GasMed_at_shank_l",
+      "type": "WrapCylinder",
+      "body": "tibia_l",
+      "translationM": [
+        -0.0074,
+        -0.074,
+        0.0033
+      ],
+      "radiusM": 0.059
+    },
+    {
+      "name": "GR_at_condyles_l",
+      "type": "WrapCylinder",
+      "body": "tibia_l",
+      "translationM": [
+        -0.003,
+        -0.02,
+        0.0
+      ],
+      "radiusM": 0.036
+    },
+    {
+      "name": "SM_at_condyles_l",
+      "type": "WrapCylinder",
+      "body": "tibia_l",
+      "translationM": [
+        -0.001,
+        -0.02,
+        0.0
+      ],
+      "radiusM": 0.0345
+    },
+    {
+      "name": "ST_at_condyles_l",
+      "type": "WrapCylinder",
+      "body": "tibia_l",
+      "translationM": [
+        -0.002,
+        -0.0205,
+        0.0
+      ],
+      "radiusM": 0.0425
+    },
+    {
+      "name": "BF_at_gastroc_l",
+      "type": "WrapCylinder",
+      "body": "tibia_l",
+      "translationM": [
+        -0.039,
+        -0.06,
+        0.0
+      ],
+      "radiusM": 0.029
+    }
+  ]
+}

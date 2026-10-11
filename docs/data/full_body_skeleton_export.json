@@ -1,0 +1,2440 @@
+{
+  "status": "full_body_skeleton_export_geometry_only",
+  "model": {
+    "path": ".cache/model-candidates/opensim-models/Models/Rajagopal/RajagopalLaiUhlrich2023.osim",
+    "sha256": "8708ED0D6A212080A72B9C277071DDD12939C8306EFCEB3EE4A9592735F43F80",
+    "bodies": 22
+  },
+  "output": {
+    "path": "public/models/full_body_skeleton.glb",
+    "bytes": 1170276,
+    "nodes": 32,
+    "meshes": 28,
+    "triangles": 47356
+  },
+  "referenceHeightCm": 175,
+  "pairing": {
+    "pelvis": [],
+    "torso": [],
+    "femur_r": [
+      [
+        "r_femur.vtp",
+        false
+      ]
+    ],
+    "femur_l": [
+      [
+        "l_femur.vtp",
+        false
+      ]
+    ],
+    "tibia_r": [],
+    "tibia_l": [],
+    "patella_r": [
+      [
+        "r_patella.vtp",
+        false
+      ]
+    ],
+    "patella_l": [
+      [
+        "l_patella.vtp",
+        false
+      ]
+    ],
+    "talus_r": [
+      [
+        "r_talus.vtp",
+        false
+      ]
+    ],
+    "talus_l": [
+      [
+        "l_talus.vtp",
+        false
+      ]
+    ],
+    "calcn_r": [
+      [
+        "r_foot.vtp",
+        false
+      ]
+    ],
+    "calcn_l": [
+      [
+        "l_foot.vtp",
+        false
+      ]
+    ],
+    "toes_r": [
+      [
+        "r_bofoot.vtp",
+        false
+      ]
+    ],
+    "toes_l": [
+      [
+        "l_bofoot.vtp",
+        false
+      ]
+    ],
+    "humerus_r": [
+      [
+        "humerus.vtp",
+        false
+      ]
+    ],
+    "humerus_l": [
+      [
+        "humerus.vtp",
+        true
+      ]
+    ],
+    "ulna_r": [
+      [
+        "ulna.vtp",
+        false
+      ]
+    ],
+    "ulna_l": [
+      [
+        "ulna.vtp",
+        true
+      ]
+    ],
+    "radius_r": [
+      [
+        "radius.vtp",
+        false
+      ]
+    ],
+    "radius_l": [
+      [
+        "radius.vtp",
+        true
+      ]
+    ],
+    "hand_r": [
+      [
+        "r_hand.vtp",
+        false
+      ]
+    ],
+    "hand_l": [
+      [
+        "r_hand.vtp",
+        true
+      ]
+    ],
+    "pelvis_sacrum": [
+      [
+        "sacrum.vtp",
+        false
+      ]
+    ],
+    "pelvis_r": [
+      [
+        "r_pelvis.vtp",
+        false
+      ]
+    ],
+    "pelvis_l": [
+      [
+        "l_pelvis.vtp",
+        false
+      ]
+    ],
+    "torso_spine": [
+      [
+        "hat_spine.vtp",
+        false
+      ]
+    ],
+    "torso_ribs": [
+      [
+        "hat_ribs_scap.vtp",
+        false
+      ]
+    ],
+    "torso_skull": [
+      [
+        "hat_skull.vtp",
+        false
+      ]
+    ],
+    "tibia_r_shaft": [
+      [
+        "r_tibia.vtp",
+        false
+      ]
+    ],
+    "tibia_r_fibula": [
+      [
+        "r_fibula.vtp",
+        false
+      ]
+    ],
+    "tibia_l_shaft": [
+      [
+        "l_tibia.vtp",
+        false
+      ]
+    ],
+    "tibia_l_fibula": [
+      [
+        "l_fibula.vtp",
+        false
+      ]
+    ]
+  },
+  "segmentGirthBodies": {
+    "chest": [
+      "torso"
+    ],
+    "waist": [
+      "pelvis",
+      "torso"
+    ],
+    "thigh": [
+      "femur_r",
+      "femur_l"
+    ],
+    "calf": [
+      "tibia_r",
+      "tibia_l"
+    ],
+    "arm": [
+      "humerus_r",
+      "humerus_l"
+    ]
+  },
+  "segments": [
+    {
+      "segment": "pelvis->chest",
+      "body": "pelvis_sacrum",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -30.114132562,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "pelvis->chest",
+      "body": "pelvis_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -14.948576895,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "pelvis->chest",
+      "body": "pelvis_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -14.948576895,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "pelvis->chest",
+      "body": "torso_spine",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        3.925979581,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "pelvis->chest",
+      "body": "torso_ribs",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        -11.991479491,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.083392546,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "neck->head",
+      "body": "torso_skull",
+      "offset": [
+        0,
+        22.778783841,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "hipL->kneeL",
+      "body": "femur_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -4.648082085,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "hipR->kneeR",
+      "body": "femur_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -4.655244249,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "kneeL->ankleL",
+      "body": "tibia_l_shaft",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -5.122475836,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0.00148474,
+        -1.018106928,
+        0.00808954,
+        1
+      ]
+    },
+    {
+      "segment": "kneeL->ankleL",
+      "body": "tibia_l_fibula",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -4.956246258,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0.00148474,
+        -1.017519339,
+        0.00808954,
+        1
+      ]
+    },
+    {
+      "segment": "kneeL->patellaL",
+      "body": "patella_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        37.792894936,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "ankleL->footL",
+      "body": "talus_l",
+      "offset": [
+        0,
+        69.912958367,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "ankleL->footL",
+      "body": "calcn_l",
+      "offset": [
+        0,
+        10.880386471,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "ankleL->footL",
+      "body": "toes_l",
+      "offset": [
+        0,
+        26.001716113,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "kneeR->ankleR",
+      "body": "tibia_r_shaft",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -5.122475836,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -0.00148474,
+        -1.018106928,
+        0.00808954,
+        1
+      ]
+    },
+    {
+      "segment": "kneeR->ankleR",
+      "body": "tibia_r_fibula",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -4.956246258,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -0.00148474,
+        -1.017519339,
+        0.00808954,
+        1
+      ]
+    },
+    {
+      "segment": "kneeR->patellaR",
+      "body": "patella_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        37.792894936,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "ankleR->footR",
+      "body": "talus_r",
+      "offset": [
+        0,
+        69.912958367,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "ankleR->footR",
+      "body": "calcn_r",
+      "offset": [
+        0,
+        10.880386471,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "ankleR->footR",
+      "body": "toes_r",
+      "offset": [
+        0,
+        26.001716113,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "shoulderL->elbowL",
+      "body": "humerus_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -6.603166218,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "shoulderR->elbowR",
+      "body": "humerus_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -6.603166218,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "elbowL->wristL",
+      "body": "ulna_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -8.078229575,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "elbowL->wristL",
+      "body": "radius_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -8.219594692,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "wristL->handL",
+      "body": "hand_l",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        21.804900651,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "elbowR->wristR",
+      "body": "ulna_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -8.078229575,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "elbowR->wristR",
+      "body": "radius_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -8.219594692,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "segment": "wristR->handR",
+      "body": "hand_r",
+      "offset": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        21.804900651,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    }
+  ],
+  "roots": [
+    "pelvis"
+  ],
+  "jointFrames": [
+    {
+      "joint": "ground_pelvis",
+      "childBody": "pelvis",
+      "parentBody": null,
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": null
+    },
+    {
+      "joint": "hip_r",
+      "childBody": "femur_r",
+      "parentBody": "pelvis",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.056276,
+        -0.07849,
+        0.07726
+      ]
+    },
+    {
+      "joint": "walker_knee_r",
+      "childBody": "tibia_r",
+      "parentBody": "femur_r",
+      "locationInChildBodyM": [
+        -0.00808954,
+        -0.0035348,
+        -0.00148474
+      ],
+      "locationInParentBodyM": [
+        -0.0045,
+        -0.4096,
+        -0.00175
+      ]
+    },
+    {
+      "joint": "patellofemoral_r",
+      "childBody": "patella_r",
+      "parentBody": "femur_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.00809,
+        -0.40796,
+        -0.00275
+      ]
+    },
+    {
+      "joint": "ankle_r",
+      "childBody": "talus_r",
+      "parentBody": "tibia_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.01,
+        -0.4,
+        0
+      ]
+    },
+    {
+      "joint": "subtalar_r",
+      "childBody": "calcn_r",
+      "parentBody": "talus_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.04877,
+        -0.04195,
+        0.00792
+      ]
+    },
+    {
+      "joint": "mtp_r",
+      "childBody": "toes_r",
+      "parentBody": "calcn_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        0.1788,
+        -0.002,
+        0.00108
+      ]
+    },
+    {
+      "joint": "hip_l",
+      "childBody": "femur_l",
+      "parentBody": "pelvis",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.056276,
+        -0.07849,
+        -0.07726
+      ]
+    },
+    {
+      "joint": "walker_knee_l",
+      "childBody": "tibia_l",
+      "parentBody": "femur_l",
+      "locationInChildBodyM": [
+        -0.00808954,
+        -0.0035348,
+        0.00148474
+      ],
+      "locationInParentBodyM": [
+        -0.0045,
+        -0.4096,
+        0.00175
+      ]
+    },
+    {
+      "joint": "patellofemoral_l",
+      "childBody": "patella_l",
+      "parentBody": "femur_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.00809,
+        -0.40796,
+        0.00275
+      ]
+    },
+    {
+      "joint": "ankle_l",
+      "childBody": "talus_l",
+      "parentBody": "tibia_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.01,
+        -0.4,
+        0
+      ]
+    },
+    {
+      "joint": "subtalar_l",
+      "childBody": "calcn_l",
+      "parentBody": "talus_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.04877,
+        -0.04195,
+        -0.00792
+      ]
+    },
+    {
+      "joint": "mtp_l",
+      "childBody": "toes_l",
+      "parentBody": "calcn_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        0.1788,
+        -0.002,
+        -0.00108
+      ]
+    },
+    {
+      "joint": "back",
+      "childBody": "torso",
+      "parentBody": "pelvis",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.1007,
+        0.0815,
+        0
+      ]
+    },
+    {
+      "joint": "acromial_r",
+      "childBody": "humerus_r",
+      "parentBody": "torso",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        0.003155,
+        0.3715,
+        0.17
+      ]
+    },
+    {
+      "joint": "elbow_r",
+      "childBody": "ulna_r",
+      "parentBody": "humerus_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        0.013144,
+        -0.286273,
+        -0.009595
+      ]
+    },
+    {
+      "joint": "radioulnar_r",
+      "childBody": "radius_r",
+      "parentBody": "ulna_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.006727,
+        -0.013007,
+        0.026083
+      ]
+    },
+    {
+      "joint": "radius_hand_r",
+      "childBody": "hand_r",
+      "parentBody": "radius_r",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.008797,
+        -0.235841,
+        0.01361
+      ]
+    },
+    {
+      "joint": "acromial_l",
+      "childBody": "humerus_l",
+      "parentBody": "torso",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        0.003155,
+        0.3715,
+        -0.17
+      ]
+    },
+    {
+      "joint": "elbow_l",
+      "childBody": "ulna_l",
+      "parentBody": "humerus_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        0.013144,
+        -0.286273,
+        0.009595
+      ]
+    },
+    {
+      "joint": "radioulnar_l",
+      "childBody": "radius_l",
+      "parentBody": "ulna_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.006727,
+        -0.013007,
+        -0.026083
+      ]
+    },
+    {
+      "joint": "radius_hand_l",
+      "childBody": "hand_l",
+      "parentBody": "radius_l",
+      "locationInChildBodyM": [
+        0,
+        0,
+        0
+      ],
+      "locationInParentBodyM": [
+        -0.008797,
+        -0.235841,
+        -0.01361
+      ]
+    }
+  ],
+  "boundsInExportM": {
+    "min": [
+      -0.19820100000000002,
+      -0.9386668635658812,
+      -0.25531750000000003
+    ],
+    "max": [
+      0.14425016461326978,
+      0.732065,
+      0.25531750000000003
+    ],
+    "heightM": 1.6707318635658812,
+    "widthM": 0.3424511646132698
+  },
+  "bodies": [
+    {
+      "body": "pelvis_sacrum",
+      "parent": "pelvis",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "sacrum.vtp",
+          "mirroredAboutZ": false,
+          "points": 192,
+          "polygons": 200,
+          "triangles": 380,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/sacrum.vtp"
+        }
+      ],
+      "points": 192,
+      "triangles": 380,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.156497,
+          -0.066414,
+          -0.047182
+        ],
+        "max": [
+          -0.063874,
+          0.06182,
+          0.047182
+        ]
+      }
+    },
+    {
+      "body": "pelvis_r",
+      "parent": "pelvis",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_pelvis.vtp",
+          "mirroredAboutZ": false,
+          "points": 122,
+          "polygons": 246,
+          "triangles": 246,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/r_pelvis.vtp"
+        }
+      ],
+      "points": 122,
+      "triangles": 246,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.137926,
+          -0.133792,
+          -0.000583
+        ],
+        "max": [
+          0.00001,
+          0.081005,
+          0.132168
+        ]
+      }
+    },
+    {
+      "body": "pelvis_l",
+      "parent": "pelvis",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_pelvis.vtp",
+          "mirroredAboutZ": false,
+          "points": 122,
+          "polygons": 246,
+          "triangles": 246,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/l_pelvis.vtp"
+        }
+      ],
+      "points": 122,
+      "triangles": 246,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.137926,
+          -0.133792,
+          -0.132168
+        ],
+        "max": [
+          0.00001,
+          0.081005,
+          0.000583
+        ]
+      }
+    },
+    {
+      "body": "pelvis",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [],
+      "points": 0,
+      "triangles": 0,
+      "parts": [
+        "pelvis_sacrum",
+        "pelvis_r",
+        "pelvis_l"
+      ],
+      "boundsInBodyFrame": {
+        "min": [
+          -0.156497,
+          -0.133792,
+          -0.132168
+        ],
+        "max": [
+          0.00001,
+          0.081005,
+          0.132168
+        ]
+      }
+    },
+    {
+      "body": "femur_r",
+      "parent": "pelvis",
+      "translation": [
+        -0.056276,
+        -0.07848999999999995,
+        0.07726
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_femur.vtp",
+          "mirroredAboutZ": false,
+          "points": 132,
+          "polygons": 265,
+          "triangles": 265,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/r_femur.vtp"
+        }
+      ],
+      "points": 132,
+      "triangles": 265,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.038873,
+          -0.429623,
+          -0.041705
+        ],
+        "max": [
+          0.038085,
+          0.02236,
+          0.063565
+        ]
+      }
+    },
+    {
+      "body": "tibia_r_shaft",
+      "parent": "tibia_r",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_tibia.vtp",
+          "mirroredAboutZ": false,
+          "points": 186,
+          "polygons": 390,
+          "triangles": 390,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/r_tibia.vtp"
+        }
+      ],
+      "points": 186,
+      "triangles": 390,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.029898,
+          -0.393971,
+          -0.030642
+        ],
+        "max": [
+          0.027614,
+          -0.017938,
+          0.038227
+        ]
+      }
+    },
+    {
+      "body": "tibia_r_fibula",
+      "parent": "tibia_r",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_fibula.vtp",
+          "mirroredAboutZ": false,
+          "points": 122,
+          "polygons": 130,
+          "triangles": 240,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/r_fibula.vtp"
+        }
+      ],
+      "points": 122,
+      "triangles": 240,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.031653,
+          -0.407066,
+          0.00804
+        ],
+        "max": [
+          -0.002937,
+          -0.043079,
+          0.039763
+        ]
+      }
+    },
+    {
+      "body": "tibia_r",
+      "parent": "femur_r",
+      "translation": [
+        0.0035781618344715715,
+        -0.40609186357699745,
+        -0.00026259291569938337
+      ],
+      "rotation": [
+        -5e-9,
+        -2.3e-8,
+        2e-9,
+        1
+      ],
+      "meshes": [],
+      "points": 0,
+      "triangles": 0,
+      "parts": [
+        "tibia_r_shaft",
+        "tibia_r_fibula"
+      ],
+      "boundsInBodyFrame": {
+        "min": [
+          -0.031653,
+          -0.407066,
+          -0.030642
+        ],
+        "max": [
+          0.027614,
+          -0.017938,
+          0.039763
+        ]
+      }
+    },
+    {
+      "body": "patella_r",
+      "parent": "femur_r",
+      "translation": [
+        0.04431,
+        -0.41875999999999997,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.00056843,
+        0.999999838
+      ],
+      "meshes": [
+        {
+          "mesh": "r_patella.vtp",
+          "mirroredAboutZ": false,
+          "points": 72,
+          "polygons": 80,
+          "triangles": 140,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/r_patella.vtp"
+        }
+      ],
+      "points": 72,
+      "triangles": 140,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.010738,
+          0,
+          -0.024709
+        ],
+        "max": [
+          0.015407,
+          0.05292,
+          0.026673
+        ]
+      }
+    },
+    {
+      "body": "talus_r",
+      "parent": "tibia_r",
+      "translation": [
+        -0.010000000000000021,
+        -0.3999999999999998,
+        -5.430909629420368e-19
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_talus.vtp",
+          "mirroredAboutZ": false,
+          "points": 99,
+          "polygons": 194,
+          "triangles": 194,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/r_talus.vtp"
+        }
+      ],
+      "points": 99,
+      "triangles": 194,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.017534,
+          -0.016224,
+          -0.021141
+        ],
+        "max": [
+          0.028607,
+          0.013894,
+          0.02041
+        ]
+      }
+    },
+    {
+      "body": "calcn_r",
+      "parent": "talus_r",
+      "translation": [
+        -0.04877,
+        -0.04195,
+        0.00791999999999999
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_foot.vtp",
+          "mirroredAboutZ": false,
+          "points": 1000,
+          "polygons": 1455,
+          "triangles": 1955,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/r_foot.vtp"
+        }
+      ],
+      "points": 1000,
+      "triangles": 1955,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.0098,
+          -0.009839,
+          -0.039235
+        ],
+        "max": [
+          0.183817,
+          0.043035,
+          0.045631
+        ]
+      }
+    },
+    {
+      "body": "toes_r",
+      "parent": "calcn_r",
+      "translation": [
+        0.17880000000000001,
+        -0.00199999999999997,
+        0.001079999999999989
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_bofoot.vtp",
+          "mirroredAboutZ": false,
+          "points": 958,
+          "polygons": 1070,
+          "triangles": 1860,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/r_bofoot.vtp"
+        }
+      ],
+      "points": 958,
+      "triangles": 1860,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.035984,
+          -0.010135,
+          -0.037647
+        ],
+        "max": [
+          0.076918,
+          0.00805,
+          0.054198
+        ]
+      }
+    },
+    {
+      "body": "femur_l",
+      "parent": "pelvis",
+      "translation": [
+        -0.056276,
+        -0.07848999999999995,
+        -0.07726
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_femur.vtp",
+          "mirroredAboutZ": false,
+          "points": 456,
+          "polygons": 908,
+          "triangles": 908,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/l_femur.vtp"
+        }
+      ],
+      "points": 456,
+      "triangles": 908,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.036939,
+          -0.430285,
+          -0.061969
+        ],
+        "max": [
+          0.035446,
+          0.022331,
+          0.038298
+        ]
+      }
+    },
+    {
+      "body": "tibia_l_shaft",
+      "parent": "tibia_l",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_tibia.vtp",
+          "mirroredAboutZ": false,
+          "points": 186,
+          "polygons": 390,
+          "triangles": 390,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/l_tibia.vtp"
+        }
+      ],
+      "points": 186,
+      "triangles": 390,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.029898,
+          -0.393971,
+          -0.038227
+        ],
+        "max": [
+          0.027614,
+          -0.017938,
+          0.030642
+        ]
+      }
+    },
+    {
+      "body": "tibia_l_fibula",
+      "parent": "tibia_l",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_fibula.vtp",
+          "mirroredAboutZ": false,
+          "points": 122,
+          "polygons": 130,
+          "triangles": 240,
+          "hadOwnNormals": false,
+          "source": ".cache/model-candidates/opensim-models/Models/Rajagopal/Geometry/l_fibula.vtp"
+        }
+      ],
+      "points": 122,
+      "triangles": 240,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.031653,
+          -0.407066,
+          -0.039763
+        ],
+        "max": [
+          -0.002937,
+          -0.043079,
+          -0.00804
+        ]
+      }
+    },
+    {
+      "body": "tibia_l",
+      "parent": "femur_l",
+      "translation": [
+        0.0035781618344715715,
+        -0.40609186357699745,
+        0.00026259291569938337
+      ],
+      "rotation": [
+        5e-9,
+        2.3e-8,
+        2e-9,
+        1
+      ],
+      "meshes": [],
+      "points": 0,
+      "triangles": 0,
+      "parts": [
+        "tibia_l_shaft",
+        "tibia_l_fibula"
+      ],
+      "boundsInBodyFrame": {
+        "min": [
+          -0.031653,
+          -0.407066,
+          -0.039763
+        ],
+        "max": [
+          0.027614,
+          -0.017938,
+          0.030642
+        ]
+      }
+    },
+    {
+      "body": "patella_l",
+      "parent": "femur_l",
+      "translation": [
+        0.04431,
+        -0.41875999999999997,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.00056843,
+        0.999999838
+      ],
+      "meshes": [
+        {
+          "mesh": "l_patella.vtp",
+          "mirroredAboutZ": false,
+          "points": 72,
+          "polygons": 80,
+          "triangles": 140,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/l_patella.vtp"
+        }
+      ],
+      "points": 72,
+      "triangles": 140,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.010738,
+          0,
+          -0.026673
+        ],
+        "max": [
+          0.015407,
+          0.05292,
+          0.024709
+        ]
+      }
+    },
+    {
+      "body": "talus_l",
+      "parent": "tibia_l",
+      "translation": [
+        -0.010000000000000021,
+        -0.3999999999999998,
+        5.430909629420368e-19
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_talus.vtp",
+          "mirroredAboutZ": false,
+          "points": 99,
+          "polygons": 194,
+          "triangles": 194,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/l_talus.vtp"
+        }
+      ],
+      "points": 99,
+      "triangles": 194,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.017534,
+          -0.016224,
+          -0.02041
+        ],
+        "max": [
+          0.028607,
+          0.013894,
+          0.021141
+        ]
+      }
+    },
+    {
+      "body": "calcn_l",
+      "parent": "talus_l",
+      "translation": [
+        -0.04877,
+        -0.04195,
+        -0.00791999999999999
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_foot.vtp",
+          "mirroredAboutZ": false,
+          "points": 1000,
+          "polygons": 1455,
+          "triangles": 1955,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/l_foot.vtp"
+        }
+      ],
+      "points": 1000,
+      "triangles": 1955,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.0098,
+          -0.009839,
+          -0.045631
+        ],
+        "max": [
+          0.183817,
+          0.043035,
+          0.039235
+        ]
+      }
+    },
+    {
+      "body": "toes_l",
+      "parent": "calcn_l",
+      "translation": [
+        0.17880000000000001,
+        -0.00199999999999997,
+        -0.001079999999999989
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "l_bofoot.vtp",
+          "mirroredAboutZ": false,
+          "points": 958,
+          "polygons": 1070,
+          "triangles": 1860,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/l_bofoot.vtp"
+        }
+      ],
+      "points": 958,
+      "triangles": 1860,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.035984,
+          -0.010135,
+          -0.054198
+        ],
+        "max": [
+          0.076918,
+          0.00805,
+          0.037647
+        ]
+      }
+    },
+    {
+      "body": "torso_spine",
+      "parent": "torso",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "hat_spine.vtp",
+          "mirroredAboutZ": false,
+          "points": 5434,
+          "polygons": 9510,
+          "triangles": 10738,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/hat_spine.vtp"
+        }
+      ],
+      "points": 5434,
+      "triangles": 10738,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.097501,
+          -0.015432,
+          -0.039386
+        ],
+        "max": [
+          0.031567,
+          0.509427,
+          0.039658
+        ]
+      }
+    },
+    {
+      "body": "torso_ribs",
+      "parent": "torso",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "hat_ribs_scap.vtp",
+          "mirroredAboutZ": false,
+          "points": 4891,
+          "polygons": 9680,
+          "triangles": 9680,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/hat_ribs_scap.vtp"
+        }
+      ],
+      "points": 4891,
+      "triangles": 9680,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.087826997042,
+          0.10810600221,
+          -0.16678509116
+        ],
+        "max": [
+          0.10493899882,
+          0.41784998775,
+          0.16678509116
+        ]
+      }
+    },
+    {
+      "body": "torso_skull",
+      "parent": "torso",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "hat_skull.vtp",
+          "mirroredAboutZ": false,
+          "points": 3305,
+          "polygons": 3779,
+          "triangles": 6617,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/knee_model/geometry/hat_skull.vtp"
+        }
+      ],
+      "points": 3305,
+      "triangles": 6617,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.081237,
+          0.489081,
+          -0.069729
+        ],
+        "max": [
+          0.087801,
+          0.650565,
+          0.069729
+        ]
+      }
+    },
+    {
+      "body": "torso",
+      "parent": "pelvis",
+      "translation": [
+        -0.1007,
+        0.0814999999999999,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [],
+      "points": 0,
+      "triangles": 0,
+      "parts": [
+        "torso_spine",
+        "torso_ribs",
+        "torso_skull"
+      ],
+      "boundsInBodyFrame": {
+        "min": [
+          -0.097501,
+          -0.015432,
+          -0.16678509116
+        ],
+        "max": [
+          0.10493899882,
+          0.650565,
+          0.16678509116
+        ]
+      }
+    },
+    {
+      "body": "humerus_r",
+      "parent": "torso",
+      "translation": [
+        0.003155000000000005,
+        0.37149999999999994,
+        0.17
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "humerus.vtp",
+          "mirroredAboutZ": false,
+          "points": 309,
+          "polygons": 588,
+          "triangles": 588,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/humerus.vtp"
+        }
+      ],
+      "points": 309,
+      "triangles": 588,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.022899,
+          -0.302885,
+          -0.043811
+        ],
+        "max": [
+          0.025735,
+          0.023418,
+          0.026377
+        ]
+      }
+    },
+    {
+      "body": "ulna_r",
+      "parent": "humerus_r",
+      "translation": [
+        0.013144000000000003,
+        -0.286273,
+        -0.009594999999999992
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "ulna.vtp",
+          "mirroredAboutZ": false,
+          "points": 212,
+          "polygons": 398,
+          "triangles": 398,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/ulna.vtp"
+        }
+      ],
+      "points": 212,
+      "triangles": 398,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.028321,
+          -0.247579,
+          -0.014066
+        ],
+        "max": [
+          0.014063,
+          0.012146,
+          0.056111
+        ]
+      }
+    },
+    {
+      "body": "radius_r",
+      "parent": "ulna_r",
+      "translation": [
+        -0.006726999999999995,
+        -0.013006999999999987,
+        0.026082999999999995
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "radius.vtp",
+          "mirroredAboutZ": false,
+          "points": 211,
+          "polygons": 390,
+          "triangles": 391,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/radius.vtp"
+        }
+      ],
+      "points": 211,
+      "triangles": 391,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.00911,
+          -0.243321,
+          -0.009825
+        ],
+        "max": [
+          0.045851,
+          0.002726,
+          0.036898
+        ]
+      }
+    },
+    {
+      "body": "hand_r",
+      "parent": "radius_r",
+      "translation": [
+        -0.008797,
+        -0.2358409999999999,
+        0.01361000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_hand.vtp",
+          "mirroredAboutZ": false,
+          "points": 1545,
+          "polygons": 1652,
+          "triangles": 2982,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/r_hand.vtp"
+        }
+      ],
+      "points": 1545,
+      "triangles": 2982,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.017853499999999994,
+          -0.09172249999999998,
+          -0.0552195
+        ],
+        "max": [
+          0.017853499999999994,
+          0.09172250000000004,
+          0.0552195
+        ]
+      }
+    },
+    {
+      "body": "humerus_l",
+      "parent": "torso",
+      "translation": [
+        0.003155000000000005,
+        0.37149999999999994,
+        -0.17
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "humerus.vtp",
+          "mirroredAboutZ": true,
+          "points": 309,
+          "polygons": 588,
+          "triangles": 588,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/humerus.vtp"
+        }
+      ],
+      "points": 309,
+      "triangles": 588,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.022899,
+          -0.302885,
+          -0.026377
+        ],
+        "max": [
+          0.025735,
+          0.023418,
+          0.043811
+        ]
+      }
+    },
+    {
+      "body": "ulna_l",
+      "parent": "humerus_l",
+      "translation": [
+        0.013144000000000003,
+        -0.286273,
+        0.009594999999999992
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "ulna.vtp",
+          "mirroredAboutZ": true,
+          "points": 212,
+          "polygons": 398,
+          "triangles": 398,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/ulna.vtp"
+        }
+      ],
+      "points": 212,
+      "triangles": 398,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.028321,
+          -0.247579,
+          -0.056111
+        ],
+        "max": [
+          0.014063,
+          0.012146,
+          0.014066
+        ]
+      }
+    },
+    {
+      "body": "radius_l",
+      "parent": "ulna_l",
+      "translation": [
+        -0.006726999999999995,
+        -0.013006999999999987,
+        -0.026082999999999995
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "radius.vtp",
+          "mirroredAboutZ": true,
+          "points": 211,
+          "polygons": 390,
+          "triangles": 391,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/radius.vtp"
+        }
+      ],
+      "points": 211,
+      "triangles": 391,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.00911,
+          -0.243321,
+          -0.036898
+        ],
+        "max": [
+          0.045851,
+          0.002726,
+          0.009825
+        ]
+      }
+    },
+    {
+      "body": "hand_l",
+      "parent": "radius_l",
+      "translation": [
+        -0.008797,
+        -0.2358409999999999,
+        -0.01361000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "meshes": [
+        {
+          "mesh": "r_hand.vtp",
+          "mirroredAboutZ": true,
+          "points": 1545,
+          "polygons": 1652,
+          "triangles": 2982,
+          "hadOwnNormals": true,
+          "source": ".cache/model-candidates/rmr-solver-py/Input/shoulder_model/Geometry/r_hand.vtp"
+        }
+      ],
+      "points": 1545,
+      "triangles": 2982,
+      "boundsInBodyFrame": {
+        "min": [
+          -0.017853499999999994,
+          -0.09172249999999998,
+          -0.0552195
+        ],
+        "max": [
+          0.017853499999999994,
+          0.09172250000000004,
+          0.0552195
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "这是 OpenSim 模型的骨骼几何，不是用户本人的解剖测量；缩放模型只是几何近似",
+    "手骨网格由本地存在的替代网格代替，左臂由右侧镜像，因此手指细节不是模型自带的那一份",
+    "模型自带的躯干只有 thorax/脊柱/肋骨/颅骨四块网格，没有单独的颈部与面部细节",
+    "导出的是模型默认姿态下的刚体骨架；本文件不包含肌肉路径、肌肉网格或任何力的结果"
+  ]
+}

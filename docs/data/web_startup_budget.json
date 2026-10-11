@@ -1,0 +1,168 @@
+{
+  "status": "desktop_headless_measurement_not_phone_acceptance",
+  "measuredAt": "2026-10-11T18:09:11.372Z",
+  "measuredOn": "本轮开发机（Windows，无头 Chromium，单次采样）",
+  "command": "node scripts/measure-web-startup.mjs",
+  "environment": {
+    "browser": "msedge.exe",
+    "product": "Edg/154.0.4258.48",
+    "revision": "@80bb122d4912059dc0cf309273bbe3191ae80a62",
+    "platform": "win32",
+    "headless": true,
+    "cpuCount": 32,
+    "deviceScaleFactor": 1,
+    "network": "同机 localhost，无网络延迟"
+  },
+  "payload": {
+    "totalBytes": 16711555,
+    "fileCount": 14,
+    "largest": [
+      {
+        "path": "models/z_anatomy_reference.glb",
+        "bytes": 10714012
+      },
+      {
+        "path": "data/press_tsm_reference.json",
+        "bytes": 1657066
+      },
+      {
+        "path": "data/bench_tsm_reference.json",
+        "bytes": 1638868
+      },
+      {
+        "path": "models/full_body_skeleton.glb",
+        "bytes": 1170276
+      },
+      {
+        "path": "index.html",
+        "bytes": 872353
+      },
+      {
+        "path": "data/squat_opensim_reference.json",
+        "bytes": 600712
+      },
+      {
+        "path": "models/prototype_parts.glb",
+        "bytes": 40296
+      },
+      {
+        "path": "assets/web-CMCfDB56.js",
+        "bytes": 8672
+      },
+      {
+        "path": "sw.js",
+        "bytes": 3997
+      },
+      {
+        "path": "icons/icon-512.png",
+        "bytes": 2763
+      },
+      {
+        "path": "icons/icon-192.png",
+        "bytes": 1029
+      },
+      {
+        "path": "models/NOTICE-z-anatomy.txt",
+        "bytes": 723
+      }
+    ],
+    "inlineIndexBytes": 872353,
+    "serviceWorkerBytes": 3997
+  },
+  "budgets": {
+    "inlineIndexBytes": 1600000,
+    "payloadTotalBytes": 40000000,
+    "coldFirstContentfulPaintMs": 3000,
+    "coldAssetsReadyMs": 30000,
+    "warmAssetsReadyMs": 10000
+  },
+  "runs": [
+    {
+      "label": "cold",
+      "marks": {
+        "domContentLoaded": 198.70000004768372,
+        "canvasSized": 208.10000014305115,
+        "load": 338.60000014305115,
+        "paint:first-paint": 344.5,
+        "modelsReady": 379.60000014305115,
+        "paint:first-contentful-paint": 460.60000014305115,
+        "offlineBundleReady": 474.90000009536743
+      },
+      "assetsReadyMs": 380,
+      "offlineBundleReadyMs": 475,
+      "firstPaintMs": 345,
+      "firstContentfulPaintMs": 461,
+      "domContentLoadedMs": 199,
+      "loadEventMs": 339,
+      "canvasSizedMs": 208,
+      "serviceWorkerControlled": true,
+      "requestedResources": 6,
+      "transferredBytes": 1213537,
+      "resources": [
+        {
+          "startTime": 139.29999995231628,
+          "path": "/models/full_body_skeleton.glb",
+          "transferSize": 1170576,
+          "durationMs": 4
+        },
+        {
+          "startTime": 136.10000014305115,
+          "path": "/models/prototype_parts.glb",
+          "transferSize": 40596,
+          "durationMs": 3
+        },
+        {
+          "startTime": 459.2000000476837,
+          "path": "/icons/icon-192.png",
+          "transferSize": 1329,
+          "durationMs": 3
+        },
+        {
+          "startTime": 338.2000000476837,
+          "path": "/manifest.webmanifest",
+          "transferSize": 727,
+          "durationMs": 3
+        },
+        {
+          "startTime": 379.2999999523163,
+          "path": "/favicon.ico",
+          "transferSize": 309,
+          "durationMs": 7
+        }
+      ],
+      "observerErrors": []
+    },
+    {
+      "label": "warm",
+      "marks": {
+        "domContentLoaded": 80.29999995231628,
+        "load": 82.70000004768372,
+        "canvasSized": 83.60000014305115,
+        "modelsReady": 225.20000004768372,
+        "offlineBundleReady": 305,
+        "paint:first-paint": 305.90000009536743,
+        "paint:first-contentful-paint": 305.90000009536743
+      },
+      "assetsReadyMs": 225,
+      "offlineBundleReadyMs": 305,
+      "firstPaintMs": 306,
+      "firstContentfulPaintMs": 306,
+      "domContentLoadedMs": 80,
+      "loadEventMs": 83,
+      "canvasSizedMs": 84,
+      "serviceWorkerControlled": true,
+      "requestedResources": 5,
+      "transferredBytes": 0,
+      "resources": [],
+      "observerErrors": []
+    }
+  ],
+  "limitations": [
+    "这是**桌面无头浏览器**在同机 localhost 上的单次采样，不是手机、不是健身房现场，也不是多次统计；它只能排除“明显变慢”这类回归，不能当作启动速度验收。",
+    "计时包含本机文件读取与无头浏览器启动后的首次渲染，绝对值受机器负载影响；比较不同版本时应在同一台机器、同一次运行里对照。",
+    "payload（磁盘上的发布包体积）与机器无关，这部分由 npm run check-web-startup-budget 逐字节固定。",
+    "“modelsReady”以界面上的模型标签不再显示“加载中”为准，它表示骨骼／肌肉网格已经挂上，不表示首帧已经绘制完成。",
+    "冷启动的 transferredBytes 由同机 localhost 提供，不含网络往返、TLS、CDN 或移动网络开销；真机首装体积还要加上 APK 自身。",
+    "只测量默认深蹲视图；切到卧推、实力举或研究叠加层会另外加载参考数据，这里没有覆盖。"
+  ]
+}

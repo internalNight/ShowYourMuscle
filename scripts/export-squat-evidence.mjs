@@ -30,6 +30,16 @@ const subjectMuscles = JSON.parse(readFileSync(resolve(root, 'docs/data/subject_
 const bilateral = JSON.parse(readFileSync(resolve(root, 'docs/data/full_bilateral_static_optimization_audit.json'), 'utf8'));
 const deepCapacity = ['AB01', 'AB02'].map(subject => JSON.parse(readFileSync(resolve(root,
   `docs/data/bilateral_deep_squat_joint_capacity${subject === 'AB01' ? '' : `_${subject}`}.json`), 'utf8')));
+const capacityPoseCheck = JSON.parse(readFileSync(resolve(root,
+  'docs/data/bilateral_deep_squat_capacity_pose_check.json'), 'utf8'));
+const lengthCapacity = JSON.parse(readFileSync(resolve(root,
+  'docs/data/bilateral_deep_squat_length_capacity.json'), 'utf8'));
+const crossModelCapacity = JSON.parse(readFileSync(resolve(root,
+  'docs/data/high_flex_length_capacity.json'), 'utf8'));
+const fullBodyLumbar = JSON.parse(readFileSync(resolve(root,
+  'docs/data/full_body_lumbar_capacity.json'), 'utf8'));
+const kneeRangeValidity = JSON.parse(readFileSync(resolve(root,
+  'docs/data/high_flex_knee_range_validity.json'), 'utf8'));
 const idNoFreeMoment = ['ab01', 'ab02'].flatMap(subject => ['0lbs', '25lbs'].map(condition =>
   JSON.parse(readFileSync(resolve(root,
     `docs/data/dynamic_squat_id_replay_${subject}_${condition}_no_free_moment.json`), 'utf8'))));
@@ -195,6 +205,73 @@ if (bilateral.subject !== 'AB01' || bilateral.frameCount !== 101 ||
     deepCapacity.some((report, index) => report.subject !== ['AB01', 'AB02'][index]) ||
     hipCapacityGroups.some(group => group.frameCount !== 21 || group.exceededFrameCount !== group.frameCount)) {
   throw new Error('The squat evidence card requires a consistent bilateral force-quality audit.');
+}
+// The card explains why the hip-rotation alarm cannot be read as missing muscle capacity, so the
+// re-derivation that established this must describe the same frame and keep its two signatures.
+const capacityReplay = capacityPoseCheck.coordinates.hip_rotation_r;
+if (capacityPoseCheck.subject !== deepCapacity[0].subject ||
+    capacityPoseCheck.timeS !== deepCapacity[0].timeS ||
+    Math.abs(capacityReplay.replayedIdMomentNm - deepCapacity[0].coordinates
+      .find(row => row.coordinate === 'hip_rotation_r').targetMomentNm) > 1e-2 ||
+    capacityPoseCheck.comparisonsUnderminedByDemandUncertainty.length !== 2 ||
+    capacityReplay.directionAsymmetryRatio < 10) {
+  throw new Error('The squat evidence card requires a consistent capacity re-derivation.');
+}
+// The card also reports the length-dependent bound, so it must reproduce the audit it extends.
+const lengthKnee = lengthCapacity.subjects.AB01.targetFrame.knee_angle_r;
+const lengthLumbar = ['AB01', 'AB02'].map(subject =>
+  lengthCapacity.subjects[subject].targetFrame.lumbar_extension.demandToLengthBound);
+if (lengthCapacity.subjects.AB01.timeS !== deepCapacity[0].timeS ||
+    Math.abs(lengthKnee.maximumBoundNm - deepCapacity[0].coordinates
+      .find(row => row.coordinate === 'knee_angle_r').optimisticIndependentCapacityNm) > 1e-2 ||
+    lengthCapacity.subjects.AB01.interval.knee_angle_r.framesExceedingLengthBound !== 21 ||
+    lengthCapacity.subjects.AB02.interval.knee_angle_r.framesExceedingLengthBound !== 0 ||
+    !lengthCapacity.subjects.AB01.modelProvenance.kneeExtensors.vas_int_r) {
+  throw new Error('The squat evidence card requires a consistent length-dependent capacity audit.');
+}
+// The card also reports the research-purpose model re-check, so it must be the audited artifact.
+const crossKnee = subject => crossModelCapacity.subjects[subject].targetFrame.knee_angle_r;
+const crossDeepest = crossModelCapacity.subjects.AB01.sweep['-140.0'];
+const crossHasTrunk = Object.keys(crossDeepest.candidate.muscles)
+  .some(name => /^(ercspn|intobl|extobl)/.test(name));
+if (crossModelCapacity.subjects.AB01.muscleCount.candidate !== 80 ||
+    crossModelCapacity.candidateRepositoryRevision === undefined ||
+    !(crossKnee('AB01').candidate.demandToLengthBound > 1) ||
+    !(crossKnee('AB02').candidate.demandToLengthBound < 1) ||
+    crossHasTrunk ||
+    !crossModelCapacity.subjects.AB01.candidatePoseClampedCoordinates.includes('knee_angle_r')) {
+  throw new Error('The squat evidence card requires a consistent cross-model capacity audit.');
+}
+// The card states the lumbar gap does not survive a full-body trunk, so that must be the audit.
+const lumbarSubject = fullBodyLumbar.subjects.AB01;
+if (fullBodyLumbar.flexionCalibration.flexionIsNegative !== true ||
+    fullBodyLumbar.modelProvenance.muscleCount !== 520 ||
+    !(lumbarSubject.report.capacities.erectorSpinaeOnlyNm >
+      3 * lumbarSubject.reducedModelLengthBoundNm) ||
+    !(lumbarSubject.demandToErectorSpinaeOnly < 0.5) ||
+    Math.abs(lumbarSubject.sourceLumbarJointAboveHipM -
+      fullBodyLumbar.levelCorrespondence.fullBodyLowestLevelAboveHipM) > 0.04 ||
+    !(fullBodyLumbar.subjects.AB02.demandToErectorSpinaeOnly < 0.5)) {
+  throw new Error('The squat evidence card requires a consistent full-body lumbar audit.');
+}
+// The card now qualifies the right-knee comparison with the candidate's own data range, so the
+// validity audit has to agree: the splines end at 120 deg, nothing inside that range exceeds either
+// model's bound, and only AB01 exceeds beyond it.
+const kneeValiditySubjects = ['AB01', 'AB02'];
+const kneeValiditySummary = subject => kneeRangeValidity.subjects[subject].summary;
+const insideMax = (subject, model) => kneeValiditySummary(subject).within[`${model}MaximumRatio`];
+const outsideOverOne = (subject, model) =>
+  kneeValiditySummary(subject).beyond[`${model}FramesOverOne`];
+if (Math.abs(kneeRangeValidity.patellofemoralSplineLimitDeg - 120) > 0.01 ||
+    kneeValiditySubjects.some(subject =>
+      kneeValiditySummary(subject).within.sourceFramesOverOne !== 0 ||
+      kneeValiditySummary(subject).within.candidateFramesOverOne !== 0 ||
+      !(insideMax(subject, 'source') < 1) || !(insideMax(subject, 'candidate') < 1)) ||
+    outsideOverOne('AB01', 'candidate') === 0 || outsideOverOne('AB02', 'candidate') !== 0 ||
+    kneeRangeValidity.subjects.AB01.momentArmProfile.slopeAtBoundaryCmPerDeg.signFlip !== true ||
+    Math.abs(kneeRangeValidity.subjects.AB01.momentArmProfile.maximumAbsoluteArm
+      .appliedFlexionDeg - kneeRangeValidity.patellofemoralSplineLimitDeg) > 0.01) {
+  throw new Error('The squat evidence card requires a consistent knee validity-range audit.');
 }
 const idErrors = idNoFreeMoment.flatMap(report => Object.values(report.moments)
   .map(moment => moment.mae_if_csv_is_nm_per_kg));
@@ -422,6 +499,49 @@ const output = {
     sourceCsvHipRotationGroupsExceeding: hipCapacityGroups.length,
     framesPerCapacityGroup: hipCapacityGroups[0].frameCount,
     lowestMedianSourceCsvDemandToCapacity: Math.min(...hipCapacityGroups.map(group => group.medianDemandToCapacity)),
+    hipRotationBoundDirectionAsymmetryRatio: capacityReplay.directionAsymmetryRatio,
+    hipRotationOppositeDirectionCapacityNm: capacityReplay.oppositeDirectionCapacityNm,
+    hipRotationCapacityNm: capacityReplay.optimisticCapacityNm,
+    hipRotationMusclesWithNegligibleArm: capacityPoseCheck.hipRotationBoundDecomposition
+      .hipSpanningMusclesWithArmBelow1mm,
+    hipRotationMuscleCount: capacityPoseCheck.muscleCount,
+    hipRotationDemandDisagreementToCapacity: capacityReplay.disagreementToCapacity,
+    kneeLengthDependentBoundNm: lengthKnee.lengthBoundNm,
+    kneeMaximumBoundNm: lengthKnee.maximumBoundNm,
+    kneeDemandToLengthBound: lengthKnee.sourceCsvDemandToLengthBound,
+    otherSubjectKneeDemandToLengthBound: lengthCapacity.subjects.AB02
+      .targetFrame.knee_angle_r.sourceCsvDemandToLengthBound,
+    lumbarDemandToLengthBound: Math.max(...lengthLumbar),
+    hamstringShareOfKneeBoundNm: Math.round(lengthKnee.muscles
+      .filter(row => row.muscle.startsWith('bifem'))
+      .reduce((sum, row) => sum + row.maximumCapacityNm, 0)),
+    crossModelKneeDemandToLengthBound: crossKnee('AB01').candidate.demandToLengthBound,
+    crossModelOtherSubjectKneeDemandToLengthBound: crossKnee('AB02').candidate.demandToLengthBound,
+    crossModelKneeExtensorRatio: Math.round(10 *
+      crossDeepest.candidate.extensorsOnlyLengthNm /
+      crossDeepest.source.extensorsOnlyLengthNm) / 10,
+    crossModelKneeFlexorArtifactNm: crossDeepest.candidate.flexorsActingAsExtensorsMaximumNm,
+    crossModelPoseClampedDeg: crossKnee('AB01').candidate.appliedPoseDeg,
+    crossModelHasTrunkMuscles: crossHasTrunk,
+    lumbarFullBodyMuscleCount: fullBodyLumbar.modelProvenance.muscleCount,
+    lumbarFullBodyErectorCapacityNm: Math.round(
+      lumbarSubject.report.capacities.erectorSpinaeOnlyNm),
+    lumbarFullBodyDemandToCapacity: lumbarSubject.demandToErectorSpinaeOnly,
+    lumbarFullBodyOtherSubjectDemandToCapacity:
+      fullBodyLumbar.subjects.AB02.demandToErectorSpinaeOnly,
+    lumbarFullBodyErectorRatio: Math.round(10 *
+      lumbarSubject.report.capacities.erectorSpinaeOnlyNm /
+      lumbarSubject.reducedModelLengthBoundNm) / 10,
+    kneeValidRangeSplineLimitDeg: Math.round(kneeRangeValidity.patellofemoralSplineLimitDeg),
+    kneeValidRangeInsideWorstSourceRatio: Math.max(
+      ...kneeValiditySubjects.map(subject => insideMax(subject, 'source'))),
+    kneeValidRangeInsideWorstCandidateRatio: Math.max(
+      ...kneeValiditySubjects.map(subject => insideMax(subject, 'candidate'))),
+    kneeValidRangeInsideFramesOverOne: kneeValiditySubjects.reduce((total, subject) =>
+      total + kneeValiditySummary(subject).within.sourceFramesOverOne +
+      kneeValiditySummary(subject).within.candidateFramesOverOne, 0),
+    kneeValidRangeOutsideFrames: kneeValiditySummary('AB01').beyond.frames,
+    kneeValidRangeOutsideCandidateFramesOverOne: outsideOverOne('AB01', 'candidate'),
   },
   highFlexForceGate: Object.fromEntries(highFlexSubjects.map(subject => [subject, {
     withinKneeRangeFrames: highFlexFull.subjects[subject].feasibleAtAnyUniformStrength,

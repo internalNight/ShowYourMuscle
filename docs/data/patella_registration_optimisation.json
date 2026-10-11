@@ -1,0 +1,159 @@
+{
+  "status": "research_only_patella_registration_search",
+  "scene": "assets/blender/opensim_eight_muscle_motion.blend",
+  "source": "public/data/squat_opensim_reference.json",
+  "framesChecked": 101,
+  "searchedObject": "atlas_Patella.r",
+  "searchedBody": "patella_r",
+  "offsetFrame": "standing world frame, applied before the body motion, as the Blender animator and the phone layer already apply the shared registration",
+  "cost": "summed femoral and tibial penetration depth plus 0.02 x the summed patella-to-femur surface distance",
+  "searchBoundsM": 0.035,
+  "evaluations": 67,
+  "trace": [
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.006,
+        0.0,
+        0.0
+      ],
+      "cost": 0.779801
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.006,
+        -0.006,
+        0.0
+      ],
+      "cost": 0.601227
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.006,
+        -0.006,
+        0.006
+      ],
+      "cost": 0.368457
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.006,
+        -0.012,
+        0.006
+      ],
+      "cost": 0.221539
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.006,
+        -0.012,
+        0.012
+      ],
+      "cost": 0.16709
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.0,
+        -0.012,
+        0.012
+      ],
+      "cost": 0.110698
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.0,
+        -0.018,
+        0.012
+      ],
+      "cost": 0.099917
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.0,
+        -0.018,
+        0.018
+      ],
+      "cost": 0.011888
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.006,
+        -0.018,
+        0.018
+      ],
+      "cost": 0.011862
+    },
+    {
+      "stepM": 0.006,
+      "offsetM": [
+        0.012,
+        -0.018,
+        0.018
+      ],
+      "cost": 0.009496
+    },
+    {
+      "stepM": 0.003,
+      "offsetM": [
+        0.015,
+        -0.018,
+        0.018
+      ],
+      "cost": 0.009407
+    },
+    {
+      "stepM": 0.0015,
+      "offsetM": [
+        0.0135,
+        -0.018,
+        0.018
+      ],
+      "cost": 0.008906
+    }
+  ],
+  "baseline": {
+    "cost": 0.8707047900231555,
+    "femurPatellaFrames": 87,
+    "patellaTibiaFrames": 73,
+    "maximumFemurDepthM": 0.01148,
+    "maximumTibiaDepthM": 0.00462,
+    "medianFemurDistanceM": 0.00179,
+    "maximumFemurDistanceM": 0.00225,
+    "offsetM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "offsetMagnitudeM": 0.0
+  },
+  "optimised": {
+    "cost": 0.008905793351768807,
+    "femurPatellaFrames": 5,
+    "patellaTibiaFrames": 0,
+    "maximumFemurDepthM": 0.0,
+    "maximumTibiaDepthM": 0.0,
+    "medianFemurDistanceM": 0.0049,
+    "maximumFemurDistanceM": 0.01166,
+    "offsetM": [
+      0.0135,
+      -0.018,
+      0.018
+    ],
+    "offsetMagnitudeM": 0.02881
+  },
+  "limitations": [
+    "the offset is a single constant, so it cannot follow the patella through the movement",
+    "it is a registration constant, not an attachment, landmark fit or joint model; the patella keeps the shared bounding-box registration for everything except this offset",
+    "the cost balances penetration against drift with one arbitrary weight, and the reported per-part figures should be read instead of the cost alone",
+    "only the patella was searched; the femur-to-tibia overlap is a hinge-and-cartilage problem that a rigid offset of one mesh does not describe",
+    "vertices only: no surface fitting, no cartilage, no contact model, one subject, right side, standing registration"
+  ]
+}

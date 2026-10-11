@@ -1,0 +1,144 @@
+{
+  "status": "browser_checked_output_provenance",
+  "checkedAt": "2026-09-26",
+  "purpose": "阶段 3 的验收句是“输出始终有来源和置信说明”。这份数据把每个显示数值的界面容器登记一次，写明它属于哪一类、依据什么、旁边必须有哪一句限定；npm run check-output-provenance 在真实浏览器里核对 DOM 上的 data-status／data-source 与这段文字，新增一个未登记的输出就会失败。",
+  "vocabulary": {
+    "illustrative": {
+      "label": "示意",
+      "meaning": "由身高、围度或预设轨迹算出的几何示意，不是对这名用户的测量。"
+    },
+    "scenario": {
+      "label": "情景",
+      "meaning": "用户输入（重量、杠铃位置）代入固定力学假定得到的计算情景，不是实测。"
+    },
+    "estimate": {
+      "label": "粗估",
+      "meaning": "由自报训练记录按经验公式得到的动作级粗估，存在已知样本偏差，不能推断单块肌肉力量。"
+    },
+    "research_reference": {
+      "label": "研究参考",
+      "meaning": "公开实验或 OpenSim 研究的群体结果，按来源逐项引用，不随个人输入变化。"
+    },
+    "measured": {
+      "label": "实测",
+      "meaning": "在这台设备上对用户本人测得的数据。当前应用没有这种输出：没有任何数值来自对用户动作、关节力矩或肌肉发力的测量，因此这个类别必须保持未被使用，直到真的出现测量为止。"
+    }
+  },
+  "unusedStatuses": ["measured"],
+  "caveatPolicy": "任何显示数字的输出容器都必须带一句话限定（“示意”“情景”“估算”“不是测量”“研究”等），并且这句话与该输出的 data-status 一致；不含数字的输出（例如尚未录入记录时的提示语）不要求限定。",
+  "statePolicy": "每个输出还要写明它在哪些界面状态下必须**真的可见并显示内容**：digits 表示可见、非空且含数字（因此必须带限定），text 表示可见且非空但可能没有数字（例如尚无记录时的提示语）。没有列出的状态表示该输出在那里不该占据界面——检查要求它此时要么不可见，要么内容为空。只断言“有数字就必须带限定”是不够的：一个被清空的容器会因此悄悄通过。",
+  "states": {
+    "default": "深蹲 · 受力视图 · 预设姿态 · 尚无训练记录",
+    "recorded": "同一视图，录入一条 100 kg × 5、余力 2 的杠铃深蹲记录之后",
+    "squat-study": "深蹲 · 受力视图 · 切到“12 人自重深蹲研究参考”",
+    "bench": "卧推 · 受力视图（未切换参考层）",
+    "press": "实力举 · 受力视图（未切换参考层）"
+  },
+  "outputs": [
+    {
+      "id": "profile-calibration",
+      "status": "illustrative",
+      "source": "height_scaled_preset_skeleton",
+      "caveatTokens": ["示意"],
+      "meaning": "股骨、胫骨、足段长度按身高比例缩放出的示意骨架标定。",
+      "shows": { "default": "digits", "recorded": "digits", "squat-study": "digits", "bench": "digits", "press": "digits" }
+    },
+    {
+      "id": "squat-depth-note",
+      "status": "illustrative",
+      "source": "preset_trajectory",
+      "caveatTokens": ["不是", "预设"],
+      "meaning": "当前与最深膝屈角来自预设轨迹，不是动作角度测量。",
+      "shows": { "default": "digits", "recorded": "digits" }
+    },
+    {
+      "id": "squat-bar-note",
+      "status": "scenario",
+      "source": "user_bar_offset_assumption",
+      "caveatTokens": ["不代表"],
+      "meaning": "杠铃前后位置是用户选的假设，不是高杠位／低杠位技术测量。这段文字本身是静态说明、不含数字；所选的偏移量显示在同一面板的受力说明里，因此这里按 text 期望（可见、非空即可）。",
+      "shows": { "default": "text", "recorded": "text" }
+    },
+    {
+      "id": "cycle-duration-note",
+      "status": "illustrative",
+      "source": "preset_playback_timing",
+      "caveatTokens": ["没有测量"],
+      "meaning": "动作周期只控制示意播放速度。这段是静态说明、不含数字（秒数显示在同一面板的控件旁），因此按 text 期望。",
+      "shows": { "default": "text", "recorded": "text", "squat-study": "text", "bench": "text", "press": "text" }
+    },
+    {
+      "id": "load-effect-note",
+      "status": "scenario",
+      "source": "barbell_static_scenario",
+      "caveatTokens": ["情景"],
+      "meaning": "当前重量代入固定力学假定的负重情景，尚未进入肌肉发力计算。这段是静态说明、不含数字（当前重量显示在同一面板的控件旁），因此按 text 期望。",
+      "shows": { "default": "text", "recorded": "text", "bench": "text", "press": "text" }
+    },
+    {
+      "id": "capacity-hint",
+      "status": "estimate",
+      "source": "epley_with_reserve_reps",
+      "caveatTokens": ["粗估", "估算"],
+      "meaning": "当前重量相对已录入记录中最高估算 1RM 的比例，动作级粗估。",
+      "shows": { "default": "text", "recorded": "digits", "bench": "text", "press": "text" }
+    },
+    {
+      "id": "training-list",
+      "status": "estimate",
+      "source": "epley_with_reserve_reps",
+      "caveatTokens": ["估算", "粗估"],
+      "meaning": "训练记录列表与其中的动作级 1RM 估算；非杠铃记录明确排除。没有记录时是引导语（text），有记录后每条都带数字与估算限定。",
+      "shows": { "default": "text", "recorded": "digits", "squat-study": "digits", "bench": "digits", "press": "digits" }
+    },
+    {
+      "id": "viewer-research-readout",
+      "status": "research_reference",
+      "source": "squat_study_joint_moments",
+      "caveatTokens": ["研究", "参考", "非个人"],
+      "meaning": "深蹲力学切到“12 人自重深蹲研究参考”后，叠加在三维视图上的净关节力矩人群中位读数。",
+      "shows": { "squat-study": "digits" }
+    },
+    {
+      "id": "lab-evidence",
+      "status": "research_reference",
+      "source": "dynamic_squat_studies",
+      "caveatTokens": ["不是"],
+      "meaning": "12 人动态深蹲实验对照卡（关节力矩、力板、肌电与容量警报）。",
+      "shows": { "default": "digits", "recorded": "digits", "squat-study": "digits" }
+    },
+    {
+      "id": "press-evidence",
+      "status": "research_reference",
+      "source": "press_emg_and_trajectory",
+      "caveatTokens": ["研究", "不是"],
+      "meaning": "实力举的实验对照卡：14 人站姿轨迹与 8 人坐姿肌电。",
+      "shows": { "press": "digits" }
+    },
+    {
+      "id": "press-trajectory-comparison",
+      "status": "research_reference",
+      "source": "press_group_trajectory",
+      "caveatTokens": ["示意", "公开实验"],
+      "meaning": "当前示意轨迹与 14 人站姿推举组层范围的对比。它位于实力举对照卡内部，因此只在实力举状态出现。",
+      "shows": { "press": "digits" }
+    },
+    {
+      "id": "bench-velocity-note",
+      "status": "research_reference",
+      "source": "bench_velocity_benchmark",
+      "caveatTokens": ["实验", "参考"],
+      "meaning": "27 人卧推逐次起举速度参照与当前播放时长。",
+      "shows": { "bench": "digits" }
+    }
+  ],
+  "limitations": [
+    "这是对**界面文字与属性**的核对：它证明每个带数字的输出旁边都有一句限定，不证明那句限定本身正确。",
+    "限定句的检查靠登记的关键词（如“示意”“不是”“粗估”），措辞被改写而含义不变时仍可能失败，需要同步更新登记表；反之，把限定句改成同样含关键词但更弱的说法不会被发现。",
+    "未登记的容器只要不带 data-output 就不会被检查发现，因此它防的是“改了已登记的输出却丢掉限定”，不是“新增了一种没有限定的输出”——后者要靠评审，或在新增卡片时同时登记。",
+    "应用当前没有任何 measured（对用户本人的实测）输出；这个类别保持未使用是设计意图，也是这份检查的一条断言。",
+    "同一段文字里出现数字即按“有输出”处理；纯提示语（尚无记录时的引导句）不要求限定。",
+    "可见性断言只覆盖 states 里列出的五个界面状态，仍然是“按视图巡检”：新增一个视图、标签页或被折叠的细节都不会被自动覆盖。",
+    "可见性用元素是否占据版面判断；被折叠的 <details> 内部文字仍算作该容器的一部分，也就是说限定句在未展开时也算“在旁边”。"
+  ]
+}

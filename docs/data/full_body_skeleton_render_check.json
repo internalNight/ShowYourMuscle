@@ -1,0 +1,101 @@
+{
+  "status": "full_body_skeleton_render_check",
+  "method": "把随包的 public/models/full_body_skeleton.glb 用仓库自带的 three.js 0.181 加载进无头 Edge（CDP），读场景世界包围盒与各节点包围盒；这套测量与导出记录相互独立——导出记录来自 OpenSim/Python，这里的数字来自浏览器里的实际渲染。",
+  "artifact": {
+    "path": "public/models/full_body_skeleton.glb",
+    "bytes": 1170276,
+    "nodes": 32,
+    "meshes": 28,
+    "triangles": 47356
+  },
+  "measuredBoundsM": {
+    "min": [
+      -0.1982,
+      -0.93867,
+      -0.25532
+    ],
+    "max": [
+      0.14425,
+      0.73207,
+      0.25532
+    ],
+    "size": [
+      0.34245,
+      1.67073,
+      0.51064
+    ]
+  },
+  "checks": {
+    "nodesPresent": "22/22",
+    "pageErrors": [],
+    "invertedOrInwardFacingMeshes": 0,
+    "degenerateNodes": 0,
+    "outwardNormalSumsPositive": true,
+    "parentChildBoundingBoxGapsM": {
+      "femur_r->pelvis": 0,
+      "tibia_r->femur_r": 0,
+      "talus_r->tibia_r": 0
+    },
+    "worstLeftRightPairM": -0.0009
+  },
+  "boneBoxesM": {
+    "femur_r": {
+      "centre": [
+        -0.05667,
+        -0.28212,
+        0.08819
+      ],
+      "size": [
+        0.07696,
+        0.45198,
+        0.10527
+      ],
+      "descendantMeshes": 7
+    },
+    "humerus_r": {
+      "centre": [
+        -0.09613,
+        0.31327,
+        0.16128
+      ],
+      "size": [
+        0.04863,
+        0.3263,
+        0.07019
+      ],
+      "descendantMeshes": 4
+    },
+    "torso": {
+      "centre": [
+        -0.09698,
+        0.39907,
+        0
+      ],
+      "size": [
+        0.20244,
+        0.666,
+        0.33357
+      ],
+      "descendantMeshes": 11
+    },
+    "calcn_r": {
+      "centre": [
+        -0.02446,
+        -0.90993,
+        0.08812
+      ],
+      "size": [
+        0.19362,
+        0.05287,
+        0.08487
+      ],
+      "descendantMeshes": 2
+    }
+  },
+  "limitations": [
+    "手骨不是 Rajagopal 模型自带的几何：该模型的 lvs 手骨在任何本地数据集里都不存在，用的是另一套本地模型的替代网格，并已按“居中于自身段原点”的约定变换到手部体坐标系；手指细节与骨形不是原模型的。修复前它烘在自身坐标系里，渲染实测腕关节间隙 212.5 mm、双手悬在大腿后方；修复后腕关节间隙已不再是全身最大的三处之一（最大的三处是 0.0 mm 的腿部关节）。",
+    "左右臂由右侧网格镜像得到（绕左右轴，同时反转绕向与法线）；修复前绕的是前后轴，渲染实测左右偏差 17.4–42.1 mm，修复后全身最差的一对左右骨是腿骨、差 0.9 mm。镜像仍是替代，不是原模型自带的左右两侧网格。",
+    "截图（正面/侧面/背面/两个斜侧）由仓库外的临时脚本产出，未入库；本文件只记录可复算的数字。",
+    "这份核对证明的是几何是否像一个完整人形骨架，不证明它像某个人；也没有视觉模型看过那些截图，判断依据是几何与轮廓度量。"
+  ]
+}

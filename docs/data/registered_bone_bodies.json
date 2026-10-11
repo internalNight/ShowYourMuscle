@@ -1,0 +1,133 @@
+{
+  "source": "docs/data/full_body_skeleton_export.json",
+  "note": "研究层 Z-Anatomy 网格名 → 默认视图 OpenSim 体段名。改这里就是改两边，检查 check:registered-bone-source 守住。",
+  "map": {
+    "Hip boner": "pelvis",
+    "Femurr": "femur_r",
+    "Tibiar": "tibia_r",
+    "Fibular": "tibia_r",
+    "Patellar": "patella_r",
+    "Calcaneusr": "calcn_r"
+  },
+  "geometrySource": {
+    "note": "默认视图每个体段用哪套几何。研究层（Blender/Z-Anatomy）网格更精细，但只覆盖右侧五个体段与骨盆；",
+    "research": [
+      "pelvis",
+      "femur_r",
+      "tibia_r",
+      "patella_r",
+      "calcn_r",
+      "torso_spine",
+      "torso_ribs"
+    ],
+    "mirroredFrom": {
+      "femur_l": "femur_r",
+      "tibia_l": "tibia_r",
+      "patella_l": "patella_r",
+      "calcn_l": "calcn_r"
+    },
+    "export": "docs/data/full_body_skeleton_export.json",
+    "exportBodies": [
+      "pelvis_sacrum",
+      "pelvis_r",
+      "pelvis_l",
+      "tibia_r_shaft",
+      "tibia_r_fibula",
+      "talus_r",
+      "toes_r",
+      "tibia_l_shaft",
+      "tibia_l_fibula",
+      "talus_l",
+      "toes_l",
+      "torso_skull",
+      "torso",
+      "humerus_r",
+      "ulna_r",
+      "radius_r",
+      "hand_r",
+      "humerus_l",
+      "ulna_l",
+      "radius_l",
+      "hand_l"
+    ],
+    "pending": "本轮只落地来源清单与守卫：研究层资源目前是切换时才懒加载，改为默认视图使用必须先量它的体积对启动预算的影响。",
+    "coverage": {
+      "note": "来源清单按导出记录的 32 个条目（22 个模型体段 + 10 个拆分部件）覆盖：研究清单直接点名部件（如 torso_spine），所以并集必须等于这 32 个条目，而不是 22 个体段名。",
+      "entries": 32,
+      "modelBodies": 22
+    }
+  },
+  "upperBodyMuscles": {
+    "note": "上半身肌肉：OpenSim 模型只有下肢肌肉，这几组原来靠示意圆柱。规则形式比逐条列名更短，但每条规则必须真能匹配到研究资源里的网格（守卫会去读资源验）。颜色是暂定值，等用户看完截图再定。",
+    "color": "#a4564e",
+    "rules": [
+      {
+        "group": "胸大肌",
+        "match": "pectoralis major"
+      },
+      {
+        "group": "三角肌",
+        "match": "deltoid"
+      },
+      {
+        "group": "肱二头肌",
+        "match": "biceps brachii"
+      },
+      {
+        "group": "肱三头肌",
+        "match": "triceps brachii"
+      },
+      {
+        "group": "肱肌",
+        "match": "brachialis"
+      },
+      {
+        "group": "肱桡肌",
+        "match": "brachioradialis"
+      },
+      {
+        "group": "斜方肌",
+        "match": "trapezius"
+      },
+      {
+        "group": "背阔肌",
+        "match": "latissimus dorsi"
+      },
+      {
+        "group": "大菱形肌",
+        "match": "rhomboid"
+      },
+      {
+        "group": "前锯肌",
+        "match": "serratus anterior"
+      },
+      {
+        "group": "腹直肌",
+        "match": "rectus abdominis"
+      },
+      {
+        "group": "腹外斜肌",
+        "match": "abdominal oblique"
+      },
+      {
+        "group": "胸最长肌",
+        "match": "longissimus thoracis"
+      }
+    ]
+  },
+  "boneRules": {
+    "note": "研究资源里的逐块椎骨与逐根肋骨：默认视图的 torso_spine / torso_ribs 原来是导出记录里的合并网格，这里按规则换成研究网格。每条规则必须真能匹配到资源里的网格（守卫会打开资源验证）。",
+    "rules": [
+      {
+        "match": "vertebra|sacrum|coccyx",
+        "body": "torso_spine",
+        "group": "脊柱"
+      },
+      {
+        "match": "rib|sternum|manubrium",
+        "body": "torso_ribs",
+        "group": "肋骨"
+      }
+    ]
+  }
+}

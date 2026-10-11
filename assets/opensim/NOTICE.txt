@@ -19,7 +19,9 @@ identify the OpenSim Development Team (Reinbolt, Seth, Habib, Hamner), adapted
 from Kate Holzbaur's model, and state Creative Commons Attribution 3.0.
 Source: https://github.com/opensim-org/opensim-models/blob/master/Models/Arm26/arm26.osim
 License: https://creativecommons.org/licenses/by/3.0/
-The derived public/data/press_arm26_reference.json contains a synthetic angle
-sweep with kinematic path points, path lengths and moment arms only. The phone
-app displays this as a limited right-arm reference; it contains no solved
-muscle forces or activation, and no personal scaling or barbell dynamics.
+The derived docs/data/press_arm26_reference.json contains a synthetic angle
+sweep with kinematic path points, path lengths and moment arms only. It is a
+research artifact: the shipping app no longer fetches it and no longer displays
+Arm26 geometry, so it is deliberately kept outside the web bundle (see
+scripts/check-bundle-assets.mjs). It contains no solved muscle forces or
+activation, and no personal scaling or barbell dynamics.

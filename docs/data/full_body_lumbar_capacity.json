@@ -1,0 +1,688 @@
+{
+ "status": "research_only_cross_model_lumbar_capacity",
+ "model": "cyclistFullBodyMuscle.osim",
+ "modelProvenance": {
+  "muscleCount": 520,
+  "bodyCount": 80,
+  "totalMassKg": 79.58,
+  "levelCoordinates": [
+   "L5_S1_FE",
+   "L4_L5_FE",
+   "L3_L4_FE",
+   "L2_L3_FE",
+   "L1_L2_FE"
+  ],
+  "lowestLevelAboveHipM": 0.149,
+  "credits": "Rajagopal et al., Lai et al., Allaire et al., Saul et al., McFarland et al."
+ },
+ "definition": "at the lowest lumbar level, the sum over muscles whose moment arm acts in the extension direction of maximum isometric force times the active force-length multiplier and the cosine of the pennation angle at the posed and equilibrated state",
+ "flexionCalibration": {
+  "extensorFiberLengthAtPlus5Deg": 1.003,
+  "extensorFiberLengthAtMinus5Deg": 1.193,
+  "flexionIsNegative": true,
+  "erectorSpinaePositiveArmMomentNm": 820.9,
+  "erectorSpinaeNegativeArmMomentNm": 437.0,
+  "erectorSpinaeMeanArmCm": 2.888,
+  "erectorSpinaeCount": 200
+ },
+ "distributionAssumption": "the source model's single lumbar_extension angle is split evenly over the five lumbar intervertebral levels, so the total flexion and therefore the erector spinae fiber lengths are preserved while no single level takes an implausible angle",
+ "levelCorrespondence": {
+  "source": {
+   "AB01": 0.116,
+   "AB02": 0.142
+  },
+  "fullBodyLowestLevelAboveHipM": 0.149
+ },
+ "sweep": {
+  "0.0": {
+   "totalFlexionDeg": 0.0,
+   "levelsDeg": 0.0,
+   "capacities": {
+    "allExtensorsNm": 526.8,
+    "erectorSpinaeOnlyNm": 524.9,
+    "withoutShoulderSpanningNm": 526.1,
+    "shoulderSpanningNm": 0.7,
+    "flexorsActingAsExtensorsNm": 1.3
+   },
+   "normalizedFiberLengths": {
+    "erectorSpinae": 1.077,
+    "otherTrunk": 1.276,
+    "shoulderSpanning": 0.995
+   },
+   "flexorsActingAsExtensorsArmsCm": {},
+   "contributors": [
+    {
+     "muscle": "LTpL_L5_l",
+     "momentArmCm": 4.707,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9531,
+     "capacityNm": 22.3
+    },
+    {
+     "muscle": "LTpL_L5_r",
+     "momentArmCm": 4.707,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9531,
+     "capacityNm": 22.3
+    },
+    {
+     "muscle": "IL_R11_r",
+     "momentArmCm": 3.984,
+     "maximumForceN": 406.4,
+     "activeForceLength": 0.9088,
+     "capacityNm": 14.4
+    },
+    {
+     "muscle": "IL_R11_l",
+     "momentArmCm": 3.984,
+     "maximumForceN": 406.4,
+     "activeForceLength": 0.9088,
+     "capacityNm": 14.4
+    },
+    {
+     "muscle": "IL_R12_l",
+     "momentArmCm": 3.864,
+     "maximumForceN": 461.8,
+     "activeForceLength": 0.7685,
+     "capacityNm": 13.5
+    },
+    {
+     "muscle": "IL_R12_r",
+     "momentArmCm": 3.864,
+     "maximumForceN": 461.8,
+     "activeForceLength": 0.7685,
+     "capacityNm": 13.5
+    },
+    {
+     "muscle": "LTpL_L3_r",
+     "momentArmCm": 4.354,
+     "maximumForceN": 511.3,
+     "activeForceLength": 0.5176,
+     "capacityNm": 11.4
+    },
+    {
+     "muscle": "LTpL_L3_l",
+     "momentArmCm": 4.354,
+     "maximumForceN": 511.3,
+     "activeForceLength": 0.5176,
+     "capacityNm": 11.4
+    }
+   ]
+  },
+  "-10.0": {
+   "totalFlexionDeg": -10.0,
+   "levelsDeg": -2.0,
+   "capacities": {
+    "allExtensorsNm": 508.7,
+    "erectorSpinaeOnlyNm": 507.2,
+    "withoutShoulderSpanningNm": 508.1,
+    "shoulderSpanningNm": 0.6,
+    "flexorsActingAsExtensorsNm": 0.9
+   },
+   "normalizedFiberLengths": {
+    "erectorSpinae": 1.126,
+    "otherTrunk": 1.468,
+    "shoulderSpanning": 0.991
+   },
+   "flexorsActingAsExtensorsArmsCm": {},
+   "contributors": [
+    {
+     "muscle": "LTpL_L5_l",
+     "momentArmCm": 4.702,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9778,
+     "capacityNm": 22.9
+    },
+    {
+     "muscle": "LTpL_L5_r",
+     "momentArmCm": 4.702,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9777,
+     "capacityNm": 22.9
+    },
+    {
+     "muscle": "IL_R11_r",
+     "momentArmCm": 3.862,
+     "maximumForceN": 406.4,
+     "activeForceLength": 0.8425,
+     "capacityNm": 13.0
+    },
+    {
+     "muscle": "IL_R11_l",
+     "momentArmCm": 3.862,
+     "maximumForceN": 406.4,
+     "activeForceLength": 0.8425,
+     "capacityNm": 13.0
+    },
+    {
+     "muscle": "IL_R12_l",
+     "momentArmCm": 3.745,
+     "maximumForceN": 461.8,
+     "activeForceLength": 0.6399,
+     "capacityNm": 10.9
+    },
+    {
+     "muscle": "IL_R12_r",
+     "momentArmCm": 3.745,
+     "maximumForceN": 461.8,
+     "activeForceLength": 0.6399,
+     "capacityNm": 10.9
+    },
+    {
+     "muscle": "LTpT_R11_r",
+     "momentArmCm": 6.315,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.9842,
+     "capacityNm": 10.4
+    },
+    {
+     "muscle": "LTpT_R11_l",
+     "momentArmCm": 6.315,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.9842,
+     "capacityNm": 10.4
+    }
+   ]
+  },
+  "-20.0": {
+   "totalFlexionDeg": -20.0,
+   "levelsDeg": -4.0,
+   "capacities": {
+    "allExtensorsNm": 509.5,
+    "erectorSpinaeOnlyNm": 505.0,
+    "withoutShoulderSpanningNm": 509.1,
+    "shoulderSpanningNm": 0.5,
+    "flexorsActingAsExtensorsNm": 0.6
+   },
+   "normalizedFiberLengths": {
+    "erectorSpinae": 1.188,
+    "otherTrunk": 1.342,
+    "shoulderSpanning": 0.904
+   },
+   "flexorsActingAsExtensorsArmsCm": {},
+   "contributors": [
+    {
+     "muscle": "LTpL_L5_l",
+     "momentArmCm": 4.693,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9935,
+     "capacityNm": 23.3
+    },
+    {
+     "muscle": "LTpL_L5_r",
+     "momentArmCm": 4.693,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9935,
+     "capacityNm": 23.3
+    },
+    {
+     "muscle": "E0_R5_r",
+     "momentArmCm": 13.522,
+     "maximumForceN": 186.9,
+     "activeForceLength": 0.9006,
+     "capacityNm": 22.8
+    },
+    {
+     "muscle": "E0_R5_l",
+     "momentArmCm": 13.522,
+     "maximumForceN": 186.9,
+     "activeForceLength": 0.9006,
+     "capacityNm": 22.8
+    },
+    {
+     "muscle": "IL_R11_r",
+     "momentArmCm": 3.719,
+     "maximumForceN": 406.4,
+     "activeForceLength": 0.7666,
+     "capacityNm": 11.4
+    },
+    {
+     "muscle": "IL_R11_l",
+     "momentArmCm": 3.719,
+     "maximumForceN": 406.4,
+     "activeForceLength": 0.7666,
+     "capacityNm": 11.4
+    },
+    {
+     "muscle": "LTpT_R11_r",
+     "momentArmCm": 6.21,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.9999,
+     "capacityNm": 10.4
+    },
+    {
+     "muscle": "LTpT_R11_l",
+     "momentArmCm": 6.21,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.9999,
+     "capacityNm": 10.4
+    }
+   ]
+  },
+  "-30.0": {
+   "totalFlexionDeg": -30.0,
+   "levelsDeg": -6.0,
+   "capacities": {
+    "allExtensorsNm": 519.3,
+    "erectorSpinaeOnlyNm": 466.1,
+    "withoutShoulderSpanningNm": 519.0,
+    "shoulderSpanningNm": 0.3,
+    "flexorsActingAsExtensorsNm": 52.9
+   },
+   "normalizedFiberLengths": {
+    "erectorSpinae": 1.225,
+    "otherTrunk": 1.353,
+    "shoulderSpanning": 0.983
+   },
+   "flexorsActingAsExtensorsArmsCm": {
+    "rect_abd_l": 3.718,
+    "rect_abd_r": 3.718
+   },
+   "contributors": [
+    {
+     "muscle": "rect_abd_r",
+     "momentArmCm": 3.718,
+     "maximumForceN": 705.9,
+     "activeForceLength": 1.0,
+     "capacityNm": 26.2
+    },
+    {
+     "muscle": "rect_abd_l",
+     "momentArmCm": 3.718,
+     "maximumForceN": 705.9,
+     "activeForceLength": 1.0,
+     "capacityNm": 26.2
+    },
+    {
+     "muscle": "LTpL_L5_r",
+     "momentArmCm": 4.679,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9999,
+     "capacityNm": 23.4
+    },
+    {
+     "muscle": "LTpL_L5_l",
+     "momentArmCm": 4.679,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9999,
+     "capacityNm": 23.4
+    },
+    {
+     "muscle": "E0_R6_l",
+     "momentArmCm": 2.793,
+     "maximumForceN": 633.2,
+     "activeForceLength": 0.6495,
+     "capacityNm": 11.5
+    },
+    {
+     "muscle": "E0_R6_r",
+     "momentArmCm": 2.793,
+     "maximumForceN": 633.1,
+     "activeForceLength": 0.6495,
+     "capacityNm": 11.5
+    },
+    {
+     "muscle": "E0_R5_r",
+     "momentArmCm": 19.107,
+     "maximumForceN": 186.9,
+     "activeForceLength": 0.3146,
+     "capacityNm": 11.2
+    },
+    {
+     "muscle": "E0_R5_l",
+     "momentArmCm": 19.107,
+     "maximumForceN": 186.9,
+     "activeForceLength": 0.3146,
+     "capacityNm": 11.2
+    }
+   ]
+  },
+  "-40.0": {
+   "totalFlexionDeg": -40.0,
+   "levelsDeg": -8.0,
+   "capacities": {
+    "allExtensorsNm": 637.0,
+    "erectorSpinaeOnlyNm": 461.3,
+    "withoutShoulderSpanningNm": 636.8,
+    "shoulderSpanningNm": 0.2,
+    "flexorsActingAsExtensorsNm": 169.5
+   },
+   "normalizedFiberLengths": {
+    "erectorSpinae": 1.285,
+    "otherTrunk": 1.268,
+    "shoulderSpanning": 0.906
+   },
+   "flexorsActingAsExtensorsArmsCm": {
+    "rect_abd_l": 11.991,
+    "rect_abd_r": 11.991
+   },
+   "contributors": [
+    {
+     "muscle": "rect_abd_r",
+     "momentArmCm": 11.991,
+     "maximumForceN": 705.9,
+     "activeForceLength": 0.9996,
+     "capacityNm": 84.6
+    },
+    {
+     "muscle": "rect_abd_l",
+     "momentArmCm": 11.991,
+     "maximumForceN": 705.9,
+     "activeForceLength": 0.9996,
+     "capacityNm": 84.6
+    },
+    {
+     "muscle": "E0_R6_l",
+     "momentArmCm": 7.185,
+     "maximumForceN": 633.2,
+     "activeForceLength": 0.7824,
+     "capacityNm": 35.6
+    },
+    {
+     "muscle": "E0_R6_r",
+     "momentArmCm": 7.185,
+     "maximumForceN": 633.1,
+     "activeForceLength": 0.7824,
+     "capacityNm": 35.6
+    },
+    {
+     "muscle": "LTpL_L5_r",
+     "momentArmCm": 4.662,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9966,
+     "capacityNm": 23.3
+    },
+    {
+     "muscle": "LTpL_L5_l",
+     "momentArmCm": 4.662,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.9966,
+     "capacityNm": 23.3
+    },
+    {
+     "muscle": "LTpT_R11_r",
+     "momentArmCm": 5.968,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.9254,
+     "capacityNm": 9.3
+    },
+    {
+     "muscle": "LTpT_R11_l",
+     "momentArmCm": 5.968,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.9254,
+     "capacityNm": 9.3
+    }
+   ]
+  },
+  "-50.0": {
+   "totalFlexionDeg": -50.0,
+   "levelsDeg": -10.0,
+   "capacities": {
+    "allExtensorsNm": 725.2,
+    "erectorSpinaeOnlyNm": 473.9,
+    "withoutShoulderSpanningNm": 725.2,
+    "shoulderSpanningNm": 0.0,
+    "flexorsActingAsExtensorsNm": 238.2
+   },
+   "normalizedFiberLengths": {
+    "erectorSpinae": 1.35,
+    "otherTrunk": 1.312,
+    "shoulderSpanning": 0.914
+   },
+   "flexorsActingAsExtensorsArmsCm": {
+    "rect_abd_l": 16.98,
+    "rect_abd_r": 16.98
+   },
+   "contributors": [
+    {
+     "muscle": "rect_abd_r",
+     "momentArmCm": 16.98,
+     "maximumForceN": 705.9,
+     "activeForceLength": 0.9927,
+     "capacityNm": 119.0
+    },
+    {
+     "muscle": "rect_abd_l",
+     "momentArmCm": 16.98,
+     "maximumForceN": 705.9,
+     "activeForceLength": 0.9926,
+     "capacityNm": 119.0
+    },
+    {
+     "muscle": "E0_R6_l",
+     "momentArmCm": 10.581,
+     "maximumForceN": 633.2,
+     "activeForceLength": 0.9719,
+     "capacityNm": 65.1
+    },
+    {
+     "muscle": "E0_R6_r",
+     "momentArmCm": 10.581,
+     "maximumForceN": 633.1,
+     "activeForceLength": 0.9719,
+     "capacityNm": 65.1
+    },
+    {
+     "muscle": "LTpL_L5_r",
+     "momentArmCm": 4.642,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.984,
+     "capacityNm": 23.0
+    },
+    {
+     "muscle": "LTpL_L5_l",
+     "momentArmCm": 4.642,
+     "maximumForceN": 513.3,
+     "activeForceLength": 0.984,
+     "capacityNm": 23.0
+    },
+    {
+     "muscle": "LTpT_R11_r",
+     "momentArmCm": 5.832,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.8462,
+     "capacityNm": 8.3
+    },
+    {
+     "muscle": "LTpT_R11_l",
+     "momentArmCm": 5.832,
+     "maximumForceN": 171.7,
+     "activeForceLength": 0.8462,
+     "capacityNm": 8.3
+    }
+   ]
+  }
+ },
+ "subjects": {
+  "AB01": {
+   "sourceLumbarExtensionDeg": -43.56180452,
+   "sourceHipFlexionDeg": 103.385,
+   "sourceKneeAngleDeg": -142.322,
+   "appliedCoordinates": 20,
+   "distributedLevelsDeg": -8.712,
+   "report": {
+    "totalFlexionDeg": -43.56180452,
+    "levelsDeg": -8.712,
+    "capacities": {
+     "allExtensorsNm": 675.4,
+     "erectorSpinaeOnlyNm": 465.5,
+     "withoutShoulderSpanningNm": 675.3,
+     "shoulderSpanningNm": 0.1,
+     "flexorsActingAsExtensorsNm": 200.0
+    },
+    "normalizedFiberLengths": {
+     "erectorSpinae": 1.32,
+     "otherTrunk": 1.376,
+     "shoulderSpanning": 0.961
+    },
+    "flexorsActingAsExtensorsArmsCm": {
+     "rect_abd_l": 14.173,
+     "rect_abd_r": 14.173
+    },
+    "contributors": [
+     {
+      "muscle": "rect_abd_r",
+      "momentArmCm": 14.173,
+      "maximumForceN": 705.9,
+      "activeForceLength": 0.9984,
+      "capacityNm": 99.9
+     },
+     {
+      "muscle": "rect_abd_l",
+      "momentArmCm": 14.173,
+      "maximumForceN": 705.9,
+      "activeForceLength": 0.9984,
+      "capacityNm": 99.9
+     },
+     {
+      "muscle": "E0_R6_l",
+      "momentArmCm": 8.521,
+      "maximumForceN": 633.2,
+      "activeForceLength": 0.8549,
+      "capacityNm": 46.1
+     },
+     {
+      "muscle": "E0_R6_r",
+      "momentArmCm": 8.521,
+      "maximumForceN": 633.1,
+      "activeForceLength": 0.8549,
+      "capacityNm": 46.1
+     },
+     {
+      "muscle": "LTpL_L5_r",
+      "momentArmCm": 4.656,
+      "maximumForceN": 513.3,
+      "activeForceLength": 0.9932,
+      "capacityNm": 23.2
+     },
+     {
+      "muscle": "LTpL_L5_l",
+      "momentArmCm": 4.655,
+      "maximumForceN": 513.3,
+      "activeForceLength": 0.9932,
+      "capacityNm": 23.2
+     },
+     {
+      "muscle": "LTpT_R11_r",
+      "momentArmCm": 5.921,
+      "maximumForceN": 171.7,
+      "activeForceLength": 0.8996,
+      "capacityNm": 9.0
+     },
+     {
+      "muscle": "LTpT_R11_l",
+      "momentArmCm": 5.921,
+      "maximumForceN": 171.7,
+      "activeForceLength": 0.8996,
+      "capacityNm": 9.0
+     }
+    ]
+   },
+   "sourceLumbarJointAboveHipM": 0.116,
+   "demandNm": 157.798,
+   "demandToAllExtensors": 0.234,
+   "demandToErectorSpinaeOnly": 0.339,
+   "demandToWithoutShoulderSpanning": 0.234,
+   "reducedModelLengthBoundNm": 112.653
+  },
+  "AB02": {
+   "sourceLumbarExtensionDeg": -46.11639685,
+   "sourceHipFlexionDeg": 110.884,
+   "sourceKneeAngleDeg": -135.145,
+   "appliedCoordinates": 20,
+   "distributedLevelsDeg": -9.223,
+   "report": {
+    "totalFlexionDeg": -46.11639685,
+    "levelsDeg": -9.223,
+    "capacities": {
+     "allExtensorsNm": 699.7,
+     "erectorSpinaeOnlyNm": 469.3,
+     "withoutShoulderSpanningNm": 699.6,
+     "shoulderSpanningNm": 0.1,
+     "flexorsActingAsExtensorsNm": 217.7
+    },
+    "normalizedFiberLengths": {
+     "erectorSpinae": 1.341,
+     "otherTrunk": 1.251,
+     "shoulderSpanning": 0.903
+    },
+    "flexorsActingAsExtensorsArmsCm": {
+     "rect_abd_l": 15.453,
+     "rect_abd_r": 15.453
+    },
+    "contributors": [
+     {
+      "muscle": "rect_abd_r",
+      "momentArmCm": 15.453,
+      "maximumForceN": 705.9,
+      "activeForceLength": 0.9968,
+      "capacityNm": 108.7
+     },
+     {
+      "muscle": "rect_abd_l",
+      "momentArmCm": 15.453,
+      "maximumForceN": 705.9,
+      "activeForceLength": 0.9968,
+      "capacityNm": 108.7
+     },
+     {
+      "muscle": "E0_R6_l",
+      "momentArmCm": 9.394,
+      "maximumForceN": 633.2,
+      "activeForceLength": 0.9069,
+      "capacityNm": 53.9
+     },
+     {
+      "muscle": "E0_R6_r",
+      "momentArmCm": 9.394,
+      "maximumForceN": 633.1,
+      "activeForceLength": 0.9069,
+      "capacityNm": 53.9
+     },
+     {
+      "muscle": "LTpL_L5_r",
+      "momentArmCm": 4.65,
+      "maximumForceN": 513.3,
+      "activeForceLength": 0.99,
+      "capacityNm": 23.1
+     },
+     {
+      "muscle": "LTpL_L5_l",
+      "momentArmCm": 4.65,
+      "maximumForceN": 513.3,
+      "activeForceLength": 0.99,
+      "capacityNm": 23.1
+     },
+     {
+      "muscle": "LTpT_R11_r",
+      "momentArmCm": 5.886,
+      "maximumForceN": 171.7,
+      "activeForceLength": 0.8794,
+      "capacityNm": 8.7
+     },
+     {
+      "muscle": "LTpT_R11_l",
+      "momentArmCm": 5.886,
+      "maximumForceN": 171.7,
+      "activeForceLength": 0.8794,
+      "capacityNm": 8.7
+     }
+    ]
+   },
+   "sourceLumbarJointAboveHipM": 0.142,
+   "demandNm": 133.486,
+   "demandToAllExtensors": 0.191,
+   "demandToErectorSpinaeOnly": 0.284,
+   "demandToWithoutShoulderSpanning": 0.191,
+   "reducedModelLengthBoundNm": 92.052
+  }
+ },
+ "limitations": [
+  "the source model has one lumped lumbar joint while this model has five levels, and the even split of the total flexion between them is an assumption",
+  "the two models have different muscle maximum forces and no individual strength scaling",
+  "no passive force, activation dynamics, load sharing or multi-level equilibrium",
+  "arm and shoulder posture is left at the model default, which changes the latissimus and other shoulder-spanning contributions; they are reported separately",
+  "the full-body model is a cycling model; its hip and knee range may not accept the deepest squat angles, and any coordinate it does not share is left at its default"
+ ]
+}

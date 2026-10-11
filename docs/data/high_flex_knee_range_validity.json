@@ -1,0 +1,2161 @@
+{
+ "status": "research_only_knee_capacity_validity_range",
+ "sourceModel": "gait2354-family subject-scaled models in .cache/lower-limb-raw",
+ "candidateModel": "RajagopalLaiUhlrich2023.osim scaled to the same segment ratios and mass",
+ "candidateRepositoryRevision": "d9b05d470b1a481c222372c85b75772faf8f7792",
+ "patellofemoralTransformRanges": {
+  "rotation1": {
+   "function": "SimmSpline",
+   "knotCount": 13,
+   "rangeRad": [
+    0.0,
+    2.0944
+   ],
+   "rangeDeg": [
+    0.0,
+    120.0003
+   ]
+  },
+  "rotation2": {
+   "function": "constant_or_polynomial"
+  },
+  "rotation3": {
+   "function": "constant_or_polynomial"
+  },
+  "translation1": {
+   "function": "SimmSpline",
+   "knotCount": 13,
+   "rangeRad": [
+    0.0,
+    2.0944
+   ],
+   "rangeDeg": [
+    0.0,
+    120.0003
+   ]
+  },
+  "translation2": {
+   "function": "SimmSpline",
+   "knotCount": 13,
+   "rangeRad": [
+    0.0,
+    2.0944
+   ],
+   "rangeDeg": [
+    0.0,
+    120.0003
+   ]
+  },
+  "translation3": {
+   "function": "constant_or_polynomial"
+  }
+ },
+ "patellofemoralSplineLimitDeg": 120.0003,
+ "capacityDefinition": "per coordinate, the sum over muscles whose moment arm points the same way as the demand of maximum isometric force times the active force-length multiplier and the cosine of the pennation angle at the equilibrated posed state",
+ "subjects": {
+  "AB01": {
+   "subjectMassKg": 78.9,
+   "deepestFrameTimeS": 51.32,
+   "deepestKneeFlexionDeg": 142.322,
+   "candidateMaximumFlexionDeg": 140.0,
+   "momentArmProfile": {
+    "muscle": "vaslat_r",
+    "probedFlexionRangeDeg": [
+     118.0,
+     120.0,
+     122.0
+    ],
+    "gridStepDeg": 0.25,
+    "samples": [
+     {
+      "requestedFlexionDeg": 118.0,
+      "appliedFlexionDeg": 118.0003,
+      "momentArmCm": -2.53942
+     },
+     {
+      "requestedFlexionDeg": 118.25,
+      "appliedFlexionDeg": 118.2503,
+      "momentArmCm": -2.55294
+     },
+     {
+      "requestedFlexionDeg": 118.5,
+      "appliedFlexionDeg": 118.5003,
+      "momentArmCm": -2.56662
+     },
+     {
+      "requestedFlexionDeg": 118.75,
+      "appliedFlexionDeg": 118.7503,
+      "momentArmCm": -2.58046
+     },
+     {
+      "requestedFlexionDeg": 119.0,
+      "appliedFlexionDeg": 119.0003,
+      "momentArmCm": -2.59445
+     },
+     {
+      "requestedFlexionDeg": 119.25,
+      "appliedFlexionDeg": 119.2503,
+      "momentArmCm": -2.60859
+     },
+     {
+      "requestedFlexionDeg": 119.5,
+      "appliedFlexionDeg": 119.5003,
+      "momentArmCm": -2.62288
+     },
+     {
+      "requestedFlexionDeg": 119.75,
+      "appliedFlexionDeg": 119.7503,
+      "momentArmCm": -2.63733
+     },
+     {
+      "requestedFlexionDeg": 120.0,
+      "appliedFlexionDeg": 120.0003,
+      "momentArmCm": -2.65192
+     },
+     {
+      "requestedFlexionDeg": 120.25,
+      "appliedFlexionDeg": 120.2503,
+      "momentArmCm": -2.64216
+     },
+     {
+      "requestedFlexionDeg": 120.5,
+      "appliedFlexionDeg": 120.5003,
+      "momentArmCm": -2.63251
+     },
+     {
+      "requestedFlexionDeg": 120.75,
+      "appliedFlexionDeg": 120.7503,
+      "momentArmCm": -2.62298
+     },
+     {
+      "requestedFlexionDeg": 121.0,
+      "appliedFlexionDeg": 121.0003,
+      "momentArmCm": -2.61357
+     },
+     {
+      "requestedFlexionDeg": 121.25,
+      "appliedFlexionDeg": 121.2503,
+      "momentArmCm": -2.60429
+     },
+     {
+      "requestedFlexionDeg": 121.5,
+      "appliedFlexionDeg": 121.5003,
+      "momentArmCm": -2.59512
+     },
+     {
+      "requestedFlexionDeg": 121.75,
+      "appliedFlexionDeg": 121.7503,
+      "momentArmCm": -2.58608
+     },
+     {
+      "requestedFlexionDeg": 122.0,
+      "appliedFlexionDeg": 122.0003,
+      "momentArmCm": -2.57717
+     }
+    ],
+    "maximumAbsoluteArm": {
+     "momentArmCm": -2.65192,
+     "appliedFlexionDeg": 120.0003
+    },
+    "slopeAtBoundaryCmPerDeg": {
+     "before": 0.0578,
+     "after": -0.0386,
+     "signFlip": true
+    }
+   },
+   "summary": {
+    "within": {
+     "frames": 29,
+     "maximumFlexionDeg": 119.625,
+     "sourceMaximumRatio": 0.896,
+     "sourceMaximumRatioTimeS": 51.14,
+     "sourceMaximumRatioFlexionDeg": 119.625,
+     "sourceFramesOverOne": 0,
+     "candidateMaximumRatio": 0.445,
+     "candidateMaximumRatioTimeS": 51.095,
+     "candidateMaximumRatioFlexionDeg": 110.251,
+     "candidateFramesOverOne": 0
+    },
+    "beyond": {
+     "frames": 72,
+     "maximumFlexionDeg": 142.322,
+     "sourceMaximumRatio": 1.473,
+     "sourceMaximumRatioTimeS": 51.325,
+     "sourceMaximumRatioFlexionDeg": 142.319,
+     "sourceFramesOverOne": 47,
+     "candidateMaximumRatio": 1.403,
+     "candidateMaximumRatioTimeS": 51.325,
+     "candidateMaximumRatioFlexionDeg": 142.319,
+     "candidateFramesOverOne": 22
+    }
+   },
+   "frames": [
+    {
+     "timeS": 51.0,
+     "flexionDeg": 87.647,
+     "demandNm": 68.82,
+     "sourceBoundNm": 186.68,
+     "candidateBoundNm": 265.61,
+     "sourceRatio": 0.369,
+     "candidateRatio": 0.259
+    },
+    {
+     "timeS": 51.005,
+     "flexionDeg": 88.949,
+     "demandNm": 70.09,
+     "sourceBoundNm": 184.43,
+     "candidateBoundNm": 257.67,
+     "sourceRatio": 0.38,
+     "candidateRatio": 0.272
+    },
+    {
+     "timeS": 51.01,
+     "flexionDeg": 90.237,
+     "demandNm": 71.02,
+     "sourceBoundNm": 182.1,
+     "candidateBoundNm": 249.58,
+     "sourceRatio": 0.39,
+     "candidateRatio": 0.285
+    },
+    {
+     "timeS": 51.015,
+     "flexionDeg": 91.511,
+     "demandNm": 71.72,
+     "sourceBoundNm": 179.72,
+     "candidateBoundNm": 241.74,
+     "sourceRatio": 0.399,
+     "candidateRatio": 0.297
+    },
+    {
+     "timeS": 51.02,
+     "flexionDeg": 92.774,
+     "demandNm": 72.32,
+     "sourceBoundNm": 177.28,
+     "candidateBoundNm": 234.33,
+     "sourceRatio": 0.408,
+     "candidateRatio": 0.309
+    },
+    {
+     "timeS": 51.025,
+     "flexionDeg": 94.023,
+     "demandNm": 72.97,
+     "sourceBoundNm": 174.82,
+     "candidateBoundNm": 228.42,
+     "sourceRatio": 0.417,
+     "candidateRatio": 0.319
+    },
+    {
+     "timeS": 51.03,
+     "flexionDeg": 95.256,
+     "demandNm": 73.81,
+     "sourceBoundNm": 172.33,
+     "candidateBoundNm": 223.14,
+     "sourceRatio": 0.428,
+     "candidateRatio": 0.331
+    },
+    {
+     "timeS": 51.035,
+     "flexionDeg": 96.48,
+     "demandNm": 74.93,
+     "sourceBoundNm": 169.82,
+     "candidateBoundNm": 218.95,
+     "sourceRatio": 0.441,
+     "candidateRatio": 0.342
+    },
+    {
+     "timeS": 51.04,
+     "flexionDeg": 97.692,
+     "demandNm": 76.36,
+     "sourceBoundNm": 167.3,
+     "candidateBoundNm": 215.28,
+     "sourceRatio": 0.456,
+     "candidateRatio": 0.355
+    },
+    {
+     "timeS": 51.045,
+     "flexionDeg": 98.887,
+     "demandNm": 78.08,
+     "sourceBoundNm": 164.79,
+     "candidateBoundNm": 213.07,
+     "sourceRatio": 0.474,
+     "candidateRatio": 0.366
+    },
+    {
+     "timeS": 51.05,
+     "flexionDeg": 100.074,
+     "demandNm": 80.08,
+     "sourceBoundNm": 162.28,
+     "candidateBoundNm": 211.64,
+     "sourceRatio": 0.493,
+     "candidateRatio": 0.378
+    },
+    {
+     "timeS": 51.055,
+     "flexionDeg": 101.249,
+     "demandNm": 82.27,
+     "sourceBoundNm": 159.77,
+     "candidateBoundNm": 210.71,
+     "sourceRatio": 0.515,
+     "candidateRatio": 0.39
+    },
+    {
+     "timeS": 51.06,
+     "flexionDeg": 102.412,
+     "demandNm": 84.57,
+     "sourceBoundNm": 157.29,
+     "candidateBoundNm": 210.36,
+     "sourceRatio": 0.538,
+     "candidateRatio": 0.402
+    },
+    {
+     "timeS": 51.065,
+     "flexionDeg": 103.563,
+     "demandNm": 86.91,
+     "sourceBoundNm": 154.82,
+     "candidateBoundNm": 210.56,
+     "sourceRatio": 0.561,
+     "candidateRatio": 0.413
+    },
+    {
+     "timeS": 51.07,
+     "flexionDeg": 104.704,
+     "demandNm": 89.21,
+     "sourceBoundNm": 152.39,
+     "candidateBoundNm": 211.27,
+     "sourceRatio": 0.585,
+     "candidateRatio": 0.422
+    },
+    {
+     "timeS": 51.075,
+     "flexionDeg": 105.833,
+     "demandNm": 91.39,
+     "sourceBoundNm": 149.98,
+     "candidateBoundNm": 212.46,
+     "sourceRatio": 0.609,
+     "candidateRatio": 0.43
+    },
+    {
+     "timeS": 51.08,
+     "flexionDeg": 106.953,
+     "demandNm": 93.43,
+     "sourceBoundNm": 147.61,
+     "candidateBoundNm": 214.11,
+     "sourceRatio": 0.633,
+     "candidateRatio": 0.436
+    },
+    {
+     "timeS": 51.085,
+     "flexionDeg": 108.063,
+     "demandNm": 95.29,
+     "sourceBoundNm": 145.27,
+     "candidateBoundNm": 216.17,
+     "sourceRatio": 0.656,
+     "candidateRatio": 0.441
+    },
+    {
+     "timeS": 51.09,
+     "flexionDeg": 109.161,
+     "demandNm": 96.97,
+     "sourceBoundNm": 142.98,
+     "candidateBoundNm": 218.62,
+     "sourceRatio": 0.678,
+     "candidateRatio": 0.444
+    },
+    {
+     "timeS": 51.095,
+     "flexionDeg": 110.251,
+     "demandNm": 98.51,
+     "sourceBoundNm": 140.73,
+     "candidateBoundNm": 221.44,
+     "sourceRatio": 0.7,
+     "candidateRatio": 0.445
+    },
+    {
+     "timeS": 51.1,
+     "flexionDeg": 111.331,
+     "demandNm": 99.92,
+     "sourceBoundNm": 138.53,
+     "candidateBoundNm": 224.57,
+     "sourceRatio": 0.721,
+     "candidateRatio": 0.445
+    },
+    {
+     "timeS": 51.105,
+     "flexionDeg": 112.401,
+     "demandNm": 101.24,
+     "sourceBoundNm": 136.39,
+     "candidateBoundNm": 227.98,
+     "sourceRatio": 0.742,
+     "candidateRatio": 0.444
+    },
+    {
+     "timeS": 51.11,
+     "flexionDeg": 113.461,
+     "demandNm": 102.52,
+     "sourceBoundNm": 134.29,
+     "candidateBoundNm": 231.64,
+     "sourceRatio": 0.763,
+     "candidateRatio": 0.443
+    },
+    {
+     "timeS": 51.115,
+     "flexionDeg": 114.513,
+     "demandNm": 103.77,
+     "sourceBoundNm": 132.26,
+     "candidateBoundNm": 235.53,
+     "sourceRatio": 0.785,
+     "candidateRatio": 0.441
+    },
+    {
+     "timeS": 51.12,
+     "flexionDeg": 115.555,
+     "demandNm": 105.02,
+     "sourceBoundNm": 130.28,
+     "candidateBoundNm": 239.62,
+     "sourceRatio": 0.806,
+     "candidateRatio": 0.438
+    },
+    {
+     "timeS": 51.125,
+     "flexionDeg": 116.586,
+     "demandNm": 106.28,
+     "sourceBoundNm": 128.37,
+     "candidateBoundNm": 243.89,
+     "sourceRatio": 0.828,
+     "candidateRatio": 0.436
+    },
+    {
+     "timeS": 51.13,
+     "flexionDeg": 117.608,
+     "demandNm": 107.55,
+     "sourceBoundNm": 126.53,
+     "candidateBoundNm": 248.33,
+     "sourceRatio": 0.85,
+     "candidateRatio": 0.433
+    },
+    {
+     "timeS": 51.135,
+     "flexionDeg": 118.622,
+     "demandNm": 108.85,
+     "sourceBoundNm": 124.75,
+     "candidateBoundNm": 252.91,
+     "sourceRatio": 0.873,
+     "candidateRatio": 0.43
+    },
+    {
+     "timeS": 51.14,
+     "flexionDeg": 119.625,
+     "demandNm": 110.19,
+     "sourceBoundNm": 123.04,
+     "candidateBoundNm": 257.61,
+     "sourceRatio": 0.896,
+     "candidateRatio": 0.428
+    },
+    {
+     "timeS": 51.145,
+     "flexionDeg": 120.624,
+     "demandNm": 111.66,
+     "sourceBoundNm": 121.71,
+     "candidateBoundNm": 256.22,
+     "sourceRatio": 0.917,
+     "candidateRatio": 0.436
+    },
+    {
+     "timeS": 51.15,
+     "flexionDeg": 121.616,
+     "demandNm": 113.37,
+     "sourceBoundNm": 122.67,
+     "candidateBoundNm": 251.33,
+     "sourceRatio": 0.924,
+     "candidateRatio": 0.451
+    },
+    {
+     "timeS": 51.155,
+     "flexionDeg": 122.597,
+     "demandNm": 115.18,
+     "sourceBoundNm": 123.79,
+     "candidateBoundNm": 246.71,
+     "sourceRatio": 0.93,
+     "candidateRatio": 0.467
+    },
+    {
+     "timeS": 51.16,
+     "flexionDeg": 123.568,
+     "demandNm": 117.1,
+     "sourceBoundNm": 124.88,
+     "candidateBoundNm": 242.37,
+     "sourceRatio": 0.938,
+     "candidateRatio": 0.483
+    },
+    {
+     "timeS": 51.165,
+     "flexionDeg": 124.525,
+     "demandNm": 119.11,
+     "sourceBoundNm": 125.93,
+     "candidateBoundNm": 238.33,
+     "sourceRatio": 0.946,
+     "candidateRatio": 0.5
+    },
+    {
+     "timeS": 51.17,
+     "flexionDeg": 125.47,
+     "demandNm": 121.17,
+     "sourceBoundNm": 127.02,
+     "candidateBoundNm": 234.57,
+     "sourceRatio": 0.954,
+     "candidateRatio": 0.517
+    },
+    {
+     "timeS": 51.175,
+     "flexionDeg": 126.4,
+     "demandNm": 123.27,
+     "sourceBoundNm": 128.51,
+     "candidateBoundNm": 231.09,
+     "sourceRatio": 0.959,
+     "candidateRatio": 0.533
+    },
+    {
+     "timeS": 51.18,
+     "flexionDeg": 127.318,
+     "demandNm": 125.37,
+     "sourceBoundNm": 129.96,
+     "candidateBoundNm": 227.9,
+     "sourceRatio": 0.965,
+     "candidateRatio": 0.55
+    },
+    {
+     "timeS": 51.185,
+     "flexionDeg": 128.218,
+     "demandNm": 127.48,
+     "sourceBoundNm": 131.38,
+     "candidateBoundNm": 225.0,
+     "sourceRatio": 0.97,
+     "candidateRatio": 0.567
+    },
+    {
+     "timeS": 51.19,
+     "flexionDeg": 129.103,
+     "demandNm": 129.57,
+     "sourceBoundNm": 132.77,
+     "candidateBoundNm": 222.38,
+     "sourceRatio": 0.976,
+     "candidateRatio": 0.583
+    },
+    {
+     "timeS": 51.195,
+     "flexionDeg": 129.971,
+     "demandNm": 131.66,
+     "sourceBoundNm": 134.13,
+     "candidateBoundNm": 220.03,
+     "sourceRatio": 0.982,
+     "candidateRatio": 0.598
+    },
+    {
+     "timeS": 51.2,
+     "flexionDeg": 130.822,
+     "demandNm": 133.79,
+     "sourceBoundNm": 135.45,
+     "candidateBoundNm": 217.96,
+     "sourceRatio": 0.988,
+     "candidateRatio": 0.614
+    },
+    {
+     "timeS": 51.205,
+     "flexionDeg": 131.651,
+     "demandNm": 136.0,
+     "sourceBoundNm": 136.74,
+     "candidateBoundNm": 216.15,
+     "sourceRatio": 0.995,
+     "candidateRatio": 0.629
+    },
+    {
+     "timeS": 51.21,
+     "flexionDeg": 132.461,
+     "demandNm": 138.35,
+     "sourceBoundNm": 137.99,
+     "candidateBoundNm": 214.6,
+     "sourceRatio": 1.003,
+     "candidateRatio": 0.645
+    },
+    {
+     "timeS": 51.215,
+     "flexionDeg": 133.25,
+     "demandNm": 140.92,
+     "sourceBoundNm": 139.2,
+     "candidateBoundNm": 213.29,
+     "sourceRatio": 1.012,
+     "candidateRatio": 0.661
+    },
+    {
+     "timeS": 51.22,
+     "flexionDeg": 134.014,
+     "demandNm": 143.8,
+     "sourceBoundNm": 140.38,
+     "candidateBoundNm": 212.23,
+     "sourceRatio": 1.024,
+     "candidateRatio": 0.678
+    },
+    {
+     "timeS": 51.225,
+     "flexionDeg": 134.753,
+     "demandNm": 147.07,
+     "sourceBoundNm": 141.52,
+     "candidateBoundNm": 211.38,
+     "sourceRatio": 1.039,
+     "candidateRatio": 0.696
+    },
+    {
+     "timeS": 51.23,
+     "flexionDeg": 135.466,
+     "demandNm": 150.79,
+     "sourceBoundNm": 142.61,
+     "candidateBoundNm": 210.75,
+     "sourceRatio": 1.057,
+     "candidateRatio": 0.716
+    },
+    {
+     "timeS": 51.235,
+     "flexionDeg": 136.152,
+     "demandNm": 154.98,
+     "sourceBoundNm": 143.67,
+     "candidateBoundNm": 210.31,
+     "sourceRatio": 1.079,
+     "candidateRatio": 0.737
+    },
+    {
+     "timeS": 51.24,
+     "flexionDeg": 136.808,
+     "demandNm": 159.61,
+     "sourceBoundNm": 144.68,
+     "candidateBoundNm": 210.04,
+     "sourceRatio": 1.103,
+     "candidateRatio": 0.76
+    },
+    {
+     "timeS": 51.245,
+     "flexionDeg": 137.434,
+     "demandNm": 164.57,
+     "sourceBoundNm": 145.64,
+     "candidateBoundNm": 209.94,
+     "sourceRatio": 1.13,
+     "candidateRatio": 0.784
+    },
+    {
+     "timeS": 51.25,
+     "flexionDeg": 138.026,
+     "demandNm": 169.76,
+     "sourceBoundNm": 146.56,
+     "candidateBoundNm": 209.97,
+     "sourceRatio": 1.158,
+     "candidateRatio": 0.809
+    },
+    {
+     "timeS": 51.255,
+     "flexionDeg": 138.586,
+     "demandNm": 175.04,
+     "sourceBoundNm": 147.43,
+     "candidateBoundNm": 210.11,
+     "sourceRatio": 1.187,
+     "candidateRatio": 0.833
+    },
+    {
+     "timeS": 51.26,
+     "flexionDeg": 139.11,
+     "demandNm": 180.27,
+     "sourceBoundNm": 148.24,
+     "candidateBoundNm": 210.36,
+     "sourceRatio": 1.216,
+     "candidateRatio": 0.857
+    },
+    {
+     "timeS": 51.265,
+     "flexionDeg": 139.598,
+     "demandNm": 185.39,
+     "sourceBoundNm": 149.01,
+     "candidateBoundNm": 210.68,
+     "sourceRatio": 1.244,
+     "candidateRatio": 0.88
+    },
+    {
+     "timeS": 51.27,
+     "flexionDeg": 140.049,
+     "demandNm": 190.33,
+     "sourceBoundNm": 149.71,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.271,
+     "candidateRatio": 1.181
+    },
+    {
+     "timeS": 51.275,
+     "flexionDeg": 140.461,
+     "demandNm": 195.09,
+     "sourceBoundNm": 150.37,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.297,
+     "candidateRatio": 1.21
+    },
+    {
+     "timeS": 51.28,
+     "flexionDeg": 140.833,
+     "demandNm": 199.69,
+     "sourceBoundNm": 150.96,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.323,
+     "candidateRatio": 1.239
+    },
+    {
+     "timeS": 51.285,
+     "flexionDeg": 141.165,
+     "demandNm": 204.12,
+     "sourceBoundNm": 151.5,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.347,
+     "candidateRatio": 1.266
+    },
+    {
+     "timeS": 51.29,
+     "flexionDeg": 141.457,
+     "demandNm": 208.37,
+     "sourceBoundNm": 151.97,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.371,
+     "candidateRatio": 1.292
+    },
+    {
+     "timeS": 51.295,
+     "flexionDeg": 141.707,
+     "demandNm": 212.4,
+     "sourceBoundNm": 152.38,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.394,
+     "candidateRatio": 1.317
+    },
+    {
+     "timeS": 51.3,
+     "flexionDeg": 141.915,
+     "demandNm": 216.11,
+     "sourceBoundNm": 152.73,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.415,
+     "candidateRatio": 1.34
+    },
+    {
+     "timeS": 51.305,
+     "flexionDeg": 142.081,
+     "demandNm": 219.4,
+     "sourceBoundNm": 153.02,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.434,
+     "candidateRatio": 1.361
+    },
+    {
+     "timeS": 51.31,
+     "flexionDeg": 142.204,
+     "demandNm": 222.13,
+     "sourceBoundNm": 153.24,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.45,
+     "candidateRatio": 1.378
+    },
+    {
+     "timeS": 51.315,
+     "flexionDeg": 142.284,
+     "demandNm": 224.23,
+     "sourceBoundNm": 153.4,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.462,
+     "candidateRatio": 1.391
+    },
+    {
+     "timeS": 51.32,
+     "flexionDeg": 142.322,
+     "demandNm": 225.59,
+     "sourceBoundNm": 153.49,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.47,
+     "candidateRatio": 1.399
+    },
+    {
+     "timeS": 51.325,
+     "flexionDeg": 142.319,
+     "demandNm": 226.2,
+     "sourceBoundNm": 153.53,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.473,
+     "candidateRatio": 1.403
+    },
+    {
+     "timeS": 51.33,
+     "flexionDeg": 142.27,
+     "demandNm": 226.03,
+     "sourceBoundNm": 153.49,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.473,
+     "candidateRatio": 1.402
+    },
+    {
+     "timeS": 51.335,
+     "flexionDeg": 142.182,
+     "demandNm": 225.13,
+     "sourceBoundNm": 153.4,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.468,
+     "candidateRatio": 1.396
+    },
+    {
+     "timeS": 51.34,
+     "flexionDeg": 142.051,
+     "demandNm": 223.55,
+     "sourceBoundNm": 153.23,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.459,
+     "candidateRatio": 1.387
+    },
+    {
+     "timeS": 51.345,
+     "flexionDeg": 141.877,
+     "demandNm": 221.37,
+     "sourceBoundNm": 153.01,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.447,
+     "candidateRatio": 1.373
+    },
+    {
+     "timeS": 51.35,
+     "flexionDeg": 141.665,
+     "demandNm": 218.66,
+     "sourceBoundNm": 152.72,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.432,
+     "candidateRatio": 1.356
+    },
+    {
+     "timeS": 51.355,
+     "flexionDeg": 141.412,
+     "demandNm": 215.53,
+     "sourceBoundNm": 152.37,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.415,
+     "candidateRatio": 1.337
+    },
+    {
+     "timeS": 51.36,
+     "flexionDeg": 141.121,
+     "demandNm": 212.05,
+     "sourceBoundNm": 151.96,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.395,
+     "candidateRatio": 1.315
+    },
+    {
+     "timeS": 51.365,
+     "flexionDeg": 140.791,
+     "demandNm": 208.3,
+     "sourceBoundNm": 151.5,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.375,
+     "candidateRatio": 1.292
+    },
+    {
+     "timeS": 51.37,
+     "flexionDeg": 140.423,
+     "demandNm": 204.32,
+     "sourceBoundNm": 150.97,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.353,
+     "candidateRatio": 1.267
+    },
+    {
+     "timeS": 51.375,
+     "flexionDeg": 140.02,
+     "demandNm": 200.16,
+     "sourceBoundNm": 150.38,
+     "candidateBoundNm": 161.22,
+     "sourceRatio": 1.331,
+     "candidateRatio": 1.242
+    },
+    {
+     "timeS": 51.38,
+     "flexionDeg": 139.581,
+     "demandNm": 195.86,
+     "sourceBoundNm": 149.74,
+     "candidateBoundNm": 209.43,
+     "sourceRatio": 1.308,
+     "candidateRatio": 0.935
+    },
+    {
+     "timeS": 51.385,
+     "flexionDeg": 139.108,
+     "demandNm": 191.44,
+     "sourceBoundNm": 149.05,
+     "candidateBoundNm": 209.06,
+     "sourceRatio": 1.284,
+     "candidateRatio": 0.916
+    },
+    {
+     "timeS": 51.39,
+     "flexionDeg": 138.602,
+     "demandNm": 186.92,
+     "sourceBoundNm": 148.31,
+     "candidateBoundNm": 208.77,
+     "sourceRatio": 1.26,
+     "candidateRatio": 0.895
+    },
+    {
+     "timeS": 51.395,
+     "flexionDeg": 138.064,
+     "demandNm": 182.3,
+     "sourceBoundNm": 147.51,
+     "candidateBoundNm": 208.58,
+     "sourceRatio": 1.236,
+     "candidateRatio": 0.874
+    },
+    {
+     "timeS": 51.4,
+     "flexionDeg": 137.497,
+     "demandNm": 177.59,
+     "sourceBoundNm": 146.67,
+     "candidateBoundNm": 208.49,
+     "sourceRatio": 1.211,
+     "candidateRatio": 0.852
+    },
+    {
+     "timeS": 51.405,
+     "flexionDeg": 136.901,
+     "demandNm": 172.8,
+     "sourceBoundNm": 145.78,
+     "candidateBoundNm": 208.54,
+     "sourceRatio": 1.185,
+     "candidateRatio": 0.829
+    },
+    {
+     "timeS": 51.41,
+     "flexionDeg": 136.277,
+     "demandNm": 167.95,
+     "sourceBoundNm": 144.84,
+     "candidateBoundNm": 208.74,
+     "sourceRatio": 1.16,
+     "candidateRatio": 0.805
+    },
+    {
+     "timeS": 51.415,
+     "flexionDeg": 135.629,
+     "demandNm": 163.03,
+     "sourceBoundNm": 143.87,
+     "candidateBoundNm": 209.09,
+     "sourceRatio": 1.133,
+     "candidateRatio": 0.78
+    },
+    {
+     "timeS": 51.42,
+     "flexionDeg": 134.956,
+     "demandNm": 158.06,
+     "sourceBoundNm": 142.85,
+     "candidateBoundNm": 209.63,
+     "sourceRatio": 1.107,
+     "candidateRatio": 0.754
+    },
+    {
+     "timeS": 51.425,
+     "flexionDeg": 134.26,
+     "demandNm": 153.08,
+     "sourceBoundNm": 141.79,
+     "candidateBoundNm": 210.35,
+     "sourceRatio": 1.08,
+     "candidateRatio": 0.728
+    },
+    {
+     "timeS": 51.43,
+     "flexionDeg": 133.543,
+     "demandNm": 148.13,
+     "sourceBoundNm": 140.7,
+     "candidateBoundNm": 211.26,
+     "sourceRatio": 1.053,
+     "candidateRatio": 0.701
+    },
+    {
+     "timeS": 51.435,
+     "flexionDeg": 132.808,
+     "demandNm": 143.26,
+     "sourceBoundNm": 139.57,
+     "candidateBoundNm": 212.39,
+     "sourceRatio": 1.026,
+     "candidateRatio": 0.675
+    },
+    {
+     "timeS": 51.44,
+     "flexionDeg": 132.054,
+     "demandNm": 138.54,
+     "sourceBoundNm": 138.41,
+     "candidateBoundNm": 213.73,
+     "sourceRatio": 1.001,
+     "candidateRatio": 0.648
+    },
+    {
+     "timeS": 51.445,
+     "flexionDeg": 131.284,
+     "demandNm": 134.03,
+     "sourceBoundNm": 137.22,
+     "candidateBoundNm": 215.28,
+     "sourceRatio": 0.977,
+     "candidateRatio": 0.623
+    },
+    {
+     "timeS": 51.45,
+     "flexionDeg": 130.5,
+     "demandNm": 129.79,
+     "sourceBoundNm": 136.0,
+     "candidateBoundNm": 217.06,
+     "sourceRatio": 0.954,
+     "candidateRatio": 0.598
+    },
+    {
+     "timeS": 51.455,
+     "flexionDeg": 129.702,
+     "demandNm": 125.87,
+     "sourceBoundNm": 134.76,
+     "candidateBoundNm": 219.07,
+     "sourceRatio": 0.934,
+     "candidateRatio": 0.575
+    },
+    {
+     "timeS": 51.46,
+     "flexionDeg": 128.892,
+     "demandNm": 122.28,
+     "sourceBoundNm": 133.49,
+     "candidateBoundNm": 221.3,
+     "sourceRatio": 0.916,
+     "candidateRatio": 0.553
+    },
+    {
+     "timeS": 51.465,
+     "flexionDeg": 128.072,
+     "demandNm": 119.02,
+     "sourceBoundNm": 132.19,
+     "candidateBoundNm": 223.76,
+     "sourceRatio": 0.9,
+     "candidateRatio": 0.532
+    },
+    {
+     "timeS": 51.47,
+     "flexionDeg": 127.242,
+     "demandNm": 116.07,
+     "sourceBoundNm": 130.88,
+     "candidateBoundNm": 226.45,
+     "sourceRatio": 0.887,
+     "candidateRatio": 0.513
+    },
+    {
+     "timeS": 51.475,
+     "flexionDeg": 126.404,
+     "demandNm": 113.38,
+     "sourceBoundNm": 129.54,
+     "candidateBoundNm": 229.35,
+     "sourceRatio": 0.875,
+     "candidateRatio": 0.494
+    },
+    {
+     "timeS": 51.48,
+     "flexionDeg": 125.558,
+     "demandNm": 110.91,
+     "sourceBoundNm": 128.18,
+     "candidateBoundNm": 232.48,
+     "sourceRatio": 0.865,
+     "candidateRatio": 0.477
+    },
+    {
+     "timeS": 51.485,
+     "flexionDeg": 124.707,
+     "demandNm": 108.63,
+     "sourceBoundNm": 127.14,
+     "candidateBoundNm": 235.82,
+     "sourceRatio": 0.854,
+     "candidateRatio": 0.461
+    },
+    {
+     "timeS": 51.49,
+     "flexionDeg": 123.85,
+     "demandNm": 106.49,
+     "sourceBoundNm": 126.19,
+     "candidateBoundNm": 239.37,
+     "sourceRatio": 0.844,
+     "candidateRatio": 0.445
+    },
+    {
+     "timeS": 51.495,
+     "flexionDeg": 122.988,
+     "demandNm": 104.5,
+     "sourceBoundNm": 125.22,
+     "candidateBoundNm": 243.13,
+     "sourceRatio": 0.835,
+     "candidateRatio": 0.43
+    },
+    {
+     "timeS": 51.5,
+     "flexionDeg": 122.123,
+     "demandNm": 102.66,
+     "sourceBoundNm": 124.23,
+     "candidateBoundNm": 247.09,
+     "sourceRatio": 0.826,
+     "candidateRatio": 0.415
+    }
+   ]
+  },
+  "AB02": {
+   "subjectMassKg": 82.2,
+   "deepestFrameTimeS": 23.685,
+   "deepestKneeFlexionDeg": 135.145,
+   "candidateMaximumFlexionDeg": 140.0,
+   "momentArmProfile": {
+    "muscle": "vaslat_r",
+    "probedFlexionRangeDeg": [
+     118.0,
+     120.0,
+     122.0
+    ],
+    "gridStepDeg": 0.25,
+    "samples": [
+     {
+      "requestedFlexionDeg": 118.0,
+      "appliedFlexionDeg": 118.0003,
+      "momentArmCm": -2.36841
+     },
+     {
+      "requestedFlexionDeg": 118.25,
+      "appliedFlexionDeg": 118.2503,
+      "momentArmCm": -2.38075
+     },
+     {
+      "requestedFlexionDeg": 118.5,
+      "appliedFlexionDeg": 118.5003,
+      "momentArmCm": -2.39323
+     },
+     {
+      "requestedFlexionDeg": 118.75,
+      "appliedFlexionDeg": 118.7503,
+      "momentArmCm": -2.40586
+     },
+     {
+      "requestedFlexionDeg": 119.0,
+      "appliedFlexionDeg": 119.0003,
+      "momentArmCm": -2.41863
+     },
+     {
+      "requestedFlexionDeg": 119.25,
+      "appliedFlexionDeg": 119.2503,
+      "momentArmCm": -2.43154
+     },
+     {
+      "requestedFlexionDeg": 119.5,
+      "appliedFlexionDeg": 119.5003,
+      "momentArmCm": -2.44461
+     },
+     {
+      "requestedFlexionDeg": 119.75,
+      "appliedFlexionDeg": 119.7503,
+      "momentArmCm": -2.45781
+     },
+     {
+      "requestedFlexionDeg": 120.0,
+      "appliedFlexionDeg": 120.0003,
+      "momentArmCm": -2.47115
+     },
+     {
+      "requestedFlexionDeg": 120.25,
+      "appliedFlexionDeg": 120.2503,
+      "momentArmCm": -2.46178
+     },
+     {
+      "requestedFlexionDeg": 120.5,
+      "appliedFlexionDeg": 120.5003,
+      "momentArmCm": -2.45252
+     },
+     {
+      "requestedFlexionDeg": 120.75,
+      "appliedFlexionDeg": 120.7503,
+      "momentArmCm": -2.44336
+     },
+     {
+      "requestedFlexionDeg": 121.0,
+      "appliedFlexionDeg": 121.0003,
+      "momentArmCm": -2.43432
+     },
+     {
+      "requestedFlexionDeg": 121.25,
+      "appliedFlexionDeg": 121.2503,
+      "momentArmCm": -2.42538
+     },
+     {
+      "requestedFlexionDeg": 121.5,
+      "appliedFlexionDeg": 121.5003,
+      "momentArmCm": -2.41655
+     },
+     {
+      "requestedFlexionDeg": 121.75,
+      "appliedFlexionDeg": 121.7503,
+      "momentArmCm": -2.40784
+     },
+     {
+      "requestedFlexionDeg": 122.0,
+      "appliedFlexionDeg": 122.0003,
+      "momentArmCm": -2.39924
+     }
+    ],
+    "maximumAbsoluteArm": {
+     "momentArmCm": -2.47115,
+     "appliedFlexionDeg": 120.0003
+    },
+    "slopeAtBoundaryCmPerDeg": {
+     "before": 0.0528,
+     "after": -0.03704,
+     "signFlip": true
+    }
+   },
+   "summary": {
+    "within": {
+     "frames": 16,
+     "maximumFlexionDeg": 119.754,
+     "sourceMaximumRatio": 0.747,
+     "sourceMaximumRatioTimeS": 23.88,
+     "sourceMaximumRatioFlexionDeg": 119.711,
+     "sourceFramesOverOne": 0,
+     "candidateMaximumRatio": 0.348,
+     "candidateMaximumRatioTimeS": 23.4,
+     "candidateMaximumRatioFlexionDeg": 114.656,
+     "candidateFramesOverOne": 0
+    },
+    "beyond": {
+     "frames": 85,
+     "maximumFlexionDeg": 135.145,
+     "sourceMaximumRatio": 0.799,
+     "sourceMaximumRatioTimeS": 23.845,
+     "sourceMaximumRatioFlexionDeg": 124.7,
+     "sourceFramesOverOne": 0,
+     "candidateMaximumRatio": 0.419,
+     "candidateMaximumRatioTimeS": 23.8,
+     "candidateMaximumRatioFlexionDeg": 129.864,
+     "candidateFramesOverOne": 0
+    }
+   },
+   "frames": [
+    {
+     "timeS": 23.4,
+     "flexionDeg": 114.656,
+     "demandNm": 74.49,
+     "sourceBoundNm": 111.53,
+     "candidateBoundNm": 213.9,
+     "sourceRatio": 0.668,
+     "candidateRatio": 0.348
+    },
+    {
+     "timeS": 23.405,
+     "flexionDeg": 115.188,
+     "demandNm": 73.64,
+     "sourceBoundNm": 110.64,
+     "candidateBoundNm": 215.78,
+     "sourceRatio": 0.666,
+     "candidateRatio": 0.341
+    },
+    {
+     "timeS": 23.41,
+     "flexionDeg": 115.714,
+     "demandNm": 72.75,
+     "sourceBoundNm": 109.76,
+     "candidateBoundNm": 217.7,
+     "sourceRatio": 0.663,
+     "candidateRatio": 0.334
+    },
+    {
+     "timeS": 23.415,
+     "flexionDeg": 116.234,
+     "demandNm": 71.84,
+     "sourceBoundNm": 108.91,
+     "candidateBoundNm": 219.65,
+     "sourceRatio": 0.66,
+     "candidateRatio": 0.327
+    },
+    {
+     "timeS": 23.42,
+     "flexionDeg": 116.75,
+     "demandNm": 70.9,
+     "sourceBoundNm": 108.07,
+     "candidateBoundNm": 221.65,
+     "sourceRatio": 0.656,
+     "candidateRatio": 0.32
+    },
+    {
+     "timeS": 23.425,
+     "flexionDeg": 117.261,
+     "demandNm": 69.89,
+     "sourceBoundNm": 107.25,
+     "candidateBoundNm": 223.68,
+     "sourceRatio": 0.652,
+     "candidateRatio": 0.312
+    },
+    {
+     "timeS": 23.43,
+     "flexionDeg": 117.766,
+     "demandNm": 68.8,
+     "sourceBoundNm": 106.46,
+     "candidateBoundNm": 225.74,
+     "sourceRatio": 0.646,
+     "candidateRatio": 0.305
+    },
+    {
+     "timeS": 23.435,
+     "flexionDeg": 118.268,
+     "demandNm": 67.58,
+     "sourceBoundNm": 105.68,
+     "candidateBoundNm": 227.84,
+     "sourceRatio": 0.639,
+     "candidateRatio": 0.297
+    },
+    {
+     "timeS": 23.44,
+     "flexionDeg": 118.767,
+     "demandNm": 66.24,
+     "sourceBoundNm": 104.91,
+     "candidateBoundNm": 229.97,
+     "sourceRatio": 0.631,
+     "candidateRatio": 0.288
+    },
+    {
+     "timeS": 23.445,
+     "flexionDeg": 119.262,
+     "demandNm": 64.81,
+     "sourceBoundNm": 104.17,
+     "candidateBoundNm": 232.13,
+     "sourceRatio": 0.622,
+     "candidateRatio": 0.279
+    },
+    {
+     "timeS": 23.45,
+     "flexionDeg": 119.754,
+     "demandNm": 63.37,
+     "sourceBoundNm": 103.43,
+     "candidateBoundNm": 234.32,
+     "sourceRatio": 0.613,
+     "candidateRatio": 0.27
+    },
+    {
+     "timeS": 23.455,
+     "flexionDeg": 120.245,
+     "demandNm": 62.03,
+     "sourceBoundNm": 102.86,
+     "candidateBoundNm": 234.33,
+     "sourceRatio": 0.603,
+     "candidateRatio": 0.265
+    },
+    {
+     "timeS": 23.46,
+     "flexionDeg": 120.736,
+     "demandNm": 60.9,
+     "sourceBoundNm": 102.43,
+     "candidateBoundNm": 232.16,
+     "sourceRatio": 0.594,
+     "candidateRatio": 0.262
+    },
+    {
+     "timeS": 23.465,
+     "flexionDeg": 121.224,
+     "demandNm": 59.97,
+     "sourceBoundNm": 102.0,
+     "candidateBoundNm": 230.05,
+     "sourceRatio": 0.588,
+     "candidateRatio": 0.261
+    },
+    {
+     "timeS": 23.47,
+     "flexionDeg": 121.711,
+     "demandNm": 59.27,
+     "sourceBoundNm": 101.56,
+     "candidateBoundNm": 227.99,
+     "sourceRatio": 0.584,
+     "candidateRatio": 0.26
+    },
+    {
+     "timeS": 23.475,
+     "flexionDeg": 122.197,
+     "demandNm": 58.77,
+     "sourceBoundNm": 101.19,
+     "candidateBoundNm": 225.98,
+     "sourceRatio": 0.581,
+     "candidateRatio": 0.26
+    },
+    {
+     "timeS": 23.48,
+     "flexionDeg": 122.678,
+     "demandNm": 58.38,
+     "sourceBoundNm": 101.86,
+     "candidateBoundNm": 224.03,
+     "sourceRatio": 0.573,
+     "candidateRatio": 0.261
+    },
+    {
+     "timeS": 23.485,
+     "flexionDeg": 123.16,
+     "demandNm": 58.03,
+     "sourceBoundNm": 102.53,
+     "candidateBoundNm": 222.14,
+     "sourceRatio": 0.566,
+     "candidateRatio": 0.261
+    },
+    {
+     "timeS": 23.49,
+     "flexionDeg": 123.639,
+     "demandNm": 57.64,
+     "sourceBoundNm": 103.19,
+     "candidateBoundNm": 220.3,
+     "sourceRatio": 0.559,
+     "candidateRatio": 0.262
+    },
+    {
+     "timeS": 23.495,
+     "flexionDeg": 124.115,
+     "demandNm": 57.18,
+     "sourceBoundNm": 103.84,
+     "candidateBoundNm": 218.52,
+     "sourceRatio": 0.551,
+     "candidateRatio": 0.262
+    },
+    {
+     "timeS": 23.5,
+     "flexionDeg": 124.589,
+     "demandNm": 56.67,
+     "sourceBoundNm": 104.48,
+     "candidateBoundNm": 216.81,
+     "sourceRatio": 0.542,
+     "candidateRatio": 0.261
+    },
+    {
+     "timeS": 23.505,
+     "flexionDeg": 125.059,
+     "demandNm": 56.16,
+     "sourceBoundNm": 105.12,
+     "candidateBoundNm": 215.15,
+     "sourceRatio": 0.534,
+     "candidateRatio": 0.261
+    },
+    {
+     "timeS": 23.51,
+     "flexionDeg": 125.526,
+     "demandNm": 55.75,
+     "sourceBoundNm": 105.74,
+     "candidateBoundNm": 213.56,
+     "sourceRatio": 0.527,
+     "candidateRatio": 0.261
+    },
+    {
+     "timeS": 23.515,
+     "flexionDeg": 125.989,
+     "demandNm": 55.53,
+     "sourceBoundNm": 106.36,
+     "candidateBoundNm": 212.03,
+     "sourceRatio": 0.522,
+     "candidateRatio": 0.262
+    },
+    {
+     "timeS": 23.52,
+     "flexionDeg": 126.449,
+     "demandNm": 55.53,
+     "sourceBoundNm": 106.97,
+     "candidateBoundNm": 210.56,
+     "sourceRatio": 0.519,
+     "candidateRatio": 0.264
+    },
+    {
+     "timeS": 23.525,
+     "flexionDeg": 126.902,
+     "demandNm": 55.79,
+     "sourceBoundNm": 107.57,
+     "candidateBoundNm": 209.16,
+     "sourceRatio": 0.519,
+     "candidateRatio": 0.267
+    },
+    {
+     "timeS": 23.53,
+     "flexionDeg": 127.348,
+     "demandNm": 56.26,
+     "sourceBoundNm": 108.29,
+     "candidateBoundNm": 207.83,
+     "sourceRatio": 0.52,
+     "candidateRatio": 0.271
+    },
+    {
+     "timeS": 23.535,
+     "flexionDeg": 127.79,
+     "demandNm": 56.9,
+     "sourceBoundNm": 109.1,
+     "candidateBoundNm": 206.56,
+     "sourceRatio": 0.522,
+     "candidateRatio": 0.275
+    },
+    {
+     "timeS": 23.54,
+     "flexionDeg": 128.223,
+     "demandNm": 57.64,
+     "sourceBoundNm": 109.89,
+     "candidateBoundNm": 205.37,
+     "sourceRatio": 0.525,
+     "candidateRatio": 0.281
+    },
+    {
+     "timeS": 23.545,
+     "flexionDeg": 128.649,
+     "demandNm": 58.43,
+     "sourceBoundNm": 110.66,
+     "candidateBoundNm": 204.24,
+     "sourceRatio": 0.528,
+     "candidateRatio": 0.286
+    },
+    {
+     "timeS": 23.55,
+     "flexionDeg": 129.067,
+     "demandNm": 59.22,
+     "sourceBoundNm": 111.42,
+     "candidateBoundNm": 203.19,
+     "sourceRatio": 0.531,
+     "candidateRatio": 0.291
+    },
+    {
+     "timeS": 23.555,
+     "flexionDeg": 129.475,
+     "demandNm": 59.96,
+     "sourceBoundNm": 112.15,
+     "candidateBoundNm": 202.2,
+     "sourceRatio": 0.535,
+     "candidateRatio": 0.297
+    },
+    {
+     "timeS": 23.56,
+     "flexionDeg": 129.872,
+     "demandNm": 60.62,
+     "sourceBoundNm": 112.87,
+     "candidateBoundNm": 201.28,
+     "sourceRatio": 0.537,
+     "candidateRatio": 0.301
+    },
+    {
+     "timeS": 23.565,
+     "flexionDeg": 130.259,
+     "demandNm": 61.17,
+     "sourceBoundNm": 113.57,
+     "candidateBoundNm": 200.42,
+     "sourceRatio": 0.539,
+     "candidateRatio": 0.305
+    },
+    {
+     "timeS": 23.57,
+     "flexionDeg": 130.634,
+     "demandNm": 61.6,
+     "sourceBoundNm": 114.24,
+     "candidateBoundNm": 199.63,
+     "sourceRatio": 0.539,
+     "candidateRatio": 0.309
+    },
+    {
+     "timeS": 23.575,
+     "flexionDeg": 130.997,
+     "demandNm": 61.89,
+     "sourceBoundNm": 114.89,
+     "candidateBoundNm": 198.91,
+     "sourceRatio": 0.539,
+     "candidateRatio": 0.311
+    },
+    {
+     "timeS": 23.58,
+     "flexionDeg": 131.348,
+     "demandNm": 62.05,
+     "sourceBoundNm": 115.52,
+     "candidateBoundNm": 198.24,
+     "sourceRatio": 0.537,
+     "candidateRatio": 0.313
+    },
+    {
+     "timeS": 23.585,
+     "flexionDeg": 131.685,
+     "demandNm": 62.13,
+     "sourceBoundNm": 116.12,
+     "candidateBoundNm": 197.64,
+     "sourceRatio": 0.535,
+     "candidateRatio": 0.314
+    },
+    {
+     "timeS": 23.59,
+     "flexionDeg": 132.008,
+     "demandNm": 62.16,
+     "sourceBoundNm": 116.7,
+     "candidateBoundNm": 197.08,
+     "sourceRatio": 0.533,
+     "candidateRatio": 0.315
+    },
+    {
+     "timeS": 23.595,
+     "flexionDeg": 132.32,
+     "demandNm": 62.2,
+     "sourceBoundNm": 117.25,
+     "candidateBoundNm": 196.58,
+     "sourceRatio": 0.53,
+     "candidateRatio": 0.316
+    },
+    {
+     "timeS": 23.6,
+     "flexionDeg": 132.615,
+     "demandNm": 62.29,
+     "sourceBoundNm": 117.77,
+     "candidateBoundNm": 196.13,
+     "sourceRatio": 0.529,
+     "candidateRatio": 0.318
+    },
+    {
+     "timeS": 23.605,
+     "flexionDeg": 132.892,
+     "demandNm": 62.44,
+     "sourceBoundNm": 118.26,
+     "candidateBoundNm": 195.73,
+     "sourceRatio": 0.528,
+     "candidateRatio": 0.319
+    },
+    {
+     "timeS": 23.61,
+     "flexionDeg": 133.157,
+     "demandNm": 62.64,
+     "sourceBoundNm": 118.73,
+     "candidateBoundNm": 195.37,
+     "sourceRatio": 0.528,
+     "candidateRatio": 0.321
+    },
+    {
+     "timeS": 23.615,
+     "flexionDeg": 133.406,
+     "demandNm": 62.86,
+     "sourceBoundNm": 119.17,
+     "candidateBoundNm": 195.05,
+     "sourceRatio": 0.528,
+     "candidateRatio": 0.322
+    },
+    {
+     "timeS": 23.62,
+     "flexionDeg": 133.638,
+     "demandNm": 63.06,
+     "sourceBoundNm": 119.58,
+     "candidateBoundNm": 194.77,
+     "sourceRatio": 0.527,
+     "candidateRatio": 0.324
+    },
+    {
+     "timeS": 23.625,
+     "flexionDeg": 133.855,
+     "demandNm": 63.21,
+     "sourceBoundNm": 119.96,
+     "candidateBoundNm": 194.52,
+     "sourceRatio": 0.527,
+     "candidateRatio": 0.325
+    },
+    {
+     "timeS": 23.63,
+     "flexionDeg": 134.054,
+     "demandNm": 63.28,
+     "sourceBoundNm": 120.3,
+     "candidateBoundNm": 194.3,
+     "sourceRatio": 0.526,
+     "candidateRatio": 0.326
+    },
+    {
+     "timeS": 23.635,
+     "flexionDeg": 134.239,
+     "demandNm": 63.3,
+     "sourceBoundNm": 120.62,
+     "candidateBoundNm": 194.11,
+     "sourceRatio": 0.525,
+     "candidateRatio": 0.326
+    },
+    {
+     "timeS": 23.64,
+     "flexionDeg": 134.407,
+     "demandNm": 63.33,
+     "sourceBoundNm": 120.91,
+     "candidateBoundNm": 193.95,
+     "sourceRatio": 0.524,
+     "candidateRatio": 0.327
+    },
+    {
+     "timeS": 23.645,
+     "flexionDeg": 134.557,
+     "demandNm": 63.42,
+     "sourceBoundNm": 121.17,
+     "candidateBoundNm": 193.81,
+     "sourceRatio": 0.523,
+     "candidateRatio": 0.327
+    },
+    {
+     "timeS": 23.65,
+     "flexionDeg": 134.692,
+     "demandNm": 63.64,
+     "sourceBoundNm": 121.4,
+     "candidateBoundNm": 193.69,
+     "sourceRatio": 0.524,
+     "candidateRatio": 0.329
+    },
+    {
+     "timeS": 23.655,
+     "flexionDeg": 134.809,
+     "demandNm": 64.05,
+     "sourceBoundNm": 121.6,
+     "candidateBoundNm": 193.59,
+     "sourceRatio": 0.527,
+     "candidateRatio": 0.331
+    },
+    {
+     "timeS": 23.66,
+     "flexionDeg": 134.909,
+     "demandNm": 64.66,
+     "sourceBoundNm": 121.77,
+     "candidateBoundNm": 193.51,
+     "sourceRatio": 0.531,
+     "candidateRatio": 0.334
+    },
+    {
+     "timeS": 23.665,
+     "flexionDeg": 134.992,
+     "demandNm": 65.45,
+     "sourceBoundNm": 121.91,
+     "candidateBoundNm": 193.44,
+     "sourceRatio": 0.537,
+     "candidateRatio": 0.338
+    },
+    {
+     "timeS": 23.67,
+     "flexionDeg": 135.057,
+     "demandNm": 66.37,
+     "sourceBoundNm": 122.02,
+     "candidateBoundNm": 193.39,
+     "sourceRatio": 0.544,
+     "candidateRatio": 0.343
+    },
+    {
+     "timeS": 23.675,
+     "flexionDeg": 135.106,
+     "demandNm": 67.36,
+     "sourceBoundNm": 122.09,
+     "candidateBoundNm": 193.35,
+     "sourceRatio": 0.552,
+     "candidateRatio": 0.348
+    },
+    {
+     "timeS": 23.68,
+     "flexionDeg": 135.134,
+     "demandNm": 68.38,
+     "sourceBoundNm": 122.14,
+     "candidateBoundNm": 193.33,
+     "sourceRatio": 0.56,
+     "candidateRatio": 0.354
+    },
+    {
+     "timeS": 23.685,
+     "flexionDeg": 135.145,
+     "demandNm": 69.38,
+     "sourceBoundNm": 122.15,
+     "candidateBoundNm": 193.32,
+     "sourceRatio": 0.568,
+     "candidateRatio": 0.359
+    },
+    {
+     "timeS": 23.69,
+     "flexionDeg": 135.139,
+     "demandNm": 70.36,
+     "sourceBoundNm": 122.14,
+     "candidateBoundNm": 193.32,
+     "sourceRatio": 0.576,
+     "candidateRatio": 0.364
+    },
+    {
+     "timeS": 23.695,
+     "flexionDeg": 135.116,
+     "demandNm": 71.32,
+     "sourceBoundNm": 122.09,
+     "candidateBoundNm": 193.33,
+     "sourceRatio": 0.584,
+     "candidateRatio": 0.369
+    },
+    {
+     "timeS": 23.7,
+     "flexionDeg": 135.072,
+     "demandNm": 72.26,
+     "sourceBoundNm": 122.01,
+     "candidateBoundNm": 193.36,
+     "sourceRatio": 0.592,
+     "candidateRatio": 0.374
+    },
+    {
+     "timeS": 23.705,
+     "flexionDeg": 135.01,
+     "demandNm": 73.18,
+     "sourceBoundNm": 121.9,
+     "candidateBoundNm": 193.41,
+     "sourceRatio": 0.6,
+     "candidateRatio": 0.378
+    },
+    {
+     "timeS": 23.71,
+     "flexionDeg": 134.928,
+     "demandNm": 74.05,
+     "sourceBoundNm": 121.76,
+     "candidateBoundNm": 193.47,
+     "sourceRatio": 0.608,
+     "candidateRatio": 0.383
+    },
+    {
+     "timeS": 23.715,
+     "flexionDeg": 134.827,
+     "demandNm": 74.84,
+     "sourceBoundNm": 121.58,
+     "candidateBoundNm": 193.55,
+     "sourceRatio": 0.616,
+     "candidateRatio": 0.387
+    },
+    {
+     "timeS": 23.72,
+     "flexionDeg": 134.706,
+     "demandNm": 75.51,
+     "sourceBoundNm": 121.37,
+     "candidateBoundNm": 193.64,
+     "sourceRatio": 0.622,
+     "candidateRatio": 0.39
+    },
+    {
+     "timeS": 23.725,
+     "flexionDeg": 134.566,
+     "demandNm": 76.05,
+     "sourceBoundNm": 121.13,
+     "candidateBoundNm": 193.77,
+     "sourceRatio": 0.628,
+     "candidateRatio": 0.392
+    },
+    {
+     "timeS": 23.73,
+     "flexionDeg": 134.405,
+     "demandNm": 76.46,
+     "sourceBoundNm": 120.85,
+     "candidateBoundNm": 193.92,
+     "sourceRatio": 0.633,
+     "candidateRatio": 0.394
+    },
+    {
+     "timeS": 23.735,
+     "flexionDeg": 134.222,
+     "demandNm": 76.77,
+     "sourceBoundNm": 120.53,
+     "candidateBoundNm": 194.09,
+     "sourceRatio": 0.637,
+     "candidateRatio": 0.396
+    },
+    {
+     "timeS": 23.74,
+     "flexionDeg": 134.019,
+     "demandNm": 77.05,
+     "sourceBoundNm": 120.18,
+     "candidateBoundNm": 194.31,
+     "sourceRatio": 0.641,
+     "candidateRatio": 0.397
+    },
+    {
+     "timeS": 23.745,
+     "flexionDeg": 133.794,
+     "demandNm": 77.34,
+     "sourceBoundNm": 119.8,
+     "candidateBoundNm": 194.56,
+     "sourceRatio": 0.646,
+     "candidateRatio": 0.398
+    },
+    {
+     "timeS": 23.75,
+     "flexionDeg": 133.548,
+     "demandNm": 77.72,
+     "sourceBoundNm": 119.37,
+     "candidateBoundNm": 194.85,
+     "sourceRatio": 0.651,
+     "candidateRatio": 0.399
+    },
+    {
+     "timeS": 23.755,
+     "flexionDeg": 133.28,
+     "demandNm": 78.22,
+     "sourceBoundNm": 118.91,
+     "candidateBoundNm": 195.19,
+     "sourceRatio": 0.658,
+     "candidateRatio": 0.401
+    },
+    {
+     "timeS": 23.76,
+     "flexionDeg": 132.99,
+     "demandNm": 78.83,
+     "sourceBoundNm": 118.41,
+     "candidateBoundNm": 195.58,
+     "sourceRatio": 0.666,
+     "candidateRatio": 0.403
+    },
+    {
+     "timeS": 23.765,
+     "flexionDeg": 132.678,
+     "demandNm": 79.54,
+     "sourceBoundNm": 117.86,
+     "candidateBoundNm": 196.03,
+     "sourceRatio": 0.675,
+     "candidateRatio": 0.406
+    },
+    {
+     "timeS": 23.77,
+     "flexionDeg": 132.344,
+     "demandNm": 80.32,
+     "sourceBoundNm": 117.28,
+     "candidateBoundNm": 196.54,
+     "sourceRatio": 0.685,
+     "candidateRatio": 0.409
+    },
+    {
+     "timeS": 23.775,
+     "flexionDeg": 131.986,
+     "demandNm": 81.11,
+     "sourceBoundNm": 116.66,
+     "candidateBoundNm": 197.13,
+     "sourceRatio": 0.695,
+     "candidateRatio": 0.411
+    },
+    {
+     "timeS": 23.78,
+     "flexionDeg": 131.607,
+     "demandNm": 81.88,
+     "sourceBoundNm": 115.99,
+     "candidateBoundNm": 197.79,
+     "sourceRatio": 0.706,
+     "candidateRatio": 0.414
+    },
+    {
+     "timeS": 23.785,
+     "flexionDeg": 131.205,
+     "demandNm": 82.61,
+     "sourceBoundNm": 115.29,
+     "candidateBoundNm": 198.54,
+     "sourceRatio": 0.717,
+     "candidateRatio": 0.416
+    },
+    {
+     "timeS": 23.79,
+     "flexionDeg": 130.78,
+     "demandNm": 83.26,
+     "sourceBoundNm": 114.54,
+     "candidateBoundNm": 199.37,
+     "sourceRatio": 0.727,
+     "candidateRatio": 0.418
+    },
+    {
+     "timeS": 23.795,
+     "flexionDeg": 130.333,
+     "demandNm": 83.82,
+     "sourceBoundNm": 113.75,
+     "candidateBoundNm": 200.31,
+     "sourceRatio": 0.737,
+     "candidateRatio": 0.418
+    },
+    {
+     "timeS": 23.8,
+     "flexionDeg": 129.864,
+     "demandNm": 84.29,
+     "sourceBoundNm": 112.91,
+     "candidateBoundNm": 201.35,
+     "sourceRatio": 0.747,
+     "candidateRatio": 0.419
+    },
+    {
+     "timeS": 23.805,
+     "flexionDeg": 129.372,
+     "demandNm": 84.66,
+     "sourceBoundNm": 112.04,
+     "candidateBoundNm": 202.5,
+     "sourceRatio": 0.756,
+     "candidateRatio": 0.418
+    },
+    {
+     "timeS": 23.81,
+     "flexionDeg": 128.86,
+     "demandNm": 84.92,
+     "sourceBoundNm": 111.12,
+     "candidateBoundNm": 203.77,
+     "sourceRatio": 0.764,
+     "candidateRatio": 0.417
+    },
+    {
+     "timeS": 23.815,
+     "flexionDeg": 128.326,
+     "demandNm": 85.07,
+     "sourceBoundNm": 110.16,
+     "candidateBoundNm": 205.17,
+     "sourceRatio": 0.772,
+     "candidateRatio": 0.415
+    },
+    {
+     "timeS": 23.82,
+     "flexionDeg": 127.771,
+     "demandNm": 85.12,
+     "sourceBoundNm": 109.15,
+     "candidateBoundNm": 206.69,
+     "sourceRatio": 0.78,
+     "candidateRatio": 0.412
+    },
+    {
+     "timeS": 23.825,
+     "flexionDeg": 127.194,
+     "demandNm": 85.07,
+     "sourceBoundNm": 108.1,
+     "candidateBoundNm": 208.36,
+     "sourceRatio": 0.787,
+     "candidateRatio": 0.408
+    },
+    {
+     "timeS": 23.83,
+     "flexionDeg": 126.599,
+     "demandNm": 84.9,
+     "sourceBoundNm": 107.26,
+     "candidateBoundNm": 210.16,
+     "sourceRatio": 0.792,
+     "candidateRatio": 0.404
+    },
+    {
+     "timeS": 23.835,
+     "flexionDeg": 125.986,
+     "demandNm": 84.62,
+     "sourceBoundNm": 106.45,
+     "candidateBoundNm": 212.11,
+     "sourceRatio": 0.795,
+     "candidateRatio": 0.399
+    },
+    {
+     "timeS": 23.84,
+     "flexionDeg": 125.352,
+     "demandNm": 84.21,
+     "sourceBoundNm": 105.6,
+     "candidateBoundNm": 214.21,
+     "sourceRatio": 0.797,
+     "candidateRatio": 0.393
+    },
+    {
+     "timeS": 23.845,
+     "flexionDeg": 124.7,
+     "demandNm": 83.65,
+     "sourceBoundNm": 104.71,
+     "candidateBoundNm": 216.47,
+     "sourceRatio": 0.799,
+     "candidateRatio": 0.386
+    },
+    {
+     "timeS": 23.85,
+     "flexionDeg": 124.033,
+     "demandNm": 82.94,
+     "sourceBoundNm": 103.8,
+     "candidateBoundNm": 218.88,
+     "sourceRatio": 0.799,
+     "candidateRatio": 0.379
+    },
+    {
+     "timeS": 23.855,
+     "flexionDeg": 123.348,
+     "demandNm": 82.11,
+     "sourceBoundNm": 102.86,
+     "candidateBoundNm": 221.45,
+     "sourceRatio": 0.798,
+     "candidateRatio": 0.371
+    },
+    {
+     "timeS": 23.86,
+     "flexionDeg": 122.645,
+     "demandNm": 81.17,
+     "sourceBoundNm": 101.88,
+     "candidateBoundNm": 224.19,
+     "sourceRatio": 0.797,
+     "candidateRatio": 0.362
+    },
+    {
+     "timeS": 23.865,
+     "flexionDeg": 121.931,
+     "demandNm": 80.17,
+     "sourceBoundNm": 101.35,
+     "candidateBoundNm": 227.08,
+     "sourceRatio": 0.791,
+     "candidateRatio": 0.353
+    },
+    {
+     "timeS": 23.87,
+     "flexionDeg": 121.203,
+     "demandNm": 79.15,
+     "sourceBoundNm": 102.02,
+     "candidateBoundNm": 230.13,
+     "sourceRatio": 0.776,
+     "candidateRatio": 0.344
+    },
+    {
+     "timeS": 23.875,
+     "flexionDeg": 120.461,
+     "demandNm": 78.16,
+     "sourceBoundNm": 102.67,
+     "candidateBoundNm": 233.34,
+     "sourceRatio": 0.761,
+     "candidateRatio": 0.335
+    },
+    {
+     "timeS": 23.88,
+     "flexionDeg": 119.711,
+     "demandNm": 77.33,
+     "sourceBoundNm": 103.49,
+     "candidateBoundNm": 234.08,
+     "sourceRatio": 0.747,
+     "candidateRatio": 0.33
+    },
+    {
+     "timeS": 23.885,
+     "flexionDeg": 118.953,
+     "demandNm": 76.61,
+     "sourceBoundNm": 104.62,
+     "candidateBoundNm": 230.7,
+     "sourceRatio": 0.732,
+     "candidateRatio": 0.332
+    },
+    {
+     "timeS": 23.89,
+     "flexionDeg": 118.185,
+     "demandNm": 75.96,
+     "sourceBoundNm": 105.79,
+     "candidateBoundNm": 227.39,
+     "sourceRatio": 0.718,
+     "candidateRatio": 0.334
+    },
+    {
+     "timeS": 23.895,
+     "flexionDeg": 117.408,
+     "demandNm": 75.35,
+     "sourceBoundNm": 107.0,
+     "candidateBoundNm": 224.15,
+     "sourceRatio": 0.704,
+     "candidateRatio": 0.336
+    },
+    {
+     "timeS": 23.9,
+     "flexionDeg": 116.622,
+     "demandNm": 74.77,
+     "sourceBoundNm": 108.25,
+     "candidateBoundNm": 221.0,
+     "sourceRatio": 0.691,
+     "candidateRatio": 0.338
+    }
+   ]
+  }
+ },
+ "limitations": [
+  "maximum isometric forces stay generic after geometric scaling in both models",
+  "no tendon compliance, passive force, activation dynamics or multi-joint feasibility",
+  "the demand is the experimental joint moment times body mass, so it inherits the source model's own validity limits at deep flexion",
+  "the tibiofemoral joint of the candidate uses polynomials and therefore has no range limit; only the patellofemoral splines end at 120 deg",
+  "a moment-arm kink at exactly the last spline knot identifies the model's own patellofemoral data range as the cause, but does not establish what the knee extensor geometry beyond 120 deg should be",
+  "moment arms are read before equilibrating the muscles, matching the capacity audit"
+ ]
+}

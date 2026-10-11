@@ -1,0 +1,3290 @@
+{
+  "status": "source_model_muscle_paths_only",
+  "model": "RajagopalLaiUhlrich2023.osim",
+  "pose": "model default pose (initSystem), ground frame",
+  "muscleCount": 80,
+  "totalPathPoints": 348,
+  "defaultJointsM": {
+    "ground_pelvis": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "hip_r": [
+      -0.056276,
+      0.86151,
+      0.07726
+    ],
+    "walker_knee_r": [
+      -0.060776,
+      0.45191,
+      0.07551
+    ],
+    "patellofemoral_r": [
+      -0.064366,
+      0.45355,
+      0.07451
+    ],
+    "ankle_r": [
+      -0.062698,
+      0.055418,
+      0.076997
+    ],
+    "subtalar_r": [
+      -0.111468,
+      0.013468,
+      0.084917
+    ],
+    "mtp_r": [
+      0.067332,
+      0.011468,
+      0.085997
+    ],
+    "hip_l": [
+      -0.056276,
+      0.86151,
+      -0.07726
+    ],
+    "walker_knee_l": [
+      -0.060776,
+      0.45191,
+      -0.07551
+    ],
+    "patellofemoral_l": [
+      -0.064366,
+      0.45355,
+      -0.07451
+    ],
+    "ankle_l": [
+      -0.062698,
+      0.055418,
+      -0.076997
+    ],
+    "subtalar_l": [
+      -0.111468,
+      0.013468,
+      -0.084917
+    ],
+    "mtp_l": [
+      0.067332,
+      0.011468,
+      -0.085997
+    ],
+    "back": [
+      -0.1007,
+      1.0215,
+      0.0
+    ],
+    "acromial_r": [
+      -0.097545,
+      1.393,
+      0.17
+    ],
+    "elbow_r": [
+      -0.084401,
+      1.106727,
+      0.160405
+    ],
+    "radioulnar_r": [
+      -0.091128,
+      1.09372,
+      0.186488
+    ],
+    "radius_hand_r": [
+      -0.099925,
+      0.857879,
+      0.200098
+    ],
+    "acromial_l": [
+      -0.097545,
+      1.393,
+      -0.17
+    ],
+    "elbow_l": [
+      -0.084401,
+      1.106727,
+      -0.160405
+    ],
+    "radioulnar_l": [
+      -0.091128,
+      1.09372,
+      -0.186488
+    ],
+    "radius_hand_l": [
+      -0.099925,
+      0.857879,
+      -0.200098
+    ]
+  },
+  "musclesWithWrapping": 42,
+  "wrappingSurfaceUse": {
+    "AB_at_femshaft_l": 1,
+    "AB_at_femshaft_r": 1,
+    "AL_at_femshaft_l": 1,
+    "AL_at_femshaft_r": 1,
+    "AMdist_at_femshaft_l": 1,
+    "AMdist_at_femshaft_r": 1,
+    "AMisch_at_condyles_l": 1,
+    "AMisch_at_condyles_r": 1,
+    "AMmid_at_femshaft_l": 1,
+    "AMmid_at_femshaft_r": 1,
+    "AMprox_at_femshaft_l": 1,
+    "AMprox_at_femshaft_r": 1,
+    "BF_at_gastroc_l": 1,
+    "BF_at_gastroc_r": 1,
+    "GR_at_condyles_l": 1,
+    "GR_at_condyles_r": 1,
+    "GasLat_at_condyles_l": 1,
+    "GasLat_at_condyles_r": 1,
+    "GasLat_at_shank_l": 1,
+    "GasLat_at_shank_r": 1,
+    "GasMed_at_condyles_l": 1,
+    "GasMed_at_condyles_r": 1,
+    "GasMed_at_shank_l": 1,
+    "GasMed_at_shank_r": 1,
+    "Gmax1_at_pelvis_l": 1,
+    "Gmax1_at_pelvis_r": 1,
+    "Gmax2_at_pelvis_l": 1,
+    "Gmax2_at_pelvis_r": 1,
+    "Gmax3_at_pelvis_l": 1,
+    "Gmax3_at_pelvis_r": 1,
+    "IL_at_brim_l": 1,
+    "IL_at_brim_r": 1,
+    "KnExtVL_at_fem_l": 1,
+    "KnExtVL_at_fem_r": 1,
+    "KnExt_at_fem_l": 3,
+    "KnExt_at_fem_r": 3,
+    "PS_at_brim_l": 1,
+    "PS_at_brim_r": 1,
+    "SM_at_condyles_l": 1,
+    "SM_at_condyles_r": 1,
+    "ST_at_condyles_l": 1,
+    "ST_at_condyles_r": 1
+  },
+  "wrapObjects": [
+    {
+      "body": "pelvis",
+      "name": "Gmax1_at_pelvis_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "Gmax2_at_pelvis_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "Gmax3_at_pelvis_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "Gmax1_at_pelvis_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "Gmax2_at_pelvis_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "Gmax3_at_pelvis_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "PS_at_brim_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "PS_at_brim_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "IL_at_brim_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "pelvis",
+      "name": "IL_at_brim_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "GasLat_at_condyles_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "GasMed_at_condyles_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "KnExt_at_fem_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "KnExtVL_at_fem_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "AB_at_femshaft_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "AL_at_femshaft_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "AMprox_at_femshaft_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "AMmid_at_femshaft_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "AMdist_at_femshaft_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "AMisch_at_condyles_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_r",
+      "name": "PECT_at_femshaft_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_r",
+      "name": "GasLat_at_shank_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_r",
+      "name": "GasMed_at_shank_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_r",
+      "name": "GR_at_condyles_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_r",
+      "name": "SM_at_condyles_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_r",
+      "name": "ST_at_condyles_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_r",
+      "name": "BF_at_gastroc_r",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "GasLat_at_condyles_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "GasMed_at_condyles_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "KnExt_at_fem_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "KnExtVL_at_fem_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "AB_at_femshaft_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "AL_at_femshaft_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "AMprox_at_femshaft_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "AMmid_at_femshaft_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "AMdist_at_femshaft_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "AMisch_at_condyles_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "femur_l",
+      "name": "PECT_at_femshaft_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_l",
+      "name": "GasLat_at_shank_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_l",
+      "name": "GasMed_at_shank_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_l",
+      "name": "GR_at_condyles_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_l",
+      "name": "SM_at_condyles_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_l",
+      "name": "ST_at_condyles_l",
+      "type": "WrapCylinder"
+    },
+    {
+      "body": "tibia_l",
+      "name": "BF_at_gastroc_l",
+      "type": "WrapCylinder"
+    }
+  ],
+  "muscles": [
+    {
+      "name": "addbrev_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0191,
+          0.846,
+          0.0154
+        ],
+        [
+          -0.056437,
+          0.752508,
+          0.092223
+        ],
+        [
+          -0.057756,
+          0.74774,
+          0.09699
+        ],
+        [
+          -0.058276,
+          0.74351,
+          0.10216
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "AB_at_femshaft_r"
+      ]
+    },
+    {
+      "name": "addlong_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.00758,
+          0.8511,
+          0.01888
+        ],
+        [
+          -0.044301,
+          0.640507,
+          0.084298
+        ],
+        [
+          -0.04531,
+          0.626371,
+          0.090495
+        ],
+        [
+          -0.045016,
+          0.62214,
+          0.09309
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "AL_at_femshaft_r"
+      ]
+    },
+    {
+      "name": "addmagDist_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.07404,
+          0.81233,
+          0.03982
+        ],
+        [
+          -0.051715,
+          0.627932,
+          0.087285
+        ],
+        [
+          -0.048141,
+          0.609717,
+          0.092759
+        ],
+        [
+          -0.045026,
+          0.59901,
+          0.09656
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "AMdist_at_femshaft_r"
+      ]
+    },
+    {
+      "name": "addmagIsch_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.08962,
+          0.81024,
+          0.04171
+        ],
+        [
+          -0.056514,
+          0.513807,
+          0.038944
+        ],
+        [
+          -0.053973,
+          0.492719,
+          0.040766
+        ],
+        [
+          -0.051466,
+          0.47354,
+          0.04453
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "AMisch_at_condyles_r"
+      ]
+    },
+    {
+      "name": "addmagMid_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.05266,
+          0.81925,
+          0.02854
+        ],
+        [
+          -0.05635,
+          0.716534,
+          0.093272
+        ],
+        [
+          -0.055545,
+          0.706564,
+          0.100386
+        ],
+        [
+          -0.053856,
+          0.69911,
+          0.10648
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "AMmid_at_femshaft_r"
+      ]
+    },
+    {
+      "name": "addmagProx_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.03098,
+          0.83245,
+          0.01365
+        ],
+        [
+          -0.069754,
+          0.788962,
+          0.092254
+        ],
+        [
+          -0.071832,
+          0.784744,
+          0.102342
+        ],
+        [
+          -0.071546,
+          0.78265,
+          0.10928
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "AMprox_at_femshaft_r"
+      ]
+    },
+    {
+      "name": "bflh_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.104,
+          0.8209,
+          0.0586
+        ],
+        [
+          -0.087058,
+          0.418938,
+          0.113177
+        ],
+        [
+          -0.079738,
+          0.405338,
+          0.111757
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "bfsh_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.051276,
+          0.65041,
+          0.10066
+        ],
+        [
+          -0.081358,
+          0.422578,
+          0.109037
+        ]
+      ],
+      "pathBodies": [
+        "femur_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "BF_at_gastroc_r"
+      ]
+    },
+    {
+      "name": "edl_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.068698,
+          0.339718,
+          0.097497
+        ],
+        [
+          -0.036298,
+          0.079418,
+          0.088197
+        ],
+        [
+          -0.019568,
+          0.049468,
+          0.085717
+        ],
+        [
+          0.050132,
+          0.018968,
+          0.097917
+        ],
+        [
+          0.067632,
+          0.016168,
+          0.101297
+        ],
+        [
+          0.111632,
+          0.011068,
+          0.110997
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r",
+        "toes_r",
+        "toes_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "ehl_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.066698,
+          0.300418,
+          0.095897
+        ],
+        [
+          -0.045598,
+          0.164518,
+          0.093397
+        ],
+        [
+          -0.032698,
+          0.086118,
+          0.074197
+        ],
+        [
+          -0.014468,
+          0.052368,
+          0.063817
+        ],
+        [
+          0.017832,
+          0.044368,
+          0.059217
+        ],
+        [
+          0.061932,
+          0.027368,
+          0.056917
+        ],
+        [
+          0.097132,
+          0.015568,
+          0.061497
+        ],
+        [
+          0.123632,
+          0.014868,
+          0.067397
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r",
+        "calcn_r",
+        "toes_r",
+        "toes_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "fdl_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.054998,
+          0.272218,
+          0.075197
+        ],
+        [
+          -0.070298,
+          0.090918,
+          0.064597
+        ],
+        [
+          -0.067868,
+          0.044968,
+          0.056917
+        ],
+        [
+          -0.040668,
+          0.031068,
+          0.058617
+        ],
+        [
+          0.054332,
+          0.005368,
+          0.096517
+        ],
+        [
+          0.065432,
+          0.003668,
+          0.100697
+        ],
+        [
+          0.095832,
+          0.004368,
+          0.107497
+        ],
+        [
+          0.111432,
+          0.005468,
+          0.110197
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r",
+        "calcn_r",
+        "toes_r",
+        "toes_r",
+        "toes_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "fhl_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.083698,
+          0.239118,
+          0.096997
+        ],
+        [
+          -0.076898,
+          0.088318,
+          0.069397
+        ],
+        [
+          -0.074068,
+          0.041068,
+          0.060817
+        ],
+        [
+          -0.007668,
+          0.020268,
+          0.059317
+        ],
+        [
+          0.061132,
+          0.008168,
+          0.058017
+        ],
+        [
+          0.082832,
+          0.005068,
+          0.059497
+        ],
+        [
+          0.123532,
+          0.001268,
+          0.067897
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r",
+        "calcn_r",
+        "toes_r",
+        "toes_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "gaslat_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.054276,
+          0.48051,
+          0.09785
+        ],
+        [
+          -0.065363,
+          0.473363,
+          0.098679
+        ],
+        [
+          -0.074423,
+          0.463351,
+          0.099557
+        ],
+        [
+          -0.098361,
+          0.416558,
+          0.102861
+        ],
+        [
+          -0.108815,
+          0.382481,
+          0.103035
+        ],
+        [
+          -0.107068,
+          0.044468,
+          0.079617
+        ]
+      ],
+      "pathBodies": [
+        "femur_r",
+        "femur_r",
+        "femur_r",
+        "tibia_r",
+        "tibia_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": [
+        "GasLat_at_shank_r",
+        "GasLat_at_condyles_r"
+      ]
+    },
+    {
+      "name": "gasmed_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.050276,
+          0.47651,
+          0.05526
+        ],
+        [
+          -0.051276,
+          0.47651,
+          0.05526
+        ],
+        [
+          -0.072087,
+          0.465362,
+          0.055266
+        ],
+        [
+          -0.10289,
+          0.419086,
+          0.055282
+        ],
+        [
+          -0.118612,
+          0.376597,
+          0.057161
+        ],
+        [
+          -0.107068,
+          0.044468,
+          0.079617
+        ]
+      ],
+      "pathBodies": [
+        "femur_r",
+        "femur_r",
+        "femur_r",
+        "tibia_r",
+        "tibia_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": [
+        "GasMed_at_shank_r",
+        "GasMed_at_condyles_r"
+      ]
+    },
+    {
+      "name": "glmax1_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1231,
+          0.9745,
+          0.0563
+        ],
+        [
+          -0.1257,
+          0.9158,
+          0.0779
+        ],
+        [
+          -0.100676,
+          0.82891,
+          0.10746
+        ],
+        [
+          -0.083976,
+          0.80491,
+          0.12426
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "Gmax1_at_pelvis_r"
+      ]
+    },
+    {
+      "name": "glmax2_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1317,
+          0.9487,
+          0.0462
+        ],
+        [
+          -0.1344,
+          0.8791,
+          0.0813
+        ],
+        [
+          -0.101276,
+          0.80311,
+          0.10246
+        ],
+        [
+          -0.071876,
+          0.75991,
+          0.11916
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "Gmax2_at_pelvis_r"
+      ]
+    },
+    {
+      "name": "glmax3_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.13,
+          0.8875,
+          0.009
+        ],
+        [
+          -0.1273,
+          0.8137,
+          0.0435
+        ],
+        [
+          -0.084376,
+          0.74901,
+          0.08666
+        ],
+        [
+          -0.062276,
+          0.71961,
+          0.11836
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "Gmax3_at_pelvis_r"
+      ]
+    },
+    {
+      "name": "glmed1_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.049,
+          0.966,
+          0.115
+        ],
+        [
+          -0.070276,
+          0.84351,
+          0.13626
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmed2_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.085,
+          0.995,
+          0.082
+        ],
+        [
+          -0.078276,
+          0.85151,
+          0.13326
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmed3_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1,
+          0.956,
+          0.064
+        ],
+        [
+          -0.087176,
+          0.85681,
+          0.12906
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmin1_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.03,
+          0.94,
+          0.118
+        ],
+        [
+          -0.051276,
+          0.84651,
+          0.13326
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmin2_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0616,
+          0.95,
+          0.101
+        ],
+        [
+          -0.052276,
+          0.85251,
+          0.12926
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmin3_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0789,
+          0.9245,
+          0.0798
+        ],
+        [
+          -0.060276,
+          0.86051,
+          0.12826
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "grac_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.04736,
+          0.81068,
+          0.02456
+        ],
+        [
+          -0.079759,
+          0.437652,
+          0.041641
+        ],
+        [
+          -0.076001,
+          0.417589,
+          0.044707
+        ],
+        [
+          -0.071118,
+          0.407868,
+          0.047387
+        ],
+        [
+          -0.050918,
+          0.385798,
+          0.061267
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_r",
+        "tibia_r",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "GR_at_condyles_r"
+      ]
+    },
+    {
+      "name": "iliacus_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0605,
+          0.9709,
+          0.0843
+        ],
+        [
+          -0.0135,
+          0.8843,
+          0.0756
+        ],
+        [
+          -0.015592,
+          0.868963,
+          0.080283
+        ],
+        [
+          -0.028499,
+          0.840463,
+          0.086707
+        ],
+        [
+          -0.058576,
+          0.80501,
+          0.09116
+        ],
+        [
+          -0.068476,
+          0.79781,
+          0.09686
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "IL_at_brim_r"
+      ]
+    },
+    {
+      "name": "perbrev_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.076998,
+          0.202218,
+          0.102097
+        ],
+        [
+          -0.086598,
+          0.066118,
+          0.101897
+        ],
+        [
+          -0.081198,
+          0.055018,
+          0.102497
+        ],
+        [
+          -0.064368,
+          0.040468,
+          0.108217
+        ],
+        [
+          -0.043768,
+          0.035368,
+          0.119217
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "perlong_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.072698,
+          0.318118,
+          0.105197
+        ],
+        [
+          -0.084398,
+          0.065418,
+          0.100697
+        ],
+        [
+          -0.079898,
+          0.054018,
+          0.100997
+        ],
+        [
+          -0.067668,
+          0.036468,
+          0.107017
+        ],
+        [
+          -0.043368,
+          0.024068,
+          0.113317
+        ],
+        [
+          -0.026268,
+          0.020368,
+          0.096717
+        ],
+        [
+          0.008832,
+          0.021968,
+          0.066517
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r",
+        "calcn_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "piri_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.10181,
+          0.93347,
+          0.01351
+        ],
+        [
+          -0.10202,
+          0.90934,
+          0.06092
+        ],
+        [
+          -0.071076,
+          0.85791,
+          0.12096
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "psoas_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0606,
+          1.002,
+          0.039
+        ],
+        [
+          -0.0205,
+          0.8746,
+          0.0656
+        ],
+        [
+          -0.024977,
+          0.863647,
+          0.069252
+        ],
+        [
+          -0.036924,
+          0.846173,
+          0.074358
+        ],
+        [
+          -0.069476,
+          0.81481,
+          0.08186
+        ],
+        [
+          -0.079776,
+          0.80911,
+          0.08606
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "wrappingSurfaces": [
+        "PS_at_brim_r"
+      ]
+    },
+    {
+      "name": "recfem_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.024,
+          0.9012,
+          0.0933
+        ],
+        [
+          -0.002022,
+          0.491761,
+          0.07796
+        ],
+        [
+          8.4e-05,
+          0.486464,
+          0.07626
+        ],
+        [
+          -0.006969,
+          0.445226,
+          0.07729
+        ],
+        [
+          -0.020098,
+          0.392298,
+          0.076527
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "patella_r",
+        "patella_r",
+        "patella_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "KnExt_at_fem_r"
+      ]
+    },
+    {
+      "name": "sart_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0195,
+          0.9244,
+          0.1056
+        ],
+        [
+          -0.059276,
+          0.50471,
+          0.03516
+        ],
+        [
+          -0.077798,
+          0.415318,
+          0.040497
+        ],
+        [
+          -0.068598,
+          0.395518,
+          0.050597
+        ],
+        [
+          -0.039098,
+          0.374418,
+          0.074397
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "tibia_r",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "semimem_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0987,
+          0.826,
+          0.0614
+        ],
+        [
+          -0.086347,
+          0.434375,
+          0.056981
+        ],
+        [
+          -0.082102,
+          0.418808,
+          0.057205
+        ],
+        [
+          -0.079698,
+          0.414418,
+          0.057397
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_r",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "SM_at_condyles_r"
+      ]
+    },
+    {
+      "name": "semiten_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1038,
+          0.8147,
+          0.0515
+        ],
+        [
+          -0.093046,
+          0.433724,
+          0.052335
+        ],
+        [
+          -0.089596,
+          0.417968,
+          0.052982
+        ],
+        [
+          -0.083898,
+          0.404618,
+          0.054097
+        ],
+        [
+          -0.050798,
+          0.378118,
+          0.065297
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_r",
+        "tibia_r",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "ST_at_condyles_r"
+      ]
+    },
+    {
+      "name": "soleus_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.060298,
+          0.363818,
+          0.086797
+        ],
+        [
+          -0.107068,
+          0.044468,
+          0.079617
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "tfl_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.02,
+          0.951,
+          0.129
+        ],
+        [
+          -0.026876,
+          0.76201,
+          0.13696
+        ],
+        [
+          -0.045576,
+          0.45651,
+          0.10966
+        ],
+        [
+          -0.041898,
+          0.414418,
+          0.111597
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_r",
+        "femur_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "tibant_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.037298,
+          0.324218,
+          0.093197
+        ],
+        [
+          -0.027598,
+          0.264818,
+          0.089797
+        ],
+        [
+          -0.029398,
+          0.089518,
+          0.063797
+        ],
+        [
+          0.005132,
+          0.031268,
+          0.054417
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "tibia_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "tibpost_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.056798,
+          0.325018,
+          0.087297
+        ],
+        [
+          -0.069098,
+          0.089918,
+          0.059497
+        ],
+        [
+          -0.069768,
+          0.046868,
+          0.056317
+        ],
+        [
+          -0.034268,
+          0.029368,
+          0.056817
+        ]
+      ],
+      "pathBodies": [
+        "tibia_r",
+        "tibia_r",
+        "calcn_r",
+        "calcn_r"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "vasint_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.027276,
+          0.66911,
+          0.10826
+        ],
+        [
+          -0.022776,
+          0.65311,
+          0.10576
+        ],
+        [
+          -0.006221,
+          0.490757,
+          0.07666
+        ],
+        [
+          -0.006969,
+          0.445226,
+          0.07687
+        ],
+        [
+          -0.020128,
+          0.392218,
+          0.077427
+        ]
+      ],
+      "pathBodies": [
+        "femur_r",
+        "femur_r",
+        "patella_r",
+        "patella_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "KnExt_at_fem_r"
+      ]
+    },
+    {
+      "name": "vaslat_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.051476,
+          0.67611,
+          0.11216
+        ],
+        [
+          -0.029376,
+          0.60241,
+          0.11816
+        ],
+        [
+          -0.001714,
+          0.485062,
+          0.09136
+        ],
+        [
+          -0.006969,
+          0.445226,
+          0.08459
+        ],
+        [
+          -0.020158,
+          0.392038,
+          0.082107
+        ]
+      ],
+      "pathBodies": [
+        "femur_r",
+        "femur_r",
+        "patella_r",
+        "patella_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "KnExtVL_at_fem_r"
+      ]
+    },
+    {
+      "name": "vasmed_r",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.042276,
+          0.65161,
+          0.09606
+        ],
+        [
+          -0.020676,
+          0.58461,
+          0.07816
+        ],
+        [
+          -0.005717,
+          0.487257,
+          0.06026
+        ],
+        [
+          -0.006969,
+          0.445226,
+          0.06876
+        ],
+        [
+          -0.020798,
+          0.391848,
+          0.070217
+        ]
+      ],
+      "pathBodies": [
+        "femur_r",
+        "femur_r",
+        "patella_r",
+        "patella_r",
+        "tibia_r"
+      ],
+      "wrappingSurfaces": [
+        "KnExt_at_fem_r"
+      ]
+    },
+    {
+      "name": "addbrev_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0191,
+          0.846,
+          -0.0154
+        ],
+        [
+          -0.056437,
+          0.752508,
+          -0.092223
+        ],
+        [
+          -0.057756,
+          0.74774,
+          -0.09699
+        ],
+        [
+          -0.058276,
+          0.74351,
+          -0.10216
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "AB_at_femshaft_l"
+      ]
+    },
+    {
+      "name": "addlong_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.00758,
+          0.8511,
+          -0.01888
+        ],
+        [
+          -0.044301,
+          0.640507,
+          -0.084298
+        ],
+        [
+          -0.04531,
+          0.626371,
+          -0.090495
+        ],
+        [
+          -0.045016,
+          0.62214,
+          -0.09309
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "AL_at_femshaft_l"
+      ]
+    },
+    {
+      "name": "addmagDist_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.07404,
+          0.81233,
+          -0.03982
+        ],
+        [
+          -0.051715,
+          0.627932,
+          -0.087285
+        ],
+        [
+          -0.048141,
+          0.609717,
+          -0.092759
+        ],
+        [
+          -0.045026,
+          0.59901,
+          -0.09656
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "AMdist_at_femshaft_l"
+      ]
+    },
+    {
+      "name": "addmagIsch_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.08962,
+          0.81024,
+          -0.04171
+        ],
+        [
+          -0.056514,
+          0.513807,
+          -0.038944
+        ],
+        [
+          -0.053973,
+          0.492719,
+          -0.040766
+        ],
+        [
+          -0.051466,
+          0.47354,
+          -0.04453
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "AMisch_at_condyles_l"
+      ]
+    },
+    {
+      "name": "addmagMid_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.05266,
+          0.81925,
+          -0.02854
+        ],
+        [
+          -0.05635,
+          0.716534,
+          -0.093272
+        ],
+        [
+          -0.055545,
+          0.706564,
+          -0.100386
+        ],
+        [
+          -0.053856,
+          0.69911,
+          -0.10648
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "AMmid_at_femshaft_l"
+      ]
+    },
+    {
+      "name": "addmagProx_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.03098,
+          0.83245,
+          -0.01365
+        ],
+        [
+          -0.069754,
+          0.788962,
+          -0.092254
+        ],
+        [
+          -0.071832,
+          0.784744,
+          -0.102342
+        ],
+        [
+          -0.071546,
+          0.78265,
+          -0.10928
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "AMprox_at_femshaft_l"
+      ]
+    },
+    {
+      "name": "bflh_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.104,
+          0.8209,
+          -0.0586
+        ],
+        [
+          -0.087058,
+          0.418938,
+          -0.113177
+        ],
+        [
+          -0.079738,
+          0.405338,
+          -0.111757
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "bfsh_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.051276,
+          0.65041,
+          -0.10066
+        ],
+        [
+          -0.081358,
+          0.422578,
+          -0.109037
+        ]
+      ],
+      "pathBodies": [
+        "femur_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "BF_at_gastroc_l"
+      ]
+    },
+    {
+      "name": "edl_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.068698,
+          0.339718,
+          -0.097497
+        ],
+        [
+          -0.036298,
+          0.079418,
+          -0.088197
+        ],
+        [
+          -0.019568,
+          0.049468,
+          -0.085717
+        ],
+        [
+          0.050132,
+          0.018968,
+          -0.097917
+        ],
+        [
+          0.067632,
+          0.016168,
+          -0.101297
+        ],
+        [
+          0.111632,
+          0.011068,
+          -0.110997
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l",
+        "toes_l",
+        "toes_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "ehl_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.066698,
+          0.300418,
+          -0.095897
+        ],
+        [
+          -0.045598,
+          0.164518,
+          -0.093397
+        ],
+        [
+          -0.032698,
+          0.086118,
+          -0.074197
+        ],
+        [
+          -0.014468,
+          0.052368,
+          -0.063817
+        ],
+        [
+          0.017832,
+          0.044368,
+          -0.059217
+        ],
+        [
+          0.061932,
+          0.027368,
+          -0.056917
+        ],
+        [
+          0.097132,
+          0.015568,
+          -0.061497
+        ],
+        [
+          0.123632,
+          0.014868,
+          -0.067397
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l",
+        "calcn_l",
+        "toes_l",
+        "toes_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "fdl_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.054998,
+          0.272218,
+          -0.075197
+        ],
+        [
+          -0.070298,
+          0.090918,
+          -0.064597
+        ],
+        [
+          -0.067868,
+          0.044968,
+          -0.056917
+        ],
+        [
+          -0.040668,
+          0.031068,
+          -0.058617
+        ],
+        [
+          0.054332,
+          0.005368,
+          -0.096517
+        ],
+        [
+          0.065432,
+          0.003668,
+          -0.100697
+        ],
+        [
+          0.095832,
+          0.004368,
+          -0.107497
+        ],
+        [
+          0.111432,
+          0.005468,
+          -0.110197
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l",
+        "calcn_l",
+        "toes_l",
+        "toes_l",
+        "toes_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "fhl_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.083698,
+          0.239118,
+          -0.096997
+        ],
+        [
+          -0.076898,
+          0.088318,
+          -0.069397
+        ],
+        [
+          -0.074068,
+          0.041068,
+          -0.060817
+        ],
+        [
+          -0.007668,
+          0.020268,
+          -0.059317
+        ],
+        [
+          0.061132,
+          0.008168,
+          -0.058017
+        ],
+        [
+          0.082832,
+          0.005068,
+          -0.059497
+        ],
+        [
+          0.123532,
+          0.001268,
+          -0.067897
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l",
+        "calcn_l",
+        "toes_l",
+        "toes_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "gaslat_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.054276,
+          0.48051,
+          -0.09785
+        ],
+        [
+          -0.065363,
+          0.473363,
+          -0.098679
+        ],
+        [
+          -0.074423,
+          0.463351,
+          -0.099557
+        ],
+        [
+          -0.098361,
+          0.416558,
+          -0.102861
+        ],
+        [
+          -0.108815,
+          0.382481,
+          -0.103035
+        ],
+        [
+          -0.107068,
+          0.044468,
+          -0.079617
+        ]
+      ],
+      "pathBodies": [
+        "femur_l",
+        "femur_l",
+        "femur_l",
+        "tibia_l",
+        "tibia_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": [
+        "GasLat_at_shank_l",
+        "GasLat_at_condyles_l"
+      ]
+    },
+    {
+      "name": "gasmed_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.050276,
+          0.47651,
+          -0.05526
+        ],
+        [
+          -0.051276,
+          0.47651,
+          -0.05526
+        ],
+        [
+          -0.072087,
+          0.465362,
+          -0.055266
+        ],
+        [
+          -0.10289,
+          0.419086,
+          -0.055282
+        ],
+        [
+          -0.118612,
+          0.376597,
+          -0.057161
+        ],
+        [
+          -0.107068,
+          0.044468,
+          -0.079617
+        ]
+      ],
+      "pathBodies": [
+        "femur_l",
+        "femur_l",
+        "femur_l",
+        "tibia_l",
+        "tibia_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": [
+        "GasMed_at_shank_l",
+        "GasMed_at_condyles_l"
+      ]
+    },
+    {
+      "name": "glmax1_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1231,
+          0.9745,
+          -0.0563
+        ],
+        [
+          -0.1257,
+          0.9158,
+          -0.0779
+        ],
+        [
+          -0.100676,
+          0.82891,
+          -0.10746
+        ],
+        [
+          -0.083976,
+          0.80491,
+          -0.12426
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "Gmax1_at_pelvis_l"
+      ]
+    },
+    {
+      "name": "glmax2_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1317,
+          0.9487,
+          -0.0462
+        ],
+        [
+          -0.1344,
+          0.8791,
+          -0.0813
+        ],
+        [
+          -0.101276,
+          0.80311,
+          -0.10246
+        ],
+        [
+          -0.071876,
+          0.75991,
+          -0.11916
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "Gmax2_at_pelvis_l"
+      ]
+    },
+    {
+      "name": "glmax3_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.13,
+          0.8875,
+          -0.009
+        ],
+        [
+          -0.1273,
+          0.8137,
+          -0.0435
+        ],
+        [
+          -0.084376,
+          0.74901,
+          -0.08666
+        ],
+        [
+          -0.062276,
+          0.71961,
+          -0.11836
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "Gmax3_at_pelvis_l"
+      ]
+    },
+    {
+      "name": "glmed1_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.049,
+          0.966,
+          -0.115
+        ],
+        [
+          -0.070276,
+          0.84351,
+          -0.13626
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmed2_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.085,
+          0.995,
+          -0.082
+        ],
+        [
+          -0.078276,
+          0.85151,
+          -0.13326
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmed3_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1,
+          0.956,
+          -0.064
+        ],
+        [
+          -0.087176,
+          0.85681,
+          -0.12906
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmin1_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.03,
+          0.94,
+          -0.118
+        ],
+        [
+          -0.051276,
+          0.84651,
+          -0.13326
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmin2_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0616,
+          0.95,
+          -0.101
+        ],
+        [
+          -0.052276,
+          0.85251,
+          -0.12926
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "glmin3_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0789,
+          0.9245,
+          -0.0798
+        ],
+        [
+          -0.060276,
+          0.86051,
+          -0.12826
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "grac_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.04736,
+          0.81068,
+          -0.02456
+        ],
+        [
+          -0.079759,
+          0.437652,
+          -0.041641
+        ],
+        [
+          -0.076001,
+          0.417589,
+          -0.044707
+        ],
+        [
+          -0.071118,
+          0.407868,
+          -0.047387
+        ],
+        [
+          -0.050918,
+          0.385798,
+          -0.061267
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_l",
+        "tibia_l",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "GR_at_condyles_l"
+      ]
+    },
+    {
+      "name": "iliacus_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0605,
+          0.9709,
+          -0.0843
+        ],
+        [
+          -0.0135,
+          0.8843,
+          -0.0756
+        ],
+        [
+          -0.015592,
+          0.868963,
+          -0.080283
+        ],
+        [
+          -0.028499,
+          0.840463,
+          -0.086707
+        ],
+        [
+          -0.058576,
+          0.80501,
+          -0.09116
+        ],
+        [
+          -0.068476,
+          0.79781,
+          -0.09686
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "IL_at_brim_l"
+      ]
+    },
+    {
+      "name": "perbrev_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.076998,
+          0.202218,
+          -0.102097
+        ],
+        [
+          -0.086598,
+          0.066118,
+          -0.101897
+        ],
+        [
+          -0.081198,
+          0.055018,
+          -0.102497
+        ],
+        [
+          -0.064368,
+          0.040468,
+          -0.108217
+        ],
+        [
+          -0.043768,
+          0.035368,
+          -0.119217
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "perlong_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.072698,
+          0.318118,
+          -0.105197
+        ],
+        [
+          -0.084398,
+          0.065418,
+          -0.100697
+        ],
+        [
+          -0.079898,
+          0.054018,
+          -0.100997
+        ],
+        [
+          -0.067668,
+          0.036468,
+          -0.107017
+        ],
+        [
+          -0.043368,
+          0.024068,
+          -0.113317
+        ],
+        [
+          -0.026268,
+          0.020368,
+          -0.096717
+        ],
+        [
+          0.008832,
+          0.021968,
+          -0.066517
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l",
+        "calcn_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "piri_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.10181,
+          0.93347,
+          -0.01351
+        ],
+        [
+          -0.10202,
+          0.90934,
+          -0.06092
+        ],
+        [
+          -0.071076,
+          0.85791,
+          -0.12096
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "femur_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "psoas_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0606,
+          1.002,
+          -0.039
+        ],
+        [
+          -0.0205,
+          0.8746,
+          -0.0656
+        ],
+        [
+          -0.024977,
+          0.863647,
+          -0.069252
+        ],
+        [
+          -0.036924,
+          0.846173,
+          -0.074358
+        ],
+        [
+          -0.069476,
+          0.81481,
+          -0.08186
+        ],
+        [
+          -0.079776,
+          0.80911,
+          -0.08606
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "wrappingSurfaces": [
+        "PS_at_brim_l"
+      ]
+    },
+    {
+      "name": "recfem_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.024,
+          0.9012,
+          -0.0933
+        ],
+        [
+          -0.002022,
+          0.491761,
+          -0.07796
+        ],
+        [
+          8.4e-05,
+          0.486464,
+          -0.07626
+        ],
+        [
+          -0.006969,
+          0.445226,
+          -0.07729
+        ],
+        [
+          -0.020098,
+          0.392298,
+          -0.076527
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "patella_l",
+        "patella_l",
+        "patella_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "KnExt_at_fem_l"
+      ]
+    },
+    {
+      "name": "sart_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0195,
+          0.9244,
+          -0.1056
+        ],
+        [
+          -0.059276,
+          0.50471,
+          -0.03516
+        ],
+        [
+          -0.077798,
+          0.415318,
+          -0.040497
+        ],
+        [
+          -0.068598,
+          0.395518,
+          -0.050597
+        ],
+        [
+          -0.039098,
+          0.374418,
+          -0.074397
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "tibia_l",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "semimem_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.0987,
+          0.826,
+          -0.0614
+        ],
+        [
+          -0.086347,
+          0.434375,
+          -0.056981
+        ],
+        [
+          -0.082102,
+          0.418808,
+          -0.057205
+        ],
+        [
+          -0.079698,
+          0.414418,
+          -0.057397
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_l",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "SM_at_condyles_l"
+      ]
+    },
+    {
+      "name": "semiten_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.1038,
+          0.8147,
+          -0.0515
+        ],
+        [
+          -0.093046,
+          0.433724,
+          -0.052335
+        ],
+        [
+          -0.089596,
+          0.417968,
+          -0.052982
+        ],
+        [
+          -0.083898,
+          0.404618,
+          -0.054097
+        ],
+        [
+          -0.050798,
+          0.378118,
+          -0.065297
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "tibia_l",
+        "tibia_l",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "ST_at_condyles_l"
+      ]
+    },
+    {
+      "name": "soleus_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.060298,
+          0.363818,
+          -0.086797
+        ],
+        [
+          -0.107068,
+          0.044468,
+          -0.079617
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "tfl_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.02,
+          0.951,
+          -0.129
+        ],
+        [
+          -0.026876,
+          0.76201,
+          -0.13696
+        ],
+        [
+          -0.045576,
+          0.45651,
+          -0.10966
+        ],
+        [
+          -0.041898,
+          0.414418,
+          -0.111597
+        ]
+      ],
+      "pathBodies": [
+        "pelvis",
+        "femur_l",
+        "femur_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "tibant_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.037298,
+          0.324218,
+          -0.093197
+        ],
+        [
+          -0.027598,
+          0.264818,
+          -0.089797
+        ],
+        [
+          -0.029398,
+          0.089518,
+          -0.063797
+        ],
+        [
+          0.005132,
+          0.031268,
+          -0.054417
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "tibia_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "tibpost_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.056798,
+          0.325018,
+          -0.087297
+        ],
+        [
+          -0.069098,
+          0.089918,
+          -0.059497
+        ],
+        [
+          -0.069768,
+          0.046868,
+          -0.056317
+        ],
+        [
+          -0.034268,
+          0.029368,
+          -0.056817
+        ]
+      ],
+      "pathBodies": [
+        "tibia_l",
+        "tibia_l",
+        "calcn_l",
+        "calcn_l"
+      ],
+      "wrappingSurfaces": []
+    },
+    {
+      "name": "vasint_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.027276,
+          0.66911,
+          -0.10826
+        ],
+        [
+          -0.022776,
+          0.65311,
+          -0.10576
+        ],
+        [
+          -0.006221,
+          0.490757,
+          -0.07666
+        ],
+        [
+          -0.006969,
+          0.445226,
+          -0.07687
+        ],
+        [
+          -0.020128,
+          0.392218,
+          -0.077427
+        ]
+      ],
+      "pathBodies": [
+        "femur_l",
+        "femur_l",
+        "patella_l",
+        "patella_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "KnExt_at_fem_l"
+      ]
+    },
+    {
+      "name": "vaslat_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.051476,
+          0.67611,
+          -0.11216
+        ],
+        [
+          -0.029376,
+          0.60241,
+          -0.11816
+        ],
+        [
+          -0.001714,
+          0.485062,
+          -0.09136
+        ],
+        [
+          -0.006969,
+          0.445226,
+          -0.08459
+        ],
+        [
+          -0.020158,
+          0.392038,
+          -0.082107
+        ]
+      ],
+      "pathBodies": [
+        "femur_l",
+        "femur_l",
+        "patella_l",
+        "patella_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "KnExtVL_at_fem_l"
+      ]
+    },
+    {
+      "name": "vasmed_l",
+      "type": "Millard2012EquilibriumMuscle",
+      "pathPoints": [
+        [
+          -0.042276,
+          0.65161,
+          -0.09606
+        ],
+        [
+          -0.020676,
+          0.58461,
+          -0.07816
+        ],
+        [
+          -0.005717,
+          0.487257,
+          -0.06026
+        ],
+        [
+          -0.006969,
+          0.445226,
+          -0.06876
+        ],
+        [
+          -0.020798,
+          0.391848,
+          -0.070217
+        ]
+      ],
+      "pathBodies": [
+        "femur_l",
+        "femur_l",
+        "patella_l",
+        "patella_l",
+        "tibia_l"
+      ],
+      "wrappingSurfaces": [
+        "KnExt_at_fem_l"
+      ]
+    }
+  ],
+  "limits": [
+    "path points only: no pennation, no tendon length, no force",
+    "no muscle mesh geometry: these are the polylines a renderer sweeps",
+    "wrapping surfaces are recorded by name and radius, not as renderable tubes",
+    "pathBodies attach current path points to source bodies for approximate rigid motion; wrapping is not recalculated after an arbitrary edit"
+  ]
+}

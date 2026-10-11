@@ -183,6 +183,164 @@ npm run check:body-measurements
 & 'D:\blender\blender.exe' --background 'assets/blender/opensim_six_muscle_42cm.blend' --python-exit-code 1 --python 'blender/check_soleus_mesh_motion.py' -- --report 'docs/data/right_soleus_mesh_42cm_audit.json'
 ```
 
+### 腿肌网格站姿对齐通用探针（2026-09-26）
+
+`blender/probe_leg_mesh_alignment.py` 一次覆盖八块右腿网格，输出[右腿网格对齐探针](../docs/data/right_leg_mesh_alignment_probe.json)。它按手机端的骨轴规则计算（`femur_r` 用髋→膝，骨盆与 `tibia_r` 用膝→踝），并纠正了此前只用单一数字判断的做法：**把表面距离按网格高度拆开**，再报告越界样本里“纵向越过”占距离的比例（`distalShare = |Δz| / 表面距离`，接近 1 表示模型路径越过网格底端，而不是横向错位）。
+
+| 肌肉 | 网格高度内中位 | 网格高度内最大 | 越界样本 | 越界最大 | 远端占比 |
+| --- | --- | --- | --- | --- | --- |
+| 臀大肌 | 2.21 cm | 3.59 cm | 0 | – | – |
+| 股直肌 | 1.49 | 5.52 | 0 | – | – |
+| 股二头肌短头 | 1.26 | 2.66 | 0 | – | – |
+| 半膜肌 | 1.68 | 5.42 | 1 | 6.10 | 0.30 |
+| 股中间肌 | 1.98 | 6.00 | 1 | 3.68 | 0.33 |
+| 胫骨前肌 | 1.08 | 1.35 | 1 | 1.56 | 0.65 |
+| 比目鱼肌 | 1.21 | 3.37 | 6 | 8.86 | 0.88 |
+| 腓肠肌内侧头 | 0.60 | 4.25 | 7 | 15.73 | 0.97 |
+
+**更正（同日）**：本页早先写“按路径高度取 ±1 cm 窗口内的网格顶点，其半径区间在五个采样高度都覆盖路径自身的半径”。通用探针补充了每个高度的路径自身半径后，该说法**不成立**：股中间肌只在近端两个高度覆盖（2/5），而**已绑定的股直肌是 0/5**，比它更差。这说明“路径落在网格半径带内”不能区分可绑定与不可绑定，因此它只作描述，不再作为任何验收依据。验收依据仍只有两条：网格高度内的表面距离，以及重开场景后的形变边长比门槛。
+
+### 股中间肌随股骨形变研究（2026-09-26）
+
+Z-Anatomy 右股中间肌网格在这批候选里最初被两项既有筛查判为不适合绑定：站姿切面中心与模型路径最远 **13.2 cm**，约为已绑定六块（4.7–6.7 cm）的两倍。`blender/probe_leg_mesh_alignment.py` 用与股直肌相同的代码路径重测，结果记录在[右腿网格对齐探针](../docs/data/right_leg_mesh_alignment_probe.json)：
+
+- 该网格纵向跨度 40.8 cm，而 `vas_int_r` 模型路径纵向只有 28.4 cm，网格近端比路径顶端高约 13 cm；切面质心取自包裹状、且相对股骨倾斜的剖面，会落在剖面外侧，**不能当作肌轴**。既有筛查文件本身也注明“z-slice centroids are not attachments or fiber paths”。
+- 改用与骨轴的关系衡量：网格顶点到股骨轴的距离为 0.07–6.87 cm、中位 3.92 cm；同法测已绑定的股直肌为 0.10–9.43 cm、中位 6.22 cm。两者在这项描述上同类。
+- 更直接的**路径到网格表面**筛查（既有 `right_leg_muscle_surface_path_screen.json`）给出中位 **1.98 cm**、最大 **6.00 cm**，与已绑定的半膜肌（1.68／6.10 cm）、股直肌（1.49／5.52 cm）同量级。
+
+因此按与其他六块相同的门槛纳入研究层，并在 App 文案中同时列出两个数字，说明质心指标为何不可用作肌轴。`blender/animate_vastus_intermedius_mesh.py` 在六肌肉场景上加入这块网格，使右腿研究层达到**六块骨骼、七块肌肉**：网格主体随 OpenSim 右股骨刚体运动，两端按网格高度分数以 `0.5 × |2t−1|²` 混入对应路径分数的位移。保存了[默认大腿围 54 cm 的 101 帧场景](../assets/blender/opensim_seven_muscle_motion.blend)和[62 cm 场景](../assets/blender/opensim_seven_muscle_62cm.blend)。
+
+两份 `.blend` 重开后，`blender/check_vastus_intermedius_mesh_motion.py` 核对第 1／26／51／76／101 帧的五个抽样顶点与全部网格边，边长比范围分别为 **0.603–1.255**（54 cm）与 **0.592–1.257**（62 cm），[默认审查](../docs/data/right_vastus_intermedius_mesh_motion_audit.json)与[62 cm 审查](../docs/data/right_vastus_intermedius_mesh_motion_62cm_audit.json)记录逐帧数值。大腿围沿参考髋—膝轴缩放这块网格的横向宽度，62 cm 对应系数 1.148；[62 cm 逐顶点记录](../docs/data/right_vastus_intermedius_mesh_62cm_audit.json)已纳入 `npm run check:body-measurements` 交叉核对，与股直肌、股二头肌短头、半膜肌共用同一套换算。**62 cm 变体只把新加入的这块网格缩放到 62 cm**，同场景里早先加入的三块大腿网格仍是 54 cm 基准（与此前 42 cm 小腿围变体的做法一致）；该文件只用于交叉核对这一块的换算规则，不是一套整体一致的体型。手机 OpenSim 深蹲研究层现加载八块肌肉网格，股中间肌用橄榄色、腓肠肌内侧头用砖红色区分；`npm run check:body-measurements` 另会核对 `src/model.ts` 里每个注册网格键都能在 GLB 节点上按 GLTFLoader 的规范化名称解析到，避免键名笔误静默丢掉整层。
+
+该网格是**表面壳**，模型路径位于壳内，表面接近并不能说明路径落在正确的肌头内；网格纵向分数只是形变启发式，不是肌纤维方向。没有测量纤维应变、肌电或发力。
+
+```powershell
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/probe_leg_mesh_alignment.py'
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/animate_vastus_intermedius_mesh.py'
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_seven_muscle_motion.blend' --python-exit-code 1 --python 'blender/check_vastus_intermedius_mesh_motion.py'
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/animate_vastus_intermedius_mesh.py' -- --thigh-cm 62 --output 'assets/blender/opensim_seven_muscle_62cm.blend' --report 'docs/data/right_vastus_intermedius_mesh_62cm_audit.json'
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_seven_muscle_62cm.blend' --python-exit-code 1 --python 'blender/check_vastus_intermedius_mesh_motion.py' -- --report 'docs/data/right_vastus_intermedius_mesh_62cm_audit.json'
+npm run check:body-measurements
+```
+
+### 腓肠肌内侧头随胫骨形变研究（2026-09-26）
+
+这是唯一一块**被通用探针推翻原有排除结论**的网格。按旧读法它是八块里最差候选：路径到网格表面最大 **15.73 cm**、p95 13.42 cm，站姿切面中心 15.01 cm。通用探针把表面距离按网格高度拆开后，结论相反：
+
+- 网格高度**以内**的 14 个采样点，路径到表面中位只有 **0.60 cm**、最大 4.25 cm——八块中最好的一块，优于已绑定的比目鱼肌（1.21／3.37 cm）。
+- 越界的 7 个采样点里，**97% 的距离来自纵向越过**（`distalShare` 0.97，对比比目鱼肌 0.88、股中间肌 0.33）。也就是说，模型 `med_gas_r` 路径在网格底端以下继续走了约 16 cm，那就是跟腱；网格只表示肌腹。
+- 模型路径长度 0.463 m 约为网格高度 0.300 m 的 1.55 倍，是全组最大的比值，因此纵向网格分数把更长的弧长压缩映射。这只是形变启发式，不是肌纤维方向或附着。
+
+`blender/animate_medial_gastrocnemius_mesh.py` 在七肌肉场景上加入这块网格，使右腿研究层达到**六块骨骼、八块肌肉**，保存了[八肌肉 101 帧场景](../assets/blender/opensim_eight_muscle_motion.blend)。重开后 `blender/check_medial_gastrocnemius_mesh_motion.py` 核对第 1／26／51／76／101 帧的五个抽样顶点与全部网格边，边长比为 **0.772–1.375**，0.5–1.5 门槛内没有异常边，[逐帧审查](../docs/data/right_medial_gastrocnemius_mesh_motion_audit.json)记录数值。
+
+小腿围沿参考膝—踝轴缩放这块网格的横向宽度。42 cm 变体用 `--report-only` **只写审计、不另存场景**：该变体只为核对这块网格的换算，而这一换算法已由胫骨前肌与比目鱼肌的 42 cm 场景各自验证过，再存一份约 20 MB 的场景收益很小；[42 cm 审计](../docs/data/right_medial_gastrocnemius_mesh_42cm_audit.json)里 `sceneStored` 标为 false，已纳入 `npm run check:body-measurements`，其顶点仍与手机端的 `scaleRegisteredLimbPoint` 逐点核对。
+
+局限：网格是**没有肌腱的肌腹壳**，模型路径的远端段在壳外；“切面中心 15.01 cm”与股中间肌的 13.2 cm 一样是质心指标问题，不能当作肌轴。没有测量附着、纤维应变、肌电或发力。
+
+```powershell
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/probe_leg_mesh_alignment.py'
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/animate_medial_gastrocnemius_mesh.py'
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_eight_muscle_motion.blend' --python-exit-code 1 --python 'blender/check_medial_gastrocnemius_mesh_motion.py'
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/animate_medial_gastrocnemius_mesh.py' -- --calf-cm 42 --report 'docs/data/right_medial_gastrocnemius_mesh_42cm_audit.json' --report-only
+npm run check:body-measurements
+```
+
+### 八肌肉研究层的逐帧完整性审计（2026-09-26）
+
+路线图的阶段 1 验收写着“动作中肌肉路径与骨骼同步，**不穿模或错误翻转**”，但此前的网格检查只抽查五帧、只看局部边长比，并明确写着“不检测穿模或软骨”。`blender/audit_registered_mesh_integrity.py` 把这条验收项补上：对八肌肉场景的**全部 101 帧 × 8 块网格 × 6 块骨骼**逐帧计算三件事——每条网格边相对站姿的长度比、每个面相对该肌肉刚体运动的法向（翻转）、以及网格之间与网格—骨骼之间的三角形相交。**第一帧就已相交的网格对算作参考状态**，因此报告的是形变**新增**的穿插，这正是“包围盒共同平移”这类粗配准最容易出错的地方；六块骨骼两两之间也做同样测量，用来区分“关节处两骨网格靠拢”与“肌肉形变自己造成的穿插”。
+
+结果一半通过、一半不通过：
+
+- **通过，而且比原抽样更强**：101 帧里没有任何一条边越出 0.5–1.5（全层最小 **0.5814**、最大 **1.4755**），没有任何面翻转或退化为零面积，自相交也没有超过站姿参考（站姿下 8 块中有 4 块本来就各有 1–2 对自相交面）。也就是说“不错误翻转”现在覆盖全部帧，而不只是第 1／26／51／76／101 帧。
+- **不通过**：**变形确实新增了相互穿插**，7 对网格在深蹲中段出现新的相交，最深 **7.59 mm**：胫骨前肌×股骨（第 24–78 帧，55 帧，最深 7.59 mm）、臀大肌×股直肌（32–70，39 帧，7.50 mm）、股直肌×股骨（22–80，59 帧，4.26 mm）、股中间肌×髋骨（35–67，33 帧，5.52 mm）、股二头肌短头×胫骨（21–81，61 帧，3.83 mm）、股二头肌短头×比目鱼肌（31–71，41 帧，0.97 mm）、股二头肌短头×胫骨前肌（25–77，53 帧，0.66 mm）。
+- **根因可查**：**骨网格自己从第 3 帧起就相交**——股骨×胫骨 97/101 帧、最深 6.79 mm；股骨×髌骨 87 帧、7.16 mm；股骨×腓骨 71 帧、3.51 mm；髌骨×胫骨 73 帧、4.62 mm。这些骨网格是静态 Z-Anatomy 资产按包围盒中心共同平移配准的，没有关节软骨间隙，屈膝时股骨与胫骨网格必然重叠。因此膝附近那些“肌肉×骨骼”的相交有一部分是从骨骼继承来的，不能单独归给肌肉形变；而**肌肉×肌肉**的三对（臀大肌×股直肌、股二头肌短头×胫骨前肌／比目鱼肌）与骨骼无关，是形变启发式自己造成的。
+- 站姿参考本身也已有 **22 对**网格相交（完整列表见数据文件的 `summary.referenceIntersectingMeshPairs`），说明这套粗配准在起点就不满足“不穿模”。**（该数字与髌骨相关条目随后被下一节的恒定偏移改动：站姿参考降到 20 对、髌骨×胫骨整对消失。）**
+
+结论：**“不错误翻转”通过，“不穿模”不通过**，而且不通过的原因主要是配准粒度（骨网格之间，以及骨骼与包裹它的肌肉之间在起点就有重叠），不是某一块网格的形变参数。要让这条验收通过，需要关节软骨间隙或逐肌肉附着点配准，而不是继续调形变权重。数据见[逐帧完整性审计](../docs/data/registered_mesh_integrity_audit.json)，判据由 `npm run check:registered-mesh-integrity` 固定。
+
+```powershell
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_eight_muscle_motion.blend' --python-exit-code 1 --python 'blender/audit_registered_mesh_integrity.py'
+npm run check:registered-mesh-integrity
+```
+
+### 关节间隙能修多少：一个实测的否（2026-09-26）
+
+上一节的结论是“要让‘不穿模’通过，需要关节软骨间隙或逐肌肉附着点配准”，但没说间隙要多大。`blender/probe_bone_joint_clearance.py` 把这个问号量出来：它不动场景，只**假设性**地把胫骨侧的全部网格（胫骨、腓骨、胫骨前肌、比目鱼肌、腓肠肌内侧头）沿膝—踝轴**向远端**逐级平移 2／4／6／8／10 mm，另做一条轴把**髌骨**沿“股骨最近表面→髌骨中心”的方向向前平移，然后逐帧重算相交；同一帧还记录最深穿插点相对模型膝关节中心的位置，用来区分关节线与别处。
+
+结果是**一个实测的否**：
+
+- **开大关节间隙修不了**。沿胫骨轴下移 10 mm（已大于正常膝关节间隙）后，股骨×胫骨仍有 **81／97 帧**相交（0 mm 时 97 帧），股骨×腓骨仍有 **20／71 帧**；髌骨向前 10 mm 后股骨×髌骨仍有 **69／87 帧**。这些网格在配准后是**互相嵌进去**的，不是“缝隙太小”。
+- **能修的是折起来的那部分**：股二头肌短头×胫骨前肌 **6 mm** 归零、股二头肌短头×比目鱼肌 **8 mm** 归零、髌骨×胫骨 **8 mm** 归零；这三对本身也只有 0.66–4.62 mm 深，符合“深蹲到某一角度后小腿面贴住大腿面”的读法，而不是形变错误。**（髌骨相关的两对随后由下一节的 28.8 mm 恒定偏移解决：髌股相交 87→5 帧且深度归零，髌骨×胫骨整对消失。）**
+- **有四对与膝间隙无关**：股骨×髌骨（髌骨不随胫骨），以及臀大肌×股直肌、股直肌×股骨、股中间肌×髋骨——后三对的最深点离膝关节中心 **324–416 mm**，即**髋部**，是屈髋时大腿与骨盆／股骨近端的贴近。
+- 最深点的位置把两类问题分开了：股骨×髌骨最深点距膝关节中心 **19.1 mm**（髌股关节线）、股骨×胫骨 **54.0 mm**（关节线以远 50.2 mm 的胫骨近端），比目鱼肌／胫骨前肌那几对在 **62–78 mm**。因此“关节线附近的重叠”与“折起后的小腿—大腿接触”是两件事：前者要靠配准，后者本来就是接触。
+- 关节中心核对过：场景里胫骨体坐标系原点与视角膝关节中心相差 **11.4 mm**，所以上面这些距离带约 1 cm 量级的模型坐标不确定度。
+
+结论：**“不穿模”不能靠开关节间隙修**，需要逐骨／逐肌肉的配准，或者明确承认刚性解剖网格在深屈曲下互相接触。本轮没有核对已发表的软骨／半月板厚度，所以只报几何量，不把它读成生理间隙。数据见[关节间隙探针](../docs/data/bone_joint_clearance_probe.json)，判据由 `npm run check:bone-joint-clearance` 固定。
+
+```powershell
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_eight_muscle_motion.blend' --python-exit-code 1 --python 'blender/probe_bone_joint_clearance.py'
+npm run check:bone-joint-clearance
+```
+
+### 用测得的恒定偏移修掉髌股穿插（2026-09-26）
+
+上一轮量出“开关节间隙修不了”，但最严重的那一对——**髌骨网格 87 帧插进股骨**——从来没有单独试过更好的配准。所有骨骼眼下共用**一个**站姿包围盒平移，所以这一轮问的是：**给髌骨一个自己的常数偏移能否解决**。`blender/optimise_patella_registration.py` 只缓存一次逐帧几何（髌骨顶点、把站姿偏移带进该帧的旋转、股骨与胫骨表面），再用坐标模式搜索评价候选常数：代价是股骨与胫骨方向的穿插深度之和，外加“髌骨离股骨太远”的惩罚项（权重 0.02），所以搜索不能靠把髌骨甩开来“解决”问题；搜索边界 ±35 mm。
+
+结果（67 次评价）：
+
+| | 髌股相交帧 | 最深 | 髌骨－胫骨帧 | 髌骨到股骨中位距离 |
+| --- | --- | --- | --- | --- |
+| 只用共同平移 | 87/101 | 11.48 mm | 73 | 1.79 mm |
+| 加 28.8 mm 恒定偏移 | **5/101** | **0.00 mm** | **0** | 4.90 mm |
+
+最优偏移为 **+13.5 mm／−18.0 mm／+18.0 mm**（模长 28.8 mm，站姿世界系，在刚体运动之前施加——与 Blender 动画器和手机端已有的共享平移形式相同，因此两边读同一个数）。五个残余帧的深度为 0，是擦碰而不是嵌入。这里的“最深”按**髌骨面到股骨表面**测量，方向与逐帧审计里的股骨→髌骨相反，因此 11.48 mm 与上一节的 7.16 mm 不能直接比较。
+
+**已落地**，不是只写进报告。偏移的唯一来源是 `docs/data/patella_registration_optimisation.json`：
+
+- `blender/animate_registered_bones.py` 从它读取偏移并把 `T(offset)` 乘进髌骨的站姿矩阵（`registration_status` 标为 `shared_standing_bbox_translation_plus_measured_offset`，场景属性 `patella_registration_offset_m` 记录同一向量，由 `check_animated_registered_bones.py` 对照）；
+- `src/model.ts` 导入同一文件，在共同平移之外对 `patella_r` 再乘一次同样的偏移；
+- 整条腿场景链已按新配准重建（骨骼 → 股四头三块 → 胫骨前肌 → 臀大肌 → 比目鱼肌 → 股中间肌 → 腓肠肌内侧头），四份变体场景（大腿 62 cm、小腿 42 cm 两份、股中间肌 62 cm）同步重建。
+
+重建后的逐帧审计：股骨×髌骨从 87 帧降到 **5 帧**（深度 0），髌骨×胫骨整对消失（73 → 0），股骨×胫骨 97 帧、股骨×腓骨 71 帧不变；**代价是一对新接触**——股直肌网格与髌骨在 **67 帧**里相接，最深 4.59 mm。髌骨在解剖上本就位于股四头肌腱内，所以这个接触比“髌骨插进股骨”合理，但它**没有**单独验证过（没有肌腱、没有接触模型）。站姿参考的相交网格对因此从 22 对降到 **20 对**；髌骨五个源路径点到骨面的距离也从 4.5–5.3 cm 缩短到 **2.6–3.7 cm**（`probe_attachment_surfaces.py` 现在也读取同一偏移），属这次改动顺带的改善。
+
+局限：偏移是**一个常数**，不能跟着髌骨在动作中滚动；它是配准常数，而不是附着点、标志点拟合或关节模型。关节间隙探针的对照仍显示股骨－胫骨那条只能靠逐骨配准（开间隙到 10 mm 仍有 81/97 帧）。
+
+```powershell
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_eight_muscle_motion.blend' --python-exit-code 1 --python 'blender/optimise_patella_registration.py'
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/animate_registered_bones.py'
+npm run check:patella-registration-optimisation
+```
+
+### 膝关节的常数配准前沿：第二个实测的否（2026-09-26）
+
+上一节用**一个常数偏移**修好了髌股穿插，并留下“股骨－胫骨那条仍需逐骨配准”。这一轮把那条也搜了一遍，结论是：**在膝关节，常数配准也不够**。
+
+`blender/optimise_knee_registration.py` 把胫骨（含腓骨，两者共用一个 OpenSim 刚体）的四种常数方案各搜一遍：只平移、只换旋转支点、两者叠加、再加站姿倾角。搜索仍只缓存一次逐帧几何，代价是**三个方向**的穿插深度之和（股骨×胫骨、股骨×腓骨、胫骨×跟骨），外加“膝面座位与踝面座位相对基线漂移”的惩罚（权重 5.0；平移 ±60 mm、倾角 ±0.2 rad；座位各取 200 个最近顶点），所以它既不能把胫骨推进跟骨、也不能靠拉开关节来换分。基线在两种搜索里都复现已交付的审计：股骨×胫骨 97/101 帧、股骨×腓骨 71/101 帧、胫骨×跟骨 0 帧、最深 12.59 mm。
+
+四个方案**都没有顶到边界**（内点最优）：
+
+| 方案 | 股骨×胫骨 | 股骨×腓骨 | 胫骨×跟骨 | 最深 | 膝面座位 |
+| --- | --- | --- | --- | --- | --- |
+| 只平移（−18.1／+18.1／−5.0 mm） | **81** | **0** | 0 | 8.17 mm | 6.35 → 11.59 mm |
+| 只换旋转支点（10.6／20.0／15.0 mm） | 97 | 28 | 0 | 12.48 mm | 5.93 mm |
+| 支点＋平移 | 85 | 0 | 0 | 7.11 mm | 13.11 mm |
+| 支点＋平移＋倾角 | 83 | 0 | **20** | 8.05 mm | 9.43 mm |
+
+**没有任何常数能修掉股骨×胫骨**：最好 81/101 帧（深度降约三分之一），加倾角到 83 帧却把接触搬到踝，只换支点则完全无效。原因是每帧的骨骼运动是**复合螺旋运动**——`B(f) B(1)⁻¹` 的轴离站立膝面中心 **364.85 mm**、沿轴平移恰好为零，而且各帧同轴；一个常数支点只能把这条轴整体平移，跟不上屈曲角。这正是髌骨那种“贴着但不插进去”的便宜在膝关节不存在的原因。
+
+**最诱人的“只平移”没有被采纳。** 它把骨－骨相交帧从 173 降到 86、腓骨那一整对消失、股骨×胫骨 97→81 帧，但它把 **8 个胫骨源点到骨面的距离全部推远**（胫骨前肌 P3 从 0.38 cm 到 1.79 cm、比目鱼肌 P1 从 0.18 cm 到 1.28 cm，超过 2 cm 的胫骨点从 2 个变 4 个），而配准体系的独立旁证正是这组距离；实验重建里它还让股二头肌短头×胫骨（61 帧）消失、却新增半膜肌×胫骨（53 帧）。因此 `probe_attachment_surfaces.py` 现在会**并列算出**被否决偏移下的距离（`rejectedOffset*` 字段），这份数据就是否决依据，`check_animated_registered_bones.py` 也会**禁止**场景里出现 `tibia_registration_offset_m`。
+
+顺带试了更外科的一条：`blender/optimise_fibula_registration.py` 单独搜腓骨的常数偏移，4.4 mm 只把 71 帧降到 **52 帧**、深度降 38%，所以腓骨也不能单独修好。
+
+局限：这些方案全是常数（没有逐帧关节中心、没有软骨、没有接触模型）；最深穿插按**胫骨面到股骨面**测量，方向与逐帧审计的股骨→胫骨相反，不能直接比较。这条验收的出口因此是关节软骨／接触建模，或在验收里明确写出这一条不通过的原因。
+
+```powershell
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_anatomy_bone_motion.blend' --python-exit-code 1 --python 'blender/optimise_knee_registration.py'
+& 'D:\blender\blender.exe' --background 'assets/blender/opensim_anatomy_bone_motion.blend' --python-exit-code 1 --python 'blender/optimise_fibula_registration.py'
+& 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/probe_attachment_surfaces.py'
+npm run check:knee-registration-optimisation
+```
+
 ### 胸肩模型右臂三骨几何配准（2026-09-25）
 
 `blender/build_tsm_upper_bone_registration.py` 把 Z-Anatomy 右肱骨、桡骨、尺骨网格放入卧推和上举的 TSM 单侧胸肩模型。它取每块源网格上下 5% 高度切片的顶点中心作为**几何代理点**，将肱骨两端拟合到模型肩、肘；桡骨和尺骨共同使用前臂两骨代理点的平均位置拟合到肘、手，保留两骨间距。每块网格随后跟随对应 TSM 刚体坐标逐帧运动。手机端 OpenSim 卧推／实力举视图有可选开关，并复用同一配准矩阵及逐帧刚体变换。
@@ -229,7 +387,7 @@ npm run check:body-measurements
 
 已把实力举三束 atlas 网格做成[Blender 5.1.2 的 101 帧研究形变场景](../assets/blender/opensim_tsm_press_pectoralis_atlas_probe.blend)，[第 51 帧预览](../assets/blender/opensim_tsm_press_pectoralis_atlas_probe.png)可看收拢时的表面。保存重开后对三块网格、五帧共 45 个顶点复核通过；[生成记录](../docs/data/tsm_press_pectoralis_atlas_probe.json)列出规则与抽样点。它仍没有经过真实解剖标志、肌纤维应变或个人动作验证；现已接入手机端实力举 OpenSim 研究层，按同一几何规则逐帧更新；卧推也已生成并接入 [101 帧候选网格场景](../assets/blender/opensim_tsm_bench_pectoralis_atlas_probe.blend)：使用 80% 路径端点修正，三束最远表面距离约 3.54／3.34／4.13 cm，边长比 0.961–1.412；[预览](../assets/blender/opensim_tsm_bench_pectoralis_atlas_probe.png)与[审查记录](../docs/data/tsm_bench_pectoralis_atlas_probe.json)供复核。两种动作手机端与 Blender 共 270 个抽样坐标交叉核对，最大误差小于 0.001 mm。
 
-为让卧推和实力举的主要胸肌束先有可观察的三维表达，`blender/build_tsm_pectoralis_proxies.py` 沿 TSM 胸大肌锁骨束、胸肋中束、胸肋下束各建一块收窄路径体：每束 21 个弧长等分截面、每截面 8 个顶点，圆截面方向由该帧路径两端方向确定；半径分别假设为 1.8／2.7／2.2 cm。生成的[卧推场景](../assets/blender/opensim_tsm_bench_pectoralis_path_proxies.blend)和[实力举场景](../assets/blender/opensim_tsm_press_pectoralis_path_proxies.blend)各有 101 帧形态键，手机研究层已改为候选解剖网格，此路径体几何保留为早期对照。保存重开后抽查两种动作各 54 个顶点，通过；手机与 Blender 在两种动作、三束、三帧各六个顶点的 324 个坐标比较通过。五帧网格边长比的总范围为卧推约 **0.973–1.503**、实力举约 **0.947–1.371**；审查值见[卧推](../docs/data/tsm_bench_pectoralis_path_proxies.json)及[实力举](../docs/data/tsm_press_pectoralis_path_proxies.json)。胸肌路径体没有经过 atlas 形状配准，半径也是视觉假设；蓝紫颜色只表示路径长度趋势。
+为让卧推和实力举的主要胸肌束先有可观察的三维表达，`blender/build_tsm_pectoralis_proxies.py` 沿 TSM 胸大肌锁骨束、胸肋中束、胸肋下束各建一块收窄路径体：每束 21 个弧长等分截面、每截面 8 个顶点，圆截面方向由该帧路径两端方向确定；半径分别假设为 1.8／2.7／2.2 cm。生成的[卧推场景](../assets/blender/opensim_tsm_bench_pectoralis_path_proxies.blend)和[实力举场景](../assets/blender/opensim_tsm_press_pectoralis_path_proxies.blend)各有 101 帧形态键，手机研究层已改为候选解剖网格，此路径体几何保留为早期对照。保存重开后抽查两种动作各 54 个顶点，通过；`src/pectoralis-proxy.ts` 与 Blender 数据在两种动作、三束、三帧各六个顶点的 324 个坐标比较通过。**注意这份对照的范围**：该 TypeScript 模块**不随 App 发布** —— 手机研究层已改用候选解剖网格，App 不 import 它，因此 `npm run check:pectoralis-proxies` 守的是这个早期对照产物，不是发布行为；发布层的对应检查是 `npm run check:pectoralis-atlas`。五帧网格边长比的总范围为卧推约 **0.973–1.503**、实力举约 **0.947–1.371**；审查值见[卧推](../docs/data/tsm_bench_pectoralis_path_proxies.json)及[实力举](../docs/data/tsm_press_pectoralis_path_proxies.json)。胸肌路径体没有经过 atlas 形状配准，半径也是视觉假设；蓝紫颜色只表示路径长度趋势。
 
 ```powershell
 & 'D:\blender\blender.exe' --background --python-exit-code 1 --python 'blender/probe_tsm_pectoralis_registration.py'

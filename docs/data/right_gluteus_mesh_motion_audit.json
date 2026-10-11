@@ -59,45 +59,5 @@
     "nearest surface/path agreement is a standing geometry screen, not an attachment validation",
     "waist or hip circumference is not used to infer the gluteal muscle volume",
     "no measured fiber strain, EMG or muscle force"
-  ],
-  "sampledFrameDistortion": {
-    "1": {
-      "minimumEdgeRatio": 1.0,
-      "maximumEdgeRatio": 1.0,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "26": {
-      "minimumEdgeRatio": 0.8604,
-      "maximumEdgeRatio": 1.0357,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "51": {
-      "minimumEdgeRatio": 0.664,
-      "maximumEdgeRatio": 1.0268,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "76": {
-      "minimumEdgeRatio": 0.8604,
-      "maximumEdgeRatio": 1.0357,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "101": {
-      "minimumEdgeRatio": 1.0,
-      "maximumEdgeRatio": 1.0,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    }
-  },
-  "sampledFrames": [
-    1,
-    26,
-    51,
-    76,
-    101
-  ],
-  "checkedVertices": 25
+  ]
 }

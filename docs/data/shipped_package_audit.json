@@ -1,0 +1,270 @@
+{
+  "status": "static_package_audit_not_runtime_verification",
+  "auditedAt": "2026-10-12",
+  "apk": {
+    "path": "releases/muscle-atlas-debug-v133.apk",
+    "bytes": 16319044,
+    "sha256": "D626A10965EA7A1BBBFADB3D5EEF1FF2901788E096A15B66A3AEA054B668D2F9"
+  },
+  "archive": {
+    "entries": 463,
+    "compressedPayloadBytes": 13637946,
+    "packedIndexPath": "assets/public/index.html",
+    "packedIndexBytes": 872353,
+    "cacheMarker": "muscle-atlas-v133",
+    "arm26Entries": 0,
+    "cardTokensPresent": [
+      "八块肌肉",
+      "不穿模",
+      "7.6 mm",
+      "97／101",
+      "20 对网格相交",
+      "28.8 mm",
+      "87 帧降到 5 帧",
+      "73 帧降到 0 帧",
+      "67 帧里相接",
+      "2.6–3.7 cm",
+      "81／97",
+      "靠关节间隙修不了",
+      "四种常数方案",
+      "173 降到 86 帧",
+      "365 mm",
+      "没有采纳",
+      "71 帧降到 52 帧",
+      "复合的螺旋运动",
+      "关节软骨"
+    ],
+    "cardTokensMissing": []
+  },
+  "crossCheck": {
+    "androidDocBytesMatch": true,
+    "androidDocShaMatch": true,
+    "serviceWorkerMarker": "muscle-atlas-v133",
+    "currentDistMarker": "muscle-atlas-v133"
+  },
+  "manifest": {
+    "status": "measured",
+    "tool": "D:\\Android\\Sdk\\build-tools\\35.0.0\\aapt2.exe",
+    "packageName": "com.muscleatlas.prototype",
+    "versionCode": 1,
+    "versionName": "1.0",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 36,
+    "compileSdkVersion": 36,
+    "applicationLabel": "肌动图谱",
+    "launchableActivity": "com.muscleatlas.prototype.MainActivity",
+    "debuggable": true,
+    "permissions": [
+      {
+        "name": "android.permission.INTERNET",
+        "reason": "Capacitor 的 WebView 通过本机 HTTP 服务加载打包资源；应用本身只请求同源打包文件，代码里没有任何第三方接口",
+        "platformPermission": true
+      },
+      {
+        "name": "com.muscleatlas.prototype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        "reason": "AndroidX 库自己声明的私有权限，用来限制动态注册的广播接收器只在本应用内可见；不是系统的敏感权限",
+        "platformPermission": false
+      }
+    ],
+    "nativeCode": [],
+    "supportsAnyDensity": true,
+    "localeCount": 86,
+    "impliedFeatures": [
+      "android.hardware.faketouch"
+    ]
+  },
+  "packagedManifest": {
+    "status": "measured",
+    "tool": "D:\\Android\\Sdk\\build-tools\\35.0.0\\aapt2.exe",
+    "debuggable": true,
+    "allowBackup": "false",
+    "extractNativeLibs": "false",
+    "usesCleartextTraffic": null,
+    "networkSecurityConfig": null,
+    "exportedComponents": [
+      {
+        "kind": "activity",
+        "name": "com.muscleatlas.prototype.MainActivity",
+        "exported": true,
+        "permission": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.profileinstaller.ProfileInstallReceiver",
+        "exported": true,
+        "permission": "android.permission.DUMP"
+      }
+    ],
+    "declaredComponents": 4,
+    "note": "打包后的清单来自库合并结果，因此比手写清单多出组件；没有 usesCleartextTraffic 时，targetSdk 36 下明文流量默认关闭，Capacitor 用 https://localhost 加载打包资源。对外的组件若带 android:permission 保护会一并记录。"
+  },
+  "signing": {
+    "status": "measured",
+    "tool": "D:\\Android\\Sdk\\build-tools\\35.0.0\\apksigner.bat",
+    "jdk": "D:\\Android\\jdk-21.0.12.1+1",
+    "certificateDn": "C=US, O=Android, CN=Android Debug",
+    "certificateSha256": "853C8C025C7355F8B1A5038527FC312CA765DE2E8916D41FB10ADD48CE0AA85C",
+    "certificateSha1": "BB5FFCBC55C2B6DA9F52FE57B6AE694A4A75985B",
+    "debugCertificate": true
+  },
+  "sourceManifest": {
+    "status": "measured",
+    "path": "android/app/src/main/AndroidManifest.xml",
+    "allowBackup": "false",
+    "fullBackupContent": "@xml/backup_rules",
+    "dataExtractionRules": "@xml/data_extraction_rules",
+    "activityExported": "true",
+    "activityLaunchMode": "singleTask",
+    "fileProviderExported": "false",
+    "fileProviderGrantUriPermissions": "true",
+    "usesCleartextTraffic": null,
+    "declaredPermissions": [
+      "android.permission.INTERNET"
+    ],
+    "note": "allowBackup=false 表示系统不会把应用数据自动备份到云端；FileProvider 不对外导出，只在用户主动导出时按次授权给选中的目标应用"
+  },
+  "networkSinks": [
+    {
+      "file": "src/main.ts",
+      "line": 485,
+      "code": "const response = await fetch(id === 'squat' ? '/data/squat_opensim_reference.json'",
+      "classification": "local asset",
+      "note": "same-origin packaged JSON; the APK holds it, so no host is contacted"
+    },
+    {
+      "file": "src/main.ts",
+      "line": 1076,
+      "code": "await Share.share({ title: '肌动图谱本地备份', files: [uri], dialogTitle: '保存或分享备份文件' });",
+      "classification": "native bridge",
+      "note": "Capacitor share sheet; only runs when the user taps export, sends a file the user chose to save"
+    },
+    {
+      "file": "src/main.ts",
+      "line": 1084,
+      "code": "await navigator.share({ files: [file], title: '肌动图谱本地备份' });",
+      "classification": "web share",
+      "note": "browser share sheet; the same user-initiated export path on the web build"
+    }
+  ],
+  "externalHostsInPackagedPage": {
+    "creativecommons.org": {
+      "classification": "licence text",
+      "occurrences": 4
+    },
+    "csr.bu.edu": {
+      "classification": "cited data source",
+      "occurrences": 1
+    },
+    "doi.org": {
+      "classification": "citation link",
+      "occurrences": 4
+    },
+    "e-kjab.org": {
+      "classification": "citation link",
+      "occurrences": 1
+    },
+    "figshare.com": {
+      "classification": "cited data source",
+      "occurrences": 1
+    },
+    "github.com": {
+      "classification": "cited model source",
+      "occurrences": 3
+    },
+    "huggingface.co": {
+      "classification": "cited dataset source",
+      "occurrences": 1
+    },
+    "humandatacorpus.org": {
+      "classification": "cited data source",
+      "occurrences": 1
+    },
+    "jcgt.org": {
+      "classification": "citation link",
+      "occurrences": 1
+    },
+    "pmc.ncbi.nlm.nih.gov": {
+      "classification": "citation link",
+      "occurrences": 1
+    },
+    "www.nature.com": {
+      "classification": "citation link",
+      "occurrences": 2
+    },
+    "www.w3.org": {
+      "classification": "XML namespace string, not a request",
+      "occurrences": 1
+    },
+    "zenodo.org": {
+      "classification": "cited data source",
+      "occurrences": 1
+    }
+  },
+  "localStorageKeys": {
+    "muscle-atlas-bench-tempo-v1": {
+      "files": [
+        "src/main.ts"
+      ],
+      "contains": "卧推节奏",
+      "leavesDevice": "不导出"
+    },
+    "muscle-atlas-cycle-duration-s-v1": {
+      "files": [
+        "src/main.ts"
+      ],
+      "contains": "动作周期",
+      "leavesDevice": "不导出"
+    },
+    "muscle-atlas-exercise-v1": {
+      "files": [
+        "src/main.ts"
+      ],
+      "contains": "当前动作",
+      "leavesDevice": "不导出"
+    },
+    "muscle-atlas-loads-v1": {
+      "files": [
+        "src/main.ts"
+      ],
+      "contains": "三个动作的当前杠铃重量",
+      "leavesDevice": "不导出"
+    },
+    "muscle-atlas-profile-v1": {
+      "files": [
+        "src/domain.ts"
+      ],
+      "contains": "身体参数（身高、体重、体脂与围度）",
+      "leavesDevice": "只有用户主动导出备份时才会写出"
+    },
+    "muscle-atlas-squat-bar-offset-cm-v1": {
+      "files": [
+        "src/main.ts"
+      ],
+      "contains": "深蹲杠铃位置",
+      "leavesDevice": "不导出"
+    },
+    "muscle-atlas-squat-depth-deg-v1": {
+      "files": [
+        "src/main.ts"
+      ],
+      "contains": "深蹲模型幅度",
+      "leavesDevice": "不导出"
+    },
+    "muscle-atlas-training-v1": {
+      "files": [
+        "src/domain.ts"
+      ],
+      "contains": "训练记录",
+      "leavesDevice": "只有用户主动导出备份时才会写出"
+    }
+  },
+  "limitations": [
+    "静态审计：读的是打包产物与源码调用点，不能证明运行期 WebView 一次都没有打开网络连接",
+    "APK 清单来自 aapt2 的输出；若工具缺失，报告会写明 unavailable 而不是猜测",
+    "被审计的产物是调试签名包，正式发布前还要重新审计",
+    "外部主机只统计打包页面里出现的字符串，不能代替对每条链接目标的内容审查",
+    "没有 Android 真机的安装、启动或权限行为验收",
+    "localStorage 只列出应用自己写入的键；系统或 WebView 自身的数据不在此列",
+    "签名信息来自本机 JDK 下的 apksigner，证书是可公开的调试证书"
+  ]
+}

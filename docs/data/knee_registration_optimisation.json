@@ -1,0 +1,4350 @@
+{
+  "status": "research_only_knee_registration_search",
+  "scene": "assets/blender/opensim_anatomy_bone_motion.blend",
+  "source": "public/data/squat_opensim_reference.json",
+  "framesChecked": 101,
+  "searchedObjects": [
+    "atlas_Tibia.r",
+    "atlas_Fibula.r"
+  ],
+  "searchedBody": "tibia_r",
+  "pivotFrame": "standing world frame; the body origin motion is rotated about a registered point shifted by d, which adds the angle-dependent translation (I - R(f)) d",
+  "cost": "summed femur-to-tibia, femur-to-fibula and tibia-to-calcaneus penetration depth plus the penalty weight times the deviation of the mean knee-seat and ankle-seat distances from the baseline (seat vertices: the 200 tibia vertices nearest each partner)",
+  "searchStride": 3,
+  "baseline": {
+    "cost": 0.9783797488652142,
+    "framesInCost": 101,
+    "femurTibiaFrames": 97,
+    "femurFibulaFrames": 71,
+    "tibiaCalcaneusFrames": 0,
+    "maximumFemurTibiaDepthM": 0.01259,
+    "maximumFemurFibulaDepthM": 0.00471,
+    "maximumTibiaCalcaneusDepthM": 0.0,
+    "depthSumM": 0.97835,
+    "meanKneeSeatDistanceM": 0.00635,
+    "meanAnkleSeatDistanceM": 0.02538,
+    "pivotShiftM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "offsetM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tiltRad": null,
+    "perFrame": [
+      {
+        "frame": 1,
+        "femurTibiaDepthM": 0.0,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 2,
+        "femurTibiaDepthM": 0.0,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 3,
+        "femurTibiaDepthM": 0.0001,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 4,
+        "femurTibiaDepthM": 0.00067,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 5,
+        "femurTibiaDepthM": 0.00093,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 6,
+        "femurTibiaDepthM": 0.00149,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 7,
+        "femurTibiaDepthM": 0.00201,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 8,
+        "femurTibiaDepthM": 0.00166,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 9,
+        "femurTibiaDepthM": 0.00254,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 10,
+        "femurTibiaDepthM": 0.00417,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 11,
+        "femurTibiaDepthM": 0.00421,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 12,
+        "femurTibiaDepthM": 0.00235,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 13,
+        "femurTibiaDepthM": 0.00381,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 14,
+        "femurTibiaDepthM": 0.00494,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 15,
+        "femurTibiaDepthM": 0.00643,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 16,
+        "femurTibiaDepthM": 0.00785,
+        "femurFibulaDepthM": 0.00041,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 17,
+        "femurTibiaDepthM": 0.00891,
+        "femurFibulaDepthM": 0.00089,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 18,
+        "femurTibiaDepthM": 0.00941,
+        "femurFibulaDepthM": 0.00221,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 19,
+        "femurTibiaDepthM": 0.00923,
+        "femurFibulaDepthM": 0.00317,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 20,
+        "femurTibiaDepthM": 0.00838,
+        "femurFibulaDepthM": 0.00159,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 21,
+        "femurTibiaDepthM": 0.00721,
+        "femurFibulaDepthM": 0.00442,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 22,
+        "femurTibiaDepthM": 0.00529,
+        "femurFibulaDepthM": 0.00471,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 23,
+        "femurTibiaDepthM": 0.00642,
+        "femurFibulaDepthM": 0.00427,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 24,
+        "femurTibiaDepthM": 0.00787,
+        "femurFibulaDepthM": 0.0038,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 25,
+        "femurTibiaDepthM": 0.00999,
+        "femurFibulaDepthM": 0.00325,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 26,
+        "femurTibiaDepthM": 0.01072,
+        "femurFibulaDepthM": 0.00302,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 27,
+        "femurTibiaDepthM": 0.00951,
+        "femurFibulaDepthM": 0.00253,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 28,
+        "femurTibiaDepthM": 0.00952,
+        "femurFibulaDepthM": 0.00255,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 29,
+        "femurTibiaDepthM": 0.0096,
+        "femurFibulaDepthM": 0.0026,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 30,
+        "femurTibiaDepthM": 0.01172,
+        "femurFibulaDepthM": 0.00273,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 31,
+        "femurTibiaDepthM": 0.01159,
+        "femurFibulaDepthM": 0.00355,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 32,
+        "femurTibiaDepthM": 0.01131,
+        "femurFibulaDepthM": 0.00259,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 33,
+        "femurTibiaDepthM": 0.011,
+        "femurFibulaDepthM": 0.00277,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 34,
+        "femurTibiaDepthM": 0.01077,
+        "femurFibulaDepthM": 0.00218,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 35,
+        "femurTibiaDepthM": 0.0106,
+        "femurFibulaDepthM": 0.00199,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 36,
+        "femurTibiaDepthM": 0.01082,
+        "femurFibulaDepthM": 0.00244,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 37,
+        "femurTibiaDepthM": 0.01104,
+        "femurFibulaDepthM": 0.00166,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 38,
+        "femurTibiaDepthM": 0.01124,
+        "femurFibulaDepthM": 0.00111,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 39,
+        "femurTibiaDepthM": 0.01144,
+        "femurFibulaDepthM": 0.0009,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 40,
+        "femurTibiaDepthM": 0.01162,
+        "femurFibulaDepthM": 0.00216,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 41,
+        "femurTibiaDepthM": 0.01178,
+        "femurFibulaDepthM": 0.00172,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 42,
+        "femurTibiaDepthM": 0.01193,
+        "femurFibulaDepthM": 0.00158,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 43,
+        "femurTibiaDepthM": 0.01207,
+        "femurFibulaDepthM": 0.00123,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 44,
+        "femurTibiaDepthM": 0.01219,
+        "femurFibulaDepthM": 0.00099,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 45,
+        "femurTibiaDepthM": 0.0123,
+        "femurFibulaDepthM": 0.00238,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 46,
+        "femurTibiaDepthM": 0.01239,
+        "femurFibulaDepthM": 0.00216,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 47,
+        "femurTibiaDepthM": 0.01246,
+        "femurFibulaDepthM": 0.00198,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 48,
+        "femurTibiaDepthM": 0.01252,
+        "femurFibulaDepthM": 0.00184,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 49,
+        "femurTibiaDepthM": 0.01256,
+        "femurFibulaDepthM": 0.00174,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 50,
+        "femurTibiaDepthM": 0.01259,
+        "femurFibulaDepthM": 0.00169,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 51,
+        "femurTibiaDepthM": 0.01259,
+        "femurFibulaDepthM": 0.00167,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 52,
+        "femurTibiaDepthM": 0.01259,
+        "femurFibulaDepthM": 0.00169,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 53,
+        "femurTibiaDepthM": 0.01256,
+        "femurFibulaDepthM": 0.00174,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 54,
+        "femurTibiaDepthM": 0.01252,
+        "femurFibulaDepthM": 0.00184,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 55,
+        "femurTibiaDepthM": 0.01246,
+        "femurFibulaDepthM": 0.00198,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 56,
+        "femurTibiaDepthM": 0.01239,
+        "femurFibulaDepthM": 0.00216,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 57,
+        "femurTibiaDepthM": 0.0123,
+        "femurFibulaDepthM": 0.00238,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 58,
+        "femurTibiaDepthM": 0.01219,
+        "femurFibulaDepthM": 0.00099,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 59,
+        "femurTibiaDepthM": 0.01207,
+        "femurFibulaDepthM": 0.00123,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 60,
+        "femurTibiaDepthM": 0.01193,
+        "femurFibulaDepthM": 0.00158,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 61,
+        "femurTibiaDepthM": 0.01178,
+        "femurFibulaDepthM": 0.00172,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 62,
+        "femurTibiaDepthM": 0.01162,
+        "femurFibulaDepthM": 0.00216,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 63,
+        "femurTibiaDepthM": 0.01144,
+        "femurFibulaDepthM": 0.0009,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 64,
+        "femurTibiaDepthM": 0.01124,
+        "femurFibulaDepthM": 0.00111,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 65,
+        "femurTibiaDepthM": 0.01104,
+        "femurFibulaDepthM": 0.00166,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 66,
+        "femurTibiaDepthM": 0.01082,
+        "femurFibulaDepthM": 0.00244,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 67,
+        "femurTibiaDepthM": 0.0106,
+        "femurFibulaDepthM": 0.00199,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 68,
+        "femurTibiaDepthM": 0.01077,
+        "femurFibulaDepthM": 0.00218,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 69,
+        "femurTibiaDepthM": 0.011,
+        "femurFibulaDepthM": 0.00277,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 70,
+        "femurTibiaDepthM": 0.01131,
+        "femurFibulaDepthM": 0.00259,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 71,
+        "femurTibiaDepthM": 0.01159,
+        "femurFibulaDepthM": 0.00355,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 72,
+        "femurTibiaDepthM": 0.01172,
+        "femurFibulaDepthM": 0.00273,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 73,
+        "femurTibiaDepthM": 0.0096,
+        "femurFibulaDepthM": 0.0026,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 74,
+        "femurTibiaDepthM": 0.00952,
+        "femurFibulaDepthM": 0.00255,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 75,
+        "femurTibiaDepthM": 0.00951,
+        "femurFibulaDepthM": 0.00253,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 76,
+        "femurTibiaDepthM": 0.01072,
+        "femurFibulaDepthM": 0.00302,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 77,
+        "femurTibiaDepthM": 0.00999,
+        "femurFibulaDepthM": 0.00325,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 78,
+        "femurTibiaDepthM": 0.00787,
+        "femurFibulaDepthM": 0.0038,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 79,
+        "femurTibiaDepthM": 0.00642,
+        "femurFibulaDepthM": 0.00427,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 80,
+        "femurTibiaDepthM": 0.00529,
+        "femurFibulaDepthM": 0.00471,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 81,
+        "femurTibiaDepthM": 0.00721,
+        "femurFibulaDepthM": 0.00442,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 82,
+        "femurTibiaDepthM": 0.00838,
+        "femurFibulaDepthM": 0.00159,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 83,
+        "femurTibiaDepthM": 0.00923,
+        "femurFibulaDepthM": 0.00317,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 84,
+        "femurTibiaDepthM": 0.00941,
+        "femurFibulaDepthM": 0.00221,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 85,
+        "femurTibiaDepthM": 0.00891,
+        "femurFibulaDepthM": 0.00089,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 86,
+        "femurTibiaDepthM": 0.00785,
+        "femurFibulaDepthM": 0.00041,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 87,
+        "femurTibiaDepthM": 0.00643,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 88,
+        "femurTibiaDepthM": 0.00494,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 89,
+        "femurTibiaDepthM": 0.00381,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 90,
+        "femurTibiaDepthM": 0.00235,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 91,
+        "femurTibiaDepthM": 0.00421,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 92,
+        "femurTibiaDepthM": 0.00417,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 93,
+        "femurTibiaDepthM": 0.00254,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 94,
+        "femurTibiaDepthM": 0.00166,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 95,
+        "femurTibiaDepthM": 0.00201,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 96,
+        "femurTibiaDepthM": 0.00149,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 97,
+        "femurTibiaDepthM": 0.00093,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 98,
+        "femurTibiaDepthM": 0.00067,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 99,
+        "femurTibiaDepthM": 0.0001,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 100,
+        "femurTibiaDepthM": 0.0,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      },
+      {
+        "frame": 101,
+        "femurTibiaDepthM": 0.0,
+        "femurFibulaDepthM": 0.0,
+        "tibiaCalcaneusDepthM": 0.0
+      }
+    ]
+  },
+  "effectiveRotationCentre": {
+    "note": "each frame's body motion B(f) B(1)^-1 is a screw motion; this solves its axis and reports how far that axis sits from the standing knee-seat centroid, plus how far the motion slides along its own axis. A constant pivot shift moves every frame's centre by the same vector, so it cannot follow an axis that wanders or a real translation",
+    "kneeSeatCentroidM": [
+      -0.089,
+      -0.03227,
+      0.46344
+    ],
+    "framesSolved": 89,
+    "framesWithRotationOver10Deg": 73,
+    "medianAxisDistanceToKneeSeatM": 0.36485,
+    "minimumAxisDistanceToKneeSeatM": 0.36485,
+    "maximumAxisDistanceToKneeSeatM": 0.36485,
+    "medianScrewTranslationM": 0.0,
+    "maximumScrewTranslationM": 0.0,
+    "medianAxisDistanceAllFramesM": 0.36485
+  },
+  "configurations": [
+    {
+      "label": "translation only",
+      "stage": "offset",
+      "boundsM": 0.025,
+      "boundsRad": 0.0,
+      "penaltyWeight": 5.0,
+      "evaluations": 73,
+      "parametersAtBound": [],
+      "pivotShiftM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offsetM": [
+        -0.01812,
+        0.01812,
+        -0.005
+      ],
+      "tiltRad": null,
+      "optimised": {
+        "cost": 0.3747190804488352,
+        "framesInCost": 101,
+        "femurTibiaFrames": 81,
+        "femurFibulaFrames": 0,
+        "tibiaCalcaneusFrames": 0,
+        "maximumFemurTibiaDepthM": 0.00817,
+        "maximumFemurFibulaDepthM": 0.0,
+        "maximumTibiaCalcaneusDepthM": 0.0,
+        "depthSumM": 0.34831,
+        "meanKneeSeatDistanceM": 0.01159,
+        "meanAnkleSeatDistanceM": 0.02534,
+        "pivotShiftM": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offsetM": [
+          -0.01812,
+          0.01813,
+          -0.005
+        ],
+        "tiltRad": null,
+        "perFrame": [
+          {
+            "frame": 1,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 2,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 3,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 4,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 5,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 6,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 7,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 8,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 9,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 10,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 11,
+            "femurTibiaDepthM": 0.0012,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 12,
+            "femurTibiaDepthM": 0.00103,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 13,
+            "femurTibiaDepthM": 0.00194,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 14,
+            "femurTibiaDepthM": 0.00341,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 15,
+            "femurTibiaDepthM": 0.00513,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 16,
+            "femurTibiaDepthM": 0.00396,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 17,
+            "femurTibiaDepthM": 0.00403,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 18,
+            "femurTibiaDepthM": 0.00555,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 19,
+            "femurTibiaDepthM": 0.00493,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 20,
+            "femurTibiaDepthM": 0.00557,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 21,
+            "femurTibiaDepthM": 0.0063,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 22,
+            "femurTibiaDepthM": 0.00703,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 23,
+            "femurTibiaDepthM": 0.00778,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 24,
+            "femurTibiaDepthM": 0.00817,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 25,
+            "femurTibiaDepthM": 0.00543,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 26,
+            "femurTibiaDepthM": 0.00517,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 27,
+            "femurTibiaDepthM": 0.00479,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 28,
+            "femurTibiaDepthM": 0.00423,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 29,
+            "femurTibiaDepthM": 0.00369,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 30,
+            "femurTibiaDepthM": 0.0034,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 31,
+            "femurTibiaDepthM": 0.00476,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 32,
+            "femurTibiaDepthM": 0.00439,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 33,
+            "femurTibiaDepthM": 0.00405,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 34,
+            "femurTibiaDepthM": 0.00372,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 35,
+            "femurTibiaDepthM": 0.00347,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 36,
+            "femurTibiaDepthM": 0.00374,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 37,
+            "femurTibiaDepthM": 0.004,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 38,
+            "femurTibiaDepthM": 0.00276,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 39,
+            "femurTibiaDepthM": 0.0026,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 40,
+            "femurTibiaDepthM": 0.00255,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 41,
+            "femurTibiaDepthM": 0.00274,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 42,
+            "femurTibiaDepthM": 0.00466,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 43,
+            "femurTibiaDepthM": 0.00456,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 44,
+            "femurTibiaDepthM": 0.00447,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 45,
+            "femurTibiaDepthM": 0.0044,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 46,
+            "femurTibiaDepthM": 0.00433,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 47,
+            "femurTibiaDepthM": 0.00433,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 48,
+            "femurTibiaDepthM": 0.00445,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 49,
+            "femurTibiaDepthM": 0.00454,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 50,
+            "femurTibiaDepthM": 0.00459,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 51,
+            "femurTibiaDepthM": 0.00461,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 52,
+            "femurTibiaDepthM": 0.00459,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 53,
+            "femurTibiaDepthM": 0.00454,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 54,
+            "femurTibiaDepthM": 0.00445,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 55,
+            "femurTibiaDepthM": 0.00433,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 56,
+            "femurTibiaDepthM": 0.00433,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 57,
+            "femurTibiaDepthM": 0.0044,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 58,
+            "femurTibiaDepthM": 0.00447,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 59,
+            "femurTibiaDepthM": 0.00456,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 60,
+            "femurTibiaDepthM": 0.00466,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 61,
+            "femurTibiaDepthM": 0.00274,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 62,
+            "femurTibiaDepthM": 0.00255,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 63,
+            "femurTibiaDepthM": 0.0026,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 64,
+            "femurTibiaDepthM": 0.00276,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 65,
+            "femurTibiaDepthM": 0.004,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 66,
+            "femurTibiaDepthM": 0.00374,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 67,
+            "femurTibiaDepthM": 0.00347,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 68,
+            "femurTibiaDepthM": 0.00372,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 69,
+            "femurTibiaDepthM": 0.00405,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 70,
+            "femurTibiaDepthM": 0.00439,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 71,
+            "femurTibiaDepthM": 0.00476,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 72,
+            "femurTibiaDepthM": 0.0034,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 73,
+            "femurTibiaDepthM": 0.00369,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 74,
+            "femurTibiaDepthM": 0.00423,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 75,
+            "femurTibiaDepthM": 0.00479,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 76,
+            "femurTibiaDepthM": 0.00517,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 77,
+            "femurTibiaDepthM": 0.00543,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 78,
+            "femurTibiaDepthM": 0.00817,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 79,
+            "femurTibiaDepthM": 0.00778,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 80,
+            "femurTibiaDepthM": 0.00703,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 81,
+            "femurTibiaDepthM": 0.0063,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 82,
+            "femurTibiaDepthM": 0.00557,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 83,
+            "femurTibiaDepthM": 0.00493,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 84,
+            "femurTibiaDepthM": 0.00555,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 85,
+            "femurTibiaDepthM": 0.00403,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 86,
+            "femurTibiaDepthM": 0.00396,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 87,
+            "femurTibiaDepthM": 0.00513,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 88,
+            "femurTibiaDepthM": 0.00341,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 89,
+            "femurTibiaDepthM": 0.00194,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 90,
+            "femurTibiaDepthM": 0.00103,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 91,
+            "femurTibiaDepthM": 0.0012,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 92,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 93,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 94,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 95,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 96,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 97,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 98,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 99,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 100,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 101,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          }
+        ]
+      },
+      "trace": [
+        {
+          "parameter": "offsetX",
+          "value": -0.005,
+          "cost": 0.272382,
+          "femurTibiaFrames": 30
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.005,
+          "cost": 0.256047,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "offsetZ",
+          "value": -0.005,
+          "cost": 0.225747,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.01,
+          "cost": 0.221675,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.01,
+          "cost": 0.217251,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetZ",
+          "value": -0.01,
+          "cost": 0.213051,
+          "femurTibiaFrames": 26
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.005,
+          "cost": 0.210858,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.015,
+          "cost": 0.207143,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetZ",
+          "value": -0.005,
+          "cost": 0.192761,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.01,
+          "cost": 0.186685,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.02,
+          "cost": 0.180071,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.015,
+          "cost": 0.160952,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.0175,
+          "cost": 0.146436,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.0175,
+          "cost": 0.141794,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.01813,
+          "cost": 0.140449,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.01812,
+          "cost": 0.140322,
+          "femurTibiaFrames": 27
+        }
+      ]
+    },
+    {
+      "label": "pivot only",
+      "stage": "pivot",
+      "boundsM": 0.06,
+      "boundsRad": 0.0,
+      "penaltyWeight": 5.0,
+      "evaluations": 61,
+      "parametersAtBound": [],
+      "pivotShiftM": [
+        0.01063,
+        0.02,
+        0.015
+      ],
+      "offsetM": null,
+      "tiltRad": null,
+      "optimised": {
+        "cost": 0.6659930271217104,
+        "framesInCost": 101,
+        "femurTibiaFrames": 97,
+        "femurFibulaFrames": 28,
+        "tibiaCalcaneusFrames": 0,
+        "maximumFemurTibiaDepthM": 0.01248,
+        "maximumFemurFibulaDepthM": 0.00144,
+        "maximumTibiaCalcaneusDepthM": 0.0,
+        "depthSumM": 0.64277,
+        "meanKneeSeatDistanceM": 0.00593,
+        "meanAnkleSeatDistanceM": 0.02115,
+        "pivotShiftM": [
+          0.01062,
+          0.02,
+          0.015
+        ],
+        "offsetM": null,
+        "tiltRad": null,
+        "perFrame": [
+          {
+            "frame": 1,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 2,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 3,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 4,
+            "femurTibiaDepthM": 0.00042,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 5,
+            "femurTibiaDepthM": 0.00069,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 6,
+            "femurTibiaDepthM": 0.00124,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 7,
+            "femurTibiaDepthM": 0.00163,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 8,
+            "femurTibiaDepthM": 0.00174,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 9,
+            "femurTibiaDepthM": 0.00171,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 10,
+            "femurTibiaDepthM": 0.0024,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 11,
+            "femurTibiaDepthM": 0.00382,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 12,
+            "femurTibiaDepthM": 0.0053,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 13,
+            "femurTibiaDepthM": 0.00434,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 14,
+            "femurTibiaDepthM": 0.00286,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 15,
+            "femurTibiaDepthM": 0.00364,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 16,
+            "femurTibiaDepthM": 0.00364,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 17,
+            "femurTibiaDepthM": 0.00445,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 18,
+            "femurTibiaDepthM": 0.00494,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 19,
+            "femurTibiaDepthM": 0.0042,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 20,
+            "femurTibiaDepthM": 0.00412,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 21,
+            "femurTibiaDepthM": 0.00359,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 22,
+            "femurTibiaDepthM": 0.00363,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 23,
+            "femurTibiaDepthM": 0.00448,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 24,
+            "femurTibiaDepthM": 0.00531,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 25,
+            "femurTibiaDepthM": 0.00687,
+            "femurFibulaDepthM": 0.00035,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 26,
+            "femurTibiaDepthM": 0.00689,
+            "femurFibulaDepthM": 0.00016,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 27,
+            "femurTibiaDepthM": 0.01248,
+            "femurFibulaDepthM": 0.00063,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 28,
+            "femurTibiaDepthM": 0.01216,
+            "femurFibulaDepthM": 0.00098,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 29,
+            "femurTibiaDepthM": 0.01162,
+            "femurFibulaDepthM": 0.00117,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 30,
+            "femurTibiaDepthM": 0.01102,
+            "femurFibulaDepthM": 0.0014,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 31,
+            "femurTibiaDepthM": 0.01046,
+            "femurFibulaDepthM": 0.00144,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 32,
+            "femurTibiaDepthM": 0.01081,
+            "femurFibulaDepthM": 0.00119,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 33,
+            "femurTibiaDepthM": 0.01126,
+            "femurFibulaDepthM": 0.00085,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 34,
+            "femurTibiaDepthM": 0.01098,
+            "femurFibulaDepthM": 0.00056,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 35,
+            "femurTibiaDepthM": 0.00887,
+            "femurFibulaDepthM": 0.00031,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 36,
+            "femurTibiaDepthM": 0.00856,
+            "femurFibulaDepthM": 8e-05,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 37,
+            "femurTibiaDepthM": 0.00827,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 38,
+            "femurTibiaDepthM": 0.00801,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 39,
+            "femurTibiaDepthM": 0.00777,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 40,
+            "femurTibiaDepthM": 0.00774,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 41,
+            "femurTibiaDepthM": 0.00799,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 42,
+            "femurTibiaDepthM": 0.00822,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 43,
+            "femurTibiaDepthM": 0.00838,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 44,
+            "femurTibiaDepthM": 0.0085,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 45,
+            "femurTibiaDepthM": 0.00861,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 46,
+            "femurTibiaDepthM": 0.00871,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 47,
+            "femurTibiaDepthM": 0.00879,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 48,
+            "femurTibiaDepthM": 0.00885,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 49,
+            "femurTibiaDepthM": 0.0089,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 50,
+            "femurTibiaDepthM": 0.00892,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 51,
+            "femurTibiaDepthM": 0.00893,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 52,
+            "femurTibiaDepthM": 0.00892,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 53,
+            "femurTibiaDepthM": 0.0089,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 54,
+            "femurTibiaDepthM": 0.00885,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 55,
+            "femurTibiaDepthM": 0.00879,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 56,
+            "femurTibiaDepthM": 0.00871,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 57,
+            "femurTibiaDepthM": 0.00861,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 58,
+            "femurTibiaDepthM": 0.0085,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 59,
+            "femurTibiaDepthM": 0.00838,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 60,
+            "femurTibiaDepthM": 0.00822,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 61,
+            "femurTibiaDepthM": 0.00799,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 62,
+            "femurTibiaDepthM": 0.00774,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 63,
+            "femurTibiaDepthM": 0.00777,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 64,
+            "femurTibiaDepthM": 0.00801,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 65,
+            "femurTibiaDepthM": 0.00827,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 66,
+            "femurTibiaDepthM": 0.00856,
+            "femurFibulaDepthM": 8e-05,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 67,
+            "femurTibiaDepthM": 0.00887,
+            "femurFibulaDepthM": 0.00031,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 68,
+            "femurTibiaDepthM": 0.01098,
+            "femurFibulaDepthM": 0.00056,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 69,
+            "femurTibiaDepthM": 0.01126,
+            "femurFibulaDepthM": 0.00085,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 70,
+            "femurTibiaDepthM": 0.01081,
+            "femurFibulaDepthM": 0.00119,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 71,
+            "femurTibiaDepthM": 0.01046,
+            "femurFibulaDepthM": 0.00144,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 72,
+            "femurTibiaDepthM": 0.01102,
+            "femurFibulaDepthM": 0.0014,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 73,
+            "femurTibiaDepthM": 0.01162,
+            "femurFibulaDepthM": 0.00117,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 74,
+            "femurTibiaDepthM": 0.01216,
+            "femurFibulaDepthM": 0.00098,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 75,
+            "femurTibiaDepthM": 0.01248,
+            "femurFibulaDepthM": 0.00063,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 76,
+            "femurTibiaDepthM": 0.00689,
+            "femurFibulaDepthM": 0.00016,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 77,
+            "femurTibiaDepthM": 0.00687,
+            "femurFibulaDepthM": 0.00035,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 78,
+            "femurTibiaDepthM": 0.00531,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 79,
+            "femurTibiaDepthM": 0.00448,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 80,
+            "femurTibiaDepthM": 0.00363,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 81,
+            "femurTibiaDepthM": 0.00359,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 82,
+            "femurTibiaDepthM": 0.00412,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 83,
+            "femurTibiaDepthM": 0.0042,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 84,
+            "femurTibiaDepthM": 0.00494,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 85,
+            "femurTibiaDepthM": 0.00445,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 86,
+            "femurTibiaDepthM": 0.00364,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 87,
+            "femurTibiaDepthM": 0.00364,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 88,
+            "femurTibiaDepthM": 0.00286,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 89,
+            "femurTibiaDepthM": 0.00434,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 90,
+            "femurTibiaDepthM": 0.0053,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 91,
+            "femurTibiaDepthM": 0.00382,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 92,
+            "femurTibiaDepthM": 0.0024,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 93,
+            "femurTibiaDepthM": 0.00171,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 94,
+            "femurTibiaDepthM": 0.00174,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 95,
+            "femurTibiaDepthM": 0.00163,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 96,
+            "femurTibiaDepthM": 0.00124,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 97,
+            "femurTibiaDepthM": 0.00069,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 98,
+            "femurTibiaDepthM": 0.00042,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 99,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 100,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 101,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          }
+        ]
+      },
+      "trace": [
+        {
+          "parameter": "pivotX",
+          "value": 0.005,
+          "cost": 0.323423,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.005,
+          "cost": 0.312602,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.005,
+          "cost": 0.293274,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01,
+          "cost": 0.292243,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.01,
+          "cost": 0.279834,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.01,
+          "cost": 0.261848,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.015,
+          "cost": 0.260639,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.015,
+          "cost": 0.252755,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.015,
+          "cost": 0.248646,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.02,
+          "cost": 0.235428,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01,
+          "cost": 0.234197,
+          "femurTibiaFrames": 32
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01062,
+          "cost": 0.234015,
+          "femurTibiaFrames": 32
+        }
+      ]
+    },
+    {
+      "label": "pivot plus translation",
+      "stage": "pivot+offset",
+      "boundsM": 0.06,
+      "boundsRad": 0.0,
+      "penaltyWeight": 5.0,
+      "evaluations": 157,
+      "parametersAtBound": [],
+      "pivotShiftM": [
+        0.00875,
+        0.0125,
+        0.0175
+      ],
+      "offsetM": [
+        -0.0075,
+        0.0175,
+        -0.005
+      ],
+      "tiltRad": null,
+      "optimised": {
+        "cost": 0.35859863224510546,
+        "framesInCost": 101,
+        "femurTibiaFrames": 85,
+        "femurFibulaFrames": 0,
+        "tibiaCalcaneusFrames": 0,
+        "maximumFemurTibiaDepthM": 0.00711,
+        "maximumFemurFibulaDepthM": 0.0,
+        "maximumTibiaCalcaneusDepthM": 0.0,
+        "depthSumM": 0.3086,
+        "meanKneeSeatDistanceM": 0.01311,
+        "meanAnkleSeatDistanceM": 0.02214,
+        "pivotShiftM": [
+          0.00875,
+          0.0125,
+          0.0175
+        ],
+        "offsetM": [
+          -0.0075,
+          0.0175,
+          -0.005
+        ],
+        "tiltRad": null,
+        "perFrame": [
+          {
+            "frame": 1,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 2,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 3,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 4,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 5,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 6,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 7,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 8,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 9,
+            "femurTibiaDepthM": 0.00011,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 10,
+            "femurTibiaDepthM": 0.00043,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 11,
+            "femurTibiaDepthM": 0.00166,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 12,
+            "femurTibiaDepthM": 0.00195,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 13,
+            "femurTibiaDepthM": 0.00343,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 14,
+            "femurTibiaDepthM": 0.00349,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 15,
+            "femurTibiaDepthM": 0.00518,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 16,
+            "femurTibiaDepthM": 0.00495,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 17,
+            "femurTibiaDepthM": 0.00488,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 18,
+            "femurTibiaDepthM": 0.00553,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 19,
+            "femurTibiaDepthM": 0.004,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 20,
+            "femurTibiaDepthM": 0.00556,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 21,
+            "femurTibiaDepthM": 0.00711,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 22,
+            "femurTibiaDepthM": 0.00431,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 23,
+            "femurTibiaDepthM": 0.00462,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 24,
+            "femurTibiaDepthM": 0.00569,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 25,
+            "femurTibiaDepthM": 0.00542,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 26,
+            "femurTibiaDepthM": 0.00609,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 27,
+            "femurTibiaDepthM": 0.00603,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 28,
+            "femurTibiaDepthM": 0.00548,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 29,
+            "femurTibiaDepthM": 0.00314,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 30,
+            "femurTibiaDepthM": 0.00389,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 31,
+            "femurTibiaDepthM": 0.0038,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 32,
+            "femurTibiaDepthM": 0.00454,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 33,
+            "femurTibiaDepthM": 0.00527,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 34,
+            "femurTibiaDepthM": 0.00389,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 35,
+            "femurTibiaDepthM": 0.0037,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 36,
+            "femurTibiaDepthM": 0.00373,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 37,
+            "femurTibiaDepthM": 0.00386,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 38,
+            "femurTibiaDepthM": 0.004,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 39,
+            "femurTibiaDepthM": 0.00415,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 40,
+            "femurTibiaDepthM": 0.00212,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 41,
+            "femurTibiaDepthM": 0.00197,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 42,
+            "femurTibiaDepthM": 0.00184,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 43,
+            "femurTibiaDepthM": 0.0021,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 44,
+            "femurTibiaDepthM": 0.00234,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 45,
+            "femurTibiaDepthM": 0.00256,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 46,
+            "femurTibiaDepthM": 0.00204,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 47,
+            "femurTibiaDepthM": 0.00207,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 48,
+            "femurTibiaDepthM": 0.00209,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 49,
+            "femurTibiaDepthM": 0.00211,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 50,
+            "femurTibiaDepthM": 0.00212,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 51,
+            "femurTibiaDepthM": 0.00213,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 52,
+            "femurTibiaDepthM": 0.00212,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 53,
+            "femurTibiaDepthM": 0.00211,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 54,
+            "femurTibiaDepthM": 0.00209,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 55,
+            "femurTibiaDepthM": 0.00207,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 56,
+            "femurTibiaDepthM": 0.00204,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 57,
+            "femurTibiaDepthM": 0.00256,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 58,
+            "femurTibiaDepthM": 0.00234,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 59,
+            "femurTibiaDepthM": 0.0021,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 60,
+            "femurTibiaDepthM": 0.00184,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 61,
+            "femurTibiaDepthM": 0.00197,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 62,
+            "femurTibiaDepthM": 0.00212,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 63,
+            "femurTibiaDepthM": 0.00415,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 64,
+            "femurTibiaDepthM": 0.004,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 65,
+            "femurTibiaDepthM": 0.00386,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 66,
+            "femurTibiaDepthM": 0.00373,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 67,
+            "femurTibiaDepthM": 0.0037,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 68,
+            "femurTibiaDepthM": 0.00389,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 69,
+            "femurTibiaDepthM": 0.00527,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 70,
+            "femurTibiaDepthM": 0.00454,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 71,
+            "femurTibiaDepthM": 0.0038,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 72,
+            "femurTibiaDepthM": 0.00389,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 73,
+            "femurTibiaDepthM": 0.00314,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 74,
+            "femurTibiaDepthM": 0.00548,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 75,
+            "femurTibiaDepthM": 0.00603,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 76,
+            "femurTibiaDepthM": 0.00609,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 77,
+            "femurTibiaDepthM": 0.00542,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 78,
+            "femurTibiaDepthM": 0.00569,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 79,
+            "femurTibiaDepthM": 0.00462,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 80,
+            "femurTibiaDepthM": 0.00431,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 81,
+            "femurTibiaDepthM": 0.00711,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 82,
+            "femurTibiaDepthM": 0.00556,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 83,
+            "femurTibiaDepthM": 0.004,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 84,
+            "femurTibiaDepthM": 0.00553,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 85,
+            "femurTibiaDepthM": 0.00488,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 86,
+            "femurTibiaDepthM": 0.00495,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 87,
+            "femurTibiaDepthM": 0.00518,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 88,
+            "femurTibiaDepthM": 0.00349,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 89,
+            "femurTibiaDepthM": 0.00343,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 90,
+            "femurTibiaDepthM": 0.00195,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 91,
+            "femurTibiaDepthM": 0.00166,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 92,
+            "femurTibiaDepthM": 0.00043,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 93,
+            "femurTibiaDepthM": 0.00011,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 94,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 95,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 96,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 97,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 98,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 99,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 100,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 101,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          }
+        ]
+      },
+      "trace": [
+        {
+          "parameter": "offsetZ",
+          "value": -0.005,
+          "cost": 0.217991,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.0,
+          "cost": 0.215381,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.0,
+          "cost": 0.214074,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.01,
+          "cost": 0.211548,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.01,
+          "cost": 0.200612,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.005,
+          "cost": 0.199352,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.005,
+          "cost": 0.198054,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.015,
+          "cost": 0.197763,
+          "femurTibiaFrames": 29
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.01,
+          "cost": 0.184924,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.015,
+          "cost": 0.182583,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetZ",
+          "value": -0.01,
+          "cost": 0.180263,
+          "femurTibiaFrames": 26
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.01,
+          "cost": 0.178973,
+          "femurTibiaFrames": 26
+        },
+        {
+          "parameter": "offsetX",
+          "value": -0.0075,
+          "cost": 0.171803,
+          "femurTibiaFrames": 26
+        },
+        {
+          "parameter": "offsetZ",
+          "value": -0.0075,
+          "cost": 0.170373,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.0175,
+          "cost": 0.165213,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.0175,
+          "cost": 0.162456,
+          "femurTibiaFrames": 27
+        },
+        {
+          "parameter": "offsetZ",
+          "value": -0.005,
+          "cost": 0.153487,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.0125,
+          "cost": 0.149317,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.0075,
+          "cost": 0.148557,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.00875,
+          "cost": 0.148179,
+          "femurTibiaFrames": 28
+        }
+      ]
+    },
+    {
+      "label": "pivot plus translation plus tilt",
+      "stage": "pivot+offset+tilt",
+      "boundsM": 0.06,
+      "boundsRad": 0.2,
+      "penaltyWeight": 5.0,
+      "evaluations": 289,
+      "parametersAtBound": [],
+      "pivotShiftM": [
+        0.0175,
+        0.0125,
+        0.0125
+      ],
+      "offsetM": [
+        -0.005,
+        0.01,
+        -0.005
+      ],
+      "tiltRad": [
+        0.02275,
+        0.065,
+        -0.026
+      ],
+      "optimised": {
+        "cost": 0.4538230068321444,
+        "framesInCost": 101,
+        "femurTibiaFrames": 83,
+        "femurFibulaFrames": 0,
+        "tibiaCalcaneusFrames": 20,
+        "maximumFemurTibiaDepthM": 0.00805,
+        "maximumFemurFibulaDepthM": 0.0,
+        "maximumTibiaCalcaneusDepthM": 0.00012,
+        "depthSumM": 0.43828,
+        "meanKneeSeatDistanceM": 0.00943,
+        "meanAnkleSeatDistanceM": 0.02535,
+        "pivotShiftM": [
+          0.0175,
+          0.0125,
+          0.0125
+        ],
+        "offsetM": [
+          -0.005,
+          0.01,
+          -0.005
+        ],
+        "tiltRad": [
+          0.02275,
+          0.065,
+          -0.026
+        ],
+        "perFrame": [
+          {
+            "frame": 1,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 2,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 3,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 4,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 5,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 6,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 7,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 8,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 9,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 10,
+            "femurTibiaDepthM": 0.00074,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 11,
+            "femurTibiaDepthM": 0.00228,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 12,
+            "femurTibiaDepthM": 0.00389,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 13,
+            "femurTibiaDepthM": 0.00556,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 14,
+            "femurTibiaDepthM": 0.00608,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 15,
+            "femurTibiaDepthM": 0.00584,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 16,
+            "femurTibiaDepthM": 0.00578,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 17,
+            "femurTibiaDepthM": 0.00669,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 18,
+            "femurTibiaDepthM": 0.00728,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 19,
+            "femurTibiaDepthM": 0.00776,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 20,
+            "femurTibiaDepthM": 0.00771,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 21,
+            "femurTibiaDepthM": 0.00766,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 22,
+            "femurTibiaDepthM": 0.00745,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 23,
+            "femurTibiaDepthM": 0.00721,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 24,
+            "femurTibiaDepthM": 0.00703,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 25,
+            "femurTibiaDepthM": 0.00564,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 26,
+            "femurTibiaDepthM": 0.0042,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 27,
+            "femurTibiaDepthM": 0.00558,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 28,
+            "femurTibiaDepthM": 0.00805,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 29,
+            "femurTibiaDepthM": 0.00746,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 30,
+            "femurTibiaDepthM": 0.00709,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 31,
+            "femurTibiaDepthM": 0.00657,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 3e-05
+          },
+          {
+            "frame": 32,
+            "femurTibiaDepthM": 0.00614,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 8e-05
+          },
+          {
+            "frame": 33,
+            "femurTibiaDepthM": 0.00644,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.00011
+          },
+          {
+            "frame": 34,
+            "femurTibiaDepthM": 0.00574,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.00012
+          },
+          {
+            "frame": 35,
+            "femurTibiaDepthM": 0.0059,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.00011
+          },
+          {
+            "frame": 36,
+            "femurTibiaDepthM": 0.00522,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 8e-05
+          },
+          {
+            "frame": 37,
+            "femurTibiaDepthM": 0.00489,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 4e-05
+          },
+          {
+            "frame": 38,
+            "femurTibiaDepthM": 0.0046,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 39,
+            "femurTibiaDepthM": 0.00433,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 40,
+            "femurTibiaDepthM": 0.00408,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 41,
+            "femurTibiaDepthM": 0.00386,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 42,
+            "femurTibiaDepthM": 0.00366,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 43,
+            "femurTibiaDepthM": 0.00402,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 44,
+            "femurTibiaDepthM": 0.00366,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 45,
+            "femurTibiaDepthM": 0.00387,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 46,
+            "femurTibiaDepthM": 0.00315,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 47,
+            "femurTibiaDepthM": 0.00326,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 48,
+            "femurTibiaDepthM": 0.00339,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 49,
+            "femurTibiaDepthM": 0.00348,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 50,
+            "femurTibiaDepthM": 0.00354,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 51,
+            "femurTibiaDepthM": 0.00356,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 52,
+            "femurTibiaDepthM": 0.00354,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 53,
+            "femurTibiaDepthM": 0.00348,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 54,
+            "femurTibiaDepthM": 0.00339,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 55,
+            "femurTibiaDepthM": 0.00326,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 56,
+            "femurTibiaDepthM": 0.00315,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 57,
+            "femurTibiaDepthM": 0.00387,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 58,
+            "femurTibiaDepthM": 0.00366,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 59,
+            "femurTibiaDepthM": 0.00402,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 60,
+            "femurTibiaDepthM": 0.00366,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 61,
+            "femurTibiaDepthM": 0.00386,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 62,
+            "femurTibiaDepthM": 0.00408,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 63,
+            "femurTibiaDepthM": 0.00433,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 64,
+            "femurTibiaDepthM": 0.0046,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 65,
+            "femurTibiaDepthM": 0.00489,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 4e-05
+          },
+          {
+            "frame": 66,
+            "femurTibiaDepthM": 0.00522,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 8e-05
+          },
+          {
+            "frame": 67,
+            "femurTibiaDepthM": 0.0059,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.00011
+          },
+          {
+            "frame": 68,
+            "femurTibiaDepthM": 0.00574,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.00012
+          },
+          {
+            "frame": 69,
+            "femurTibiaDepthM": 0.00644,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.00011
+          },
+          {
+            "frame": 70,
+            "femurTibiaDepthM": 0.00614,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 8e-05
+          },
+          {
+            "frame": 71,
+            "femurTibiaDepthM": 0.00657,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 3e-05
+          },
+          {
+            "frame": 72,
+            "femurTibiaDepthM": 0.00709,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 73,
+            "femurTibiaDepthM": 0.00746,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 74,
+            "femurTibiaDepthM": 0.00805,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 75,
+            "femurTibiaDepthM": 0.00558,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 76,
+            "femurTibiaDepthM": 0.0042,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 77,
+            "femurTibiaDepthM": 0.00564,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 78,
+            "femurTibiaDepthM": 0.00703,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 79,
+            "femurTibiaDepthM": 0.00721,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 80,
+            "femurTibiaDepthM": 0.00745,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 81,
+            "femurTibiaDepthM": 0.00766,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 82,
+            "femurTibiaDepthM": 0.00771,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 83,
+            "femurTibiaDepthM": 0.00776,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 84,
+            "femurTibiaDepthM": 0.00728,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 85,
+            "femurTibiaDepthM": 0.00669,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 86,
+            "femurTibiaDepthM": 0.00578,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 87,
+            "femurTibiaDepthM": 0.00584,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 88,
+            "femurTibiaDepthM": 0.00608,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 89,
+            "femurTibiaDepthM": 0.00556,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 90,
+            "femurTibiaDepthM": 0.00389,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 91,
+            "femurTibiaDepthM": 0.00228,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 92,
+            "femurTibiaDepthM": 0.00074,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 93,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 94,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 95,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 96,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 97,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 98,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 99,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 100,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          },
+          {
+            "frame": 101,
+            "femurTibiaDepthM": 0.0,
+            "femurFibulaDepthM": 0.0,
+            "tibiaCalcaneusDepthM": 0.0
+          }
+        ]
+      },
+      "trace": [
+        {
+          "parameter": "tiltX",
+          "value": 0.026,
+          "cost": 0.201824,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "tiltY",
+          "value": 0.026,
+          "cost": 0.196265,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.0,
+          "cost": 0.195899,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "offsetY",
+          "value": 0.01,
+          "cost": 0.188123,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "tiltY",
+          "value": 0.052,
+          "cost": 0.184017,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "tiltZ",
+          "value": -0.026,
+          "cost": 0.183448,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.005,
+          "cost": 0.182397,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.01,
+          "cost": 0.177639,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.01,
+          "cost": 0.169827,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01,
+          "cost": 0.169631,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotY",
+          "value": 0.0125,
+          "cost": 0.168605,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotZ",
+          "value": 0.0125,
+          "cost": 0.167747,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "tiltY",
+          "value": 0.065,
+          "cost": 0.1639,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.0125,
+          "cost": 0.163282,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.015,
+          "cost": 0.162887,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "tiltX",
+          "value": 0.02275,
+          "cost": 0.161953,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01562,
+          "cost": 0.16185,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01625,
+          "cost": 0.161754,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.01688,
+          "cost": 0.161704,
+          "femurTibiaFrames": 28
+        },
+        {
+          "parameter": "pivotX",
+          "value": 0.0175,
+          "cost": 0.161688,
+          "femurTibiaFrames": 28
+        }
+      ]
+    }
+  ],
+  "optimised": {
+    "label": "translation only",
+    "stage": "offset",
+    "boundsM": 0.025,
+    "boundsRad": 0.0,
+    "penaltyWeight": 5.0,
+    "evaluations": 73,
+    "parametersAtBound": [],
+    "pivotShiftM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "offsetM": [
+      -0.01812,
+      0.01812,
+      -0.005
+    ],
+    "tiltRad": null,
+    "optimised": {
+      "cost": 0.3747190804488352,
+      "framesInCost": 101,
+      "femurTibiaFrames": 81,
+      "femurFibulaFrames": 0,
+      "tibiaCalcaneusFrames": 0,
+      "maximumFemurTibiaDepthM": 0.00817,
+      "maximumFemurFibulaDepthM": 0.0,
+      "maximumTibiaCalcaneusDepthM": 0.0,
+      "depthSumM": 0.34831,
+      "meanKneeSeatDistanceM": 0.01159,
+      "meanAnkleSeatDistanceM": 0.02534,
+      "pivotShiftM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offsetM": [
+        -0.01812,
+        0.01813,
+        -0.005
+      ],
+      "tiltRad": null,
+      "perFrame": [
+        {
+          "frame": 1,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 2,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 3,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 4,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 5,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 6,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 7,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 8,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 9,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 10,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 11,
+          "femurTibiaDepthM": 0.0012,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 12,
+          "femurTibiaDepthM": 0.00103,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 13,
+          "femurTibiaDepthM": 0.00194,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 14,
+          "femurTibiaDepthM": 0.00341,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 15,
+          "femurTibiaDepthM": 0.00513,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 16,
+          "femurTibiaDepthM": 0.00396,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 17,
+          "femurTibiaDepthM": 0.00403,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 18,
+          "femurTibiaDepthM": 0.00555,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 19,
+          "femurTibiaDepthM": 0.00493,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 20,
+          "femurTibiaDepthM": 0.00557,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 21,
+          "femurTibiaDepthM": 0.0063,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 22,
+          "femurTibiaDepthM": 0.00703,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 23,
+          "femurTibiaDepthM": 0.00778,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 24,
+          "femurTibiaDepthM": 0.00817,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 25,
+          "femurTibiaDepthM": 0.00543,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 26,
+          "femurTibiaDepthM": 0.00517,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 27,
+          "femurTibiaDepthM": 0.00479,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 28,
+          "femurTibiaDepthM": 0.00423,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 29,
+          "femurTibiaDepthM": 0.00369,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 30,
+          "femurTibiaDepthM": 0.0034,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 31,
+          "femurTibiaDepthM": 0.00476,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 32,
+          "femurTibiaDepthM": 0.00439,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 33,
+          "femurTibiaDepthM": 0.00405,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 34,
+          "femurTibiaDepthM": 0.00372,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 35,
+          "femurTibiaDepthM": 0.00347,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 36,
+          "femurTibiaDepthM": 0.00374,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 37,
+          "femurTibiaDepthM": 0.004,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 38,
+          "femurTibiaDepthM": 0.00276,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 39,
+          "femurTibiaDepthM": 0.0026,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 40,
+          "femurTibiaDepthM": 0.00255,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 41,
+          "femurTibiaDepthM": 0.00274,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 42,
+          "femurTibiaDepthM": 0.00466,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 43,
+          "femurTibiaDepthM": 0.00456,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 44,
+          "femurTibiaDepthM": 0.00447,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 45,
+          "femurTibiaDepthM": 0.0044,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 46,
+          "femurTibiaDepthM": 0.00433,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 47,
+          "femurTibiaDepthM": 0.00433,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 48,
+          "femurTibiaDepthM": 0.00445,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 49,
+          "femurTibiaDepthM": 0.00454,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 50,
+          "femurTibiaDepthM": 0.00459,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 51,
+          "femurTibiaDepthM": 0.00461,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 52,
+          "femurTibiaDepthM": 0.00459,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 53,
+          "femurTibiaDepthM": 0.00454,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 54,
+          "femurTibiaDepthM": 0.00445,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 55,
+          "femurTibiaDepthM": 0.00433,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 56,
+          "femurTibiaDepthM": 0.00433,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 57,
+          "femurTibiaDepthM": 0.0044,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 58,
+          "femurTibiaDepthM": 0.00447,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 59,
+          "femurTibiaDepthM": 0.00456,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 60,
+          "femurTibiaDepthM": 0.00466,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 61,
+          "femurTibiaDepthM": 0.00274,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 62,
+          "femurTibiaDepthM": 0.00255,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 63,
+          "femurTibiaDepthM": 0.0026,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 64,
+          "femurTibiaDepthM": 0.00276,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 65,
+          "femurTibiaDepthM": 0.004,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 66,
+          "femurTibiaDepthM": 0.00374,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 67,
+          "femurTibiaDepthM": 0.00347,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 68,
+          "femurTibiaDepthM": 0.00372,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 69,
+          "femurTibiaDepthM": 0.00405,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 70,
+          "femurTibiaDepthM": 0.00439,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 71,
+          "femurTibiaDepthM": 0.00476,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 72,
+          "femurTibiaDepthM": 0.0034,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 73,
+          "femurTibiaDepthM": 0.00369,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 74,
+          "femurTibiaDepthM": 0.00423,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 75,
+          "femurTibiaDepthM": 0.00479,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 76,
+          "femurTibiaDepthM": 0.00517,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 77,
+          "femurTibiaDepthM": 0.00543,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 78,
+          "femurTibiaDepthM": 0.00817,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 79,
+          "femurTibiaDepthM": 0.00778,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 80,
+          "femurTibiaDepthM": 0.00703,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 81,
+          "femurTibiaDepthM": 0.0063,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 82,
+          "femurTibiaDepthM": 0.00557,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 83,
+          "femurTibiaDepthM": 0.00493,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 84,
+          "femurTibiaDepthM": 0.00555,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 85,
+          "femurTibiaDepthM": 0.00403,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 86,
+          "femurTibiaDepthM": 0.00396,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 87,
+          "femurTibiaDepthM": 0.00513,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 88,
+          "femurTibiaDepthM": 0.00341,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 89,
+          "femurTibiaDepthM": 0.00194,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 90,
+          "femurTibiaDepthM": 0.00103,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 91,
+          "femurTibiaDepthM": 0.0012,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 92,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 93,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 94,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 95,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 96,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 97,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 98,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 99,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 100,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        },
+        {
+          "frame": 101,
+          "femurTibiaDepthM": 0.0,
+          "femurFibulaDepthM": 0.0,
+          "tibiaCalcaneusDepthM": 0.0
+        }
+      ]
+    }
+  },
+  "bestConfiguration": "translation only",
+  "elapsedSeconds": 119.6,
+  "limitations": [
+    "every configuration returns constants: a pivot shift can follow the flexion angle, but nothing here fits a joint centre per frame, adds cartilage or models contact",
+    "the fibula shares the tibia body frame, so it can only receive the same correction",
+    "the search scores a strided subset of frames; the reported figures are recomputed on all 101 frames",
+    "the seat penalties use one arbitrary weight and 200 nearest vertices each; the reported per-part figures should be read instead of the cost alone",
+    "penetration is measured between rigid vertex meshes with no cartilage, so a small residual contact may be anatomical rather than an error",
+    "one subject, right side, standing bounding-box registration, 101 frames of one squat"
+  ]
+}

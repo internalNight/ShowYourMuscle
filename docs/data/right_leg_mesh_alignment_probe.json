@@ -1,0 +1,760 @@
+{
+  "status": "research_only_standing_leg_alignment_probe",
+  "scene": "assets\\blender\\opensim_seven_muscle_motion.blend",
+  "atlas": "public\\models\\z_anatomy_reference.glb",
+  "axisRule": "femur_r meshes use hip to knee; pelvis and tibia_r meshes use knee to ankle",
+  "surfaceWindowM": 0.01,
+  "muscles": {
+    "glut_max2_r": {
+      "atlasMesh": "Gluteus maximus muscle.r",
+      "body": "pelvis",
+      "vertexCount": 1663,
+      "meshBounds": {
+        "minimumM": [
+          -0.16087,
+          -0.04996,
+          0.74589
+        ],
+        "maximumM": [
+          -0.01547,
+          0.04707,
+          1.01538
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.14699,
+          -0.01364,
+          0.78746
+        ],
+        "maximumM": [
+          -0.07771,
+          0.06686,
+          0.97888
+        ]
+      },
+      "meshHeightM": 0.26949,
+      "pathLengthM": 0.22918,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.07716,
+        "median": 0.1696,
+        "maximum": 0.20302
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.12547,
+        "maximum": 0.23078
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 109,
+          "sliceMinimumRadiusM": 0.15006,
+          "sliceMaximumRadiusM": 0.19758,
+          "pathRadiusM": 0.22871
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 194,
+          "sliceMinimumRadiusM": 0.1383,
+          "sliceMaximumRadiusM": 0.20302,
+          "pathRadiusM": 0.22154
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 188,
+          "sliceMinimumRadiusM": 0.12701,
+          "sliceMaximumRadiusM": 0.19787,
+          "pathRadiusM": 0.19701
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 144,
+          "sliceMinimumRadiusM": 0.09625,
+          "sliceMaximumRadiusM": 0.1723,
+          "pathRadiusM": 0.16379
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 101,
+          "sliceMinimumRadiusM": 0.08704,
+          "sliceMaximumRadiusM": 0.13618,
+          "pathRadiusM": 0.13272
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 21,
+        "medianDistanceM": 0.0221,
+        "maximumDistanceM": 0.03594
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 0,
+        "maximumDistanceM": null,
+        "medianDistalShareOfDistance": null
+      },
+      "publishedCentreDistanceM": 0.06815,
+      "publishedSurfaceDistanceM": {
+        "median": 0.0221,
+        "p95": 0.03252,
+        "maximum": 0.03594
+      }
+    },
+    "rect_fem_r": {
+      "atlasMesh": "Rectus femoris muscle.r",
+      "body": "femur_r",
+      "vertexCount": 4136,
+      "meshBounds": {
+        "minimumM": [
+          -0.16243,
+          -0.12513,
+          0.40666
+        ],
+        "maximumM": [
+          -0.08082,
+          -0.05578,
+          0.95198
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.12405,
+          -0.13157,
+          0.4226
+        ],
+        "maximumM": [
+          -0.0962,
+          -0.04353,
+          0.93039
+        ]
+      },
+      "meshHeightM": 0.54533,
+      "pathLengthM": 0.5227,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.00104,
+        "median": 0.06217,
+        "maximum": 0.09427
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.02044,
+        "maximum": 0.06001
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 172,
+          "sliceMinimumRadiusM": 0.06169,
+          "sliceMaximumRadiusM": 0.08451,
+          "pathRadiusM": 0.04212
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 166,
+          "sliceMinimumRadiusM": 0.05556,
+          "sliceMaximumRadiusM": 0.09014,
+          "pathRadiusM": 0.04597
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 95,
+          "sliceMinimumRadiusM": 0.05655,
+          "sliceMaximumRadiusM": 0.08537,
+          "pathRadiusM": 0.05134
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 91,
+          "sliceMinimumRadiusM": 0.01308,
+          "sliceMaximumRadiusM": 0.03303,
+          "pathRadiusM": 0.05716
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 74,
+          "sliceMinimumRadiusM": 0.00827,
+          "sliceMaximumRadiusM": 0.02157,
+          "pathRadiusM": 0.03433
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 21,
+        "medianDistanceM": 0.01491,
+        "maximumDistanceM": 0.05519
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 0,
+        "maximumDistanceM": null,
+        "medianDistalShareOfDistance": null
+      },
+      "publishedCentreDistanceM": 0.04661,
+      "publishedSurfaceDistanceM": {
+        "median": 0.01491,
+        "p95": 0.0488,
+        "maximum": 0.05519
+      }
+    },
+    "bifemsh_r": {
+      "atlasMesh": "Short head of biceps femoris.r",
+      "body": "femur_r",
+      "vertexCount": 1238,
+      "meshBounds": {
+        "minimumM": [
+          -0.13763,
+          -0.05064,
+          0.43938
+        ],
+        "maximumM": [
+          -0.10079,
+          -0.00876,
+          0.74073
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.12901,
+          -0.05315,
+          0.45469
+        ],
+        "maximumM": [
+          -0.12648,
+          -0.04821,
+          0.68366
+        ]
+      },
+      "meshHeightM": 0.30135,
+      "pathLengthM": 0.22904,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.00212,
+        "median": 0.03882,
+        "maximum": 0.07863
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.02647,
+        "maximum": 0.04585
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 54,
+          "sliceMinimumRadiusM": 0.0039,
+          "sliceMaximumRadiusM": 0.02348,
+          "pathRadiusM": 0.02625
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 110,
+          "sliceMinimumRadiusM": 0.00377,
+          "sliceMaximumRadiusM": 0.03315,
+          "pathRadiusM": 0.027
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 121,
+          "sliceMinimumRadiusM": 0.02166,
+          "sliceMaximumRadiusM": 0.05075,
+          "pathRadiusM": 0.03118
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 117,
+          "sliceMinimumRadiusM": 0.04146,
+          "sliceMaximumRadiusM": 0.06978,
+          "pathRadiusM": 0.03782
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 65,
+          "sliceMinimumRadiusM": 0.0662,
+          "sliceMaximumRadiusM": 0.07863,
+          "pathRadiusM": 0.04417
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 21,
+        "medianDistanceM": 0.01256,
+        "maximumDistanceM": 0.0266
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 0,
+        "maximumDistanceM": null,
+        "medianDistalShareOfDistance": null
+      },
+      "publishedCentreDistanceM": 0.05524,
+      "publishedSurfaceDistanceM": {
+        "median": 0.01256,
+        "p95": 0.02624,
+        "maximum": 0.0266
+      }
+    },
+    "semimem_r": {
+      "atlasMesh": "Semimembranosus muscle.r",
+      "body": "femur_r",
+      "vertexCount": 3725,
+      "meshBounds": {
+        "minimumM": [
+          -0.09288,
+          -0.05078,
+          0.42154
+        ],
+        "maximumM": [
+          -0.0291,
+          0.00434,
+          0.83925
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.0905,
+          -0.04943,
+          0.45571
+        ],
+        "maximumM": [
+          -0.07763,
+          0.03115,
+          0.85588
+        ]
+      },
+      "meshHeightM": 0.41771,
+      "pathLengthM": 0.40841,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.02234,
+        "median": 0.05845,
+        "maximum": 0.08191
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.03515,
+        "maximum": 0.04997
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 66,
+          "sliceMinimumRadiusM": 0.03376,
+          "sliceMaximumRadiusM": 0.06079,
+          "pathRadiusM": 0.04919
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 126,
+          "sliceMinimumRadiusM": 0.02997,
+          "sliceMaximumRadiusM": 0.06936,
+          "pathRadiusM": 0.0461
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 213,
+          "sliceMinimumRadiusM": 0.02547,
+          "sliceMaximumRadiusM": 0.07402,
+          "pathRadiusM": 0.04232
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 236,
+          "sliceMinimumRadiusM": 0.03935,
+          "sliceMaximumRadiusM": 0.07752,
+          "pathRadiusM": 0.03866
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 105,
+          "sliceMinimumRadiusM": 0.06154,
+          "sliceMaximumRadiusM": 0.07975,
+          "pathRadiusM": 0.03583
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 20,
+        "medianDistanceM": 0.01684,
+        "maximumDistanceM": 0.05423
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 1,
+        "maximumDistanceM": 0.061,
+        "medianDistalShareOfDistance": 0.2985
+      },
+      "publishedCentreDistanceM": 0.06669,
+      "publishedSurfaceDistanceM": {
+        "median": 0.01684,
+        "p95": 0.05423,
+        "maximum": 0.061
+      }
+    },
+    "vas_int_r": {
+      "atlasMesh": "Vastus intermedius muscle.r",
+      "body": "femur_r",
+      "vertexCount": 3076,
+      "meshBounds": {
+        "minimumM": [
+          -0.1472,
+          -0.1029,
+          0.43473
+        ],
+        "maximumM": [
+          -0.09057,
+          -0.05515,
+          0.84312
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.13457,
+          -0.12682,
+          0.42251
+        ],
+        "maximumM": [
+          -0.0971,
+          -0.07349,
+          0.70612
+        ]
+      },
+      "meshHeightM": 0.4084,
+      "pathLengthM": 0.29836,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.00074,
+        "median": 0.03922,
+        "maximum": 0.06868
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.02047,
+        "maximum": 0.05419
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 138,
+          "sliceMinimumRadiusM": 0.02825,
+          "sliceMaximumRadiusM": 0.06698,
+          "pathRadiusM": 0.0478
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 178,
+          "sliceMinimumRadiusM": 0.02055,
+          "sliceMaximumRadiusM": 0.05694,
+          "pathRadiusM": 0.04776
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 167,
+          "sliceMinimumRadiusM": 0.00922,
+          "sliceMaximumRadiusM": 0.03791,
+          "pathRadiusM": 0.05055
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 144,
+          "sliceMinimumRadiusM": 0.00819,
+          "sliceMaximumRadiusM": 0.02103,
+          "pathRadiusM": 0.05132
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 50,
+          "sliceMinimumRadiusM": 0.01086,
+          "sliceMaximumRadiusM": 0.01752,
+          "pathRadiusM": 0.02836
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 20,
+        "medianDistanceM": 0.01982,
+        "maximumDistanceM": 0.06001
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 1,
+        "maximumDistanceM": 0.03679,
+        "medianDistalShareOfDistance": 0.3321
+      },
+      "publishedCentreDistanceM": 0.13181,
+      "publishedSurfaceDistanceM": {
+        "median": 0.01982,
+        "p95": 0.05632,
+        "maximum": 0.06001
+      }
+    },
+    "tib_ant_r": {
+      "atlasMesh": "Tibialis anterior muscle.r",
+      "body": "tibia_r",
+      "vertexCount": 1761,
+      "meshBounds": {
+        "minimumM": [
+          -0.1316,
+          -0.10365,
+          0.07843
+        ],
+        "maximumM": [
+          -0.07078,
+          -0.02998,
+          0.44729
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.11154,
+          -0.07596,
+          0.07585
+        ],
+        "maximumM": [
+          -0.06742,
+          -0.0392,
+          0.3587
+        ]
+      },
+      "meshHeightM": 0.36886,
+      "pathLengthM": 0.29733,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.01031,
+        "median": 0.03003,
+        "maximum": 0.10531
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.03082,
+        "maximum": 0.07462
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 130,
+          "sliceMinimumRadiusM": 0.01065,
+          "sliceMaximumRadiusM": 0.03763,
+          "pathRadiusM": 0.03237
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 96,
+          "sliceMinimumRadiusM": 0.01031,
+          "sliceMaximumRadiusM": 0.03488,
+          "pathRadiusM": 0.03691
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 93,
+          "sliceMinimumRadiusM": 0.01305,
+          "sliceMaximumRadiusM": 0.0295,
+          "pathRadiusM": 0.03428
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 33,
+          "sliceMinimumRadiusM": 0.03417,
+          "sliceMaximumRadiusM": 0.04843,
+          "pathRadiusM": 0.0352
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 261,
+          "sliceMinimumRadiusM": 0.07403,
+          "sliceMaximumRadiusM": 0.10531,
+          "pathRadiusM": 0.06495
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 20,
+        "medianDistanceM": 0.01084,
+        "maximumDistanceM": 0.01347
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 1,
+        "maximumDistanceM": 0.01563,
+        "medianDistalShareOfDistance": 0.6451
+      },
+      "publishedCentreDistanceM": 0.08853,
+      "publishedSurfaceDistanceM": {
+        "median": 0.01084,
+        "p95": 0.01347,
+        "maximum": 0.01563
+      }
+    },
+    "soleus_r": {
+      "atlasMesh": "Soleus muscle.r",
+      "body": "tibia_r",
+      "vertexCount": 3379,
+      "meshBounds": {
+        "minimumM": [
+          -0.14293,
+          -0.0411,
+          0.16993
+        ],
+        "maximumM": [
+          -0.05779,
+          0.01415,
+          0.44569
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.10598,
+          -0.06091,
+          0.08905
+        ],
+        "maximumM": [
+          -0.09262,
+          0.04437,
+          0.40207
+        ]
+      },
+      "meshHeightM": 0.27575,
+      "pathLengthM": 0.33052,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.01231,
+        "median": 0.04222,
+        "maximum": 0.06999
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.01126,
+        "maximum": 0.0416
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 264,
+          "sliceMinimumRadiusM": 0.02631,
+          "sliceMaximumRadiusM": 0.06986,
+          "pathRadiusM": 0.01056
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 336,
+          "sliceMinimumRadiusM": 0.01386,
+          "sliceMaximumRadiusM": 0.06713,
+          "pathRadiusM": 0.01228
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 217,
+          "sliceMinimumRadiusM": 0.01732,
+          "sliceMaximumRadiusM": 0.04783,
+          "pathRadiusM": 0.02064
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 37,
+          "sliceMinimumRadiusM": 0.02043,
+          "sliceMaximumRadiusM": 0.02576,
+          "pathRadiusM": 0.03086
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 0,
+          "sliceMinimumRadiusM": null,
+          "sliceMaximumRadiusM": null,
+          "pathRadiusM": 0.03943
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 15,
+        "medianDistanceM": 0.01207,
+        "maximumDistanceM": 0.03373
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 6,
+        "maximumDistanceM": 0.08864,
+        "medianDistalShareOfDistance": 0.8819
+      },
+      "publishedCentreDistanceM": 0.08454,
+      "publishedSurfaceDistanceM": {
+        "median": 0.01702,
+        "p95": 0.07236,
+        "maximum": 0.08864
+      }
+    },
+    "med_gas_r": {
+      "atlasMesh": "Medial head of gastrocnemius.r",
+      "body": "tibia_r",
+      "vertexCount": 3233,
+      "meshBounds": {
+        "minimumM": [
+          -0.10001,
+          -0.04677,
+          0.24265
+        ],
+        "maximumM": [
+          -0.04886,
+          0.03923,
+          0.5423
+        ]
+      },
+      "pathBounds": {
+        "minimumM": [
+          -0.09262,
+          -0.0856,
+          0.08905
+        ],
+        "maximumM": [
+          -0.0789,
+          0.04437,
+          0.52
+        ]
+      },
+      "meshHeightM": 0.29965,
+      "pathLengthM": 0.46336,
+      "meshRadialDistanceFromLimbAxisM": {
+        "minimum": 0.02472,
+        "median": 0.06249,
+        "maximum": 0.0949
+      },
+      "pathRadialDistanceFromLimbAxisM": {
+        "minimum": 0.0185,
+        "maximum": 0.05414
+      },
+      "sliceRadiusAtPathHeight": [
+        {
+          "fractionFromPathStart": 0.05,
+          "sliceVertexCount": 266,
+          "sliceMinimumRadiusM": 0.05057,
+          "sliceMaximumRadiusM": 0.07756,
+          "pathRadiusM": 0.01994
+        },
+        {
+          "fractionFromPathStart": 0.25,
+          "sliceVertexCount": 146,
+          "sliceMinimumRadiusM": 0.04627,
+          "sliceMaximumRadiusM": 0.09358,
+          "pathRadiusM": 0.05278
+        },
+        {
+          "fractionFromPathStart": 0.5,
+          "sliceVertexCount": 200,
+          "sliceMinimumRadiusM": 0.04016,
+          "sliceMaximumRadiusM": 0.08168,
+          "pathRadiusM": 0.04945
+        },
+        {
+          "fractionFromPathStart": 0.75,
+          "sliceVertexCount": 0,
+          "sliceMinimumRadiusM": null,
+          "sliceMaximumRadiusM": null,
+          "pathRadiusM": 0.04512
+        },
+        {
+          "fractionFromPathStart": 0.95,
+          "sliceVertexCount": 0,
+          "sliceMinimumRadiusM": null,
+          "sliceMaximumRadiusM": null,
+          "pathRadiusM": 0.04223
+        }
+      ],
+      "surfaceScreenInsideMeshHeight": {
+        "sampleCount": 14,
+        "medianDistanceM": 0.00598,
+        "maximumDistanceM": 0.04246
+      },
+      "surfaceScreenBeyondMeshHeight": {
+        "sampleCount": 7,
+        "maximumDistanceM": 0.15733,
+        "medianDistalShareOfDistance": 0.9662
+      },
+      "publishedCentreDistanceM": 0.1501,
+      "publishedSurfaceDistanceM": {
+        "median": 0.02005,
+        "p95": 0.1342,
+        "maximum": 0.15733
+      }
+    }
+  },
+  "limitations": [
+    "standing pose only, right side only, shared bone bounding-box registration",
+    "the limb axis is the phone's scaling axis, not an anatomical muscle line of action",
+    "slice radii use a 1 cm window around the path height and are not attachments",
+    "distal share = |z difference| / surface distance; near 1 means the model path runs past the mesh rather than sitting to one side of it",
+    "nearest surface is not a fiber path or an attachment, and no deformation is simulated here"
+  ]
+}

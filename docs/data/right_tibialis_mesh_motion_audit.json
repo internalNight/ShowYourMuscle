@@ -88,45 +88,5 @@
     "nearest surface/path agreement is a standing geometry screen, not an attachment validation",
     "calf girth scales mesh cross section only",
     "no measured fiber strain, EMG or muscle force"
-  ],
-  "sampledFrameDistortion": {
-    "1": {
-      "minimumEdgeRatio": 1.0,
-      "maximumEdgeRatio": 1.0,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "26": {
-      "minimumEdgeRatio": 0.7894,
-      "maximumEdgeRatio": 1.0144,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "51": {
-      "minimumEdgeRatio": 0.7915,
-      "maximumEdgeRatio": 1.0144,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "76": {
-      "minimumEdgeRatio": 0.7894,
-      "maximumEdgeRatio": 1.0144,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    },
-    "101": {
-      "minimumEdgeRatio": 1.0,
-      "maximumEdgeRatio": 1.0,
-      "edgesBelowHalf": 0,
-      "edgesAboveOneAndHalf": 0
-    }
-  },
-  "sampledFrames": [
-    1,
-    26,
-    51,
-    76,
-    101
-  ],
-  "checkedVertices": 25
+  ]
 }

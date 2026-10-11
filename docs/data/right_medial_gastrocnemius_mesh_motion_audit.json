@@ -1,0 +1,113 @@
+{
+  "status": "research_only_unvalidated_medial_gastrocnemius_deformation",
+  "sourceScene": "assets\\blender\\opensim_seven_muscle_motion.blend",
+  "outputScene": "assets\\blender\\opensim_eight_muscle_motion.blend",
+  "sceneStored": true,
+  "opensimMuscle": "med_gas_r",
+  "atlasMesh": "Medial head of gastrocnemius.r",
+  "body": "tibia_r",
+  "vertexCount": 3233,
+  "shapeKeys": 102,
+  "requestedCalfCircumferenceCm": 36,
+  "appliedThicknessScale": 1.0,
+  "referenceHighZ": 0.5423044562339783,
+  "referenceLowZ": 0.24265241622924805,
+  "standingAlignmentProbe": {
+    "source": "docs\\data\\right_leg_mesh_alignment_probe.json",
+    "surfaceDistanceInsideMeshHeightM": {
+      "sampleCount": 14,
+      "medianDistanceM": 0.00598,
+      "maximumDistanceM": 0.04246
+    },
+    "surfaceDistanceBeyondMeshHeightM": {
+      "sampleCount": 7,
+      "maximumDistanceM": 0.15733,
+      "medianDistalShareOfDistance": 0.9662
+    },
+    "meshHeightM": 0.29965,
+    "pathLengthM": 0.46336,
+    "publishedCentreDistanceM": 0.1501
+  },
+  "radialMappingSamples": [
+    {
+      "vertexIndex": 0,
+      "originalBlenderM": [
+        -0.08631494641304016,
+        0.01017434149980545,
+        0.24278979003429413
+      ],
+      "personalizedBlenderM": [
+        -0.08631494641304016,
+        0.01017434149980545,
+        0.24278979003429413
+      ],
+      "pathFraction": 0.9995415555821214
+    },
+    {
+      "vertexIndex": 808,
+      "originalBlenderM": [
+        -0.09497436881065369,
+        0.03370794653892517,
+        0.38854092359542847
+      ],
+      "personalizedBlenderM": [
+        -0.09497436881065369,
+        0.03370794653892517,
+        0.38854092359542847
+      ],
+      "pathFraction": 0.513140283096763
+    },
+    {
+      "vertexIndex": 1616,
+      "originalBlenderM": [
+        -0.08514620363712311,
+        -0.008775122463703156,
+        0.4177076816558838
+      ],
+      "personalizedBlenderM": [
+        -0.08514620363712311,
+        -0.008775122463703156,
+        0.4177076816558838
+      ],
+      "pathFraction": 0.4158048601175137
+    },
+    {
+      "vertexIndex": 2424,
+      "originalBlenderM": [
+        -0.06041824445128441,
+        0.0009352192282676697,
+        0.4651649594306946
+      ],
+      "personalizedBlenderM": [
+        -0.06041824445128441,
+        0.0009352192282676697,
+        0.4651649594306946
+      ],
+      "pathFraction": 0.2574302407621386
+    },
+    {
+      "vertexIndex": 3232,
+      "originalBlenderM": [
+        -0.07389864325523376,
+        -0.045389555394649506,
+        0.540815532207489
+      ],
+      "personalizedBlenderM": [
+        -0.07389864325523376,
+        -0.045389555394649506,
+        0.540815532207489
+      ],
+      "pathFraction": 0.004968843283916085
+    }
+  ],
+  "referenceMaximumRadialDistanceM": 0.09489608081695348,
+  "personalizedMaximumRadialDistanceM": 0.09489608081695348,
+  "limitations": [
+    "standing registration uses bone bounding-box centres, not anatomical attachments",
+    "inside the mesh height the standing path stays 4.25 cm (median 0.60 cm) from the surface, but the model path continues 15.73 cm past the mesh as the calcaneal tendon",
+    "the mesh is a belly shell without tendon; the path's distal 97% excess is distal extension rather than lateral offset",
+    "the model path is 1.55 times the mesh height, so the vertical mesh fraction compresses a longer arc; it is a deformation heuristic, not fiber direction",
+    "calf girth scales the mesh cross section only",
+    "no measured fiber strain, EMG or muscle force"
+  ]
+}

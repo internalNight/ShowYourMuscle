@@ -6,7 +6,16 @@
   "distanceMedianM": 0.021984457038342953,
   "distanceMaximumM": 0.08893851935863495,
   "pointsOver20mm": 18,
-  "pointsOver50mm": 4,
+  "pointsOver50mm": 2,
+  "rejectedTibiaOffsetM": [
+    -0.018120000138878822,
+    0.018120000138878822,
+    -0.004999999888241291
+  ],
+  "rejectedOffsetScreenedPoints": 8,
+  "rejectedOffsetDistanceMedianM": 0.023867125622928143,
+  "rejectedOffsetDistanceMaximumM": 0.057454898953437805,
+  "rejectedOffsetPointsOver20mm": 4,
   "points": [
     {
       "muscle": "bifemsh_r",
@@ -52,7 +61,8 @@
         -0.910797119140625,
         -0.41153019666671753,
         -0.03303849697113037
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.007992340251803398
     },
     {
       "muscle": "med_gas_r",
@@ -318,16 +328,16 @@
         0.5185129642486572
       ],
       "nearestSurfaceBlenderM": [
-        -0.10676312446594238,
-        -0.08287689089775085,
-        0.4927785396575928
+        -0.0946100726723671,
+        -0.10083453357219696,
+        0.5104539394378662
       ],
-      "nearestDistanceM": 0.05332162231206894,
-      "nearestFaceIndex": 86,
+      "nearestDistanceM": 0.03006385825574398,
+      "nearestFaceIndex": 56,
       "nearestFaceNormal": [
-        0.17539741098880768,
-        -0.7758574485778809,
-        0.6060372591018677
+        -0.4859851896762848,
+        -0.7832310199737549,
+        0.38777273893356323
       ]
     },
     {
@@ -341,16 +351,16 @@
         0.5133755803108215
       ],
       "nearestSurfaceBlenderM": [
-        -0.10516656190156937,
-        -0.0829673558473587,
-        0.492095023393631
+        -0.0941861942410469,
+        -0.10101333260536194,
+        0.5095403790473938
       ],
-      "nearestDistanceM": 0.05343708395957947,
-      "nearestFaceIndex": 104,
+      "nearestDistanceM": 0.031141964718699455,
+      "nearestFaceIndex": 79,
       "nearestFaceNormal": [
-        0.18537047505378723,
-        -0.819995105266571,
-        0.5415218472480774
+        -0.23017491400241852,
+        -0.9696058034896851,
+        0.08297037333250046
       ]
     },
     {
@@ -364,16 +374,16 @@
         0.47179728746414185
       ],
       "nearestSurfaceBlenderM": [
-        -0.09839659929275513,
-        -0.08288048952817917,
-        0.4834246039390564
+        -0.09332624077796936,
+        -0.09381318092346191,
+        0.487291157245636
       ],
-      "nearestDistanceM": 0.04545276612043381,
-      "nearestFaceIndex": 178,
+      "nearestDistanceM": 0.0368979275226593,
+      "nearestFaceIndex": 140,
       "nearestFaceNormal": [
-        -0.05757324397563934,
-        -0.9137051105499268,
-        -0.40227892994880676
+        -0.15369011461734772,
+        -0.8944568634033203,
+        -0.41991209983825684
       ]
     },
     {
@@ -397,7 +407,8 @@
         -0.12609107792377472,
         -0.988594651222229,
         -0.08235065639019012
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.057454898953437805
     },
     {
       "muscle": "semimem_r",
@@ -443,7 +454,8 @@
         0.130471333861351,
         -0.9218053817749023,
         0.36503735184669495
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.015641210600733757
     },
     {
       "muscle": "soleus_r",
@@ -466,7 +478,8 @@
         -0.9927188754081726,
         -0.114421047270298,
         -0.03764339163899422
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.012765983119606972
     },
     {
       "muscle": "soleus_r",
@@ -512,7 +525,8 @@
         -0.46507078409194946,
         -0.8796468377113342,
         -0.09965285658836365
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.029788408428430557
     },
     {
       "muscle": "tib_ant_r",
@@ -535,7 +549,8 @@
         -0.46507078409194946,
         -0.8796468377113342,
         -0.09965285658836365
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.03376760706305504
     },
     {
       "muscle": "tib_ant_r",
@@ -558,7 +573,8 @@
         0.10642049461603165,
         -0.6330541968345642,
         -0.7667574286460876
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.017945842817425728
     },
     {
       "muscle": "tib_ant_r",
@@ -640,16 +656,16 @@
         0.5173029899597168
       ],
       "nearestSurfaceBlenderM": [
-        -0.10676312446594238,
-        -0.08287689089775085,
-        0.4927785396575928
+        -0.0946100726723671,
+        -0.10083453357219696,
+        0.5104539394378662
       ],
-      "nearestDistanceM": 0.049344632774591446,
-      "nearestFaceIndex": 86,
+      "nearestDistanceM": 0.025581147521734238,
+      "nearestFaceIndex": 56,
       "nearestFaceNormal": [
-        0.17539741098880768,
-        -0.7758574485778809,
-        0.6060372591018677
+        -0.4859851896762848,
+        -0.7832310199737549,
+        0.38777273893356323
       ]
     },
     {
@@ -663,16 +679,16 @@
         0.47180572152137756
       ],
       "nearestSurfaceBlenderM": [
-        -0.09801095724105835,
-        -0.08285708725452423,
-        0.4833162724971771
+        -0.09291668236255646,
+        -0.0938742384314537,
+        0.4872713088989258
       ],
-      "nearestDistanceM": 0.045446012169122696,
-      "nearestFaceIndex": 178,
+      "nearestDistanceM": 0.036830563098192215,
+      "nearestFaceIndex": 140,
       "nearestFaceNormal": [
-        -0.05757324397563934,
-        -0.9137051105499268,
-        -0.40227892994880676
+        -0.15369011461734772,
+        -0.8944568634033203,
+        -0.41991209983825684
       ]
     },
     {
@@ -696,12 +712,13 @@
         -0.12609107792377472,
         -0.988594651222229,
         -0.08235065639019012
-      ]
+      ],
+      "rejectedOffsetDistanceM": 0.057141922414302826
     }
   ],
   "unmatched": [],
   "limitations": [
-    "bone registration uses only a shared bounding-box translation",
+    "bone registration uses a shared bounding-box translation plus the measured patella offset; the searched tibia offset is evaluated here but deliberately not applied",
     "nearest surface is not an identified origin, insertion, or tendon attachment",
     "OpenSim path points may be abstract model anchors away from bone cortex",
     "patella and calcaneus have no independent landmark registration",

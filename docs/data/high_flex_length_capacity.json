@@ -1,0 +1,3713 @@
+{
+ "status": "research_only_cross_model_length_capacity",
+ "sourceModel": "gait2354-family subject-scaled models in .cache/lower-limb-raw",
+ "candidateModel": "RajagopalLaiUhlrich2023.osim scaled to the same segment ratios and mass",
+ "candidateRepositoryRevision": "d9b05d470b1a481c222372c85b75772faf8f7792",
+ "capacityDefinition": "per coordinate, the sum over muscles whose moment arm points the same way as the demand of maximum isometric force, and separately of that force times the active force-length multiplier and the cosine of the pennation angle at the equilibrated posed state",
+ "sweepDeg": [
+  0.0,
+  -20.0,
+  -40.0,
+  -60.0,
+  -80.0,
+  -100.0,
+  -120.0,
+  -130.0,
+  -135.0,
+  -140.0
+ ],
+ "subjects": {
+  "AB01": {
+   "subjectMassKg": 78.9,
+   "deepestFrameTimeS": 51.32,
+   "deepestKneeFlexionDeg": 142.322,
+   "candidateMaximumFlexionDeg": 140.0,
+   "candidatePoseClampedCoordinates": [
+    "knee_angle_r"
+   ],
+   "muscleCount": {
+    "source": 54,
+    "candidate": 80
+   },
+   "sweep": {
+    "0.0": {
+     "source": {
+      "flexionDeg": 0.0,
+      "appliedFlexionDeg": 0.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 340.6,
+      "lengthCapacityNm": 222.6,
+      "extensorsOnlyMaximumNm": 336.8,
+      "extensorsOnlyLengthNm": 222.2,
+      "flexorsActingAsExtensorsMaximumNm": 0.3,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.265,
+       "vas_int_r": 0.611,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "vas_int_r": {
+        "momentArmCm": 5.494,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.7391,
+        "pennationDeg": 4.91
+       },
+       "rect_fem_r": {
+        "momentArmCm": 5.315,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.3395,
+        "pennationDeg": 19.2
+       },
+       "bifemlh_r": {
+        "momentArmCm": -2.808,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.5614,
+        "pennationDeg": 0.0
+       },
+       "grac_r": {
+        "momentArmCm": -2.485,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9945,
+        "pennationDeg": 2.85
+       },
+       "med_gas_r": {
+        "momentArmCm": -2.44,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.8466,
+        "pennationDeg": 13.11
+       },
+       "bifemsh_r": {
+        "momentArmCm": -2.3,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9996,
+        "pennationDeg": 23.36
+       },
+       "tfl_r": {
+        "momentArmCm": 1.494,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.1687,
+        "pennationDeg": 67.44
+       },
+       "sar_r": {
+        "momentArmCm": 0.172,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7967,
+        "pennationDeg": 0.0
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": 0.0,
+      "appliedFlexionDeg": -0.001,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 543.5,
+      "lengthCapacityNm": 304.7,
+      "extensorsOnlyMaximumNm": 537.2,
+      "extensorsOnlyLengthNm": 304.7,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.25,
+       "vasint_r": 0.664,
+       "vaslat_r": 0.687,
+       "vasmed_r": 0.7,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "vasint_r": {
+        "momentArmCm": -4.882,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7453,
+        "pennationDeg": 5.45
+       },
+       "recfem_r": {
+        "momentArmCm": -4.871,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.0,
+        "pennationDeg": 59.46
+       },
+       "vasmed_r": {
+        "momentArmCm": -4.663,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8005,
+        "pennationDeg": 35.84
+       },
+       "semiten_r": {
+        "momentArmCm": 4.629,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.5084,
+        "pennationDeg": 9.37
+       },
+       "vaslat_r": {
+        "momentArmCm": -4.261,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7833,
+        "pennationDeg": 21.36
+       },
+       "semimem_r": {
+        "momentArmCm": 3.775,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.4194,
+        "pennationDeg": 9.41
+       },
+       "bflh_r": {
+        "momentArmCm": 3.527,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.4302,
+        "pennationDeg": 6.56
+       },
+       "gaslat_r": {
+        "momentArmCm": 3.091,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.6502,
+        "pennationDeg": 8.86
+       },
+       "grac_r": {
+        "momentArmCm": 3.086,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.6138,
+        "pennationDeg": 7.1
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.671,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9019,
+        "pennationDeg": 13.11
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.55,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.5693,
+        "pennationDeg": 6.67
+       },
+       "sart_r": {
+        "momentArmCm": 1.62,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.9858,
+        "pennationDeg": 1.61
+       },
+       "tfl_r": {
+        "momentArmCm": -1.552,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-20.0": {
+     "source": {
+      "flexionDeg": -20.0,
+      "appliedFlexionDeg": -20.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 326.6,
+      "lengthCapacityNm": 261.1,
+      "extensorsOnlyMaximumNm": 324.0,
+      "extensorsOnlyLengthNm": 260.7,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.405,
+       "vas_int_r": 0.758,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "rect_fem_r": {
+        "momentArmCm": 5.641,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.4929,
+        "pennationDeg": 12.42
+       },
+       "vas_int_r": {
+        "momentArmCm": 5.162,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.8893,
+        "pennationDeg": 3.96
+       },
+       "bifemlh_r": {
+        "momentArmCm": -3.737,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.6543,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.442,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9922,
+        "pennationDeg": 24.63
+       },
+       "grac_r": {
+        "momentArmCm": -3.246,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9984,
+        "pennationDeg": 2.92
+       },
+       "med_gas_r": {
+        "momentArmCm": -2.645,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.915,
+        "pennationDeg": 13.97
+       },
+       "tfl_r": {
+        "momentArmCm": 1.105,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.1842,
+        "pennationDeg": 40.7
+       },
+       "sar_r": {
+        "momentArmCm": -0.765,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7945,
+        "pennationDeg": 0.0
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -20.0,
+      "appliedFlexionDeg": -20.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 604.9,
+      "lengthCapacityNm": 402.6,
+      "extensorsOnlyMaximumNm": 597.1,
+      "extensorsOnlyLengthNm": 402.6,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.315,
+       "vasint_r": 0.792,
+       "vaslat_r": 0.806,
+       "vasmed_r": 0.812,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "recfem_r": {
+        "momentArmCm": -5.353,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.0351,
+        "pennationDeg": 43.12
+       },
+       "vaslat_r": {
+        "momentArmCm": -5.137,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.892,
+        "pennationDeg": 18.08
+       },
+       "semiten_r": {
+        "momentArmCm": 4.986,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.5891,
+        "pennationDeg": 9.8
+       },
+       "vasint_r": {
+        "momentArmCm": -4.895,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.8811,
+        "pennationDeg": 4.57
+       },
+       "vasmed_r": {
+        "momentArmCm": -4.81,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8964,
+        "pennationDeg": 30.31
+       },
+       "semimem_r": {
+        "momentArmCm": 4.05,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.5363,
+        "pennationDeg": 10.03
+       },
+       "grac_r": {
+        "momentArmCm": 3.738,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.6665,
+        "pennationDeg": 7.33
+       },
+       "bflh_r": {
+        "momentArmCm": 3.288,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.5232,
+        "pennationDeg": 6.9
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.681,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.7018,
+        "pennationDeg": 9.14
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.512,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.5966,
+        "pennationDeg": 6.78
+       },
+       "sart_r": {
+        "momentArmCm": 2.503,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.9743,
+        "pennationDeg": 1.63
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.408,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9754,
+        "pennationDeg": 13.92
+       },
+       "tfl_r": {
+        "momentArmCm": -1.897,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-40.0": {
+     "source": {
+      "flexionDeg": -40.0,
+      "appliedFlexionDeg": -40.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 302.9,
+      "lengthCapacityNm": 275.3,
+      "extensorsOnlyMaximumNm": 300.5,
+      "extensorsOnlyLengthNm": 274.9,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.551,
+       "vas_int_r": 0.901,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "rect_fem_r": {
+        "momentArmCm": 5.176,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.6683,
+        "pennationDeg": 9.1
+       },
+       "vas_int_r": {
+        "momentArmCm": 4.801,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.9804,
+        "pennationDeg": 3.33
+       },
+       "grac_r": {
+        "momentArmCm": -3.98,
+        "maximumForceN": 162.0,
+        "activeForceLength": 1.0,
+        "pennationDeg": 3.01
+       },
+       "bifemlh_r": {
+        "momentArmCm": -3.887,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.7649,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.763,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9713,
+        "pennationDeg": 26.38
+       },
+       "med_gas_r": {
+        "momentArmCm": -2.196,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9637,
+        "pennationDeg": 14.91
+       },
+       "sar_r": {
+        "momentArmCm": -1.251,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7879,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": 1.033,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2045,
+        "pennationDeg": 28.64
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -40.0,
+      "appliedFlexionDeg": -40.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 556.9,
+      "lengthCapacityNm": 448.6,
+      "extensorsOnlyMaximumNm": 549.7,
+      "extensorsOnlyLengthNm": 448.6,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.492,
+       "vasint_r": 0.916,
+       "vaslat_r": 0.93,
+       "vasmed_r": 0.925,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 5.637,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.6792,
+        "pennationDeg": 10.34
+       },
+       "recfem_r": {
+        "momentArmCm": -5.088,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.3954,
+        "pennationDeg": 25.94
+       },
+       "vaslat_r": {
+        "momentArmCm": -4.66,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.9842,
+        "pennationDeg": 15.61
+       },
+       "vasint_r": {
+        "momentArmCm": -4.593,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.9741,
+        "pennationDeg": 3.95
+       },
+       "semimem_r": {
+        "momentArmCm": 4.454,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.6703,
+        "pennationDeg": 10.84
+       },
+       "grac_r": {
+        "momentArmCm": 4.403,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.7284,
+        "pennationDeg": 7.61
+       },
+       "vasmed_r": {
+        "momentArmCm": -4.378,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.9805,
+        "pennationDeg": 26.31
+       },
+       "bflh_r": {
+        "momentArmCm": 3.493,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.6182,
+        "pennationDeg": 7.28
+       },
+       "sart_r": {
+        "momentArmCm": 3.223,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.9576,
+        "pennationDeg": 1.68
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.748,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.7722,
+        "pennationDeg": 9.56
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.723,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.6468,
+        "pennationDeg": 6.98
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.616,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9999,
+        "pennationDeg": 14.84
+       },
+       "tfl_r": {
+        "momentArmCm": -1.764,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-60.0": {
+     "source": {
+      "flexionDeg": -60.0,
+      "appliedFlexionDeg": -60.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 263.1,
+      "lengthCapacityNm": 251.4,
+      "extensorsOnlyMaximumNm": 261.4,
+      "extensorsOnlyLengthNm": 251.1,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.68,
+       "vas_int_r": 1.03,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -4.389,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9971,
+        "pennationDeg": 3.12
+       },
+       "rect_fem_r": {
+        "momentArmCm": 4.322,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.8147,
+        "pennationDeg": 7.37
+       },
+       "vas_int_r": {
+        "momentArmCm": 4.218,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.9982,
+        "pennationDeg": 2.91
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.732,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9368,
+        "pennationDeg": 28.48
+       },
+       "bifemlh_r": {
+        "momentArmCm": -3.594,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.863,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -2.023,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9911,
+        "pennationDeg": 15.91
+       },
+       "sar_r": {
+        "momentArmCm": -1.769,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7776,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": 0.714,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2232,
+        "pennationDeg": 22.98
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -60.0,
+      "appliedFlexionDeg": -60.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 486.6,
+      "lengthCapacityNm": 437.9,
+      "extensorsOnlyMaximumNm": 480.8,
+      "extensorsOnlyLengthNm": 437.9,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.674,
+       "vasint_r": 1.029,
+       "vaslat_r": 1.039,
+       "vasmed_r": 1.028,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 5.979,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.7827,
+        "pennationDeg": 11.03
+       },
+       "grac_r": {
+        "momentArmCm": 4.931,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.8003,
+        "pennationDeg": 7.97
+       },
+       "semimem_r": {
+        "momentArmCm": 4.653,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.8424,
+        "pennationDeg": 12.11
+       },
+       "recfem_r": {
+        "momentArmCm": -4.55,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.7629,
+        "pennationDeg": 18.63
+       },
+       "vasint_r": {
+        "momentArmCm": -4.148,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.9995,
+        "pennationDeg": 3.51
+       },
+       "vaslat_r": {
+        "momentArmCm": -3.973,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.9987,
+        "pennationDeg": 13.94
+       },
+       "vasmed_r": {
+        "momentArmCm": -3.861,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.9996,
+        "pennationDeg": 23.49
+       },
+       "bflh_r": {
+        "momentArmCm": 3.809,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.7311,
+        "pennationDeg": 7.8
+       },
+       "sart_r": {
+        "momentArmCm": 3.757,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.9372,
+        "pennationDeg": 1.73
+       },
+       "gaslat_r": {
+        "momentArmCm": 3.099,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.8828,
+        "pennationDeg": 10.3
+       },
+       "bfsh_r": {
+        "momentArmCm": 3.028,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9935,
+        "pennationDeg": 16.05
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.977,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.7259,
+        "pennationDeg": 7.32
+       },
+       "tfl_r": {
+        "momentArmCm": -1.411,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-80.0": {
+     "source": {
+      "flexionDeg": -80.0,
+      "appliedFlexionDeg": -80.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 207.5,
+      "lengthCapacityNm": 196.7,
+      "extensorsOnlyMaximumNm": 206.4,
+      "extensorsOnlyLengthNm": 196.4,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.782,
+       "vas_int_r": 1.137,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -4.262,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9888,
+        "pennationDeg": 3.24
+       },
+       "vas_int_r": {
+        "momentArmCm": 3.39,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.963,
+        "pennationDeg": 2.64
+       },
+       "rect_fem_r": {
+        "momentArmCm": 3.158,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9096,
+        "pennationDeg": 6.4
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.15,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8958,
+        "pennationDeg": 30.69
+       },
+       "bifemlh_r": {
+        "momentArmCm": -2.809,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.931,
+        "pennationDeg": 0.0
+       },
+       "sar_r": {
+        "momentArmCm": -2.096,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7643,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.788,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9999,
+        "pennationDeg": 16.89
+       },
+       "tfl_r": {
+        "momentArmCm": 0.471,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2374,
+        "pennationDeg": 20.14
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -80.0,
+      "appliedFlexionDeg": -80.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 351.9,
+      "lengthCapacityNm": 313.2,
+      "extensorsOnlyMaximumNm": 347.9,
+      "extensorsOnlyLengthNm": 313.2,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.83,
+       "vasint_r": 1.125,
+       "vaslat_r": 1.124,
+       "vasmed_r": 1.114,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 5.744,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.8891,
+        "pennationDeg": 11.86
+       },
+       "grac_r": {
+        "momentArmCm": 5.017,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.8767,
+        "pennationDeg": 8.39
+       },
+       "semimem_r": {
+        "momentArmCm": 4.427,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9972,
+        "pennationDeg": 13.92
+       },
+       "sart_r": {
+        "momentArmCm": 4.158,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.914,
+        "pennationDeg": 1.79
+       },
+       "bflh_r": {
+        "momentArmCm": 3.881,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.8647,
+        "pennationDeg": 8.51
+       },
+       "recfem_r": {
+        "momentArmCm": -3.374,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9098,
+        "pennationDeg": 15.04
+       },
+       "bfsh_r": {
+        "momentArmCm": 3.334,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9323,
+        "pennationDeg": 17.68
+       },
+       "gaslat_r": {
+        "momentArmCm": 3.315,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9925,
+        "pennationDeg": 11.34
+       },
+       "gasmed_r": {
+        "momentArmCm": 3.159,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.8655,
+        "pennationDeg": 8.02
+       },
+       "vasint_r": {
+        "momentArmCm": -3.143,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.934,
+        "pennationDeg": 3.21
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.831,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.9463,
+        "pennationDeg": 21.59
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.773,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.9343,
+        "pennationDeg": 12.86
+       },
+       "tfl_r": {
+        "momentArmCm": -0.984,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-100.0": {
+     "source": {
+      "flexionDeg": -100.0,
+      "appliedFlexionDeg": -100.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 177.1,
+      "lengthCapacityNm": 161.4,
+      "extensorsOnlyMaximumNm": 176.6,
+      "extensorsOnlyLengthNm": 161.3,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.866,
+       "vas_int_r": 1.225,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -3.552,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9768,
+        "pennationDeg": 3.36
+       },
+       "vas_int_r": {
+        "momentArmCm": 2.881,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.9039,
+        "pennationDeg": 2.45
+       },
+       "rect_fem_r": {
+        "momentArmCm": 2.784,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9647,
+        "pennationDeg": 5.78
+       },
+       "sar_r": {
+        "momentArmCm": -2.221,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7492,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -2.032,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8602,
+        "pennationDeg": 32.58
+       },
+       "bifemlh_r": {
+        "momentArmCm": -1.594,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9661,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.442,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9955,
+        "pennationDeg": 17.88
+       },
+       "tfl_r": {
+        "momentArmCm": 0.209,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2457,
+        "pennationDeg": 18.82
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -100.0,
+      "appliedFlexionDeg": -100.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 246.6,
+      "lengthCapacityNm": 211.1,
+      "extensorsOnlyMaximumNm": 244.5,
+      "extensorsOnlyLengthNm": 211.1,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.937,
+       "vasint_r": 1.191,
+       "vaslat_r": 1.183,
+       "vasmed_r": 1.173,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 4.881,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.9781,
+        "pennationDeg": 12.75
+       },
+       "grac_r": {
+        "momentArmCm": 4.619,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9484,
+        "pennationDeg": 8.85
+       },
+       "sart_r": {
+        "momentArmCm": 4.497,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8885,
+        "pennationDeg": 1.87
+       },
+       "semimem_r": {
+        "momentArmCm": 3.749,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9686,
+        "pennationDeg": 16.1
+       },
+       "bflh_r": {
+        "momentArmCm": 3.531,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9871,
+        "pennationDeg": 9.41
+       },
+       "gaslat_r": {
+        "momentArmCm": 3.262,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9928,
+        "pennationDeg": 12.78
+       },
+       "bfsh_r": {
+        "momentArmCm": 3.122,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.8668,
+        "pennationDeg": 19.74
+       },
+       "gasmed_r": {
+        "momentArmCm": 3.086,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9993,
+        "pennationDeg": 9.19
+       },
+       "recfem_r": {
+        "momentArmCm": -2.188,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.989,
+        "pennationDeg": 13.29
+       },
+       "vasint_r": {
+        "momentArmCm": -2.157,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.8534,
+        "pennationDeg": 3.03
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.058,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.8638,
+        "pennationDeg": 12.21
+       },
+       "vasmed_r": {
+        "momentArmCm": -1.963,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8758,
+        "pennationDeg": 20.45
+       },
+       "tfl_r": {
+        "momentArmCm": -0.516,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-120.0": {
+     "source": {
+      "flexionDeg": -120.0,
+      "appliedFlexionDeg": -120.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 141.5,
+      "lengthCapacityNm": 122.3,
+      "extensorsOnlyMaximumNm": 141.5,
+      "extensorsOnlyLengthNm": 122.3,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.934,
+       "vas_int_r": 1.297,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "vas_int_r": {
+        "momentArmCm": 2.326,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.8386,
+        "pennationDeg": 2.31
+       },
+       "grac_r": {
+        "momentArmCm": -2.309,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9651,
+        "pennationDeg": 3.46
+       },
+       "rect_fem_r": {
+        "momentArmCm": 2.154,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9913,
+        "pennationDeg": 5.36
+       },
+       "sar_r": {
+        "momentArmCm": -2.014,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.734,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.059,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9845,
+        "pennationDeg": 18.71
+       },
+       "bifemsh_r": {
+        "momentArmCm": -0.49,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8417,
+        "pennationDeg": 33.58
+       },
+       "bifemlh_r": {
+        "momentArmCm": -0.109,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9766,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": 0.017,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2484,
+        "pennationDeg": 18.43
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -120.0,
+      "appliedFlexionDeg": -120.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 320.2,
+      "lengthCapacityNm": 260.7,
+      "extensorsOnlyMaximumNm": 320.2,
+      "extensorsOnlyLengthNm": 260.7,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 1.035,
+       "vasint_r": 1.251,
+       "vaslat_r": 1.239,
+       "vasmed_r": 1.228,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 4.676,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8608,
+        "pennationDeg": 1.96
+       },
+       "grac_r": {
+        "momentArmCm": 3.644,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9932,
+        "pennationDeg": 9.3
+       },
+       "semiten_r": {
+        "momentArmCm": 3.359,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.9999,
+        "pennationDeg": 13.54
+       },
+       "recfem_r": {
+        "momentArmCm": -2.919,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9991,
+        "pennationDeg": 12.01
+       },
+       "bflh_r": {
+        "momentArmCm": 2.859,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9998,
+        "pennationDeg": 10.35
+       },
+       "vasint_r": {
+        "momentArmCm": -2.847,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7794,
+        "pennationDeg": 2.89
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.714,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9119,
+        "pennationDeg": 14.52
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.652,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7946,
+        "pennationDeg": 11.65
+       },
+       "semimem_r": {
+        "momentArmCm": 2.606,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.8886,
+        "pennationDeg": 18.31
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.596,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8077,
+        "pennationDeg": 19.49
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.51,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9598,
+        "pennationDeg": 10.6
+       },
+       "bfsh_r": {
+        "momentArmCm": 1.976,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.8073,
+        "pennationDeg": 21.72
+       },
+       "tfl_r": {
+        "momentArmCm": 0.026,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-130.0": {
+     "source": {
+      "flexionDeg": -130.0,
+      "appliedFlexionDeg": -130.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 162.6,
+      "lengthCapacityNm": 133.7,
+      "extensorsOnlyMaximumNm": 137.1,
+      "extensorsOnlyLengthNm": 109.8,
+      "flexorsActingAsExtensorsMaximumNm": 25.5,
+      "extensorFiberLengths": {
+       "rect_fem_r": 1.004,
+       "vas_int_r": 1.369,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "vas_int_r": {
+        "momentArmCm": 2.268,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.7612,
+        "pennationDeg": 2.19
+       },
+       "rect_fem_r": {
+        "momentArmCm": 2.026,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 1.0,
+        "pennationDeg": 4.98
+       },
+       "sar_r": {
+        "momentArmCm": -1.968,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7269,
+        "pennationDeg": 0.0
+       },
+       "grac_r": {
+        "momentArmCm": -1.404,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.961,
+        "pennationDeg": 3.49
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.387,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9767,
+        "pennationDeg": 19.14
+       },
+       "bifemlh_r": {
+        "momentArmCm": 0.813,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9746,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": -0.552,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.245,
+        "pennationDeg": 18.91
+       },
+       "bifemsh_r": {
+        "momentArmCm": 0.447,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8415,
+        "pennationDeg": 33.59
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -130.0,
+      "appliedFlexionDeg": -130.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 283.4,
+      "lengthCapacityNm": 220.9,
+      "extensorsOnlyMaximumNm": 283.4,
+      "extensorsOnlyLengthNm": 220.9,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 1.09,
+       "vasint_r": 1.284,
+       "vaslat_r": 1.27,
+       "vasmed_r": 1.259,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 4.365,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8464,
+        "pennationDeg": 2.0
+       },
+       "grac_r": {
+        "momentArmCm": 2.901,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9986,
+        "pennationDeg": 9.48
+       },
+       "recfem_r": {
+        "momentArmCm": -2.549,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9719,
+        "pennationDeg": 11.4
+       },
+       "vasint_r": {
+        "momentArmCm": -2.495,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7384,
+        "pennationDeg": 2.81
+       },
+       "bflh_r": {
+        "momentArmCm": 2.494,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.987,
+        "pennationDeg": 10.8
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.371,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7566,
+        "pennationDeg": 11.37
+       },
+       "semiten_r": {
+        "momentArmCm": 2.354,
+        "maximumForceN": 591.3,
+        "activeForceLength": 1.0,
+        "pennationDeg": 13.84
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.296,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.7698,
+        "pennationDeg": 19.0
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.094,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.8758,
+        "pennationDeg": 15.42
+       },
+       "semimem_r": {
+        "momentArmCm": 1.861,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.8602,
+        "pennationDeg": 19.22
+       },
+       "gasmed_r": {
+        "momentArmCm": 1.796,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.921,
+        "pennationDeg": 11.26
+       },
+       "bfsh_r": {
+        "momentArmCm": 1.072,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.7826,
+        "pennationDeg": 22.36
+       },
+       "tfl_r": {
+        "momentArmCm": 0.328,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-135.0": {
+     "source": {
+      "flexionDeg": -135.0,
+      "appliedFlexionDeg": -135.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 176.5,
+      "lengthCapacityNm": 141.9,
+      "extensorsOnlyMaximumNm": 134.2,
+      "extensorsOnlyLengthNm": 102.8,
+      "flexorsActingAsExtensorsMaximumNm": 42.4,
+      "extensorFiberLengths": {
+       "rect_fem_r": 1.037,
+       "vas_int_r": 1.405,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "vas_int_r": {
+        "momentArmCm": 2.228,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.7201,
+        "pennationDeg": 2.13
+       },
+       "rect_fem_r": {
+        "momentArmCm": 1.948,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9973,
+        "pennationDeg": 4.82
+       },
+       "sar_r": {
+        "momentArmCm": -1.892,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7234,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.547,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9714,
+        "pennationDeg": 19.41
+       },
+       "bifemlh_r": {
+        "momentArmCm": 1.288,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9715,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": 0.943,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.844,
+        "pennationDeg": 33.45
+       },
+       "grac_r": {
+        "momentArmCm": -0.904,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9596,
+        "pennationDeg": 3.5
+       },
+       "tfl_r": {
+        "momentArmCm": -0.846,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2407,
+        "pennationDeg": 19.59
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -135.0,
+      "appliedFlexionDeg": -135.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 277.9,
+      "lengthCapacityNm": 211.4,
+      "extensorsOnlyMaximumNm": 277.9,
+      "extensorsOnlyLengthNm": 211.4,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 1.115,
+       "vasint_r": 1.299,
+       "vaslat_r": 1.284,
+       "vasmed_r": 1.273,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 3.844,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8397,
+        "pennationDeg": 2.02
+       },
+       "recfem_r": {
+        "momentArmCm": -2.478,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9449,
+        "pennationDeg": 11.13
+       },
+       "grac_r": {
+        "momentArmCm": 2.46,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9994,
+        "pennationDeg": 9.56
+       },
+       "vasint_r": {
+        "momentArmCm": -2.427,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7196,
+        "pennationDeg": 2.78
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.34,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7387,
+        "pennationDeg": 11.24
+       },
+       "bflh_r": {
+        "momentArmCm": 2.323,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9742,
+        "pennationDeg": 11.02
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.254,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.7521,
+        "pennationDeg": 18.78
+       },
+       "semiten_r": {
+        "momentArmCm": 1.793,
+        "maximumForceN": 591.3,
+        "activeForceLength": 1.0,
+        "pennationDeg": 13.95
+       },
+       "gaslat_r": {
+        "momentArmCm": 1.648,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.8613,
+        "pennationDeg": 15.8
+       },
+       "semimem_r": {
+        "momentArmCm": 1.445,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.8493,
+        "pennationDeg": 19.58
+       },
+       "gasmed_r": {
+        "momentArmCm": 1.237,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9074,
+        "pennationDeg": 11.51
+       },
+       "bfsh_r": {
+        "momentArmCm": 0.555,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.7752,
+        "pennationDeg": 22.53
+       },
+       "tfl_r": {
+        "momentArmCm": 0.481,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-140.0": {
+     "source": {
+      "flexionDeg": -140.0,
+      "appliedFlexionDeg": -140.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 190.3,
+      "lengthCapacityNm": 149.9,
+      "extensorsOnlyMaximumNm": 130.9,
+      "extensorsOnlyLengthNm": 95.5,
+      "flexorsActingAsExtensorsMaximumNm": 59.4,
+      "extensorFiberLengths": {
+       "rect_fem_r": 1.069,
+       "vas_int_r": 1.441,
+       "rect_fem_l": 1.054,
+       "vas_int_l": 1.431
+      },
+      "muscles": {
+       "vas_int_r": {
+        "momentArmCm": 2.183,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.6782,
+        "pennationDeg": 2.08
+       },
+       "rect_fem_r": {
+        "momentArmCm": 1.863,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9905,
+        "pennationDeg": 4.68
+       },
+       "sar_r": {
+        "momentArmCm": -1.772,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7202,
+        "pennationDeg": 0.0
+       },
+       "bifemlh_r": {
+        "momentArmCm": 1.767,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9667,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.697,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9649,
+        "pennationDeg": 19.72
+       },
+       "bifemsh_r": {
+        "momentArmCm": 1.451,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8484,
+        "pennationDeg": 33.22
+       },
+       "tfl_r": {
+        "momentArmCm": -1.142,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2346,
+        "pennationDeg": 20.62
+       },
+       "grac_r": {
+        "momentArmCm": -0.379,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9589,
+        "pennationDeg": 3.51
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -140.0,
+      "appliedFlexionDeg": -139.999,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 229.3,
+      "lengthCapacityNm": 161.2,
+      "extensorsOnlyMaximumNm": 229.3,
+      "extensorsOnlyLengthNm": 161.2,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 1.137,
+       "vasint_r": 1.314,
+       "vaslat_r": 1.298,
+       "vasmed_r": 1.287,
+       "recfem_l": 1.116,
+       "vasint_l": 1.31,
+       "vaslat_l": 1.294,
+       "vasmed_l": 1.283
+      },
+      "muscles": {
+       "recfem_r": {
+        "momentArmCm": 3.029,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9194,
+        "pennationDeg": 10.92
+       },
+       "sart_r": {
+        "momentArmCm": 2.796,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.834,
+        "pennationDeg": 2.04
+       },
+       "vasint_r": {
+        "momentArmCm": -2.461,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7012,
+        "pennationDeg": 2.75
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.408,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7208,
+        "pennationDeg": 11.11
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.314,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.7344,
+        "pennationDeg": 18.56
+       },
+       "bflh_r": {
+        "momentArmCm": 2.164,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9618,
+        "pennationDeg": 11.22
+       },
+       "grac_r": {
+        "momentArmCm": 1.97,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9998,
+        "pennationDeg": 9.63
+       },
+       "semiten_r": {
+        "momentArmCm": 1.195,
+        "maximumForceN": 591.3,
+        "activeForceLength": 1.0,
+        "pennationDeg": 14.03
+       },
+       "gaslat_r": {
+        "momentArmCm": 1.085,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.8504,
+        "pennationDeg": 16.1
+       },
+       "semimem_r": {
+        "momentArmCm": 1.001,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.841,
+        "pennationDeg": 19.86
+       },
+       "tfl_r": {
+        "momentArmCm": 0.631,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       },
+       "gasmed_r": {
+        "momentArmCm": 0.457,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.8997,
+        "pennationDeg": 11.66
+       },
+       "bfsh_r": {
+        "momentArmCm": 0.005,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.7728,
+        "pennationDeg": 22.59
+       }
+      }
+     }
+    }
+   },
+   "targetFrame": {
+    "knee_angle_r": {
+     "demandNm": 225.588,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -142.322,
+      "poseClamped": false,
+      "maximumBoundNm": 196.6,
+      "lengthBoundNm": 153.5,
+      "demandToMaximumBound": 1.147,
+      "demandToLengthBound": 1.47
+     },
+     "candidate": {
+      "demandSign": -1.0,
+      "appliedPoseDeg": -140.0,
+      "poseClamped": true,
+      "maximumBoundNm": 229.3,
+      "lengthBoundNm": 161.2,
+      "demandToMaximumBound": 0.984,
+      "demandToLengthBound": 1.399
+     }
+    },
+    "knee_angle_l": {
+     "demandNm": 124.077,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -138.662,
+      "poseClamped": false,
+      "maximumBoundNm": 185.8,
+      "lengthBoundNm": 146.8,
+      "demandToMaximumBound": 0.668,
+      "demandToLengthBound": 0.845
+     },
+     "candidate": {
+      "demandSign": -1.0,
+      "appliedPoseDeg": -138.662,
+      "poseClamped": false,
+      "maximumBoundNm": 281.3,
+      "lengthBoundNm": 211.0,
+      "demandToMaximumBound": 0.441,
+      "demandToLengthBound": 0.588
+     }
+    },
+    "hip_flexion_r": {
+     "demandNm": -113.432,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 103.385,
+      "poseClamped": false,
+      "maximumBoundNm": 199.6,
+      "lengthBoundNm": 169.2,
+      "demandToMaximumBound": 0.568,
+      "demandToLengthBound": 0.671
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 103.385,
+      "poseClamped": false,
+      "maximumBoundNm": 294.3,
+      "lengthBoundNm": 248.1,
+      "demandToMaximumBound": 0.385,
+      "demandToLengthBound": 0.457
+     }
+    },
+    "hip_adduction_r": {
+     "demandNm": -32.185,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -20.743,
+      "poseClamped": false,
+      "maximumBoundNm": 165.0,
+      "lengthBoundNm": 147.8,
+      "demandToMaximumBound": 0.195,
+      "demandToLengthBound": 0.218
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -20.743,
+      "poseClamped": false,
+      "maximumBoundNm": 135.9,
+      "lengthBoundNm": 122.1,
+      "demandToMaximumBound": 0.237,
+      "demandToLengthBound": 0.264
+     }
+    },
+    "ankle_angle_r": {
+     "demandNm": -61.399,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 42.392,
+      "poseClamped": false,
+      "maximumBoundNm": 197.3,
+      "lengthBoundNm": 159.3,
+      "demandToMaximumBound": 0.311,
+      "demandToLengthBound": 0.385
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 42.392,
+      "poseClamped": false,
+      "maximumBoundNm": 359.8,
+      "lengthBoundNm": 251.3,
+      "demandToMaximumBound": 0.171,
+      "demandToLengthBound": 0.244
+     }
+    },
+    "hip_rotation_r": {
+     "demandNm": -45.732,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 20.249,
+      "poseClamped": false,
+      "maximumBoundNm": 12.6,
+      "lengthBoundNm": 8.7,
+      "demandToMaximumBound": 3.639,
+      "demandToLengthBound": 5.234
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 20.249,
+      "poseClamped": false,
+      "maximumBoundNm": 24.2,
+      "lengthBoundNm": 20.9,
+      "demandToMaximumBound": 1.886,
+      "demandToLengthBound": 2.192
+     }
+    }
+   }
+  },
+  "AB02": {
+   "subjectMassKg": 82.2,
+   "deepestFrameTimeS": 23.685,
+   "deepestKneeFlexionDeg": 135.145,
+   "candidateMaximumFlexionDeg": 140.0,
+   "candidatePoseClampedCoordinates": [],
+   "muscleCount": {
+    "source": 54,
+    "candidate": 80
+   },
+   "sweep": {
+    "0.0": {
+     "source": {
+      "flexionDeg": 0.0,
+      "appliedFlexionDeg": 0.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 325.3,
+      "lengthCapacityNm": 208.0,
+      "extensorsOnlyMaximumNm": 321.8,
+      "extensorsOnlyLengthNm": 207.7,
+      "flexorsActingAsExtensorsMaximumNm": 0.2,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.202,
+       "vas_int_r": 0.611,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "vas_int_r": {
+        "momentArmCm": 5.227,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.7391,
+        "pennationDeg": 4.91
+       },
+       "rect_fem_r": {
+        "momentArmCm": 5.175,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.2794,
+        "pennationDeg": 25.62
+       },
+       "bifemlh_r": {
+        "momentArmCm": -2.806,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.502,
+        "pennationDeg": 0.0
+       },
+       "grac_r": {
+        "momentArmCm": -2.506,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9605,
+        "pennationDeg": 2.63
+       },
+       "bifemsh_r": {
+        "momentArmCm": -2.25,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9996,
+        "pennationDeg": 23.36
+       },
+       "med_gas_r": {
+        "momentArmCm": -2.22,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.842,
+        "pennationDeg": 13.07
+       },
+       "tfl_r": {
+        "momentArmCm": 1.366,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.1675,
+        "pennationDeg": 72.78
+       },
+       "sar_r": {
+        "momentArmCm": 0.149,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7494,
+        "pennationDeg": 0.0
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": 0.0,
+      "appliedFlexionDeg": -0.001,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 515.5,
+      "lengthCapacityNm": 288.4,
+      "extensorsOnlyMaximumNm": 509.6,
+      "extensorsOnlyLengthNm": 288.4,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.25,
+       "vasint_r": 0.664,
+       "vaslat_r": 0.687,
+       "vasmed_r": 0.7,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "recfem_r": {
+        "momentArmCm": -4.665,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.0,
+        "pennationDeg": 59.46
+       },
+       "vasint_r": {
+        "momentArmCm": -4.614,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7453,
+        "pennationDeg": 5.45
+       },
+       "semiten_r": {
+        "momentArmCm": 4.585,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.3492,
+        "pennationDeg": 8.61
+       },
+       "vasmed_r": {
+        "momentArmCm": -4.41,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8005,
+        "pennationDeg": 35.84
+       },
+       "vaslat_r": {
+        "momentArmCm": -4.037,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7833,
+        "pennationDeg": 21.36
+       },
+       "semimem_r": {
+        "momentArmCm": 3.717,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.2115,
+        "pennationDeg": 8.49
+       },
+       "bflh_r": {
+        "momentArmCm": 3.483,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.2369,
+        "pennationDeg": 5.96
+       },
+       "grac_r": {
+        "momentArmCm": 3.041,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.4414,
+        "pennationDeg": 6.46
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.887,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.6438,
+        "pennationDeg": 8.83
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.571,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9019,
+        "pennationDeg": 13.11
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.363,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.564,
+        "pennationDeg": 6.65
+       },
+       "sart_r": {
+        "momentArmCm": 1.532,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.9286,
+        "pennationDeg": 1.75
+       },
+       "tfl_r": {
+        "momentArmCm": -1.448,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-20.0": {
+     "source": {
+      "flexionDeg": -20.0,
+      "appliedFlexionDeg": -20.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 315.3,
+      "lengthCapacityNm": 249.1,
+      "extensorsOnlyMaximumNm": 312.9,
+      "extensorsOnlyLengthNm": 248.8,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.345,
+       "vas_int_r": 0.766,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "rect_fem_r": {
+        "momentArmCm": 5.471,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.4245,
+        "pennationDeg": 14.61
+       },
+       "vas_int_r": {
+        "momentArmCm": 4.978,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.896,
+        "pennationDeg": 3.92
+       },
+       "bifemlh_r": {
+        "momentArmCm": -3.723,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.597,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.383,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9915,
+        "pennationDeg": 24.71
+       },
+       "grac_r": {
+        "momentArmCm": -3.25,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.974,
+        "pennationDeg": 2.69
+       },
+       "med_gas_r": {
+        "momentArmCm": -2.406,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9066,
+        "pennationDeg": 13.85
+       },
+       "tfl_r": {
+        "momentArmCm": 1.024,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.1805,
+        "pennationDeg": 44.36
+       },
+       "sar_r": {
+        "momentArmCm": -0.752,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.747,
+        "pennationDeg": 0.0
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -20.0,
+      "appliedFlexionDeg": -20.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 569.1,
+      "lengthCapacityNm": 376.2,
+      "extensorsOnlyMaximumNm": 561.9,
+      "extensorsOnlyLengthNm": 376.2,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.25,
+       "vasint_r": 0.792,
+       "vaslat_r": 0.807,
+       "vasmed_r": 0.813,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "recfem_r": {
+        "momentArmCm": -5.037,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.0,
+        "pennationDeg": 59.46
+       },
+       "semiten_r": {
+        "momentArmCm": 4.936,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.4352,
+        "pennationDeg": 9.0
+       },
+       "vaslat_r": {
+        "momentArmCm": -4.832,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.8925,
+        "pennationDeg": 18.06
+       },
+       "vasint_r": {
+        "momentArmCm": -4.609,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.8816,
+        "pennationDeg": 4.56
+       },
+       "vasmed_r": {
+        "momentArmCm": -4.53,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8968,
+        "pennationDeg": 30.29
+       },
+       "semimem_r": {
+        "momentArmCm": 4.001,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.3335,
+        "pennationDeg": 9.01
+       },
+       "grac_r": {
+        "momentArmCm": 3.714,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.4982,
+        "pennationDeg": 6.66
+       },
+       "bflh_r": {
+        "momentArmCm": 3.266,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.3347,
+        "pennationDeg": 6.25
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.512,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.6932,
+        "pennationDeg": 9.09
+       },
+       "sart_r": {
+        "momentArmCm": 2.399,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.9166,
+        "pennationDeg": 1.79
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.353,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9776,
+        "pennationDeg": 13.95
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.34,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.5894,
+        "pennationDeg": 6.75
+       },
+       "tfl_r": {
+        "momentArmCm": -1.769,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-40.0": {
+     "source": {
+      "flexionDeg": -40.0,
+      "appliedFlexionDeg": -40.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 289.7,
+      "lengthCapacityNm": 260.6,
+      "extensorsOnlyMaximumNm": 287.5,
+      "extensorsOnlyLengthNm": 260.2,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.497,
+       "vas_int_r": 0.916,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "rect_fem_r": {
+        "momentArmCm": 4.987,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.6025,
+        "pennationDeg": 10.11
+       },
+       "vas_int_r": {
+        "momentArmCm": 4.584,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.9861,
+        "pennationDeg": 3.27
+       },
+       "grac_r": {
+        "momentArmCm": -4.02,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.987,
+        "pennationDeg": 2.78
+       },
+       "bifemlh_r": {
+        "momentArmCm": -3.905,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.7187,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.75,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9683,
+        "pennationDeg": 26.59
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.998,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9546,
+        "pennationDeg": 14.7
+       },
+       "sar_r": {
+        "momentArmCm": -1.239,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7397,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": 0.953,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.1992,
+        "pennationDeg": 30.95
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -40.0,
+      "appliedFlexionDeg": -40.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 524.1,
+      "lengthCapacityNm": 385.2,
+      "extensorsOnlyMaximumNm": 517.3,
+      "extensorsOnlyLengthNm": 385.2,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.286,
+       "vasint_r": 0.917,
+       "vaslat_r": 0.931,
+       "vasmed_r": 0.926,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 5.582,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.5306,
+        "pennationDeg": 9.48
+       },
+       "recfem_r": {
+        "momentArmCm": -4.797,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.0036,
+        "pennationDeg": 48.88
+       },
+       "semimem_r": {
+        "momentArmCm": 4.41,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.4677,
+        "pennationDeg": 9.66
+       },
+       "grac_r": {
+        "momentArmCm": 4.397,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.5655,
+        "pennationDeg": 6.91
+       },
+       "vaslat_r": {
+        "momentArmCm": -4.381,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.9849,
+        "pennationDeg": 15.59
+       },
+       "vasint_r": {
+        "momentArmCm": -4.322,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.9749,
+        "pennationDeg": 3.94
+       },
+       "vasmed_r": {
+        "momentArmCm": -4.123,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.9812,
+        "pennationDeg": 26.28
+       },
+       "bflh_r": {
+        "momentArmCm": 3.477,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.4336,
+        "pennationDeg": 6.58
+       },
+       "sart_r": {
+        "momentArmCm": 3.105,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8998,
+        "pennationDeg": 1.83
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.594,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.7636,
+        "pennationDeg": 9.5
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.581,
+        "maximumForceN": 557.1,
+        "activeForceLength": 1.0,
+        "pennationDeg": 14.93
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.543,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.6375,
+        "pennationDeg": 6.94
+       },
+       "tfl_r": {
+        "momentArmCm": -1.646,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-60.0": {
+     "source": {
+      "flexionDeg": -60.0,
+      "appliedFlexionDeg": -60.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 249.2,
+      "lengthCapacityNm": 234.7,
+      "extensorsOnlyMaximumNm": 247.7,
+      "extensorsOnlyLengthNm": 234.4,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.63,
+       "vas_int_r": 1.051,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -4.433,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9966,
+        "pennationDeg": 2.88
+       },
+       "rect_fem_r": {
+        "momentArmCm": 4.135,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.7601,
+        "pennationDeg": 7.96
+       },
+       "vas_int_r": {
+        "momentArmCm": 3.986,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.9948,
+        "pennationDeg": 2.85
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.775,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.9294,
+        "pennationDeg": 28.9
+       },
+       "bifemlh_r": {
+        "momentArmCm": -3.641,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.8335,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.84,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9852,
+        "pennationDeg": 15.61
+       },
+       "sar_r": {
+        "momentArmCm": -1.759,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7284,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": 0.653,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2165,
+        "pennationDeg": 24.68
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -60.0,
+      "appliedFlexionDeg": -60.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 457.3,
+      "lengthCapacityNm": 366.3,
+      "extensorsOnlyMaximumNm": 451.9,
+      "extensorsOnlyLengthNm": 366.3,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.437,
+       "vasint_r": 1.031,
+       "vaslat_r": 1.04,
+       "vasmed_r": 1.029,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 5.901,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.6369,
+        "pennationDeg": 10.08
+       },
+       "grac_r": {
+        "momentArmCm": 4.899,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.6441,
+        "pennationDeg": 7.23
+       },
+       "semimem_r": {
+        "momentArmCm": 4.598,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.6195,
+        "pennationDeg": 10.52
+       },
+       "recfem_r": {
+        "momentArmCm": -4.297,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.2801,
+        "pennationDeg": 29.54
+       },
+       "vasint_r": {
+        "momentArmCm": -3.893,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.9994,
+        "pennationDeg": 3.51
+       },
+       "bflh_r": {
+        "momentArmCm": 3.786,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.5439,
+        "pennationDeg": 6.98
+       },
+       "vaslat_r": {
+        "momentArmCm": -3.729,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.9985,
+        "pennationDeg": 13.92
+       },
+       "sart_r": {
+        "momentArmCm": 3.635,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.879,
+        "pennationDeg": 1.9
+       },
+       "vasmed_r": {
+        "momentArmCm": -3.628,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.9995,
+        "pennationDeg": 23.46
+       },
+       "bfsh_r": {
+        "momentArmCm": 2.999,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9873,
+        "pennationDeg": 16.23
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.91,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.8697,
+        "pennationDeg": 10.2
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.783,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.7121,
+        "pennationDeg": 7.26
+       },
+       "tfl_r": {
+        "momentArmCm": -1.315,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-80.0": {
+     "source": {
+      "flexionDeg": -80.0,
+      "appliedFlexionDeg": -80.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 194.0,
+      "lengthCapacityNm": 180.2,
+      "extensorsOnlyMaximumNm": 193.1,
+      "extensorsOnlyLengthNm": 180.0,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.735,
+       "vas_int_r": 1.162,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -4.31,
+        "maximumForceN": 162.0,
+        "activeForceLength": 1.0,
+        "pennationDeg": 3.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -3.254,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8823,
+        "pennationDeg": 31.41
+       },
+       "vas_int_r": {
+        "momentArmCm": 3.161,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.9489,
+        "pennationDeg": 2.58
+       },
+       "rect_fem_r": {
+        "momentArmCm": 2.995,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.8688,
+        "pennationDeg": 6.81
+       },
+       "bifemlh_r": {
+        "momentArmCm": -2.88,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9158,
+        "pennationDeg": 0.0
+       },
+       "sar_r": {
+        "momentArmCm": -2.102,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.7138,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.627,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9981,
+        "pennationDeg": 16.48
+       },
+       "tfl_r": {
+        "momentArmCm": 0.418,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2296,
+        "pennationDeg": 21.59
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -80.0,
+      "appliedFlexionDeg": -80.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 332.3,
+      "lengthCapacityNm": 271.6,
+      "extensorsOnlyMaximumNm": 328.6,
+      "extensorsOnlyLengthNm": 271.6,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.582,
+       "vasint_r": 1.126,
+       "vaslat_r": 1.126,
+       "vasmed_r": 1.115,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 5.643,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.7476,
+        "pennationDeg": 10.79
+       },
+       "grac_r": {
+        "momentArmCm": 4.952,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.7274,
+        "pennationDeg": 7.61
+       },
+       "semimem_r": {
+        "momentArmCm": 4.359,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.7959,
+        "pennationDeg": 11.74
+       },
+       "sart_r": {
+        "momentArmCm": 4.042,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8548,
+        "pennationDeg": 1.98
+       },
+       "bflh_r": {
+        "momentArmCm": 3.842,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.6652,
+        "pennationDeg": 7.49
+       },
+       "bfsh_r": {
+        "momentArmCm": 3.306,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.9211,
+        "pennationDeg": 18.01
+       },
+       "recfem_r": {
+        "momentArmCm": -3.219,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.5822,
+        "pennationDeg": 21.71
+       },
+       "gaslat_r": {
+        "momentArmCm": 3.091,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9823,
+        "pennationDeg": 11.17
+       },
+       "vasint_r": {
+        "momentArmCm": -2.957,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.9324,
+        "pennationDeg": 3.21
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.938,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.8375,
+        "pennationDeg": 7.87
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.67,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.9446,
+        "pennationDeg": 21.56
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.612,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.9325,
+        "pennationDeg": 12.84
+       },
+       "tfl_r": {
+        "momentArmCm": -0.914,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-100.0": {
+     "source": {
+      "flexionDeg": -100.0,
+      "appliedFlexionDeg": -100.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 154.6,
+      "lengthCapacityNm": 137.7,
+      "extensorsOnlyMaximumNm": 154.2,
+      "extensorsOnlyLengthNm": 137.6,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.814,
+       "vas_int_r": 1.247,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -3.602,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9973,
+        "pennationDeg": 3.11
+       },
+       "vas_int_r": {
+        "momentArmCm": 2.518,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.8853,
+        "pennationDeg": 2.41
+       },
+       "rect_fem_r": {
+        "momentArmCm": 2.423,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9333,
+        "pennationDeg": 6.14
+       },
+       "sar_r": {
+        "momentArmCm": -2.262,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.6971,
+        "pennationDeg": 0.0
+       },
+       "bifemsh_r": {
+        "momentArmCm": -2.18,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8406,
+        "pennationDeg": 33.64
+       },
+       "bifemlh_r": {
+        "momentArmCm": -1.682,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9593,
+        "pennationDeg": 0.0
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.312,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9993,
+        "pennationDeg": 17.32
+       },
+       "tfl_r": {
+        "momentArmCm": 0.161,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2368,
+        "pennationDeg": 20.24
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -100.0,
+      "appliedFlexionDeg": -100.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 232.5,
+      "lengthCapacityNm": 188.7,
+      "extensorsOnlyMaximumNm": 230.5,
+      "extensorsOnlyLengthNm": 188.7,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.686,
+       "vasint_r": 1.193,
+       "vaslat_r": 1.185,
+       "vasmed_r": 1.175,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "semiten_r": {
+        "momentArmCm": 4.754,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.8507,
+        "pennationDeg": 11.55
+       },
+       "grac_r": {
+        "momentArmCm": 4.516,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.8074,
+        "pennationDeg": 8.01
+       },
+       "sart_r": {
+        "momentArmCm": 4.41,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.8257,
+        "pennationDeg": 2.07
+       },
+       "semimem_r": {
+        "momentArmCm": 3.664,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9692,
+        "pennationDeg": 13.33
+       },
+       "bflh_r": {
+        "momentArmCm": 3.469,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.7974,
+        "pennationDeg": 8.14
+       },
+       "bfsh_r": {
+        "momentArmCm": 3.108,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.8509,
+        "pennationDeg": 20.29
+       },
+       "gaslat_r": {
+        "momentArmCm": 3.009,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9995,
+        "pennationDeg": 12.46
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.843,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9897,
+        "pennationDeg": 8.89
+       },
+       "recfem_r": {
+        "momentArmCm": -2.059,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.7819,
+        "pennationDeg": 18.29
+       },
+       "vasint_r": {
+        "momentArmCm": -2.034,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.8514,
+        "pennationDeg": 3.03
+       },
+       "vaslat_r": {
+        "momentArmCm": -1.94,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.8615,
+        "pennationDeg": 12.19
+       },
+       "vasmed_r": {
+        "momentArmCm": -1.856,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8734,
+        "pennationDeg": 20.41
+       },
+       "tfl_r": {
+        "momentArmCm": -0.475,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-120.0": {
+     "source": {
+      "flexionDeg": -120.0,
+      "appliedFlexionDeg": -120.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 122.0,
+      "lengthCapacityNm": 103.0,
+      "extensorsOnlyMaximumNm": 122.0,
+      "extensorsOnlyLengthNm": 103.0,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.877,
+       "vas_int_r": 1.316,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "grac_r": {
+        "momentArmCm": -2.358,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9916,
+        "pennationDeg": 3.21
+       },
+       "sar_r": {
+        "momentArmCm": -2.114,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.6801,
+        "pennationDeg": 0.0
+       },
+       "vas_int_r": {
+        "momentArmCm": 2.01,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.8195,
+        "pennationDeg": 2.28
+       },
+       "rect_fem_r": {
+        "momentArmCm": 1.837,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9702,
+        "pennationDeg": 5.7
+       },
+       "med_gas_r": {
+        "momentArmCm": -0.965,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9937,
+        "pennationDeg": 18.05
+       },
+       "bifemsh_r": {
+        "momentArmCm": -0.65,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8175,
+        "pennationDeg": 34.92
+       },
+       "bifemlh_r": {
+        "momentArmCm": -0.203,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9732,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": -0.041,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2382,
+        "pennationDeg": 20.0
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -120.0,
+      "appliedFlexionDeg": -120.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 298.4,
+      "lengthCapacityNm": 234.1,
+      "extensorsOnlyMaximumNm": 298.4,
+      "extensorsOnlyLengthNm": 234.1,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.78,
+       "vasint_r": 1.253,
+       "vaslat_r": 1.241,
+       "vasmed_r": 1.23,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 4.701,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.7832,
+        "pennationDeg": 2.18
+       },
+       "grac_r": {
+        "momentArmCm": 3.502,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.8751,
+        "pennationDeg": 8.39
+       },
+       "semiten_r": {
+        "momentArmCm": 3.205,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.9286,
+        "pennationDeg": 12.22
+       },
+       "bflh_r": {
+        "momentArmCm": 2.766,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.917,
+        "pennationDeg": 8.84
+       },
+       "recfem_r": {
+        "momentArmCm": -2.717,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.8717,
+        "pennationDeg": 16.03
+       },
+       "vasint_r": {
+        "momentArmCm": -2.653,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7774,
+        "pennationDeg": 2.89
+       },
+       "semimem_r": {
+        "momentArmCm": 2.5,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9999,
+        "pennationDeg": 14.94
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.471,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7924,
+        "pennationDeg": 11.63
+       },
+       "gaslat_r": {
+        "momentArmCm": 2.453,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9351,
+        "pennationDeg": 13.99
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.422,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.8053,
+        "pennationDeg": 19.46
+       },
+       "gasmed_r": {
+        "momentArmCm": 2.269,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9903,
+        "pennationDeg": 10.12
+       },
+       "bfsh_r": {
+        "momentArmCm": 1.962,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.7754,
+        "pennationDeg": 22.53
+       },
+       "tfl_r": {
+        "momentArmCm": 0.032,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-130.0": {
+     "source": {
+      "flexionDeg": -130.0,
+      "appliedFlexionDeg": -130.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 140.4,
+      "lengthCapacityNm": 113.0,
+      "extensorsOnlyMaximumNm": 119.0,
+      "extensorsOnlyLengthNm": 92.8,
+      "flexorsActingAsExtensorsMaximumNm": 21.4,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.947,
+       "vas_int_r": 1.39,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "sar_r": {
+        "momentArmCm": -2.113,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.6719,
+        "pennationDeg": 0.0
+       },
+       "vas_int_r": {
+        "momentArmCm": 1.974,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.7379,
+        "pennationDeg": 2.16
+       },
+       "rect_fem_r": {
+        "momentArmCm": 1.733,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9944,
+        "pennationDeg": 5.28
+       },
+       "grac_r": {
+        "momentArmCm": -1.456,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9892,
+        "pennationDeg": 3.24
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.263,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9889,
+        "pennationDeg": 18.42
+       },
+       "bifemlh_r": {
+        "momentArmCm": 0.71,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9715,
+        "pennationDeg": 0.0
+       },
+       "tfl_r": {
+        "momentArmCm": -0.581,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2342,
+        "pennationDeg": 20.69
+       },
+       "bifemsh_r": {
+        "momentArmCm": 0.282,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8159,
+        "pennationDeg": 35.01
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -130.0,
+      "appliedFlexionDeg": -130.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 262.6,
+      "lengthCapacityNm": 200.6,
+      "extensorsOnlyMaximumNm": 262.6,
+      "extensorsOnlyLengthNm": 200.6,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.832,
+       "vasint_r": 1.285,
+       "vaslat_r": 1.271,
+       "vasmed_r": 1.261,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 4.542,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.7527,
+        "pennationDeg": 2.24
+       },
+       "grac_r": {
+        "momentArmCm": 2.742,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.901,
+        "pennationDeg": 8.54
+       },
+       "bflh_r": {
+        "momentArmCm": 2.382,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9651,
+        "pennationDeg": 9.19
+       },
+       "recfem_r": {
+        "momentArmCm": -2.361,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9115,
+        "pennationDeg": 15.0
+       },
+       "vasint_r": {
+        "momentArmCm": -2.313,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7367,
+        "pennationDeg": 2.81
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.196,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7547,
+        "pennationDeg": 11.35
+       },
+       "semiten_r": {
+        "momentArmCm": 2.187,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.9538,
+        "pennationDeg": 12.47
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.132,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.7676,
+        "pennationDeg": 18.97
+       },
+       "gaslat_r": {
+        "momentArmCm": 1.852,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.9045,
+        "pennationDeg": 14.69
+       },
+       "semimem_r": {
+        "momentArmCm": 1.743,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9894,
+        "pennationDeg": 15.58
+       },
+       "gasmed_r": {
+        "momentArmCm": 1.591,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9561,
+        "pennationDeg": 10.66
+       },
+       "bfsh_r": {
+        "momentArmCm": 1.04,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.741,
+        "pennationDeg": 23.25
+       },
+       "tfl_r": {
+        "momentArmCm": 0.312,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-135.0": {
+     "source": {
+      "flexionDeg": -135.0,
+      "appliedFlexionDeg": -135.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 154.7,
+      "lengthCapacityNm": 121.9,
+      "extensorsOnlyMaximumNm": 116.6,
+      "extensorsOnlyLengthNm": 86.9,
+      "flexorsActingAsExtensorsMaximumNm": 38.1,
+      "extensorFiberLengths": {
+       "rect_fem_r": 0.982,
+       "vas_int_r": 1.427,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "sar_r": {
+        "momentArmCm": -2.063,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.6678,
+        "pennationDeg": 0.0
+       },
+       "vas_int_r": {
+        "momentArmCm": 1.943,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.6949,
+        "pennationDeg": 2.1
+       },
+       "rect_fem_r": {
+        "momentArmCm": 1.665,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9993,
+        "pennationDeg": 5.09
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.409,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9853,
+        "pennationDeg": 18.66
+       },
+       "bifemlh_r": {
+        "momentArmCm": 1.18,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9683,
+        "pennationDeg": 0.0
+       },
+       "grac_r": {
+        "momentArmCm": -0.959,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9884,
+        "pennationDeg": 3.25
+       },
+       "tfl_r": {
+        "momentArmCm": -0.861,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2297,
+        "pennationDeg": 21.56
+       },
+       "bifemsh_r": {
+        "momentArmCm": 0.778,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8181,
+        "pennationDeg": 34.89
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -135.0,
+      "appliedFlexionDeg": -135.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 256.6,
+      "lengthCapacityNm": 193.4,
+      "extensorsOnlyMaximumNm": 256.6,
+      "extensorsOnlyLengthNm": 193.4,
+      "flexorsActingAsExtensorsMaximumNm": 0.0,
+      "extensorFiberLengths": {
+       "recfem_r": 0.856,
+       "vasint_r": 1.3,
+       "vaslat_r": 1.285,
+       "vasmed_r": 1.275,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 4.117,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.7367,
+        "pennationDeg": 2.27
+       },
+       "grac_r": {
+        "momentArmCm": 2.294,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9113,
+        "pennationDeg": 8.61
+       },
+       "recfem_r": {
+        "momentArmCm": -2.287,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9297,
+        "pennationDeg": 14.56
+       },
+       "vasint_r": {
+        "momentArmCm": -2.242,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7182,
+        "pennationDeg": 2.78
+       },
+       "bflh_r": {
+        "momentArmCm": 2.2,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9825,
+        "pennationDeg": 9.35
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.158,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7371,
+        "pennationDeg": 11.23
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.085,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.7501,
+        "pennationDeg": 18.75
+       },
+       "semiten_r": {
+        "momentArmCm": 1.62,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.9621,
+        "pennationDeg": 12.56
+       },
+       "gaslat_r": {
+        "momentArmCm": 1.427,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.892,
+        "pennationDeg": 15.0
+       },
+       "semimem_r": {
+        "momentArmCm": 1.321,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9798,
+        "pennationDeg": 15.82
+       },
+       "gasmed_r": {
+        "momentArmCm": 1.072,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9439,
+        "pennationDeg": 10.86
+       },
+       "bfsh_r": {
+        "momentArmCm": 0.506,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.7318,
+        "pennationDeg": 23.44
+       },
+       "tfl_r": {
+        "momentArmCm": 0.454,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       }
+      }
+     }
+    },
+    "-140.0": {
+     "source": {
+      "flexionDeg": -140.0,
+      "appliedFlexionDeg": -140.0,
+      "poseClamped": false,
+      "extensionMomentArmSign": 1,
+      "maximumCapacityNm": 168.9,
+      "lengthCapacityNm": 130.6,
+      "extensorsOnlyMaximumNm": 113.9,
+      "extensorsOnlyLengthNm": 80.6,
+      "flexorsActingAsExtensorsMaximumNm": 55.0,
+      "extensorFiberLengths": {
+       "rect_fem_r": 1.015,
+       "vas_int_r": 1.463,
+       "rect_fem_l": 0.966,
+       "vas_int_l": 1.411
+      },
+      "muscles": {
+       "sar_r": {
+        "momentArmCm": -1.97,
+        "maximumForceN": 156.0,
+        "activeForceLength": 0.6639,
+        "pennationDeg": 0.0
+       },
+       "vas_int_r": {
+        "momentArmCm": 1.906,
+        "maximumForceN": 5000.0,
+        "activeForceLength": 0.6517,
+        "pennationDeg": 2.05
+       },
+       "bifemlh_r": {
+        "momentArmCm": 1.654,
+        "maximumForceN": 2700.0,
+        "activeForceLength": 0.9631,
+        "pennationDeg": 0.0
+       },
+       "rect_fem_r": {
+        "momentArmCm": 1.589,
+        "maximumForceN": 1169.0,
+        "activeForceLength": 0.9995,
+        "pennationDeg": 4.93
+       },
+       "med_gas_r": {
+        "momentArmCm": -1.545,
+        "maximumForceN": 2500.0,
+        "activeForceLength": 0.9809,
+        "pennationDeg": 18.92
+       },
+       "bifemsh_r": {
+        "momentArmCm": 1.285,
+        "maximumForceN": 804.0,
+        "activeForceLength": 0.8222,
+        "pennationDeg": 34.65
+       },
+       "tfl_r": {
+        "momentArmCm": -1.144,
+        "maximumForceN": 233.0,
+        "activeForceLength": 0.2236,
+        "pennationDeg": 22.89
+       },
+       "grac_r": {
+        "momentArmCm": -0.438,
+        "maximumForceN": 162.0,
+        "activeForceLength": 0.9879,
+        "pennationDeg": 3.25
+       }
+      }
+     },
+     "candidate": {
+      "flexionDeg": -140.0,
+      "appliedFlexionDeg": -139.999,
+      "poseClamped": false,
+      "extensionMomentArmSign": -1,
+      "maximumCapacityNm": 261.6,
+      "lengthCapacityNm": 194.6,
+      "extensorsOnlyMaximumNm": 261.3,
+      "extensorsOnlyLengthNm": 194.3,
+      "flexorsActingAsExtensorsMaximumNm": 0.4,
+      "extensorFiberLengths": {
+       "recfem_r": 0.88,
+       "vasint_r": 1.315,
+       "vaslat_r": 1.299,
+       "vasmed_r": 1.289,
+       "recfem_l": 0.877,
+       "vasint_l": 1.294,
+       "vaslat_l": 1.279,
+       "vasmed_l": 1.269
+      },
+      "muscles": {
+       "sart_r": {
+        "momentArmCm": 3.081,
+        "maximumForceN": 249.4,
+        "activeForceLength": 0.7227,
+        "pennationDeg": 2.3
+       },
+       "recfem_r": {
+        "momentArmCm": -2.308,
+        "maximumForceN": 2191.7,
+        "activeForceLength": 0.9476,
+        "pennationDeg": 14.16
+       },
+       "vasint_r": {
+        "momentArmCm": -2.263,
+        "maximumForceN": 1697.4,
+        "activeForceLength": 0.7001,
+        "pennationDeg": 2.75
+       },
+       "vaslat_r": {
+        "momentArmCm": -2.21,
+        "maximumForceN": 5148.8,
+        "activeForceLength": 0.7196,
+        "pennationDeg": 11.1
+       },
+       "vasmed_r": {
+        "momentArmCm": -2.13,
+        "maximumForceN": 2747.8,
+        "activeForceLength": 0.7328,
+        "pennationDeg": 18.54
+       },
+       "bflh_r": {
+        "momentArmCm": 2.029,
+        "maximumForceN": 1313.2,
+        "activeForceLength": 0.9931,
+        "pennationDeg": 9.5
+       },
+       "grac_r": {
+        "momentArmCm": 1.798,
+        "maximumForceN": 281.3,
+        "activeForceLength": 0.9196,
+        "pennationDeg": 8.66
+       },
+       "semiten_r": {
+        "momentArmCm": 1.017,
+        "maximumForceN": 591.3,
+        "activeForceLength": 0.9676,
+        "pennationDeg": 12.62
+       },
+       "gaslat_r": {
+        "momentArmCm": 0.898,
+        "maximumForceN": 1575.1,
+        "activeForceLength": 0.8829,
+        "pennationDeg": 15.23
+       },
+       "semimem_r": {
+        "momentArmCm": 0.872,
+        "maximumForceN": 2201.0,
+        "activeForceLength": 0.9725,
+        "pennationDeg": 16.0
+       },
+       "tfl_r": {
+        "momentArmCm": 0.592,
+        "maximumForceN": 411.2,
+        "activeForceLength": 0.0,
+        "pennationDeg": 12.08
+       },
+       "gasmed_r": {
+        "momentArmCm": 0.364,
+        "maximumForceN": 3115.5,
+        "activeForceLength": 0.9372,
+        "pennationDeg": 10.98
+       },
+       "bfsh_r": {
+        "momentArmCm": -0.064,
+        "maximumForceN": 557.1,
+        "activeForceLength": 0.7296,
+        "pennationDeg": 23.48
+       }
+      }
+     }
+    }
+   },
+   "targetFrame": {
+    "knee_angle_r": {
+     "demandNm": 69.383,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -135.145,
+      "poseClamped": false,
+      "maximumBoundNm": 155.2,
+      "lengthBoundNm": 122.2,
+      "demandToMaximumBound": 0.447,
+      "demandToLengthBound": 0.568
+     },
+     "candidate": {
+      "demandSign": -1.0,
+      "appliedPoseDeg": -135.145,
+      "poseClamped": false,
+      "maximumBoundNm": 256.5,
+      "lengthBoundNm": 193.3,
+      "demandToMaximumBound": 0.27,
+      "demandToLengthBound": 0.359
+     }
+    },
+    "knee_angle_l": {
+     "demandNm": 72.241,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -132.812,
+      "poseClamped": false,
+      "maximumBoundNm": 149.0,
+      "lengthBoundNm": 118.4,
+      "demandToMaximumBound": 0.485,
+      "demandToLengthBound": 0.61
+     },
+     "candidate": {
+      "demandSign": -1.0,
+      "appliedPoseDeg": -132.812,
+      "poseClamped": false,
+      "maximumBoundNm": 257.6,
+      "lengthBoundNm": 196.5,
+      "demandToMaximumBound": 0.28,
+      "demandToLengthBound": 0.368
+     }
+    },
+    "hip_flexion_r": {
+     "demandNm": -71.818,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 110.884,
+      "poseClamped": false,
+      "maximumBoundNm": 226.3,
+      "lengthBoundNm": 194.1,
+      "demandToMaximumBound": 0.317,
+      "demandToLengthBound": 0.37
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 110.884,
+      "poseClamped": false,
+      "maximumBoundNm": 346.1,
+      "lengthBoundNm": 287.0,
+      "demandToMaximumBound": 0.208,
+      "demandToLengthBound": 0.25
+     }
+    },
+    "hip_adduction_r": {
+     "demandNm": -25.618,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -36.409,
+      "poseClamped": false,
+      "maximumBoundNm": 196.5,
+      "lengthBoundNm": 172.7,
+      "demandToMaximumBound": 0.13,
+      "demandToLengthBound": 0.148
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": -36.409,
+      "poseClamped": false,
+      "maximumBoundNm": 210.1,
+      "lengthBoundNm": 187.1,
+      "demandToMaximumBound": 0.122,
+      "demandToLengthBound": 0.137
+     }
+    },
+    "ankle_angle_r": {
+     "demandNm": -42.894,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 44.99,
+      "poseClamped": false,
+      "maximumBoundNm": 209.2,
+      "lengthBoundNm": 178.6,
+      "demandToMaximumBound": 0.205,
+      "demandToLengthBound": 0.24
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 44.99,
+      "poseClamped": false,
+      "maximumBoundNm": 321.9,
+      "lengthBoundNm": 231.1,
+      "demandToMaximumBound": 0.133,
+      "demandToLengthBound": 0.186
+     }
+    },
+    "hip_rotation_r": {
+     "demandNm": -52.808,
+     "source": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 22.108,
+      "poseClamped": false,
+      "maximumBoundNm": 13.8,
+      "lengthBoundNm": 11.1,
+      "demandToMaximumBound": 3.823,
+      "demandToLengthBound": 4.779
+     },
+     "candidate": {
+      "demandSign": 1.0,
+      "appliedPoseDeg": 22.108,
+      "poseClamped": false,
+      "maximumBoundNm": 26.0,
+      "lengthBoundNm": 22.8,
+      "demandToMaximumBound": 2.031,
+      "demandToLengthBound": 2.321
+     }
+    }
+   }
+  }
+ },
+ "limitations": [
+  "maximum isometric forces stay generic after geometric scaling in both models",
+  "no tendon compliance, passive force, activation dynamics or multi-joint feasibility",
+  "the candidate is posed with the source IK row, not with its own inverse kinematics",
+  "the candidate knee range ends at 140 deg of flexion, so deeper source frames cannot be compared and are reported separately",
+  "moment arms are read before equilibrating the muscles, matching the capacity audit",
+  "the two models may use different default activations, which changes the force-length factor; only the curves, not the absolute numbers, should be compared across models"
+ ]
+}

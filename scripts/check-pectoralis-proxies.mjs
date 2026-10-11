@@ -33,4 +33,9 @@ for (const exercise of ['bench', 'press']) {
     geometry.dispose();
   }
 }
-console.log(`Pectoralis path-volume cross-check passed: ${comparisons} Blender/phone vertex coordinates.`);
+// Scope: src/pectoralis-proxy.ts is the early path-volume comparison kept for reference. The
+// shipping app renders the registered pectoralis atlas meshes instead and does not import this
+// module, so this check defends the comparison artifact, not shipped behaviour. The shipped layer is
+// covered by check:pectoralis-atlas.
+console.log(`Pectoralis path-volume cross-check passed: ${comparisons} Blender/TypeScript vertex coordinates. ` +
+  'Scope: unshipped early comparison module; run check:pectoralis-atlas for the shipped layer.');

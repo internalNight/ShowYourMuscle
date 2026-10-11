@@ -7,14 +7,21 @@ import { applyReferenceMuscleThickness, prepareReferenceMuscleShape, referenceGi
   type ReferenceMuscleShape } from './reference-shape';
 import { clamp, type BodyProfile, type ExerciseId, type ViewMode } from './domain';
 import standingRegistration from '../docs/data/standing_registration_probe.json';
+import fullBodyMusclePaths from '../docs/data/full_body_muscle_paths.json';
+import registeredBoneBodies from '../docs/data/registered_bone_bodies.json';
+import wrapSurfaces from '../docs/data/full_body_wrap_surfaces.json';
+import fullBodySkeletonExport from '../docs/data/full_body_skeleton_export.json';
+import patellaRegistration from '../docs/data/patella_registration_optimisation.json';
 import tsmUpperBoneRegistration from './data/tsm_upper_bone_registration.json';
 import tsmPectoralisAtlasRegistration from './data/tsm_press_pectoralis_atlas_registration.json';
 import tsmBenchPectoralisAtlasRegistration from './data/tsm_bench_pectoralis_atlas_registration.json';
 
 type JointName = 'pelvis' | 'chest' | 'neck' | 'head' | 'shoulderL' | 'shoulderR' |
   'elbowL' | 'elbowR' | 'wristL' | 'wristR' | 'hipL' | 'hipR' |
-  'kneeL' | 'kneeR' | 'ankleL' | 'ankleR';
-type Pose = Record<JointName, THREE.Vector3>;
+  'kneeL' | 'kneeR' | 'ankleL' | 'ankleR' | 'patellaL' | 'patellaR' | 'handL' | 'handR' | 'footL' | 'footR';
+export type Pose = Record<JointName, THREE.Vector3>;
+export type PoseHandle = 'wristL' | 'wristR' | 'ankleL' | 'ankleR';
+export type PoseOverrides = Partial<Record<PoseHandle, [number, number, number]>>;
 type Muscle = {
   label: string;
   mesh: THREE.Mesh;
@@ -53,8 +60,10 @@ const registeredMuscleSpecs: Record<string, { id: string; color: number; body: '
   'Rectus femoris muscler': { id: 'rect_fem_r', color: 0x9875c7, body: 'femur_r', girth: 'thigh' },
   'Short head of biceps femorisr': { id: 'bifemsh_r', color: 0x66b3c7, body: 'femur_r', girth: 'thigh' },
   'Semimembranosus muscler': { id: 'semimem_r', color: 0xc18fb3, body: 'femur_r', girth: 'thigh' },
+  'Vastus intermedius muscler': { id: 'vas_int_r', color: 0xa8b45f, body: 'femur_r', girth: 'thigh' },
   'Tibialis anterior muscler': { id: 'tib_ant_r', color: 0x80bb94, body: 'tibia_r', girth: 'calf' },
   'Soleus muscler': { id: 'soleus_r', color: 0xd1a36b, body: 'tibia_r', girth: 'calf' },
+  'Medial head of gastrocnemiusr': { id: 'med_gas_r', color: 0xa8564f, body: 'tibia_r', girth: 'calf' },
 };
 const tsmDeltoidSpecs = [
   { muscle: 'DeltoideusClavicle_A', atlas: 'Clavicular part of deltoid muscler' },
@@ -109,6 +118,88 @@ function pathLengthColor(ratio: number): string {
   if (ratio < 0.975) return '#c78ad8';
   return '#af818b';
 }
+type FullBodyPath = (typeof fullBodyMusclePaths.muscles)[number];
+type RigidPathFrame = { source: THREE.Vector3; target: THREE.Vector3;
+  rotation: THREE.Quaternion; scale: number };
+
+function sourceToViewer(point: readonly number[]): THREE.Vector3 {
+  // The OpenSim model is X-forward / Z-lateral; the teaching viewer is Z-forward / X-lateral.
+  return new THREE.Vector3(point[2], point[1], point[0]);
+}
+
+function musclePathFrames(pose: Pose, profile: BodyProfile): Record<string, RigidPathFrame> {
+  const joints = fullBodyMusclePaths.defaultJointsM as Record<string, number[]>;
+  const point = (name: string) => sourceToViewer(joints[name]);
+  const frame = (source: THREE.Vector3, sourceEnd: THREE.Vector3,
+    target: THREE.Vector3, targetEnd: THREE.Vector3, matchLength = true): RigidPathFrame => {
+    const fromAxis = sourceEnd.clone().sub(source);
+    const toAxis = targetEnd.clone().sub(target);
+    return { source, target, rotation: new THREE.Quaternion().setFromUnitVectors(
+      fromAxis.clone().normalize(), toAxis.clone().normalize()),
+    scale: matchLength ? toAxis.length() / fromAxis.length() : profile.heightCm / 175 };
+  };
+  const hipMid = point('hip_r').add(point('hip_l')).multiplyScalar(0.5);
+  const frames: Record<string, RigidPathFrame> = {
+    pelvis: frame(hipMid, point('back'), pose.pelvis, pose.chest, false),
+  };
+  for (const side of ['r', 'l'] as const) {
+    const suffix = side.toUpperCase() as 'R' | 'L';
+    const femur = frame(point(`hip_${side}`), point(`walker_knee_${side}`),
+      pose[`hip${suffix}`], pose[`knee${suffix}`]);
+    const tibia = frame(point(`walker_knee_${side}`), point(`ankle_${side}`),
+      pose[`knee${suffix}`], pose[`ankle${suffix}`]);
+    const foot = frame(point(`ankle_${side}`), point(`mtp_${side}`),
+      pose[`ankle${suffix}`], pose[`foot${suffix}`]);
+    frames[`femur_${side}`] = femur;
+    frames[`patella_${side}`] = femur;
+    frames[`tibia_${side}`] = tibia;
+    frames[`talus_${side}`] = foot;
+    frames[`calcn_${side}`] = foot;
+    frames[`toes_${side}`] = foot;
+  }
+  return frames;
+}
+
+function posedMusclePoints(muscle: FullBodyPath,
+  frames: Record<string, RigidPathFrame>): THREE.Vector3[] {
+  return muscle.pathPoints.map((point, index) => {
+    const body = muscle.pathBodies[index];
+    const frame = frames[body];
+    if (!frame) throw new Error(`OpenSim 路径点缺少骨段绑定：${muscle.name}/${body}`);
+    return sourceToViewer(point).sub(frame.source).multiplyScalar(frame.scale)
+      .applyQuaternion(frame.rotation).add(frame.target);
+  });
+}
+
+function polylineLength(points: THREE.Vector3[]): number {
+  return points.slice(1).reduce((sum, point, index) => sum + point.distanceTo(points[index]), 0);
+}
+
+// Rewrite the existing tube's vertices instead of allocating 80 new geometries on each animation frame.
+function reshapeMuscleTube(geometry: THREE.TubeGeometry, points: THREE.Vector3[]): void {
+  const { tubularSegments, radialSegments, radius } = geometry.parameters;
+  const curve = new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.35);
+  const frames = curve.computeFrenetFrames(tubularSegments, false);
+  const positions = geometry.getAttribute('position') as THREE.BufferAttribute;
+  const normals = geometry.getAttribute('normal') as THREE.BufferAttribute;
+  const centre = new THREE.Vector3();
+  const normal = new THREE.Vector3();
+  for (let i = 0; i <= tubularSegments; i++) {
+    curve.getPointAt(i / tubularSegments, centre);
+    for (let j = 0; j <= radialSegments; j++) {
+      const angle = j / radialSegments * Math.PI * 2;
+      normal.copy(frames.normals[i]).multiplyScalar(-Math.cos(angle))
+        .addScaledVector(frames.binormals[i], Math.sin(angle)).normalize();
+      const vertex = i * (radialSegments + 1) + j;
+      positions.setXYZ(vertex, centre.x + radius * normal.x,
+        centre.y + radius * normal.y, centre.z + radius * normal.z);
+      normals.setXYZ(vertex, normal.x, normal.y, normal.z);
+    }
+  }
+  positions.needsUpdate = true;
+  normals.needsUpdate = true;
+  geometry.computeBoundingSphere();
+}
 export type OpenSimFrame = {
   phase: number;
   viewerJointsM: Record<string, [number, number, number]>;
@@ -123,6 +214,8 @@ export type OpenSimFrame = {
 };
 
 const boneConnections: Array<[JointName, JointName]> = [
+  ['ankleL', 'footL'], ['ankleR', 'footR'],
+  ['kneeL', 'patellaL'], ['kneeR', 'patellaR'], ['wristL', 'handL'], ['wristR', 'handR'],
   ['pelvis', 'chest'], ['chest', 'neck'], ['neck', 'head'],
   ['chest', 'shoulderL'], ['chest', 'shoulderR'],
   ['shoulderL', 'elbowL'], ['shoulderR', 'elbowR'],
@@ -204,6 +297,44 @@ function solveJoint(start: THREE.Vector3, end: THREE.Vector3, first: number, sec
   const outward = Math.sqrt(Math.max(0, first * first - along * along));
   const bend = bendHint.clone().addScaledVector(direction, -bendHint.dot(direction)).normalize();
   return start.clone().addScaledVector(direction, along).addScaledVector(bend, outward);
+}
+
+// A free-pose edit moves an end effector and solves its two-link chain. This preserves the segment lengths
+// of the teaching skeleton; it is not an OpenSim inverse-kinematics or muscle-force solution.
+export function applyPoseOverrides(base: Pose, profile: BodyProfile, exercise: ExerciseId,
+  overrides: PoseOverrides): Pose {
+  const pose = { ...base };
+  const segments = profileSegmentDimensions(profile);
+  const stature = profile.heightCm / 175;
+  for (const side of ['L', 'R'] as const) {
+    const sign = side === 'L' ? -1 : 1;
+    const wristKey = `wrist${side}` as PoseHandle;
+    const ankleKey = `ankle${side}` as PoseHandle;
+    for (const [key, root, hinge, first, second, hint] of [
+      [wristKey, `shoulder${side}`, `elbow${side}`, segments.upperArmM, segments.forearmM,
+        exercise === 'squat' ? new THREE.Vector3(sign * 0.4, -1, 0.3) : new THREE.Vector3(sign, 0, 0)],
+      [ankleKey, `hip${side}`, `knee${side}`, segments.femurM, segments.tibiaM,
+        new THREE.Vector3(0, 0, 1)],
+    ] as Array<[PoseHandle, JointName, JointName, number, number, THREE.Vector3]>) {
+      const value = overrides[key];
+      if (!value) continue;
+      const start = pose[root];
+      const target = new THREE.Vector3(...value);
+      if (key === ankleKey) target.y = Math.max(0.06 * stature, target.y);
+      const offset = target.sub(start);
+      const length = clamp(offset.length(), Math.abs(first - second) + 0.01 * stature,
+        first + second - 0.005 * stature);
+      if (offset.lengthSq() < 1e-10) offset.set(0, -1, 0);
+      const end = start.clone().add(offset.normalize().multiplyScalar(length));
+      pose[key] = end;
+      pose[hinge] = solveJoint(start, end, first, second, hint);
+    }
+    pose[`hand${side}`] = pose[`wrist${side}`].clone().add(
+      pose[`wrist${side}`].clone().sub(pose[`elbow${side}`]).multiplyScalar(0.28));
+    pose[`patella${side}`] = pose[`knee${side}`].clone().lerp(pose[`ankle${side}`], 0.12);
+    pose[`foot${side}`] = pose[`ankle${side}`].clone().add(new THREE.Vector3(0, -0.035 * stature, 0.22 * stature));
+  }
+  return pose;
 }
 
 // Dimensions of the teaching skeleton. Inseam and arm span set segment ratios,
@@ -328,6 +459,16 @@ export function createPose(profile: BodyProfile, exercise: ExerciseId, phase: nu
         new THREE.Vector3(sign * 0.4, -1, 0.3)));
     }
   }
+  // ② 增补：髌骨与手骨的教学体段（位置由已有链条推得，不新造解剖）——
+  // 髌骨位于膝下 12%（沿膝→踝），手沿前臂方向再延伸 28%。
+  result.patellaL = result.kneeL.clone().lerp(result.ankleL, 0.12);
+  result.patellaR = result.kneeR.clone().lerp(result.ankleR, 0.12);
+  result.handL = result.wristL.clone().add(result.wristL.clone().sub(result.elbowL).multiplyScalar(0.28));
+  result.handR = result.wristR.clone().add(result.wristR.clone().sub(result.elbowR).multiplyScalar(0.28));
+  // ② 增补：足骨教学体段。前向 +Z 取自本应用自己的约定（深蹲杠铃挂在胸腔 +Z 侧）；
+  // 足长约身高的 15%，踝比趾高约 3.5%（常用人体比例，不是猜的）。
+  result.footL = result.ankleL.clone().add(new THREE.Vector3(0, -0.035 * s, 0.22 * s));
+  result.footR = result.ankleR.clone().add(new THREE.Vector3(0, -0.035 * s, 0.22 * s));
   return result;
 }
 
@@ -572,6 +713,9 @@ export class AnatomyPrototype {
   registeredBonesLoaded = false;
   registeredBonesError = false;
   private registeredBonesRequested = false;
+  // ⑤：这六段由研究网格绘制，导出几何在这些体段上让位；记录被换掉的网格，便于还原与检查。
+  private swappedBodies = new Set<string>();
+  private researchGeometryActive = false;
   private registeredBonesEnabled = false;
   private readonly opensimBones: THREE.Mesh[] = [];
   private readonly opensimJoints: THREE.Mesh[] = [];
@@ -592,7 +736,17 @@ export class AnatomyPrototype {
   private referenceRequested = false;
   private readonly anatomy = new THREE.Group();
   private readonly bones: THREE.Mesh[] = [];
+  // Real OpenSim bone meshes fitted onto this teaching skeleton's segments. They are the default view's
+  // skeleton when the export loads, and the cylinders above remain as the fallback per segment.
+  private readonly fullBodyBones = new THREE.Group();
+  private readonly fullBodyBoneFits: Array<{ segment: string; body: string; mesh: THREE.Mesh }> = [];
+  private fullBodyBonesLoaded = false;
+  private fullBodyBonesRequested = false;
   private readonly joints: THREE.Mesh[] = [];
+  private readonly poseHandles = new Map<PoseHandle, THREE.Mesh>();
+  private poseEditEnabled = false;
+  private onPoseChange?: (handle: PoseHandle, point: [number, number, number]) => void;
+  private wrapsAtNeutralPose = true;
   private readonly muscles: Muscle[] = [];
   private readonly skinSegments: Array<{ mesh: THREE.Mesh; start: JointName; end: JointName; type: 'upperArm' | 'thigh' | 'calf' }> = [];
   private readonly bar: THREE.Mesh;
@@ -602,6 +756,18 @@ export class AnatomyPrototype {
   private readonly target = new THREE.Vector3(0, 0.92, 0);
   private azimuth = 0.16;
   private elevation = 0.22;
+
+  /** The standing views a reviewer compares. Named, so a check can hold each one to its exact camera. */
+  private applyViewPreset(preset: 'front' | 'back' | 'left' | 'right' | 'threeQuarter'): void {
+    const presets: Record<string, [number, number]> = {
+      front: [0, 0], back: [Math.PI, 0], left: [Math.PI / 2, 0], right: [-Math.PI / 2, 0],
+      threeQuarter: [0.16, 0.22],
+    };
+    const [azimuth, elevation] = presets[preset];
+    this.azimuth = azimuth;
+    this.elevation = elevation;
+    this.container.dataset.viewPreset = preset;
+  }
   private distance = 3.6;
   private opensimCameraFactor = 0.45;
   private opensimCameraOffset = 0;
@@ -641,6 +807,7 @@ export class AnatomyPrototype {
     this.opensimReference.add(this.tsmUpperBoneGroup);
     this.createOpenSimReference();
     this.root.add(this.anatomy);
+    this.anatomy.add(this.fullBodyBones);
     for (const joint of ['髋', '膝', '踝', '肩', '肘']) {
       const marker = momentBadge(joint);
       this.anatomy.add(marker);
@@ -669,6 +836,17 @@ export class AnatomyPrototype {
       joint.scale.setScalar(0.032);
       this.anatomy.add(joint);
       this.joints.push(joint);
+    }
+    for (const handle of ['wristL', 'wristR', 'ankleL', 'ankleR'] as const) {
+      const mesh = new THREE.Mesh(new THREE.SphereGeometry(0.055, 18, 12),
+        new THREE.MeshStandardMaterial({ color: handle.endsWith('L') ? 0x42b9db : 0xf0bd6e,
+          emissive: handle.endsWith('L') ? 0x13526a : 0x684015, emissiveIntensity: 0.5,
+          depthTest: false }));
+      mesh.name = `pose-handle:${handle}`;
+      mesh.renderOrder = 12;
+      mesh.visible = false;
+      this.anatomy.add(mesh);
+      this.poseHandles.set(handle, mesh);
     }
     this.makeMuscles();
     this.skin = new THREE.Mesh(
@@ -1000,23 +1178,87 @@ export class AnatomyPrototype {
   setRegisteredBonesEnabled(enabled: boolean, onAssetChange?: () => void): void {
     this.registeredBonesEnabled = enabled;
     this.registeredBones.visible = enabled && this.registeredBonesLoaded;
+    if (!enabled) this.restoreSwappedBodies();
     if (!enabled || this.registeredBonesRequested) return;
     this.registeredBonesRequested = true;
     void this.loadAnatomyReference().then(gltfScene => {
-      const bodyByName: Record<string, string> = {
-        'Hip boner': 'pelvis', Femurr: 'femur_r',
-        Tibiar: 'tibia_r', Fibular: 'tibia_r',
-        Patellar: 'patella_r', Calcaneusr: 'calcn_r',
-      };
+      // One source for both layers: the research mesh names and the OpenSim body names they drive live in
+      // docs/data/registered_bone_bodies.json, and every target is checked against the default view export
+      // record here, so the two layers cannot drift apart again.
+      const bodyByName: Record<string, string> = { ...registeredBoneBodies.map };
+      const partNames = new Set(fullBodySkeletonExport.bodies.flatMap(body => body.parts ?? []));
+      const knownBodies = new Set(fullBodySkeletonExport.bodies
+        .map(body => body.body).filter(name => !partNames.has(name)));
+      const unmapped = Object.values(bodyByName).filter(body => !knownBodies.has(body));
+      const source = registeredBoneBodies.geometrySource;
+      this.container.dataset.geometrySource = JSON.stringify({
+        research: source.research, exportBodies: source.exportBodies.length,
+        mirrored: Object.keys(source.mirroredFrom).length,
+      });
+      this.container.dataset.registeredBodyMap = JSON.stringify({
+        entries: Object.keys(bodyByName).length, unmapped, source: registeredBoneBodies.source,
+      });
+      if (unmapped.length > 0) {
+        this.registeredBonesError = true;
+        console.error('研究层体段名不在默认视图导出记录里', unmapped);
+        onAssetChange?.();
+        return;
+      }
       gltfScene.updateMatrixWorld(true);
       const shift = standingRegistration.translationM;
       // The Blender standing translation expressed in GLTF's Y-up frame.
       const translation = new THREE.Matrix4().makeTranslation(shift[0], shift[2], -shift[1]);
+      // Every registered bone shares that standing translation except the patella, whose measured
+      // constant offset (blender/optimise_patella_registration.py) keeps the mesh out of the femur.
+      // The searched tibia offset is deliberately not applied: it halves the bone-to-bone
+      // intersections but pushes the OpenSim source points further from the bone surfaces, see
+      // docs/data/knee_registration_optimisation.json. Both frames are Blender's standing frame, so
+      // the same axis mapping applies.
+      const toBlenderFrame = (values: number[]) =>
+        new THREE.Matrix4().makeTranslation(values[0], values[2], -values[1]);
+      const boneOffsets = new Map<string, THREE.Matrix4>([
+        [patellaRegistration.searchedBody, toBlenderFrame(patellaRegistration.optimised.offsetM)],
+      ]);
       gltfScene.traverse(object => {
         // GLTFLoader sanitizes the source's ".r" suffix into a bare "r".
         const normalizedName = object.name.replaceAll('_', ' ').replace(/\.r$/, 'r');
         const body = bodyByName[normalizedName];
         const muscleSpec = registeredMuscleSpecs[normalizedName];
+        // 脊柱与肋骨：来源清单里 torso_spine / torso_ribs 已改为研究网格，这里按规则逐块加入（静态，与上半身
+        // 肌肉同一处理），导出记录里的合并网格随后由让位逻辑移出场景。
+        const boneRules = registeredBoneBodies.boneRules?.rules ?? [];
+        const boneRule = object instanceof THREE.Mesh
+          ? boneRules.find(rule => new RegExp(rule.match, 'i').test(object.name))
+          : undefined;
+        if (boneRule) {
+          const mesh = object.clone() as THREE.Mesh;
+          mesh.material = new THREE.MeshStandardMaterial({ color: 0xefb863, roughness: 0.68 });
+          mesh.matrixAutoUpdate = false;
+          mesh.matrix.copy(translation).multiply(object.matrixWorld);
+          this.registeredBones.add(mesh);
+          this.registeredBoneMeshes.set(boneRule.body + ':' + object.name, { mesh, standingWorld: mesh.matrix.clone() });
+          return;
+        }
+        // 上半身肌肉：规则来自同一份来源清单，命中即按研究网格加入（静态，不接运动学——它们在默认视图里
+        // 本就不动，接进去反而可能因为缺少对应体段帧而报错）。
+        const upperRules = registeredBoneBodies.upperBodyMuscles?.rules ?? [];
+        const upperRule = object instanceof THREE.Mesh
+          ? upperRules.find(rule => new RegExp(rule.match, 'i').test(object.name))
+          : undefined;
+        if (upperRule) {
+          const mesh = object.clone() as THREE.Mesh;
+          mesh.material = new THREE.MeshStandardMaterial({
+            color: registeredBoneBodies.upperBodyMuscles.color, roughness: 0.68,
+          });
+          mesh.matrixAutoUpdate = false;
+          mesh.matrix.copy(translation).multiply(object.matrixWorld);
+          this.registeredBones.add(mesh);
+          const counts = JSON.parse(this.container.dataset.upperBodyMuscles ?? '{}');
+          counts[upperRule.group] = (counts[upperRule.group] ?? 0) + 1;
+          counts.meshes = (counts.meshes ?? 0) + 1;
+          this.container.dataset.upperBodyMuscles = JSON.stringify(counts);
+          return;
+        }
         if (object instanceof THREE.Mesh && muscleSpec) {
           const geometry = object.geometry.clone();
           geometry.applyMatrix4(translation.clone().multiply(object.matrixWorld));
@@ -1050,12 +1292,16 @@ export class AnatomyPrototype {
         const mesh = object.clone();
         mesh.material = new THREE.MeshStandardMaterial({ color: 0xefb863, roughness: 0.68, side: THREE.DoubleSide });
         mesh.matrixAutoUpdate = false;
-        mesh.matrix.copy(translation).multiply(object.matrixWorld);
+        const offset = boneOffsets.get(body);
+        mesh.matrix.copy(translation);
+        if (offset) mesh.matrix.multiply(offset);
+        mesh.matrix.multiply(object.matrixWorld);
         this.registeredBones.add(mesh);
         this.registeredBoneMeshes.set(body + ':' + object.name,
           { mesh, standingWorld: mesh.matrix.clone() });
       });
-      if (this.registeredBoneMeshes.size !== 6 || this.registeredMuscles.size !== Object.keys(registeredMuscleSpecs).length) {
+      // 六个具名骨骼之外还有按规则加入的脊柱与肋骨网格，所以这里只要求不少于六个。
+      if (this.registeredBoneMeshes.size < 6 || this.registeredMuscles.size !== Object.keys(registeredMuscleSpecs).length) {
         this.registeredBonesError = true;
         console.error('解剖骨骼或肌肉名称匹配失败', this.registeredBoneMeshes.size, this.registeredMuscles.size,
           JSON.stringify(gltfScene.children.map(child => child.name).filter(name => /Femur|Tibia|Fibula|Hip|Patella|Calcaneus/.test(name))));
@@ -1065,6 +1311,29 @@ export class AnatomyPrototype {
       } else {
         this.registeredBonesLoaded = true;
         this.registeredBones.visible = this.registeredBonesEnabled;
+        // ⑤：来源清单说这五个体段用研究网格，于是把它们在默认视图里的导出网格从场景中移出（不是隐藏，
+        // 因为图层刷新会重设可见性）。加载失败时走不到这里，默认视图保持原样。
+        const researchBodies = new Set(registeredBoneBodies.geometrySource.research);
+        for (const fit of this.fullBodyBoneFits) {
+          if (researchBodies.has(fit.body)) {
+            // 这些网格挂在加载进来的 glTF 场景下，而 this.anatomy.remove() 只删直接子节点——以前这行等于
+            // 什么都没删，默认视图同时画着导出网格与研究网格，只有上报的标志位说"换过了"。审计（把移除整步
+            // 停掉后检查照样通过）把这件事揪了出来。这里改成从真正的父节点摘除，并记下父节点备还原。
+            fit.mesh.userData.originParent = fit.mesh.parent;
+            fit.mesh.parent?.remove(fit.mesh);
+            this.swappedBodies.add(fit.body);
+          }
+        }
+        this.researchGeometryActive = this.swappedBodies.size > 0;
+        this.container.dataset.geometrySwap = JSON.stringify({
+          active: this.researchGeometryActive, swapped: [...this.swappedBodies],
+          researchMeshCount: this.registeredBoneMeshes.size,
+          // 从场景图数出来，而不是从标志位推导：移除会把 parent 置空，所以这个数必须为 0。
+          // 上一轮审计证明，只断言 active 的话，把"移除"整步删掉检查照样通过。
+                    // 只数"用研究网格替换的那几段"：其余 23 段本来就该留在场景里，数进来等于断言永远不成立。
+          exportMeshesRemaining: this.fullBodyBoneFits
+            .filter(fit => researchBodies.has(fit.body) && fit.mesh.parent !== null).length,
+        });
       }
       onAssetChange?.();
     }).catch(error => {
@@ -1078,6 +1347,11 @@ export class AnatomyPrototype {
     showBones: boolean, showMuscles: boolean, selectedMuscle: string,
     profile: BodyProfile, colorMode: RegisteredMuscleColorMode): void {
     this.registeredBones.visible = this.registeredBonesEnabled && this.registeredBonesLoaded && (showBones || showMuscles);
+    // 场景派生上报（增补之八十一）：读图层对象自身的 visible，用来分辨"开关没生效"与"生效了但没隐藏"。
+    this.container.dataset.layerVisibility = JSON.stringify({
+      groupVisible: this.registeredBones.visible,
+      enabled: this.registeredBonesEnabled,
+    });
     if (!this.registeredBones.visible || !frame.blenderBodyFrames || !standing.blenderBodyFrames) return;
     const toGlTf = new THREE.Matrix4().set(
       1, 0, 0, 0,  0, 0, 1, 0,  0, -1, 0, 0,  0, 0, 0, 1,
@@ -1369,6 +1643,301 @@ export class AnatomyPrototype {
     }
   }
 
+  // Exported OpenSim path points move with their parent bodies. This preserves named anatomy while leaving
+  // wrapping and muscle forces explicitly unsolved; the 44 source wrapping surfaces only show at rest.
+  private openSimMuscleMeshes: THREE.Mesh[] = [];
+  private wrapSurfaceMeshes: THREE.Mesh[] = [];
+  private showOpenSimMuscles = true;
+  // What `update` last computed for the skeleton and illustrative layers: the tube switch alone must be able to
+  // turn the tubes back on without knowing what the other two layers are doing.
+  private lastLayerVisibility = { showBones: true, showMuscles: true };
+
+  /** 把被研究网格替换掉的导出网格放回场景：关掉研究层时默认视图必须回到导出几何。 */
+  private restoreSwappedBodies(): void {
+    if (!this.researchGeometryActive) return;
+    for (const fit of this.fullBodyBoneFits) {
+      if (this.swappedBodies.has(fit.body)) ((fit.mesh.userData.originParent as THREE.Object3D | undefined)?.add(fit.mesh) ?? this.anatomy.add(fit.mesh));
+    }
+    this.swappedBodies.clear();
+    this.researchGeometryActive = false;
+    this.container.dataset.geometrySwap = JSON.stringify({ active: false, swapped: [] });
+  }
+
+  private reportMuscleTubes(): void {
+    // The readouts refresh wherever the layer state is reported; the panel itself is created once.
+    if (this.container.querySelector('.viewer-readouts')) this.refreshJointReadouts();
+    else this.bindJointReadouts();
+    this.container.dataset.muscleTubes = JSON.stringify({
+      tubes: this.openSimMuscleMeshes.length,
+      visible: this.openSimMuscleMeshes.filter(mesh => mesh.visible).length,
+    });
+  }
+
+  private applyTubeVisibility(): void {
+    const visible = this.lastLayerVisibility.showBones && this.lastLayerVisibility.showMuscles
+      && this.showOpenSimMuscles;
+    for (const mesh of this.openSimMuscleMeshes) mesh.visible = visible;
+    for (const mesh of this.wrapSurfaceMeshes) mesh.visible = visible && this.wrapsAtNeutralPose;
+    this.reportMuscleTubes();
+  }
+
+  /** Hover labels: the name of the body segment or muscle under the pointer. One label at a time, so two labels
+   * can never overlap; it takes no pointer events, so it can never block a control or the model centre; and it
+   * reports where it sits, so "inside the viewport" is measured rather than assumed. */
+  /** Joint angles read off the assembled skeleton, in a corner panel. Anchors are segment centroids: the fit
+   * meshes carry baked geometry and sit at the origin, so a centroid is the only position each body exposes.
+   * The panel wraps and ignores pointer events, so it can neither be cut off nor cover the model centre. */
+  /** 44 个 wrapping 面（模型定义里的圆柱）：画成**线框**——它们是约束面，不是解剖结构，实体圆柱会被误读成
+   * 肌肉。放在真实肌肉层里，随该层开关；变换用导出记录的 translation/rotation 逐级相乘（parent 在前），
+   * 与骨架同一套链条。每个圆柱的中心到最近肌肉路径点的距离会被报出来，用来发现变换链写错。 */
+  private makeWrapSurfaces(): void {
+    const bodies = (fullBodySkeletonExport as { bodies: Array<{ body: string; parent?: string | null;
+      translation: number[]; rotation: number[] }> }).bodies;
+    const byName = new Map(bodies.map(body => [body.body, body]));
+    const poseOf = (name: string): THREE.Matrix4 => {
+      const chain: Array<{ translation: number[]; rotation: number[] }> = [];
+      let current = byName.get(name);
+      while (current) {
+        chain.unshift(current);
+        current = current.parent ? byName.get(current.parent) : undefined;
+      }
+      const matrix = new THREE.Matrix4();
+      for (const node of chain) {
+        matrix.multiply(new THREE.Matrix4().compose(
+          new THREE.Vector3(node.translation[0], node.translation[1], node.translation[2]),
+          new THREE.Quaternion(node.rotation[0], node.rotation[1], node.rotation[2], node.rotation[3]),
+          new THREE.Vector3(1, 1, 1)));
+      }
+      return matrix;
+    };
+    const pathPoints: THREE.Vector3[] = [];
+    type PathMuscle = { pathPoints?: number[][]; points?: number[][] };
+    for (const muscle of (fullBodyMusclePaths.muscles as unknown as PathMuscle[])) {
+      for (const point of muscle.pathPoints ?? muscle.points ?? []) {
+        pathPoints.push(new THREE.Vector3(point[0], point[1], point[2]));
+      }
+    }
+    let rendered = 0;
+    const distances: number[] = [];
+    for (const wrap of wrapSurfaces.records) {
+      const radius = wrap.radiusM;
+      if (typeof radius !== 'number') continue;
+      const geometry = new THREE.CylinderGeometry(radius, radius, radius * 2, 20, 1, true);
+      const mesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
+        color: 0x7fb2d9, wireframe: true, transparent: true, opacity: 0.55,
+      }));
+      mesh.matrixAutoUpdate = false;
+      mesh.matrix.copy(poseOf(wrap.body));
+      mesh.name = 'wrap:' + wrap.name;
+      this.wrapSurfaceMeshes.push(mesh);
+      this.anatomy.add(mesh);
+      rendered += 1;
+      const centre = new THREE.Vector3().setFromMatrixPosition(mesh.matrix);
+      let nearest = Infinity;
+      for (const point of pathPoints) nearest = Math.min(nearest, centre.distanceTo(point));
+      if (Number.isFinite(nearest)) distances.push(nearest);
+    }
+    distances.sort((a, b) => a - b);
+    this.container.dataset.wrapSurfaces = JSON.stringify({
+      rendered,
+      // 必须读材质上的真实属性：这里原来写死成 true，破坏验证（把圆柱改成实体）照样全绿——
+      // 那是"断言了一个常量"，比不检查更危险。
+      wireframe: this.wrapSurfaceMeshes.length > 0
+        && this.wrapSurfaceMeshes.every(mesh => (mesh.material as THREE.MeshBasicMaterial).wireframe === true),
+      nearestPathPointMedianM: distances.length ? Math.round(distances[Math.floor(distances.length / 2)] * 1000) / 1000 : null,
+      nearestPathPointMaxM: distances.length ? Math.round(distances[distances.length - 1] * 1000) / 1000 : null,
+    });
+  }
+
+  private bindJointReadouts(): void {
+    const panel = document.createElement('div');
+    panel.className = 'viewer-readouts';
+    panel.style.cssText = 'position:absolute;left:var(--space-3);bottom:var(--space-3);display:block;'
+      + 'pointer-events:none;padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);'
+      + 'font-size:var(--text-12);line-height:1.5;background:#0f1118;color:#f2f4f8;z-index:6;'
+      + 'max-width:calc(100% - var(--space-6));white-space:normal';
+    this.container.append(panel);
+    this.refreshJointReadouts();
+  }
+
+  private refreshJointReadouts(): void {
+    const panel = this.container.querySelector('.viewer-readouts');
+    if (!panel) return;
+    const anchor = (name: string): THREE.Vector3 | null => {
+      const fit = this.fullBodyBoneFits.find(candidate => candidate.body === name)
+        ?? this.fullBodyBoneFits.find(candidate => candidate.body.startsWith(name + '_'));
+      if (!fit) return null;
+      fit.mesh.geometry.computeBoundingBox();
+      const box = fit.mesh.geometry.boundingBox;
+      if (!box) return null;
+      return box.getCenter(new THREE.Vector3()).applyMatrix4(fit.mesh.matrixWorld);
+    };
+    const degrees = (a: THREE.Vector3 | null, b: THREE.Vector3 | null, at: THREE.Vector3 | null) => {
+      if (!a || !b || !at) return null;
+      const u = a.clone().sub(at); const v = b.clone().sub(at);
+      if (u.length() < 1e-6 || v.length() < 1e-6) return null;
+      return Math.round(((u.angleTo(v) * 180) / Math.PI) * 10) / 10;
+    };
+    const pelvis = anchor('pelvis_sacrum'); const spine = anchor('torso_spine');
+    const femur = anchor('femur_r'); const tibia = anchor('tibia_r');
+    const talus = anchor('talus_r');
+    const values = {
+      hipDeg: degrees(spine, femur, pelvis), kneeDeg: degrees(pelvis, tibia, femur),
+      ankleDeg: degrees(femur, talus, tibia),
+    };
+    const items = ['髋 ' + values.hipDeg + '°', '膝 ' + values.kneeDeg + '°', '踝 ' + values.ankleDeg + '°'];
+    panel.textContent = items.join(' · ');
+    const box = panel.getBoundingClientRect();
+    const canvas = this.container.getBoundingClientRect();
+    const centreX = canvas.left + canvas.width / 2; const centreY = canvas.top + canvas.height / 2;
+    this.container.dataset.jointReadouts = JSON.stringify({
+      ...values, items: items.length,
+      pointerEvents: getComputedStyle(panel).pointerEvents,
+      insideViewport: box.left >= 0 && box.top >= 0
+        && box.right <= window.innerWidth && box.bottom <= window.innerHeight,
+      // The page is taller than the fold, so a panel anchored to the canvas bottom can be outside the viewport
+      // while still being exactly where it belongs: inside its canvas. That is the constraint that matters.
+      insideCanvas: box.left >= canvas.left - 1 && box.top >= canvas.top - 1
+        && box.right <= canvas.right + 1 && box.bottom <= canvas.bottom + 1,
+      coversCentre: centreX >= box.left && centreX <= box.right && centreY >= box.top && centreY <= box.bottom,
+    });
+  }
+
+  private bindHoverLabel(): void {
+    const label = document.createElement('div');
+    label.className = 'viewer-hover-label';
+    label.style.cssText = 'position:absolute;left:0;top:0;pointer-events:none;display:none;'
+      + 'padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);font-size:var(--text-12);'
+      + 'background:#0f1118;color:#f2f4f8;z-index:6;white-space:nowrap';
+    this.container.append(label);
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    const targets = [...this.fullBodyBoneFits.map(fit => fit.mesh), ...this.openSimMuscleMeshes];
+    const hide = () => {
+      label.style.display = 'none';
+      this.container.dataset.hoverLabel = JSON.stringify({ text: '', visible: false });
+    };
+    this.container.addEventListener('pointermove', event => {
+      const rect = this.container.getBoundingClientRect();
+      pointer.set(((event.clientX - rect.left) / rect.width) * 2 - 1,
+        -((event.clientY - rect.top) / rect.height) * 2 + 1);
+      raycaster.setFromCamera(pointer, this.camera);
+      const hit = raycaster.intersectObjects(targets, false).find(entry => entry.object.visible);
+      const text = hit ? String(hit.object.name || '').replace(/^muscle:/, '')
+        + (hit.object.userData.lengthRatio === undefined ? ''
+          : ` · 路径 ${((Number(hit.object.userData.lengthRatio) - 1) * 100) >= 0 ? '+' : ''}${((Number(hit.object.userData.lengthRatio) - 1) * 100).toFixed(1)}%`) : '';
+      if (!text) { hide(); return; }
+      label.textContent = text;
+      label.style.display = 'block';
+      label.style.left = `${event.clientX - rect.left + 12}px`;
+      label.style.top = `${event.clientY - rect.top + 12}px`;
+      const box = label.getBoundingClientRect();
+      this.container.dataset.hoverLabel = JSON.stringify({
+        text, visible: true,
+        insideViewport: box.left >= 0 && box.top >= 0
+          && box.right <= window.innerWidth && box.bottom <= window.innerHeight,
+        pointerEvents: getComputedStyle(label).pointerEvents,
+      });
+    });
+    this.container.addEventListener('pointerleave', hide);
+  }
+
+  private makeOpenSimMuscles(): void {
+    // A radius per muscle group: the export carries paths, not thicknesses, so these are the visible scales of
+    // the groups the model's 80 muscles fall into (hip, quadriceps, hamstrings, calf, then the thin peroneal,
+    // tibial and toe muscles). Documented as an approximation, not measured from the model.
+    const radiusFor = (name: string): number => {
+      if (/^(glmax|glmed|glmin|piri)/.test(name)) return 0.030;
+      if (/^(recfem|vaslat|vasmed|vasint|sart|tfl)/.test(name)) return 0.022;
+      if (/^(bflh|bfsh|semimem|semiten|grac|add)/.test(name)) return 0.019;
+      if (/^(gaslat|gasmed|soleus)/.test(name)) return 0.021;
+      return 0.010;
+    };
+    const geometryCache = new Map<string, THREE.BufferGeometry>();
+    for (const muscle of fullBodyMusclePaths.muscles) {
+      const cacheKey = muscle.name;
+      let geometry = geometryCache.get(cacheKey);
+      if (!geometry) {
+        const points = muscle.pathPoints.map(sourceToViewer);
+        const curve = new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.35);
+        geometry = new THREE.TubeGeometry(curve, Math.max(10, points.length * 5), radiusFor(muscle.name), 6, false);
+        geometryCache.set(cacheKey, geometry);
+      }
+      const material = new THREE.MeshStandardMaterial({
+        color: 0x9e8290, roughness: 0.66, emissive: 0x0f1118,
+      });
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.name = `muscle:${muscle.name}`;
+      this.anatomy.add(mesh);
+      this.openSimMuscleMeshes.push(mesh);
+    }
+    this.container.dataset.muscleGeometry = JSON.stringify({
+      source: 'docs/data/full_body_muscle_paths.json',
+      model: 'RajagopalLaiUhlrich2023',
+      pose: 'body-bound rigid path approximation; wrapping is not recalculated',
+      muscles: fullBodyMusclePaths.muscleCount,
+      tubes: this.openSimMuscleMeshes.length,
+      pathPoints: fullBodyMusclePaths.totalPathPoints,
+      wrappingSurfaces: fullBodyMusclePaths.musclesWithWrapping,
+    });
+    // View presets as buttons, floating inside the canvas so they cost the model no height. In the toolbar they
+    // pushed the canvas from 672px to 572px of a 1080px viewport — under the 60% floor this project holds — which
+    // is why they live here and why that floor is asserted.
+    if (getComputedStyle(this.container).position === 'static') this.container.style.position = 'relative';
+    const presetGroup = document.createElement('div');
+    presetGroup.className = 'viewer-presets';
+    presetGroup.setAttribute('role', 'group');
+    presetGroup.setAttribute('aria-label', '视角预设');
+    presetGroup.style.cssText =
+      'position:absolute;top:var(--space-3);right:var(--space-3);display:flex;gap:var(--space-1);z-index:5';
+    const presetLabels: Array<[string, string]> = [['front', '正面'], ['back', '背面'], ['left', '左侧'],
+      ['right', '右侧'], ['threeQuarter', '四分之三']];
+    for (const [preset, label] of presetLabels) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'view-tab';
+      button.dataset.preset = preset;
+      button.textContent = label;
+      button.title = `${label}视角`;
+      button.setAttribute('aria-pressed', 'false');
+      button.addEventListener('click', () => {
+        this.applyViewPreset(preset as 'front' | 'back' | 'left' | 'right' | 'threeQuarter');
+        presetGroup.querySelectorAll('button').forEach(other =>
+          other.setAttribute('aria-pressed', String(other === button)));
+      });
+      presetGroup.append(button);
+    }
+    this.container.append(presetGroup);
+    // The real muscle layer has its own switch, and it sits with the presets on the canvas: in the toolbar the
+    // extra label wrapped the layer row at 1440x900 and took the canvas to 520px of 900, under the 60% floor.
+    const tubeLabel = document.createElement('label');
+    tubeLabel.className = 'view-tab';
+    tubeLabel.title = '真实肌肉（OpenSim 路径扫出的 80 根管）';
+    const tubeToggle = document.createElement('input');
+    tubeToggle.type = 'checkbox';
+    tubeToggle.id = 'muscle-tubes-toggle';
+    tubeToggle.checked = this.showOpenSimMuscles;
+    tubeToggle.addEventListener('change', () => {
+      this.showOpenSimMuscles = tubeToggle.checked;
+      this.applyTubeVisibility();
+    });
+    tubeLabel.append(tubeToggle, document.createTextNode('真实肌肉'));
+    presetGroup.append(tubeLabel);
+    this.makeWrapSurfaces();
+    this.bindHoverLabel();
+    // 10 MB 的研究资源不进首屏：第一次交互或空闲后再拉，画面与启动预算都不受影响。
+    const afterFirstPaint = () => {
+      const toggle = document.getElementById('registered-bones-toggle') as HTMLInputElement | null;
+      if (toggle && !toggle.checked) { toggle.checked = true; }
+      // 程序化勾选不会触发 change，而 registeredBonesMode 只在 change 里更新——不补这一下，界面永远不显示"研究叠加"，离线与界面检查就都等不到加载完成的标志。
+      document.querySelector<HTMLInputElement>('#registered-bones-toggle')?.dispatchEvent(new Event('change', { bubbles: true }));
+      this.setRegisteredBonesEnabled(true, () => {});
+    };
+    if (typeof requestIdleCallback === 'function') requestIdleCallback(afterFirstPaint, { timeout: 4000 });
+    else window.setTimeout(afterFirstPaint, 1200);
+    this.reportMuscleTubes();
+  }
+
   private addMuscle(label: string, category: Muscle['category'], points: Muscle['points']): void {
     const mesh = new THREE.Mesh(
       new THREE.SphereGeometry(1, 16, 10),
@@ -1384,22 +1953,54 @@ export class AnatomyPrototype {
 
   private makeMuscles(): void {
     buildIllustrativeMuscles((label, category, points) => this.addMuscle(label, category, points));
+    this.makeOpenSimMuscles();
   }
 
-  update(profile: BodyProfile, exercise: ExerciseId, phase: number, view: ViewMode, showBones: boolean, showMuscles: boolean, loadKg = 20, opensimFrame?: OpenSimFrame, selectedOpenSimMuscle = 'vas_int_r', opensimStandingFrame?: OpenSimFrame, squatBarOffsetCm = 0, selectedIllustrativeMuscle = '', squatDepthDeg?: number, registeredColorMode: RegisteredMuscleColorMode = 'identity', momentOverlay: JointMomentOverlay = []): Array<{ label: string; ratio: number; lengthM: number; baselineM: number }> {
+  setPoseEditEnabled(enabled: boolean,
+    onChange?: (handle: PoseHandle, point: [number, number, number]) => void): void {
+    this.poseEditEnabled = enabled;
+    this.onPoseChange = enabled ? onChange : undefined;
+    if (!enabled) for (const handle of this.poseHandles.values()) handle.visible = false;
+  }
+
+  update(profile: BodyProfile, exercise: ExerciseId, phase: number, view: ViewMode, showBones: boolean, showMuscles: boolean, loadKg = 20, opensimFrame?: OpenSimFrame, selectedOpenSimMuscle = 'vas_int_r', opensimStandingFrame?: OpenSimFrame, squatBarOffsetCm = 0, selectedIllustrativeMuscle = '', squatDepthDeg?: number, registeredColorMode: RegisteredMuscleColorMode = 'identity', momentOverlay: JointMomentOverlay = [], showOutline = true, poseOverrides: PoseOverrides = {}): Array<{ label: string; ratio: number; lengthM: number; baselineM: number }> {
     this.currentProfile = profile;
     if (this.referenceMode && this.referenceLoaded) this.updateReferenceProfile(profile);
-    const pose = createPose(profile, exercise, phase, squatBarOffsetCm, squatDepthDeg);
-    const reference = createPose(profile, exercise, 0, squatBarOffsetCm, squatDepthDeg);
+    const basePose = createPose(profile, exercise, phase, squatBarOffsetCm, squatDepthDeg);
+    const pose = this.poseEditEnabled
+      ? applyPoseOverrides(basePose, profile, exercise, poseOverrides) : basePose;
+    const reference = createPose(profile, exercise,
+      this.poseEditEnabled ? phase : 0, squatBarOffsetCm, squatDepthDeg);
+    // The skeleton the user sees is the app's own teaching skeleton, scaled from the body data exactly the
+    // way the OpenSim probe recorded; this hands the applied factors to `check:skeleton-scaling`.
+    this.loadFullBodySkeleton();
+    this.announceSkeletonScale(profile,
+      this.fullBodyBonesLoaded && showBones ? this.fullBodyBoneFits.length : 0);
     for (let i = 0; i < boneConnections.length; i++) {
       const [a, b] = boneConnections[i];
       positionBetween(this.bones[i], pose[a], pose[b], 0.022 * profile.heightCm / 175);
+      const direction = pose[b].clone().sub(pose[a]);
+      for (const fit of this.fullBodyBonesLoaded ? this.fullBodyBoneFits : []) {
+        if (fit.segment !== `${a}->${b}`) continue;
+        // The cylinder is hidden only where a real bone took its place, so a segment without a fit keeps it.
+        this.bones[i].visible = false;
+        fit.mesh.visible = showBones;
+        const quaternion = new THREE.Quaternion().setFromUnitVectors(
+          new THREE.Vector3(0, 1, 0), direction.clone().normalize());
+        fit.mesh.matrix.compose(pose[a].clone().addScaledVector(direction, 0.5), quaternion,
+          new THREE.Vector3(profile.heightCm / 175, direction.length() / 2, profile.heightCm / 175));
+        fit.mesh.matrix.multiply(fit.mesh.userData.fit as THREE.Matrix4);
+      }
       this.bones[i].visible = showBones;
     }
     const jointNames = Object.keys(pose) as JointName[];
     for (let i = 0; i < this.joints.length; i++) {
       this.joints[i].position.copy(pose[jointNames[i]]);
       this.joints[i].visible = showBones;
+    }
+    for (const [name, handle] of this.poseHandles) {
+      handle.position.copy(pose[name]);
+      handle.visible = this.poseEditEnabled && showBones;
     }
     const outer = profileOuterDimensions(profile);
     const statureScale = profile.heightCm / 175;
@@ -1427,16 +2028,44 @@ export class AnatomyPrototype {
       else material.color.set(pathLengthColor(ratio));
       values.push({ label: muscle.label, ratio, lengthM, baselineM: muscle.baseline });
     }
+    const posedFrames = musclePathFrames(pose, profile);
+    const referenceFrames = musclePathFrames(reference, profile);
+    let longer = 0;
+    let shorter = 0;
+    for (let i = 0; i < this.openSimMuscleMeshes.length; i++) {
+      const source = fullBodyMusclePaths.muscles[i];
+      const mesh = this.openSimMuscleMeshes[i];
+      const points = posedMusclePoints(source, posedFrames);
+      const baselineM = polylineLength(posedMusclePoints(source, referenceFrames));
+      const ratio = polylineLength(points) / baselineM;
+      reshapeMuscleTube(mesh.geometry as THREE.TubeGeometry, points);
+      (mesh.material as THREE.MeshStandardMaterial).color.set(pathLengthColor(ratio));
+      mesh.userData.lengthRatio = ratio;
+      mesh.visible = showBones && showMuscles && this.showOpenSimMuscles;
+      if (ratio > 1.025) longer++;
+      if (ratio < 0.975) shorter++;
+    }
+    // The original OpenSim wrapping cylinders are fixed in its default pose. Keep them out of moving poses.
+    this.wrapsAtNeutralPose = !this.poseEditEnabled && phase === 0;
+    this.lastLayerVisibility = { showBones, showMuscles };
+    this.container.dataset.dynamicMuscles = JSON.stringify({
+      source: 'OpenSim RajagopalLaiUhlrich2023', count: this.openSimMuscleMeshes.length,
+      longer, shorter, method: 'rigid body-bound path approximation', wrappingRecalculated: false,
+      poseEdited: this.poseEditEnabled,
+    });
+    for (const mesh of this.wrapSurfaceMeshes) mesh.visible = this.wrapsAtNeutralPose
+      && showBones && showMuscles && this.showOpenSimMuscles;
+    this.reportMuscleTubes();
     shapeTorso(this.skin, pose.pelvis, pose.chest,
       outer.waistHalfWidthM, outer.waistHalfDepthM,
       outer.chestHalfWidthM, outer.chestHalfDepthM, statureScale);
-    this.skin.visible = showMuscles;
+    this.skin.visible = showOutline;
     const outlineRadius = {
       upperArm: outer.upperArmRadiusM, thigh: outer.thighRadiusM, calf: outer.calfRadiusM,
     };
     for (const segment of this.skinSegments) {
       positionBetween(segment.mesh, pose[segment.start], pose[segment.end], outlineRadius[segment.type]);
-      segment.mesh.visible = showMuscles;
+      segment.mesh.visible = showOutline;
     }
     if (exercise === 'bench') {
       this.root.rotation.x = -Math.PI / 2;
@@ -1500,6 +2129,20 @@ export class AnatomyPrototype {
     this.updateMomentMarkers(pose, opensimFrame, exercise, view, momentOverlay);
     this.updateCamera();
     this.renderer.render(this.scene, this.camera);
+    this.container.dataset.poseHandles = JSON.stringify(Object.fromEntries(
+      [...this.poseHandles].map(([name, mesh]) => {
+        const projected = mesh.getWorldPosition(new THREE.Vector3()).project(this.camera);
+        const canvas = this.renderer.domElement.getBoundingClientRect();
+        return [name, { x: canvas.left + (projected.x + 1) * canvas.width / 2,
+          y: canvas.top + (1 - projected.y) * canvas.height / 2, visible: mesh.visible }];
+      })));
+    this.container.dataset.poseSegments = JSON.stringify(Object.fromEntries(
+      (['L', 'R'] as const).flatMap(side => [
+        [`upperArm${side}`, pose[`shoulder${side}`].distanceTo(pose[`elbow${side}`])],
+        [`forearm${side}`, pose[`elbow${side}`].distanceTo(pose[`wrist${side}`])],
+        [`femur${side}`, pose[`hip${side}`].distanceTo(pose[`knee${side}`])],
+        [`tibia${side}`, pose[`knee${side}`].distanceTo(pose[`ankle${side}`])],
+      ])));
     return values;
   }
 
@@ -1515,6 +2158,109 @@ export class AnatomyPrototype {
     this.camera.lookAt(this.target);
   }
 
+  // The pointer is not the only way in: `#viewer` is focusable and its label names the keys, so the same
+  // rotation and zoom must work from the keyboard. The camera state is mirrored onto the host element as
+  // data, which is also what `check:ui-dom` reads to prove the keys moved the camera.
+  private announceCamera(): void {
+    this.container.dataset.orientation = `${this.azimuth.toFixed(3)},${this.elevation.toFixed(3)}`;
+    this.container.dataset.distance = this.distance.toFixed(3);
+  }
+
+  // What the runtime actually scales, mirrored onto the host element as data so `check:skeleton-scaling` can
+  // compare the shipped code with OpenSim's own numbers. The OpenSim probe measured two things this has to
+  // match: a stature factor scales every body uniformly, and a girth factor is a mesh-level change that does
+  // not move a joint. So every bone takes the stature factor on all three axes and never a girth factor, and
+  // the girth ratios below describe the torso cross-section and the illustrative muscle thickness only.
+  private announceFullBodyBones(): void {
+    const fitted = new Set(this.fullBodyBoneFits.map(fit => fit.segment));
+    let triangles = 0;
+    for (const fit of this.fullBodyBoneFits) {
+      const geometry = fit.mesh.geometry;
+      triangles += (geometry.index ? geometry.index.count : geometry.attributes.position.count) / 3;
+    }
+    this.container.dataset.fullBodyBones = JSON.stringify({
+      model: 'RajagopalLaiUhlrich2023',
+      meshes: this.fullBodyBoneFits.length,
+      segments: [...fitted],
+      triangles: Math.round(triangles),
+      teachingSegments: boneConnections.length,
+      fallbackSegments: boneConnections.map(([a, b]) => `${a}->${b}`).filter(segment => !fitted.has(segment)),
+    });
+    // The exported OpenSim muscle paths are the data layer that replaces the illustrative cylinders. Reporting
+    // them here holds the app to the same 80 muscles the exporter wrote, so the two cannot drift apart.
+    this.container.dataset.musclePaths = JSON.stringify({
+      source: 'docs/data/full_body_muscle_paths.json',
+      model: 'RajagopalLaiUhlrich2023',
+      muscles: fullBodyMusclePaths.muscleCount,
+      points: fullBodyMusclePaths.totalPathPoints,
+      wrapping: fullBodyMusclePaths.musclesWithWrapping,
+      wrapObjects: fullBodyMusclePaths.wrapObjects.length,
+    });
+  }
+
+  private loadFullBodySkeleton(): void {
+    if (this.fullBodyBonesRequested) return;
+    this.fullBodyBonesRequested = true;
+    new GLTFLoader().load('/models/full_body_skeleton.glb', gltf => {
+      const extras = (gltf.parser.json.asset?.extras ?? {}) as { segments?: Array<{ segment: string; body: string; offset: number[] }> };
+      for (const fit of extras.segments ?? []) {
+        const source = gltf.scene.getObjectByName(fit.body);
+        if (!(source instanceof THREE.Mesh)) continue;
+        const mesh = new THREE.Mesh(source.geometry.clone(), new THREE.MeshStandardMaterial({
+          color: 0xe6dfcd, roughness: 0.6, side: THREE.DoubleSide,
+        }));
+        mesh.matrixAutoUpdate = false;
+        mesh.visible = false;
+        mesh.userData.fit = new THREE.Matrix4().fromArray(fit.offset);
+        this.fullBodyBones.add(mesh);
+        this.fullBodyBoneFits.push({ segment: fit.segment, body: fit.body, mesh });
+      }
+      this.fullBodyBonesLoaded = this.fullBodyBoneFits.length > 0;
+      this.announceFullBodyBones();
+      this.onAssetChange?.();
+    }, undefined, () => {
+      // A missing or broken export silently falls back to the teaching cylinders rather than drawing nothing.
+      this.fullBodyBoneFits.length = 0;
+      this.fullBodyBonesLoaded = false;
+    });
+  }
+
+  private announceSkeletonScale(profile: BodyProfile, boneMeshesVisible: number): void {
+    const stature = profile.heightCm / 175;
+    const outer = profileOuterDimensions(profile);
+    const reference = profileOuterDimensions({
+      ...profile, waistCm: undefined, chestCm: undefined, upperArmCm: undefined,
+      thighCm: undefined, calfCm: undefined,
+    });
+    const ratio = (value: number, baseline: number) => (baseline > 0 ? value / baseline : 1);
+    const bones: Record<string, [number, number, number]> = {};
+    for (const body of ['pelvis', 'torso', 'femur_r', 'femur_l', 'tibia_r', 'tibia_l', 'patella_r', 'patella_l',
+      'talus_r', 'talus_l', 'calcn_r', 'calcn_l', 'toes_r', 'toes_l', 'humerus_r', 'humerus_l', 'ulna_r', 'ulna_l',
+      'radius_r', 'radius_l', 'hand_r', 'hand_l']) {
+      bones[body] = [stature, stature, stature];
+    }
+    this.container.dataset.skeletonScale = JSON.stringify({
+      referenceHeightCm: 175,
+      boneMeshesVisible,
+      heightCm: profile.heightCm,
+      heightFactor: stature,
+      bones,
+      girth: {
+        chest: [ratio(outer.chestHalfWidthM, reference.chestHalfWidthM), 1,
+          ratio(outer.chestHalfDepthM, reference.chestHalfDepthM)],
+        waist: [ratio(outer.waistHalfWidthM, reference.waistHalfWidthM), 1,
+          ratio(outer.waistHalfDepthM, reference.waistHalfDepthM)],
+        thigh: [ratio(outer.thighRadiusM, reference.thighRadiusM), 1,
+          ratio(outer.thighRadiusM, reference.thighRadiusM)],
+        calf: [ratio(outer.calfRadiusM, reference.calfRadiusM), 1,
+          ratio(outer.calfRadiusM, reference.calfRadiusM)],
+        arm: [ratio(outer.upperArmRadiusM, reference.upperArmRadiusM), 1,
+          ratio(outer.upperArmRadiusM, reference.upperArmRadiusM)],
+      },
+      note: '骨骼只随身高等比缩放，围度只改外形不改关节位置——与 OpenSim 探针实测一致；研究层仍输出真 OpenSim 数字。',
+    });
+  }
+
   private resize(): void {
     const width = this.container.clientWidth;
     const height = this.container.clientHeight;
@@ -1528,6 +2274,17 @@ export class AnatomyPrototype {
   private installControls(): void {
     const canvas = this.renderer.domElement;
     canvas.style.touchAction = 'none';
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    const dragPlane = new THREE.Plane();
+    let draggingHandle: PoseHandle | undefined;
+    const pointFromPointer = (event: PointerEvent): THREE.Vector3 | undefined => {
+      const rect = canvas.getBoundingClientRect();
+      pointer.set((event.clientX - rect.left) / rect.width * 2 - 1,
+        -(event.clientY - rect.top) / rect.height * 2 + 1);
+      raycaster.setFromCamera(pointer, this.camera);
+      return raycaster.ray.intersectPlane(dragPlane, new THREE.Vector3()) ?? undefined;
+    };
     let lastX = 0;
     let lastY = 0;
     let pointerStartX = 0;
@@ -1535,6 +2292,22 @@ export class AnatomyPrototype {
     let moved = false;
     let active = false;
     canvas.addEventListener('pointerdown', event => {
+      if (this.poseEditEnabled) {
+        const rect = canvas.getBoundingClientRect();
+        pointer.set((event.clientX - rect.left) / rect.width * 2 - 1,
+          -(event.clientY - rect.top) / rect.height * 2 + 1);
+        this.scene.updateMatrixWorld(true);
+        raycaster.setFromCamera(pointer, this.camera);
+        const hit = raycaster.intersectObjects([...this.poseHandles.values()], false)
+          .find(item => item.object.visible);
+        if (hit) {
+          draggingHandle = [...this.poseHandles].find(([, mesh]) => mesh === hit.object)?.[0];
+          dragPlane.setFromNormalAndCoplanarPoint(this.camera.getWorldDirection(new THREE.Vector3()),
+            hit.object.getWorldPosition(new THREE.Vector3()));
+          canvas.setPointerCapture(event.pointerId);
+          return;
+        }
+      }
       active = true;
       lastX = event.clientX;
       lastY = event.clientY;
@@ -1544,6 +2317,15 @@ export class AnatomyPrototype {
       canvas.setPointerCapture(event.pointerId);
     });
     canvas.addEventListener('pointermove', event => {
+      if (draggingHandle) {
+        const world = pointFromPointer(event);
+        if (world) {
+          this.scene.updateMatrixWorld(true);
+          const local = this.anatomy.worldToLocal(world);
+          this.onPoseChange?.(draggingHandle, [local.x, local.y, local.z]);
+        }
+        return;
+      }
       if (!active) return;
       if (Math.hypot(event.clientX - pointerStartX, event.clientY - pointerStartY) > 5) moved = true;
       this.azimuth += (event.clientX - lastX) * 0.008;
@@ -1552,8 +2334,10 @@ export class AnatomyPrototype {
       lastY = event.clientY;
       this.updateCamera();
       this.renderer.render(this.scene, this.camera);
+      this.announceCamera();
     });
     canvas.addEventListener('pointerup', event => {
+      if (draggingHandle) { draggingHandle = undefined; return; }
       if (active && !moved && this.referenceMode && this.referenceLoaded) {
         const rect = canvas.getBoundingClientRect();
         const pointer = new THREE.Vector2(
@@ -1579,12 +2363,47 @@ export class AnatomyPrototype {
       }
       active = false;
     });
-    canvas.addEventListener('pointercancel', () => { active = false; });
+    canvas.addEventListener('pointercancel', () => { active = false; draggingHandle = undefined; });
     canvas.addEventListener('wheel', event => {
       event.preventDefault();
       this.distance = clamp(this.distance + event.deltaY * 0.003, 1.7, 6);
       this.updateCamera();
       this.renderer.render(this.scene, this.camera);
     }, { passive: false });
+    // Keyboard equivalent of the drag and the wheel: the focusable host (`#viewer`, tabindex="0")
+    // handles the arrow keys and the zoom keys, so a keyboard-only user can look at the model from any
+    // side and at any distance. Anything else is ignored. The bounds match the wheel handler's.
+    this.container.addEventListener('keydown', event => {
+      const rotationStep = 0.08;
+      const zoomStep = 0.25;
+      const zoom = (delta: number) => () => { this.distance = clamp(this.distance + delta, 1.7, 6); };
+      const actions: Record<string, () => void> = {
+        ArrowLeft: () => { this.azimuth -= rotationStep; },
+        ArrowRight: () => { this.azimuth += rotationStep; },
+        // View presets: 1 正面 / 2 背面 / 3 左侧 / 4 右侧 / 5 四分之三. Both `key` and `code` are accepted
+        // because a check dispatches the event itself and should not have to know which one this map reads.
+        '1': () => this.applyViewPreset('front'),
+        '2': () => this.applyViewPreset('back'),
+        '3': () => this.applyViewPreset('left'),
+        '4': () => this.applyViewPreset('right'),
+        '5': () => this.applyViewPreset('threeQuarter'),
+        ArrowUp: () => { this.elevation = clamp(this.elevation - rotationStep, -1.1, 1.1); },
+        ArrowDown: () => { this.elevation = clamp(this.elevation + rotationStep, -1.1, 1.1); },
+        '=': zoom(-zoomStep),
+        '+': zoom(-zoomStep),
+        PageUp: zoom(-zoomStep),
+        '-': zoom(zoomStep),
+        _: zoom(zoomStep),
+        PageDown: zoom(zoomStep),
+      };
+      const action = actions[event.key];
+      if (!action) return;
+      event.preventDefault();
+      action();
+      this.updateCamera();
+      this.renderer.render(this.scene, this.camera);
+      this.announceCamera();
+    });
+    this.announceCamera();
   }
 }

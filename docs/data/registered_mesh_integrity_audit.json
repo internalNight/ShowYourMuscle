@@ -1,0 +1,3878 @@
+{
+  "status": "research_only_mesh_integrity_audit",
+  "scene": "assets/blender/opensim_eight_muscle_motion.blend",
+  "sceneStatus": "research_eight_muscle_deformations_only",
+  "source": "public/data/squat_opensim_reference.json",
+  "sourceModel": "squatToStand_3dof9musc.osim",
+  "framesChecked": 101,
+  "referenceFrame": 1,
+  "edgeRatioGate": [
+    0.5,
+    1.5
+  ],
+  "boneMeshes": {
+    "atlas_Calcaneus.r": "calcn_r",
+    "atlas_Femur.r": "femur_r",
+    "atlas_Fibula.r": "tibia_r",
+    "atlas_Hip bone.r": "pelvis",
+    "atlas_Patella.r": "patella_r",
+    "atlas_Tibia.r": "tibia_r"
+  },
+  "musclesChecked": {
+    "bifemsh_r": {
+      "object": "atlas_biceps_femoris_short_r_research",
+      "body": "femur_r",
+      "vertexCount": 1238,
+      "polygonCount": 2476,
+      "edgeRatio": {
+        "minimum": 0.6121,
+        "maximum": 1.0255,
+        "minimumFrame": 51,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 0,
+        "maximumFacePairs": 0,
+        "worstFrame": null,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {
+        "atlas_Tibia.r": {
+          "frames": [
+            {
+              "frame": 21,
+              "facePairs": 5,
+              "depthM": 0.0
+            },
+            {
+              "frame": 22,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 23,
+              "facePairs": 13,
+              "depthM": 0.0
+            },
+            {
+              "frame": 24,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 25,
+              "facePairs": 14,
+              "depthM": 0.00041
+            },
+            {
+              "frame": 26,
+              "facePairs": 26,
+              "depthM": 2e-05
+            },
+            {
+              "frame": 27,
+              "facePairs": 43,
+              "depthM": 0.00054
+            },
+            {
+              "frame": 28,
+              "facePairs": 54,
+              "depthM": 0.00076
+            },
+            {
+              "frame": 29,
+              "facePairs": 54,
+              "depthM": 0.00096
+            },
+            {
+              "frame": 30,
+              "facePairs": 60,
+              "depthM": 0.00104
+            },
+            {
+              "frame": 31,
+              "facePairs": 60,
+              "depthM": 0.00175
+            },
+            {
+              "frame": 32,
+              "facePairs": 74,
+              "depthM": 0.00271
+            },
+            {
+              "frame": 33,
+              "facePairs": 74,
+              "depthM": 0.00348
+            },
+            {
+              "frame": 34,
+              "facePairs": 70,
+              "depthM": 0.00275
+            },
+            {
+              "frame": 35,
+              "facePairs": 70,
+              "depthM": 0.00324
+            },
+            {
+              "frame": 36,
+              "facePairs": 72,
+              "depthM": 0.00377
+            },
+            {
+              "frame": 37,
+              "facePairs": 74,
+              "depthM": 0.00256
+            },
+            {
+              "frame": 38,
+              "facePairs": 76,
+              "depthM": 0.00317
+            },
+            {
+              "frame": 39,
+              "facePairs": 77,
+              "depthM": 0.00373
+            },
+            {
+              "frame": 40,
+              "facePairs": 75,
+              "depthM": 0.00383
+            },
+            {
+              "frame": 41,
+              "facePairs": 76,
+              "depthM": 0.00358
+            },
+            {
+              "frame": 42,
+              "facePairs": 79,
+              "depthM": 0.00329
+            },
+            {
+              "frame": 43,
+              "facePairs": 85,
+              "depthM": 0.00304
+            },
+            {
+              "frame": 44,
+              "facePairs": 87,
+              "depthM": 0.00284
+            },
+            {
+              "frame": 45,
+              "facePairs": 90,
+              "depthM": 0.00307
+            },
+            {
+              "frame": 46,
+              "facePairs": 97,
+              "depthM": 0.0034
+            },
+            {
+              "frame": 47,
+              "facePairs": 95,
+              "depthM": 0.00367
+            },
+            {
+              "frame": 48,
+              "facePairs": 94,
+              "depthM": 0.00297
+            },
+            {
+              "frame": 49,
+              "facePairs": 92,
+              "depthM": 0.00292
+            },
+            {
+              "frame": 50,
+              "facePairs": 90,
+              "depthM": 0.00288
+            },
+            {
+              "frame": 51,
+              "facePairs": 90,
+              "depthM": 0.00287
+            },
+            {
+              "frame": 52,
+              "facePairs": 90,
+              "depthM": 0.00288
+            },
+            {
+              "frame": 53,
+              "facePairs": 92,
+              "depthM": 0.00292
+            },
+            {
+              "frame": 54,
+              "facePairs": 94,
+              "depthM": 0.00297
+            },
+            {
+              "frame": 55,
+              "facePairs": 95,
+              "depthM": 0.00367
+            },
+            {
+              "frame": 56,
+              "facePairs": 97,
+              "depthM": 0.0034
+            },
+            {
+              "frame": 57,
+              "facePairs": 90,
+              "depthM": 0.00307
+            },
+            {
+              "frame": 58,
+              "facePairs": 87,
+              "depthM": 0.00284
+            },
+            {
+              "frame": 59,
+              "facePairs": 85,
+              "depthM": 0.00304
+            },
+            {
+              "frame": 60,
+              "facePairs": 79,
+              "depthM": 0.00329
+            },
+            {
+              "frame": 61,
+              "facePairs": 76,
+              "depthM": 0.00358
+            },
+            {
+              "frame": 62,
+              "facePairs": 75,
+              "depthM": 0.00383
+            },
+            {
+              "frame": 63,
+              "facePairs": 77,
+              "depthM": 0.00373
+            },
+            {
+              "frame": 64,
+              "facePairs": 76,
+              "depthM": 0.00317
+            },
+            {
+              "frame": 65,
+              "facePairs": 74,
+              "depthM": 0.00256
+            },
+            {
+              "frame": 66,
+              "facePairs": 72,
+              "depthM": 0.00377
+            },
+            {
+              "frame": 67,
+              "facePairs": 70,
+              "depthM": 0.00324
+            },
+            {
+              "frame": 68,
+              "facePairs": 70,
+              "depthM": 0.00275
+            },
+            {
+              "frame": 69,
+              "facePairs": 74,
+              "depthM": 0.00348
+            },
+            {
+              "frame": 70,
+              "facePairs": 74,
+              "depthM": 0.00271
+            },
+            {
+              "frame": 71,
+              "facePairs": 60,
+              "depthM": 0.00175
+            },
+            {
+              "frame": 72,
+              "facePairs": 60,
+              "depthM": 0.00104
+            },
+            {
+              "frame": 73,
+              "facePairs": 54,
+              "depthM": 0.00096
+            },
+            {
+              "frame": 74,
+              "facePairs": 54,
+              "depthM": 0.00076
+            },
+            {
+              "frame": 75,
+              "facePairs": 43,
+              "depthM": 0.00054
+            },
+            {
+              "frame": 76,
+              "facePairs": 26,
+              "depthM": 2e-05
+            },
+            {
+              "frame": 77,
+              "facePairs": 14,
+              "depthM": 0.00041
+            },
+            {
+              "frame": 78,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 79,
+              "facePairs": 13,
+              "depthM": 0.0
+            },
+            {
+              "frame": 80,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 81,
+              "facePairs": 5,
+              "depthM": 0.0
+            }
+          ],
+          "maximumFacePairs": 97,
+          "maximumDepthM": 0.00383
+        },
+        "tib_ant_r": {
+          "frames": [
+            {
+              "frame": 25,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 26,
+              "facePairs": 28,
+              "depthM": 0.00039
+            },
+            {
+              "frame": 27,
+              "facePairs": 38,
+              "depthM": 0.00066
+            },
+            {
+              "frame": 28,
+              "facePairs": 41,
+              "depthM": 0.00055
+            },
+            {
+              "frame": 29,
+              "facePairs": 43,
+              "depthM": 0.00033
+            },
+            {
+              "frame": 30,
+              "facePairs": 33,
+              "depthM": 0.00048
+            },
+            {
+              "frame": 31,
+              "facePairs": 25,
+              "depthM": 0.00041
+            },
+            {
+              "frame": 32,
+              "facePairs": 21,
+              "depthM": 6e-05
+            },
+            {
+              "frame": 33,
+              "facePairs": 14,
+              "depthM": 9e-05
+            },
+            {
+              "frame": 34,
+              "facePairs": 8,
+              "depthM": 0.0
+            },
+            {
+              "frame": 35,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 36,
+              "facePairs": 6,
+              "depthM": 6e-05
+            },
+            {
+              "frame": 37,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 38,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 39,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 40,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 41,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 42,
+              "facePairs": 8,
+              "depthM": 0.0
+            },
+            {
+              "frame": 43,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 44,
+              "facePairs": 10,
+              "depthM": 0.0
+            },
+            {
+              "frame": 45,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 46,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 47,
+              "facePairs": 14,
+              "depthM": 4e-05
+            },
+            {
+              "frame": 48,
+              "facePairs": 14,
+              "depthM": 0.00019
+            },
+            {
+              "frame": 49,
+              "facePairs": 14,
+              "depthM": 0.0003
+            },
+            {
+              "frame": 50,
+              "facePairs": 14,
+              "depthM": 0.00036
+            },
+            {
+              "frame": 51,
+              "facePairs": 14,
+              "depthM": 0.00038
+            },
+            {
+              "frame": 52,
+              "facePairs": 14,
+              "depthM": 0.00036
+            },
+            {
+              "frame": 53,
+              "facePairs": 14,
+              "depthM": 0.0003
+            },
+            {
+              "frame": 54,
+              "facePairs": 14,
+              "depthM": 0.00019
+            },
+            {
+              "frame": 55,
+              "facePairs": 14,
+              "depthM": 4e-05
+            },
+            {
+              "frame": 56,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 57,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 58,
+              "facePairs": 10,
+              "depthM": 0.0
+            },
+            {
+              "frame": 59,
+              "facePairs": 12,
+              "depthM": 0.0
+            },
+            {
+              "frame": 60,
+              "facePairs": 8,
+              "depthM": 0.0
+            },
+            {
+              "frame": 61,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 62,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 63,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 64,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 65,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 66,
+              "facePairs": 6,
+              "depthM": 6e-05
+            },
+            {
+              "frame": 67,
+              "facePairs": 6,
+              "depthM": 0.0
+            },
+            {
+              "frame": 68,
+              "facePairs": 8,
+              "depthM": 0.0
+            },
+            {
+              "frame": 69,
+              "facePairs": 14,
+              "depthM": 9e-05
+            },
+            {
+              "frame": 70,
+              "facePairs": 21,
+              "depthM": 6e-05
+            },
+            {
+              "frame": 71,
+              "facePairs": 25,
+              "depthM": 0.00041
+            },
+            {
+              "frame": 72,
+              "facePairs": 33,
+              "depthM": 0.00048
+            },
+            {
+              "frame": 73,
+              "facePairs": 43,
+              "depthM": 0.00033
+            },
+            {
+              "frame": 74,
+              "facePairs": 41,
+              "depthM": 0.00055
+            },
+            {
+              "frame": 75,
+              "facePairs": 38,
+              "depthM": 0.00066
+            },
+            {
+              "frame": 76,
+              "facePairs": 28,
+              "depthM": 0.00039
+            },
+            {
+              "frame": 77,
+              "facePairs": 12,
+              "depthM": 0.0
+            }
+          ],
+          "maximumFacePairs": 43,
+          "maximumDepthM": 0.00066
+        },
+        "soleus_r": {
+          "frames": [
+            {
+              "frame": 31,
+              "facePairs": 17,
+              "depthM": 0.0
+            },
+            {
+              "frame": 32,
+              "facePairs": 26,
+              "depthM": 0.00032
+            },
+            {
+              "frame": 33,
+              "facePairs": 33,
+              "depthM": 0.0
+            },
+            {
+              "frame": 34,
+              "facePairs": 41,
+              "depthM": 0.0
+            },
+            {
+              "frame": 35,
+              "facePairs": 43,
+              "depthM": 0.00019
+            },
+            {
+              "frame": 36,
+              "facePairs": 49,
+              "depthM": 0.00023
+            },
+            {
+              "frame": 37,
+              "facePairs": 60,
+              "depthM": 0.00049
+            },
+            {
+              "frame": 38,
+              "facePairs": 73,
+              "depthM": 0.0003
+            },
+            {
+              "frame": 39,
+              "facePairs": 78,
+              "depthM": 3e-05
+            },
+            {
+              "frame": 40,
+              "facePairs": 79,
+              "depthM": 0.00025
+            },
+            {
+              "frame": 41,
+              "facePairs": 74,
+              "depthM": 0.00042
+            },
+            {
+              "frame": 42,
+              "facePairs": 87,
+              "depthM": 0.00067
+            },
+            {
+              "frame": 43,
+              "facePairs": 84,
+              "depthM": 0.00066
+            },
+            {
+              "frame": 44,
+              "facePairs": 89,
+              "depthM": 0.00064
+            },
+            {
+              "frame": 45,
+              "facePairs": 95,
+              "depthM": 0.00076
+            },
+            {
+              "frame": 46,
+              "facePairs": 96,
+              "depthM": 0.00044
+            },
+            {
+              "frame": 47,
+              "facePairs": 102,
+              "depthM": 0.00045
+            },
+            {
+              "frame": 48,
+              "facePairs": 113,
+              "depthM": 0.00067
+            },
+            {
+              "frame": 49,
+              "facePairs": 116,
+              "depthM": 0.00084
+            },
+            {
+              "frame": 50,
+              "facePairs": 116,
+              "depthM": 0.00094
+            },
+            {
+              "frame": 51,
+              "facePairs": 116,
+              "depthM": 0.00097
+            },
+            {
+              "frame": 52,
+              "facePairs": 116,
+              "depthM": 0.00094
+            },
+            {
+              "frame": 53,
+              "facePairs": 116,
+              "depthM": 0.00084
+            },
+            {
+              "frame": 54,
+              "facePairs": 113,
+              "depthM": 0.00067
+            },
+            {
+              "frame": 55,
+              "facePairs": 102,
+              "depthM": 0.00045
+            },
+            {
+              "frame": 56,
+              "facePairs": 96,
+              "depthM": 0.00044
+            },
+            {
+              "frame": 57,
+              "facePairs": 95,
+              "depthM": 0.00076
+            },
+            {
+              "frame": 58,
+              "facePairs": 89,
+              "depthM": 0.00064
+            },
+            {
+              "frame": 59,
+              "facePairs": 84,
+              "depthM": 0.00066
+            },
+            {
+              "frame": 60,
+              "facePairs": 87,
+              "depthM": 0.00067
+            },
+            {
+              "frame": 61,
+              "facePairs": 74,
+              "depthM": 0.00042
+            },
+            {
+              "frame": 62,
+              "facePairs": 79,
+              "depthM": 0.00025
+            },
+            {
+              "frame": 63,
+              "facePairs": 78,
+              "depthM": 3e-05
+            },
+            {
+              "frame": 64,
+              "facePairs": 73,
+              "depthM": 0.0003
+            },
+            {
+              "frame": 65,
+              "facePairs": 60,
+              "depthM": 0.00049
+            },
+            {
+              "frame": 66,
+              "facePairs": 49,
+              "depthM": 0.00023
+            },
+            {
+              "frame": 67,
+              "facePairs": 43,
+              "depthM": 0.00019
+            },
+            {
+              "frame": 68,
+              "facePairs": 41,
+              "depthM": 0.0
+            },
+            {
+              "frame": 69,
+              "facePairs": 33,
+              "depthM": 0.0
+            },
+            {
+              "frame": 70,
+              "facePairs": 26,
+              "depthM": 0.00032
+            },
+            {
+              "frame": 71,
+              "facePairs": 17,
+              "depthM": 0.0
+            }
+          ],
+          "maximumFacePairs": 116,
+          "maximumDepthM": 0.00097
+        }
+      }
+    },
+    "glut_max2_r": {
+      "object": "atlas_gluteus_maximus_r_research",
+      "body": "pelvis",
+      "vertexCount": 1663,
+      "polygonCount": 3326,
+      "edgeRatio": {
+        "minimum": 0.664,
+        "maximum": 1.0357,
+        "minimumFrame": 51,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 1,
+        "maximumFacePairs": 1,
+        "worstFrame": 1,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {
+        "rect_fem_r": {
+          "frames": [
+            {
+              "frame": 32,
+              "facePairs": 46,
+              "depthM": 0.0013
+            },
+            {
+              "frame": 33,
+              "facePairs": 60,
+              "depthM": 0.00098
+            },
+            {
+              "frame": 34,
+              "facePairs": 93,
+              "depthM": 0.00099
+            },
+            {
+              "frame": 35,
+              "facePairs": 118,
+              "depthM": 0.00112
+            },
+            {
+              "frame": 36,
+              "facePairs": 145,
+              "depthM": 0.00187
+            },
+            {
+              "frame": 37,
+              "facePairs": 173,
+              "depthM": 0.00341
+            },
+            {
+              "frame": 38,
+              "facePairs": 185,
+              "depthM": 0.00487
+            },
+            {
+              "frame": 39,
+              "facePairs": 212,
+              "depthM": 0.00623
+            },
+            {
+              "frame": 40,
+              "facePairs": 210,
+              "depthM": 0.0075
+            },
+            {
+              "frame": 41,
+              "facePairs": 223,
+              "depthM": 0.0043
+            },
+            {
+              "frame": 42,
+              "facePairs": 253,
+              "depthM": 0.00513
+            },
+            {
+              "frame": 43,
+              "facePairs": 297,
+              "depthM": 0.00578
+            },
+            {
+              "frame": 44,
+              "facePairs": 275,
+              "depthM": 0.0058
+            },
+            {
+              "frame": 45,
+              "facePairs": 288,
+              "depthM": 0.0056
+            },
+            {
+              "frame": 46,
+              "facePairs": 302,
+              "depthM": 0.00708
+            },
+            {
+              "frame": 47,
+              "facePairs": 316,
+              "depthM": 0.00626
+            },
+            {
+              "frame": 48,
+              "facePairs": 338,
+              "depthM": 0.00651
+            },
+            {
+              "frame": 49,
+              "facePairs": 345,
+              "depthM": 0.00669
+            },
+            {
+              "frame": 50,
+              "facePairs": 348,
+              "depthM": 0.0068
+            },
+            {
+              "frame": 51,
+              "facePairs": 341,
+              "depthM": 0.00684
+            },
+            {
+              "frame": 52,
+              "facePairs": 348,
+              "depthM": 0.0068
+            },
+            {
+              "frame": 53,
+              "facePairs": 345,
+              "depthM": 0.00669
+            },
+            {
+              "frame": 54,
+              "facePairs": 338,
+              "depthM": 0.00651
+            },
+            {
+              "frame": 55,
+              "facePairs": 316,
+              "depthM": 0.00626
+            },
+            {
+              "frame": 56,
+              "facePairs": 302,
+              "depthM": 0.00708
+            },
+            {
+              "frame": 57,
+              "facePairs": 288,
+              "depthM": 0.0056
+            },
+            {
+              "frame": 58,
+              "facePairs": 275,
+              "depthM": 0.0058
+            },
+            {
+              "frame": 59,
+              "facePairs": 297,
+              "depthM": 0.00578
+            },
+            {
+              "frame": 60,
+              "facePairs": 253,
+              "depthM": 0.00513
+            },
+            {
+              "frame": 61,
+              "facePairs": 223,
+              "depthM": 0.0043
+            },
+            {
+              "frame": 62,
+              "facePairs": 210,
+              "depthM": 0.0075
+            },
+            {
+              "frame": 63,
+              "facePairs": 212,
+              "depthM": 0.00623
+            },
+            {
+              "frame": 64,
+              "facePairs": 185,
+              "depthM": 0.00487
+            },
+            {
+              "frame": 65,
+              "facePairs": 173,
+              "depthM": 0.00341
+            },
+            {
+              "frame": 66,
+              "facePairs": 145,
+              "depthM": 0.00187
+            },
+            {
+              "frame": 67,
+              "facePairs": 118,
+              "depthM": 0.00112
+            },
+            {
+              "frame": 68,
+              "facePairs": 93,
+              "depthM": 0.00099
+            },
+            {
+              "frame": 69,
+              "facePairs": 60,
+              "depthM": 0.00098
+            },
+            {
+              "frame": 70,
+              "facePairs": 46,
+              "depthM": 0.0013
+            }
+          ],
+          "maximumFacePairs": 348,
+          "maximumDepthM": 0.0075
+        }
+      }
+    },
+    "med_gas_r": {
+      "object": "atlas_medial_gastrocnemius_r_research",
+      "body": "tibia_r",
+      "vertexCount": 3233,
+      "polygonCount": 6460,
+      "edgeRatio": {
+        "minimum": 0.7721,
+        "maximum": 1.3754,
+        "minimumFrame": 51,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 0,
+        "maximumFacePairs": 0,
+        "worstFrame": null,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {}
+    },
+    "rect_fem_r": {
+      "object": "atlas_rectus_femoris_r_research",
+      "body": "femur_r",
+      "vertexCount": 4136,
+      "polygonCount": 8276,
+      "edgeRatio": {
+        "minimum": 0.5814,
+        "maximum": 1.1878,
+        "minimumFrame": 51,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 0,
+        "maximumFacePairs": 0,
+        "worstFrame": null,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {
+        "atlas_Patella.r": {
+          "frames": [
+            {
+              "frame": 18,
+              "facePairs": 23,
+              "depthM": 0.0004
+            },
+            {
+              "frame": 19,
+              "facePairs": 28,
+              "depthM": 0.00085
+            },
+            {
+              "frame": 20,
+              "facePairs": 33,
+              "depthM": 0.00135
+            },
+            {
+              "frame": 21,
+              "facePairs": 33,
+              "depthM": 0.00168
+            },
+            {
+              "frame": 22,
+              "facePairs": 42,
+              "depthM": 0.00203
+            },
+            {
+              "frame": 23,
+              "facePairs": 44,
+              "depthM": 0.00152
+            },
+            {
+              "frame": 24,
+              "facePairs": 46,
+              "depthM": 0.0018
+            },
+            {
+              "frame": 25,
+              "facePairs": 55,
+              "depthM": 0.00175
+            },
+            {
+              "frame": 26,
+              "facePairs": 49,
+              "depthM": 0.00226
+            },
+            {
+              "frame": 27,
+              "facePairs": 57,
+              "depthM": 0.00276
+            },
+            {
+              "frame": 28,
+              "facePairs": 62,
+              "depthM": 0.00325
+            },
+            {
+              "frame": 29,
+              "facePairs": 69,
+              "depthM": 0.00364
+            },
+            {
+              "frame": 30,
+              "facePairs": 69,
+              "depthM": 0.00244
+            },
+            {
+              "frame": 31,
+              "facePairs": 67,
+              "depthM": 0.00198
+            },
+            {
+              "frame": 32,
+              "facePairs": 69,
+              "depthM": 0.00239
+            },
+            {
+              "frame": 33,
+              "facePairs": 76,
+              "depthM": 0.00234
+            },
+            {
+              "frame": 34,
+              "facePairs": 79,
+              "depthM": 0.00269
+            },
+            {
+              "frame": 35,
+              "facePairs": 86,
+              "depthM": 0.00303
+            },
+            {
+              "frame": 36,
+              "facePairs": 88,
+              "depthM": 0.00342
+            },
+            {
+              "frame": 37,
+              "facePairs": 86,
+              "depthM": 0.00295
+            },
+            {
+              "frame": 38,
+              "facePairs": 93,
+              "depthM": 0.00422
+            },
+            {
+              "frame": 39,
+              "facePairs": 98,
+              "depthM": 0.00385
+            },
+            {
+              "frame": 40,
+              "facePairs": 107,
+              "depthM": 0.0035
+            },
+            {
+              "frame": 41,
+              "facePairs": 100,
+              "depthM": 0.00319
+            },
+            {
+              "frame": 42,
+              "facePairs": 103,
+              "depthM": 0.00291
+            },
+            {
+              "frame": 43,
+              "facePairs": 103,
+              "depthM": 0.00294
+            },
+            {
+              "frame": 44,
+              "facePairs": 104,
+              "depthM": 0.00271
+            },
+            {
+              "frame": 45,
+              "facePairs": 104,
+              "depthM": 0.00264
+            },
+            {
+              "frame": 46,
+              "facePairs": 102,
+              "depthM": 0.00459
+            },
+            {
+              "frame": 47,
+              "facePairs": 101,
+              "depthM": 0.00447
+            },
+            {
+              "frame": 48,
+              "facePairs": 104,
+              "depthM": 0.00437
+            },
+            {
+              "frame": 49,
+              "facePairs": 104,
+              "depthM": 0.00431
+            },
+            {
+              "frame": 50,
+              "facePairs": 104,
+              "depthM": 0.00427
+            },
+            {
+              "frame": 51,
+              "facePairs": 104,
+              "depthM": 0.00425
+            },
+            {
+              "frame": 52,
+              "facePairs": 104,
+              "depthM": 0.00427
+            },
+            {
+              "frame": 53,
+              "facePairs": 104,
+              "depthM": 0.00431
+            },
+            {
+              "frame": 54,
+              "facePairs": 104,
+              "depthM": 0.00437
+            },
+            {
+              "frame": 55,
+              "facePairs": 101,
+              "depthM": 0.00447
+            },
+            {
+              "frame": 56,
+              "facePairs": 102,
+              "depthM": 0.00459
+            },
+            {
+              "frame": 57,
+              "facePairs": 104,
+              "depthM": 0.00264
+            },
+            {
+              "frame": 58,
+              "facePairs": 104,
+              "depthM": 0.00271
+            },
+            {
+              "frame": 59,
+              "facePairs": 103,
+              "depthM": 0.00294
+            },
+            {
+              "frame": 60,
+              "facePairs": 103,
+              "depthM": 0.00291
+            },
+            {
+              "frame": 61,
+              "facePairs": 100,
+              "depthM": 0.00319
+            },
+            {
+              "frame": 62,
+              "facePairs": 107,
+              "depthM": 0.0035
+            },
+            {
+              "frame": 63,
+              "facePairs": 98,
+              "depthM": 0.00385
+            },
+            {
+              "frame": 64,
+              "facePairs": 93,
+              "depthM": 0.00422
+            },
+            {
+              "frame": 65,
+              "facePairs": 86,
+              "depthM": 0.00295
+            },
+            {
+              "frame": 66,
+              "facePairs": 88,
+              "depthM": 0.00342
+            },
+            {
+              "frame": 67,
+              "facePairs": 86,
+              "depthM": 0.00303
+            },
+            {
+              "frame": 68,
+              "facePairs": 79,
+              "depthM": 0.00269
+            },
+            {
+              "frame": 69,
+              "facePairs": 76,
+              "depthM": 0.00234
+            },
+            {
+              "frame": 70,
+              "facePairs": 69,
+              "depthM": 0.00239
+            },
+            {
+              "frame": 71,
+              "facePairs": 67,
+              "depthM": 0.00198
+            },
+            {
+              "frame": 72,
+              "facePairs": 69,
+              "depthM": 0.00244
+            },
+            {
+              "frame": 73,
+              "facePairs": 69,
+              "depthM": 0.00364
+            },
+            {
+              "frame": 74,
+              "facePairs": 62,
+              "depthM": 0.00325
+            },
+            {
+              "frame": 75,
+              "facePairs": 57,
+              "depthM": 0.00276
+            },
+            {
+              "frame": 76,
+              "facePairs": 49,
+              "depthM": 0.00226
+            },
+            {
+              "frame": 77,
+              "facePairs": 55,
+              "depthM": 0.00175
+            },
+            {
+              "frame": 78,
+              "facePairs": 46,
+              "depthM": 0.0018
+            },
+            {
+              "frame": 79,
+              "facePairs": 44,
+              "depthM": 0.00152
+            },
+            {
+              "frame": 80,
+              "facePairs": 42,
+              "depthM": 0.00203
+            },
+            {
+              "frame": 81,
+              "facePairs": 33,
+              "depthM": 0.00168
+            },
+            {
+              "frame": 82,
+              "facePairs": 33,
+              "depthM": 0.00135
+            },
+            {
+              "frame": 83,
+              "facePairs": 28,
+              "depthM": 0.00085
+            },
+            {
+              "frame": 84,
+              "facePairs": 23,
+              "depthM": 0.0004
+            }
+          ],
+          "maximumFacePairs": 107,
+          "maximumDepthM": 0.00459
+        },
+        "atlas_Femur.r": {
+          "frames": [
+            {
+              "frame": 22,
+              "facePairs": 15,
+              "depthM": 0.0
+            },
+            {
+              "frame": 23,
+              "facePairs": 20,
+              "depthM": 0.00046
+            },
+            {
+              "frame": 24,
+              "facePairs": 24,
+              "depthM": 0.0008
+            },
+            {
+              "frame": 25,
+              "facePairs": 24,
+              "depthM": 0.00152
+            },
+            {
+              "frame": 26,
+              "facePairs": 27,
+              "depthM": 0.00143
+            },
+            {
+              "frame": 27,
+              "facePairs": 46,
+              "depthM": 0.00199
+            },
+            {
+              "frame": 28,
+              "facePairs": 51,
+              "depthM": 0.00269
+            },
+            {
+              "frame": 29,
+              "facePairs": 59,
+              "depthM": 0.00337
+            },
+            {
+              "frame": 30,
+              "facePairs": 73,
+              "depthM": 0.00209
+            },
+            {
+              "frame": 31,
+              "facePairs": 70,
+              "depthM": 0.00201
+            },
+            {
+              "frame": 32,
+              "facePairs": 85,
+              "depthM": 0.00182
+            },
+            {
+              "frame": 33,
+              "facePairs": 97,
+              "depthM": 0.00178
+            },
+            {
+              "frame": 34,
+              "facePairs": 108,
+              "depthM": 0.00191
+            },
+            {
+              "frame": 35,
+              "facePairs": 130,
+              "depthM": 0.0025
+            },
+            {
+              "frame": 36,
+              "facePairs": 121,
+              "depthM": 0.00234
+            },
+            {
+              "frame": 37,
+              "facePairs": 129,
+              "depthM": 0.00282
+            },
+            {
+              "frame": 38,
+              "facePairs": 143,
+              "depthM": 0.00217
+            },
+            {
+              "frame": 39,
+              "facePairs": 157,
+              "depthM": 0.00246
+            },
+            {
+              "frame": 40,
+              "facePairs": 186,
+              "depthM": 0.00289
+            },
+            {
+              "frame": 41,
+              "facePairs": 205,
+              "depthM": 0.00287
+            },
+            {
+              "frame": 42,
+              "facePairs": 222,
+              "depthM": 0.003
+            },
+            {
+              "frame": 43,
+              "facePairs": 212,
+              "depthM": 0.00286
+            },
+            {
+              "frame": 44,
+              "facePairs": 205,
+              "depthM": 0.00327
+            },
+            {
+              "frame": 45,
+              "facePairs": 221,
+              "depthM": 0.00362
+            },
+            {
+              "frame": 46,
+              "facePairs": 222,
+              "depthM": 0.00392
+            },
+            {
+              "frame": 47,
+              "facePairs": 221,
+              "depthM": 0.00416
+            },
+            {
+              "frame": 48,
+              "facePairs": 228,
+              "depthM": 0.00426
+            },
+            {
+              "frame": 49,
+              "facePairs": 246,
+              "depthM": 0.00328
+            },
+            {
+              "frame": 50,
+              "facePairs": 245,
+              "depthM": 0.00335
+            },
+            {
+              "frame": 51,
+              "facePairs": 243,
+              "depthM": 0.00338
+            },
+            {
+              "frame": 52,
+              "facePairs": 245,
+              "depthM": 0.00335
+            },
+            {
+              "frame": 53,
+              "facePairs": 246,
+              "depthM": 0.00328
+            },
+            {
+              "frame": 54,
+              "facePairs": 228,
+              "depthM": 0.00426
+            },
+            {
+              "frame": 55,
+              "facePairs": 221,
+              "depthM": 0.00416
+            },
+            {
+              "frame": 56,
+              "facePairs": 222,
+              "depthM": 0.00392
+            },
+            {
+              "frame": 57,
+              "facePairs": 221,
+              "depthM": 0.00362
+            },
+            {
+              "frame": 58,
+              "facePairs": 205,
+              "depthM": 0.00327
+            },
+            {
+              "frame": 59,
+              "facePairs": 212,
+              "depthM": 0.00286
+            },
+            {
+              "frame": 60,
+              "facePairs": 222,
+              "depthM": 0.003
+            },
+            {
+              "frame": 61,
+              "facePairs": 205,
+              "depthM": 0.00287
+            },
+            {
+              "frame": 62,
+              "facePairs": 186,
+              "depthM": 0.00289
+            },
+            {
+              "frame": 63,
+              "facePairs": 157,
+              "depthM": 0.00246
+            },
+            {
+              "frame": 64,
+              "facePairs": 143,
+              "depthM": 0.00217
+            },
+            {
+              "frame": 65,
+              "facePairs": 129,
+              "depthM": 0.00282
+            },
+            {
+              "frame": 66,
+              "facePairs": 121,
+              "depthM": 0.00234
+            },
+            {
+              "frame": 67,
+              "facePairs": 130,
+              "depthM": 0.0025
+            },
+            {
+              "frame": 68,
+              "facePairs": 108,
+              "depthM": 0.00191
+            },
+            {
+              "frame": 69,
+              "facePairs": 97,
+              "depthM": 0.00178
+            },
+            {
+              "frame": 70,
+              "facePairs": 85,
+              "depthM": 0.00182
+            },
+            {
+              "frame": 71,
+              "facePairs": 70,
+              "depthM": 0.00201
+            },
+            {
+              "frame": 72,
+              "facePairs": 73,
+              "depthM": 0.00209
+            },
+            {
+              "frame": 73,
+              "facePairs": 59,
+              "depthM": 0.00337
+            },
+            {
+              "frame": 74,
+              "facePairs": 51,
+              "depthM": 0.00269
+            },
+            {
+              "frame": 75,
+              "facePairs": 46,
+              "depthM": 0.00199
+            },
+            {
+              "frame": 76,
+              "facePairs": 27,
+              "depthM": 0.00143
+            },
+            {
+              "frame": 77,
+              "facePairs": 24,
+              "depthM": 0.00152
+            },
+            {
+              "frame": 78,
+              "facePairs": 24,
+              "depthM": 0.0008
+            },
+            {
+              "frame": 79,
+              "facePairs": 20,
+              "depthM": 0.00046
+            },
+            {
+              "frame": 80,
+              "facePairs": 15,
+              "depthM": 0.0
+            }
+          ],
+          "maximumFacePairs": 246,
+          "maximumDepthM": 0.00426
+        }
+      }
+    },
+    "semimem_r": {
+      "object": "atlas_semimembranosus_r_research",
+      "body": "femur_r",
+      "vertexCount": 3725,
+      "polygonCount": 7442,
+      "edgeRatio": {
+        "minimum": 0.8489,
+        "maximum": 1.4755,
+        "minimumFrame": 51,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 0,
+        "maximumFacePairs": 0,
+        "worstFrame": null,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {}
+    },
+    "soleus_r": {
+      "object": "atlas_soleus_r_research",
+      "body": "tibia_r",
+      "vertexCount": 3379,
+      "polygonCount": 6774,
+      "edgeRatio": {
+        "minimum": 0.9914,
+        "maximum": 1.1249,
+        "minimumFrame": 68,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 2,
+        "maximumFacePairs": 2,
+        "worstFrame": 1,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {}
+    },
+    "tib_ant_r": {
+      "object": "atlas_tibialis_anterior_r_research",
+      "body": "tibia_r",
+      "vertexCount": 1761,
+      "polygonCount": 3526,
+      "edgeRatio": {
+        "minimum": 0.7716,
+        "maximum": 1.0146,
+        "minimumFrame": 68,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 2,
+        "maximumFacePairs": 2,
+        "worstFrame": 1,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {
+        "atlas_Femur.r": {
+          "frames": [
+            {
+              "frame": 24,
+              "facePairs": 11,
+              "depthM": 0.0
+            },
+            {
+              "frame": 25,
+              "facePairs": 61,
+              "depthM": 0.0009
+            },
+            {
+              "frame": 26,
+              "facePairs": 74,
+              "depthM": 0.00143
+            },
+            {
+              "frame": 27,
+              "facePairs": 87,
+              "depthM": 0.00242
+            },
+            {
+              "frame": 28,
+              "facePairs": 90,
+              "depthM": 0.00161
+            },
+            {
+              "frame": 29,
+              "facePairs": 109,
+              "depthM": 0.00199
+            },
+            {
+              "frame": 30,
+              "facePairs": 133,
+              "depthM": 0.00311
+            },
+            {
+              "frame": 31,
+              "facePairs": 134,
+              "depthM": 0.00419
+            },
+            {
+              "frame": 32,
+              "facePairs": 139,
+              "depthM": 0.00276
+            },
+            {
+              "frame": 33,
+              "facePairs": 138,
+              "depthM": 0.00355
+            },
+            {
+              "frame": 34,
+              "facePairs": 151,
+              "depthM": 0.0044
+            },
+            {
+              "frame": 35,
+              "facePairs": 137,
+              "depthM": 0.00526
+            },
+            {
+              "frame": 36,
+              "facePairs": 142,
+              "depthM": 0.00607
+            },
+            {
+              "frame": 37,
+              "facePairs": 147,
+              "depthM": 0.00683
+            },
+            {
+              "frame": 38,
+              "facePairs": 141,
+              "depthM": 0.00755
+            },
+            {
+              "frame": 39,
+              "facePairs": 138,
+              "depthM": 0.00759
+            },
+            {
+              "frame": 40,
+              "facePairs": 136,
+              "depthM": 0.00319
+            },
+            {
+              "frame": 41,
+              "facePairs": 129,
+              "depthM": 0.00267
+            },
+            {
+              "frame": 42,
+              "facePairs": 134,
+              "depthM": 0.0021
+            },
+            {
+              "frame": 43,
+              "facePairs": 134,
+              "depthM": 0.00223
+            },
+            {
+              "frame": 44,
+              "facePairs": 135,
+              "depthM": 0.00239
+            },
+            {
+              "frame": 45,
+              "facePairs": 135,
+              "depthM": 0.00269
+            },
+            {
+              "frame": 46,
+              "facePairs": 142,
+              "depthM": 0.00263
+            },
+            {
+              "frame": 47,
+              "facePairs": 145,
+              "depthM": 0.00287
+            },
+            {
+              "frame": 48,
+              "facePairs": 145,
+              "depthM": 0.00305
+            },
+            {
+              "frame": 49,
+              "facePairs": 147,
+              "depthM": 0.00318
+            },
+            {
+              "frame": 50,
+              "facePairs": 147,
+              "depthM": 0.00326
+            },
+            {
+              "frame": 51,
+              "facePairs": 147,
+              "depthM": 0.00329
+            },
+            {
+              "frame": 52,
+              "facePairs": 147,
+              "depthM": 0.00326
+            },
+            {
+              "frame": 53,
+              "facePairs": 147,
+              "depthM": 0.00318
+            },
+            {
+              "frame": 54,
+              "facePairs": 145,
+              "depthM": 0.00305
+            },
+            {
+              "frame": 55,
+              "facePairs": 145,
+              "depthM": 0.00287
+            },
+            {
+              "frame": 56,
+              "facePairs": 142,
+              "depthM": 0.00263
+            },
+            {
+              "frame": 57,
+              "facePairs": 135,
+              "depthM": 0.00269
+            },
+            {
+              "frame": 58,
+              "facePairs": 135,
+              "depthM": 0.00239
+            },
+            {
+              "frame": 59,
+              "facePairs": 134,
+              "depthM": 0.00223
+            },
+            {
+              "frame": 60,
+              "facePairs": 134,
+              "depthM": 0.0021
+            },
+            {
+              "frame": 61,
+              "facePairs": 129,
+              "depthM": 0.00267
+            },
+            {
+              "frame": 62,
+              "facePairs": 136,
+              "depthM": 0.00319
+            },
+            {
+              "frame": 63,
+              "facePairs": 138,
+              "depthM": 0.00759
+            },
+            {
+              "frame": 64,
+              "facePairs": 141,
+              "depthM": 0.00755
+            },
+            {
+              "frame": 65,
+              "facePairs": 147,
+              "depthM": 0.00683
+            },
+            {
+              "frame": 66,
+              "facePairs": 142,
+              "depthM": 0.00607
+            },
+            {
+              "frame": 67,
+              "facePairs": 137,
+              "depthM": 0.00526
+            },
+            {
+              "frame": 68,
+              "facePairs": 151,
+              "depthM": 0.0044
+            },
+            {
+              "frame": 69,
+              "facePairs": 138,
+              "depthM": 0.00355
+            },
+            {
+              "frame": 70,
+              "facePairs": 139,
+              "depthM": 0.00276
+            },
+            {
+              "frame": 71,
+              "facePairs": 134,
+              "depthM": 0.00419
+            },
+            {
+              "frame": 72,
+              "facePairs": 133,
+              "depthM": 0.00311
+            },
+            {
+              "frame": 73,
+              "facePairs": 109,
+              "depthM": 0.00199
+            },
+            {
+              "frame": 74,
+              "facePairs": 90,
+              "depthM": 0.00161
+            },
+            {
+              "frame": 75,
+              "facePairs": 87,
+              "depthM": 0.00242
+            },
+            {
+              "frame": 76,
+              "facePairs": 74,
+              "depthM": 0.00143
+            },
+            {
+              "frame": 77,
+              "facePairs": 61,
+              "depthM": 0.0009
+            },
+            {
+              "frame": 78,
+              "facePairs": 11,
+              "depthM": 0.0
+            }
+          ],
+          "maximumFacePairs": 151,
+          "maximumDepthM": 0.00759
+        }
+      }
+    },
+    "vas_int_r": {
+      "object": "atlas_vastus_intermedius_r_research",
+      "body": "femur_r",
+      "vertexCount": 3076,
+      "polygonCount": 6164,
+      "edgeRatio": {
+        "minimum": 0.6026,
+        "maximum": 1.2547,
+        "minimumFrame": 51,
+        "edgesBelowGate": 0,
+        "edgesAboveGate": 0
+      },
+      "flippedFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "degenerateFaces": {
+        "maximumFaces": 0,
+        "frames": []
+      },
+      "selfIntersections": {
+        "referenceFacePairs": 1,
+        "maximumFacePairs": 1,
+        "worstFrame": 1,
+        "framesAboveReference": []
+      },
+      "addedIntersections": {
+        "atlas_Hip bone.r": {
+          "frames": [
+            {
+              "frame": 35,
+              "facePairs": 4,
+              "depthM": 0.0
+            },
+            {
+              "frame": 36,
+              "facePairs": 34,
+              "depthM": 0.00182
+            },
+            {
+              "frame": 37,
+              "facePairs": 60,
+              "depthM": 0.00387
+            },
+            {
+              "frame": 38,
+              "facePairs": 89,
+              "depthM": 0.00467
+            },
+            {
+              "frame": 39,
+              "facePairs": 146,
+              "depthM": 0.00517
+            },
+            {
+              "frame": 40,
+              "facePairs": 135,
+              "depthM": 0.00552
+            },
+            {
+              "frame": 41,
+              "facePairs": 155,
+              "depthM": 0.0055
+            },
+            {
+              "frame": 42,
+              "facePairs": 168,
+              "depthM": 0.00539
+            },
+            {
+              "frame": 43,
+              "facePairs": 185,
+              "depthM": 0.00531
+            },
+            {
+              "frame": 44,
+              "facePairs": 185,
+              "depthM": 0.00522
+            },
+            {
+              "frame": 45,
+              "facePairs": 188,
+              "depthM": 0.00499
+            },
+            {
+              "frame": 46,
+              "facePairs": 190,
+              "depthM": 0.00509
+            },
+            {
+              "frame": 47,
+              "facePairs": 195,
+              "depthM": 0.0052
+            },
+            {
+              "frame": 48,
+              "facePairs": 200,
+              "depthM": 0.0054
+            },
+            {
+              "frame": 49,
+              "facePairs": 193,
+              "depthM": 0.00514
+            },
+            {
+              "frame": 50,
+              "facePairs": 194,
+              "depthM": 0.00522
+            },
+            {
+              "frame": 51,
+              "facePairs": 197,
+              "depthM": 0.00525
+            },
+            {
+              "frame": 52,
+              "facePairs": 194,
+              "depthM": 0.00522
+            },
+            {
+              "frame": 53,
+              "facePairs": 193,
+              "depthM": 0.00514
+            },
+            {
+              "frame": 54,
+              "facePairs": 200,
+              "depthM": 0.0054
+            },
+            {
+              "frame": 55,
+              "facePairs": 195,
+              "depthM": 0.0052
+            },
+            {
+              "frame": 56,
+              "facePairs": 190,
+              "depthM": 0.00509
+            },
+            {
+              "frame": 57,
+              "facePairs": 188,
+              "depthM": 0.00499
+            },
+            {
+              "frame": 58,
+              "facePairs": 185,
+              "depthM": 0.00522
+            },
+            {
+              "frame": 59,
+              "facePairs": 185,
+              "depthM": 0.00531
+            },
+            {
+              "frame": 60,
+              "facePairs": 168,
+              "depthM": 0.00539
+            },
+            {
+              "frame": 61,
+              "facePairs": 155,
+              "depthM": 0.0055
+            },
+            {
+              "frame": 62,
+              "facePairs": 135,
+              "depthM": 0.00552
+            },
+            {
+              "frame": 63,
+              "facePairs": 146,
+              "depthM": 0.00517
+            },
+            {
+              "frame": 64,
+              "facePairs": 89,
+              "depthM": 0.00467
+            },
+            {
+              "frame": 65,
+              "facePairs": 60,
+              "depthM": 0.00387
+            },
+            {
+              "frame": 66,
+              "facePairs": 34,
+              "depthM": 0.00182
+            },
+            {
+              "frame": 67,
+              "facePairs": 4,
+              "depthM": 0.0
+            }
+          ],
+          "maximumFacePairs": 200,
+          "maximumDepthM": 0.00552
+        }
+      }
+    }
+  },
+  "bonePairIntersections": {
+    "atlas_Femur.r+atlas_Tibia.r": {
+      "frames": [
+        {
+          "frame": 3,
+          "facePairs": 14,
+          "depthM": 0.00012
+        },
+        {
+          "frame": 4,
+          "facePairs": 31,
+          "depthM": 0.00061
+        },
+        {
+          "frame": 5,
+          "facePairs": 38,
+          "depthM": 0.00113
+        },
+        {
+          "frame": 6,
+          "facePairs": 42,
+          "depthM": 0.00221
+        },
+        {
+          "frame": 7,
+          "facePairs": 61,
+          "depthM": 0.00172
+        },
+        {
+          "frame": 8,
+          "facePairs": 100,
+          "depthM": 0.00234
+        },
+        {
+          "frame": 9,
+          "facePairs": 138,
+          "depthM": 0.00291
+        },
+        {
+          "frame": 10,
+          "facePairs": 172,
+          "depthM": 0.00317
+        },
+        {
+          "frame": 11,
+          "facePairs": 195,
+          "depthM": 0.00375
+        },
+        {
+          "frame": 12,
+          "facePairs": 219,
+          "depthM": 0.00442
+        },
+        {
+          "frame": 13,
+          "facePairs": 242,
+          "depthM": 0.00362
+        },
+        {
+          "frame": 14,
+          "facePairs": 245,
+          "depthM": 0.00357
+        },
+        {
+          "frame": 15,
+          "facePairs": 243,
+          "depthM": 0.00458
+        },
+        {
+          "frame": 16,
+          "facePairs": 238,
+          "depthM": 0.00368
+        },
+        {
+          "frame": 17,
+          "facePairs": 235,
+          "depthM": 0.00318
+        },
+        {
+          "frame": 18,
+          "facePairs": 243,
+          "depthM": 0.00452
+        },
+        {
+          "frame": 19,
+          "facePairs": 251,
+          "depthM": 0.00601
+        },
+        {
+          "frame": 20,
+          "facePairs": 283,
+          "depthM": 0.00363
+        },
+        {
+          "frame": 21,
+          "facePairs": 288,
+          "depthM": 0.00465
+        },
+        {
+          "frame": 22,
+          "facePairs": 307,
+          "depthM": 0.00405
+        },
+        {
+          "frame": 23,
+          "facePairs": 315,
+          "depthM": 0.00456
+        },
+        {
+          "frame": 24,
+          "facePairs": 324,
+          "depthM": 0.00608
+        },
+        {
+          "frame": 25,
+          "facePairs": 295,
+          "depthM": 0.00534
+        },
+        {
+          "frame": 26,
+          "facePairs": 286,
+          "depthM": 0.00475
+        },
+        {
+          "frame": 27,
+          "facePairs": 289,
+          "depthM": 0.00558
+        },
+        {
+          "frame": 28,
+          "facePairs": 284,
+          "depthM": 0.00523
+        },
+        {
+          "frame": 29,
+          "facePairs": 260,
+          "depthM": 0.0061
+        },
+        {
+          "frame": 30,
+          "facePairs": 262,
+          "depthM": 0.00574
+        },
+        {
+          "frame": 31,
+          "facePairs": 279,
+          "depthM": 0.0056
+        },
+        {
+          "frame": 32,
+          "facePairs": 278,
+          "depthM": 0.00647
+        },
+        {
+          "frame": 33,
+          "facePairs": 265,
+          "depthM": 0.00582
+        },
+        {
+          "frame": 34,
+          "facePairs": 264,
+          "depthM": 0.00519
+        },
+        {
+          "frame": 35,
+          "facePairs": 278,
+          "depthM": 0.00459
+        },
+        {
+          "frame": 36,
+          "facePairs": 282,
+          "depthM": 0.00475
+        },
+        {
+          "frame": 37,
+          "facePairs": 275,
+          "depthM": 0.0039
+        },
+        {
+          "frame": 38,
+          "facePairs": 277,
+          "depthM": 0.00453
+        },
+        {
+          "frame": 39,
+          "facePairs": 264,
+          "depthM": 0.00405
+        },
+        {
+          "frame": 40,
+          "facePairs": 266,
+          "depthM": 0.00357
+        },
+        {
+          "frame": 41,
+          "facePairs": 267,
+          "depthM": 0.00333
+        },
+        {
+          "frame": 42,
+          "facePairs": 258,
+          "depthM": 0.00374
+        },
+        {
+          "frame": 43,
+          "facePairs": 257,
+          "depthM": 0.0047
+        },
+        {
+          "frame": 44,
+          "facePairs": 262,
+          "depthM": 0.00457
+        },
+        {
+          "frame": 45,
+          "facePairs": 261,
+          "depthM": 0.00463
+        },
+        {
+          "frame": 46,
+          "facePairs": 265,
+          "depthM": 0.00679
+        },
+        {
+          "frame": 47,
+          "facePairs": 266,
+          "depthM": 0.00659
+        },
+        {
+          "frame": 48,
+          "facePairs": 268,
+          "depthM": 0.00642
+        },
+        {
+          "frame": 49,
+          "facePairs": 265,
+          "depthM": 0.00631
+        },
+        {
+          "frame": 50,
+          "facePairs": 266,
+          "depthM": 0.00624
+        },
+        {
+          "frame": 51,
+          "facePairs": 264,
+          "depthM": 0.00622
+        },
+        {
+          "frame": 52,
+          "facePairs": 266,
+          "depthM": 0.00624
+        },
+        {
+          "frame": 53,
+          "facePairs": 265,
+          "depthM": 0.00631
+        },
+        {
+          "frame": 54,
+          "facePairs": 268,
+          "depthM": 0.00642
+        },
+        {
+          "frame": 55,
+          "facePairs": 266,
+          "depthM": 0.00659
+        },
+        {
+          "frame": 56,
+          "facePairs": 265,
+          "depthM": 0.00679
+        },
+        {
+          "frame": 57,
+          "facePairs": 261,
+          "depthM": 0.00463
+        },
+        {
+          "frame": 58,
+          "facePairs": 262,
+          "depthM": 0.00457
+        },
+        {
+          "frame": 59,
+          "facePairs": 257,
+          "depthM": 0.0047
+        },
+        {
+          "frame": 60,
+          "facePairs": 258,
+          "depthM": 0.00374
+        },
+        {
+          "frame": 61,
+          "facePairs": 267,
+          "depthM": 0.00333
+        },
+        {
+          "frame": 62,
+          "facePairs": 266,
+          "depthM": 0.00357
+        },
+        {
+          "frame": 63,
+          "facePairs": 264,
+          "depthM": 0.00405
+        },
+        {
+          "frame": 64,
+          "facePairs": 277,
+          "depthM": 0.00453
+        },
+        {
+          "frame": 65,
+          "facePairs": 275,
+          "depthM": 0.0039
+        },
+        {
+          "frame": 66,
+          "facePairs": 282,
+          "depthM": 0.00475
+        },
+        {
+          "frame": 67,
+          "facePairs": 278,
+          "depthM": 0.00459
+        },
+        {
+          "frame": 68,
+          "facePairs": 264,
+          "depthM": 0.00519
+        },
+        {
+          "frame": 69,
+          "facePairs": 265,
+          "depthM": 0.00582
+        },
+        {
+          "frame": 70,
+          "facePairs": 278,
+          "depthM": 0.00647
+        },
+        {
+          "frame": 71,
+          "facePairs": 279,
+          "depthM": 0.0056
+        },
+        {
+          "frame": 72,
+          "facePairs": 262,
+          "depthM": 0.00574
+        },
+        {
+          "frame": 73,
+          "facePairs": 260,
+          "depthM": 0.0061
+        },
+        {
+          "frame": 74,
+          "facePairs": 284,
+          "depthM": 0.00523
+        },
+        {
+          "frame": 75,
+          "facePairs": 289,
+          "depthM": 0.00558
+        },
+        {
+          "frame": 76,
+          "facePairs": 286,
+          "depthM": 0.00475
+        },
+        {
+          "frame": 77,
+          "facePairs": 295,
+          "depthM": 0.00534
+        },
+        {
+          "frame": 78,
+          "facePairs": 324,
+          "depthM": 0.00608
+        },
+        {
+          "frame": 79,
+          "facePairs": 315,
+          "depthM": 0.00456
+        },
+        {
+          "frame": 80,
+          "facePairs": 307,
+          "depthM": 0.00405
+        },
+        {
+          "frame": 81,
+          "facePairs": 288,
+          "depthM": 0.00465
+        },
+        {
+          "frame": 82,
+          "facePairs": 283,
+          "depthM": 0.00363
+        },
+        {
+          "frame": 83,
+          "facePairs": 251,
+          "depthM": 0.00601
+        },
+        {
+          "frame": 84,
+          "facePairs": 243,
+          "depthM": 0.00452
+        },
+        {
+          "frame": 85,
+          "facePairs": 235,
+          "depthM": 0.00318
+        },
+        {
+          "frame": 86,
+          "facePairs": 238,
+          "depthM": 0.00368
+        },
+        {
+          "frame": 87,
+          "facePairs": 243,
+          "depthM": 0.00458
+        },
+        {
+          "frame": 88,
+          "facePairs": 245,
+          "depthM": 0.00357
+        },
+        {
+          "frame": 89,
+          "facePairs": 242,
+          "depthM": 0.00362
+        },
+        {
+          "frame": 90,
+          "facePairs": 219,
+          "depthM": 0.00442
+        },
+        {
+          "frame": 91,
+          "facePairs": 195,
+          "depthM": 0.00375
+        },
+        {
+          "frame": 92,
+          "facePairs": 172,
+          "depthM": 0.00317
+        },
+        {
+          "frame": 93,
+          "facePairs": 138,
+          "depthM": 0.00291
+        },
+        {
+          "frame": 94,
+          "facePairs": 100,
+          "depthM": 0.00234
+        },
+        {
+          "frame": 95,
+          "facePairs": 61,
+          "depthM": 0.00172
+        },
+        {
+          "frame": 96,
+          "facePairs": 42,
+          "depthM": 0.00221
+        },
+        {
+          "frame": 97,
+          "facePairs": 38,
+          "depthM": 0.00113
+        },
+        {
+          "frame": 98,
+          "facePairs": 31,
+          "depthM": 0.00061
+        },
+        {
+          "frame": 99,
+          "facePairs": 14,
+          "depthM": 0.00012
+        }
+      ],
+      "maximumFacePairs": 324,
+      "maximumDepthM": 0.00679
+    },
+    "atlas_Femur.r+atlas_Fibula.r": {
+      "frames": [
+        {
+          "frame": 16,
+          "facePairs": 21,
+          "depthM": 0.00053
+        },
+        {
+          "frame": 17,
+          "facePairs": 32,
+          "depthM": 0.00145
+        },
+        {
+          "frame": 18,
+          "facePairs": 52,
+          "depthM": 0.00225
+        },
+        {
+          "frame": 19,
+          "facePairs": 59,
+          "depthM": 0.001
+        },
+        {
+          "frame": 20,
+          "facePairs": 66,
+          "depthM": 0.00125
+        },
+        {
+          "frame": 21,
+          "facePairs": 71,
+          "depthM": 0.00163
+        },
+        {
+          "frame": 22,
+          "facePairs": 83,
+          "depthM": 0.00195
+        },
+        {
+          "frame": 23,
+          "facePairs": 83,
+          "depthM": 0.00273
+        },
+        {
+          "frame": 24,
+          "facePairs": 79,
+          "depthM": 0.00256
+        },
+        {
+          "frame": 25,
+          "facePairs": 76,
+          "depthM": 0.00291
+        },
+        {
+          "frame": 26,
+          "facePairs": 81,
+          "depthM": 0.00192
+        },
+        {
+          "frame": 27,
+          "facePairs": 80,
+          "depthM": 0.00288
+        },
+        {
+          "frame": 28,
+          "facePairs": 80,
+          "depthM": 0.00284
+        },
+        {
+          "frame": 29,
+          "facePairs": 81,
+          "depthM": 0.0033
+        },
+        {
+          "frame": 30,
+          "facePairs": 82,
+          "depthM": 0.0024
+        },
+        {
+          "frame": 31,
+          "facePairs": 79,
+          "depthM": 0.00157
+        },
+        {
+          "frame": 32,
+          "facePairs": 70,
+          "depthM": 0.00175
+        },
+        {
+          "frame": 33,
+          "facePairs": 61,
+          "depthM": 0.00236
+        },
+        {
+          "frame": 34,
+          "facePairs": 61,
+          "depthM": 0.00351
+        },
+        {
+          "frame": 35,
+          "facePairs": 55,
+          "depthM": 0.00279
+        },
+        {
+          "frame": 36,
+          "facePairs": 59,
+          "depthM": 0.00304
+        },
+        {
+          "frame": 37,
+          "facePairs": 55,
+          "depthM": 0.00296
+        },
+        {
+          "frame": 38,
+          "facePairs": 54,
+          "depthM": 0.00311
+        },
+        {
+          "frame": 39,
+          "facePairs": 54,
+          "depthM": 0.00209
+        },
+        {
+          "frame": 40,
+          "facePairs": 53,
+          "depthM": 0.00177
+        },
+        {
+          "frame": 41,
+          "facePairs": 52,
+          "depthM": 0.00233
+        },
+        {
+          "frame": 42,
+          "facePairs": 43,
+          "depthM": 0.00182
+        },
+        {
+          "frame": 43,
+          "facePairs": 40,
+          "depthM": 0.00163
+        },
+        {
+          "frame": 44,
+          "facePairs": 40,
+          "depthM": 0.00123
+        },
+        {
+          "frame": 45,
+          "facePairs": 40,
+          "depthM": 0.00127
+        },
+        {
+          "frame": 46,
+          "facePairs": 40,
+          "depthM": 0.00134
+        },
+        {
+          "frame": 47,
+          "facePairs": 42,
+          "depthM": 0.0014
+        },
+        {
+          "frame": 48,
+          "facePairs": 42,
+          "depthM": 0.00144
+        },
+        {
+          "frame": 49,
+          "facePairs": 42,
+          "depthM": 0.00107
+        },
+        {
+          "frame": 50,
+          "facePairs": 42,
+          "depthM": 0.00106
+        },
+        {
+          "frame": 51,
+          "facePairs": 42,
+          "depthM": 0.00106
+        },
+        {
+          "frame": 52,
+          "facePairs": 42,
+          "depthM": 0.00106
+        },
+        {
+          "frame": 53,
+          "facePairs": 42,
+          "depthM": 0.00107
+        },
+        {
+          "frame": 54,
+          "facePairs": 42,
+          "depthM": 0.00144
+        },
+        {
+          "frame": 55,
+          "facePairs": 42,
+          "depthM": 0.0014
+        },
+        {
+          "frame": 56,
+          "facePairs": 40,
+          "depthM": 0.00134
+        },
+        {
+          "frame": 57,
+          "facePairs": 40,
+          "depthM": 0.00127
+        },
+        {
+          "frame": 58,
+          "facePairs": 40,
+          "depthM": 0.00123
+        },
+        {
+          "frame": 59,
+          "facePairs": 40,
+          "depthM": 0.00163
+        },
+        {
+          "frame": 60,
+          "facePairs": 43,
+          "depthM": 0.00182
+        },
+        {
+          "frame": 61,
+          "facePairs": 52,
+          "depthM": 0.00233
+        },
+        {
+          "frame": 62,
+          "facePairs": 53,
+          "depthM": 0.00177
+        },
+        {
+          "frame": 63,
+          "facePairs": 54,
+          "depthM": 0.00209
+        },
+        {
+          "frame": 64,
+          "facePairs": 54,
+          "depthM": 0.00311
+        },
+        {
+          "frame": 65,
+          "facePairs": 55,
+          "depthM": 0.00296
+        },
+        {
+          "frame": 66,
+          "facePairs": 59,
+          "depthM": 0.00304
+        },
+        {
+          "frame": 67,
+          "facePairs": 55,
+          "depthM": 0.00279
+        },
+        {
+          "frame": 68,
+          "facePairs": 61,
+          "depthM": 0.00351
+        },
+        {
+          "frame": 69,
+          "facePairs": 61,
+          "depthM": 0.00236
+        },
+        {
+          "frame": 70,
+          "facePairs": 70,
+          "depthM": 0.00175
+        },
+        {
+          "frame": 71,
+          "facePairs": 79,
+          "depthM": 0.00157
+        },
+        {
+          "frame": 72,
+          "facePairs": 82,
+          "depthM": 0.0024
+        },
+        {
+          "frame": 73,
+          "facePairs": 81,
+          "depthM": 0.0033
+        },
+        {
+          "frame": 74,
+          "facePairs": 80,
+          "depthM": 0.00284
+        },
+        {
+          "frame": 75,
+          "facePairs": 79,
+          "depthM": 0.00288
+        },
+        {
+          "frame": 76,
+          "facePairs": 81,
+          "depthM": 0.00192
+        },
+        {
+          "frame": 77,
+          "facePairs": 76,
+          "depthM": 0.00291
+        },
+        {
+          "frame": 78,
+          "facePairs": 79,
+          "depthM": 0.00256
+        },
+        {
+          "frame": 79,
+          "facePairs": 83,
+          "depthM": 0.00273
+        },
+        {
+          "frame": 80,
+          "facePairs": 83,
+          "depthM": 0.00195
+        },
+        {
+          "frame": 81,
+          "facePairs": 71,
+          "depthM": 0.00163
+        },
+        {
+          "frame": 82,
+          "facePairs": 66,
+          "depthM": 0.00125
+        },
+        {
+          "frame": 83,
+          "facePairs": 59,
+          "depthM": 0.001
+        },
+        {
+          "frame": 84,
+          "facePairs": 52,
+          "depthM": 0.00225
+        },
+        {
+          "frame": 85,
+          "facePairs": 32,
+          "depthM": 0.00145
+        },
+        {
+          "frame": 86,
+          "facePairs": 21,
+          "depthM": 0.00053
+        }
+      ],
+      "maximumFacePairs": 83,
+      "maximumDepthM": 0.00351
+    },
+    "atlas_Femur.r+atlas_Patella.r": {
+      "frames": [
+        {
+          "frame": 49,
+          "facePairs": 4,
+          "depthM": 0.0
+        },
+        {
+          "frame": 50,
+          "facePairs": 4,
+          "depthM": 0.0
+        },
+        {
+          "frame": 51,
+          "facePairs": 4,
+          "depthM": 0.0
+        },
+        {
+          "frame": 52,
+          "facePairs": 4,
+          "depthM": 0.0
+        },
+        {
+          "frame": 53,
+          "facePairs": 4,
+          "depthM": 0.0
+        }
+      ],
+      "maximumFacePairs": 4,
+      "maximumDepthM": 0.0
+    }
+  },
+  "summary": {
+    "boneMotionAcrossSquat": 0.84344,
+    "referenceIntersectingMeshPairs": [
+      "atlas_Femur.r+atlas_Hip bone.r",
+      "atlas_Fibula.r+atlas_Tibia.r",
+      "bifemsh_r+atlas_Femur.r",
+      "bifemsh_r+atlas_Fibula.r",
+      "glut_max2_r+atlas_Femur.r",
+      "glut_max2_r+atlas_Hip bone.r",
+      "med_gas_r+atlas_Femur.r",
+      "med_gas_r+atlas_Tibia.r",
+      "med_gas_r+semimem_r",
+      "med_gas_r+soleus_r",
+      "rect_fem_r+atlas_Hip bone.r",
+      "rect_fem_r+atlas_Tibia.r",
+      "rect_fem_r+vas_int_r",
+      "semimem_r+atlas_Femur.r",
+      "semimem_r+atlas_Hip bone.r",
+      "semimem_r+atlas_Tibia.r",
+      "soleus_r+atlas_Fibula.r",
+      "soleus_r+atlas_Tibia.r",
+      "tib_ant_r+atlas_Tibia.r",
+      "vas_int_r+atlas_Femur.r"
+    ],
+    "referenceSelfIntersectingMuscles": {
+      "glut_max2_r": 1,
+      "soleus_r": 2,
+      "tib_ant_r": 2,
+      "vas_int_r": 1
+    },
+    "meshesWithEdgeRatioOutsideGate": [],
+    "worstEdgeRatioMinimum": 0.5814,
+    "worstEdgeRatioMaximum": 1.4755,
+    "framesWithFlippedFaces": [],
+    "framesWithDegenerateFaces": [],
+    "addedIntersectingMeshPairs": {
+      "bifemsh_r+atlas_Tibia.r": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "bifemsh_r+soleus_r": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "bifemsh_r+tib_ant_r": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "glut_max2_r+rect_fem_r": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "rect_fem_r+atlas_Femur.r": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "rect_fem_r+atlas_Patella.r": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "tib_ant_r+atlas_Femur.r": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "vas_int_r+atlas_Hip bone.r": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    "addedIntersectingBonePairs": {
+      "atlas_Femur.r+atlas_Fibula.r": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "atlas_Femur.r+atlas_Patella.r": [
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "atlas_Femur.r+atlas_Tibia.r": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ]
+    },
+    "addedIntersectionFrameCount": 97,
+    "maximumAddedDepthM": 0.00759
+  },
+  "limitations": [
+    "the deformation is a heuristic rigid-body-plus-endpoint correction, so this screen tests its geometry, not anatomy, attachment or force",
+    "intersections are triangle-pair overlaps of closed surface meshes; they say nothing about which structure lies outside which",
+    "pairs that already intersect in the first frame are taken as the reference state, so the screen reports added penetration rather than absolute overlap",
+    "penetration depth is measured from intersecting face centroids to the other surface and is therefore an estimate, not a measured overlap volume",
+    "flips are judged against each muscle's own rigid body motion; a face that reverses relative to its neighbours without reversing against the bone is not counted",
+    "one standing registration with shared bounding-box centres and one subject's squat, right side only"
+  ]
+}

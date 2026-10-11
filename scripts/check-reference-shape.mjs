@@ -29,7 +29,7 @@ assert.notEqual(mesh.geometry, geometry, 'reference muscle geometry must be inde
 const original = shape.rest.slice();
 const position = mesh.geometry.getAttribute('position');
 applyReferenceMuscleThickness(shape, 1.2);
-let widest = 0, endpointMovement = 0;
+let widest = 0, endpointMovement = 0, midBellySamples = 0, endpointSamples = 0;
 for (let i = 0; i < position.count; i++) {
   const old = new Vector3(...original.slice(i * 3, i * 3 + 3));
   const now = new Vector3(position.getX(i), position.getY(i), position.getZ(i));
@@ -40,12 +40,18 @@ for (let i = 0; i < position.count; i++) {
   const newAxial = newOffset.dot(shape.axis);
   const newRadial = newOffset.sub(shape.axis.clone().multiplyScalar(newAxial)).length();
   if (Math.abs((axial - shape.first) / (shape.last - shape.first) - .5) < .01 && radial > .01) {
+    midBellySamples++;
     widest = Math.max(widest, newRadial / radial);
   }
   if (Math.abs(Math.abs(old.y) - .2) < 1e-5) {
+    endpointSamples++;
     endpointMovement = Math.max(endpointMovement, old.distanceTo(now));
   }
 }
+// Counting the samples matters: “the endpoints did not move” is satisfied by a mesh that has no vertex
+// at the endpoint height at all, so the assertion has to prove it looked at something.
+assert(midBellySamples > 0 && endpointSamples > 0,
+  `the thickness assertions had nothing to measure: ${midBellySamples} mid-belly, ${endpointSamples} endpoint vertices`);
 assert(Math.abs(widest - 1.2) < 1e-5, `mid-belly width changed ${widest}x`);
 assert(endpointMovement < 1e-7, `endpoints shifted ${endpointMovement} m`);
 applyReferenceMuscleThickness(shape, 1);

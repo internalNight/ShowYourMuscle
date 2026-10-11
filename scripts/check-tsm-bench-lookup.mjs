@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { checkTsmBodyFrames } from './check-tsm-body-frames.mjs';
+import { checkTsmBodyFrames } from './tsm-body-frames.mjs';
 
 const data = JSON.parse(readFileSync('public/data/bench_tsm_reference.json', 'utf8'));
 assert.equal(data.schemaVersion, 2);
@@ -24,6 +24,9 @@ for (const [index, frame] of data.frames.entries()) {
   }
   assert(Math.abs(frame.viewerJointsM.shoulder[0] - 0.27) < 1e-9);
   assert(Math.abs(frame.viewerJointsM.shoulder[1] - 0.75) < 1e-9);
+  // Same contract as the squat and press references: every frame must carry the whole muscle list.
+  assert.deepEqual(Object.keys(frame.muscles).sort(), names.slice().sort(),
+    `frame ${index} (phase ${frame.phase}) changed the set of muscles`);
   const lowered = Math.sin(Math.PI * frame.phase) ** 2;
   const target = top.map((value, axis) => value + (bottom[axis] - value) * lowered);
   maxHandPathError = Math.max(maxHandPathError,

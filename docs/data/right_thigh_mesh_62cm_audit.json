@@ -89,49 +89,7 @@
         }
       ],
       "referenceMaximumRadialDistanceM": 0.09427,
-      "personalizedMaximumRadialDistanceM": 0.10824,
-      "sampledFrameDistortion": {
-        "1": {
-          "minimumEdgeRatio": 1.0,
-          "p01EdgeRatio": 1.0,
-          "p99EdgeRatio": 1.0,
-          "maximumEdgeRatio": 1.0,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "26": {
-          "minimumEdgeRatio": 0.7278,
-          "p01EdgeRatio": 0.8525,
-          "p99EdgeRatio": 1.1029,
-          "maximumEdgeRatio": 1.1514,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "51": {
-          "minimumEdgeRatio": 0.5789,
-          "p01EdgeRatio": 0.7264,
-          "p99EdgeRatio": 1.1173,
-          "maximumEdgeRatio": 1.1801,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "76": {
-          "minimumEdgeRatio": 0.7278,
-          "p01EdgeRatio": 0.8525,
-          "p99EdgeRatio": 1.1029,
-          "maximumEdgeRatio": 1.1514,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "101": {
-          "minimumEdgeRatio": 1.0,
-          "p01EdgeRatio": 1.0,
-          "p99EdgeRatio": 1.0,
-          "maximumEdgeRatio": 1.0,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        }
-      }
+      "personalizedMaximumRadialDistanceM": 0.10824
     },
     {
       "opensimMuscle": "bifemsh_r",
@@ -215,49 +173,7 @@
         }
       ],
       "referenceMaximumRadialDistanceM": 0.07863,
-      "personalizedMaximumRadialDistanceM": 0.09028,
-      "sampledFrameDistortion": {
-        "1": {
-          "minimumEdgeRatio": 1.0,
-          "p01EdgeRatio": 1.0,
-          "p99EdgeRatio": 1.0,
-          "maximumEdgeRatio": 1.0,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "26": {
-          "minimumEdgeRatio": 0.7592,
-          "p01EdgeRatio": 0.7777,
-          "p99EdgeRatio": 1.0153,
-          "maximumEdgeRatio": 1.0166,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "51": {
-          "minimumEdgeRatio": 0.6131,
-          "p01EdgeRatio": 0.6475,
-          "p99EdgeRatio": 1.0215,
-          "maximumEdgeRatio": 1.0229,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "76": {
-          "minimumEdgeRatio": 0.7592,
-          "p01EdgeRatio": 0.7777,
-          "p99EdgeRatio": 1.0153,
-          "maximumEdgeRatio": 1.0166,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "101": {
-          "minimumEdgeRatio": 1.0,
-          "p01EdgeRatio": 1.0,
-          "p99EdgeRatio": 1.0,
-          "maximumEdgeRatio": 1.0,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        }
-      }
+      "personalizedMaximumRadialDistanceM": 0.09028
     },
     {
       "opensimMuscle": "semimem_r",
@@ -341,49 +257,7 @@
         }
       ],
       "referenceMaximumRadialDistanceM": 0.08191,
-      "personalizedMaximumRadialDistanceM": 0.09405,
-      "sampledFrameDistortion": {
-        "1": {
-          "minimumEdgeRatio": 1.0,
-          "p01EdgeRatio": 1.0,
-          "p99EdgeRatio": 1.0,
-          "maximumEdgeRatio": 1.0,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "26": {
-          "minimumEdgeRatio": 0.8868,
-          "p01EdgeRatio": 0.9038,
-          "p99EdgeRatio": 1.2405,
-          "maximumEdgeRatio": 1.2652,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "51": {
-          "minimumEdgeRatio": 0.8491,
-          "p01EdgeRatio": 0.8675,
-          "p99EdgeRatio": 1.4272,
-          "maximumEdgeRatio": 1.4726,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "76": {
-          "minimumEdgeRatio": 0.8869,
-          "p01EdgeRatio": 0.9038,
-          "p99EdgeRatio": 1.2405,
-          "maximumEdgeRatio": 1.2652,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        },
-        "101": {
-          "minimumEdgeRatio": 1.0,
-          "p01EdgeRatio": 1.0,
-          "p99EdgeRatio": 1.0,
-          "maximumEdgeRatio": 1.0,
-          "edgesBelowHalf": 0,
-          "edgesAboveOneAndHalf": 0
-        }
-      }
+      "personalizedMaximumRadialDistanceM": 0.09405
     }
   ],
   "limitations": [
@@ -391,13 +265,5 @@
     "vertical mesh fraction is a deformation heuristic, not fiber direction",
     "thigh girth scales all three mesh cross sections together; no individual muscle distribution inferred",
     "no load, activation, or individual muscle force"
-  ],
-  "sampledFrames": [
-    1,
-    26,
-    51,
-    76,
-    101
-  ],
-  "checkedVertices": 75
+  ]
 }

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { checkTsmBodyFrames } from './check-tsm-body-frames.mjs';
+import { checkTsmBodyFrames } from './tsm-body-frames.mjs';
 
 const data = JSON.parse(readFileSync('public/data/press_tsm_reference.json', 'utf8'));
 assert.equal(data.schemaVersion, 2);
@@ -22,6 +22,11 @@ for (const [index, frame] of data.frames.entries()) {
   }
   assert(Math.abs(frame.viewerJointsM.shoulder[0] - 0.30) < 1e-9);
   assert(Math.abs(frame.viewerJointsM.shoulder[1] - 1.45) < 1e-9);
+  // The muscle list is part of the frame contract. The squat reference checks it per frame; here it was
+  // only read from frame 0, so a frame that dropped or added a muscle failed later with an unrelated
+  // TypeError instead of naming the frame.
+  assert.deepEqual(Object.keys(frame.muscles).sort(), names.slice().sort(),
+    `frame ${index} (phase ${frame.phase}) changed the set of muscles`);
   for (const name of names) {
     const muscle = frame.muscles[name];
     assert(muscle.lengthM > 0 && Number.isFinite(muscle.lengthM));

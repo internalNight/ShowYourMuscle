@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-const data = JSON.parse(readFileSync('public/data/press_arm26_reference.json', 'utf8'));
+// Research-only artifact: the shipping app no longer fetches this lookup, so it lives with the other
+// research data instead of inside the web bundle. `check:bundle-assets` keeps that separation.
+const data = JSON.parse(readFileSync('docs/data/press_arm26_reference.json', 'utf8'));
 assert.equal(data.schemaVersion, 1);
 assert.equal(data.status, 'planar_research_kinematics_only');
 assert.equal(data.frames.length, 101);

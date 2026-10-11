@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$SdkRoot = 'D:\Android\Sdk',
   [string]$JdkRoot = 'D:\Android\jdk-21.0.12.1+1'
 )
@@ -22,16 +22,24 @@ if (-not (Test-Path -LiteralPath $platformJar -PathType Leaf) -or
   exit 2
 }
 
+# Windows PowerShell 5.1 turns any native stderr output into a terminating error, so an ordinary
+# tool warning (for example Vite's chunk-size notice) aborts the build. Run each native tool with
+# stderr tolerated and check its exit code explicitly instead.
+function Invoke-NativeTool([scriptblock]$Command, [string]$FailureMessage) {
+  $previous = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
+  try { & $Command } finally { $ErrorActionPreference = $previous }
+  if ($LASTEXITCODE -ne 0) { throw "$FailureMessage：$LASTEXITCODE" }
+}
+
 $env:JAVA_HOME = $JdkRoot
 $env:ANDROID_HOME = $SdkRoot
 Push-Location $projectRoot
 try {
-  & npm.cmd run android:sync
-  if ($LASTEXITCODE -ne 0) { throw "前端构建或 Capacitor 同步失败：$LASTEXITCODE" }
+  Invoke-NativeTool { npm.cmd run android:sync } '前端构建或 Capacitor 同步失败'
   Push-Location $androidRoot
   try {
-    & .\gradlew.bat :app:assembleDebug
-    if ($LASTEXITCODE -ne 0) { throw "Android Gradle 编译失败：$LASTEXITCODE" }
+    Invoke-NativeTool { .\gradlew.bat :app:assembleDebug } 'Android Gradle 编译失败'
   } finally {
     Pop-Location
   }

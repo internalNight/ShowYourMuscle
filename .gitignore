@@ -9,7 +9,11 @@ __pycache__/
 *.jks
 *.keystore
 *.hprof
+bundle-text-diff.md
 .venv/
 android/.kotlin/
 assets/blender/myosim_fullbody_structural_review.blend
 assets/blender/myosim_fullbody_structural_review.png
+releases/muscle-atlas-debug-v*.apk
+!releases/muscle-atlas-debug-v133.apk
+docs/data/*.bak[0-9]*
