@@ -16,4 +16,5 @@ assets/blender/myosim_fullbody_structural_review.blend
 assets/blender/myosim_fullbody_structural_review.png
 releases/muscle-atlas-debug-v*.apk
 !releases/muscle-atlas-debug-v133.apk
+!releases/muscle-atlas-debug-unified-opensim.apk
 docs/data/*.bak[0-9]*

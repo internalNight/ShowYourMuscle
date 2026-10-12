@@ -1,18 +1,12 @@
-const CACHE = 'muscle-atlas-v133';
+const CACHE = 'muscle-atlas-v134';
 // The page asks whether the offline bundle is complete before it tells the user so. Only a list
 // written after addAll() resolved counts as complete, so a failed or interrupted precache cannot be
 // reported as ready.
 const PRECACHE_MANIFEST = '/__precache-manifest.json';
 const STATIC_PRECACHE = ['/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png',
-  '/models/prototype_parts.glb', '/models/full_body_skeleton.glb',
-  '/models/NOTICE-z-anatomy.txt',
-  '/data/squat_opensim_reference.json', '/data/press_tsm_reference.json',
-  '/data/bench_tsm_reference.json'];
-// Attempted, but never allowed to fail the install: the 10.7 MB research model is the one asset the browser
-// has refused to store here, and asking cache.addAll for it used to reject the entire precache — after which
-// navigator.serviceWorker.ready never resolved. The research layer still wants it offline, so it is tried
-// every install and its outcome is recorded.
-const BEST_EFFORT_PRECACHE = ['/models/z_anatomy_reference.glb'];
+  '/models/unified_opensim_skeleton.glb', '/data/unified_opensim_reference.json',
+  '/models/NOTICE-unified-opensim.txt'];
+const BEST_EFFORT_PRECACHE = [];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);

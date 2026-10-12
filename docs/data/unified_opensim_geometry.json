@@ -1,0 +1,851 @@
+{
+  "model": "cyclistFullBodyMuscle.osim",
+  "source": "https://github.com/ross-wilkinson/opensim-model-fullBodyMuscleActuated",
+  "license": "MIT; Copyright (c) 2021 ross-wilkinson; BSD-3-Clause; Copyright (c) 2022 perfanalytics",
+  "supplement": "https://github.com/perfanalytics/pose2sim/tree/main/Pose2Sim/OpenSim_Setup/Geometry",
+  "present": [
+    {
+      "body": "pelvis",
+      "mesh": "r_pelvis.vtp",
+      "origin": "model repository",
+      "node": "body:pelvis:pelvis_geom_1",
+      "triangles": 246
+    },
+    {
+      "body": "pelvis",
+      "mesh": "l_pelvis.vtp",
+      "origin": "model repository",
+      "node": "body:pelvis:pelvis_geom_2",
+      "triangles": 246
+    },
+    {
+      "body": "sacrum",
+      "mesh": "sacrum.vtp",
+      "origin": "model repository",
+      "node": "body:sacrum:sacrum_geom_1",
+      "triangles": 380
+    },
+    {
+      "body": "femur_r",
+      "mesh": "r_femur.vtp",
+      "origin": "model repository",
+      "node": "body:femur_r:femur_r_geom_1",
+      "triangles": 908
+    },
+    {
+      "body": "tibia_r",
+      "mesh": "r_tibia.vtp",
+      "origin": "model repository",
+      "node": "body:tibia_r:tibia_r_geom_1",
+      "triangles": 390
+    },
+    {
+      "body": "tibia_r",
+      "mesh": "r_fibula.vtp",
+      "origin": "model repository",
+      "node": "body:tibia_r:tibia_r_geom_2",
+      "triangles": 240
+    },
+    {
+      "body": "patella_r",
+      "mesh": "r_patella.vtp",
+      "origin": "model repository",
+      "node": "body:patella_r:patella_r_geom_1",
+      "triangles": 140
+    },
+    {
+      "body": "talus_r",
+      "mesh": "r_talus.vtp",
+      "origin": "model repository",
+      "node": "body:talus_r:talus_r_geom_1",
+      "triangles": 194
+    },
+    {
+      "body": "calcn_r",
+      "mesh": "r_foot.vtp",
+      "origin": "model repository",
+      "node": "body:calcn_r:calcn_r_geom_1",
+      "triangles": 1955
+    },
+    {
+      "body": "toes_r",
+      "mesh": "r_bofoot.vtp",
+      "origin": "model repository",
+      "node": "body:toes_r:toes_r_geom_1",
+      "triangles": 1860
+    },
+    {
+      "body": "femur_l",
+      "mesh": "l_femur.vtp",
+      "origin": "model repository",
+      "node": "body:femur_l:femur_l_geom_1",
+      "triangles": 908
+    },
+    {
+      "body": "tibia_l",
+      "mesh": "l_tibia.vtp",
+      "origin": "model repository",
+      "node": "body:tibia_l:tibia_l_geom_1",
+      "triangles": 390
+    },
+    {
+      "body": "tibia_l",
+      "mesh": "l_fibula.vtp",
+      "origin": "model repository",
+      "node": "body:tibia_l:tibia_l_geom_2",
+      "triangles": 240
+    },
+    {
+      "body": "talus_l",
+      "mesh": "l_talus.vtp",
+      "origin": "model repository",
+      "node": "body:talus_l:talus_l_geom_1",
+      "triangles": 194
+    },
+    {
+      "body": "calcn_l",
+      "mesh": "l_foot.vtp",
+      "origin": "model repository",
+      "node": "body:calcn_l:calcn_l_geom_1",
+      "triangles": 1955
+    },
+    {
+      "body": "toes_l",
+      "mesh": "l_bofoot.vtp",
+      "origin": "model repository",
+      "node": "body:toes_l:toes_l_geom_1",
+      "triangles": 1860
+    },
+    {
+      "body": "lumbar5",
+      "mesh": "lumbar5.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:lumbar5:lumbar5_geom_1",
+      "triangles": 424
+    },
+    {
+      "body": "lumbar4",
+      "mesh": "lumbar4.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:lumbar4:lumbar4_geom_1",
+      "triangles": 424
+    },
+    {
+      "body": "lumbar3",
+      "mesh": "lumbar3.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:lumbar3:lumbar3_geom_1",
+      "triangles": 424
+    },
+    {
+      "body": "lumbar2",
+      "mesh": "lumbar2.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:lumbar2:lumbar2_geom_1",
+      "triangles": 424
+    },
+    {
+      "body": "lumbar1",
+      "mesh": "lumbar1.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:lumbar1:lumbar1_geom_1",
+      "triangles": 424
+    },
+    {
+      "body": "head_neck",
+      "mesh": "jaw.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:head_neck:head_neck_geom_8",
+      "triangles": 2916
+    },
+    {
+      "body": "head_neck",
+      "mesh": "skull.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "node": "body:head_neck:head_neck_geom_9",
+      "triangles": 6621
+    },
+    {
+      "body": "humerus_r",
+      "mesh": "humerus_rv.vtp",
+      "origin": "model repository",
+      "node": "body:humerus_r:humerus_r_geom_1",
+      "triangles": 676
+    },
+    {
+      "body": "ulna_r",
+      "mesh": "ulna_rv.vtp",
+      "origin": "model repository",
+      "node": "body:ulna_r:ulna_r_geom_1",
+      "triangles": 392
+    },
+    {
+      "body": "radius_r",
+      "mesh": "radius_rv.vtp",
+      "origin": "model repository",
+      "node": "body:radius_r:radius_r_geom_1",
+      "triangles": 384
+    },
+    {
+      "body": "hand_r",
+      "mesh": "pisiform_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_1",
+      "triangles": 64
+    },
+    {
+      "body": "hand_r",
+      "mesh": "lunate_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_2",
+      "triangles": 132
+    },
+    {
+      "body": "hand_r",
+      "mesh": "scaphoid_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_3",
+      "triangles": 142
+    },
+    {
+      "body": "hand_r",
+      "mesh": "triquetrum_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_4",
+      "triangles": 162
+    },
+    {
+      "body": "hand_r",
+      "mesh": "hamate_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_5",
+      "triangles": 148
+    },
+    {
+      "body": "hand_r",
+      "mesh": "capitate_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_6",
+      "triangles": 176
+    },
+    {
+      "body": "hand_r",
+      "mesh": "trapezoid_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_7",
+      "triangles": 126
+    },
+    {
+      "body": "hand_r",
+      "mesh": "trapezium_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_8",
+      "triangles": 206
+    },
+    {
+      "body": "hand_r",
+      "mesh": "metacarpal2_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_9",
+      "triangles": 448
+    },
+    {
+      "body": "hand_r",
+      "mesh": "index_proximal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_10",
+      "triangles": 227
+    },
+    {
+      "body": "hand_r",
+      "mesh": "index_medial_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_11",
+      "triangles": 264
+    },
+    {
+      "body": "hand_r",
+      "mesh": "index_distal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_12",
+      "triangles": 250
+    },
+    {
+      "body": "hand_r",
+      "mesh": "metacarpal3_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_13",
+      "triangles": 636
+    },
+    {
+      "body": "hand_r",
+      "mesh": "middle_proximal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_14",
+      "triangles": 262
+    },
+    {
+      "body": "hand_r",
+      "mesh": "middle_medial_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_15",
+      "triangles": 328
+    },
+    {
+      "body": "hand_r",
+      "mesh": "middle_distal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_16",
+      "triangles": 280
+    },
+    {
+      "body": "hand_r",
+      "mesh": "metacarpal4_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_17",
+      "triangles": 694
+    },
+    {
+      "body": "hand_r",
+      "mesh": "ring_proximal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_18",
+      "triangles": 260
+    },
+    {
+      "body": "hand_r",
+      "mesh": "ring_medial_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_19",
+      "triangles": 344
+    },
+    {
+      "body": "hand_r",
+      "mesh": "ring_distal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_20",
+      "triangles": 246
+    },
+    {
+      "body": "hand_r",
+      "mesh": "metacarpal5_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_21",
+      "triangles": 768
+    },
+    {
+      "body": "hand_r",
+      "mesh": "little_proximal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_22",
+      "triangles": 270
+    },
+    {
+      "body": "hand_r",
+      "mesh": "little_medial_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_23",
+      "triangles": 236
+    },
+    {
+      "body": "hand_r",
+      "mesh": "little_distal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_24",
+      "triangles": 316
+    },
+    {
+      "body": "hand_r",
+      "mesh": "metacarpal1_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_25",
+      "triangles": 588
+    },
+    {
+      "body": "hand_r",
+      "mesh": "thumb_proximal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_26",
+      "triangles": 282
+    },
+    {
+      "body": "hand_r",
+      "mesh": "thumb_distal_rvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_r:hand_r_geom_27",
+      "triangles": 344
+    },
+    {
+      "body": "humerus_l",
+      "mesh": "humerus_lv.vtp",
+      "origin": "model repository",
+      "node": "body:humerus_l:humerus_l_geom_1",
+      "triangles": 676
+    },
+    {
+      "body": "ulna_l",
+      "mesh": "ulna_lv.vtp",
+      "origin": "model repository",
+      "node": "body:ulna_l:ulna_l_geom_1",
+      "triangles": 392
+    },
+    {
+      "body": "radius_l",
+      "mesh": "radius_lv.vtp",
+      "origin": "model repository",
+      "node": "body:radius_l:radius_l_geom_1",
+      "triangles": 384
+    },
+    {
+      "body": "hand_l",
+      "mesh": "pisiform_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_1",
+      "triangles": 64
+    },
+    {
+      "body": "hand_l",
+      "mesh": "lunate_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_2",
+      "triangles": 132
+    },
+    {
+      "body": "hand_l",
+      "mesh": "scaphoid_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_3",
+      "triangles": 142
+    },
+    {
+      "body": "hand_l",
+      "mesh": "triquetrum_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_4",
+      "triangles": 162
+    },
+    {
+      "body": "hand_l",
+      "mesh": "hamate_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_5",
+      "triangles": 148
+    },
+    {
+      "body": "hand_l",
+      "mesh": "capitate_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_6",
+      "triangles": 176
+    },
+    {
+      "body": "hand_l",
+      "mesh": "trapezoid_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_7",
+      "triangles": 126
+    },
+    {
+      "body": "hand_l",
+      "mesh": "trapezium_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_8",
+      "triangles": 206
+    },
+    {
+      "body": "hand_l",
+      "mesh": "metacarpal2_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_9",
+      "triangles": 448
+    },
+    {
+      "body": "hand_l",
+      "mesh": "index_proximal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_10",
+      "triangles": 227
+    },
+    {
+      "body": "hand_l",
+      "mesh": "index_medial_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_11",
+      "triangles": 264
+    },
+    {
+      "body": "hand_l",
+      "mesh": "index_distal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_12",
+      "triangles": 250
+    },
+    {
+      "body": "hand_l",
+      "mesh": "metacarpal3_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_13",
+      "triangles": 636
+    },
+    {
+      "body": "hand_l",
+      "mesh": "middle_proximal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_14",
+      "triangles": 262
+    },
+    {
+      "body": "hand_l",
+      "mesh": "middle_medial_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_15",
+      "triangles": 328
+    },
+    {
+      "body": "hand_l",
+      "mesh": "middle_distal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_16",
+      "triangles": 280
+    },
+    {
+      "body": "hand_l",
+      "mesh": "metacarpal4_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_17",
+      "triangles": 694
+    },
+    {
+      "body": "hand_l",
+      "mesh": "ring_proximal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_18",
+      "triangles": 260
+    },
+    {
+      "body": "hand_l",
+      "mesh": "ring_medial_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_19",
+      "triangles": 344
+    },
+    {
+      "body": "hand_l",
+      "mesh": "ring_distal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_20",
+      "triangles": 246
+    },
+    {
+      "body": "hand_l",
+      "mesh": "metacarpal5_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_21",
+      "triangles": 768
+    },
+    {
+      "body": "hand_l",
+      "mesh": "little_proximal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_22",
+      "triangles": 270
+    },
+    {
+      "body": "hand_l",
+      "mesh": "little_medial_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_23",
+      "triangles": 236
+    },
+    {
+      "body": "hand_l",
+      "mesh": "little_distal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_24",
+      "triangles": 316
+    },
+    {
+      "body": "hand_l",
+      "mesh": "metacarpal1_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_25",
+      "triangles": 588
+    },
+    {
+      "body": "hand_l",
+      "mesh": "thumb_proximal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_26",
+      "triangles": 282
+    },
+    {
+      "body": "hand_l",
+      "mesh": "thumb_distal_lvs.vtp",
+      "origin": "model repository",
+      "node": "body:hand_l:hand_l_geom_27",
+      "triangles": 344
+    }
+  ],
+  "missing": [
+    {
+      "body": "patella_l",
+      "mesh": "l_pat.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "cerv6.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "cerv5.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "cerv4.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "cerv3.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "cerv2.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "cerv1.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "head_neck",
+      "mesh": "rotatedcerv7.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib12_R",
+      "mesh": "Rib12R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib11_R",
+      "mesh": "Rib11R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib10_R",
+      "mesh": "Rib10R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib9_R",
+      "mesh": "Rib9R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib8_R",
+      "mesh": "Rib8R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib7_R",
+      "mesh": "Rib7R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib6_R",
+      "mesh": "Rib6R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib5_R",
+      "mesh": "Rib5R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib4_R",
+      "mesh": "Rib4R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib3_R",
+      "mesh": "Rib3R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib2_R",
+      "mesh": "Rib2R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib1_R",
+      "mesh": "Rib1R.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib12_L",
+      "mesh": "Rib12L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib11_L",
+      "mesh": "Rib11L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib10_L",
+      "mesh": "Rib10L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib9_L",
+      "mesh": "Rib9L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib8_L",
+      "mesh": "Rib8L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib7_L",
+      "mesh": "Rib7L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib6_L",
+      "mesh": "Rib6L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib5_L",
+      "mesh": "Rib5L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib4_L",
+      "mesh": "Rib4L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib3_L",
+      "mesh": "Rib3L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib2_L",
+      "mesh": "Rib2L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "rib1_L",
+      "mesh": "Rib1L.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "sternum",
+      "mesh": "Sternum.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "clavicle_R",
+      "mesh": "clavicle.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "scapula_R",
+      "mesh": "scapula.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "clavicle_L",
+      "mesh": "clavicle_l.vtp",
+      "origin": "model repository"
+    },
+    {
+      "body": "scapula_L",
+      "mesh": "scapula_l.vtp",
+      "origin": "model repository"
+    }
+  ],
+  "excluded": [
+    {
+      "body": "thoracic12",
+      "mesh": "thoracic12_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic11",
+      "mesh": "thoracic11_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic10",
+      "mesh": "thoracic10_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic9",
+      "mesh": "thoracic9_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic8",
+      "mesh": "thoracic8_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic7",
+      "mesh": "thoracic7_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic6",
+      "mesh": "thoracic6_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic5",
+      "mesh": "thoracic5_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic4",
+      "mesh": "thoracic4_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic3",
+      "mesh": "thoracic3_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic2",
+      "mesh": "thoracic2_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    },
+    {
+      "body": "thoracic1",
+      "mesh": "thoracic1_s.vtp",
+      "origin": "Pose2Sim matching geometry",
+      "reason": "source model positions upper vertebrae above the skull"
+    }
+  ],
+  "limits": "Only exact mesh filenames referenced by this one .osim model are used. Missing meshes are not synthesized. Twelve thoracic meshes are excluded because this model places them visibly above the skull. Supplement geometry shares 64 byte-identical filenames with the model source; the other added meshes have not been individually registration-validated."
+}
