@@ -91,6 +91,35 @@ try {
       return +document.querySelector('#unified-stage').dataset.selectedLengthM;
     })()`);
     assert.equal(await evalPage(`document.querySelector('#unified-stage').dataset.mode`), mode);
+    const major = await evalPage(`(() => { const p = document.querySelector('#unified-major');
+      return { longer: p.dataset.longer, shorter: p.dataset.shorter,
+        reference: p.dataset.reference, text: p.textContent }; })()`);
+    assert.equal(major.reference, '动作起点');
+    assert(major.text.includes('不推断激活或力量'), `${mode} omits geometric scope`);
+    if (mode === 'squat') assert(major.longer.includes('臀大肌') && major.longer.includes('股'),
+      `squat major changes are not lower limb: ${JSON.stringify(major)}`);
+    if (mode === 'bench') {
+      assert(major.shorter.includes('肱三头肌') && major.text.includes('胸大肌路径变化很小'),
+        `bench geometry or chest caveat missing: ${JSON.stringify(major)}`);
+      const before = await evalPage(`document.querySelector('#unified-stage').dataset.selectedLengthM`);
+      await evalPage(`document.querySelector('#unified-major .major-row.shorter').click()`);
+      const after = await evalPage(`document.querySelector('#unified-stage').dataset.selectedLengthM`);
+      assert.notEqual(after, before, 'clicking a major muscle did not select its OpenSim path');
+    }
+    if (mode === 'press') assert(major.shorter.includes('肱三头肌'),
+      `press major changes omit triceps: ${JSON.stringify(major)}`);
+    if (mode === 'squat') {
+      const returnState = await evalPage(`(() => { const range = document.querySelector('#unified-timeline');
+        range.value = '75'; range.dispatchEvent(new Event('input', { bubbles: true }));
+        const p = document.querySelector('#unified-major');
+        return { shorter: p.dataset.shorter, reference: p.dataset.reference,
+          readout: document.querySelector('#unified-readout').textContent }; })()`);
+      assert.equal(returnState.reference, '折返点');
+      assert(returnState.shorter.includes('臀大肌') && returnState.readout.includes('折返点'),
+        `return stage did not reverse geometric comparison: ${JSON.stringify(returnState)}`);
+      await evalPage(`(() => { const range = document.querySelector('#unified-timeline');
+        range.value = '50'; range.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+    }
     const propState = await evalPage(`(() => {
       const canvas = document.querySelector('#unified-stage canvas');
       return { canvasHeight: canvas.getBoundingClientRect().height,

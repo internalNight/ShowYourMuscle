@@ -68,16 +68,18 @@ host.innerHTML = `
       <label class="check"><input id="unified-surfaces" type="checkbox" checked /> 显示精细肌肉表面</label>
       <label class="check"><input id="unified-bones" type="checkbox" checked /> 显示透视骨骼（同一 OpenSim 骨架）</label>
       <label class="check"><input id="unified-muscles" type="checkbox" /> 显示肌肉肌腱路径</label>
+      <label class="check"><input id="unified-focus" type="checkbox" checked /> 仅突出主要变化肌束</label>
       <label for="unified-group">查看区域</label>
       <select id="unified-group"><option value="all">全身 · 520 条</option><option value="leg">双腿 · 80 条</option><option value="trunk">躯干 · 约 360 条</option><option value="upper">肩臂 · 约 80 条</option></select>
       <label for="unified-surface">查看主要肌肉</label>
       <select id="unified-surface" aria-label="选择精细肌肉表面"></select>
       <label for="unified-muscle">选中一条路径</label>
       <select id="unified-muscle"></select>
+      <section id="unified-major" class="unified-card unified-major" aria-live="polite"></section>
       <div id="unified-readout" class="unified-card" aria-live="polite"></div>
       <div id="unified-joints" class="unified-card" aria-live="polite"></div>
-      <div class="unified-legend"><span><i style="background:#f36d72"></i>比动作起点长</span><span><i style="background:#69c8dc"></i>比动作起点短</span><span><i style="background:#b77f83"></i>接近起点长度</span></div>
-      <p class="unified-caveat">肌腹在主骨段上保形，连接端随相邻骨段过渡；缩短时的轻微鼓起是体积示意。动作模式的颜色比较当前帧与该动作起点的 OpenSim 整条肌肉肌腱路径长度；静止及自定义模式比较静止参考姿态。不等于激活或力量。动作轨迹是教学预设，尚未计算关节反力或发力点。</p>
+      <div class="unified-legend"><span><i style="background:#f36d72"></i>本段路径变长</span><span><i style="background:#69c8dc"></i>本段路径变短</span><span><i style="background:#b77f83"></i>变化较小</span></div>
+      <p class="unified-caveat">颜色和百分比来自 OpenSim 整条肌肉肌腱路径的几何长度：前半程比动作起点，回程比折返点；自定义模式比静止姿态。路径变短只表示收缩方向，不能直接等同肌纤维收缩、激活或发力。肌腹鼓起仍是外观示意，不随回程比较基准重置。</p>
       <p class="unified-caveat">源 OpenSim 模型缺 ${geometryAudit.missing.length} 个骨网格引用；骨骼透视层补用 Z-Anatomy 骨表面，所有骨段仍由同一 OpenSim 模型驱动。解剖配准误差见项目文档。</p>
       <p><a href="https://github.com/ross-wilkinson/opensim-model-fullBodyMuscleActuated" target="_blank" rel="noreferrer">OpenSim 模型 ↗</a> · <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noreferrer">Z-Anatomy ↗</a> · <a href="/models/NOTICE-z-anatomy.txt">表面许可</a></p>
     </aside>
@@ -210,9 +212,94 @@ function colour(ratio: number): string {
   return '#b77f83';
 }
 
-function comparisonFrame(): ModelFrame {
+function actionStartFrame(): ModelFrame {
   if (!data) throw new Error('OpenSim data is not loaded');
   return mode === 'neutral' || mode === 'custom' ? data.neutral : data.actions[mode][0];
+}
+
+function comparisonFrame(): ModelFrame {
+  if (!data) throw new Error('OpenSim data is not loaded');
+  return mode === 'neutral' || mode === 'custom' || phase <= 50
+    ? actionStartFrame() : data.actions[mode][50];
+}
+
+function comparisonLabel(): string {
+  return mode === 'neutral' || mode === 'custom' ? '静止姿态'
+    : phase <= 50 ? '动作起点' : '折返点';
+}
+
+const anatomyLabels: Record<string, string> = {
+  'Gluteus maximus': '臀大肌', 'Gluteus medius': '臀中肌',
+  'Vastus intermedius': '股中间肌', 'Vastus lateralis': '股外侧肌',
+  'Vastus medialis': '股内侧肌', 'Rectus femoris': '股直肌',
+  'Semimembranosus': '半膜肌', 'Semitendinosus': '半腱肌',
+  'Lateral head of gastrocnemius': '腓肠肌外侧头',
+  'Medial head of gastrocnemius': '腓肠肌内侧头',
+  'Soleus': '比目鱼肌', 'Tibialis anterior': '胫骨前肌',
+  'Brachialis': '肱肌', 'Brachioradialis': '肱桡肌',
+  'Long head of biceps brachii': '肱二头肌长头',
+  'Short head of biceps brachii': '肱二头肌短头',
+  'Long head of triceps brachii': '肱三头肌长头',
+  'Lateral head of triceps brachii': '肱三头肌外侧头',
+  'Medial head of triceps brachii': '肱三头肌内侧头',
+  'Clavicular head of pectoralis major': '胸大肌锁骨部',
+  'Sternocostal head of pectoralis major': '胸大肌胸肋部',
+  '(Abdominal part of pectoralis major muscle)': '胸大肌腹部',
+  'Clavicular part of deltoid': '三角肌前束',
+  'Acromial part of deltoid': '三角肌中束',
+  'Scapular spinal part of deltoid': '三角肌后束',
+  'Latissimus dorsi': '背阔肌',
+};
+
+function updateMajorChanges(frame: ModelFrame, baseline: ModelFrame): Set<number> {
+  if (!data) return new Set();
+  const panel = element<HTMLElement>('#unified-major');
+  if (mode === 'neutral') {
+    panel.innerHTML = '<strong>主要肌群几何变化</strong><span>选择预设动作，或拖动自定义姿态，查看肌肉肌腱路径的变长与变短。</span>';
+    return new Set();
+  }
+  const relevant = mode === 'squat'
+    ? /^(Gluteus|Vastus|Rectus femoris|Semimembranosus|Semitendinosus|Lateral head of gastrocnemius|Medial head of gastrocnemius|Soleus|Tibialis anterior)/
+    : mode === 'custom' ? /./
+      : /^(Brachialis|Brachioradialis|Long head of biceps|Short head of biceps|Long head of triceps|Lateral head of triceps|Medial head of triceps|Clavicular head of pectoralis|Sternocostal head of pectoralis|\(Abdominal part of pectoralis|Clavicular part of deltoid|Acromial part of deltoid|Scapular spinal part of deltoid|Latissimus dorsi)/;
+  const candidates = new Map<string, { changes: number[]; indices: number[] }>();
+  for (const [surfaceIndex, { mesh, modelIndices }] of surfaceMeshes.entries()) {
+    const name = mesh.name.replace(/\.[rl]$/, '').replace(/ muscle$/, '');
+    if (!relevant.test(name)) continue;
+    const valid = modelIndices.filter(index => index >= 0 && baseline.lengthsM[index] > 0);
+    if (!valid.length) continue;
+    const change = valid.reduce((sum, index) =>
+      sum + 100 * (frame.lengthsM[index] / baseline.lengthsM[index] - 1), 0) / valid.length;
+    const side = mode === 'custom' ? (mesh.name.endsWith('.l') ? ' · 左' : ' · 右') : '';
+    const key = name + side;
+    const item = candidates.get(key) ?? { changes: [], indices: [] };
+    item.changes.push(change);
+    item.indices.push(surfaceIndex);
+    candidates.set(key, item);
+  }
+  const changes = [...candidates].map(([name, item]) => ({
+    label: (anatomyLabels[name.replace(/ · [左右]$/, '')] ?? name) +
+      (mode === 'custom' ? name.slice(-4) : ''),
+    change: item.changes.reduce((sum, value) => sum + value, 0) / item.changes.length,
+    surfaceIndex: item.indices[0], surfaceIndices: item.indices,
+  }));
+  const threshold = 2.5;
+  const long = changes.filter(item => item.change >= threshold)
+    .sort((a, b) => b.change - a.change).slice(0, 3);
+  const short = changes.filter(item => item.change <= -threshold)
+    .sort((a, b) => a.change - b.change).slice(0, 3);
+  const buttons = (items: typeof changes, kind: 'longer' | 'shorter') =>
+    items.length ? items.map(item => `<button type="button" class="major-row ${kind}" data-surface-index="${item.surfaceIndex}" aria-label="查看${item.label}"><span>${item.label}</span><b>${item.change >= 0 ? '+' : ''}${item.change.toFixed(1)}%</b></button>`).join('')
+      : '<span class="major-empty">无明显变化（阈值 2.5%）</span>';
+  const phaseLabel = mode === 'custom' ? '静止 → 自定义姿态'
+    : phase <= 50 ? `动作起点 → ${phase}%` : `折返点 → ${phase}%`;
+  const chest = mode === 'bench' ? changes.filter(item => item.label.startsWith('胸大肌')) : [];
+  const chestMax = chest.length ? Math.max(...chest.map(item => Math.abs(item.change))) : 0;
+  panel.innerHTML = `<strong>主要肌群路径变化</strong><small>${phaseLabel} · ${mode === 'custom' ? '左右分别显示' : '双侧平均'} · 点击肌肉定位</small><div class="major-columns"><div><h3>变长</h3>${buttons(long, 'longer')}</div><div><h3>变短</h3>${buttons(short, 'shorter')}</div></div>${mode === 'bench' && chestMax < threshold && phase > 0 ? '<small>本模型此卧推轨迹的胸大肌路径变化很小；不能据此判断胸大肌不参与发力。</small>' : ''}<small>仅比较整条肌肉肌腱路径长度；不推断激活或力量。</small>`;
+  panel.dataset.longer = long.map(item => item.label).join(',');
+  panel.dataset.shorter = short.map(item => item.label).join(',');
+  panel.dataset.reference = comparisonLabel();
+  return new Set([...long, ...short].flatMap(item => item.surfaceIndices));
 }
 
 function updateReadout(frame: ModelFrame): void {
@@ -224,7 +311,7 @@ function updateReadout(frame: ModelFrame): void {
   const ratio = current / baseline;
   const change = (ratio - 1) * 100;
   const anatomical = surfaceMeshes.find(item => item.modelIndices.includes(selected))?.mesh.name;
-  element('#unified-readout').innerHTML = `<strong>${name}</strong>${anatomical ? `<span>对应表面：${anatomical}</span>` : ''}<span>当前 OpenSim 肌肉肌腱长度 ${(current * 100).toFixed(1)} cm</span><span>${mode === 'neutral' || mode === 'custom' ? '静止' : '动作起点'}长度 ${(baseline * 100).toFixed(1)} cm</span><span class="${change > 2.5 ? 'longer' : change < -2.5 ? 'shorter' : ''}">相对${mode === 'neutral' || mode === 'custom' ? '静止' : '动作起点'} ${change >= 0 ? '+' : ''}${change.toFixed(1)}%</span>${mode === 'neutral' || mode === 'custom' ? '' : `<small>站立静止参考长度 ${(neutral * 100).toFixed(1)} cm</small>`}`;
+  element('#unified-readout').innerHTML = `<strong>${name}</strong>${anatomical ? `<span>对应表面：${anatomical}</span>` : ''}<span>当前 OpenSim 肌肉肌腱路径长度 ${(current * 100).toFixed(1)} cm</span><span>${comparisonLabel()}长度 ${(baseline * 100).toFixed(1)} cm</span><span class="${change > 2.5 ? 'longer' : change < -2.5 ? 'shorter' : ''}">相对${comparisonLabel()} ${change >= 0 ? '+' : ''}${change.toFixed(1)}%</span>${mode === 'neutral' || mode === 'custom' ? '' : `<small>站立静止参考长度 ${(neutral * 100).toFixed(1)} cm</small>`}`;
   const labels: Record<Mode, Array<[string, string]>> = {
     neutral: [],
     squat: [['hip_flexion_r', '右髋屈曲'], ['knee_angle_r', '右膝屈曲'], ['ankle_angle_r', '右踝角']],
@@ -251,6 +338,10 @@ function updateFrame(): void {
   const frame = currentFrame();
   if (!data || !frame) return;
   const baselineFrame = comparisonFrame();
+  const shapeFrame = actionStartFrame();
+  const majorIndices = updateMajorChanges(frame, baselineFrame);
+  const focusMajor = element<HTMLInputElement>('#unified-focus').checked && majorIndices.size > 0;
+  const majorModelIndices = new Set([...majorIndices].flatMap(index => surfaceMeshes[index].modelIndices));
   const matrix = new THREE.Matrix4();
   data.bodyNames.forEach((name, index) => {
     const { p, r } = frame.bodies[index];
@@ -289,14 +380,17 @@ function updateFrame(): void {
     bar.position.set((right[0] + left[0]) / 2,
       (right[1] + left[1]) / 2 + (mode === 'bench' ? 0.025 : 0.09), 0);
   }
-  for (const { mesh, modelIndices } of surfaceMeshes) {
+  for (const [surfaceIndex, { mesh, modelIndices }] of surfaceMeshes.entries()) {
     const average = modelIndices.reduce((sum, index) =>
       sum + frame.lengthsM[index] / baselineFrame.lengthsM[index], 0) / modelIndices.length;
     const material = mesh.material as THREE.MeshStandardMaterial;
-    material.color.set(colour(average));
+    material.color.set(focusMajor && !majorIndices.has(surfaceIndex) && !modelIndices.includes(selected)
+      ? '#715a62' : colour(average));
     material.emissive.set(modelIndices.includes(selected) ? '#4e282e' : '#000000');
     material.emissiveIntensity = 0.55;
-    mesh.morphTargetInfluences![0] = Math.min(1, Math.max(0, (1 - average) * 4));
+    const shapeRatio = modelIndices.reduce((sum, index) =>
+      sum + frame.lengthsM[index] / shapeFrame.lengthsM[index], 0) / modelIndices.length;
+    mesh.morphTargetInfluences![0] = Math.min(1, Math.max(0, (1 - shapeRatio) * 4));
     mesh.visible = group === 'all' || modelIndices.some(index => groupOf(index) === group);
   }
   surfacesGroup.visible = element<HTMLInputElement>('#unified-surfaces').checked;
@@ -310,7 +404,8 @@ function updateFrame(): void {
       positions.needsUpdate = true;
       line.geometry.computeBoundingSphere();
       const ratio = frame.lengthsM[index] / baselineFrame.lengthsM[index];
-      (line.material as THREE.LineBasicMaterial).color.set(index === selected ? '#ffe0a2' : colour(ratio));
+      (line.material as THREE.LineBasicMaterial).color.set(index === selected ? '#ffe0a2'
+        : focusMajor && !majorModelIndices.has(index) ? '#45606d' : colour(ratio));
       line.visible = group === 'all' || groupOf(index) === group;
     });
     const path = frame.paths[selected];
@@ -517,6 +612,16 @@ muscleSelect.addEventListener('change', () => {
   selected = Number(muscleSelect.value);
   updateFrame();
 });
+element<HTMLElement>('#unified-major').addEventListener('click', event => {
+  const target = (event.target as HTMLElement).closest<HTMLButtonElement>('[data-surface-index]');
+  if (!target) return;
+  const chosen = surfaceMeshes[Number(target.dataset.surfaceIndex)];
+  if (!chosen) return;
+  selected = chosen.modelIndices[0];
+  group = 'all';
+  groupSelect.value = 'all';
+  syncMuscleOptions();
+});
 surfaceSelect.addEventListener('change', () => {
   const chosen = surfaceMeshes[Number(surfaceSelect.value)];
   if (!chosen) return;
@@ -528,6 +633,7 @@ surfaceSelect.addEventListener('change', () => {
 element<HTMLInputElement>('#unified-bones').addEventListener('change', updateFrame);
 element<HTMLInputElement>('#unified-muscles').addEventListener('change', updateFrame);
 element<HTMLInputElement>('#unified-surfaces').addEventListener('change', updateFrame);
+element<HTMLInputElement>('#unified-focus').addEventListener('change', updateFrame);
 
 new ResizeObserver(() => {
   const rect = stage.getBoundingClientRect();

@@ -1,4 +1,4 @@
-const CACHE = 'muscle-atlas-v138';
+const CACHE = 'muscle-atlas-v139';
 // The page asks whether the offline bundle is complete before it tells the user so. Only a list
 // written after addAll() resolved counts as complete, so a failed or interrupted precache cannot be
 // reported as ready.
