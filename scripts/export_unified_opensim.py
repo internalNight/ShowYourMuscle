@@ -83,14 +83,16 @@ def pose_values(action, phase):
             "ankle_angle_l": 0.50,
             **symmetric_arms(*arm)}
     if action == "press":
-        # The forward bar clearance and later over-head lockout require a
-        # curved 3D shoulder/elbow trajectory in this cycling-derived model.
-        arm = keyed_pose(depth, [(0.0, (0.50, 1.00, 0.00, 1.80)),
-                                 (0.25, (0.80, 1.55, -0.45, 1.40)),
-                                 (0.50, (0.75, 1.90, -0.55, 1.15)),
-                                 (0.75, (0.60, 2.50, -0.40, 0.70)),
-                                 (0.90, (0.23, 2.81, -0.50, 0.33)),
-                                 (1.0, (0.00, 3.00, 0.00, 0.10))])
+        # Geometric solve: start at clavicle height, keep grip width nearly
+        # constant, pass the head anteriorly, and finish above the shoulders.
+        # The elbow stays below the wrist throughout this prescribed path.
+        arm = keyed_pose(depth, [(0.0, (0.55846, 0.716, -0.78499, 2.618)),
+                                 (0.25, (0.59817, 1.287, -0.78499, 1.9885)),
+                                 (0.50, (0.55832, 1.858, -0.78435, 1.359)),
+                                 (0.625, (0.55593, 2.1435, -0.78374, 1.04425)),
+                                 (0.75, (0.34423, 2.429, -0.78076, 0.7295)),
+                                 (0.875, (0.20334, 2.7145, -0.785, 0.41475)),
+                                 (1.0, (-0.00344, 3.0, 0.00201, 0.10))])
         return symmetric_arms(*arm)
     raise ValueError(action)
 

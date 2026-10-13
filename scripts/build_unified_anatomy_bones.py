@@ -76,7 +76,10 @@ def main():
             continue
         mesh = world_mesh(atlas, name)
         mesh.apply_transform(registration)
-        if body in source_entries:
+        # All cervical vertebrae share one OpenSim head_neck body. Aligning each
+        # to its first source mesh (the jaw) collapsed C3–C7 to one point.
+        # Their globally registered spacing already follows the atlas anatomy.
+        if body in source_entries and not name.startswith("Vertebra C"):
             entry = source_entries[body]
             source_mesh = world_mesh(source, entry["node"])
             pose = reference["neutral"]["bodies"][body_index[body]]

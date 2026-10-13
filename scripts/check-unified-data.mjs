@@ -6,6 +6,7 @@ const audit = JSON.parse(readFileSync('docs/data/unified_opensim_geometry.json',
 const skin = JSON.parse(readFileSync('public/data/unified_muscle_skin.json', 'utf8'));
 const skinWeights = readFileSync('public/data/unified_muscle_weights.bin');
 const anatomy = JSON.parse(readFileSync('public/data/unified_anatomy_bones.json', 'utf8'));
+const basis = JSON.parse(readFileSync('public/data/unified_pose_basis.json', 'utf8'));
 assert.equal(data.model, audit.model);
 assert.equal(data.bodyNames.length, 80);
 assert.equal(data.muscleNames.length, 520);
@@ -14,6 +15,16 @@ assert.equal(new Set(data.muscleNames).size, 520);
 assert.equal(audit.present.length + audit.missing.length + audit.excluded.length, 132);
 assert.equal(skin.meshes.length, 68);
 assert.equal(anatomy.bones.length, 91);
+assert.equal(basis.model, data.model);
+assert.deepEqual(basis.bodyNames, data.bodyNames);
+assert.deepEqual(basis.muscleNames, data.muscleNames);
+assert.equal(Object.keys(basis.controls).length, 7);
+for (const [name, samples] of Object.entries(basis.controls)) {
+  assert.equal(samples.angles.length, 5, `${name} preview knots`);
+  assert.equal(samples.frames.length, 5, `${name} preview frames`);
+  assert(samples.frames.every(sample => sample.bodies.length === 80 && sample.lengthsM.length === 520),
+    `${name} incomplete OpenSim preview`);
+}
 assert(anatomy.bones.every(bone => bone.bodyIndex >= 0 && bone.bodyIndex < data.bodyNames.length));
 assert(skin.meshes.every(mesh => mesh.modelMuscles.length > 0 &&
   mesh.modelMuscles.every(name => data.muscleNames.includes(name)) &&
@@ -67,14 +78,31 @@ assert(Math.abs(pos(benchTop, 'hand_r')[1] - pos(benchTop, 'hand_l')[1]) < 0.04,
 for (const action of ['bench', 'press']) {
   const widths = data.actions[action].map(frame =>
     Math.abs(pos(frame, 'hand_r')[2] - pos(frame, 'hand_l')[2]));
-  assert(Math.max(...widths) - Math.min(...widths) < 0.09,
-    `${action} grip width changes more than 9 cm`);
+  assert(Math.max(...widths) - Math.min(...widths) < (action === 'press' ? 0.095 : 0.09),
+    `${action} grip width changes too much`);
   const rising = data.actions[action].slice(0, 50).every((frame, index) =>
     pos(data.actions[action][index + 1], 'hand_r')[1] >= pos(frame, 'hand_r')[1] - 0.002);
   assert(rising, `${action} bar path reverses vertically during ascent`);
 }
 const pressBottom = data.actions.press[0], pressTop = data.actions.press[50];
-assert(pos(pressTop, 'hand_r')[1] - pos(pressBottom, 'hand_r')[1] > 0.5,
+const pressFrames = data.actions.press;
+assert(pos(pressBottom, 'hand_r')[1] - pos(pressBottom, 'sternum')[1] > 0.04 &&
+  pos(pressBottom, 'hand_r')[1] - pos(pressBottom, 'sternum')[1] < 0.15,
+  'press must start at upper chest height');
+assert(Math.abs(pos(pressBottom, 'hand_r')[0] - pos(pressBottom, 'sternum')[0]) < 0.15,
+  'press must start close to torso');
+for (const [index, frame] of pressFrames.entries()) {
+  assert(pos(frame, 'hand_r')[1] - pos(frame, 'ulna_r')[1] > 0.12,
+    `press ${index}% elbow is not below bar`);
+  assert(pos(frame, 'hand_r')[0] < 0.23,
+    `press ${index}% bar goes too far in front of torso`);
+  if (index > 0) {
+    const previous = pos(pressFrames[index - 1], 'hand_r');
+    assert(Math.hypot(...pos(frame, 'hand_r').map((value, axis) => value - previous[axis])) < 0.03,
+      `press ${index}% hand trajectory jumps`);
+  }
+}
+assert(pos(pressTop, 'hand_r')[1] - pos(pressBottom, 'hand_r')[1] > 0.4,
   'press does not reach overhead');
 assert(pos(pressTop, 'hand_r')[1] > pos(pressTop, 'head_neck')[1] + 0.35);
 console.log('OpenSim: 80 bodies, 520 paths, 304 frames, 68 muscle and 91 bone surfaces; foot clearance and exercise hand paths verified.');

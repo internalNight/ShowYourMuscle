@@ -64,6 +64,7 @@ try {
     return { model: s.dataset.model, muscles: s.dataset.muscles, bodies: s.dataset.bodies,
       meshes: s.dataset.sourceMeshes, surfaces: s.dataset.surfaceMeshes,
       anatomyBones: s.dataset.anatomyBones,
+      neckEnvelope: s.dataset.neckEnvelope,
       missing: s.dataset.missingSourceMeshes,
       excluded: s.dataset.excludedSourceMeshes,
       length: +s.dataset.selectedLengthM, canvas: !!s.querySelector('canvas') }; })()`);
@@ -72,14 +73,17 @@ try {
   assert.equal(initial.meshes, '83');
   assert.equal(initial.surfaces, '68');
   assert.equal(initial.anatomyBones, '91');
+  assert.equal(initial.neckEnvelope, 'true');
   assert.equal(await evalPage(`document.querySelector('#unified-bones').checked`), true);
   assert.equal(initial.missing, '37');
   assert.equal(initial.excluded, '12');
   assert(initial.canvas);
+  assert.equal(await evalPage(`document.querySelector('[data-mode="bench"]').disabled`), true);
+  assert((await evalPage(`document.querySelector('.unified-exercise-warning').textContent`)).includes('卧推预设已暂停'));
   const lengths = { neutral: initial.length };
-  for (const mode of ['squat', 'bench', 'press']) {
+  for (const mode of ['squat', 'press']) {
     await evalPage(`document.querySelector('[data-mode="${mode}"]').click()`);
-    if (mode === 'bench' || mode === 'press') {
+    if (mode === 'press') {
       await sleep(200);
       const startShot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
       writeFileSync(join(process.cwd(), '.cache', `unified-${mode}-start-check.png`),
@@ -98,14 +102,6 @@ try {
     assert(major.text.includes('不推断激活或力量'), `${mode} omits geometric scope`);
     if (mode === 'squat') assert(major.longer.includes('臀大肌') && major.longer.includes('股'),
       `squat major changes are not lower limb: ${JSON.stringify(major)}`);
-    if (mode === 'bench') {
-      assert(major.shorter.includes('肱三头肌') && major.text.includes('胸大肌路径变化很小'),
-        `bench geometry or chest caveat missing: ${JSON.stringify(major)}`);
-      const before = await evalPage(`document.querySelector('#unified-stage').dataset.selectedLengthM`);
-      await evalPage(`document.querySelector('#unified-major .major-row.shorter').click()`);
-      const after = await evalPage(`document.querySelector('#unified-stage').dataset.selectedLengthM`);
-      assert.notEqual(after, before, 'clicking a major muscle did not select its OpenSim path');
-    }
     if (mode === 'press') assert(major.shorter.includes('肱三头肌'),
       `press major changes omit triceps: ${JSON.stringify(major)}`);
     if (mode === 'squat') {
@@ -137,14 +133,24 @@ try {
   }
   assert(Object.values(lengths).every(Number.isFinite), `invalid selected muscle length: ${JSON.stringify(lengths)}`);
   if (process.env.ATLAS_LIVE === '1') {
-    await evalPage(`(() => {
+    const immediate = await evalPage(`(() => {
       document.querySelector('[data-mode="custom"]').click();
+      const initialLength = +document.querySelector('#unified-stage').dataset.selectedLengthM;
       for (const [name, value] of [['hip_flexion', 90], ['knee_angle', 100]]) {
         const slider = document.querySelector('[data-joint="' + name + '"]');
         slider.value = String(value);
         slider.dispatchEvent(new Event('input', { bubbles: true }));
       }
+      const stage = document.querySelector('#unified-stage');
+      return { preview: stage.dataset.preview, initialLength,
+        previewLength: +stage.dataset.selectedLengthM };
     })()`);
+    assert.equal(immediate.preview, 'true', `slider had no immediate OpenSim sample preview: ${JSON.stringify(immediate)}`);
+    assert.notEqual(immediate.previewLength, immediate.initialLength,
+      `slider preview did not update muscle geometry: ${JSON.stringify(immediate)}`);
+    const previewShot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
+    writeFileSync(join(process.cwd(), '.cache', 'unified-custom-preview-check.png'),
+      Buffer.from(previewShot.result.data, 'base64'));
     let liveStatus;
     for (let attempt = 0; attempt < 40; attempt++) {
       liveStatus = await evalPage(`document.querySelector('#unified-live-status').textContent`);

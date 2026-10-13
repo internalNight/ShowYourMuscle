@@ -13,6 +13,7 @@ const files = [
   'models/NOTICE-unified-opensim.txt',
   'models/NOTICE-z-anatomy.txt',
   'data/unified_opensim_reference.json',
+  'data/unified_pose_basis.json',
   'data/unified_muscle_skin.json',
   'data/unified_muscle_weights.bin',
   'data/unified_anatomy_bones.json',
