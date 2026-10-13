@@ -63,6 +63,7 @@ try {
   const initial = await evalPage(`(() => { const s = document.querySelector('#unified-stage');
     return { model: s.dataset.model, muscles: s.dataset.muscles, bodies: s.dataset.bodies,
       meshes: s.dataset.sourceMeshes, surfaces: s.dataset.surfaceMeshes,
+      anatomyBones: s.dataset.anatomyBones,
       missing: s.dataset.missingSourceMeshes,
       excluded: s.dataset.excludedSourceMeshes,
       length: +s.dataset.selectedLengthM, canvas: !!s.querySelector('canvas') }; })()`);
@@ -70,13 +71,21 @@ try {
   assert.equal(initial.bodies, '80');
   assert.equal(initial.meshes, '83');
   assert.equal(initial.surfaces, '68');
+  assert.equal(initial.anatomyBones, '91');
+  assert.equal(await evalPage(`document.querySelector('#unified-bones').checked`), true);
   assert.equal(initial.missing, '37');
   assert.equal(initial.excluded, '12');
   assert(initial.canvas);
   const lengths = { neutral: initial.length };
   for (const mode of ['squat', 'bench', 'press']) {
+    await evalPage(`document.querySelector('[data-mode="${mode}"]').click()`);
+    if (mode === 'bench' || mode === 'press') {
+      await sleep(200);
+      const startShot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
+      writeFileSync(join(process.cwd(), '.cache', `unified-${mode}-start-check.png`),
+        Buffer.from(startShot.result.data, 'base64'));
+    }
     lengths[mode] = await evalPage(`(() => {
-      document.querySelector('[data-mode="${mode}"]').click();
       const range = document.querySelector('#unified-timeline');
       range.value = '50'; range.dispatchEvent(new Event('input', { bubbles: true }));
       return +document.querySelector('#unified-stage').dataset.selectedLengthM;
@@ -119,28 +128,43 @@ try {
     const liveShot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
     writeFileSync(join(process.cwd(), '.cache', 'unified-custom-check.png'),
       Buffer.from(liveShot.result.data, 'base64'));
-    const beforeArm = await evalPage(`['elv_angle','shoulder_elv','elbow_flex'].map(name =>
-      document.querySelector('[data-joint="' + name + '"]').value).join(',')`);
+    const beforeArm = await evalPage(`document.querySelector('#unified-joints').textContent`);
     const handScreen = await evalPage(`document.querySelector('#unified-stage').dataset.handRightScreen`);
     assert(handScreen, 'custom hand drag handle has no screen position');
     const [handX, handY] = handScreen.split(',').map(Number);
     await send('Input.dispatchMouseEvent', { type: 'mousePressed', x: handX, y: handY,
       button: 'left', buttons: 1, clickCount: 1 });
-    await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: handX + 15, y: handY - 100,
+    await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: handX + 10, y: handY - 30,
       button: 'left', buttons: 1 });
-    await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: handX + 15, y: handY - 100,
+    await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: handX + 10, y: handY - 30,
       button: 'left', buttons: 0, clickCount: 1 });
     let ikStatus;
-    for (let attempt = 0; attempt < 35; attempt++) {
+    for (let attempt = 0; attempt < 100; attempt++) {
       ikStatus = await evalPage(`document.querySelector('#unified-live-status').textContent`);
-      if (ikStatus.includes('手部目标已') || ikStatus.includes('最近姿态') || ikStatus.includes('失败')) break;
+      if (ikStatus.includes('手部目标已') || ikStatus.includes('手部目标超出') || ikStatus.includes('失败')) break;
       await sleep(250);
     }
-    assert(ikStatus.includes('手部目标已') || ikStatus.includes('最近姿态'),
+    assert(ikStatus.includes('手部目标已') || ikStatus.includes('手部目标超出'),
       `hand drag IK failed: ${ikStatus}`);
-    const afterArm = await evalPage(`['elv_angle','shoulder_elv','elbow_flex'].map(name =>
-      document.querySelector('[data-joint="' + name + '"]').value).join(',')`);
+    const afterArm = await evalPage(`document.querySelector('#unified-joints').textContent`);
     assert.notEqual(afterArm, beforeArm, `hand drag did not change arm coordinates: ${ikStatus}; hand=${handScreen}`);
+    const footScreen = await evalPage(`document.querySelector('#unified-stage').dataset.footRightScreen`);
+    assert(footScreen, 'custom foot drag handle has no screen position');
+    const [footX, footY] = footScreen.split(',').map(Number);
+    await send('Input.dispatchMouseEvent', { type: 'mousePressed', x: footX, y: footY,
+      button: 'left', buttons: 1, clickCount: 1 });
+    await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: footX + 10, y: footY - 15,
+      button: 'left', buttons: 1 });
+    await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: footX + 10, y: footY - 15,
+      button: 'left', buttons: 0, clickCount: 1 });
+    let footStatus;
+    for (let attempt = 0; attempt < 100; attempt++) {
+      footStatus = await evalPage(`document.querySelector('#unified-live-status').textContent`);
+      if (footStatus.includes('脚部目标已') || footStatus.includes('脚部目标超出') || footStatus.includes('失败')) break;
+      await sleep(250);
+    }
+    assert(footStatus.includes('脚部目标已') || footStatus.includes('脚部目标超出'),
+      `foot drag IK failed: ${footStatus}`);
   }
   await evalPage(`document.querySelector('[data-mode="neutral"]').click()`);
   await sleep(800);

@@ -1,12 +1,13 @@
-const CACHE = 'muscle-atlas-v136';
+const CACHE = 'muscle-atlas-v138';
 // The page asks whether the offline bundle is complete before it tells the user so. Only a list
 // written after addAll() resolved counts as complete, so a failed or interrupted precache cannot be
 // reported as ready.
 const PRECACHE_MANIFEST = '/__precache-manifest.json';
 const STATIC_PRECACHE = ['/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png',
-  '/models/unified_opensim_skeleton.glb', '/models/unified_muscle_surfaces.glb',
-  '/data/unified_opensim_reference.json?v=136', '/data/unified_muscle_skin.json',
-  '/data/unified_muscle_weights.bin', '/models/NOTICE-unified-opensim.txt',
+  '/models/unified_opensim_skeleton.glb', '/models/unified_muscle_surfaces.glb?v=138',
+  '/models/unified_anatomy_bones.glb?v=138', '/data/unified_anatomy_bones.json?v=138',
+  '/data/unified_opensim_reference.json?v=138', '/data/unified_muscle_skin.json?v=138',
+  '/data/unified_muscle_weights.bin?v=138', '/models/NOTICE-unified-opensim.txt',
   '/models/NOTICE-z-anatomy.txt'];
 const BEST_EFFORT_PRECACHE = [];
 self.addEventListener('install', event => {

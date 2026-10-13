@@ -18,7 +18,8 @@ type Reference = {
   neutral: ModelFrame;
   actions: Record<'squat' | 'bench' | 'press', ModelFrame[]>;
 };
-type MuscleSkin = { meshes: Array<{ name: string; modelMuscles: string[]; bodyIndices: [number, number]; weightOffset: number; vertexCount: number }> };
+type MuscleSkin = { meshes: Array<{ name: string; modelMuscles: string[]; bodyIndices: [number, number, number]; weightOffset: number; vertexCount: number; axis: [number, number, number]; center: [number, number, number] }> };
+type AnatomyBones = { bones: Array<{ name: string; bodyIndex: number }> };
 type Mode = 'neutral' | 'squat' | 'bench' | 'press' | 'custom';
 type Group = 'all' | 'leg' | 'trunk' | 'upper';
 
@@ -46,7 +47,7 @@ host.innerHTML = `
         </div>
         <div class="unified-progress"><input id="unified-timeline" type="range" min="0" max="100" value="0" disabled aria-label="动作相位" /><output id="unified-phase">静止</output></div>
         <div id="unified-custom" class="unified-custom" hidden>
-          <p>拖动关节滑块或画面中的手部圆点。松开圆点后由同一份 OpenSim 模型求解姿态与 520 条肌肉肌腱路径。左右两侧同步。</p>
+          <p>拖动关节滑块或画面中的手、脚圆点。松开圆点后由同一份 OpenSim 模型求解姿态与 520 条肌肉肌腱路径。拖动单侧不会强制另一侧同步。</p>
           <div class="unified-sliders">
             <label>躯干前后倾 <input data-joint="pelvis_tilt" type="range" min="-75" max="75" value="0" /><output>0°</output></label>
             <label>髋屈曲 <input data-joint="hip_flexion" type="range" min="-25" max="114" value="0" /><output>0°</output></label>
@@ -65,7 +66,7 @@ host.innerHTML = `
       <h2>模型层</h2>
       <p>动作骨架与肌肉肌腱长度来自 <code>cyclistFullBodyMuscle.osim</code>；Z-Anatomy 精细肌肉表面经骨骼配准后绑定到该 OpenSim 骨架。所有姿态使用同一套绑定表面。</p>
       <label class="check"><input id="unified-surfaces" type="checkbox" checked /> 显示精细肌肉表面</label>
-      <label class="check"><input id="unified-bones" type="checkbox" /> 显示 OpenSim 骨网格</label>
+      <label class="check"><input id="unified-bones" type="checkbox" checked /> 显示透视骨骼（同一 OpenSim 骨架）</label>
       <label class="check"><input id="unified-muscles" type="checkbox" /> 显示肌肉肌腱路径</label>
       <label for="unified-group">查看区域</label>
       <select id="unified-group"><option value="all">全身 · 520 条</option><option value="leg">双腿 · 80 条</option><option value="trunk">躯干 · 约 360 条</option><option value="upper">肩臂 · 约 80 条</option></select>
@@ -75,9 +76,9 @@ host.innerHTML = `
       <select id="unified-muscle"></select>
       <div id="unified-readout" class="unified-card" aria-live="polite"></div>
       <div id="unified-joints" class="unified-card" aria-live="polite"></div>
-      <div class="unified-legend"><span><i style="background:#f36d72"></i>肌腱路径变长</span><span><i style="background:#69c8dc"></i>肌腱路径变短</span><span><i style="background:#b77f83"></i>接近静止长度</span></div>
-      <p class="unified-caveat">表面变形是两端骨段的线性蒙皮，用于观察位置与外形；颜色表示对应 OpenSim 肌肉肌腱整条路径的长度变化，不等于激活或力量。动作轨迹是教学预设，尚未计算关节反力或发力点。</p>
-      <p class="unified-caveat">源 OpenSim 模型仍缺 ${geometryAudit.missing.length} 个骨网格引用；另有 ${geometryAudit.excluded.length} 节胸椎因源几何错位被排除。Z-Anatomy 表面与 OpenSim 骨网格并非同源解剖，配准误差见项目文档。</p>
+      <div class="unified-legend"><span><i style="background:#f36d72"></i>比动作起点长</span><span><i style="background:#69c8dc"></i>比动作起点短</span><span><i style="background:#b77f83"></i>接近起点长度</span></div>
+      <p class="unified-caveat">肌腹在主骨段上保形，连接端随相邻骨段过渡；缩短时的轻微鼓起是体积示意。动作模式的颜色比较当前帧与该动作起点的 OpenSim 整条肌肉肌腱路径长度；静止及自定义模式比较静止参考姿态。不等于激活或力量。动作轨迹是教学预设，尚未计算关节反力或发力点。</p>
+      <p class="unified-caveat">源 OpenSim 模型缺 ${geometryAudit.missing.length} 个骨网格引用；骨骼透视层补用 Z-Anatomy 骨表面，所有骨段仍由同一 OpenSim 模型驱动。解剖配准误差见项目文档。</p>
       <p><a href="https://github.com/ross-wilkinson/opensim-model-fullBodyMuscleActuated" target="_blank" rel="noreferrer">OpenSim 模型 ↗</a> · <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noreferrer">Z-Anatomy ↗</a> · <a href="/models/NOTICE-z-anatomy.txt">表面许可</a></p>
     </aside>
   </div>`;
@@ -137,25 +138,26 @@ const surfacesGroup = new THREE.Group();
 scene.add(bonesGroup, essentialsGroup, musclesGroup, surfacesGroup);
 const handleGroup = new THREE.Group();
 scene.add(handleGroup);
-const handHandles = new Map<string, THREE.Mesh>();
-for (const body of ['hand_r', 'hand_l']) {
+const dragHandles = new Map<string, THREE.Mesh>();
+for (const body of ['hand_r', 'hand_l', 'calcn_r', 'calcn_l']) {
+  const isHand = body.startsWith('hand');
   const handle = new THREE.Mesh(new THREE.SphereGeometry(0.043, 16, 12),
-    new THREE.MeshStandardMaterial({ color: '#74e4e5', emissive: '#128b9c',
+    new THREE.MeshStandardMaterial({ color: isHand ? '#74e4e5' : '#f8ce80', emissive: isHand ? '#128b9c' : '#9b6c20',
       emissiveIntensity: 0.7, roughness: 0.3, depthTest: false }));
   handle.name = body;
   handle.renderOrder = 100;
-  handHandles.set(body, handle);
+  dragHandles.set(body, handle);
   handleGroup.add(handle);
 }
 const bench = new THREE.Group();
 const benchMaterial = new THREE.MeshStandardMaterial({ color: '#405b69', roughness: 0.72 });
 const benchPad = new THREE.Mesh(new THREE.BoxGeometry(1.15, 0.09, 0.37), benchMaterial);
-benchPad.position.set(0.13, 0.48, 0);
+benchPad.position.set(0.13, 0.69, 0);
 bench.add(benchPad);
 for (const x of [-0.31, 0.47]) {
-  const leg = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.44, 0.04),
+  const leg = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.66, 0.04),
     new THREE.MeshStandardMaterial({ color: '#697984', metalness: 0.35, roughness: 0.45 }));
-  leg.position.set(x, 0.23, 0);
+  leg.position.set(x, 0.34, 0);
   bench.add(leg);
 }
 scene.add(bench);
@@ -181,6 +183,7 @@ let selected = 0;
 let playing = false;
 let lastFrameTime = performance.now();
 const bodyMeshes = new Map<string, THREE.Mesh[]>();
+const anatomyBoneMeshes: Array<{ mesh: THREE.Mesh; bodyIndex: number; inverseNeutral: THREE.Matrix4 }> = [];
 const muscleLines: THREE.Line[] = [];
 const surfaceMeshes: Array<{ mesh: THREE.SkinnedMesh; modelIndices: number[] }> = [];
 let skinBones: THREE.Bone[] = [];
@@ -207,15 +210,21 @@ function colour(ratio: number): string {
   return '#b77f83';
 }
 
+function comparisonFrame(): ModelFrame {
+  if (!data) throw new Error('OpenSim data is not loaded');
+  return mode === 'neutral' || mode === 'custom' ? data.neutral : data.actions[mode][0];
+}
+
 function updateReadout(frame: ModelFrame): void {
   if (!data) return;
   const name = data.muscleNames[selected];
   const current = frame.lengthsM[selected];
-  const baseline = data.neutral.lengthsM[selected];
+  const baseline = comparisonFrame().lengthsM[selected];
+  const neutral = data.neutral.lengthsM[selected];
   const ratio = current / baseline;
   const change = (ratio - 1) * 100;
   const anatomical = surfaceMeshes.find(item => item.modelIndices.includes(selected))?.mesh.name;
-  element('#unified-readout').innerHTML = `<strong>${name}</strong>${anatomical ? `<span>对应表面：${anatomical}</span>` : ''}<span>当前 OpenSim 肌肉肌腱长度 ${(current * 100).toFixed(1)} cm</span><span>静止长度 ${(baseline * 100).toFixed(1)} cm</span><span class="${change > 2.5 ? 'longer' : change < -2.5 ? 'shorter' : ''}">相对静止 ${change >= 0 ? '+' : ''}${change.toFixed(1)}%</span>`;
+  element('#unified-readout').innerHTML = `<strong>${name}</strong>${anatomical ? `<span>对应表面：${anatomical}</span>` : ''}<span>当前 OpenSim 肌肉肌腱长度 ${(current * 100).toFixed(1)} cm</span><span>${mode === 'neutral' || mode === 'custom' ? '静止' : '动作起点'}长度 ${(baseline * 100).toFixed(1)} cm</span><span class="${change > 2.5 ? 'longer' : change < -2.5 ? 'shorter' : ''}">相对${mode === 'neutral' || mode === 'custom' ? '静止' : '动作起点'} ${change >= 0 ? '+' : ''}${change.toFixed(1)}%</span>${mode === 'neutral' || mode === 'custom' ? '' : `<small>站立静止参考长度 ${(neutral * 100).toFixed(1)} cm</small>`}`;
   const labels: Record<Mode, Array<[string, string]>> = {
     neutral: [],
     squat: [['hip_flexion_r', '右髋屈曲'], ['knee_angle_r', '右膝屈曲'], ['ankle_angle_r', '右踝角']],
@@ -234,13 +243,14 @@ function updateReadout(frame: ModelFrame): void {
   stage.dataset.muscles = String(data.muscleNames.length);
   stage.dataset.bodies = String(data.bodyNames.length);
   stage.dataset.surfaceMeshes = String(surfaceMeshes.length);
+  stage.dataset.anatomyBones = String(anatomyBoneMeshes.length);
   stage.dataset.selectedLengthM = String(current);
 }
 
 function updateFrame(): void {
   const frame = currentFrame();
   if (!data || !frame) return;
-  const reference = data;
+  const baselineFrame = comparisonFrame();
   const matrix = new THREE.Matrix4();
   data.bodyNames.forEach((name, index) => {
     const { p, r } = frame.bodies[index];
@@ -255,10 +265,19 @@ function updateFrame(): void {
       skinBones[index].matrixWorldNeedsUpdate = true;
     }
   });
+  for (const { mesh, bodyIndex, inverseNeutral } of anatomyBoneMeshes) {
+    const current = frame.bodies[bodyIndex];
+    matrix.set(
+      current.r[0], current.r[1], current.r[2], current.p[0],
+      current.r[3], current.r[4], current.r[5], current.p[1],
+      current.r[6], current.r[7], current.r[8], current.p[2], 0, 0, 0, 1);
+    mesh.matrix.multiplyMatrices(matrix, inverseNeutral);
+    mesh.matrixWorldNeedsUpdate = true;
+  }
   scene.updateMatrixWorld(true);
   skinSkeleton?.update();
   handleGroup.visible = mode === 'custom';
-  for (const [name, handle] of handHandles) {
+  for (const [name, handle] of dragHandles) {
     const point = frame.bodies[data.bodyNames.indexOf(name)].p;
     handle.position.set(...point);
   }
@@ -267,37 +286,42 @@ function updateFrame(): void {
   if (bar.visible) {
     const right = frame.bodies[data.bodyNames.indexOf('hand_r')].p;
     const left = frame.bodies[data.bodyNames.indexOf('hand_l')].p;
-    bar.position.set((right[0] + left[0]) / 2, (right[1] + left[1]) / 2 + 0.025, 0);
+    bar.position.set((right[0] + left[0]) / 2,
+      (right[1] + left[1]) / 2 + (mode === 'bench' ? 0.025 : 0.09), 0);
   }
   for (const { mesh, modelIndices } of surfaceMeshes) {
     const average = modelIndices.reduce((sum, index) =>
-      sum + frame.lengthsM[index] / reference.neutral.lengthsM[index], 0) / modelIndices.length;
+      sum + frame.lengthsM[index] / baselineFrame.lengthsM[index], 0) / modelIndices.length;
     const material = mesh.material as THREE.MeshStandardMaterial;
     material.color.set(colour(average));
     material.emissive.set(modelIndices.includes(selected) ? '#4e282e' : '#000000');
     material.emissiveIntensity = 0.55;
+    mesh.morphTargetInfluences![0] = Math.min(1, Math.max(0, (1 - average) * 4));
     mesh.visible = group === 'all' || modelIndices.some(index => groupOf(index) === group);
   }
   surfacesGroup.visible = element<HTMLInputElement>('#unified-surfaces').checked;
-  frame.paths.forEach((path, index) => {
-    const line = muscleLines[index];
-    const positions = line.geometry.getAttribute('position') as THREE.BufferAttribute;
-    for (let i = 0; i < path.length; i++) positions.setXYZ(i, ...path[i]);
-    line.geometry.setDrawRange(0, path.length);
-    positions.needsUpdate = true;
-    line.geometry.computeBoundingSphere();
-    const ratio = frame.lengthsM[index] / reference.neutral.lengthsM[index];
-    (line.material as THREE.LineBasicMaterial).color.set(index === selected ? '#ffe0a2' : colour(ratio));
-    line.visible = element<HTMLInputElement>('#unified-muscles').checked
-      && (group === 'all' || groupOf(index) === group);
-  });
-  const path = frame.paths[selected];
-  highlight.geometry.dispose();
-  highlight.geometry = new THREE.TubeGeometry(
-    new THREE.CatmullRomCurve3(path.map(point => new THREE.Vector3(...point))),
-    Math.max(16, path.length * 5), 0.008, 6, false);
-  highlight.visible = element<HTMLInputElement>('#unified-muscles').checked
-    && (group === 'all' || groupOf(selected) === group);
+  const showPaths = element<HTMLInputElement>('#unified-muscles').checked;
+  if (showPaths) {
+    frame.paths.forEach((path, index) => {
+      const line = muscleLines[index];
+      const positions = line.geometry.getAttribute('position') as THREE.BufferAttribute;
+      for (let i = 0; i < path.length; i++) positions.setXYZ(i, ...path[i]);
+      line.geometry.setDrawRange(0, path.length);
+      positions.needsUpdate = true;
+      line.geometry.computeBoundingSphere();
+      const ratio = frame.lengthsM[index] / baselineFrame.lengthsM[index];
+      (line.material as THREE.LineBasicMaterial).color.set(index === selected ? '#ffe0a2' : colour(ratio));
+      line.visible = group === 'all' || groupOf(index) === group;
+    });
+    const path = frame.paths[selected];
+    highlight.geometry.dispose();
+    highlight.geometry = new THREE.TubeGeometry(
+      new THREE.CatmullRomCurve3(path.map(point => new THREE.Vector3(...point))),
+      Math.max(16, path.length * 5), 0.008, 6, false);
+  } else {
+    for (const line of muscleLines) line.visible = false;
+  }
+  highlight.visible = showPaths && (group === 'all' || groupOf(selected) === group);
   bonesGroup.visible = element<HTMLInputElement>('#unified-bones').checked;
   element('#unified-phase').textContent = mode === 'neutral' ? '静止' : mode === 'custom' ? '实时' : `${phase}%`;
   element('#unified-status').textContent = `${data.model} · ${mode === 'neutral' ? '静止' : mode === 'custom' ? '自定义姿态' : `${phase}% ${mode}`} · 同一模型`;
@@ -323,6 +347,7 @@ let poseTimer: number | undefined;
 let poseRequest = 0;
 let poseBusy = false;
 let posePending = false;
+const individualCoordinates: Record<string, number> = {};
 function requestCustomPose(): void {
   if (mode !== 'custom') return;
   if (poseTimer !== undefined) window.clearTimeout(poseTimer);
@@ -339,7 +364,7 @@ function requestCustomPose(): void {
     try {
       const response = await fetch('/api/pose', { method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ controls,
+        body: JSON.stringify({ controls, coordinates: individualCoordinates,
           plantFeet: element<HTMLInputElement>('#unified-plant-feet').checked }) });
       const result = await response.json() as { frame?: ModelFrame; error?: string };
       if (!response.ok || !result.frame) throw new Error(result.error ?? `HTTP ${response.status}`);
@@ -372,7 +397,7 @@ function setPointer(event: PointerEvent): void {
 renderer.domElement.addEventListener('pointerdown', event => {
   if (mode !== 'custom') return;
   setPointer(event);
-  const hit = pickRay.intersectObjects([...handHandles.values()], false)[0];
+  const hit = pickRay.intersectObjects([...dragHandles.values()], false)[0];
   if (!hit) return;
   const handle = hit.object as THREE.Mesh;
   const normal = new THREE.Vector3();
@@ -381,7 +406,7 @@ renderer.domElement.addEventListener('pointerdown', event => {
     normal, handle.position) };
   orbit.enabled = false;
   renderer.domElement.setPointerCapture(event.pointerId);
-  element('#unified-live-status').textContent = `拖动${handle.name === 'hand_r' ? '右' : '左'}手；松开后由 OpenSim 求解`;
+  element('#unified-live-status').textContent = `拖动${handle.name.endsWith('_r') ? '右' : '左'}${handle.name.startsWith('hand') ? '手' : '脚'}；松开后由 OpenSim 求解`;
 });
 renderer.domElement.addEventListener('pointermove', event => {
   if (!draggingHand) return;
@@ -401,33 +426,29 @@ renderer.domElement.addEventListener('pointerup', event => {
   const requestId = ++poseRequest;
   const controls = Object.fromEntries(jointSliders.map(input =>
     [input.dataset.joint!, Number(input.value) * Math.PI / 180]));
-  element('#unified-live-status').textContent = 'OpenSim 正在拟合手部目标…';
+  const part = handle.name.startsWith('hand') ? '手部' : '脚部';
+  element('#unified-live-status').textContent = `OpenSim 正在拟合${part}目标…`;
   void (async () => {
     try {
       const response = await fetch('/api/ik', { method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ controls,
+        body: JSON.stringify({ controls, coordinates: individualCoordinates,
           plantFeet: element<HTMLInputElement>('#unified-plant-feet').checked,
           body: handle.name, target }) });
       const result = await response.json() as { frame?: ModelFrame;
-        solvedControls?: Record<string, number>; targetErrorM?: number; error?: string };
-      if (!response.ok || !result.frame || !result.solvedControls)
+        solvedCoordinates?: Record<string, number>; targetErrorM?: number; error?: string };
+      if (!response.ok || !result.frame || !result.solvedCoordinates)
         throw new Error(result.error ?? `HTTP ${response.status}`);
       if (requestId !== poseRequest || mode !== 'custom') return;
       customFrame = result.frame;
-      for (const input of jointSliders) {
-        const solved = result.solvedControls[input.dataset.joint!];
-        if (solved === undefined) continue;
-        input.value = String(Math.round(solved * 180 / Math.PI));
-        if (input.nextElementSibling) input.nextElementSibling.textContent = `${input.value}°`;
-      }
+      Object.assign(individualCoordinates, result.solvedCoordinates);
       element('#unified-live-status').textContent = (result.targetErrorM ?? 0) < 0.05
-        ? '手部目标已由 OpenSim 求解'
-        : `目标超出可达范围；最近姿态距目标 ${((result.targetErrorM ?? 0) * 100).toFixed(1)} cm`;
+        ? `${part}目标已由 OpenSim 求解；对侧关节未同步改变`
+        : `${part}目标超出可达范围；最近姿态距目标 ${((result.targetErrorM ?? 0) * 100).toFixed(1)} cm`;
       updateFrame();
     } catch (error) {
       element('#unified-live-status').textContent =
-        `手部求解失败：${error instanceof Error ? error.message : String(error)}`;
+        `${part}求解失败：${error instanceof Error ? error.message : String(error)}`;
       updateFrame();
     }
   })();
@@ -441,6 +462,8 @@ for (const input of jointSliders) {
   input.addEventListener('input', () => {
     const output = input.nextElementSibling;
     if (output) output.textContent = `${input.value}°`;
+    delete individualCoordinates[`${input.dataset.joint}_r`];
+    delete individualCoordinates[`${input.dataset.joint}_l`];
     requestCustomPose();
   });
 }
@@ -527,11 +550,12 @@ function render(now: number): void {
   lastFrameTime = now;
   orbit.update();
   if (mode === 'custom') {
-    const handle = handHandles.get('hand_r');
-    if (handle) {
+    for (const [name, key] of [['hand_r', 'handRightScreen'], ['calcn_r', 'footRightScreen']] as const) {
+      const handle = dragHandles.get(name);
+      if (!handle) continue;
       const screen = handle.position.clone().project(camera);
       const rect = renderer.domElement.getBoundingClientRect();
-      stage.dataset.handRightScreen = `${rect.left + (screen.x + 1) * rect.width / 2},${rect.top + (1 - screen.y) * rect.height / 2}`;
+      stage.dataset[key] = `${rect.left + (screen.x + 1) * rect.width / 2},${rect.top + (1 - screen.y) * rect.height / 2}`;
     }
   }
   renderer.render(scene, camera);
@@ -540,17 +564,20 @@ function render(now: number): void {
 requestAnimationFrame(render);
 
 async function load(): Promise<void> {
-  const [response, gltf, surfaceGltf, skinResponse, weightResponse] = await Promise.all([
-    fetch('/data/unified_opensim_reference.json?v=136'),
+  const [response, gltf, surfaceGltf, boneGltf, skinResponse, weightResponse, boneResponse] = await Promise.all([
+    fetch('/data/unified_opensim_reference.json?v=138'),
     new GLTFLoader().loadAsync('/models/unified_opensim_skeleton.glb'),
-    new GLTFLoader().loadAsync('/models/unified_muscle_surfaces.glb'),
-    fetch('/data/unified_muscle_skin.json'),
-    fetch('/data/unified_muscle_weights.bin'),
+    new GLTFLoader().loadAsync('/models/unified_muscle_surfaces.glb?v=138'),
+    new GLTFLoader().loadAsync('/models/unified_anatomy_bones.glb?v=138'),
+    fetch('/data/unified_muscle_skin.json?v=138'),
+    fetch('/data/unified_muscle_weights.bin?v=138'),
+    fetch('/data/unified_anatomy_bones.json?v=138'),
   ]);
   if (!response.ok) throw new Error(`OpenSim frame data HTTP ${response.status}`);
-  if (!skinResponse.ok || !weightResponse.ok) throw new Error('精细肌肉绑定数据缺失');
+  if (!skinResponse.ok || !weightResponse.ok || !boneResponse.ok) throw new Error('精细骨肌绑定数据缺失');
   data = await response.json() as Reference;
   const skin = await skinResponse.json() as MuscleSkin;
+  const anatomy = await boneResponse.json() as AnatomyBones;
   const weights = new Uint8Array(await weightResponse.arrayBuffer());
   if (data.bodyNames.length !== 80 || data.muscleNames.length !== 520
     || data.actions.squat.length !== 101 || data.actions.bench.length !== 101
@@ -567,12 +594,39 @@ async function load(): Promise<void> {
     }));
     mesh.name = object.name;
     mesh.matrixAutoUpdate = false;
-    (essential ? essentialsGroup : bonesGroup).add(mesh);
+    if (essential) essentialsGroup.add(mesh);
     const entries = bodyMeshes.get(body) ?? [];
     entries.push(mesh);
     bodyMeshes.set(body, entries);
   });
   if (bodyMeshes.size < 20) throw new Error(`only ${bodyMeshes.size} OpenSim bodies have source meshes; nodes: ${gltf.scene.children.slice(0, 5).map(child => child.name).join(', ')}`);
+  const anatomyByName = new Map(anatomy.bones.map(entry =>
+    [THREE.PropertyBinding.sanitizeNodeName(entry.name), entry]));
+  boneGltf.scene.updateMatrixWorld(true);
+  boneGltf.scene.traverse(object => {
+    if (!(object instanceof THREE.Mesh)) return;
+    const entry = anatomyByName.get(object.name);
+    if (!entry) return;
+    const geometry = object.geometry.clone();
+    geometry.applyMatrix4(object.matrixWorld);
+    const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({
+      color: '#e4e3cd', emissive: '#9ba997', emissiveIntensity: 0.12,
+      side: THREE.DoubleSide, roughness: 0.72, transparent: true,
+      opacity: 0.28, depthTest: false, depthWrite: false,
+    }));
+    mesh.name = entry.name;
+    mesh.matrixAutoUpdate = false;
+    mesh.renderOrder = 20;
+    bonesGroup.add(mesh);
+    const neutral = data!.neutral.bodies[entry.bodyIndex];
+    const inverseNeutral = new THREE.Matrix4().set(
+      neutral.r[0], neutral.r[1], neutral.r[2], neutral.p[0],
+      neutral.r[3], neutral.r[4], neutral.r[5], neutral.p[1],
+      neutral.r[6], neutral.r[7], neutral.r[8], neutral.p[2], 0, 0, 0, 1).invert();
+    anatomyBoneMeshes.push({ mesh, bodyIndex: entry.bodyIndex, inverseNeutral });
+  });
+  if (anatomyBoneMeshes.length !== anatomy.bones.length)
+    throw new Error(`仅加载 ${anatomyBoneMeshes.length}/${anatomy.bones.length} 个解剖骨表面`);
   skinBones = data.bodyNames.map((name, index) => {
     const bone = new THREE.Bone();
     bone.name = `opensim:${name}`;
@@ -602,13 +656,35 @@ async function load(): Promise<void> {
     const influences = new Float32Array(count * 4);
     for (let i = 0; i < count; i++) {
       const u = weights[entry.weightOffset + i] / 255;
+      const smooth = (a: number, b: number, value: number): number => {
+        const t = THREE.MathUtils.clamp((value - a) / (b - a), 0, 1);
+        return t * t * (3 - 2 * t);
+      };
+      const origin = 0.82 * (1 - smooth(0.03, 0.38, u));
+      const insertion = 0.82 * smooth(0.62, 0.97, u);
       indices[i * 4] = entry.bodyIndices[0];
       indices[i * 4 + 1] = entry.bodyIndices[1];
-      influences[i * 4] = 1 - u;
-      influences[i * 4 + 1] = u;
+      indices[i * 4 + 2] = entry.bodyIndices[2];
+      influences[i * 4] = origin;
+      influences[i * 4 + 1] = 1 - origin - insertion;
+      influences[i * 4 + 2] = insertion;
     }
     geometry.setAttribute('skinIndex', new THREE.Uint16BufferAttribute(indices, 4));
     geometry.setAttribute('skinWeight', new THREE.Float32BufferAttribute(influences, 4));
+    const position = geometry.getAttribute('position') as THREE.BufferAttribute;
+    const bulge = new Float32Array(count * 3);
+    const center = new THREE.Vector3(...entry.center);
+    const axis = new THREE.Vector3(...entry.axis).normalize();
+    const vertex = new THREE.Vector3();
+    for (let i = 0; i < count; i++) {
+      vertex.fromBufferAttribute(position, i);
+      const u = weights[entry.weightOffset + i] / 255;
+      const radial = vertex.clone().sub(center);
+      radial.addScaledVector(axis, -radial.dot(axis));
+      vertex.addScaledVector(radial, 0.13 * Math.sin(Math.PI * u));
+      bulge.set([vertex.x, vertex.y, vertex.z], i * 3);
+    }
+    geometry.morphAttributes.position = [new THREE.Float32BufferAttribute(bulge, 3)];
     const material = new THREE.MeshStandardMaterial({ color: '#b77f83',
       roughness: 0.57, metalness: 0, side: THREE.DoubleSide });
     const mesh = new THREE.SkinnedMesh(geometry, material);

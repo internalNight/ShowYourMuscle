@@ -10,6 +10,7 @@ function walk(directory) {
 }
 
 const expected = [
+  'data/unified_anatomy_bones.json',
   'data/unified_muscle_skin.json',
   'data/unified_muscle_weights.bin',
   'data/unified_opensim_reference.json',
@@ -19,6 +20,7 @@ const expected = [
   'manifest.webmanifest',
   'models/NOTICE-unified-opensim.txt',
   'models/NOTICE-z-anatomy.txt',
+  'models/unified_anatomy_bones.glb',
   'models/unified_muscle_surfaces.glb',
   'models/unified_opensim_skeleton.glb',
   'sw.js',

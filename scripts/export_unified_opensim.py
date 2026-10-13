@@ -26,6 +26,23 @@ def vec3(value):
     return [round(value.get(i), 5) for i in range(3)]
 
 
+def keyed_pose(depth, knots):
+    for index in range(len(knots) - 1):
+        start, values = knots[index]
+        end, following = knots[index + 1]
+        if depth <= end or index == len(knots) - 2:
+            t = max(0, min(1, (depth - start) / (end - start)))
+            return [a + (b - a) * t for a, b in zip(values, following)]
+    raise ValueError("No pose knots")
+
+
+def symmetric_arms(plane, elevation, rotation, elbow):
+    return {"elv_angle_r": plane, "elv_angle_l": plane,
+            "shoulder_elv_r": elevation, "shoulder_elv_l": -elevation,
+            "shoulder_rot_r": rotation, "shoulder_rot_l": -rotation,
+            "elbow_flex_r": elbow, "elbow_flex_l": elbow}
+
+
 def pose_values(action, phase):
     # Smooth 0 -> 1 -> 0 cycle; zero is the same neutral model in every mode.
     depth = math.sin(math.pi * phase) ** 2
@@ -36,12 +53,12 @@ def pose_values(action, phase):
             "pelvis_ty": 0.93,
             "pelvis_tx": 0.0,
             "pelvis_tilt": -0.18 * depth,
-            "hip_flexion_r": 1.35 * depth,
-            "hip_flexion_l": 1.35 * depth,
-            "knee_angle_r": 1.65 * depth,
-            "knee_angle_l": 1.65 * depth,
-            "ankle_angle_r": 0.30 * depth,
-            "ankle_angle_l": 0.30 * depth,
+            "hip_flexion_r": 1.55 * depth,
+            "hip_flexion_l": 1.55 * depth,
+            "knee_angle_r": 1.95 * depth,
+            "knee_angle_l": 1.95 * depth,
+            "ankle_angle_r": 0.50 * depth,
+            "ankle_angle_l": 0.50 * depth,
             "elv_angle_r": 1.40 * depth,
             "elv_angle_l": 1.40 * depth,
             "shoulder_elv_r": 1.15 * depth,
@@ -50,31 +67,31 @@ def pose_values(action, phase):
             "elbow_flex_l": 0.15 * depth,
         }
     if action == "bench":
-        # Supine torso, planted feet and symmetric vertical hand travel.
-        # The source model is for cycling, so this remains a teaching pose.
+        # The bench arm path is fitted to stable grip width at three key
+        # positions of this same OpenSim model; no experimental trial is implied.
+        arm = keyed_pose(depth, [(0.0, (-1.25, 0.60, 0.00, 1.50)),
+                                 (0.5, (-1.225, 0.645, -0.05, 0.835)),
+                                 (1.0, (-1.20, 0.69, 0.00, 0.17))])
         return {
             "pelvis_tilt": -1.40,
             "pelvis_ty": 0.58,
-            "hip_flexion_r": 1.50,
-            "hip_flexion_l": 1.50,
-            "knee_angle_r": 1.00,
-            "knee_angle_l": 1.00,
-            "elv_angle_r": -1.50,
-            "elv_angle_l": -1.50,
-            "shoulder_elv_r": 0.70,
-            "shoulder_elv_l": -0.70,
-            "elbow_flex_r": 1.30 - 1.10 * depth,
-            "elbow_flex_l": 1.30 - 1.10 * depth,
-        }
+            "hip_flexion_r": 1.80,
+            "hip_flexion_l": 1.80,
+            "knee_angle_r": 0.90,
+            "knee_angle_l": 0.90,
+            "ankle_angle_r": 0.50,
+            "ankle_angle_l": 0.50,
+            **symmetric_arms(*arm)}
     if action == "press":
-        return {
-            "elv_angle_r": 0.50 * (1 - depth),
-            "elv_angle_l": 0.50 * (1 - depth),
-            "shoulder_elv_r": 1.00 + 2.00 * depth,
-            "shoulder_elv_l": -1.00 - 2.00 * depth,
-            "elbow_flex_r": 1.80 - 1.70 * depth,
-            "elbow_flex_l": 1.80 - 1.70 * depth,
-        }
+        # The forward bar clearance and later over-head lockout require a
+        # curved 3D shoulder/elbow trajectory in this cycling-derived model.
+        arm = keyed_pose(depth, [(0.0, (0.50, 1.00, 0.00, 1.80)),
+                                 (0.25, (0.80, 1.55, -0.45, 1.40)),
+                                 (0.50, (0.75, 1.90, -0.55, 1.15)),
+                                 (0.75, (0.60, 2.50, -0.40, 0.70)),
+                                 (0.90, (0.23, 2.81, -0.50, 0.33)),
+                                 (1.0, (0.00, 3.00, 0.00, 0.10))])
+        return symmetric_arms(*arm)
     raise ValueError(action)
 
 

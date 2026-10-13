@@ -56,6 +56,29 @@ def coordinate_values(controls):
     return values
 
 
+def individual_values(raw):
+    if raw is None:
+        return {}
+    if not isinstance(raw, dict):
+        raise ValueError("coordinates must be an object")
+    allowed = {f"{name}_{side}" for name in CONTROLS if name != "pelvis_tilt"
+               for side in ("r", "l")}
+    if set(raw) - allowed:
+        raise ValueError("Unknown individual coordinate")
+    values = {}
+    for name, value in raw.items():
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+            raise ValueError(f"{name} must be a finite number")
+        base = name[:-2]
+        low, high = CONTROLS[base]
+        if base == "shoulder_elv" and name.endswith("_l"):
+            low, high = -high, -low
+        if not low <= value <= high:
+            raise ValueError(f"{name} outside [{low}, {high}]")
+        values[name] = value
+    return values
+
+
 def prepare_model():
     if not DIST.joinpath("index.html").is_file():
         raise FileNotFoundError("Build the web app first: npm run build")
@@ -114,6 +137,7 @@ def make_handler(model, bodies, muscles, ground):
                 request = json.loads(self.rfile.read(size))
                 controls = request.get("controls")
                 values = coordinate_values(controls)
+                values.update(individual_values(request.get("coordinates")))
                 with model_lock:
                     state = model.initSystem()
                     if request.get("plantFeet", True):
@@ -123,23 +147,26 @@ def make_handler(model, bodies, muscles, ground):
                     if self.path == "/api/ik":
                         body = request.get("body")
                         target = request.get("target")
-                        if body not in ("hand_r", "hand_l") or not isinstance(target, list) or len(target) != 3 or not all(
+                        if body not in ("hand_r", "hand_l", "calcn_r", "calcn_l") or not isinstance(target, list) or len(target) != 3 or not all(
                                 isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x) and abs(x) < 5
                                 for x in target):
-                            raise ValueError("IK target must be a hand body and finite 3D position")
+                            raise ValueError("IK target must be a hand/heel body and finite 3D position")
                         side = body[-1]
-                        side_sign = 1 if side == "r" else -1
-                        old = [float(controls.get("elv_angle", 0)),
-                               float(controls.get("shoulder_elv", 0)),
-                               float(controls.get("elbow_flex", 0))]
+                        hand_target = body.startswith("hand")
+                        names = (("elv_angle", "shoulder_elv", "elbow_flex") if hand_target
+                                 else ("hip_flexion", "knee_angle", "ankle_angle"))
+                        keys = [f"{name}_{side}" for name in names]
+                        old = [float(values.get(key, 0)) for key in keys]
+                        lower = ([-1.5, 0, 0] if hand_target and side == "r" else
+                                 [-1.5, -3.05, 0] if hand_target else [-0.5, 0, -0.6])
+                        upper = ([1.5, 3.05, 2.5] if hand_target and side == "r" else
+                                 [1.5, 0, 2.5] if hand_target else [2, 2.4, 0.5])
                         coordinate_set = model.getCoordinateSet()
                         target_body = model.getBodySet().get(body)
 
                         def residual(parameters):
-                            plane, elevation, elbow = parameters
-                            coordinate_set.get(f"elv_angle_{side}").setValue(state, plane)
-                            coordinate_set.get(f"shoulder_elv_{side}").setValue(state, side_sign * elevation)
-                            coordinate_set.get(f"elbow_flex_{side}").setValue(state, elbow)
+                            for key, value in zip(keys, parameters):
+                                coordinate_set.get(key).setValue(state, float(value))
                             model.realizePosition(state)
                             point = target_body.getTransformInGround(state).p()
                             return [point.get(i) - target[i] for i in range(3)] + [
@@ -151,7 +178,7 @@ def make_handler(model, bodies, muscles, ground):
                             columns = []
                             for index in range(3):
                                 shifted = np.asarray(parameters).copy()
-                                shifted[index] += 0.01 if shifted[index] < (1.5, 3.05, 2.5)[index] - 0.01 else -0.01
+                                shifted[index] += 0.01 if shifted[index] < upper[index] - 0.01 else -0.01
                                 columns.append((np.asarray(residual(shifted)) - baseline) /
                                                (shifted[index] - parameters[index]))
                             return np.column_stack(columns)
@@ -159,20 +186,32 @@ def make_handler(model, bodies, muscles, ground):
                         # At the all-zero straight-arm pose the hand-height
                         # derivative is zero, so a local solver can remain on
                         # the joint bounds even for an easily reachable point.
-                        seed = old if old[1] > 0.12 or old[2] > 0.12 else [0.0, 0.85, 1.0]
+                        if hand_target and abs(old[1]) < 0.12 and old[2] < 0.12:
+                            seed = [1.25, 0.95 if side == "r" else -0.95, 0.5]
+                        elif not hand_target and old[1] < 0.12:
+                            seed = [0.4, 0.6, 0.0]
+                        else:
+                            seed = old
                         fitted = least_squares(residual, seed,
-                                               bounds=([-1.5, 0, 0], [1.5, 3.05, 2.5]),
+                                               bounds=(lower, upper),
                                                jac=jacobian, max_nfev=40,
                                                ftol=1e-4, xtol=1e-4)
-                        solved = dict(zip(("elv_angle", "shoulder_elv", "elbow_flex"), fitted.x.tolist()))
-                        values.update(coordinate_values(solved))
+                        if hand_target and math.sqrt(sum(x * x for x in residual(fitted.x)[:3])) > 0.08:
+                            alternate = [-1.25, 0.95 if side == "r" else -0.95, 0.5]
+                            second = least_squares(residual, alternate, bounds=(lower, upper),
+                                                   jac=jacobian, max_nfev=40,
+                                                   ftol=1e-4, xtol=1e-4)
+                            if sum(x * x for x in residual(second.x)[:3]) < sum(x * x for x in residual(fitted.x)[:3]):
+                                fitted = second
+                        solved = dict(zip(keys, fitted.x.tolist()))
+                        values.update(solved)
                         state = model.initSystem()
                     else:
                         solved = None
                     result = frame(model, state, bodies, muscles, values)
                 reply = {"frame": result}
                 if solved is not None:
-                    reply["solvedControls"] = solved
+                    reply["solvedCoordinates"] = solved
                     reply["targetErrorM"] = round(math.sqrt(sum((result["bodies"][bodies.index(body)]["p"][i] - target[i]) ** 2
                                                                    for i in range(3))), 4)
                 self.json_reply(200, reply)

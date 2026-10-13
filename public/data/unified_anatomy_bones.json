@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "sourceModel": "cyclistFullBodyMuscle.osim",
+  "bones": [
+    {
+      "name": "Body of sternum",
+      "bodyIndex": 57,
+      "body": "sternum"
+    },
+    {
+      "name": "Calcaneus.l",
+      "bodyIndex": 12,
+      "body": "calcn_l"
+    },
+    {
+      "name": "Calcaneus.r",
+      "bodyIndex": 6,
+      "body": "calcn_r"
+    },
+    {
+      "name": "Clavicle.l",
+      "bodyIndex": 74,
+      "body": "clavicle_L"
+    },
+    {
+      "name": "Clavicle.r",
+      "bodyIndex": 68,
+      "body": "clavicle_R"
+    },
+    {
+      "name": "Costal cartilage of eighth rib.l",
+      "bodyIndex": 49,
+      "body": "rib8_L"
+    },
+    {
+      "name": "Costal cartilage of eighth rib.r",
+      "bodyIndex": 37,
+      "body": "rib8_R"
+    },
+    {
+      "name": "Costal cartilage of fifth rib.l",
+      "bodyIndex": 52,
+      "body": "rib5_L"
+    },
+    {
+      "name": "Costal cartilage of fifth rib.r",
+      "bodyIndex": 40,
+      "body": "rib5_R"
+    },
+    {
+      "name": "Costal cartilage of first rib.l",
+      "bodyIndex": 56,
+      "body": "rib1_L"
+    },
+    {
+      "name": "Costal cartilage of first rib.r",
+      "bodyIndex": 44,
+      "body": "rib1_R"
+    },
+    {
+      "name": "Costal cartilage of fourth rib.l",
+      "bodyIndex": 53,
+      "body": "rib4_L"
+    },
+    {
+      "name": "Costal cartilage of fourth rib.r",
+      "bodyIndex": 41,
+      "body": "rib4_R"
+    },
+    {
+      "name": "Costal cartilage of ninth rib.l",
+      "bodyIndex": 48,
+      "body": "rib9_L"
+    },
+    {
+      "name": "Costal cartilage of ninth rib.r",
+      "bodyIndex": 36,
+      "body": "rib9_R"
+    },
+    {
+      "name": "Costal cartilage of second rib.l",
+      "bodyIndex": 55,
+      "body": "rib2_L"
+    },
+    {
+      "name": "Costal cartilage of second rib.r",
+      "bodyIndex": 43,
+      "body": "rib2_R"
+    },
+    {
+      "name": "Costal cartilage of seventh rib.l",
+      "bodyIndex": 50,
+      "body": "rib7_L"
+    },
+    {
+      "name": "Costal cartilage of seventh rib.r",
+      "bodyIndex": 38,
+      "body": "rib7_R"
+    },
+    {
+      "name": "Costal cartilage of sixth rib.l",
+      "bodyIndex": 51,
+      "body": "rib6_L"
+    },
+    {
+      "name": "Costal cartilage of sixth rib.r",
+      "bodyIndex": 39,
+      "body": "rib6_R"
+    },
+    {
+      "name": "Costal cartilage of tenth rib.l",
+      "bodyIndex": 47,
+      "body": "rib10_L"
+    },
+    {
+      "name": "Costal cartilage of tenth rib.r",
+      "bodyIndex": 35,
+      "body": "rib10_R"
+    },
+    {
+      "name": "Costal cartilage of third rib.l",
+      "bodyIndex": 54,
+      "body": "rib3_L"
+    },
+    {
+      "name": "Costal cartilage of third rib.r",
+      "bodyIndex": 42,
+      "body": "rib3_R"
+    },
+    {
+      "name": "Eighth rib.l",
+      "bodyIndex": 49,
+      "body": "rib8_L"
+    },
+    {
+      "name": "Eighth rib.r",
+      "bodyIndex": 37,
+      "body": "rib8_R"
+    },
+    {
+      "name": "Eleventh rib.l",
+      "bodyIndex": 46,
+      "body": "rib11_L"
+    },
+    {
+      "name": "Eleventh rib.r",
+      "bodyIndex": 34,
+      "body": "rib11_R"
+    },
+    {
+      "name": "Femur.l",
+      "bodyIndex": 8,
+      "body": "femur_l"
+    },
+    {
+      "name": "Femur.r",
+      "bodyIndex": 2,
+      "body": "femur_r"
+    },
+    {
+      "name": "Fibula.l",
+      "bodyIndex": 9,
+      "body": "tibia_l"
+    },
+    {
+      "name": "Fibula.r",
+      "bodyIndex": 3,
+      "body": "tibia_r"
+    },
+    {
+      "name": "Fifth rib.l",
+      "bodyIndex": 52,
+      "body": "rib5_L"
+    },
+    {
+      "name": "Fifth rib.r",
+      "bodyIndex": 40,
+      "body": "rib5_R"
+    },
+    {
+      "name": "First rib.l",
+      "bodyIndex": 56,
+      "body": "rib1_L"
+    },
+    {
+      "name": "First rib.r",
+      "bodyIndex": 44,
+      "body": "rib1_R"
+    },
+    {
+      "name": "Fourth rib.l",
+      "bodyIndex": 53,
+      "body": "rib4_L"
+    },
+    {
+      "name": "Fourth rib.r",
+      "bodyIndex": 41,
+      "body": "rib4_R"
+    },
+    {
+      "name": "Hip bone.l",
+      "bodyIndex": 0,
+      "body": "pelvis"
+    },
+    {
+      "name": "Hip bone.r",
+      "bodyIndex": 0,
+      "body": "pelvis"
+    },
+    {
+      "name": "Humerus.l",
+      "bodyIndex": 76,
+      "body": "humerus_l"
+    },
+    {
+      "name": "Humerus.r",
+      "bodyIndex": 70,
+      "body": "humerus_r"
+    },
+    {
+      "name": "Manubrium of sternum",
+      "bodyIndex": 57,
+      "body": "sternum"
+    },
+    {
+      "name": "Ninth rib.l",
+      "bodyIndex": 48,
+      "body": "rib9_L"
+    },
+    {
+      "name": "Ninth rib.r",
+      "bodyIndex": 36,
+      "body": "rib9_R"
+    },
+    {
+      "name": "Patella.l",
+      "bodyIndex": 10,
+      "body": "patella_l"
+    },
+    {
+      "name": "Patella.r",
+      "bodyIndex": 4,
+      "body": "patella_r"
+    },
+    {
+      "name": "Radius.l",
+      "bodyIndex": 78,
+      "body": "radius_l"
+    },
+    {
+      "name": "Radius.r",
+      "bodyIndex": 72,
+      "body": "radius_r"
+    },
+    {
+      "name": "Sacrum",
+      "bodyIndex": 1,
+      "body": "sacrum"
+    },
+    {
+      "name": "Scapula.l",
+      "bodyIndex": 75,
+      "body": "scapula_L"
+    },
+    {
+      "name": "Scapula.r",
+      "bodyIndex": 69,
+      "body": "scapula_R"
+    },
+    {
+      "name": "Second rib.l",
+      "bodyIndex": 55,
+      "body": "rib2_L"
+    },
+    {
+      "name": "Second rib.r",
+      "bodyIndex": 43,
+      "body": "rib2_R"
+    },
+    {
+      "name": "Seventh rib.l",
+      "bodyIndex": 50,
+      "body": "rib7_L"
+    },
+    {
+      "name": "Seventh rib.r",
+      "bodyIndex": 38,
+      "body": "rib7_R"
+    },
+    {
+      "name": "Sixth rib.l",
+      "bodyIndex": 51,
+      "body": "rib6_L"
+    },
+    {
+      "name": "Sixth rib.r",
+      "bodyIndex": 39,
+      "body": "rib6_R"
+    },
+    {
+      "name": "Tenth rib.l",
+      "bodyIndex": 47,
+      "body": "rib10_L"
+    },
+    {
+      "name": "Tenth rib.r",
+      "bodyIndex": 35,
+      "body": "rib10_R"
+    },
+    {
+      "name": "Third rib.l",
+      "bodyIndex": 54,
+      "body": "rib3_L"
+    },
+    {
+      "name": "Third rib.r",
+      "bodyIndex": 42,
+      "body": "rib3_R"
+    },
+    {
+      "name": "Tibia.l",
+      "bodyIndex": 9,
+      "body": "tibia_l"
+    },
+    {
+      "name": "Tibia.r",
+      "bodyIndex": 3,
+      "body": "tibia_r"
+    },
+    {
+      "name": "Twelfth rib.l",
+      "bodyIndex": 45,
+      "body": "rib12_L"
+    },
+    {
+      "name": "Twelfth rib.r",
+      "bodyIndex": 33,
+      "body": "rib12_R"
+    },
+    {
+      "name": "Ulna.l",
+      "bodyIndex": 77,
+      "body": "ulna_l"
+    },
+    {
+      "name": "Ulna.r",
+      "bodyIndex": 71,
+      "body": "ulna_r"
+    },
+    {
+      "name": "Vertebra C3",
+      "bodyIndex": 32,
+      "body": "head_neck"
+    },
+    {
+      "name": "Vertebra C4",
+      "bodyIndex": 32,
+      "body": "head_neck"
+    },
+    {
+      "name": "Vertebra C5",
+      "bodyIndex": 32,
+      "body": "head_neck"
+    },
+    {
+      "name": "Vertebra C6",
+      "bodyIndex": 32,
+      "body": "head_neck"
+    },
+    {
+      "name": "Vertebra C7",
+      "bodyIndex": 32,
+      "body": "head_neck"
+    },
+    {
+      "name": "Vertebra L1",
+      "bodyIndex": 19,
+      "body": "lumbar1"
+    },
+    {
+      "name": "Vertebra L2",
+      "bodyIndex": 18,
+      "body": "lumbar2"
+    },
+    {
+      "name": "Vertebra L3",
+      "bodyIndex": 17,
+      "body": "lumbar3"
+    },
+    {
+      "name": "Vertebra L4",
+      "bodyIndex": 16,
+      "body": "lumbar4"
+    },
+    {
+      "name": "Vertebra L5",
+      "bodyIndex": 15,
+      "body": "lumbar5"
+    },
+    {
+      "name": "Vertebra T1",
+      "bodyIndex": 31,
+      "body": "thoracic1"
+    },
+    {
+      "name": "Vertebra T10",
+      "bodyIndex": 22,
+      "body": "thoracic10"
+    },
+    {
+      "name": "Vertebra T11",
+      "bodyIndex": 21,
+      "body": "thoracic11"
+    },
+    {
+      "name": "Vertebra T12",
+      "bodyIndex": 20,
+      "body": "thoracic12"
+    },
+    {
+      "name": "Vertebra T2",
+      "bodyIndex": 30,
+      "body": "thoracic2"
+    },
+    {
+      "name": "Vertebra T3",
+      "bodyIndex": 29,
+      "body": "thoracic3"
+    },
+    {
+      "name": "Vertebra T4",
+      "bodyIndex": 28,
+      "body": "thoracic4"
+    },
+    {
+      "name": "Vertebra T5",
+      "bodyIndex": 27,
+      "body": "thoracic5"
+    },
+    {
+      "name": "Vertebra T6",
+      "bodyIndex": 26,
+      "body": "thoracic6"
+    },
+    {
+      "name": "Vertebra T7",
+      "bodyIndex": 25,
+      "body": "thoracic7"
+    },
+    {
+      "name": "Vertebra T8",
+      "bodyIndex": 24,
+      "body": "thoracic8"
+    },
+    {
+      "name": "Vertebra T9",
+      "bodyIndex": 23,
+      "body": "thoracic9"
+    }
+  ]
+}

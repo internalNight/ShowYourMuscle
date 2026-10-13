@@ -2,11 +2,12 @@
 
 The anatomy atlas is a visual surface. Motion and muscle-tendon lengths remain
 defined by the single cyclistFullBodyMuscle OpenSim model. This export records
-the rigid registration, source-to-model correspondence, and two-body skinning
-weights so the same surfaces move in every viewer pose.
+the rigid registration, source-to-model correspondence, and local belly anchors
+so the same surfaces move in every viewer pose.
 """
 
 import json
+import math
 import re
 from pathlib import Path
 
@@ -211,11 +212,15 @@ def main():
         length_sq = float(direction @ direction)
         if length_sq < 1e-8:
             raise ValueError(f"degenerate OpenSim path: {source_muscles[0]}")
-        u_values = np.clip(((mesh.vertices - start) @ direction) / length_sq, 0, 1)
+        projection = ((mesh.vertices - start) @ direction) / length_sq
+        low, high = np.quantile(projection, [0.02, 0.98])
+        u_values = np.clip((projection - low) / max(float(high - low), 1e-5), 0, 1)
         # Using muscle path closest point to each endpoint lets us read the
         # attachment bodies from a separate OpenSim export made below.
         records.append({"name": name, "modelMuscles": source_muscles,
                         "weightOffset": len(weights), "vertexCount": len(mesh.vertices),
+                        "axis": (direction / math.sqrt(length_sq)).round(6).tolist(),
+                        "center": mesh.centroid.round(6).tolist(),
                         "uMin": round(float(u_values.min()), 3),
                         "uMax": round(float(u_values.max()), 3)})
         weights.extend(np.rint(u_values * 255).astype(np.uint8).tobytes())
@@ -240,20 +245,34 @@ def main():
         model_name = record["modelMuscles"][0]
         if model_name not in attachment:
             raise ValueError(f"No source attachment bodies for {model_name}")
-        record["bodyIndices"] = attachment[model_name]
-        # The calf atlas meshes contain muscle bellies, not the long Achilles
-        # tendon represented by OpenSim's endpoint. Binding their whole surface
-        # from femur to calcaneus collapses the belly during knee flexion.
-        # Keep the visible belly on the tibia; OpenSim path/colour still reports
-        # the changing complete muscle-tendon length.
-        if any(part in record["name"] for part in ("gastrocnemius", "Soleus muscle", "Tibialis anterior muscle")):
-            side = record["name"].rsplit(".", 1)[-1]
-            tibia = bone_index[f"tibia_{side}"]
-            record["bodyIndices"] = [tibia, tibia]
+        origin, insertion = attachment[model_name]
+        name = record["name"]
+        side = name.rsplit(".", 1)[-1]
+        if any(part in name for part in ("femoris", "Vastus", "Semimembranosus", "Semitendinosus")):
+            primary = f"femur_{side}"
+        elif any(part in name for part in ("gastrocnemius", "Soleus", "Tibialis anterior")):
+            primary = f"tibia_{side}"
+        elif "Brachioradialis" in name:
+            primary = f"radius_{side}"
+        elif any(part in name for part in ("deltoid", "biceps brachii", "triceps brachii", "Brachialis")):
+            primary = f"humerus_{side}"
+        elif "Gluteus" in name:
+            primary = "pelvis"
+        elif "pectoralis" in name:
+            primary = "sternum"
+        elif "Rhomboid" in name:
+            primary = f"scapula_{side.upper()}"
+        elif "Serratus" in name:
+            primary = f"scapula_{side.upper()}"
+        elif "trapezius" in name:
+            primary = "thoracic3"
+        else:
+            primary = "Abdomen"
+        record["bodyIndices"] = [origin, bone_index[primary], insertion]
 
     OUT_MODEL.write_bytes(scene.export(file_type="glb"))
     OUT_WEIGHTS.write_bytes(weights)
-    metadata = {"schemaVersion": 1, "sourceAtlas": "Z-Anatomy / BodyParts3D",
+    metadata = {"schemaVersion": 2, "sourceAtlas": "Z-Anatomy / BodyParts3D",
                 "license": "CC BY-SA 4.0", "sourceModel": ref["model"],
                 "registration": registration.round(7).tolist(),
                 "boneLandmarks": diagnostics, "meshes": records}
