@@ -541,7 +541,7 @@ requestAnimationFrame(render);
 
 async function load(): Promise<void> {
   const [response, gltf, surfaceGltf, skinResponse, weightResponse] = await Promise.all([
-    fetch('/data/unified_opensim_reference.json'),
+    fetch('/data/unified_opensim_reference.json?v=136'),
     new GLTFLoader().loadAsync('/models/unified_opensim_skeleton.glb'),
     new GLTFLoader().loadAsync('/models/unified_muscle_surfaces.glb'),
     fetch('/data/unified_muscle_skin.json'),
