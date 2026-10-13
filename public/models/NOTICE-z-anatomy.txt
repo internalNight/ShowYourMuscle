@@ -13,3 +13,9 @@ License: https://creativecommons.org/licenses/by-sa/4.0/
 
 This exported reference mesh remains under CC BY-SA 4.0. It is static and
 does not supply a rig, muscle paths, physiological parameters, or force data.
+
+The unified_muscle_surfaces.glb and unified_muscle_skin.json/
+unified_muscle_weights.bin files are further registered and skinned derivatives
+of this reference geometry. They remain under CC BY-SA 4.0. Their animation
+uses the separately attributed OpenSim model; this derivative is not a source
+of validated tissue deformation or muscle force.

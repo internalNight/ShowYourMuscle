@@ -3,12 +3,19 @@ import { readFileSync } from 'node:fs';
 
 const data = JSON.parse(readFileSync('public/data/unified_opensim_reference.json', 'utf8'));
 const audit = JSON.parse(readFileSync('docs/data/unified_opensim_geometry.json', 'utf8'));
+const skin = JSON.parse(readFileSync('public/data/unified_muscle_skin.json', 'utf8'));
+const skinWeights = readFileSync('public/data/unified_muscle_weights.bin');
 assert.equal(data.model, audit.model);
 assert.equal(data.bodyNames.length, 80);
 assert.equal(data.muscleNames.length, 520);
 assert.equal(new Set(data.bodyNames).size, 80);
 assert.equal(new Set(data.muscleNames).size, 520);
 assert.equal(audit.present.length + audit.missing.length + audit.excluded.length, 132);
+assert.equal(skin.meshes.length, 68);
+assert(skin.meshes.every(mesh => mesh.modelMuscles.length > 0 &&
+  mesh.modelMuscles.every(name => data.muscleNames.includes(name)) &&
+  mesh.bodyIndices.every(index => index >= 0 && index < data.bodyNames.length)));
+assert.equal(skin.meshes.reduce((sum, mesh) => sum + mesh.vertexCount, 0), skinWeights.length);
 
 for (const [action, frames] of Object.entries({ neutral: [data.neutral], ...data.actions })) {
   assert.equal(frames.length, action === 'neutral' ? 1 : 101);
@@ -31,4 +38,27 @@ for (const [action, frames] of Object.entries({ neutral: [data.neutral], ...data
       `${action} did not change muscle lengths`);
   }
 }
-console.log('One OpenSim model: 80 bodies, 520 paths, 304 complete frames, changing poses and lengths.');
+const body = name => data.bodyNames.indexOf(name);
+const pos = (frame, name) => frame.bodies[body(name)].p;
+const heelHeight = pos(data.neutral, 'calcn_r')[1];
+for (const action of ['squat', 'bench']) {
+  for (const [index, frame] of data.actions[action].entries()) {
+    for (const side of ['r', 'l']) {
+      assert(Math.abs(pos(frame, `calcn_${side}`)[1] - heelHeight) < 0.002,
+        `${action} ${index}% ${side} heel lost ground contact`);
+    }
+  }
+}
+const squat = data.actions.squat[50];
+assert(squat.coordinates.knee_angle_r > 1.5 && squat.coordinates.hip_flexion_r > 1.2);
+assert(Math.abs(pos(squat, 'calcn_r')[0] - pos(data.neutral, 'calcn_r')[0]) < 0.002);
+const benchBottom = data.actions.bench[0], benchTop = data.actions.bench[50];
+assert(pos(benchTop, 'hand_r')[1] - pos(benchBottom, 'hand_r')[1] > 0.15,
+  'bench hands do not move upward');
+assert(Math.abs(pos(benchTop, 'hand_r')[1] - pos(benchTop, 'hand_l')[1]) < 0.04,
+  'bench hands are not level');
+const pressBottom = data.actions.press[0], pressTop = data.actions.press[50];
+assert(pos(pressTop, 'hand_r')[1] - pos(pressBottom, 'hand_r')[1] > 0.5,
+  'press does not reach overhead');
+assert(pos(pressTop, 'hand_r')[1] > pos(pressTop, 'head_neck')[1] + 0.35);
+console.log('OpenSim: 80 bodies, 520 paths, 304 frames, 68 surface muscles; planted heels and exercise hand paths verified.');

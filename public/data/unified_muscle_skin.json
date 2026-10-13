@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": 1,
+  "sourceAtlas": "Z-Anatomy / BodyParts3D",
+  "license": "CC BY-SA 4.0",
+  "sourceModel": "cyclistFullBodyMuscle.osim",
+  "registration": [
+    [
+      0.0001313,
+      -0.0549557,
+      0.9920035,
+      -0.0134507
+    ],
+    [
+      1.99e-05,
+      0.9920035,
+      0.0549557,
+      0.0097847
+    ],
+    [
+      -0.9935245,
+      1.26e-05,
+      0.0001322,
+      -2.82e-05
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "boneLandmarks": [
+    {
+      "atlas": "Hip bone.r",
+      "centroidErrorM": 0.0129,
+      "medianSurfaceDistanceM": 0.0108
+    },
+    {
+      "atlas": "Hip bone.l",
+      "centroidErrorM": 0.0129,
+      "medianSurfaceDistanceM": 0.0108
+    },
+    {
+      "atlas": "Femur.r",
+      "centroidErrorM": 0.0106,
+      "medianSurfaceDistanceM": 0.0099
+    },
+    {
+      "atlas": "Femur.l",
+      "centroidErrorM": 0.0106,
+      "medianSurfaceDistanceM": 0.0099
+    },
+    {
+      "atlas": "Tibia.r",
+      "centroidErrorM": 0.0231,
+      "medianSurfaceDistanceM": 0.0115
+    },
+    {
+      "atlas": "Tibia.l",
+      "centroidErrorM": 0.0231,
+      "medianSurfaceDistanceM": 0.0115
+    },
+    {
+      "atlas": "Fibula.r",
+      "centroidErrorM": 0.0153,
+      "medianSurfaceDistanceM": 0.0092
+    },
+    {
+      "atlas": "Fibula.l",
+      "centroidErrorM": 0.0161,
+      "medianSurfaceDistanceM": 0.0092
+    },
+    {
+      "atlas": "Humerus.r",
+      "centroidErrorM": 0.0375,
+      "medianSurfaceDistanceM": 0.0256
+    },
+    {
+      "atlas": "Humerus.l",
+      "centroidErrorM": 0.0375,
+      "medianSurfaceDistanceM": 0.0255
+    },
+    {
+      "atlas": "Ulna.r",
+      "centroidErrorM": 0.0625,
+      "medianSurfaceDistanceM": 0.0482
+    },
+    {
+      "atlas": "Ulna.l",
+      "centroidErrorM": 0.0625,
+      "medianSurfaceDistanceM": 0.0482
+    },
+    {
+      "atlas": "Radius.r",
+      "centroidErrorM": 0.0564,
+      "medianSurfaceDistanceM": 0.0512
+    },
+    {
+      "atlas": "Radius.l",
+      "centroidErrorM": 0.0565,
+      "medianSurfaceDistanceM": 0.0512
+    },
+    {
+      "atlas": "Sacrum",
+      "centroidErrorM": 0.0225,
+      "medianSurfaceDistanceM": 0.0094
+    }
+  ],
+  "meshes": [
+    {
+      "name": "(Abdominal part of pectoralis major muscle).l",
+      "modelMuscles": [
+        "PECM3_l"
+      ],
+      "weightOffset": 0,
+      "vertexCount": 756,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        57
+      ]
+    },
+    {
+      "name": "(Abdominal part of pectoralis major muscle).r",
+      "modelMuscles": [
+        "PECM3"
+      ],
+      "weightOffset": 756,
+      "vertexCount": 756,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        57
+      ]
+    },
+    {
+      "name": "Acromial part of deltoid muscle.l",
+      "modelMuscles": [
+        "DELT2_l"
+      ],
+      "weightOffset": 1512,
+      "vertexCount": 1482,
+      "uMin": 0.051,
+      "uMax": 0.921,
+      "bodyIndices": [
+        76,
+        75
+      ]
+    },
+    {
+      "name": "Acromial part of deltoid muscle.r",
+      "modelMuscles": [
+        "DELT2"
+      ],
+      "weightOffset": 2994,
+      "vertexCount": 1482,
+      "uMin": 0.051,
+      "uMax": 0.921,
+      "bodyIndices": [
+        70,
+        69
+      ]
+    },
+    {
+      "name": "Ascending part of trapezius muscle.l",
+      "modelMuscles": [
+        "trap_inf_T4_L",
+        "trap_inf_T5_L",
+        "trap_inf_T6_L",
+        "trap_inf_T7_L",
+        "trap_inf_T8_L",
+        "trap_inf_T9_L",
+        "trap_inf_T10_L",
+        "trap_inf_T11_L",
+        "trap_inf_T12_L"
+      ],
+      "weightOffset": 4476,
+      "vertexCount": 2298,
+      "uMin": 0.126,
+      "uMax": 1.0,
+      "bodyIndices": [
+        28,
+        75
+      ]
+    },
+    {
+      "name": "Ascending part of trapezius muscle.r",
+      "modelMuscles": [
+        "trap_inf_T4",
+        "trap_inf_T5",
+        "trap_inf_T6",
+        "trap_inf_T7",
+        "trap_inf_T8",
+        "trap_inf_T9",
+        "trap_inf_T10",
+        "trap_inf_T11",
+        "trap_inf_T12"
+      ],
+      "weightOffset": 6774,
+      "vertexCount": 2298,
+      "uMin": 0.125,
+      "uMax": 1.0,
+      "bodyIndices": [
+        28,
+        69
+      ]
+    },
+    {
+      "name": "Brachialis muscle.l",
+      "modelMuscles": [
+        "BRA_l"
+      ],
+      "weightOffset": 9072,
+      "vertexCount": 1741,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        77
+      ]
+    },
+    {
+      "name": "Brachialis muscle.r",
+      "modelMuscles": [
+        "BRA_r"
+      ],
+      "weightOffset": 10813,
+      "vertexCount": 1741,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        71
+      ]
+    },
+    {
+      "name": "Brachioradialis muscle.l",
+      "modelMuscles": [
+        "BRD_l"
+      ],
+      "weightOffset": 12554,
+      "vertexCount": 3658,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        78
+      ]
+    },
+    {
+      "name": "Brachioradialis muscle.r",
+      "modelMuscles": [
+        "BRD_r"
+      ],
+      "weightOffset": 16212,
+      "vertexCount": 3658,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        72
+      ]
+    },
+    {
+      "name": "Clavicular head of pectoralis major muscle.l",
+      "modelMuscles": [
+        "PECM1_l"
+      ],
+      "weightOffset": 19870,
+      "vertexCount": 425,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        74
+      ]
+    },
+    {
+      "name": "Clavicular head of pectoralis major muscle.r",
+      "modelMuscles": [
+        "PECM1"
+      ],
+      "weightOffset": 20295,
+      "vertexCount": 425,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        68
+      ]
+    },
+    {
+      "name": "Clavicular part of deltoid muscle.l",
+      "modelMuscles": [
+        "DELT1_l"
+      ],
+      "weightOffset": 20720,
+      "vertexCount": 1453,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        74
+      ]
+    },
+    {
+      "name": "Clavicular part of deltoid muscle.r",
+      "modelMuscles": [
+        "DELT1"
+      ],
+      "weightOffset": 22173,
+      "vertexCount": 1453,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        68
+      ]
+    },
+    {
+      "name": "Descending part of trapezius muscle.l",
+      "modelMuscles": [
+        "trap_cl_L"
+      ],
+      "weightOffset": 23626,
+      "vertexCount": 3376,
+      "uMin": 0.0,
+      "uMax": 0.203,
+      "bodyIndices": [
+        74,
+        32
+      ]
+    },
+    {
+      "name": "Descending part of trapezius muscle.r",
+      "modelMuscles": [
+        "trap_cl"
+      ],
+      "weightOffset": 27002,
+      "vertexCount": 3376,
+      "uMin": 0.0,
+      "uMax": 0.203,
+      "bodyIndices": [
+        68,
+        32
+      ]
+    },
+    {
+      "name": "External abdominal oblique muscle.l",
+      "modelMuscles": [
+        "E0_R5_l",
+        "E0_R6_l",
+        "E0_R7_l",
+        "E0_R8_l",
+        "E0_R9_l",
+        "E0_R10_l",
+        "E0_R11_l",
+        "E0_R12_l"
+      ],
+      "weightOffset": 30378,
+      "vertexCount": 88858,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        14,
+        52
+      ]
+    },
+    {
+      "name": "External abdominal oblique muscle.r",
+      "modelMuscles": [
+        "E0_R5_r",
+        "E0_R6_r",
+        "E0_R7_r",
+        "E0_R8_r",
+        "E0_R9_r",
+        "E0_R10_r",
+        "E0_R11_r",
+        "E0_R12_r"
+      ],
+      "weightOffset": 119236,
+      "vertexCount": 88858,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        14,
+        40
+      ]
+    },
+    {
+      "name": "Gluteus maximus muscle.l",
+      "modelMuscles": [
+        "glmax1_l",
+        "glmax2_l",
+        "glmax3_l"
+      ],
+      "weightOffset": 208094,
+      "vertexCount": 1663,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        8
+      ]
+    },
+    {
+      "name": "Gluteus maximus muscle.r",
+      "modelMuscles": [
+        "glmax1_r",
+        "glmax2_r",
+        "glmax3_r"
+      ],
+      "weightOffset": 209757,
+      "vertexCount": 1663,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Gluteus medius muscle.l",
+      "modelMuscles": [
+        "glmed1_l",
+        "glmed2_l",
+        "glmed3_l"
+      ],
+      "weightOffset": 211420,
+      "vertexCount": 2590,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        8
+      ]
+    },
+    {
+      "name": "Gluteus medius muscle.r",
+      "modelMuscles": [
+        "glmed1_r",
+        "glmed2_r",
+        "glmed3_r"
+      ],
+      "weightOffset": 214010,
+      "vertexCount": 2590,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Lateral head of gastrocnemius.l",
+      "modelMuscles": [
+        "gaslat140_l"
+      ],
+      "weightOffset": 216600,
+      "vertexCount": 2454,
+      "uMin": 0.0,
+      "uMax": 0.57,
+      "bodyIndices": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "Lateral head of gastrocnemius.r",
+      "modelMuscles": [
+        "gaslat140_r"
+      ],
+      "weightOffset": 219054,
+      "vertexCount": 2454,
+      "uMin": 0.0,
+      "uMax": 0.57,
+      "bodyIndices": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Lateral head of triceps brachii.l",
+      "modelMuscles": [
+        "TRIlat_l"
+      ],
+      "weightOffset": 221508,
+      "vertexCount": 1816,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        77
+      ]
+    },
+    {
+      "name": "Lateral head of triceps brachii.r",
+      "modelMuscles": [
+        "TRIlat_r"
+      ],
+      "weightOffset": 223324,
+      "vertexCount": 1816,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        71
+      ]
+    },
+    {
+      "name": "Latissimus dorsi muscle.l",
+      "modelMuscles": [
+        "LD_L1_l",
+        "LD_L2_l",
+        "LD_L3_l",
+        "LD_L4_l",
+        "LD_L5_l"
+      ],
+      "weightOffset": 225140,
+      "vertexCount": 10808,
+      "uMin": 0.119,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        19
+      ]
+    },
+    {
+      "name": "Latissimus dorsi muscle.r",
+      "modelMuscles": [
+        "LD_L1_r",
+        "LD_L2_r",
+        "LD_L3_r",
+        "LD_L4_r",
+        "LD_L5_r"
+      ],
+      "weightOffset": 235948,
+      "vertexCount": 10808,
+      "uMin": 0.119,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        19
+      ]
+    },
+    {
+      "name": "Long head of biceps brachii.l",
+      "modelMuscles": [
+        "BIClong_l"
+      ],
+      "weightOffset": 246756,
+      "vertexCount": 1611,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        75,
+        78
+      ]
+    },
+    {
+      "name": "Long head of biceps brachii.r",
+      "modelMuscles": [
+        "BIClong_r"
+      ],
+      "weightOffset": 248367,
+      "vertexCount": 1611,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        69,
+        72
+      ]
+    },
+    {
+      "name": "Long head of triceps brachii.l",
+      "modelMuscles": [
+        "TRIlong_l"
+      ],
+      "weightOffset": 249978,
+      "vertexCount": 1977,
+      "uMin": 0.087,
+      "uMax": 1.0,
+      "bodyIndices": [
+        75,
+        77
+      ]
+    },
+    {
+      "name": "Long head of triceps brachii.r",
+      "modelMuscles": [
+        "TRIlong_r"
+      ],
+      "weightOffset": 251955,
+      "vertexCount": 1977,
+      "uMin": 0.073,
+      "uMax": 1.0,
+      "bodyIndices": [
+        69,
+        71
+      ]
+    },
+    {
+      "name": "Longissimus thoracis muscle.l",
+      "modelMuscles": [
+        "LTpT_T1_l",
+        "LTpT_T2_l",
+        "LTpT_T3_l",
+        "LTpT_T4_l",
+        "LTpT_T5_l",
+        "LTpT_T6_l",
+        "LTpT_T7_l",
+        "LTpT_T8_l",
+        "LTpT_T9_l",
+        "LTpT_T10_l",
+        "LTpT_T11_l",
+        "LTpT_T12_l"
+      ],
+      "weightOffset": 253932,
+      "vertexCount": 4818,
+      "uMin": 0.0,
+      "uMax": 0.901,
+      "bodyIndices": [
+        19,
+        31
+      ]
+    },
+    {
+      "name": "Longissimus thoracis muscle.r",
+      "modelMuscles": [
+        "LTpT_T1_r",
+        "LTpT_T2_r",
+        "LTpT_T3_r",
+        "LTpT_T4_r",
+        "LTpT_T5_r",
+        "LTpT_T6_r",
+        "LTpT_T7_r",
+        "LTpT_T8_r",
+        "LTpT_T9_r",
+        "LTpT_T10_r",
+        "LTpT_T11_r",
+        "LTpT_T12_r"
+      ],
+      "weightOffset": 258750,
+      "vertexCount": 4818,
+      "uMin": 0.0,
+      "uMax": 0.901,
+      "bodyIndices": [
+        19,
+        31
+      ]
+    },
+    {
+      "name": "Medial head of gastrocnemius.l",
+      "modelMuscles": [
+        "gasmed_l"
+      ],
+      "weightOffset": 263568,
+      "vertexCount": 3233,
+      "uMin": 0.0,
+      "uMax": 0.598,
+      "bodyIndices": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "Medial head of gastrocnemius.r",
+      "modelMuscles": [
+        "gasmed_r"
+      ],
+      "weightOffset": 266801,
+      "vertexCount": 3233,
+      "uMin": 0.0,
+      "uMax": 0.598,
+      "bodyIndices": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Medial head of triceps brachii.l",
+      "modelMuscles": [
+        "TRImed_l"
+      ],
+      "weightOffset": 270034,
+      "vertexCount": 1345,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        77
+      ]
+    },
+    {
+      "name": "Medial head of triceps brachii.r",
+      "modelMuscles": [
+        "TRImed_r"
+      ],
+      "weightOffset": 271379,
+      "vertexCount": 1345,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        71
+      ]
+    },
+    {
+      "name": "Rectus abdominis muscle.l",
+      "modelMuscles": [
+        "rect_abd_l"
+      ],
+      "weightOffset": 272724,
+      "vertexCount": 10304,
+      "uMin": 0.056,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        51
+      ]
+    },
+    {
+      "name": "Rectus abdominis muscle.r",
+      "modelMuscles": [
+        "rect_abd_r"
+      ],
+      "weightOffset": 283028,
+      "vertexCount": 10304,
+      "uMin": 0.056,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        39
+      ]
+    },
+    {
+      "name": "Rectus femoris muscle.l",
+      "modelMuscles": [
+        "recfem_l"
+      ],
+      "weightOffset": 293332,
+      "vertexCount": 4136,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        9
+      ]
+    },
+    {
+      "name": "Rectus femoris muscle.r",
+      "modelMuscles": [
+        "recfem_r"
+      ],
+      "weightOffset": 297468,
+      "vertexCount": 4136,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "Rhomboid major muscle.l",
+      "modelMuscles": [
+        "TR1_l",
+        "TR2_l",
+        "TR3_l",
+        "TR4_l",
+        "TR5_l"
+      ],
+      "weightOffset": 301604,
+      "vertexCount": 2402,
+      "uMin": 0.519,
+      "uMax": 1.0,
+      "bodyIndices": [
+        14,
+        48
+      ]
+    },
+    {
+      "name": "Rhomboid major muscle.r",
+      "modelMuscles": [
+        "TR1_r",
+        "TR2_r",
+        "TR3_r",
+        "TR4_r",
+        "TR5_r"
+      ],
+      "weightOffset": 304006,
+      "vertexCount": 2402,
+      "uMin": 0.519,
+      "uMax": 1.0,
+      "bodyIndices": [
+        14,
+        36
+      ]
+    },
+    {
+      "name": "Scapular spinal part of deltoid muscle.l",
+      "modelMuscles": [
+        "DELT3_l"
+      ],
+      "weightOffset": 306408,
+      "vertexCount": 2189,
+      "uMin": 0.139,
+      "uMax": 1.0,
+      "bodyIndices": [
+        75,
+        76
+      ]
+    },
+    {
+      "name": "Scapular spinal part of deltoid muscle.r",
+      "modelMuscles": [
+        "DELT3"
+      ],
+      "weightOffset": 308597,
+      "vertexCount": 2189,
+      "uMin": 0.139,
+      "uMax": 1.0,
+      "bodyIndices": [
+        69,
+        70
+      ]
+    },
+    {
+      "name": "Semimembranosus muscle.l",
+      "modelMuscles": [
+        "semimem_l"
+      ],
+      "weightOffset": 310786,
+      "vertexCount": 3725,
+      "uMin": 0.029,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        9
+      ]
+    },
+    {
+      "name": "Semimembranosus muscle.r",
+      "modelMuscles": [
+        "semimem_r"
+      ],
+      "weightOffset": 314511,
+      "vertexCount": 3725,
+      "uMin": 0.029,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "Semitendinosus muscle.l",
+      "modelMuscles": [
+        "semiten_l"
+      ],
+      "weightOffset": 318236,
+      "vertexCount": 2158,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        9
+      ]
+    },
+    {
+      "name": "Semitendinosus muscle.r",
+      "modelMuscles": [
+        "semiten_r"
+      ],
+      "weightOffset": 320394,
+      "vertexCount": 2158,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "Serratus anterior muscle.l",
+      "modelMuscles": [
+        "SerrAnt1_1_L",
+        "SerrAnt2_1_L",
+        "SerrAnt3_1_L",
+        "SerrAnt4_1_L",
+        "SerrAnt5_1_L",
+        "SerrAnt6_1_L",
+        "SerrAnt7_1_L",
+        "SerrAnt8_1_L",
+        "SerrAnt9_1_L"
+      ],
+      "weightOffset": 322552,
+      "vertexCount": 12618,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        56,
+        75
+      ]
+    },
+    {
+      "name": "Serratus anterior muscle.r",
+      "modelMuscles": [
+        "SerrAnt1_1_R",
+        "SerrAnt2_1_R",
+        "SerrAnt3_1_R",
+        "SerrAnt4_1_R",
+        "SerrAnt5_1_R",
+        "SerrAnt6_1_R",
+        "SerrAnt7_1_R",
+        "SerrAnt8_1_R",
+        "SerrAnt9_1_R"
+      ],
+      "weightOffset": 335170,
+      "vertexCount": 12618,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        44,
+        69
+      ]
+    },
+    {
+      "name": "Short head of biceps brachii.l",
+      "modelMuscles": [
+        "BICshort_l"
+      ],
+      "weightOffset": 347788,
+      "vertexCount": 1344,
+      "uMin": 0.0,
+      "uMax": 0.772,
+      "bodyIndices": [
+        75,
+        78
+      ]
+    },
+    {
+      "name": "Short head of biceps brachii.r",
+      "modelMuscles": [
+        "BICshort_r"
+      ],
+      "weightOffset": 349132,
+      "vertexCount": 1344,
+      "uMin": 0.0,
+      "uMax": 0.779,
+      "bodyIndices": [
+        69,
+        72
+      ]
+    },
+    {
+      "name": "Soleus muscle.l",
+      "modelMuscles": [
+        "soleus_l"
+      ],
+      "weightOffset": 350476,
+      "vertexCount": 3379,
+      "uMin": 0.0,
+      "uMax": 0.676,
+      "bodyIndices": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "Soleus muscle.r",
+      "modelMuscles": [
+        "soleus_r"
+      ],
+      "weightOffset": 353855,
+      "vertexCount": 3379,
+      "uMin": 0.0,
+      "uMax": 0.676,
+      "bodyIndices": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Sternocostal head of pectoralis major muscle.l",
+      "modelMuscles": [
+        "PECM2_l",
+        "PECM3_l"
+      ],
+      "weightOffset": 357234,
+      "vertexCount": 1611,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        76,
+        57
+      ]
+    },
+    {
+      "name": "Sternocostal head of pectoralis major muscle.r",
+      "modelMuscles": [
+        "PECM2",
+        "PECM3"
+      ],
+      "weightOffset": 358845,
+      "vertexCount": 1611,
+      "uMin": 0.0,
+      "uMax": 1.0,
+      "bodyIndices": [
+        70,
+        57
+      ]
+    },
+    {
+      "name": "Tibialis anterior muscle.l",
+      "modelMuscles": [
+        "tibant_l"
+      ],
+      "weightOffset": 360456,
+      "vertexCount": 1761,
+      "uMin": 0.0,
+      "uMax": 0.894,
+      "bodyIndices": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "Tibialis anterior muscle.r",
+      "modelMuscles": [
+        "tibant_r"
+      ],
+      "weightOffset": 362217,
+      "vertexCount": 1761,
+      "uMin": 0.0,
+      "uMax": 0.894,
+      "bodyIndices": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Transverse part of trapezius muscle.l",
+      "modelMuscles": [
+        "trap_acr_scap_L"
+      ],
+      "weightOffset": 363978,
+      "vertexCount": 1494,
+      "uMin": 0.0,
+      "uMax": 0.923,
+      "bodyIndices": [
+        75,
+        32
+      ]
+    },
+    {
+      "name": "Transverse part of trapezius muscle.r",
+      "modelMuscles": [
+        "trap_acr_scap"
+      ],
+      "weightOffset": 365472,
+      "vertexCount": 1494,
+      "uMin": 0.0,
+      "uMax": 0.924,
+      "bodyIndices": [
+        69,
+        32
+      ]
+    },
+    {
+      "name": "Vastus intermedius muscle.l",
+      "modelMuscles": [
+        "vasint_l"
+      ],
+      "weightOffset": 366966,
+      "vertexCount": 3076,
+      "uMin": 0.0,
+      "uMax": 0.913,
+      "bodyIndices": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "Vastus intermedius muscle.r",
+      "modelMuscles": [
+        "vasint_r"
+      ],
+      "weightOffset": 370042,
+      "vertexCount": 3076,
+      "uMin": 0.0,
+      "uMax": 0.913,
+      "bodyIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Vastus lateralis muscle.l",
+      "modelMuscles": [
+        "vaslat140_l"
+      ],
+      "weightOffset": 373118,
+      "vertexCount": 4678,
+      "uMin": 0.0,
+      "uMax": 0.965,
+      "bodyIndices": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "Vastus lateralis muscle.r",
+      "modelMuscles": [
+        "vaslat140_r"
+      ],
+      "weightOffset": 377796,
+      "vertexCount": 4678,
+      "uMin": 0.0,
+      "uMax": 0.965,
+      "bodyIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Vastus medialis muscle.l",
+      "modelMuscles": [
+        "vasmed_l"
+      ],
+      "weightOffset": 382474,
+      "vertexCount": 3232,
+      "uMin": 0.0,
+      "uMax": 0.953,
+      "bodyIndices": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "Vastus medialis muscle.r",
+      "modelMuscles": [
+        "vasmed_r"
+      ],
+      "weightOffset": 385706,
+      "vertexCount": 3232,
+      "uMin": 0.0,
+      "uMax": 0.953,
+      "bodyIndices": [
+        2,
+        3
+      ]
+    }
+  ]
+}

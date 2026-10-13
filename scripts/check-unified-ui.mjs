@@ -62,12 +62,14 @@ try {
   assert.equal(state, 'true', await evalPage(`document.querySelector('#unified-status')?.textContent`));
   const initial = await evalPage(`(() => { const s = document.querySelector('#unified-stage');
     return { model: s.dataset.model, muscles: s.dataset.muscles, bodies: s.dataset.bodies,
-      meshes: s.dataset.sourceMeshes, missing: s.dataset.missingSourceMeshes,
+      meshes: s.dataset.sourceMeshes, surfaces: s.dataset.surfaceMeshes,
+      missing: s.dataset.missingSourceMeshes,
       excluded: s.dataset.excludedSourceMeshes,
       length: +s.dataset.selectedLengthM, canvas: !!s.querySelector('canvas') }; })()`);
   assert.equal(initial.muscles, '520');
   assert.equal(initial.bodies, '80');
   assert.equal(initial.meshes, '83');
+  assert.equal(initial.surfaces, '68');
   assert.equal(initial.missing, '37');
   assert.equal(initial.excluded, '12');
   assert(initial.canvas);
@@ -80,6 +82,13 @@ try {
       return +document.querySelector('#unified-stage').dataset.selectedLengthM;
     })()`);
     assert.equal(await evalPage(`document.querySelector('#unified-stage').dataset.mode`), mode);
+    const propState = await evalPage(`(() => {
+      const canvas = document.querySelector('#unified-stage canvas');
+      return { canvasHeight: canvas.getBoundingClientRect().height,
+        buttonsVisible: document.querySelector('.unified-tabs').getBoundingClientRect().bottom <= innerHeight };
+    })()`);
+    assert(propState.canvasHeight > 350 && propState.buttonsVisible,
+      `${mode} viewport clips the model controls: ${JSON.stringify(propState)}`);
     const jointText = await evalPage(`document.querySelector('#unified-joints').textContent`);
     assert(jointText.includes('人为设定的角度') && jointText.includes('°'),
       `${mode} has no source coordinate readout: ${jointText}`);
@@ -89,6 +98,50 @@ try {
       Buffer.from(poseShot.result.data, 'base64'));
   }
   assert(Object.values(lengths).every(Number.isFinite), `invalid selected muscle length: ${JSON.stringify(lengths)}`);
+  if (process.env.ATLAS_LIVE === '1') {
+    await evalPage(`(() => {
+      document.querySelector('[data-mode="custom"]').click();
+      for (const [name, value] of [['hip_flexion', 90], ['knee_angle', 100]]) {
+        const slider = document.querySelector('[data-joint="' + name + '"]');
+        slider.value = String(value);
+        slider.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    })()`);
+    let liveStatus;
+    for (let attempt = 0; attempt < 40; attempt++) {
+      liveStatus = await evalPage(`document.querySelector('#unified-live-status').textContent`);
+      if (liveStatus.includes('已由 OpenSim') || liveStatus.includes('不可用')) break;
+      await sleep(250);
+    }
+    assert(liveStatus.includes('已由 OpenSim'), `live pose failed: ${liveStatus}`);
+    const joints = await evalPage(`document.querySelector('#unified-joints').textContent`);
+    assert(joints.includes('90.0°') && joints.includes('100.0°'), `live pose not applied: ${joints}`);
+    const liveShot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
+    writeFileSync(join(process.cwd(), '.cache', 'unified-custom-check.png'),
+      Buffer.from(liveShot.result.data, 'base64'));
+    const beforeArm = await evalPage(`['elv_angle','shoulder_elv','elbow_flex'].map(name =>
+      document.querySelector('[data-joint="' + name + '"]').value).join(',')`);
+    const handScreen = await evalPage(`document.querySelector('#unified-stage').dataset.handRightScreen`);
+    assert(handScreen, 'custom hand drag handle has no screen position');
+    const [handX, handY] = handScreen.split(',').map(Number);
+    await send('Input.dispatchMouseEvent', { type: 'mousePressed', x: handX, y: handY,
+      button: 'left', buttons: 1, clickCount: 1 });
+    await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: handX + 15, y: handY - 100,
+      button: 'left', buttons: 1 });
+    await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: handX + 15, y: handY - 100,
+      button: 'left', buttons: 0, clickCount: 1 });
+    let ikStatus;
+    for (let attempt = 0; attempt < 35; attempt++) {
+      ikStatus = await evalPage(`document.querySelector('#unified-live-status').textContent`);
+      if (ikStatus.includes('手部目标已') || ikStatus.includes('最近姿态') || ikStatus.includes('失败')) break;
+      await sleep(250);
+    }
+    assert(ikStatus.includes('手部目标已') || ikStatus.includes('最近姿态'),
+      `hand drag IK failed: ${ikStatus}`);
+    const afterArm = await evalPage(`['elv_angle','shoulder_elv','elbow_flex'].map(name =>
+      document.querySelector('[data-joint="' + name + '"]').value).join(',')`);
+    assert.notEqual(afterArm, beforeArm, `hand drag did not change arm coordinates: ${ikStatus}; hand=${handScreen}`);
+  }
   await evalPage(`document.querySelector('[data-mode="neutral"]').click()`);
   await sleep(800);
   const screenshot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });

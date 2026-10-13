@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "live:opensim": ".cache/opensim-venv/Scripts/python.exe scripts/live_pose_server.py --port 5173",
     "build": "tsc --noEmit && vite build && node scripts/copy-unified-public.mjs && node scripts/inline-build-assets.mjs",
     "check:unified-ui": "node scripts/check-unified-ui.mjs",
     "check:unified-data": "node scripts/check-unified-data.mjs",

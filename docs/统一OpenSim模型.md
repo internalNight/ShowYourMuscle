@@ -1,5 +1,7 @@
 # 统一 OpenSim 模型：当前实现与边界
 
+> 本文记录上一版“只有路径线”的实现。精细肌肉表面、脚跟接触和更新后的三个动作请看[网页版精细肌肉与动作](网页版精细肌肉与动作.md)。
+
 ## 现行网页和 Android 包
 
 首页现在是单模型视图。`src/unified.ts` 在同一场景中显示 80 个 OpenSim 体段的网格与 520 条肌肉肌腱路径；点击“静止”、深蹲、卧推、实力举时，仅更换同一个模型的预先计算姿势帧。体段变换、每条肌肉路径及肌肉肌腱长度都由 OpenSim 4.6 对 `cyclistFullBodyMuscle.osim` 求得，保存在 `public/data/unified_opensim_reference.json`。原先把静态 Z-Anatomy 与动态自制骨架/不同 OpenSim 模型切换显示的页面没有打入现行包。`scripts/copy-unified-public.mjs` 是发行资源白名单。

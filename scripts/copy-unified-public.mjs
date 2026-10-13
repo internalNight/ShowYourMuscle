@@ -8,8 +8,12 @@ const files = [
   'icons/icon-192.png',
   'icons/icon-512.png',
   'models/unified_opensim_skeleton.glb',
+  'models/unified_muscle_surfaces.glb',
   'models/NOTICE-unified-opensim.txt',
+  'models/NOTICE-z-anatomy.txt',
   'data/unified_opensim_reference.json',
+  'data/unified_muscle_skin.json',
+  'data/unified_muscle_weights.bin',
 ];
 for (const relative of files) {
   const source = resolve(root, 'public', relative);
